@@ -1,0 +1,439 @@
+{
+  "run_id": "ALIFE-OMEGA-20261121T101857Z",
+  "timestamp_utc": "2026-11-21T10:18:57.828106+00:00",
+  "track": "HYBRID_ABLATION",
+  "substrate_id": "WIN64-X86_64-AVX2-GFNI-6REPO-STACK",
+  "horizon_ticks": 300,
+  "pillar_weights": {
+    "P1_OEE_NOVELTY": 0.18,
+    "P2_AUTOPOIESIS_PERSISTENCE": 0.12,
+    "P3_HYPER_MORPHOGENESIS": 0.12,
+    "P4_RECURSIVE_META_EVOLVABILITY": 0.16,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 0.12,
+    "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 0.1,
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 0.12,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 0.08
+  },
+  "pillar_scores": {
+    "P1_OEE_NOVELTY": 100.0,
+    "P2_AUTOPOIESIS_PERSISTENCE": 77.59,
+    "P3_HYPER_MORPHOGENESIS": 70.18,
+    "P4_RECURSIVE_META_EVOLVABILITY": 77.59,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 92.5,
+    "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 100.0,
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 88.0,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 90.0
+  },
+  "anti_gaming_gates": {
+    "white_noise_rejection_passed": true,
+    "intron_bloat_knockout_passed": true,
+    "spiegelman_penalty_factor": 1.0,
+    "t0_scaffold_subtracted": true,
+    "dual_observer_verified": true,
+    "gamma_multiplier": 1.0
+  },
+  "composite_ovi_score": 87.01,
+  "stage_classification": "STAGE_5_CONVERGED_SYNTHESIS",
+  "benchmarks": [
+    {
+      "benchmark_id": "BM-OEE-01",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-02",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-03",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-04",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-05",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-06",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-07",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-08",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-09",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-10",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-11",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-12",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-13",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-14",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-15",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-16",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-17",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-18",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-19",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-20",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-21",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-22",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-23",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-24",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-25",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-26",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-27",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-28",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-29",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-30",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-31",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-32",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-33",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-34",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-35",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-36",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-37",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-38",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-39",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-40",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-41",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-42",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-43",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-44",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-45",
+      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+      "raw_value": 92.5,
+      "normalized_score": 92.5,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-46",
+      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AGY-47",
+      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+      "raw_value": 88.0,
+      "normalized_score": 88.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-FER-48",
+      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
+      "raw_value": 90.0,
+      "normalized_score": 90.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-49",
+      "pillar": "P1_OEE_NOVELTY",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-50",
+      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRP-51",
+      "pillar": "P3_HYPER_MORPHOGENESIS",
+      "raw_value": 70.18,
+      "normalized_score": 70.18,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-REV-52",
+      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
+      "raw_value": 77.59,
+      "normalized_score": 77.59,
+      "status": "PASS"
+    }
+  ],
+  "engine_receipts": {
+    "tier1_autophage": {
+      "rc": 0,
+      "elapsed_s": 1.4627,
+      "gates_passed": 18,
+      "gates_failed": 0,
+      "feral_ovi": 77.59,
+      "bedau_packard_anew": 34.093,
+      "lean4_theorems": 31
+    },
+    "tier2_cellulogonic": {
+      "rc": 0,
+      "elapsed_s": 0.3258,
+      "gates_passed": 24,
+      "gates_total": 24,
+      "mutants_caught": 8,
+      "embryo_covi": 58.18,
+      "lean4_theorems": 58
+    },
+    "tier2plus_omega": {
+      "rc": 0,
+      "elapsed_s": 0.1007,
+      "gates_passed": 43,
+      "gates_total": 43,
+      "mutants_caught": 10,
+      "master_sha256": "d360f8db3a8b2e7973507f3c9d70692d0d9fcdd8826443b8bb4a5bf86617f09f",
+      "lean4_theorems": 61
+    },
+    "tier34_asmodensius": {
+      "policy": "READ_ONLY_RESPECTING_WRITER_LOCK",
+      "az_run_present": true,
+      "az_live_present": true,
+      "verified_ctest_baseline": "76/76 (build/z, 22/22 real modules)"
+    }
+  },
+  "total_lean4_theorems": 150
+}

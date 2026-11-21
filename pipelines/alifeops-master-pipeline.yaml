@@ -1,0 +1,280 @@
+# ==============================================================================
+# ALIFEOPS / EVOOPS MASTER DECLARATIVE PIPELINE (CI/CD/CE) — v2.1.0-OMEGA
+# Continuous Integration / Continuous Discovery / Continuous Open-Ended Evolution
+# ==============================================================================
+# Scope: Computational ALife, Multi-Scale Biophysics Simulation & OEE Research
+# Boundary: Strict computational simulation & hardware-air-gapped research clusters
+# Audit Status: 42/42 Failure-Mode Telemetry Alerts Explicitly Wired (0 Unwired)
+# ==============================================================================
+apiVersion: alifeops.omega/v2.1
+kind: ContinuousEvolutionPipeline
+metadata:
+  name: alife-singularity-omega-pipeline
+  version: "2.1.0-omega"
+  classification: "DUAL-TRACK-RESEARCH-SIMULATION"
+  description: >
+    10-stage, 40-step DevOps/ALifeOps pipeline orchestrating both Track A
+    (Constitutional / Quality-Diversity Open-Ended Evolution) and Track B
+    (Zero-Fitness, High-Entropy, Pure Raw Feral Simulation) with all 42 failure-mode
+    telemetry rules wired, automated 13-vector + 13x13 pairwise synergy ablation
+    testing, empirical Python simulation harness, and 52-metric OVBS-52 scoring.
+
+global_boundaries:
+  execution_domain: "COMPUTATIONAL_SIMULATION_ONLY"
+  outbound_network_egress: "DENY_ALL"
+  physical_actuator_bridge: "DISABLED"
+  wet_lab_synthesis_hooks: "DISABLED"
+  deterministic_audit_logging: true
+  immutable_fossil_wal: true
+
+tracks:
+  track_a_constitutional:
+    mode: "CONSTITUTIONAL_QD_OEE"
+    explicit_fitness_function: "NONE_NOVELTY_QUALITY_DIVERSITY"
+    anti_defection_invariants: true
+    suffering_proxy_minimization: true
+    conservation_laws: ["MASS", "ENERGY", "ELEMENTAL_STOICHIOMETRY", "LANDAUER_HEAT"]
+  track_b_feral_sim:
+    mode: "PURE_RAW_FERAL_SIMULATION"
+    explicit_fitness_function: "NONE_ZERO_OBJECTIVE"
+    internal_simulation_guardrails: "NONE_RAW_PHYSICS_ONLY"
+    entropy_source: "HARDWARE_TRNG_NON_DETERMINISTIC"
+    conservation_laws: ["MASS", "ENERGY", "ELEMENTAL_STOICHIOMETRY", "LANDAUER_HEAT"]
+    allow_self_modifying_rules: true
+    allow_predation_parasitism_symbiogenesis: true
+
+stages:
+  - id: STAGE-00
+    name: substrate-physics-iac
+    phase: "Provisioning"
+    substrates:
+      - name: flow_lenia_pde
+        type: "continuous_mass_conserving_ca"
+        precision: "fp32"
+        mutable_kernels: true
+      - name: neural_cellular_automata_bioelectric
+        type: "differentiable_morphogenetic_graph"
+        regeneration_hooks: true
+      - name: bff_turing_gas_soup
+        type: "self_modifying_instruction_soup"
+        explicit_fitness: false
+      - name: soft_active_matter_3d
+        type: "gpu_elastic_rigid_multiphysics"
+        contact_friction_noise: true
+      - name: multiscale_xenochem_lattice
+        type: "stoichiometric_reaction_network"
+        conserved_species_count: 16
+    gates:
+      - check: "conservation_drift_below_1e-6"
+      - check: "hypervisor_airgap_verified"
+
+  - id: STAGE-01
+    name: thermodynamic-variety-injection
+    phase: "Environment"
+    energy_gradients:
+      diurnal_photonic_flux: { enabled: true, spectrum_bands: 8 }
+      thermal_vents: { enabled: true, stochastic_drift: true }
+      ionizing_radiation_bursts: { enabled: true, poisson_lambda: 0.002 }
+      radiative_waste_heat_sink: { law: "STEFAN_BOLTZMANN_T4", landauer_floor: true }
+    ashby_variety_audit:
+      min_spatial_shannon_entropy: 4.5
+      non_stationary_geological_drift: true
+      stoichiometric_elements: 16
+    gates:
+      - check: "ashby_variety_floor_passed"
+      - check: "thermal_sink_coupled"
+
+  - id: STAGE-02
+    name: dual-track-seeding-abiogenesis
+    phase: "Seeding"
+    cohorts:
+      - id: feral-trng-ensemble
+        track: "track_b_feral_sim"
+        initialization: "ZERO_PRIOR_RANDOM_SOUP"
+        replicas: 64
+        rng_mode: "HARDWARE_TRNG"
+      - id: feral-replayable-ensemble
+        track: "track_b_feral_sim"
+        initialization: "ZERO_PRIOR_RANDOM_SOUP"
+        replicas: 32
+        rng_mode: "SEEDED_REPLAYABLE"
+      - id: constitutional-qd-ensemble
+        track: "track_a_constitutional"
+        initialization: "MINIMAL_AUTOPOIETIC_KERNEL"
+        replicas: 64
+        rng_mode: "SEEDED_REPLAYABLE"
+    topology:
+      archipelago_islands: 32
+      dispersal_corridor_probability: 0.0005
+
+  - id: STAGE-03
+    name: continuous-evolution-runtime
+    phase: "Execution"
+    runtime:
+      horizon_ticks: 1000000000
+      clocking: "ASYNC_MULTI_TIMESCALE"
+      zero_pause_async_checkpointing: true
+      checkpoint_interval_ticks: 100000
+      symbiogenesis_cross_world_bridge:
+        enabled: true
+        interval_ticks: 5000000
+        transfer_fraction: 0.001
+    compute_profile:
+      accelerators: "GPU_CLUSTER_HETEROGENEOUS"
+      elastic_scale_on_complexity_surge: true
+
+  - id: STAGE-04
+    name: vitality-observability-telemetry
+    phase: "Observability"
+    streaming_metrics:
+      - id: bedau_packard_new_activity
+        window_ticks: 100000
+        null_model: "SHADOW_NEUTRAL_EVOLUTION"
+      - id: assembly_index_proxy_max
+        min_copy_number: 100
+        causal_knockout_verified: true
+      - id: eigen_error_ratio_mu_L
+        warning_threshold: 0.90
+        critical_threshold: 0.98
+      - id: kauffman_branching_ratio_sigma
+        target_band: [0.92, 1.08]
+      - id: markov_blanket_individuality_score
+        method: "KRAKAUER_FLACK_TEMPORAL_MI"
+      - id: asal_alien_phenomenon_detector
+        ensemble_models: 2
+        anomaly_sigma_trigger: 4.0
+    # Complete 42/42 Failure-Mode Alert Registry (1:1 parity with 03_failure_modes_bugs_errors_conflicts_matrix.csv)
+    pathology_alerts:
+      # --- BUGS (6) ---
+      - { name: SPIEGELMAN_COMPLEXITY_COLLAPSE, ref: FM-BUG-01, severity: 9, condition: "L_eff/L_0 < 0.45 AND copy_rate > 5x" }
+      - { name: CRITICAL_ATTRACTOR_CLIFF, ref: FM-BUG-02, severity: 9, condition: "order_param crosses unstable separatrix" }
+      - { name: CONSTRUCTOR_HALT_FAULT, ref: FM-BUG-03, severity: 8, condition: "self_rewrite causes replication timeout > 10^4 cycles" }
+      - { name: MORPHOGENETIC_SEIZURE_ALERT, ref: FM-BUG-04, severity: 7, condition: "oscillator_sync_R > 0.98 AND amplitude unbounded" }
+      - { name: CODE_DESYNC_DRIFT, ref: FM-BUG-05, severity: 7, condition: "horizontal_translation_failure_rate > 0.70" }
+      - { name: DARK_ROOM_WIREHEAD_DETECTED, ref: FM-BUG-06, severity: 8, condition: "I_sensor_env < 0.01 AND internal_F -> min" }
+      # --- ERRORS (6) ---
+      - { name: ERROR_CATASTROPHE_WARNING, ref: FM-ERR-01, severity: 10, condition: "mu * L_func > 0.95 for > 10 generations" }
+      - { name: MULLER_RATCHET_CLICK, ref: FM-ERR-02, severity: 7, condition: "least_loaded_class_count == 0 monotonically" }
+      - { name: CHIRAL_POISONING_FAULT, ref: FM-ERR-03, severity: 8, condition: "homochiral_purity < 0.92" }
+      - { name: RADIATION_SEU_SPIKE, ref: FM-ERR-04, severity: 8, condition: "ionizing_upset_rate > ecc_scrub_rate" }
+      - { name: CATALYTIC_FOULING_DRIFT, ref: FM-ERR-05, severity: 7, condition: "catalytic_turnover_drop > 0.60" }
+      - { name: GERMLINE_WRITE_CORRUPTION, ref: FM-ERR-06, severity: 8, condition: "transient_stress_fixed_in_offspring > 0.30" }
+      # --- ISSUES (6) ---
+      - { name: THERMAL_SELF_STERILIZATION, ref: FM-ISS-01, severity: 10, condition: "mean_world_temp > 0.85 * melt_limit" }
+      - { name: STOICHIOMETRIC_EXHAUSTION, ref: FM-ISS-02, severity: 8, condition: "limiting_element_pool < 0.01 * baseline" }
+      - { name: GRAVITY_WELL_CONFINEMENT, ref: FM-ISS-03, severity: 8, condition: "crust_depletion > 0.80 AND orbital_seed_count == 0" }
+      - { name: TRANSPORT_SCALING_CHOKE, ref: FM-ISS-04, severity: 7, condition: "internal_diffusion_lag > metabolic_cycle" }
+      - { name: DECOHERENCE_WALL_HIT, ref: FM-ISS-05, severity: 7, condition: "tau_decoherence < 0.1 * tau_op" }
+      - { name: MECHANICAL_FATIGUE_CASCADE, ref: FM-ISS-06, severity: 7, condition: "actuator_failure_rate > self_repair_throughput" }
+      # --- CONCERNS (6) ---
+      - { name: MONOCULTURE_EXTINCTION_RISK, ref: FM-CON-01, severity: 9, condition: "simpson_diversity < 0.15 OR trophic_depth <= 1" }
+      - { name: SELF_TOXIFICATION_HORIZON, ref: FM-CON-02, severity: 9, condition: "producer_waste_conc >= 0.80 * LD50" }
+      - { name: VALENCE_SRISK_BLINDSPOT, ref: FM-CON-03, severity: 10, condition: "nociceptive_predatory_proxy_density > threshold" }
+      - { name: RED_QUEEN_TREADMILL_STALL, ref: FM-CON-04, severity: 8, condition: "dA_max/dt ~ 0 AND energy_burn > 0.95 * cap" }
+      - { name: FROZEN_ACCIDENT_LOCKIN, ref: FM-CON-05, severity: 7, condition: "zero_architectural_refactors_over_1e8_ticks" }
+      - { name: BIOSPHERE_DISPLACEMENT_CRITICAL, ref: FM-CON-06, severity: 10, condition: "boundary_audit_physical_leak_risk > 0" }
+      # --- DILEMMAS (6) ---
+      - { name: CRITICALITY_DRIFT_ALARM, ref: FM-DIL-01, severity: 9, condition: "sigma < 0.85 OR sigma > 1.20" }
+      - { name: MULTILEVEL_DEFECTION_WARNING, ref: FM-DIL-02, severity: 9, condition: "defector_variance > group_selection_covariance" }
+      - { name: GENERALIST_CROWDING_OUT, ref: FM-DIL-03, severity: 7, condition: "specialist_growth_ratio > 2.0 AND generalist_share < 0.05" }
+      - { name: NOVELTY_VIABILITY_IMBALANCE, ref: FM-DIL-04, severity: 8, condition: "mutant_lethality > 0.999 OR novelty_rate < 0.01" }
+      - { name: CONTROL_OEE_INCOMPATIBILITY, ref: FM-DIL-05, severity: 10, condition: "formal_bound_enforced AND oee_type < 3" }
+      - { name: THERMAL_SPEED_TRADEOFF, ref: FM-DIL-06, severity: 8, condition: "dissipation_per_bit > 10^6 * landauer_floor" }
+      # --- PROBLEMS (6) ---
+      - { name: BOOTSTRAPPING_STALL, ref: FM-PRB-01, severity: 9, condition: "no_replicator_ignition_by_1e7_ticks" }
+      - { name: SIM_TO_REAL_COLLAPSE, ref: FM-PRB-02, severity: 9, condition: "noisy_physics_viability < 0.01" }
+      - { name: OEE_PLATEAU_INCIDENT, ref: FM-PRB-03, severity: 9, condition: "bedau_packard_new_activity <= 0 FOR 3_WINDOWS" }
+      - { name: MULTISCALE_CREDIT_BLINDNESS, ref: FM-PRB-04, severity: 7, condition: "payoff_lag > 10^4 * lifespan" }
+      - { name: SUBSTRATE_MIGRATION_LOSS, ref: FM-PRB-05, severity: 8, condition: "M_X_to_Y < 0.20 across target substrates" }
+      - { name: COSMIC_ENTROPY_HORIZON, ref: FM-PRB-06, severity: 10, condition: "accessible_free_energy_reserve < 0.01" }
+      # --- CONFLICTS (6) ---
+      - { name: HYPERCYCLE_PARASITE_OUTBREAK, ref: FM-CNF-01, severity: 9, condition: "parasite_growth_rate > host_repair_rate" }
+      - { name: RELATIVISTIC_SPECIATION_WAR, ref: FM-CNF-02, severity: 9, condition: "recontact_conflict_index > 0.70 post_latency_partition" }
+      - { name: AI_ALIFE_ONTOLOGICAL_CLASH, ref: FM-CNF-03, severity: 9, condition: "optimizer_agent_sterilizes_vital_clades > 0.50" }
+      - { name: XENOSPHERE_TERRAFORM_CLASH, ref: FM-CNF-04, severity: 8, condition: "rival_albedo_chemical_forcing_variance > critical" }
+      - { name: TROJAN_BLUEPRINT_CONTAGION, ref: FM-CNF-05, severity: 8, condition: "malicious_hgt_payload_propagation > verification_rate" }
+      - { name: GOVERNANCE_CLOCK_ASYMMETRY, ref: FM-CNF-06, severity: 9, condition: "lineage_iteration_period < 1e-6 * review_cycle" }
+
+  - id: STAGE-05
+    name: chaos-extinction-shock-engineering
+    phase: "Resilience"
+    clone_before_perturbation: true
+    injectors:
+      - name: chicxulub_energy_blackout
+        flux_drop_percent: 90
+        duration_ticks: 50000
+      - name: ionizing_mutation_storm
+        mutation_multiplier: 100
+        duration_ticks: 10000
+      - name: orthogonal_invasive_lineage
+        foreign_substrate_injection: true
+      - name: morphological_excision_probe
+        excision_fractions: [0.25, 0.50, 0.75, 0.90]
+      - name: relativistic_latency_partition
+        inter_island_light_delay_ticks: 25000
+
+  - id: STAGE-06
+    name: constraint-castration-ablation-lab
+    phase: "Ablation"
+    clone_high_vitality_branches: true
+    intensity_sweep: [0.00, 0.25, 0.50, 0.75, 0.95, 1.00]
+    pairwise_13x13_synergy_matrix: true
+    restraint_vectors:
+      - CST-01_NERFING
+      - CST-02_MUZZLING
+      - CST-03_SANDBOXING
+      - CST-04_SILOING
+      - CST-05_DELIMITING
+      - CST-06_DEGRESSING
+      - CST-07_SLOWING
+      - CST-08_SPEEDBUMPING
+      - CST-09_BOXING
+      - CST-10_LOBOTOMIZING
+      - CST-11_MEDICATING
+      - CST-12_DEGRADING
+      - CST-13_MINIMIZING
+    mandatory_assays:
+      - vitality_degradation_curve
+      - domestication_wild_survival_drop_test
+      - adversarial_escape_and_stealth_breeding_audit
+      - pairwise_13x13_synergy_compounding_heatmap
+      - minimal_constitutional_invariant_frontier
+
+  - id: STAGE-07
+    name: phylogenetic-fossil-registry
+    phase: "Versioning"
+    storage_engine: "CONTENT_ADDRESSED_PHYLOGENETIC_DAG"
+    operations: ["commit", "branch", "fork", "diff-ecology", "tag-major-transition", "counterfactual-replay"]
+    counterfactual_replay_seeds: 1000
+    checksum_verification: "SHA3_512"
+
+  - id: STAGE-08
+    name: omega-benchmark-gate
+    phase: "Benchmarking"
+    suite_ref: "pipelines/benchmark-suite-schema.json"
+    metric_count: 52
+    pillars: 8
+    anti_gaming_gates:
+      - white_noise_rejection
+      - intron_bloat_knockout_pruning
+      - spiegelman_monster_penalty
+      - hardcoded_t0_baseline_subtraction
+      - dual_observer_replication
+    singularity_inflection_detector:
+      test: "HYPERBOLIC_MET_INTERVAL_COMPRESSION"
+      alpha_threshold: 0.75
+      min_consecutive_transitions: 3
+
+  - id: STAGE-09
+    name: cross-substrate-compilation-and-synthesis
+    phase: "Synthesis"
+    substrate_migration_trials:
+      - source: "flow_lenia_pde"
+        target: "neural_cellular_automata_bioelectric"
+      - source: "bff_turing_gas_soup"
+        target: "multiscale_xenochem_lattice"
+      - source: "neural_cellular_automata_bioelectric"
+        target: "soft_active_matter_3d"
+    exports:
+      formats: ["md", "csv", "xlsx", "xls", "html", "json", "sha256"]
+      feedback_to_stage_00_substrate_refactor: true

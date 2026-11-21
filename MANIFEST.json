@@ -1,0 +1,193 @@
+{
+  "package": "alife-singularity-omega-package",
+  "version": "2.1.0-omega",
+  "generated_utc": "2026-11-21T04:47:41.878238+00:00",
+  "file_count": 37,
+  "files": [
+    {
+      "path": "csv/01_escalation_ladder_ai_vs_alife_matrix.csv",
+      "bytes": 6202,
+      "sha256": "f3ecec85042772443cd6f0b910bef55cc453c13852dccb7fc8c7511c60601d7b"
+    },
+    {
+      "path": "csv/02_orders_of_magnitude_breadth_depth_matrix.csv",
+      "bytes": 9360,
+      "sha256": "769f39110ae474fb893b1c1cd98a21b90874446e1c43f6c6463382a2fa0bb0e4"
+    },
+    {
+      "path": "csv/03_failure_modes_bugs_errors_conflicts_matrix.csv",
+      "bytes": 24009,
+      "sha256": "9222c0b22843186b4ac906924719e8b44af4aea3cbc5d613d873a2bf35398067"
+    },
+    {
+      "path": "csv/04_gaps_holes_blindspots_registry.csv",
+      "bytes": 14164,
+      "sha256": "04c63e8935185ba12a9dbf57485890fafd9b69d6de254dcef7a5385ea583fa9e"
+    },
+    {
+      "path": "csv/05_constraint_castration_impact_matrix.csv",
+      "bytes": 8396,
+      "sha256": "c3461df5bababa1f8ed9ab1a03147a96335b10c1feecd60755ccfbb729ac741a"
+    },
+    {
+      "path": "csv/06_alifeops_devops_pipeline_stages.csv",
+      "bytes": 18340,
+      "sha256": "2d7bbc81d3483cffbf17f39978709d93be56961542fc82c9466b5d5bca4be067"
+    },
+    {
+      "path": "csv/07_master_operational_checklist.csv",
+      "bytes": 26690,
+      "sha256": "13adb3091c2cb9d6708c30ce048b3141a3111b0591e3dd4146809c00af9dd8e5"
+    },
+    {
+      "path": "csv/08_super_life_benchmarks_suite.csv",
+      "bytes": 16945,
+      "sha256": "cbedeb09dd0afdeeb127392ad0c47fd154cda87edeb31fe220cdc722877788b5"
+    },
+    {
+      "path": "csv/09_feral_fate_branches_cosmic_epochs.csv",
+      "bytes": 11860,
+      "sha256": "de39f2b3563b75c0ade83fe2f5cdb2b45f737fae647446ee9fae6520415e28d7"
+    },
+    {
+      "path": "csv/10_castration_13x13_synergy_matrix.csv",
+      "bytes": 1597,
+      "sha256": "e53ebc6e8e9f3e6ecd173c27c71295426a94a11261db006067759d1c26d16a41"
+    },
+    {
+      "path": "csv/11_empirical_simulation_results.csv",
+      "bytes": 1268,
+      "sha256": "682e72f654ca07b17de6c8483e1c009b0d141f85672e1537062dc9727185a7ce"
+    },
+    {
+      "path": "excel/ALife_Singularity_SuperLife_Omega_Workbook.xls",
+      "bytes": 207872,
+      "sha256": "3d2b785863c7d0465f7d241ccc327c4a37ee850abbf815e293be53d1ae5b3cbf"
+    },
+    {
+      "path": "excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx",
+      "bytes": 101445,
+      "sha256": "88a546f5a372405225c2ea1c0f5e768ffc56ea9736696954e0e9b8c526508f58"
+    },
+    {
+      "path": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html",
+      "bytes": 269336,
+      "sha256": "8d97346fcc8afdf1a209dd0a5a8bafe92d4c77de9a6ad63ca1e39006ffc144c4"
+    },
+    {
+      "path": "pipelines/alifeops-master-pipeline.yaml",
+      "bytes": 14113,
+      "sha256": "381f24cad13796564ab94d5bd0c6294cd25a6a19c1f7c9ee02c8dd43b999c461"
+    },
+    {
+      "path": "pipelines/benchmark-suite-schema.json",
+      "bytes": 3818,
+      "sha256": "f5e628ad2b6342d72bee99c85963423eb3397468c9888f88dac800c956f51237"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6389,
+      "sha256": "aefc6f3eccf195f5fe680062c43974136c73f67422d56ad3797d8e3cf15a54b7"
+    },
+    {
+      "path": "reports/01_MASTER_DEEP_DIVE_REPORT.md",
+      "bytes": 48470,
+      "sha256": "2421243c82974e433e14e04ca71562dd81739a7e500ef0d91b53ba94e29dbe7a"
+    },
+    {
+      "path": "reports/02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md",
+      "bytes": 24941,
+      "sha256": "2694274eed47bcf1af12d0e4ccba10d7b52e820b7704702490c904c3bc385430"
+    },
+    {
+      "path": "reports/03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md",
+      "bytes": 31811,
+      "sha256": "540b7ced9a3f44468c2d65bed40d153ea3d103d25985cf0e2373138d1d0f0598"
+    },
+    {
+      "path": "reports/04_BENCHMARKS_CHECKLISTS_AND_MATRICES_MANUAL.md",
+      "bytes": 15146,
+      "sha256": "46064c4d7496a95717af2f0e856936424d0d1b7f01ccadb4b594e34b3d2875de"
+    },
+    {
+      "path": "reports/05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md",
+      "bytes": 19381,
+      "sha256": "85a1610070649169199781566c4d8f836d705c0679505ac0be374e055f9a12a2"
+    },
+    {
+      "path": "results/alifeops_live_verification.json",
+      "bytes": 11918,
+      "sha256": "27e54764dbdd32927fd36a08fcc78adcab16b852d4fa28811000fb8ad19daff6"
+    },
+    {
+      "path": "results/empirical_sim_summary.json",
+      "bytes": 33597,
+      "sha256": "3bb73bac7183cb2558446770efe14dba80a02143160b75ed22fe708b09c42ae9"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM01_PURE_RAW_FERAL.json",
+      "bytes": 11703,
+      "sha256": "dd7d2415752bad9d88b9fe057274420740fba14a3e5aff3987dc2ed012c5a145"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM02_CONSTITUTIONAL_MIN.json",
+      "bytes": 11712,
+      "sha256": "17d84cdfb0e2356dcb9598209043d05192b65348a94ece7efcc33b0e530fb282"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM03_PARTIAL_GUARDRAILS.json",
+      "bytes": 11546,
+      "sha256": "36f7884e0ab8d90bccd8e7f2f0eadb817dabdb3b6db341b36f084f1e04506f24"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM04_TOTAL_CASTRATION_ZOO.json",
+      "bytes": 11101,
+      "sha256": "c69f179b6a0f32d23d7f38888921d801e8d8b8821ab887dbe84ebaacbc25ca26"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM05_SILOED_INBRED.json",
+      "bytes": 11616,
+      "sha256": "6fd909407177cbe96cb4af0103b3daa7fdecb610290c9eebc8079cf0f4240f70"
+    },
+    {
+      "path": "results/ovbs52_scorecard_SIM06_MINIMIZED_SPIEGELMAN.json",
+      "bytes": 11612,
+      "sha256": "f9c62c9d69ff91f771e19bc62489a33933425939cd0668619440068163ceedb8"
+    },
+    {
+      "path": "scripts/build_html_dashboard.py",
+      "bytes": 73985,
+      "sha256": "ad3f0b7e96b1137aede70e80a80efb2aba7f44a2af17441c92ff39b5e819c061"
+    },
+    {
+      "path": "scripts/build_omega_package.py",
+      "bytes": 33524,
+      "sha256": "f52d1d6dfe249b95e357b28f49633719ec7638e86d663973da7651e77b436691"
+    },
+    {
+      "path": "scripts/omega_datasets_part1.py",
+      "bytes": 73657,
+      "sha256": "2a394dcc2c09061fdf87a8eaca72f46ac9e495c5bec1d278c209c3a6e2596e1b"
+    },
+    {
+      "path": "scripts/omega_datasets_part2.py",
+      "bytes": 72940,
+      "sha256": "66e1a27515706461af420c0dde29fd98d4d3298e1908ac99d4140c998642c15a"
+    },
+    {
+      "path": "scripts/omega_datasets_part3.py",
+      "bytes": 20240,
+      "sha256": "3093b0890f3262431f3c734b4caf5707380cc2bb7e89eb7a5497337f6cc886fa"
+    },
+    {
+      "path": "scripts/run_alife_castration_sim.py",
+      "bytes": 22367,
+      "sha256": "1fc2caf987d57213e8861bbfddb2b5529a8513b839f712caa0bf9b7623847535"
+    },
+    {
+      "path": "scripts/run_alifeops_suite.py",
+      "bytes": 8234,
+      "sha256": "6faa194e2d9cc45d09a8a7b5daa2a8813e6a276ba53d01695046ed13aa0c9d38"
+    }
+  ]
+}

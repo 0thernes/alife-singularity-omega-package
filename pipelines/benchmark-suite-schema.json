@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alifeops.omega/schemas/ovbs-52-v2.json",
+  "title": "Omega Vitality Benchmark Suite (OVBS-52) Specification",
+  "description": "Machine-readable schema for evaluating Artificial Life, AG-Life, A-Life Singularity, Super A-Life, and Post-Singularity SUPER LIFE across 8 weighted pillars, 52 quantitative metrics, and 5 anti-gaming gates.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "timestamp_utc",
+    "track",
+    "substrate_id",
+    "horizon_ticks",
+    "pillar_scores",
+    "anti_gaming_gates",
+    "composite_ovi_score",
+    "stage_classification"
+  ],
+  "properties": {
+    "run_id": { "type": "string", "pattern": "^ALIFE-[A-Z0-9-]+$" },
+    "timestamp_utc": { "type": "string", "format": "date-time" },
+    "track": { "type": "string", "enum": ["TRACK_A_CONSTITUTIONAL", "TRACK_B_FERAL_SIM", "HYBRID_ABLATION"] },
+    "substrate_id": { "type": "string" },
+    "horizon_ticks": { "type": "integer", "minimum": 1 },
+    "composite_ovi_score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "stage_classification": {
+      "type": "string",
+      "enum": [
+        "STAGE_0_INERT",
+        "STAGE_1_NARROW_ALIFE",
+        "STAGE_2_AG_LIFE",
+        "STAGE_3_ALIFE_SINGULARITY",
+        "STAGE_4_SUPER_ALIFE",
+        "STAGE_5_CONVERGED_SYNTHESIS",
+        "STAGE_6_POST_BEYOND_SUPER_LIFE"
+      ]
+    },
+    "pillar_weights": {
+      "type": "object",
+      "properties": {
+        "P1_OEE_NOVELTY": { "const": 0.18 },
+        "P2_AUTOPOIESIS_PERSISTENCE": { "const": 0.12 },
+        "P3_HYPER_MORPHOGENESIS": { "const": 0.12 },
+        "P4_RECURSIVE_META_EVOLVABILITY": { "const": 0.16 },
+        "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": { "const": 0.12 },
+        "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": { "const": 0.10 },
+        "P7_MULTISCALE_AGENCY_INDIVIDUALITY": { "const": 0.12 },
+        "P8_FERAL_RESILIENCE_CRITICALITY": { "const": 0.08 }
+      }
+    },
+    "pillar_scores": {
+      "type": "object",
+      "required": [
+        "P1_OEE_NOVELTY",
+        "P2_AUTOPOIESIS_PERSISTENCE",
+        "P3_HYPER_MORPHOGENESIS",
+        "P4_RECURSIVE_META_EVOLVABILITY",
+        "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
+        "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+        "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
+        "P8_FERAL_RESILIENCE_CRITICALITY"
+      ],
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    "anti_gaming_gates": {
+      "type": "object",
+      "required": [
+        "white_noise_rejection_passed",
+        "intron_bloat_knockout_passed",
+        "spiegelman_penalty_factor",
+        "t0_scaffold_subtracted",
+        "dual_observer_verified",
+        "gamma_multiplier"
+      ],
+      "properties": {
+        "white_noise_rejection_passed": { "type": "boolean" },
+        "intron_bloat_knockout_passed": { "type": "boolean" },
+        "spiegelman_penalty_factor": { "type": "number", "minimum": 0, "maximum": 1 },
+        "t0_scaffold_subtracted": { "type": "boolean" },
+        "dual_observer_verified": { "type": "boolean" },
+        "gamma_multiplier": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "benchmarks": {
+      "type": "array",
+      "minItems": 52,
+      "items": {
+        "type": "object",
+        "required": ["benchmark_id", "pillar", "raw_value", "normalized_score", "status"],
+        "properties": {
+          "benchmark_id": { "type": "string", "pattern": "^BM-[A-Z]{3}-[0-9]{2}$" },
+          "pillar": { "type": "string" },
+          "raw_value": { "type": "number" },
+          "normalized_score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "status": { "type": "string", "enum": ["PASS", "WARN", "FAIL", "SINGULARITY_TRIGGER"] }
+        }
+      }
+    }
+  }
+}
