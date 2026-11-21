@@ -1,8 +1,8 @@
 {
-  "run_id": "ALIFE-OMEGA-20261121T101857Z",
-  "timestamp_utc": "2026-11-21T10:18:57.828106+00:00",
+  "run_id": "ALIFE-OMEGA-20261121T132224Z",
+  "timestamp_utc": "2026-11-21T13:22:24.752437+00:00",
   "track": "HYBRID_ABLATION",
-  "substrate_id": "WIN64-X86_64-AVX2-GFNI-6REPO-STACK",
+  "substrate_id": "WIN64-X86_64-AVX2-GFNI-LIVE-NATIVE-STACK",
   "horizon_ticks": 300,
   "pillar_weights": {
     "P1_OEE_NOVELTY": 0.18,
@@ -15,14 +15,14 @@
     "P8_FERAL_RESILIENCE_CRITICALITY": 0.08
   },
   "pillar_scores": {
-    "P1_OEE_NOVELTY": 100.0,
-    "P2_AUTOPOIESIS_PERSISTENCE": 77.59,
-    "P3_HYPER_MORPHOGENESIS": 70.18,
-    "P4_RECURSIVE_META_EVOLVABILITY": 77.59,
-    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 92.5,
+    "P1_OEE_NOVELTY": 83.84,
+    "P2_AUTOPOIESIS_PERSISTENCE": 82.55,
+    "P3_HYPER_MORPHOGENESIS": 81.49,
+    "P4_RECURSIVE_META_EVOLVABILITY": 95.16,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 98.83,
     "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 100.0,
-    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 88.0,
-    "P8_FERAL_RESILIENCE_CRITICALITY": 90.0
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 96.06,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 94.55
   },
   "anti_gaming_gates": {
     "white_noise_rejection_passed": true,
@@ -32,408 +32,436 @@
     "dual_observer_verified": true,
     "gamma_multiplier": 1.0
   },
-  "composite_ovi_score": 87.01,
+  "composite_ovi_score": 90.95,
   "stage_classification": "STAGE_5_CONVERGED_SYNTHESIS",
   "benchmarks": [
     {
       "benchmark_id": "BM-OEE-01",
-      "pillar": "P1_OEE_NOVELTY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 29.463,
+      "normalized_score": 69.23,
       "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-OEE-02",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 8799.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-03",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 17848.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-04",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.91,
+      "normalized_score": 96.91,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-05",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 166.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-06",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 1492.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-07",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 83.84,
+      "normalized_score": 83.84,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-AUT-01",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 92.05,
+      "normalized_score": 92.05,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AUT-02",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 59.24,
+      "normalized_score": 59.24,
+      "status": "WARN"
+    },
+    {
+      "benchmark_id": "BM-AUT-03",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 1679.3333,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-04",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 48.0,
+      "normalized_score": 48,
+      "status": "WARN"
+    },
+    {
+      "benchmark_id": "BM-AUT-05",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 82.55,
+      "normalized_score": 82.55,
       "status": "PASS"
     },
     {
-      "benchmark_id": "BM-MRP-03",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
+      "benchmark_id": "BM-AUT-06",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 82.55,
+      "normalized_score": 82.55,
       "status": "PASS"
     },
     {
-      "benchmark_id": "BM-REV-04",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
+      "benchmark_id": "BM-MRF-01",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 59.24,
+      "normalized_score": 59.24,
+      "status": "WARN"
+    },
+    {
+      "benchmark_id": "BM-MRF-02",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 90.4,
+      "normalized_score": 90.4,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-MRF-03",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-MRF-04",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 0.9116,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-MRF-05",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 0.0,
+      "normalized_score": 0.0,
+      "status": "FAIL"
+    },
+    {
+      "benchmark_id": "BM-MRF-06",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 78.21,
+      "normalized_score": 78.21,
       "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-EVO-01",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 92.05,
+      "normalized_score": 92.05,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-02",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 93.342,
+      "normalized_score": 93.34,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-03",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-04",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 225.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-05",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 23.014,
+      "normalized_score": 23.01,
+      "status": "FAIL"
+    },
+    {
+      "benchmark_id": "BM-EVO-06",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 95.16,
+      "normalized_score": 95.16,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-07",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 95.16,
+      "normalized_score": 95.16,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-01",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-02",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 95.35,
+      "normalized_score": 95.35,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-03",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 99.9735,
+      "normalized_score": 99.97,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-04",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 7.573,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-ASM-05",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 3.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-06",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 98.83,
+      "normalized_score": 98.83,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-01",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-02",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 2.0994,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-03",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-04",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-05",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 100.0,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-THM-06",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
       "raw_value": 100.0,
       "normalized_score": 100.0,
-      "status": "PASS"
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-AGY-07",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
+      "benchmark_id": "BM-AGN-01",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 98.04,
+      "normalized_score": 98.04,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-FER-08",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
+      "benchmark_id": "BM-AGN-02",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 91.494,
+      "normalized_score": 91.49,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-OEE-09",
-      "pillar": "P1_OEE_NOVELTY",
+      "benchmark_id": "BM-AGN-03",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 99.087,
+      "normalized_score": 99.09,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-04",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 98.152,
+      "normalized_score": 98.15,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-05",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
       "raw_value": 100.0,
       "normalized_score": 100.0,
-      "status": "PASS"
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-AUT-10",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
+      "benchmark_id": "BM-AGN-06",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.06,
+      "normalized_score": 96.06,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-MRP-11",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
+      "benchmark_id": "BM-AGN-07",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.06,
+      "normalized_score": 96.06,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-REV-12",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-ASM-13",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-THM-14",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "benchmark_id": "BM-FRL-01",
+      "pillar": "P8: Feral Resilience & Criticality",
       "raw_value": 100.0,
       "normalized_score": 100.0,
-      "status": "PASS"
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-AGY-15",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-FER-16",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-OEE-17",
-      "pillar": "P1_OEE_NOVELTY",
+      "benchmark_id": "BM-FRL-02",
+      "pillar": "P8: Feral Resilience & Criticality",
       "raw_value": 100.0,
       "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-03",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 78.21,
+      "normalized_score": 78.21,
       "status": "PASS"
     },
     {
-      "benchmark_id": "BM-AUT-18",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
+      "benchmark_id": "BM-FRL-04",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 5.7544,
+      "normalized_score": 100.0,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-MRP-19",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
+      "benchmark_id": "BM-FRL-05",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 94.55,
+      "normalized_score": 94.55,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-REV-20",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
+      "benchmark_id": "BM-FRL-06",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 94.55,
+      "normalized_score": 94.55,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
-      "benchmark_id": "BM-ASM-21",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-THM-22",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
+      "benchmark_id": "BM-FRL-07",
+      "pillar": "P8: Feral Resilience & Criticality",
       "raw_value": 100.0,
       "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AGY-23",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-FER-24",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-OEE-25",
-      "pillar": "P1_OEE_NOVELTY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AUT-26",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-MRP-27",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-REV-28",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-ASM-29",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-THM-30",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AGY-31",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-FER-32",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-OEE-33",
-      "pillar": "P1_OEE_NOVELTY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AUT-34",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-MRP-35",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-REV-36",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-ASM-37",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-THM-38",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AGY-39",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-FER-40",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-OEE-41",
-      "pillar": "P1_OEE_NOVELTY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AUT-42",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-MRP-43",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-REV-44",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-ASM-45",
-      "pillar": "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION",
-      "raw_value": 92.5,
-      "normalized_score": 92.5,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-THM-46",
-      "pillar": "P6_THERMODYNAMIC_SUBSTRATE_MASTERY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AGY-47",
-      "pillar": "P7_MULTISCALE_AGENCY_INDIVIDUALITY",
-      "raw_value": 88.0,
-      "normalized_score": 88.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-FER-48",
-      "pillar": "P8_FERAL_RESILIENCE_CRITICALITY",
-      "raw_value": 90.0,
-      "normalized_score": 90.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-OEE-49",
-      "pillar": "P1_OEE_NOVELTY",
-      "raw_value": 100.0,
-      "normalized_score": 100.0,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-AUT-50",
-      "pillar": "P2_AUTOPOIESIS_PERSISTENCE",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-MRP-51",
-      "pillar": "P3_HYPER_MORPHOGENESIS",
-      "raw_value": 70.18,
-      "normalized_score": 70.18,
-      "status": "PASS"
-    },
-    {
-      "benchmark_id": "BM-REV-52",
-      "pillar": "P4_RECURSIVE_META_EVOLVABILITY",
-      "raw_value": 77.59,
-      "normalized_score": 77.59,
-      "status": "PASS"
+      "status": "SINGULARITY_TRIGGER"
     }
   ],
   "engine_receipts": {
     "tier1_autophage": {
+      "version": "1.2.0",
       "rc": 0,
-      "elapsed_s": 1.4627,
+      "elapsed_s": 1.8837,
       "gates_passed": 18,
       "gates_failed": 0,
-      "feral_ovi": 77.59,
-      "bedau_packard_anew": 34.093,
-      "lean4_theorems": 31
+      "feral_ovi": 92.05,
+      "bedau_packard_anew": 29.463,
+      "weismann_index": 23.014,
+      "thermo_drift": 0.0,
+      "lean4_theorems": 38,
+      "lean4_pure_axioms_verified": true
     },
     "tier2_cellulogonic": {
+      "version": "1.3.0",
       "rc": 0,
-      "elapsed_s": 0.3258,
+      "elapsed_s": 0.507,
       "gates_passed": 24,
       "gates_total": 24,
       "mutants_caught": 8,
-      "embryo_covi": 58.18,
-      "lean4_theorems": 58
+      "mutants_total": 8,
+      "embryo_covi": 59.24,
+      "embryo_alive": 48,
+      "embryo_active_axons": 0,
+      "embryo_homo_cad_pct": 90.4,
+      "embryo_mass_res": 0,
+      "embryo_energy_res": 0,
+      "lean4_theorems": 58,
+      "lean4_pure_axioms_verified": true
     },
     "tier2plus_omega": {
+      "version": "5.0.0",
       "rc": 0,
-      "elapsed_s": 0.1007,
-      "gates_passed": 43,
-      "gates_total": 43,
-      "mutants_caught": 10,
-      "master_sha256": "d360f8db3a8b2e7973507f3c9d70692d0d9fcdd8826443b8bb4a5bf86617f09f",
-      "lean4_theorems": 61
+      "elapsed_s": 0.636,
+      "gates_passed": 54,
+      "gates_total": 54,
+      "mutants_caught": 16,
+      "mutants_total": 16,
+      "master_sha256": "3604e0353ffdde98f2dbafc02569d3254c278ac8ca12d145b43fb27873f10c15",
+      "tb13_nov2": 8799,
+      "tb13_niches": 17848,
+      "tb14_confluence_exact": true,
+      "tb14_ssin_pct": 95.35,
+      "tb15_ciss_ee": 0.999735,
+      "tb15_levin_2h_clean": true,
+      "tb15_wireless_reach": 0.9804,
+      "tb16_perturb_r2": 0.91494,
+      "tb16_essential_auroc": 0.99087,
+      "tb16_proj_mass_res": 0.0,
+      "tb16_six_tier_int_drift": 0,
+      "lean4_theorems": 66,
+      "lean4_pure_axioms_verified": true
     },
     "tier34_asmodensius": {
       "policy": "READ_ONLY_RESPECTING_WRITER_LOCK",
+      "writer_lock_present": true,
       "az_run_present": true,
       "az_live_present": true,
-      "verified_ctest_baseline": "76/76 (build/z, 22/22 real modules)"
+      "note": "External sibling repo inspected read-only; not executed in this runner while WRITER.lock is held."
     }
   },
-  "total_lean4_theorems": 150
+  "total_lean4_theorems": 162,
+  "all_lean4_pure_axioms_verified": true
 }

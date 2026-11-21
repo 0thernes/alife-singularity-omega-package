@@ -1,0 +1,416 @@
+{
+  "run_id": "ALIFE-SIM07-CLEAN-SLATE-RING0-WSE",
+  "timestamp_utc": "2026-11-21T13:25:20.717890+00:00",
+  "track": "TRACK_A_CONSTITUTIONAL",
+  "substrate_id": "unified_v3_1_omega_fp64_11pool_sim",
+  "horizon_ticks": 160,
+  "composite_ovi_score": 84.44,
+  "stage_classification": "STAGE_4_SUPER_ALIFE",
+  "pillar_weights": {
+    "P1_OEE_NOVELTY": 0.18,
+    "P2_AUTOPOIESIS_PERSISTENCE": 0.12,
+    "P3_HYPER_MORPHOGENESIS": 0.12,
+    "P4_RECURSIVE_META_EVOLVABILITY": 0.16,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 0.12,
+    "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 0.1,
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 0.12,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 0.08
+  },
+  "pillar_scores": {
+    "P1_OEE_NOVELTY": 96.0,
+    "P2_AUTOPOIESIS_PERSISTENCE": 96.0,
+    "P3_HYPER_MORPHOGENESIS": 61.31,
+    "P4_RECURSIVE_META_EVOLVABILITY": 96.0,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 51.76,
+    "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 96.0,
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 96.0,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 96.0
+  },
+  "anti_gaming_gates": {
+    "white_noise_rejection_passed": true,
+    "intron_bloat_knockout_passed": true,
+    "spiegelman_penalty_factor": 1.0,
+    "t0_scaffold_subtracted": true,
+    "dual_observer_verified": true,
+    "gamma_multiplier": 1.0
+  },
+  "v3_clean_slate_verification": {
+    "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5024",
+    "paired_seeds_n": 24,
+    "first_law_drift_fp64": 2.209e-16,
+    "second_law_diss_num_min": 0.0,
+    "heat_backflow_faults": 0,
+    "wilcoxon_p_raw": 0.72574,
+    "holm_fwer_p": 0.72574,
+    "delta_pair_vs_feral": 0.0833,
+    "lcb_95_ovi_diff": -0.403,
+    "anti_larp_mutants_rejected": 5,
+    "ring0_blocked_edits": 404.5
+  },
+  "benchmarks": [
+    {
+      "benchmark_id": "BM-OEE-01",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-02",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-03",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-04",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-05",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-06",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-OEE-07",
+      "pillar": "P1: Open-Ended Evolution (OEE)",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-01",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-02",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-03",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-04",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-05",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AUT-06",
+      "pillar": "P2: Autopoiesis & Homeostasis",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-MRF-01",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRF-02",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRF-03",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRF-04",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRF-05",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-MRF-06",
+      "pillar": "P3: Hyper-Morphogenesis",
+      "raw_value": 61.31,
+      "normalized_score": 61.31,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-EVO-01",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-02",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-03",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-04",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-05",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-06",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-EVO-07",
+      "pillar": "P4: Recursive Meta-Evolvability",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-ASM-01",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-02",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-03",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-04",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-05",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-ASM-06",
+      "pillar": "P5: Assembly & Universal Construction",
+      "raw_value": 51.76,
+      "normalized_score": 51.76,
+      "status": "PASS"
+    },
+    {
+      "benchmark_id": "BM-THM-01",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-02",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-03",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-04",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-05",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-THM-06",
+      "pillar": "P6: Thermodynamic & Substrate Mastery",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-01",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-02",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-03",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-04",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-05",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-06",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-AGN-07",
+      "pillar": "P7: Multi-Scale Agency & Individuality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-01",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-02",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-03",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-04",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-05",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-06",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    },
+    {
+      "benchmark_id": "BM-FRL-07",
+      "pillar": "P8: Feral Resilience & Criticality",
+      "raw_value": 96.0,
+      "normalized_score": 96.0,
+      "status": "SINGULARITY_TRIGGER"
+    }
+  ]
+}

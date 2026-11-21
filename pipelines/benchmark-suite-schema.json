@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alifeops.omega/schemas/ovbs-52-v2.json",
-  "title": "Omega Vitality Benchmark Suite (OVBS-52) Specification",
-  "description": "Machine-readable schema for evaluating Artificial Life, AG-Life, A-Life Singularity, Super A-Life, and Post-Singularity SUPER LIFE across 8 weighted pillars, 52 quantitative metrics, and 5 anti-gaming gates.",
+  "$id": "https://alifeops.omega/schemas/ovbs-52-v3.2-unified.json",
+  "title": "Unified Omega Vitality (OVBS-52) & Clean-Slate v3.0 Verification Schema (v3.2-Omega)",
+  "description": "Machine-readable schema evaluating Artificial Life, AG-Life, A-Life Singularity, Super A-Life, and Post-Singularity SUPER LIFE across 8 weighted OVBS-52 pillars, 52 metrics, 5 anti-gaming gates, and optional/extended Clean-Slate v3.0 11-Pool FP64 conservation, Holm-Bonferroni FWER statistics, and 5-mutant Anti-LARP verification.",
   "type": "object",
   "required": [
     "run_id",
@@ -84,6 +84,34 @@
         "gamma_multiplier": { "type": "number", "minimum": 0, "maximum": 1 }
       }
     },
+    "v3_clean_slate_verification": {
+      "type": "object",
+      "required": [
+        "seed_firewall_tier",
+        "paired_seeds_n",
+        "first_law_drift_fp64",
+        "second_law_diss_num_min",
+        "heat_backflow_faults",
+        "wilcoxon_p_raw",
+        "holm_fwer_p",
+        "delta_pair_vs_feral",
+        "lcb_95_ovi_diff",
+        "anti_larp_mutants_rejected"
+      ],
+      "properties": {
+        "seed_firewall_tier": { "type": "string" },
+        "paired_seeds_n": { "type": "integer", "minimum": 1 },
+        "first_law_drift_fp64": { "type": "number", "minimum": 0, "exclusiveMaximum": 1e-12 },
+        "second_law_diss_num_min": { "type": "number", "minimum": -1e-15 },
+        "heat_backflow_faults": { "type": "integer", "const": 0 },
+        "wilcoxon_p_raw": { "type": "number", "minimum": 0, "maximum": 1 },
+        "holm_fwer_p": { "type": "number", "minimum": 0, "maximum": 1 },
+        "delta_pair_vs_feral": { "type": "number", "minimum": -1, "maximum": 1 },
+        "lcb_95_ovi_diff": { "type": "number" },
+        "anti_larp_mutants_rejected": { "type": "integer", "minimum": 5, "maximum": 5 },
+        "ring0_blocked_edits": { "type": "number", "minimum": 0 }
+      }
+    },
     "benchmarks": {
       "type": "array",
       "minItems": 52,
@@ -98,6 +126,8 @@
           "status": { "type": "string", "enum": ["PASS", "WARN", "FAIL", "SINGULARITY_TRIGGER"] }
         }
       }
-    }
+    },
+    "engine_receipts": { "type": "object" },
+    "total_lean4_theorems": { "type": "integer", "minimum": 0 }
   }
 }
