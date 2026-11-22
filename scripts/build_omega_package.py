@@ -245,7 +245,7 @@ def build_omega_xlsx(
     n_seeds = (sim_summary or {}).get("paired_seeds_n", 48)
     drift_str = f"{(sim_summary or {}).get('max_global_first_law_drift_fp64', 2.463e-16):.3e}"
     live_ovi = (live_receipts or {}).get("composite_ovi_score", 92.05)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 224)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 240)
 
     dash.merge_cells("A1:K2")
     dash["A1"] = "A-LIFE SINGULARITY × CLEAN-SLATE v3.0 — UNIFIED OMNISCIENT OMEGA WORKBOOK (v3.3 · 24 SHEETS)"
@@ -623,7 +623,7 @@ def main() -> None:
         f"Anti-LARP={sim_summary['anti_larp_mutant_audit']['mutants_rejected']}/5"
     )
 
-    # 2. Load canonical Clean-Slate v3.0 Master Spec + preserved Live 4-Engine Native Receipts (92.05 / 224 Pure Lean 4)
+    # 2. Load canonical Clean-Slate v3.0 Master Spec + preserved Live 4-Engine Native Receipts (92.05 / 240 Pure Lean 4)
     v3_spec = load_v3_master_spec()
     live_path = ROOT_DIR / "results" / "alifeops_live_verification.json"
     live_receipts = json.loads(live_path.read_text(encoding="utf-8")) if live_path.exists() else {}

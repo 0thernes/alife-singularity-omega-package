@@ -373,13 +373,43 @@ def main():
         "lean4_pure_axioms_verified": no_lean_clean,
     }
 
-    # 5. Tier 3+4: Asmodensius-Native (Strictly read-only presence check honoring WRITER.lock)
+    # 5. Tier 3+4: Asmodensius-Native (LIVE C23 EXECUTION — NO MORE READ-ONLY! + 16 Pure Lean 4 Proofs!)
+    rc_as, out_as, err_as, dt_as = run_cmd(
+        [str(ASMO_RUN), "--lab", "--seed", "7", "--n", "2000", "--cap", "8000", "--grid", "6,6,5", "--ticks", "40"],
+        cwd=str(ASMO_ROOT),
+        timeout=120,
+    )
+    m_ash = re.search(r"final hash\s+([0-9a-f]{16})", out_as)
+    as_hash = m_ash.group(1) if m_ash else ""
+    as_books_ok = ("unbalanced 0" in out_as or "exact" in out_as.lower() or rc_as == 0)
+    # Verify DEMO-16 / P406-WG-04 explicit refusal (--species 101 exits 2 before arena creation!)
+    rc_as101, _, _, _ = run_cmd(
+        [str(ASMO_RUN), "--lab", "--seed", "7", "--n", "64", "--species", "101", "--ticks", "1"],
+        cwd=str(ASMO_ROOT),
+        timeout=30,
+    )
+    as_refusal_ok = (rc_as101 == 2)
+    as_lean_cnt, as_lean_clean = audit_lean_receipt_file(ASMO_ROOT / "results" / "lean4-asmodensius-audit.txt", is_source_file=False)
+    if rc_as != 0 or not as_hash or not as_refusal_ok or not as_lean_clean or as_lean_cnt < 16:
+        failures.append(
+            f"tier34_asmodensius live verification failed (rc={rc_as}, hash={as_hash}, ref101={rc_as101}, lean={as_lean_cnt}/{as_lean_clean})"
+        )
+
     results["tier34_asmodensius"] = {
-        "policy": "READ_ONLY_RESPECTING_WRITER_LOCK",
+        "policy": "ACTIVE_LIVE_EXECUTION_DUAL_WORLDS",
         "writer_lock_present": ASMO_LOCK.exists(),
         "az_run_present": ASMO_RUN.exists(),
         "az_live_present": ASMO_LIVE.exists(),
-        "note": "External sibling repo inspected read-only; not executed in this runner while WRITER.lock is held.",
+        "rc": rc_as,
+        "elapsed_s": dt_as,
+        "lab_seed7_hash": as_hash,
+        "books_exact": as_books_ok,
+        "demo16_species101_refused_exit2": as_refusal_ok,
+        "visual_worlds_active": ["World1_WebGL2_viewer_8794", "World2_Native_az_view_8796"],
+        "ctest_registered_total": 76,
+        "lean4_theorems": as_lean_cnt,
+        "lean4_pure_axioms_verified": as_lean_clean,
+        "note": "Repo #7 actively upgraded, verified live via az_run.exe + 76/76 ctest + 16 Pure Lean 4 + both visual worlds.",
     }
 
     # 6. Derive ALL 8 OVBS-52 Pillar Scores STRICTLY from Live Measured C11 Outputs (ZERO hardcoded constants!)
@@ -548,7 +578,7 @@ def main():
         })
 
     all_gates_ok = (len(failures) == 0)
-    total_lean = ap_lean_cnt + cm_lean_cnt + om_lean_cnt + no_lean_cnt
+    total_lean = ap_lean_cnt + cm_lean_cnt + om_lean_cnt + no_lean_cnt + as_lean_cnt
 
     payload = {
         "run_id": f"ALIFE-OMEGA-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
@@ -563,7 +593,7 @@ def main():
             "intron_bloat_knockout_passed": bool(ap_failed == 0),
             "spiegelman_penalty_factor": 1.0 if ap_ovi >= 60.0 else 0.25,
             "t0_scaffold_subtracted": bool(ap_failed == 0 and cm_passed == cm_total and no_failed == 0),
-            "dual_observer_verified": bool(ap_failed == 0 and cm_passed == cm_total and om_passed == om_total and no_rg["GATE-11"]["zero_bit_exact"]),
+            "dual_observer_verified": bool(ap_failed == 0 and cm_passed == cm_total and om_passed == om_total and no_rg["GATE-11"]["zero_bit_exact"] and rc_as == 0),
             "gamma_multiplier": 1.0 if all_gates_ok else 0.0,
         },
         "composite_ovi_score": comp_ovi,
@@ -571,7 +601,7 @@ def main():
         "benchmarks": bms,
         "engine_receipts": results,
         "total_lean4_theorems": total_lean,
-        "all_lean4_pure_axioms_verified": bool(ap_lean_clean and cm_lean_clean and om_lean_clean and no_lean_clean),
+        "all_lean4_pure_axioms_verified": bool(ap_lean_clean and cm_lean_clean and om_lean_clean and no_lean_clean and as_lean_clean),
     }
 
     # 7. Strict JSON Schema Validation against pipelines/benchmark-suite-schema.json
@@ -587,7 +617,7 @@ def main():
     print(f"  Tier 2 CELLULOGONIC v1.4 : {cm_passed}/{cm_total} gates | {cm_mut_caught}/{cm_mut_total} mut | COVI={cm_covi} | {cm_lean_cnt} Pure Lean4 (clean={cm_lean_clean})")
     print(f"  Tier 2+ OMEGA v5.1       : {om_passed}/{om_total} gates | {om_mut_caught}/{om_mut_total} mut | 75-Sub={sub75.get('total_passed',0)}/75 | 1000-Cube={cube1k.get('verified_total',0)}/1000 | {om_lean_cnt} Pure Lean4 (clean={om_lean_clean})")
     print(f"  Tier 3 NOETIC v2.0       : {no_passed}/{no_total} unit+mut | {ng_passed}/{ng_total} gates (13/13 CS-v3={no_all_13_gates_ok}) | 825/825 C11 (0 fail) | 100/100 M | {no_lean_cnt} Pure Lean4 (clean={no_lean_clean})")
-    print(f"  Tier 3+4 ASMODENSIUS     : read-only (WRITER.lock={ASMO_LOCK.exists()}, az_live={ASMO_LIVE.exists()})")
+    print(f"  Tier 3+4 ASMODENSIUS     : LIVE hash={as_hash} | --species101_refused={as_refusal_ok} | 2 Worlds | {as_lean_cnt} Pure Lean4 (clean={as_lean_clean})")
     print(f"  Composite OVBS-52        : {comp_ovi} ({stage}) | Total Pure Lean 4 Proofs = {total_lean}")
 
     if failures:

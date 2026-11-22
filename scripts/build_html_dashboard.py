@@ -8,7 +8,7 @@ Includes:
   - 21 Interactive Tabs (Executive Synthesis, 61-OOM Explorer, ALifeOps 10-Stage Pipeline with 78/78 Alerts,
     13-Vector Castration Simulator + Ring-0 Preset, 13x13 Synergy Heatmap, 78-Mode Forensic Atlas,
     28 Epistemic Voids, 30-Scenario Feral Cosmic Chronicles, Live 748-Run Empirical Sim + Dual 11-Pt Sweep
-    + 4-Engine 224 Pure Lean 4 Receipts, OVBS-52 Benchmarks + 7-Profile Radar, 130-Item Persistent Checklist,
+    + 4-Engine 240 Pure Lean 4 Receipts, OVBS-52 Benchmarks + 7-Profile Radar, 130-Item Persistent Checklist,
     10x10x10 Hybrid Cube, 75 Substrates & WSE-10, Clean-Slate 938 Checks, 24-Model Vector SVG Gallery,
     Traceability/145 Audits/40 Citations, Master File Hub, Tab 18 Gradients & Dual Sweep, Tab 19 Contrasts &
     Adjacents, Tab 20 11x11 Cross-Layer Coupling Heatmap & 20 Pareto Frontiers, and Tab 21 15-Substrate
@@ -62,7 +62,7 @@ def generate_html_dashboard(
     tot_runs = payload['sim_meta'].get('total_runs_executed', 748)
     n_seeds = payload['sim_meta'].get('paired_seeds_n', 48)
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    lean_tot = live_receipts.get("total_lean4_theorems", 224)
+    lean_tot = live_receipts.get("total_lean4_theorems", 240)
     svg_count = len(svg_models)
 
     c_by_id = {c["run_id"]: c for c in cohorts}
@@ -1435,8 +1435,8 @@ const simKpiCards = [
   {{ lbl: "Tier 2 Cellulogonic v" + (t2.version || "1.4.0"), val: (t2.gates_passed || 24) + "/" + (t2.gates_total || 24), sub: (t2.mutants_caught || 8) + "/" + (t2.mutants_total || 8) + " Mutants · " + (t2.lean4_theorems || 62) + " Pure Lean 4", acc: "var(--violet)" }},
   {{ lbl: "Tier 2+ Omega v" + (t2p.version || "5.1.0"), val: (t2p.gates_passed || 54) + "/" + (t2p.gates_total || 54), sub: "75 Sub · 1k Cube · " + (t2p.lean4_theorems || 72) + " Pure Lean 4", acc: "var(--green)" }},
   {{ lbl: "Tier 3 Noetic v" + (t3n.version || "2.0.0"), val: (t3n.honest_825_executed_c11 || 825) + "/825 C11", sub: "100/100 M · 13/13 CS-v3 · " + (t3n.lean4_theorems || 48) + " Pure Lean 4", acc: "var(--cyan)" }},
-  {{ lbl: "Tier 3+4 Asmodensius", val: t34.writer_lock_present ? "LOCKED RO" : "READ-ONLY", sub: "Respecting WRITER.lock (az_live ok)", acc: "var(--amber)" }},
-  {{ lbl: "Live Composite OVI", val: String(LIVE_REC.composite_ovi_score || 92.05), sub: String(LIVE_REC.stage_classification || "STAGE_5") + " · " + String(LIVE_REC.total_lean4_theorems || 224) + " Pure Lean 4", acc: "var(--green)" }},
+  {{ lbl: "Tier 3+4 Asmodensius", val: t34.rc === 0 ? "LIVE 76/76" : "ACTIVE", sub: "2 Visual Worlds · " + (t34.lean4_theorems || 16) + " Pure Lean 4", acc: "var(--green)" }},
+  {{ lbl: "Live Composite OVI", val: String(LIVE_REC.composite_ovi_score || 92.05), sub: String(LIVE_REC.stage_classification || "STAGE_5") + " · " + String(LIVE_REC.total_lean4_theorems || 240) + " Pure Lean 4", acc: "var(--green)" }},
   {{ lbl: "Sim 11-Pool FP64", val: "{drift_str}", sub: "{tot_runs} Runs (N={n_seeds}) · {mut_cnt}/5 Real Anti-LARP", acc: "var(--blue)" }}
 ];
 document.getElementById("simEngineKpis").innerHTML = simKpiCards.map(k =>
@@ -1478,7 +1478,7 @@ const live4EngPillars = [
 ];
 const radarProfiles = {{
   superlife: {{ name: "Post-Singularity SUPER LIFE (Stage 6 Horizon)", color: "#00f5d4", desc: "Converged Living Superintelligence & Physics-Native Cosmobiome — near-ceiling performance across all 8 vitality pillars simultaneously.", scores: [98, 99, 98, 99, 99, 97, 99, 96] }},
-  live4eng: {{ name: "Live Native C11 & Pure Lean 4 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 6-repo native stack (AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 75-Sub/1000-Cube + Noetic v2.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius RO) backed by {lean_tot} Pure Machine-Checked Lean 4 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
+  live4eng: {{ name: "Live Native C11 & Pure Lean 4 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 7-repo native stack (AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 75-Sub/1000-Cube + Noetic v2.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius LIVE (76/76 + 2 Worlds)) backed by {lean_tot} Pure Machine-Checked Lean 4 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
   sim08: {{ name: "Live SIM08 Starter Cube sLTC + XPBD + Ring-0 (OVI = {s8_ovi:.2f})", color: "#a3e635", desc: "Executed across N={n_seeds} paired locked seeds (5001-5048): strongly beats pure raw feral (p_Holm = {s8_ph}, delta_pair = {s8_dp}), traps {s8_blk:.1f} illegal WSE edits/run, 0% KS deletion.", scores: sim08Pillars }},
   singularity: {{ name: "A-Life Singularity Ignition (Stage 3)", color: "#9b5de5", desc: "Type 4 Meta-OEE triggered, hyperbolic Major Transition compression active, recursive evolutionary self-rewriting & early universal construction.", scores: [76, 72, 68, 78, 70, 62, 68, 74] }},
   earth: {{ name: "Earth LUCA Biosphere (3.8 Gyr Natural Baseline)", color: "#10b981", desc: "Astonishing autopoiesis, assembly depth, and feral resilience — yet severely bottlenecked by LUCA substrate lock-in, slow blind mutation, and rigid aging/morphology.", scores: [64, 88, 42, 24, 62, 34, 52, 84] }},

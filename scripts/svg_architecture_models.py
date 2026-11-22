@@ -303,7 +303,7 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
     cm = er.get("tier2_cellulogonic", {})
     om = er.get("tier2plus_omega", {})
     no = er.get("tier3_noetic_organism", {})
-    lean_tot = live_receipts.get("total_lean4_theorems", 224)
+    lean_tot = live_receipts.get("total_lean4_theorems", 240)
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
 
     tiers = [
@@ -431,7 +431,7 @@ def build_model_20_omniscient_topology(
     n_spc = file_counts.get("specs", 4)
     n_res = file_counts.get("results", 10)
     n_scr = file_counts.get("scripts", 12)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 224)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 240)
     tot_runs = (sim_summary or {}).get("total_runs_executed", 748)
 
     body = f"""
@@ -619,7 +619,7 @@ def build_model_22_comparative_adjacents(
     """MODEL 22: Cross-Layer Comparative Contrast, Substrate Adjacency Corridors & Adjacent-Possible Manifold."""
     rec = live_receipts or {}
     comp_ovi = rec.get("composite_ovi_score", 92.05)
-    tot_lean = rec.get("total_lean4_theorems", 224)
+    tot_lean = rec.get("total_lean4_theorems", 240)
     cohorts = {c["run_id"]: c for c in (sim_summary or {}).get("cohorts", [])}
     ovi8 = cohorts.get("SIM08_HYBRID_CUBE_SLTC_XPBD", {}).get("composite_ovi", 85.48)
     ovi1 = cohorts.get("SIM01_PURE_RAW_FERAL", {}).get("composite_ovi", 83.57)
@@ -686,7 +686,7 @@ def build_model_23_layer_coupling_and_pareto(live_receipts: dict | None = None) 
 
     rec = live_receipts or {}
     comp_ovi = rec.get("composite_ovi_score", 92.05)
-    tot_lean = rec.get("total_lean4_theorems", 224)
+    tot_lean = rec.get("total_lean4_theorems", 240)
     short_l = ["L0", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"]
 
     parts = [

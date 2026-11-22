@@ -189,7 +189,7 @@ def build_v3_master_specs_4formats(
     unified["spec_meta"]["liveEmpiricalCohortsCount"] = len(sim_summary["cohorts"])
     unified["spec_meta"]["liveEmpiricalTotalRuns"] = sim_summary.get("total_runs_executed", 748)
     unified["spec_meta"]["liveEmpiricalPairedSeedsN"] = sim_summary.get("paired_seeds_n", 48)
-    unified["spec_meta"]["liveNativeLean4Theorems"] = live_receipts.get("total_lean4_theorems", 224)
+    unified["spec_meta"]["liveNativeLean4Theorems"] = live_receipts.get("total_lean4_theorems", 240)
     unified["spec_meta"]["liveNativeCompositeOvi"] = live_receipts.get("composite_ovi_score", 92.05)
 
     # Enrich 1,000 cube cells in place with Omega join fields
@@ -269,7 +269,7 @@ def build_v3_master_specs_4formats(
         _xml_el(meta_el, "UnifiedTelemetryAlertsWired", "78")
         _xml_el(meta_el, "LiveEmpiricalTotalRuns", str(sim_summary.get("total_runs_executed", 748)))
         _xml_el(meta_el, "LiveEmpiricalPairedSeedsN", str(sim_summary.get("paired_seeds_n", 48)))
-        _xml_el(meta_el, "LiveNativeLean4Theorems", str(live_receipts.get("total_lean4_theorems", 224)))
+        _xml_el(meta_el, "LiveNativeLean4Theorems", str(live_receipts.get("total_lean4_theorems", 240)))
         _xml_el(meta_el, "LiveNativeCompositeOvi", str(live_receipts.get("composite_ovi_score", 92.05)))
 
     fus_el = _xml_el(root_el, "OmegaSingularityFusion", attrib={"version": "3.3.0-omega"})
@@ -384,7 +384,7 @@ def build_v3_master_specs_4formats(
     eng_el = _xml_el(fus_el, "LiveNativeEngineReceipts", attrib={
         "compositeOvi": str(live_receipts.get("composite_ovi_score", 92.05)),
         "stage": str(live_receipts.get("stage_classification", "STAGE_5_CONVERGED_SYNTHESIS")),
-        "lean4Theorems": str(live_receipts.get("total_lean4_theorems", 224)),
+        "lean4Theorems": str(live_receipts.get("total_lean4_theorems", 240)),
         "pureAxiomsVerified": str(live_receipts.get("all_lean4_pure_axioms_verified", True)).lower(),
     })
     for ek, ev in live_receipts.get("engine_receipts", {}).items():
@@ -412,7 +412,7 @@ def build_v3_master_specs_4formats(
     tot_runs = sim_summary.get("total_runs_executed", 748)
     n_seeds = sim_summary.get("paired_seeds_n", 48)
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    tot_lean = live_receipts.get("total_lean4_theorems", 224)
+    tot_lean = live_receipts.get("total_lean4_theorems", 240)
     txt_add = [
         "",
         "=" * 108,
@@ -574,7 +574,7 @@ def build_v3_workbooks(
     tot_runs = (sim_summary or {}).get("total_runs_executed", 748)
     n_seeds = (sim_summary or {}).get("paired_seeds_n", 48)
     fp64_drift = (sim_summary or {}).get("max_global_first_law_drift_fp64", 2.463e-16)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 224)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 240)
     live_ovi = (live_receipts or {}).get("composite_ovi_score", 92.05)
 
     # Prepare canonical sheet tuples for v3.0 Master Workbook (17 sheets = 1 Overview + 16 data sheets)
@@ -848,7 +848,7 @@ def build_v3_markdown_reports(
     t2p = eng.get("tier2plus_omega", {})
     t3n = eng.get("tier3_noetic_organism", {})
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    tot_lean = live_receipts.get("total_lean4_theorems", 224)
+    tot_lean = live_receipts.get("total_lean4_theorems", 240)
     eng_summary_md = (
         f"`AUTOPHAGE v{t1.get('version','1.2.0')}` ({t1.get('gates_passed',18)}/18 gates, {t1.get('lean4_theorems',38)} Pure Lean 4), "
         f"`Cellulogonic Mecha v{t2.get('version','1.3.0')}` ({t2.get('gates_passed',24)}/{t2.get('gates_total',24)} gates, {t2.get('mutants_caught',8)}/{t2.get('mutants_total',8)} mutants, {t2.get('lean4_theorems',58)} Pure Lean 4), "
@@ -1052,7 +1052,7 @@ def _build_omega_html_injection(
     mut_cnt = sim_summary["anti_larp_mutant_audit"]["mutants_rejected"]
     tot_runs = sim_summary.get("total_runs_executed", 748)
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    lean_tot = live_receipts.get("total_lean4_theorems", 224)
+    lean_tot = live_receipts.get("total_lean4_theorems", 240)
 
     return f"""
 <div style="page-break-before:always; break-before:page;"></div>
@@ -1135,7 +1135,7 @@ def build_v3_htmls_and_all_3_pdfs(
 
     models_15_24 = svg_models[14:]
     tot_runs = sim_summary.get("total_runs_executed", 748)
-    tot_lean = live_receipts.get("total_lean4_theorems", 224)
+    tot_lean = live_receipts.get("total_lean4_theorems", 240)
 
     # 1. ALife-Build-Framework-Template.html
     src_fw_html = (V3_SOURCE_DIR / "ALife-Build-Framework-Template.html").read_text(encoding="utf-8")

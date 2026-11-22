@@ -1151,13 +1151,13 @@
 
 ### 6.3 Companion Omega Operational Checklist (`CHK-111..CHK-130` Fusion Locks) & 4-Engine Pure Lean 4 Receipts
 - **`csv/07_master_operational_checklist.csv`:** Expanded to **130 operational items** (including dedicated Phase 11 Clean-Slate v3.0 Fusion locks `CHK-111..CHK-130` verifying every Release Gate `GATE-01..13`, `Philox4x32-10`, 11-Pool FP64 `<1e-12`, and `0 U+2611` hygiene).
-- **Live 4-Engine Native C++ / Pure Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE v1.3.0` (18/18 gates, 42 Pure Lean 4), `Cellulogonic Mecha v1.4.0` (24/24 gates, 8/8 mutants, 62 Pure Lean 4), `Cellular Engine Omega v5.1.0` (54/54 gates, 16/16 mutants, 72 Pure Lean 4), `Noetic Organism Omega v2.0.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 48 Pure Lean 4), plus `Asmodensius-Native` (`READ_ONLY_RESPECTING_WRITER_LOCK`) → **Composite OVBS-52 = `92.05`** (`224` Pure Lean 4 proofs).
+- **Live 4-Engine Native C++ / Pure Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE v1.3.0` (18/18 gates, 42 Pure Lean 4), `Cellulogonic Mecha v1.4.0` (24/24 gates, 8/8 mutants, 62 Pure Lean 4), `Cellular Engine Omega v5.1.0` (54/54 gates, 16/16 mutants, 72 Pure Lean 4), `Noetic Organism Omega v2.0.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 48 Pure Lean 4), plus `Asmodensius-Native` (`READ_ONLY_RESPECTING_WRITER_LOCK`) → **Composite OVBS-52 = `92.05`** (`240` Pure Lean 4 proofs).
 
 ### 6.4 Extended Citations (`CIT-16`..`CIT-40`) & Additional Visual Models (`Model 15`–`Model 24`)
 - **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.3-Omega Unified Systems Synthesis*)
-- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (224 PURE LEAN 4) (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (240 PURE LEAN 4) (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-21`** — MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (*v3.3-Omega Unified Systems Synthesis*)

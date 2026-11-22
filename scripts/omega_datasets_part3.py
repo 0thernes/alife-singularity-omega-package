@@ -307,7 +307,7 @@ _ESCALATION_V3_MAP = {
     "STG-2": ("Stage 4-6 | L4 Neural - L6 Exec", "Starter Cube T1-T4 (X1Y2Z1..X7Y7Z3) | M041-M070", "GATE-07, GATE-08, GATE-09 | WSE-12"),
     "STG-3": ("Stage 7-8 | L7 Self - L8 Onto", "Ring-0 WSE + Blackiston Metamorphosis | M071-M090", "GATE-10 | Butlin-14 + F1-F10"),
     "STG-4": ("Stage 8+ | L9 Eco - L10 Ops", "Multi-Dome QD + 19-Tab SeqLock | M091-M100", "GATE-11, GATE-12, GATE-13 | NOVEL-100"),
-    "STG-5": ("Post-Stage 8 | Converged 6-Repo Stack", "AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius", "224 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05"),
+    "STG-5": ("Post-Stage 8 | Converged 7-Repo Stack", "AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius", "240 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05"),
     "STG-6": ("Beyond v3.0 Horizon | Physics-Native", "Post-Z9 Manifold & Cross-Substrate Compilers", "Extends CQM-25 & NOVEL-100 to Cosmic OOM"),
 }
 
@@ -651,7 +651,7 @@ def build_omniscient_traceability_table(v3_spec: dict, live_receipts: dict, sim_
     asmo = er.get("tier34_asmodensius", {})
 
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    lean_tot = live_receipts.get("total_lean4_theorems", 224)
+    lean_tot = live_receipts.get("total_lean4_theorems", 240)
     ap_ver = ap.get("version", "1.2.0")
     ap_g = ap.get("gates_passed", 18)
     ap_lean = ap.get("lean4_theorems", 38)
