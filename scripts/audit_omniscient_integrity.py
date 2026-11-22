@@ -380,7 +380,7 @@ def run_all_18_forensic_gates(
         r"\b14-sheet\b", r"\b14 sheets\b", r"\b115\s*/\s*115\b", r"\b130\s*/\s*130\s+(?:Closed|Audits|Errata)\b",
         r"\b20 SVGs\b", r"\b22 SVGs\b", r"\b22 Vector\b", r"\b12-Gate\b", r"\b15-Gate\b",
         r"alife_omega_checklist_v2_1", r"alife_omega_checklist_v3_2", r"\(42/42 Alerts Wired\)",
-        r"\b87\.01\b", r"\b90\.95\b", r"\b150\s+(?:Lean|machine-checked)\b", r"\b162\s+(?:Pure|Lean|machine-checked)\b", r"Omega\s+v4\.2", r"\b43\s*/\s*43\b",
+        r"\b87\.01\b", r"\b90\.95\b", r"\b150\s+(?:Lean|machine-checked)\b", r"\b162\s+(?:Pure|Lean|machine-checked)\b", r"\b194\s+(?:Pure|Lean|machine-checked)\b", r"Omega\s+v4\.2", r"Omega\s+v5\.0", r"Noetic\s+v1\.1", r"\b43\s*/\s*43\b",
         r"2\.219e-16", r"2\.315e-16", r"\b83\.96\b", r"\b85\.50\b", r"\b53\.74\b", r"\b84\.42\b",
         r"\b84\.17\b", r"\b85\.40\b", r"\b84\.44\b", r"\b56\.66\b", r"\b404\.5\b", r"\b405\.4\b",
         r"\b324\s+(?:Live|live)\b",

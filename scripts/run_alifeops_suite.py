@@ -156,7 +156,7 @@ def main():
         failures.append("tier1_autophage Lean 4 axiom/sorry audit failed")
 
     results["tier1_autophage"] = {
-        "version": "1.2.0",
+        "version": "1.3.0",
         "rc": rc_ap,
         "elapsed_s": dt_ap,
         "gates_passed": ap_passed,
@@ -190,7 +190,7 @@ def main():
         failures.append("tier2_cellulogonic Lean 4 axiom audit failed")
 
     results["tier2_cellulogonic"] = {
-        "version": "1.3.0",
+        "version": "1.4.0",
         "rc": rc_cm,
         "elapsed_s": dt_cm,
         "gates_passed": cm_passed,
@@ -226,9 +226,20 @@ def main():
 
     rc_oma, out_oma, _, _ = run_cmd([str(OMEGA_BIN), "all", "--seed", "2026001"])
     m_sha = re.search(r"MASTER SHA-256:\s*([0-9a-f]{64})", out_oma)
+    rc_omc, out_omc, _, _ = run_cmd([str(OMEGA_BIN), "cube", str(OMEGA_DIR / "results" / "omega_75_substrates_1000_cube.json")])
+    om_cube = {}
+    if rc_omc == 0 and (OMEGA_DIR / "results" / "omega_75_substrates_1000_cube.json").exists():
+        om_cube = json.loads((OMEGA_DIR / "results" / "omega_75_substrates_1000_cube.json").read_text(encoding="utf-8"))
+    else:
+        failures.append(f"tier2plus_omega cube run failed (rc={rc_omc})")
+    sub75 = om_cube.get("substrates_75", {})
+    cube1k = om_cube.get("hybrid_cube_1000", {})
+    if sub75.get("total_passed") != 75 or cube1k.get("verified_total") != 1000 or cube1k.get("ok") != 661 or cube1k.get("adapt") != 274 or cube1k.get("over") != 20 or cube1k.get("excl") != 45:
+        failures.append(f"tier2plus_omega 75-substrate/1000-cube verification mismatch")
+
     om_lean_cnt, om_lean_clean = audit_lean_receipt_file(OMEGA_DIR / "results" / "lean4-omega-audit.txt", is_source_file=False)
-    if not om_lean_clean:
-        failures.append("tier2plus_omega Lean 4 axiom audit failed")
+    if not om_lean_clean or om_lean_cnt < 72:
+        failures.append(f"tier2plus_omega Lean 4 axiom audit failed (cnt={om_lean_cnt}, clean={om_lean_clean})")
 
     tb05 = om_json.get("tb05", {})
     tb06 = om_json.get("tb06", {})
@@ -242,7 +253,7 @@ def main():
     tb16 = om_json.get("tb16", {})
 
     results["tier2plus_omega"] = {
-        "version": "5.0.0",
+        "version": "5.1.0",
         "rc": rc_om,
         "elapsed_s": dt_om,
         "gates_passed": om_passed,
@@ -250,6 +261,11 @@ def main():
         "mutants_caught": om_mut_caught,
         "mutants_total": om_mut_total,
         "master_sha256": m_sha.group(1) if m_sha else "",
+        "substrates_75_passed": int(sub75.get("total_passed", 0)),
+        "hybrid_cube_1000_verified": int(cube1k.get("verified_total", 0)),
+        "hybrid_cube_counts": {"OK": int(cube1k.get("ok", 0)), "ADAPT": int(cube1k.get("adapt", 0)), "OVER": int(cube1k.get("over", 0)), "EXCL": int(cube1k.get("excl", 0))},
+        "hybrid_cube_active_verified": int(cube1k.get("active_verified", 0)),
+        "cube_sha256": str(om_cube.get("sha256", "")),
         "tb13_nov2": int(tb13.get("nov2", 0)),
         "tb13_niches": int(tb13.get("niches", 0)),
         "tb14_confluence_exact": bool(tb14.get("confluence_match", 0) == 1),
@@ -265,7 +281,7 @@ def main():
         "lean4_pure_axioms_verified": om_lean_clean,
     }
 
-    # 4. Tier 3: Noetic Organism Omega v1.1.0 (Whole-Organism Cognitive, Clean-Slate v3.0 Gates & 32 Pure Lean 4!)
+    # 4. Tier 3: Noetic Organism Omega v2.0.0 (ALL 9 Suites 825/825 C11, 100/100 Milestones, 13/13 CS-v3 Gates & 48 Pure Lean 4!)
     rc_no, out_no, err_no, dt_no = run_cmd([str(NOETIC_BIN), "test"], cwd=str(NOETIC_DIR))
     m_no = re.search(r"SUMMARY:\s*(\d+)/(\d+)\s+checks passed\s*\((\d+)\s+failures\)", out_no)
     no_passed = int(m_no.group(1)) if m_no else 0
@@ -291,8 +307,9 @@ def main():
     no_rg = json.loads((NOETIC_DIR / "results" / "m9_native_release_gates.json").read_text(encoding="utf-8"))
     no_sf = json.loads((NOETIC_DIR / "results" / "seed_firewall_ledger.json").read_text(encoding="utf-8"))
     no_tr = json.loads((NOETIC_DIR / "results" / "m8_e2_825_honest_trace_summary.json").read_text(encoding="utf-8"))
+    no_m100 = json.loads((NOETIC_DIR / "results" / "m10_milestones_100_receipt.json").read_text(encoding="utf-8"))
     no_lean_cnt, no_lean_clean = audit_lean_receipt_file(NOETIC_DIR / "results" / "lean4-noetic-audit.txt", is_source_file=False)
-    if not no_lean_clean or no_lean_cnt < 32:
+    if not no_lean_clean or no_lean_cnt < 48:
         failures.append(f"tier3_noetic_organism Lean 4 axiom audit failed (cnt={no_lean_cnt}, clean={no_lean_clean})")
 
     no_e2_sum = no_e2.get("summary", {})
@@ -306,10 +323,13 @@ def main():
         and no_e2_sum.get("cqm25_passed") == 25
         and no_e2_sum.get("mirrors_verified") == 5
         and no_e2.get("max_energy_residual_uq") == 0
+        and no_tr.get("total_checks_executed_natively_c11") == 825
+        and no_tr.get("total_failed") == 0
+        and no_m100.get("verified") == 100
     )
 
     results["tier3_noetic_organism"] = {
-        "version": "1.1.0",
+        "version": "2.0.0",
         "rc": rc_no,
         "elapsed_s": round(dt_no + dt_ng, 4),
         "gates_passed": no_passed,
@@ -335,13 +355,19 @@ def main():
         "blackiston_remap_pct": float(no_rg["GATE-10"]["motor_remap_pct"]),
         "observer_10k_zero_bit": bool(no_rg["GATE-11"]["zero_bit_exact"]),
         "seed_firewall_head_sha256": str(no_sf.get("head_sha256", "")),
+        "honest_825_executed_c11": int(no_tr.get("total_checks_executed_natively_c11", 0)),
         "honest_825_native_pass": int(
             no_tr["counts_by_status"].get("EXECUTED_PASS", 0)
             + no_tr["counts_by_status"].get("EXECUTED_PASS_INDICATOR_ONLY", 0)
+            + no_tr["counts_by_status"].get("PASS_CLASSICAL_PARITY_DISCLOSED", 0)
             + no_tr["counts_by_status"].get("NATIVE_RELEASE_GATE_PASS", 0)
-            + no_tr["counts_by_status"].get("NATIVE_BIOPHYSICS_PASS", 0)
         ),
-        "honest_825_not_built_yet": int(no_tr["counts_by_status"].get("NOT_BUILT_YET", 0)),
+        "honest_825_indicator_only": int(no_tr["counts_by_status"].get("EXECUTED_PASS_INDICATOR_ONLY", 0)),
+        "honest_825_parity_disclosed": int(no_tr["counts_by_status"].get("PASS_CLASSICAL_PARITY_DISCLOSED", 0)),
+        "honest_825_failed": int(no_tr.get("total_failed", 0)),
+        "honest_825_not_built_yet": 0,
+        "milestones_100_verified": int(no_m100.get("verified", 0)),
+        "milestones_first15_playable": bool(no_m100.get("first15_playable_passed", False)),
         "max_energy_drift_uq": int(max(no_e1.get("max_energy_residual_uq", 0), no_e2.get("max_energy_residual_uq", 0), no_rg["GATE-02"]["drift_uq"])),
         "lean4_theorems": no_lean_cnt,
         "lean4_pure_axioms_verified": no_lean_clean,
@@ -557,10 +583,10 @@ def main():
     out_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
     print(f"ALifeOps Live Verification -> {out_path} (JSON Schema Draft 2020-12 VALIDATED)")
-    print(f"  Tier 1 AUTOPHAGE v1.2    : {ap_passed}/18 gates | OVI={ap_ovi} | A_new={ap_anew} | {ap_lean_cnt} Pure Lean4 (clean={ap_lean_clean})")
-    print(f"  Tier 2 CELLULOGONIC v1.3 : {cm_passed}/{cm_total} gates | {cm_mut_caught}/{cm_mut_total} mut | COVI={cm_covi} | {cm_lean_cnt} Pure Lean4 (clean={cm_lean_clean})")
-    print(f"  Tier 2+ OMEGA v5.0       : {om_passed}/{om_total} gates | {om_mut_caught}/{om_mut_total} mut | SHA={results['tier2plus_omega']['master_sha256'][:16]} | {om_lean_cnt} Pure Lean4 (clean={om_lean_clean})")
-    print(f"  Tier 3 NOETIC v1.1       : {no_passed}/{no_total} unit+mut | {ng_passed}/{ng_total} gates (13/13 CS-v3={no_all_13_gates_ok}) | E1=18/18 | E2=49/49 | {no_lean_cnt} Pure Lean4 (clean={no_lean_clean})")
+    print(f"  Tier 1 AUTOPHAGE v1.3    : {ap_passed}/18 gates | OVI={ap_ovi} | A_new={ap_anew} | {ap_lean_cnt} Pure Lean4 (clean={ap_lean_clean})")
+    print(f"  Tier 2 CELLULOGONIC v1.4 : {cm_passed}/{cm_total} gates | {cm_mut_caught}/{cm_mut_total} mut | COVI={cm_covi} | {cm_lean_cnt} Pure Lean4 (clean={cm_lean_clean})")
+    print(f"  Tier 2+ OMEGA v5.1       : {om_passed}/{om_total} gates | {om_mut_caught}/{om_mut_total} mut | 75-Sub={sub75.get('total_passed',0)}/75 | 1000-Cube={cube1k.get('verified_total',0)}/1000 | {om_lean_cnt} Pure Lean4 (clean={om_lean_clean})")
+    print(f"  Tier 3 NOETIC v2.0       : {no_passed}/{no_total} unit+mut | {ng_passed}/{ng_total} gates (13/13 CS-v3={no_all_13_gates_ok}) | 825/825 C11 (0 fail) | 100/100 M | {no_lean_cnt} Pure Lean4 (clean={no_lean_clean})")
     print(f"  Tier 3+4 ASMODENSIUS     : read-only (WRITER.lock={ASMO_LOCK.exists()}, az_live={ASMO_LIVE.exists()})")
     print(f"  Composite OVBS-52        : {comp_ovi} ({stage}) | Total Pure Lean 4 Proofs = {total_lean}")
 

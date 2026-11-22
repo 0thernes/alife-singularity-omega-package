@@ -1521,7 +1521,7 @@
 | **`STG-2` General (AG-Life)** | `36-55` | Stage 4-6 | L4 Neural - L6 Exec | Starter Cube T1-T4 (X1Y2Z1..X7Y7Z3) | M041-M070 | GATE-07, GATE-08, GATE-09 | WSE-12 |
 | **`STG-3` The A-Life Singularity** | `56-75` | Stage 7-8 | L7 Self - L8 Onto | Ring-0 WSE + Blackiston Metamorphosis | M071-M090 | GATE-10 | Butlin-14 + F1-F10 |
 | **`STG-4` Super A-Life** | `76-90` | Stage 8+ | L9 Eco - L10 Ops | Multi-Dome QD + 19-Tab SeqLock | M091-M100 | GATE-11, GATE-12, GATE-13 | NOVEL-100 |
-| **`STG-5` The Great Convergence** | `91-96` | Post-Stage 8 | Converged 6-Repo Stack | AUTOPHAGE v1.2 + Cellulogonic v1.3 + Omega v5.0 + Noetic v1.1 + Asmodensius | 194 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05 |
+| **`STG-5` The Great Convergence** | `91-96` | Post-Stage 8 | Converged 6-Repo Stack | AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius | 224 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05 |
 | **`STG-6` Post-Beyond: SUPER LIFE** | `97-100` | Beyond v3.0 Horizon | Physics-Native | Post-Z9 Manifold & Cross-Substrate Compilers | Extends CQM-25 & NOVEL-100 to Cosmic OOM |
 
 ### 11.2 Unified 78-Alert Telemetry Mesh (`42` Macro FMs + `36` v3.0 Forensic Guards)
@@ -1530,7 +1530,7 @@
 
 ### 11.3 Live 8-Cohort + Dual 11-Point Sweep + 5×5 2D Surface (`748` Runs · Max FP64 Drift `2.463e-16`)
 - **Anti-LARP Negative Mutants Rejected:** **`5 / 5`** (Real AST, Causal Perturbation, & Fisher-Yates — `GATE-04` Green).
-- **Live 4-Engine Native C++ / Lean 4 Receipts (`results/alifeops_live_verification.json`):** Composite **OVBS-52 = `92.05`** (`STAGE_5_CONVERGED_SYNTHESIS`), **`194` Pure Machine-Checked Lean 4 Theorems** (`AUTOPHAGE v1.2.0` (18/18 gates, 38 Pure Lean 4), `Cellulogonic Mecha v1.3.0` (24/24 gates, 8/8 mutants, 58 Pure Lean 4), `Cellular Engine Omega v5.0.0` (54/54 gates, 16/16 mutants, 66 Pure Lean 4), `Noetic Organism Omega v1.1.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 32 Pure Lean 4), plus `Asmodensius-Native` (`READ_ONLY_RESPECTING_WRITER_LOCK`)).
+- **Live 4-Engine Native C++ / Lean 4 Receipts (`results/alifeops_live_verification.json`):** Composite **OVBS-52 = `92.05`** (`STAGE_5_CONVERGED_SYNTHESIS`), **`224` Pure Machine-Checked Lean 4 Theorems** (`AUTOPHAGE v1.3.0` (18/18 gates, 42 Pure Lean 4), `Cellulogonic Mecha v1.4.0` (24/24 gates, 8/8 mutants, 62 Pure Lean 4), `Cellular Engine Omega v5.1.0` (54/54 gates, 16/16 mutants, 72 Pure Lean 4), `Noetic Organism Omega v2.0.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 48 Pure Lean 4), plus `Asmodensius-Native` (`READ_ONLY_RESPECTING_WRITER_LOCK`)).
 
 | Cohort (`results/ovbs52_scorecard_*.json`) | OVI (N=48) | Max Asm | Spieg. | Stealth | KS Del % | R0 Blk | Wild Drop | `δ_pair` | Holm `p_Holm` | Stage |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
@@ -1562,7 +1562,7 @@
 - **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.3-Omega Unified Systems Synthesis*)
-- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (194 PURE LEAN 4) (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (224 PURE LEAN 4) (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.3-Omega Unified Systems Synthesis*)
 - **`MODEL-21`** — MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (*v3.3-Omega Unified Systems Synthesis*)
