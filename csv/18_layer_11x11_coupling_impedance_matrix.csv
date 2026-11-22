@@ -1,0 +1,12 @@
+﻿Source_Layer,L0_Compute_Thermo,L1_Wet_Chemoton,L2_Soft_XPBD,L3_Active_Sensor,L4_Neural_Sleep,L5_Memory_Replay,L6_Workspace_WSE,L7_Agency_PCI,L8_Ontogeny_Meta,L9_Biosphere_QD,L10_Ops_Proofs,Mean_Outward_Coupling,Dominant_Cascade_And_Impedance_Buffer
+L0_Compute_Thermo,95,96,94,88,92,85,90,82,86,91,98,90.2,Host libm ULP drift & shared PRNG break Tier-1 hashes; exp_det + Philox4x32-10 lock bit-exactness.
+L1_Wet_Chemoton,86,94,91,76,88,72,74,89,93,95,78,84.2,Closed stoichiometry & detritus loop govern trophic carrying capacity & Liebig limits (FM-ISS-02).
+L2_Soft_XPBD,78,84,92,95,86,60,66,84,88,82,70,79.3,Soft body deformation creates self-reafference; requires AE-2 forward efference copy (PRB-03).
+L3_Active_Sensor,68,65,82,90,94,86,88,92,58,79,76,78.8,Omnimodal active parallax & plume gradients drive sparse k=1-4% spiking without oracle cheats (CNF-05).
+L4_Neural_Sleep,76,80,85,84,96,95,94,91,74,72,80,83.1,Size-scaled NREM SHY & 3-factor BTSP transfer waking SDR traces into Hopfield attractors (M053-055).
+L5_Memory_Replay,60,52,48,70,88,92,95,86,84,78,75,73.6,REM counterfactual imagination contaminates factual planning unless reality-tagged (M056).
+L6_Workspace_WSE,74,62,64,78,93,91,96,94,76,80,92,80.4,Peak coupling L6_Workspace_WSE -> L7_Agency_PCI (94/100): buffered by ZOH 5-Gear flux & double-buffered S2S ports.
+L7_Agency_PCI,54,76,70,85,82,79,90,93,68,86,88,77.8,Peak coupling L7_Agency_PCI -> L6_Workspace_WSE (90/100): buffered by ZOH 5-Gear flux & double-buffered S2S ports.
+L8_Ontogeny_Meta,72,88,94,74,86,82,70,75,95,92,81,81.4,Yolk-conserved cleavage & blastema morphogenesis remodel soft body across >=80% muscle remap (M084).
+L9_Biosphere_QD,82,90,78,86,76,74,72,80,91,96,89,81.8,Peak coupling L9_Biosphere_QD -> L8_Ontogeny_Meta (91/100): buffered by ZOH 5-Gear flux & double-buffered S2S ports.
+L10_Ops_Proofs,92,74,70,84,78,76,94,91,80,88,97,82.7,Naive behavioral kill-switches breed 100% deletion & +89% stealth; Ring-0 + Holm FWER preserve OVI.

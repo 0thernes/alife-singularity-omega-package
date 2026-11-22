@@ -1,6 +1,6 @@
 {
-  "run_id": "ALIFE-OMEGA-20261121T132224Z",
-  "timestamp_utc": "2026-11-21T13:22:24.752437+00:00",
+  "run_id": "ALIFE-OMEGA-20261122T041455Z",
+  "timestamp_utc": "2026-11-22T04:14:55.953104+00:00",
   "track": "HYBRID_ABLATION",
   "substrate_id": "WIN64-X86_64-AVX2-GFNI-LIVE-NATIVE-STACK",
   "horizon_ticks": 300,
@@ -16,13 +16,13 @@
   },
   "pillar_scores": {
     "P1_OEE_NOVELTY": 83.84,
-    "P2_AUTOPOIESIS_PERSISTENCE": 82.55,
-    "P3_HYPER_MORPHOGENESIS": 81.49,
-    "P4_RECURSIVE_META_EVOLVABILITY": 95.16,
+    "P2_AUTOPOIESIS_PERSISTENCE": 86.04,
+    "P3_HYPER_MORPHOGENESIS": 85.63,
+    "P4_RECURSIVE_META_EVOLVABILITY": 96.12,
     "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 98.83,
     "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 100.0,
-    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 96.06,
-    "P8_FERAL_RESILIENCE_CRITICALITY": 94.55
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 95.61,
+    "P8_FERAL_RESILIENCE_CRITICALITY": 95.64
   },
   "anti_gaming_gates": {
     "white_noise_rejection_passed": true,
@@ -32,7 +32,7 @@
     "dual_observer_verified": true,
     "gamma_multiplier": 1.0
   },
-  "composite_ovi_score": 90.95,
+  "composite_ovi_score": 92.05,
   "stage_classification": "STAGE_5_CONVERGED_SYNTHESIS",
   "benchmarks": [
     {
@@ -115,16 +115,16 @@
     {
       "benchmark_id": "BM-AUT-05",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 82.55,
-      "normalized_score": 82.55,
-      "status": "PASS"
+      "raw_value": 86.04,
+      "normalized_score": 86.04,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AUT-06",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 82.55,
-      "normalized_score": 82.55,
-      "status": "PASS"
+      "raw_value": 86.04,
+      "normalized_score": 86.04,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-MRF-01",
@@ -206,15 +206,15 @@
     {
       "benchmark_id": "BM-EVO-06",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 95.16,
-      "normalized_score": 95.16,
+      "raw_value": 96.12,
+      "normalized_score": 96.12,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-EVO-07",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 95.16,
-      "normalized_score": 95.16,
+      "raw_value": 96.12,
+      "normalized_score": 96.12,
       "status": "SINGULARITY_TRIGGER"
     },
     {
@@ -339,15 +339,15 @@
     {
       "benchmark_id": "BM-AGN-06",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 96.06,
-      "normalized_score": 96.06,
+      "raw_value": 95.61,
+      "normalized_score": 95.61,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-07",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 96.06,
-      "normalized_score": 96.06,
+      "raw_value": 95.61,
+      "normalized_score": 95.61,
       "status": "SINGULARITY_TRIGGER"
     },
     {
@@ -381,15 +381,15 @@
     {
       "benchmark_id": "BM-FRL-05",
       "pillar": "P8: Feral Resilience & Criticality",
-      "raw_value": 94.55,
-      "normalized_score": 94.55,
+      "raw_value": 95.64,
+      "normalized_score": 95.64,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-FRL-06",
       "pillar": "P8: Feral Resilience & Criticality",
-      "raw_value": 94.55,
-      "normalized_score": 94.55,
+      "raw_value": 95.64,
+      "normalized_score": 95.64,
       "status": "SINGULARITY_TRIGGER"
     },
     {
@@ -404,7 +404,7 @@
     "tier1_autophage": {
       "version": "1.2.0",
       "rc": 0,
-      "elapsed_s": 1.8837,
+      "elapsed_s": 2.0045,
       "gates_passed": 18,
       "gates_failed": 0,
       "feral_ovi": 92.05,
@@ -417,7 +417,7 @@
     "tier2_cellulogonic": {
       "version": "1.3.0",
       "rc": 0,
-      "elapsed_s": 0.507,
+      "elapsed_s": 0.5239,
       "gates_passed": 24,
       "gates_total": 24,
       "mutants_caught": 8,
@@ -434,7 +434,7 @@
     "tier2plus_omega": {
       "version": "5.0.0",
       "rc": 0,
-      "elapsed_s": 0.636,
+      "elapsed_s": 0.5961,
       "gates_passed": 54,
       "gates_total": 54,
       "mutants_caught": 16,
@@ -454,6 +454,39 @@
       "lean4_theorems": 66,
       "lean4_pure_axioms_verified": true
     },
+    "tier3_noetic_organism": {
+      "version": "1.1.0",
+      "rc": 0,
+      "elapsed_s": 0.2232,
+      "gates_passed": 10,
+      "gates_total": 10,
+      "mutants_caught": 5,
+      "mutants_total": 5,
+      "native_release_gates_passed": 7,
+      "native_release_gates_total": 7,
+      "clean_slate_13_gates_passed": 13,
+      "e1_ablations_effect": 18,
+      "e1_ablations_total": 18,
+      "butlin14_passed": 14,
+      "theories10_passed": 10,
+      "cqm25_passed": 25,
+      "mirrors_verified": 5,
+      "wse12_ring0_blocked": 10,
+      "wse12_ops_executed": 10,
+      "wse12_spectral_norm": 0.844337,
+      "wse12_diff_bytes": 2464,
+      "xpbd_max_vol_err_pct": 0.000304,
+      "b158_offload_pct": 84.13,
+      "fasting_sparing_ratio": 2.4348,
+      "blackiston_remap_pct": 87.5,
+      "observer_10k_zero_bit": true,
+      "seed_firewall_head_sha256": "502ff2243d3a715cd9a6d683a1aa3030168e3bc2c555ddd8261eef71eb871380",
+      "honest_825_native_pass": 94,
+      "honest_825_not_built_yet": 693,
+      "max_energy_drift_uq": 0,
+      "lean4_theorems": 32,
+      "lean4_pure_axioms_verified": true
+    },
     "tier34_asmodensius": {
       "policy": "READ_ONLY_RESPECTING_WRITER_LOCK",
       "writer_lock_present": true,
@@ -462,6 +495,6 @@
       "note": "External sibling repo inspected read-only; not executed in this runner while WRITER.lock is held."
     }
   },
-  "total_lean4_theorems": 162,
+  "total_lean4_theorems": 194,
   "all_lean4_pure_axioms_verified": true
 }

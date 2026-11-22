@@ -1,10 +1,10 @@
 {
   "run_id": "ALIFE-SIM05-SILOED-INBRED",
-  "timestamp_utc": "2026-11-21T13:25:20.717014+00:00",
+  "timestamp_utc": "2026-11-22T04:21:08.089443+00:00",
   "track": "HYBRID_ABLATION",
-  "substrate_id": "unified_v3_1_omega_fp64_11pool_sim",
+  "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
   "horizon_ticks": 160,
-  "composite_ovi_score": 66.6,
+  "composite_ovi_score": 66.65,
   "stage_classification": "STAGE_3_ALIFE_SINGULARITY",
   "pillar_weights": {
     "P1_OEE_NOVELTY": 0.18,
@@ -19,11 +19,11 @@
   "pillar_scores": {
     "P1_OEE_NOVELTY": 96.0,
     "P2_AUTOPOIESIS_PERSISTENCE": 96.0,
-    "P3_HYPER_MORPHOGENESIS": 53.37,
-    "P4_RECURSIVE_META_EVOLVABILITY": 29.63,
-    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 43.98,
+    "P3_HYPER_MORPHOGENESIS": 53.36,
+    "P4_RECURSIVE_META_EVOLVABILITY": 29.87,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 43.88,
     "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 96.0,
-    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 86.11,
+    "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 86.17,
     "P8_FERAL_RESILIENCE_CRITICALITY": 96.0
   },
   "anti_gaming_gates": {
@@ -35,15 +35,15 @@
     "gamma_multiplier": 1.0
   },
   "v3_clean_slate_verification": {
-    "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5024",
-    "paired_seeds_n": 24,
+    "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5048",
+    "paired_seeds_n": 48,
     "first_law_drift_fp64": 2.218e-16,
     "second_law_diss_num_min": 0.0,
     "heat_backflow_faults": 0,
-    "wilcoxon_p_raw": 1.1921e-07,
-    "holm_fwer_p": 8.3447e-07,
+    "wilcoxon_p_raw": 7.1054e-15,
+    "holm_fwer_p": 4.9738e-14,
     "delta_pair_vs_feral": -1.0,
-    "lcb_95_ovi_diff": -18.22,
+    "lcb_95_ovi_diff": -17.454,
     "anti_larp_mutants_rejected": 5,
     "ring0_blocked_edits": 0.0
   },
@@ -142,134 +142,134 @@
     {
       "benchmark_id": "BM-MRF-01",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-02",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-03",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-04",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-05",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-06",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 53.37,
-      "normalized_score": 53.37,
+      "raw_value": 53.36,
+      "normalized_score": 53.36,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-EVO-01",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-02",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-03",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-04",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-05",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-06",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-EVO-07",
       "pillar": "P4: Recursive Meta-Evolvability",
-      "raw_value": 29.63,
-      "normalized_score": 29.63,
+      "raw_value": 29.87,
+      "normalized_score": 29.87,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-01",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-02",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-03",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-04",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-05",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-ASM-06",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 43.98,
-      "normalized_score": 43.98,
+      "raw_value": 43.88,
+      "normalized_score": 43.88,
       "status": "WARN"
     },
     {
@@ -317,50 +317,50 @@
     {
       "benchmark_id": "BM-AGN-01",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-02",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-03",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-04",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-05",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-06",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AGN-07",
       "pillar": "P7: Multi-Scale Agency & Individuality",
-      "raw_value": 86.11,
-      "normalized_score": 86.11,
+      "raw_value": 86.17,
+      "normalized_score": 86.17,
       "status": "SINGULARITY_TRIGGER"
     },
     {

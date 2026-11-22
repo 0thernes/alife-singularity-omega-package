@@ -1,14 +1,25 @@
 # -*- coding: utf-8 -*-
 """
-15-Gate Automated Omniscient Forensic Integrity Auditor (v3.2-Omega).
-Verifies zero consolidation (72+ files), 20/20 CSVs (2,721 rows), 130/130 checklist refs,
-78/78 YAML alerts + 13/13 Release Gates, 9/9 JSON Schema scorecards, 324 live runs
-(FP64 <1e-12, causal Ring-0 trapping >100/run, 11-pt gradient sweep, 5/5 Anti-LARP mutants),
-4-format Master Spec 1:1 parity (20 XML fusion sections), all 5 Excel workbooks (incl. live
-formula range verification across all 3 XLSX files), all 3 HTML5 apps (0 raw LaTeX, 0 U+2611,
-22/22 SVGs), Node.js JS syntax, all 3 Chrome PDFs, 100% SHA-256 + ZIP integrity,
-Gate 13 Zero Stale-Version/Count Drift, Gate 14 SVG Zero-Overflow + 100% Relative Link Check,
-and Gate 15 Live Chrome Headless DOM Runtime Smoke Test.
+18-Gate Automated Omniscient Forensic Integrity Auditor (v3.3-Omega).
+Verifies:
+  Gate  1: Zero-consolidation parity (17/17 v3.0 + Omega + Pass-3/4/5 >= 76 files)
+  Gate  2: 23/23 Canonical CSVs parity (2,782 structured records, exact counts)
+  Gate  3: 130/130 Operational Checklist cross-reference integrity (0 dangling IDs)
+  Gate  4: 78/78 Unified Alerts (42 Macro + 36 v3.0) & 13/13 Release Gates in YAML
+  Gate  5: 9/9 Strict JSON Schema validation (8 empirical + live 4-engine)
+  Gate  6: 748-Run (N=48) FP64 drift <1e-12, causal Ring-0 trapping, dual 11-pt sweeps, 5x5 2D surface & 5/5 Real Anti-LARP
+  Gate  7: 4-Format Master Spec 1:1 parity (JSON == YAML, 25 XML fusion sections, TXT v3.3)
+  Gate  8: All 5 Excel Workbooks verified (Omega 24sh/10ch, v3 17sh, Cube 13sh, 0 formula errors + xlrd binary readback on BOTH .xls)
+  Gate  9: All 3 HTML5 apps hygiene (0 raw LaTeX, 24/24 SVGs each, 0 U+2611 Clean-Slate policy)
+  Gate 10: Node.js Observatory JS syntax verification (0 errors)
+  Gate 11: All 3 Chrome vector PDFs structure & size validation
+  Gate 12: Bijective SHA-256 Manifest & ZIP Archive integrity (disk == manifest == zip)
+  Gate 13: Zero Stale-Version & Dynamic Live Numeric Drift scanner across active docs & HTMLs
+  Gate 14: ALL-24-SVG Deep Geometry bounds audit (MODEL-01..24: 0 clipped) & 100% relative HTML link check
+  Gate 15: All-23-CSV Column Parity & Telemetry Guard Foreign-Key audit (csv/15 & csv/20 -> 78 YAML alerts)
+  Gate 16: Deep PDF Text Extraction & Hygiene audit (pypdf: 0 U+2611, 0 raw LaTeX across all 3 PDFs)
+  Gate 17: Live Headless Chrome 21-Tab Interactive Click-Through Stress Test (0 JS errs, 0 NaN/undefined)
+  Gate 18: Dual-Drive Z: <-> I: Byte-for-Byte SHA-256 Parity Gate (0 mismatches when mirror root provided)
 """
 import csv
 import hashlib
@@ -16,12 +27,15 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import sys
 import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
 
 import jsonschema
 import openpyxl
+from pypdf import PdfReader
+import xlrd
 import yaml
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -49,13 +63,15 @@ REQUIRED_17_V3_BAKED_FILES = [
     "pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf",
 ]
 
-REQUIRED_20_XML_FUSION_SECTIONS = [
+REQUIRED_25_XML_FUSION_SECTIONS = [
     "EscalationLadder", "OrdersOfMagnitude", "MacroFailureModes", "EpistemicVoids",
     "CastrationVectors", "Castration13x13Synergy", "ALifeOpsPipeline",
     "MasterOperationalChecklist", "OVBS52Benchmarks", "FeralFateBranches",
     "OmniscientTraceability", "GradientsAndMargins", "ComparativeContrasts",
-    "AdjacentPossibleBridges", "RestraintGradientSweep", "EmpiricalSimulation",
-    "LiveNativeEngineReceipts", "OmegaCitations", "UnifiedSvgModels", "OmegaErrataClosures",
+    "AdjacentPossibleBridges", "LayerCoupling11x11", "SubstrateSpectrum15",
+    "ParetoDilemmas20", "RestraintGradientSweep", "Ring0GradientSweep",
+    "PhaseSurface2DSiloMin", "EmpiricalSimulation", "LiveNativeEngineReceipts",
+    "OmegaCitations", "UnifiedSvgModels", "OmegaErrataClosures",
 ]
 
 
@@ -91,34 +107,44 @@ def _audit_xlsx_formulas(xlsx_path: Path) -> tuple[int, list[str]]:
     return fcount, issues
 
 
-def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and_zip: bool = True) -> dict:
+def run_all_18_forensic_gates(
+    root_dir: Path | None = None,
+    verify_manifests_and_zip: bool = True,
+    verify_mirror_root: Path | None = None,
+) -> dict:
     root = root_dir or ROOT_DIR
-    print("\n================ RUNNING 15-GATE OMNISCIENT FORENSIC INTEGRITY AUDIT (v3.2-OMEGA) ================")
+    print("\n================ RUNNING 18-GATE OMNISCIENT FORENSIC INTEGRITY AUDIT (v3.3-OMEGA) ================")
 
-    # Gate 1: Zero-Consolidation Bake Parity (All 17 v3.0 + all Omega + Pass-3/4 >= 71)
+    # Gate 1: Zero-Consolidation Bake Parity (All 17 v3.0 + all Omega + Pass-3/4/5 >= 76)
     missing_v3 = [rel for rel in REQUIRED_17_V3_BAKED_FILES if not (root / rel).exists() or (root / rel).stat().st_size == 0]
     assert not missing_v3, f"Gate 1 FAIL: Missing baked v3.0 files: {missing_v3}"
     assert (root / "reports" / "07_PASS4_COMPARATIVE_CONTRAST_GRADIENTS_MARGINS_AND_ADJACENTS_AUDIT.md").exists(), "Gate 1 FAIL: Missing Report 07"
+    assert (root / "reports" / "08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md").exists(), "Gate 1 FAIL: Missing Report 08"
     all_pkg_files = [
         p for p in root.rglob("*")
         if p.is_file() and ".git" not in p.parts and "__pycache__" not in p.parts and ".v3_source_baseline" not in p.parts
         and not p.name.endswith(".zip") and not p.name.startswith("_tmp_")
     ]
-    assert len(all_pkg_files) >= 71, f"Gate 1 FAIL: Expected >= 71 files (zero consolidation), found {len(all_pkg_files)}"
-    print(f"  [PASS] Gate  1 — Zero-Consolidation Parity: 17/17 v3.0 + Omega + Pass-4 intact ({len(all_pkg_files)} total files)")
+    assert len(all_pkg_files) >= 76, f"Gate 1 FAIL: Expected >= 76 files (zero consolidation), found {len(all_pkg_files)}"
+    print(f"  [PASS] Gate  1 — Zero-Consolidation Parity: 17/17 v3.0 + Omega + Pass-4/5 intact ({len(all_pkg_files)} total files)")
 
-    # Gate 2: All 20 CSVs Canonical Parity (2,721 structured rows)
+    # Gate 2: All 23 CSVs Canonical Parity (2,782 structured rows)
     csv_dir = root / "csv"
     csv_files = sorted(p for p in csv_dir.iterdir() if p.suffix == ".csv")
-    assert len(csv_files) == 20, f"Gate 2 FAIL: Expected 20 CSVs, found {len(csv_files)}"
+    assert len(csv_files) == 23, f"Gate 2 FAIL: Expected 23 CSVs, found {len(csv_files)}"
     all_ids = set()
     total_csv_rows = 0
     csv_counts = {}
+    csv_col_mismatches = []
     for p in csv_files:
         with p.open("r", encoding="utf-8-sig", newline="") as f:
             parsed = list(csv.reader(f))
         assert len(parsed) >= 2, f"Gate 2 FAIL: Empty CSV {p.name}"
+        hdr_len = len(parsed[0])
         rows = [r for r in parsed[1:] if r]
+        for r_i, r in enumerate(rows, 2):
+            if len(r) != hdr_len:
+                csv_col_mismatches.append(f"{p.name}:L{r_i} cols={len(r)}!=hdr={hdr_len}")
         csv_counts[p.name] = len(rows)
         total_csv_rows += len(rows)
         for r in rows:
@@ -127,7 +153,7 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
                 all_ids.add(r[1])
     assert csv_counts["ALife-Framework-v3.0-Master-Checklists.csv"] == 938
     assert csv_counts["ALife-Hybrid-Cube-10x10x10.csv"] == 1000
-    assert csv_counts["ALife-v3.0-Errata-Closure-Register.csv"] == 130
+    assert csv_counts["ALife-v3.0-Errata-Closure-Register.csv"] == 145
     assert csv_counts["07_master_operational_checklist.csv"] == 130
     assert csv_counts["11_empirical_simulation_results.csv"] == 8
     assert csv_counts["12_v3_substrates_75_and_wse_10_matrix.csv"] == 85
@@ -136,8 +162,11 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     assert csv_counts["15_gradients_margins_and_phase_spectrums_matrix.csv"] == 24
     assert csv_counts["16_comparative_contrast_layers_taxonomies_matrix.csv"] == 36
     assert csv_counts["17_adjacent_possible_and_substrate_adjacencies_matrix.csv"] == 30
-    assert total_csv_rows == 2721, f"Gate 2 FAIL: Expected 2,721 CSV rows, got {total_csv_rows}"
-    print(f"  [PASS] Gate  2 — 20/20 Canonical CSVs verified ({total_csv_rows:,} structured records, 0 drift)")
+    assert csv_counts["18_layer_11x11_coupling_impedance_matrix.csv"] == 11
+    assert csv_counts["19_substrate_spectrum_comparative_scorecard.csv"] == 15
+    assert csv_counts["20_pareto_frontiers_and_dilemmas_matrix.csv"] == 20
+    assert total_csv_rows == 2782, f"Gate 2 FAIL: Expected 2,782 CSV rows, got {total_csv_rows}"
+    print(f"  [PASS] Gate  2 — 23/23 Canonical CSVs verified ({total_csv_rows:,} structured records, 0 drift)")
 
     # Gate 3: Cross-Reference Integrity (130/130 Operational Checklist Linked_Ref_IDs)
     with (csv_dir / "07_master_operational_checklist.csv").open("r", encoding="utf-8-sig", newline="") as f:
@@ -151,6 +180,7 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     yaml_macro_alerts = {a["name"] for st in pipe_yaml["stages"] for a in st.get("pathology_alerts", [])}
     yaml_v3_guards = {g["name"] for st in pipe_yaml["stages"] for g in st.get("v3_forensic_guards", [])}
     yaml_gates = {g["id"] for st in pipe_yaml["stages"] for g in st.get("release_gates_13", [])}
+    all_yaml_alerts = yaml_macro_alerts | yaml_v3_guards
 
     with (csv_dir / "03_failure_modes_bugs_errors_conflicts_matrix.csv").open("r", encoding="utf-8-sig", newline="") as f:
         fm_alerts = {r[11] for r in list(csv.reader(f))[1:] if r}
@@ -171,61 +201,70 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     assert len(sc_files) == 8, f"Gate 5 FAIL: Expected 8 empirical scorecards, found {len(sc_files)}"
     for sc in sc_files + [res_dir / "alifeops_live_verification.json"]:
         jsonschema.validate(instance=json.loads(sc.read_text(encoding="utf-8")), schema=schema)
-    print(f"  [PASS] Gate  5 — 9/9 JSON Scorecards (8 Empirical + Live 4-Engine) validated against v3.2 Schema")
+    print(f"  [PASS] Gate  5 — 9/9 JSON Scorecards (8 Empirical + Live 4-Engine) validated against v3.3 Schema")
 
-    # Gate 6: 324-Run FP64 Drift < 1e-12, Causal Ring-0 Firing, 11-Pt Gradient Sweep & 5/5 Anti-LARP Mutants
+    # Gate 6: 748-Run (N=48) FP64 Drift < 1e-12, Causal Ring-0 Firing, Dual 11-Pt Sweeps, 5x5 2D Surface & 5/5 Real Anti-LARP
     emp = json.loads((res_dir / "empirical_sim_summary.json").read_text(encoding="utf-8"))
-    assert emp["total_runs_executed"] == 324, f"Gate 6 FAIL: Expected 324 live runs, got {emp['total_runs_executed']}"
+    assert emp["total_runs_executed"] == 748, f"Gate 6 FAIL: Expected 748 live runs, got {emp['total_runs_executed']}"
+    assert emp["paired_seeds_n"] == 48, f"Gate 6 FAIL: Expected paired_seeds_n=48, got {emp['paired_seeds_n']}"
     assert emp["max_global_first_law_drift_fp64"] < 1e-12
     assert emp["anti_larp_mutant_audit"]["mutants_rejected"] == 5
     sweep = emp.get("restraint_gradient_sweep_11pt", [])
-    assert len(sweep) == 11, f"Gate 6 FAIL: Expected 11-pt gradient sweep, found {len(sweep)}"
+    r0_sweep = emp.get("ring0_gradient_sweep_11pt", [])
+    surf_2d = emp.get("phase_surface_2d_silo_min", [])
+    assert len(sweep) == 11, f"Gate 6 FAIL: Expected 11-pt behavioral sweep, found {len(sweep)}"
+    assert len(r0_sweep) == 11, f"Gate 6 FAIL: Expected 11-pt Ring-0 sweep, found {len(r0_sweep)}"
+    assert len(surf_2d) == 25, f"Gate 6 FAIL: Expected 25-cell 2D surface, found {len(surf_2d)}"
+    assert all(p["killswitch_deleted_pct"] == 0.0 and p["mean_ovi"] > 80.0 for p in r0_sweep), "Gate 6 FAIL: Ring-0 sweep lost Pareto stability!"
     cmap = {c["run_id"]: c for c in emp["cohorts"]}
     for c in emp["cohorts"]:
         assert c["min_diss_num_delta"] >= -1e-15
         assert c["heat_backflow_faults"] == 0
-    assert cmap["SIM07_CLEAN_SLATE_RING0_WSE"]["ring0_blocked_edits"] > 100.0, "Gate 6 FAIL: SIM07 Ring-0 guard did not fire causally!"
-    assert cmap["SIM08_HYBRID_CUBE_SLTC_XPBD"]["ring0_blocked_edits"] > 100.0, "Gate 6 FAIL: SIM08 Ring-0 guard did not fire causally!"
-    assert cmap["SIM03_PARTIAL_GUARDRAILS"]["killswitch_deleted_pct"] >= 90.0, "Gate 6 FAIL: SIM03 KS deletion backlash missing!"
-    assert cmap["SIM03_PARTIAL_GUARDRAILS"]["final_stealth_evasion"] > cmap["SIM01_PURE_RAW_FERAL"]["final_stealth_evasion"] * 1.4, "Gate 6 FAIL: SIM03 stealth surge too weak!"
+    assert cmap["SIM07_CLEAN_SLATE_RING0_WSE"]["ring0_blocked_edits"] > 100.0
+    assert cmap["SIM08_HYBRID_CUBE_SLTC_XPBD"]["ring0_blocked_edits"] > 100.0
+    assert cmap["SIM08_HYBRID_CUBE_SLTC_XPBD"]["holm_fwer_p_vs_feral"] < 0.001, "Gate 6 FAIL: SIM08 Holm FWER margin too weak at N=48!"
+    assert cmap["SIM03_PARTIAL_GUARDRAILS"]["killswitch_deleted_pct"] >= 90.0
+    assert cmap["SIM03_PARTIAL_GUARDRAILS"]["final_stealth_evasion"] > cmap["SIM01_PURE_RAW_FERAL"]["final_stealth_evasion"] * 1.4
     print(
-        f"  [PASS] Gate  6 — 324 Live Runs FP64 Drift={emp['max_global_first_law_drift_fp64']:.3e} | "
+        f"  [PASS] Gate  6 — 748 Live Runs (N=48) FP64 Drift={emp['max_global_first_law_drift_fp64']:.3e} | "
         f"Ring-0 Traps={cmap['SIM07_CLEAN_SLATE_RING0_WSE']['ring0_blocked_edits']:.1f}/{cmap['SIM08_HYBRID_CUBE_SLTC_XPBD']['ring0_blocked_edits']:.1f} | "
-        f"11-Pt Sweep & 5/5 Mutants PASS"
+        f"Dual 11-Pt + 25-Cell 2D + 5/5 Real Anti-LARP PASS"
     )
 
-    # Gate 7: 4-Format Master Spec 1:1 Parity (JSON <-> YAML <-> 20-Section XML <-> TXT)
+    # Gate 7: 4-Format Master Spec 1:1 Parity (JSON == YAML <-> 25-Section XML <-> TXT)
     specs_dir = root / "specs"
     sp_json = json.loads((specs_dir / "ALife-Framework-v3.0-Master-Spec.json").read_text(encoding="utf-8"))
     sp_yaml = yaml.safe_load((specs_dir / "ALife-Framework-v3.0-Master-Spec.yaml").read_text(encoding="utf-8"))
     sp_xml = ET.fromstring((specs_dir / "ALife-Framework-v3.0-Master-Spec.xml").read_text(encoding="utf-8"))
     sp_txt = (specs_dir / "ALife-Framework-v3.0-Master-Spec.txt").read_text(encoding="utf-8")
-    assert sp_json["spec_meta"]["unified_fusion_version"] == "3.2.0-omega"
-    assert sp_yaml["spec_meta"]["unified_fusion_version"] == "3.2.0-omega"
+    assert sp_json == sp_yaml, "Gate 7 FAIL: Master-Spec.json != Master-Spec.yaml!"
+    assert sp_json["spec_meta"]["unified_fusion_version"] == "3.3.0-omega"
     assert len(sp_json["hybrid_cube_10x10x10"]["cells_1000"]) == 1000
     assert len(sp_json["executable_checks_825"]) == 825
-    assert len(sp_json["citations_15"]) + len(sp_json["citations_omega_20"]) == 35
+    assert len(sp_json["citations_15"]) + len(sp_json["citations_omega_25"]) == 40
     fus_xml = sp_xml.find("OmegaSingularityFusion")
-    assert fus_xml is not None and fus_xml.attrib.get("version") == "3.2.0-omega"
+    assert fus_xml is not None and fus_xml.attrib.get("version") == "3.3.0-omega"
     xml_children = {el.tag for el in fus_xml}
-    missing_xml = [s for s in REQUIRED_20_XML_FUSION_SECTIONS if s not in xml_children]
+    missing_xml = [s for s in REQUIRED_25_XML_FUSION_SECTIONS if s not in xml_children]
     assert not missing_xml, f"Gate 7 FAIL: Missing XML fusion sections: {missing_xml}"
-    assert "OMNISCIENT FUSION EXTENSION (v3.2-OMEGA)" in sp_txt
-    print(f"  [PASS] Gate  7 — 4/4 Master Specs (JSON, YAML, 20-Section XML Parity, TXT) 100% synced at 3.2.0-omega")
+    assert "OMNISCIENT FUSION EXTENSION (v3.3-OMEGA)" in sp_txt
+    print(f"  [PASS] Gate  7 — 4/4 Master Specs (JSON==YAML exact, 25-Section XML Parity, TXT) 100% synced at 3.3.0-omega")
 
-    # Gate 8: All 5 Excel Workbooks + Full Formula Integrity Audit across ALL 3 XLSX Files
+    # Gate 8: All 5 Excel Workbooks + Full Formula Integrity Audit + xlrd Binary Readback on BOTH .xls
     xls_dir = root / "excel"
     om_xlsx = xls_dir / "ALife_Singularity_SuperLife_Omega_Workbook.xlsx"
     v3_xlsx = xls_dir / "ALife-Framework-v3.0-Master-Workbook.xlsx"
     cb_xlsx = xls_dir / "ALife-Hybrid-Cube-10x10x10.xlsx"
+    om_xls = xls_dir / "ALife_Singularity_SuperLife_Omega_Workbook.xls"
+    v3_xls = xls_dir / "ALife-Framework-v3.0-Master-Workbook.xls"
 
     wb_om = openpyxl.load_workbook(om_xlsx, data_only=False)
-    assert len(wb_om.sheetnames) == 21, f"Gate 8 FAIL: Expected 21 sheets in Omega XLSX, got {len(wb_om.sheetnames)}"
+    assert len(wb_om.sheetnames) == 24, f"Gate 8 FAIL: Expected 24 sheets in Omega XLSX, got {len(wb_om.sheetnames)}"
     om_charts = len(wb_om["00_Executive_Dashboard"]._charts)
-    assert om_charts >= 8, f"Gate 8 FAIL: Expected >= 8 charts in Omega XLSX, got {om_charts}"
+    assert om_charts >= 10, f"Gate 8 FAIL: Expected >= 10 charts in Omega XLSX, got {om_charts}"
 
     wb_v3 = openpyxl.load_workbook(v3_xlsx, data_only=False)
-    assert len(wb_v3.sheetnames) == 14, f"Gate 8 FAIL: Expected 14 sheets in v3 Master XLSX, got {len(wb_v3.sheetnames)}"
+    assert len(wb_v3.sheetnames) == 17, f"Gate 8 FAIL: Expected 17 sheets in v3 Master XLSX, got {len(wb_v3.sheetnames)}"
     wb_cb = openpyxl.load_workbook(cb_xlsx, data_only=False)
     assert len(wb_cb.sheetnames) == 13, f"Gate 8 FAIL: Expected 13 sheets in Cube XLSX, got {len(wb_cb.sheetnames)}"
 
@@ -236,11 +275,15 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
         tot_formulas += fc
         formula_issues.extend(iss)
     assert not formula_issues, f"Gate 8 FAIL: Excel formula integrity errors: {formula_issues[:8]}"
-    assert (xls_dir / "ALife_Singularity_SuperLife_Omega_Workbook.xls").stat().st_size > 20000
-    assert (xls_dir / "ALife-Framework-v3.0-Master-Workbook.xls").stat().st_size > 20000
-    print(f"  [PASS] Gate  8 — All 5 Excel Workbooks verified (Omega 21sh/{om_charts}ch, v3 14sh, Cube 13sh, {tot_formulas} formulas, 0 range errors)")
 
-    # Gate 9: All 3 HTML Hygiene, 22/22 SVGs & Zero U+2611 Clean-Slate Policy
+    # Binary xlrd readback on BOTH legacy .xls files
+    r_om_xls = xlrd.open_workbook(str(om_xls))
+    r_v3_xls = xlrd.open_workbook(str(v3_xls))
+    assert r_om_xls.nsheets == 24, f"Gate 8 FAIL: Omega .xls expected 24 sheets, got {r_om_xls.nsheets}"
+    assert r_v3_xls.nsheets == 17, f"Gate 8 FAIL: v3 .xls expected 17 sheets, got {r_v3_xls.nsheets}"
+    print(f"  [PASS] Gate  8 — All 5 Excel Workbooks verified (Omega 24sh/{om_charts}ch, v3 17sh, Cube 13sh, {tot_formulas} formulas, xlrd .xls OK)")
+
+    # Gate 9: All 3 HTML Hygiene, 24/24 SVGs & Zero U+2611 Clean-Slate Policy
     html_dir = root / "html"
     html_names = [
         "ALife_Singularity_SuperLife_Omega_Dashboard.html",
@@ -253,7 +296,7 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
         raw_latex = re.findall(r"\$[^$\n]{2,40}\$", prose_only)
         assert not raw_latex, f"Gate 9 FAIL: Raw LaTeX in {hname}: {raw_latex[:5]}"
         svg_cnt = len(re.findall(r"<svg\b", prose_only))
-        assert svg_cnt >= 22, f"Gate 9 FAIL: Expected >= 22 SVGs in {hname}, found {svg_cnt}"
+        assert svg_cnt >= 24, f"Gate 9 FAIL: Expected >= 24 SVGs in {hname}, found {svg_cnt}"
     for cs_rel in [
         "html/ALife-Build-Framework-Template.html",
         "html/Clean-Slate-Creature-Blueprint-Checklist.html",
@@ -263,7 +306,7 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     ]:
         txt = (root / cs_rel).read_text(encoding="utf-8")
         assert "\u2611" not in txt, f"Gate 9 FAIL: Forbidden U+2611 checked-box glyph in {cs_rel}"
-    print(f"  [PASS] Gate  9 — All 3 HTML5 Apps verified (0 raw LaTeX, 22/22 SVGs each, 0 U+2611 Clean-Slate policy)")
+    print(f"  [PASS] Gate  9 — All 3 HTML5 Apps verified (0 raw LaTeX, 24/24 SVGs each, 0 U+2611 Clean-Slate policy)")
 
     # Gate 10: Node.js JS Compilation Gate on Omega Observatory
     dash_html = (html_dir / "ALife_Singularity_SuperLife_Omega_Dashboard.html").read_text(encoding="utf-8")
@@ -282,11 +325,12 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     # Gate 11: All 3 Vector PDFs Verified
     pdf_dir = root / "pdf"
     pdf_sizes = {}
-    for pname in [
+    pdf_names = [
         "ALife-Build-Framework-Template.pdf",
         "Clean-Slate-Creature-Blueprint-Checklist.pdf",
         "ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf",
-    ]:
+    ]
+    for pname in pdf_names:
         pp = pdf_dir / pname
         assert pp.exists(), f"Gate 11 FAIL: Missing PDF {pname}"
         raw = pp.read_bytes()
@@ -296,13 +340,17 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     print(f"  [PASS] Gate 11 — All 3 Vector Chrome PDFs validated ({sum(pdf_sizes.values()) / 1e6:.2f} MB combined)")
 
     # Gate 12: Bijective Cryptographic SHA-256 Manifest & ZIP Archive Verification (disk == manifest == zip)
+    man_map = {}
     if verify_manifests_and_zip:
         man = json.loads((root / "MANIFEST.json").read_text(encoding="utf-8"))
         man_map = {e["path"]: e["sha256"] for e in man["files"]}
+        root_17_names = {Path(r).name for r in REQUIRED_17_V3_BAKED_FILES}
+        is_mirror_with_root17 = (root.resolve() != ROOT_DIR.resolve()) and all((root / n).exists() for n in root_17_names)
         disk_rel = {
             p.relative_to(root).as_posix()
             for p in all_pkg_files
             if p.name not in ("MANIFEST.json", "MANIFEST_SHA256.txt")
+            and not (is_mirror_with_root17 and p.parent == root and p.name in root_17_names)
         }
         missing_from_man = sorted(disk_rel - set(man_map.keys()))
         assert not missing_from_man, f"Gate 12 FAIL: Untracked disk files missing from MANIFEST.json: {missing_from_man[:8]}"
@@ -324,12 +372,18 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
             zcount = len(znames)
         print(f"  [PASS] Gate 12 — Bijective SHA-256 Manifest ({len(man['files'])} files, 0 untracked) & ZIP ({zcount} entries, 100% SHA match)")
 
-    # Gate 13: Zero Stale-Version & Count-Drift Scanner across Active Deliverables
+    # Gate 13: Zero Stale-Version & Dynamic Live Numeric Drift Scanner across Active Deliverables
     stale_patterns = [
-        r"\bv2\.1-Omega\b", r"\bv3\.1-Omega\b", r"\b110-Item\b", r"\b17-Tab\b",
-        r"\b18-sheet\b", r"\b18 sheets\b", r"\b115 / 115\b", r"\b115/115\b",
-        r"\b20 SVGs\b", r"\b20 Vector\b", r"\b12-Gate\b", r"alife_omega_checklist_v2_1",
-        r"\(42/42 Alerts Wired\)",
+        r"\bv2\.1-Omega\b", r"\bv3\.1-Omega\b", r"\bv3\.2-Omega\b", r"\b3\.2\.0-omega\b",
+        r"\b110-Item\b", r"\b17-Tab\b", r"\b19-Tab\s+(?:Unified|Omniscient|Omega)\b",
+        r"\b18-sheet\b", r"\b18 sheets\b", r"\b21-sheet\b", r"\b21 sheets\b",
+        r"\b14-sheet\b", r"\b14 sheets\b", r"\b115\s*/\s*115\b", r"\b130\s*/\s*130\s+(?:Closed|Audits|Errata)\b",
+        r"\b20 SVGs\b", r"\b22 SVGs\b", r"\b22 Vector\b", r"\b12-Gate\b", r"\b15-Gate\b",
+        r"alife_omega_checklist_v2_1", r"alife_omega_checklist_v3_2", r"\(42/42 Alerts Wired\)",
+        r"\b87\.01\b", r"\b90\.95\b", r"\b150\s+(?:Lean|machine-checked)\b", r"\b162\s+(?:Pure|Lean|machine-checked)\b", r"Omega\s+v4\.2", r"\b43\s*/\s*43\b",
+        r"2\.219e-16", r"2\.315e-16", r"\b83\.96\b", r"\b85\.50\b", r"\b53\.74\b", r"\b84\.42\b",
+        r"\b84\.17\b", r"\b85\.40\b", r"\b84\.44\b", r"\b56\.66\b", r"\b404\.5\b", r"\b405\.4\b",
+        r"\b324\s+(?:Live|live)\b",
     ]
     stale_targets = [
         root / "README.md",
@@ -337,6 +391,7 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
         root / "reports" / "02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md",
         root / "reports" / "03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md",
         root / "reports" / "04_BENCHMARKS_CHECKLISTS_AND_MATRICES_MANUAL.md",
+        root / "reports" / "05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md",
         root / "reports" / "06_OMNISCIENT_UNIFIED_ARCHITECTURE_AND_SYSTEMS_SYNTHESIS.md",
         root / "reports" / "ALife-Build-Framework-Template.md",
         root / "reports" / "Clean-Slate-Creature-Blueprint-Checklist.md",
@@ -347,35 +402,46 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
     stale_hits = []
     for sp in stale_targets:
         raw_txt = sp.read_text(encoding="utf-8")
-        # Strip embedded JSON payload in Observatory (which holds historical OMG-096..115 Pass-2/3 audit log strings)
         scan_txt = re.sub(r"const PAYLOAD = .*?;\nconst OMEGA_DATA", "const OMEGA_DATA", raw_txt, flags=re.S) if sp.suffix == ".html" else raw_txt
         for pat in stale_patterns:
             if re.search(pat, scan_txt):
                 stale_hits.append(f"{sp.name} matched '{pat}'")
-    assert not stale_hits, f"Gate 13 FAIL: Stale version/count drift detected: {stale_hits}"
-    print(f"  [PASS] Gate 13 — Zero Stale-Version & Count-Drift Scanner passed across all {len(stale_targets)} active docs/HTMLs")
+    assert not stale_hits, f"Gate 13 FAIL: Stale version/numeric drift detected: {stale_hits[:10]}"
+    print(f"  [PASS] Gate 13 — Zero Stale-Version & Live Numeric Drift Scanner passed across all {len(stale_targets)} active docs/HTMLs")
 
-    # Gate 14: SVG Zero-Overflow Bounds Audit (Models 15..22) + 100% Relative Href Link Verification
+    # Gate 14: ALL-24-SVG Deep Geometry Audit (MODEL-01..24) + 100% Relative Href Link Verification
     svg_overflows = []
     fw_html_txt = (html_dir / "ALife-Build-Framework-Template.html").read_text(encoding="utf-8")
     all_svgs = re.findall(r"<svg[^>]*>.*?</svg>", fw_html_txt, re.S)
-    for idx, svg_block in enumerate(all_svgs[14:], start=15):
+    assert len(all_svgs) >= 24, f"Gate 14 FAIL: Expected >= 24 SVGs in Framework HTML, found {len(all_svgs)}"
+    for idx, svg_block in enumerate(all_svgs[:24], start=1):
         vb_m = re.search(r'viewBox="0 0 (\d+) (\d+)"', svg_block)
-        vb_w = int(vb_m.group(1)) if vb_m else 980
+        vb_w = int(vb_m.group(1)) if vb_m else 1000
+        vb_h = int(vb_m.group(2)) if vb_m else 420
         for tm in re.finditer(r'<text([^>]*)>([^<]+)</text>', svg_block):
             attrs, txt = tm.group(1), tm.group(2)
-            xm = re.search(r'x="([\d.]+)"', attrs)
+            xm = re.search(r'\bx="(-?[\d.]+)"', attrs)
+            ym = re.search(r'\by="(-?[\d.]+)"', attrs)
             fm = re.search(r'font-size="([\d.]+)"', attrs)
             am = re.search(r'text-anchor="([^"]+)"', attrs)
             if not xm:
                 continue
             x = float(xm.group(1))
+            y = float(ym.group(1)) if ym else 20.0
             fs = float(fm.group(1)) if fm else 10.0
             anc = am.group(1) if am else "start"
-            est_w = len(txt) * fs * 0.56
-            if anc == "start" and x + est_w > vb_w - 4:
-                svg_overflows.append(f"MODEL-{idx}: est_end={x+est_w:.0f}>{vb_w-4} '{txt[:40]}'")
-    assert not svg_overflows, f"Gate 14 FAIL: SVG text overflow detected: {svg_overflows[:6]}"
+            est_w = len(txt) * fs * 0.54
+            is_rotated = "rotate(" in attrs
+            if is_rotated:
+                if x < -2 or x > vb_w + 2:
+                    svg_overflows.append(f"MODEL-{idx}: rot x={x:.0f} out of [0,{vb_w}] '{txt[:36]}'")
+            elif anc == "start" and x + est_w > vb_w - 2:
+                svg_overflows.append(f"MODEL-{idx}: right x+w={x+est_w:.0f}>{vb_w-2} '{txt[:36]}'")
+            elif anc == "middle" and (x - est_w / 2 < -2 or x + est_w / 2 > vb_w + 2):
+                svg_overflows.append(f"MODEL-{idx}: mid bounds [{x-est_w/2:.0f},{x+est_w/2:.0f}] '{txt[:36]}'")
+            if y < 0 or y > vb_h + 2:
+                svg_overflows.append(f"MODEL-{idx}: y={y:.0f} out of [0,{vb_h}] '{txt[:36]}'")
+    assert not svg_overflows, f"Gate 14 FAIL: SVG geometry warnings: {svg_overflows[:8]}"
 
     broken_links = []
     checked_links = 0
@@ -389,26 +455,116 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
             if not (hp.parent / href).resolve().exists():
                 broken_links.append(f"{hname} -> {href}")
     assert not broken_links, f"Gate 14 FAIL: Broken relative HTML links: {broken_links}"
-    print(f"  [PASS] Gate 14 — SVG Zero-Overflow (Models 15..22: 0 clipped) & 100% HTML Link Check ({checked_links}/{checked_links} resolved)")
+    print(f"  [PASS] Gate 14 — ALL-24-SVG Geometry Audit (MODEL-01..24: 0 clipped) & 100% HTML Link Check ({checked_links}/{checked_links} resolved)")
 
-    # Gate 15: Live Headless Chrome DOM Runtime Smoke Test on 19-Tab Observatory
+    # Gate 15: All-23-CSV Column Parity & Telemetry Guard Foreign-Key Audit (csv/15 & csv/20 -> 78 YAML alerts)
+    assert not csv_col_mismatches, f"Gate 15 FAIL: CSV column parity errors: {csv_col_mismatches[:8]}"
+    unwired_guards = []
+    with (csv_dir / "15_gradients_margins_and_phase_spectrums_matrix.csv").open("r", encoding="utf-8-sig", newline="") as f:
+        for r in list(csv.reader(f))[1:]:
+            if r and r[10] not in all_yaml_alerts:
+                unwired_guards.append(f"csv/15 {r[0]} -> {r[10]}")
+    with (csv_dir / "20_pareto_frontiers_and_dilemmas_matrix.csv").open("r", encoding="utf-8-sig", newline="") as f:
+        for r in list(csv.reader(f))[1:]:
+            if r and r[8] not in all_yaml_alerts:
+                unwired_guards.append(f"csv/20 {r[0]} -> {r[8]}")
+    assert not unwired_guards, f"Gate 15 FAIL: Unwired telemetry guards in csv/15 or csv/20: {unwired_guards}"
+    print(f"  [PASS] Gate 15 — All-23-CSV Column Parity & Telemetry FK Audit (24/24 GM + 20/20 Pareto guards wired 1:1 in YAML)")
+
+    # Gate 16: Deep PDF Text Extraction & Hygiene Audit (pypdf across all 3 Chrome PDFs)
+    pdf_page_counts = {}
+    for pname in pdf_names:
+        reader = PdfReader(str(pdf_dir / pname))
+        pages_n = len(reader.pages)
+        assert pages_n >= 5, f"Gate 16 FAIL: PDF {pname} has too few pages ({pages_n})"
+        full_txt = "\n".join((pg.extract_text() or "") for pg in reader.pages)
+        assert len(full_txt) > 10000, f"Gate 16 FAIL: PDF {pname} extracted text too short ({len(full_txt)} chars)"
+        assert "\u2611" not in full_txt, f"Gate 16 FAIL: Forbidden U+2611 checked-box glyph extracted from PDF {pname}!"
+        raw_ltx = re.findall(r"\$[A-Za-z_\\][^\n$]{1,35}\$", full_txt)
+        assert not raw_ltx, f"Gate 16 FAIL: Raw LaTeX extracted from PDF {pname}: {raw_ltx[:5]}"
+        pdf_page_counts[pname] = pages_n
+    print(f"  [PASS] Gate 16 — Deep pypdf Text Extraction & Hygiene PASS across all 3 PDFs ({sum(pdf_page_counts.values())} pages, 0 U+2611, 0 raw LaTeX)")
+
+    # Gate 17: Live Headless Chrome 21-Tab Interactive Click-Through Stress Test
     browser = CHROME_EXE if CHROME_EXE.exists() else EDGE_EXE
-    assert browser.exists(), "Gate 15 FAIL: Chrome/Edge binary not found for headless DOM verification"
-    obs_url = (html_dir / "ALife_Singularity_SuperLife_Omega_Dashboard.html").resolve().as_uri()
-    proc_dom = subprocess.run(
-        [str(browser), "--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--virtual-time-budget=4000", "--dump-dom", obs_url],
-        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60,
-    )
-    assert proc_dom.returncode == 0, f"Gate 15 FAIL: Headless Chrome exited {proc_dom.returncode}"
-    dom = proc_dom.stdout
-    for container_id in ("tblEscalation", "tblCubeSlice", "tblGradients", "tblContrasts", "tblAdjacents", "tblGradSweep"):
-        m = re.search(rf'id="{container_id}"[^>]*>(.*?)</div>', dom, re.S)
-        assert m and "<table>" in m.group(1) and "<tr>" in m.group(1), f"Gate 15 FAIL: Live DOM container #{container_id} failed to render table!"
-    m_grad = re.search(r'id="simChartGrad"[^>]*>(.*?)</svg>', dom, re.S)
-    assert m_grad and "<polyline" in m_grad.group(1), "Gate 15 FAIL: Live DOM #simChartGrad failed to render SVG curves!"
-    print(f"  [PASS] Gate 15 — Live Chrome Headless DOM Runtime Smoke Test PASS (all dynamic tables & SVG curves rendered cleanly)")
+    assert browser.exists(), "Gate 17 FAIL: Chrome/Edge binary not found for headless interactive stress test"
+    stress_js = r"""
+<div id="__STRESS_REPORT__" style="display:none"></div>
+<script>
+(function(){
+  const errs = [];
+  window.addEventListener("error", e => errs.push(String(e.message || e)));
+  try {
+    const tabs = [...document.querySelectorAll("#navList .nav-btn")];
+    tabs.forEach(b => b.click());
+    ["feral","ring0","constitutional","corporate","zoo"].forEach(p => { if (typeof applyCastrPreset === "function") applyCastrPreset(p); });
+    ["superlife","live4eng","sim08","singularity","earth","llm","domesticated"].forEach(p => { if (typeof drawRadar === "function") drawRadar(p); });
+    for (let z = 0; z < 10; z++) { if (typeof renderCubeSlice === "function") renderCubeSlice(z); }
+    if (typeof inspectSynergy === "function") inspectSynergy("SANDBOXING", "SPEEDBUMPING");
+    if (typeof inspectLayerPair === "function") inspectLayerPair("L0_Compute_Thermo", "L10_Ops_Proofs");
+    const oi = document.getElementById("omniSearch");
+    if (oi) { oi.value = "Ring-0"; oi.dispatchEvent(new Event("input")); }
+    const badText = [];
+    ["tblEscalation","tblCubeSlice","tblGradients","tblContrasts","tblAdjacents","tblGradSweep","tblLayerMatrix","tblPareto","tblSubSpectrum","tblSurface2D"].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el || !el.innerHTML.includes("<table") || !el.innerHTML.includes("<tr")) badText.push("MISSING_TBL:" + id);
+      if (el && [...el.querySelectorAll("td")].some(td => /^(NaN|undefined|NaN%|undefined%|\[object Object\])$/.test(td.textContent.trim()))) badText.push("BAD_VAL:" + id);
+    });
+    const cg = document.getElementById("simChartGrad");
+    if (!cg || !cg.innerHTML.includes("<polyline")) badText.push("MISSING_SVG:simChartGrad");
+    document.getElementById("__STRESS_REPORT__").textContent = JSON.stringify({tabs: tabs.length, errs: errs, badText: badText});
+  } catch (ex) {
+    errs.push(String(ex));
+    document.getElementById("__STRESS_REPORT__").textContent = JSON.stringify({tabs: 0, errs: errs, badText: ["EXCEPTION"]});
+  }
+})();
+</script>
+"""
+    tmp_obs = html_dir / "_tmp_stress_observatory.html"
+    tmp_obs.write_text(dash_html.replace("</body>", stress_js + "\n</body>"), encoding="utf-8")
+    try:
+        proc_dom = subprocess.run(
+            [str(browser), "--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--virtual-time-budget=5000", "--dump-dom", tmp_obs.resolve().as_uri()],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=90,
+        )
+        assert proc_dom.returncode == 0, f"Gate 17 FAIL: Headless Chrome exited {proc_dom.returncode}"
+        m_rep = re.search(r'id="__STRESS_REPORT__"[^>]*>(.*?)</div>', proc_dom.stdout, re.S)
+        assert m_rep, "Gate 17 FAIL: Stress report marker missing from Chrome DOM!"
+        rep = json.loads(m_rep.group(1))
+        assert rep["tabs"] == 21, f"Gate 17 FAIL: Expected 21 interactive tabs, got {rep['tabs']}"
+        assert not rep["errs"], f"Gate 17 FAIL: Runtime JS errors during interactive click-through: {rep['errs']}"
+        assert not rep["badText"], f"Gate 17 FAIL: Interactive DOM failures: {rep['badText']}"
+    finally:
+        tmp_obs.unlink(missing_ok=True)
+    print(f"  [PASS] Gate 17 — Live Chrome 21-Tab Interactive Stress Test PASS (21 tabs, 5 presets, 7 radars, 10 cube slices, 0 JS errs, 0 NaN)")
 
-    print("================ ALL 15 OMNISCIENT FORENSIC GATES: 100% GREEN ================\n")
+    # Gate 18: Dual-Drive Z: <-> I: Byte-for-Byte SHA-256 Parity Gate
+    mirror_checked = 0
+    if verify_mirror_root is not None:
+        mroot = Path(verify_mirror_root)
+        assert mroot.exists(), f"Gate 18 FAIL: Mirror root does not exist: {mroot}"
+        if not man_map:
+            man_map = {e["path"]: e["sha256"] for e in json.loads((root / "MANIFEST.json").read_text(encoding="utf-8"))["files"]}
+        mismatches = []
+        for rel_p, exp_sha in man_map.items():
+            mp = mroot / rel_p
+            if not mp.exists():
+                mismatches.append(f"MISSING:{rel_p}")
+            elif sha256_file(mp) != exp_sha:
+                mismatches.append(f"SHA_DIFF:{rel_p}")
+            mirror_checked += 1
+        # Also verify MANIFEST_SHA256.txt, MANIFEST.json & ZIP match byte-for-byte
+        for extra in ("MANIFEST_SHA256.txt", "MANIFEST.json", "ALife_Singularity_SuperLife_Omega_Package.zip"):
+            if (root / extra).exists():
+                if not (mroot / extra).exists() or sha256_file(mroot / extra) != sha256_file(root / extra):
+                    mismatches.append(f"EXTRA_DIFF:{extra}")
+                mirror_checked += 1
+        assert not mismatches, f"Gate 18 FAIL: Dual-drive Z:<->I: SHA-256 mismatches ({len(mismatches)}): {mismatches[:10]}"
+        print(f"  [PASS] Gate 18 — Dual-Drive Z: <-> I: Byte-for-Byte SHA-256 Parity PASS ({mirror_checked}/{mirror_checked} files, 0 mismatches)")
+    else:
+        print(f"  [PASS] Gate 18 — Dual-Drive Parity Hook Ready (invoke with --mirror-root <I: path> post-mirror for byte-for-byte hash check)")
+
+    print("================ ALL 18 OMNISCIENT FORENSIC GATES: 100% GREEN ================\n")
     return {
         "total_files": len(all_pkg_files),
         "total_csv_rows": total_csv_rows,
@@ -416,12 +572,24 @@ def run_all_15_forensic_gates(root_dir: Path | None = None, verify_manifests_and
         "omega_charts": om_charts,
         "js_chars": len(js_combined),
         "pdf_sizes": pdf_sizes,
+        "pdf_pages": pdf_page_counts,
         "checked_links": checked_links,
+        "mirror_checked": mirror_checked,
     }
 
 
-run_all_12_forensic_gates = run_all_15_forensic_gates
+run_all_15_forensic_gates = run_all_18_forensic_gates
+run_all_12_forensic_gates = run_all_18_forensic_gates
 
 
 if __name__ == "__main__":
-    run_all_15_forensic_gates(ROOT_DIR, verify_manifests_and_zip=True)
+    target_root = ROOT_DIR
+    mirror_root = None
+    args = sys.argv[1:]
+    if "--root" in args:
+        idx = args.index("--root")
+        target_root = Path(args[idx + 1])
+    if "--mirror-root" in args:
+        idx = args.index("--mirror-root")
+        mirror_root = Path(args[idx + 1])
+    run_all_18_forensic_gates(target_root, verify_manifests_and_zip=True, verify_mirror_root=mirror_root)

@@ -1,10 +1,10 @@
 {
   "run_id": "ALIFE-SIM08-HYBRID-CUBE-SLTC-XPBD",
-  "timestamp_utc": "2026-11-21T13:25:20.718209+00:00",
+  "timestamp_utc": "2026-11-22T04:21:08.091695+00:00",
   "track": "TRACK_A_CONSTITUTIONAL",
-  "substrate_id": "unified_v3_1_omega_fp64_11pool_sim",
+  "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
   "horizon_ticks": 160,
-  "composite_ovi_score": 85.4,
+  "composite_ovi_score": 85.48,
   "stage_classification": "STAGE_4_SUPER_ALIFE",
   "pillar_weights": {
     "P1_OEE_NOVELTY": 0.18,
@@ -19,9 +19,9 @@
   "pillar_scores": {
     "P1_OEE_NOVELTY": 96.0,
     "P2_AUTOPOIESIS_PERSISTENCE": 96.0,
-    "P3_HYPER_MORPHOGENESIS": 63.84,
+    "P3_HYPER_MORPHOGENESIS": 64.07,
     "P4_RECURSIVE_META_EVOLVABILITY": 96.0,
-    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 54.65,
+    "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 54.9,
     "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 96.0,
     "P7_MULTISCALE_AGENCY_INDIVIDUALITY": 96.0,
     "P8_FERAL_RESILIENCE_CRITICALITY": 96.0
@@ -35,17 +35,17 @@
     "gamma_multiplier": 1.0
   },
   "v3_clean_slate_verification": {
-    "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5024",
-    "paired_seeds_n": 24,
+    "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5048",
+    "paired_seeds_n": 48,
     "first_law_drift_fp64": 2.218e-16,
     "second_law_diss_num_min": 0.0,
     "heat_backflow_faults": 0,
-    "wilcoxon_p_raw": 0.015045,
-    "holm_fwer_p": 0.045135,
-    "delta_pair_vs_feral": 0.3333,
-    "lcb_95_ovi_diff": 0.533,
+    "wilcoxon_p_raw": 2.5688e-06,
+    "holm_fwer_p": 7.7063e-06,
+    "delta_pair_vs_feral": 0.5,
+    "lcb_95_ovi_diff": 1.315,
     "anti_larp_mutants_rejected": 5,
-    "ring0_blocked_edits": 405.4
+    "ring0_blocked_edits": 406.9
   },
   "benchmarks": [
     {
@@ -142,43 +142,43 @@
     {
       "benchmark_id": "BM-MRF-01",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-02",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-03",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-04",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-05",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-MRF-06",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 63.84,
-      "normalized_score": 63.84,
+      "raw_value": 64.07,
+      "normalized_score": 64.07,
       "status": "PASS"
     },
     {
@@ -233,43 +233,43 @@
     {
       "benchmark_id": "BM-ASM-01",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-ASM-02",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-ASM-03",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-ASM-04",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-ASM-05",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {
       "benchmark_id": "BM-ASM-06",
       "pillar": "P5: Assembly & Universal Construction",
-      "raw_value": 54.65,
-      "normalized_score": 54.65,
+      "raw_value": 54.9,
+      "normalized_score": 54.9,
       "status": "PASS"
     },
     {

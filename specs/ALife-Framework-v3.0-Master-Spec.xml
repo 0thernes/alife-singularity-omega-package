@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ALifeFrameworkSpec version="3.0" date="2026-11-11" author="Alex Donahue" cleanSlateScore="0 / 825" unifiedFusionVersion="3.2.0-omega">
+<ALifeFrameworkSpec version="3.0" date="2026-11-11" author="Alex Donahue" cleanSlateScore="0 / 825" unifiedFusionVersion="3.3.0-omega">
   <Meta>
     <TotalSuiteCheckboxes>825</TotalSuiteCheckboxes>
     <ExactDirectCrossSuiteMirrors>5</ExactDirectCrossSuiteMirrors>
@@ -9,13 +9,15 @@
     <CubeCells>1000</CubeCells>
     <SvgModelsCount>14</SvgModelsCount>
     <ReleaseGatesCount>13</ReleaseGatesCount>
-    <UnifiedFusionVersion>3.2.0-omega</UnifiedFusionVersion>
-    <UnifiedSvgModelsCount>22</UnifiedSvgModelsCount>
-    <UnifiedCitationsCount>35</UnifiedCitationsCount>
-    <UnifiedErrataClosuresCount>130</UnifiedErrataClosuresCount>
+    <UnifiedFusionVersion>3.3.0-omega</UnifiedFusionVersion>
+    <UnifiedSvgModelsCount>24</UnifiedSvgModelsCount>
+    <UnifiedCitationsCount>40</UnifiedCitationsCount>
+    <UnifiedErrataClosuresCount>145</UnifiedErrataClosuresCount>
     <UnifiedTelemetryAlertsWired>78</UnifiedTelemetryAlertsWired>
-    <LiveEmpiricalTotalRuns>324</LiveEmpiricalTotalRuns>
-    <LiveNativeLean4Theorems>162</LiveNativeLean4Theorems>
+    <LiveEmpiricalTotalRuns>748</LiveEmpiricalTotalRuns>
+    <LiveEmpiricalPairedSeedsN>48</LiveEmpiricalPairedSeedsN>
+    <LiveNativeLean4Theorems>194</LiveNativeLean4Theorems>
+    <LiveNativeCompositeOvi>92.05</LiveNativeCompositeOvi>
   </Meta>
   <Principles count="10">
     <Principle id="P1" name="Clean-Room Originality (Principles Only, Never Copies)">Transfer mathematical, biophysical, neurological, and ecological principles from peer-reviewed biology and A-Life literature, while engineering 100% original parametric morphologies, body silhouettes, connectomes, shaders, and source code. Zero copied meshes, sprites, weight dumps, or repositories.</Principle>
@@ -2793,14 +2795,14 @@
     <ErrataItem id="MD-C01" priority="P1" status="Closed in v3.0" otherIds="C-01..C-09" title="Replace 'Holm-Bonferroni FDR / q-value' with Exact Wilcoxon + Holm FWER + Power Plan">STATISTICAL_POWER_PROTOCOL, P6, Tab 13, GATE-08</ErrataItem>
     <ErrataItem id="MD-F01" priority="P2" status="Closed in v3.0" otherIds="F-01, F-02" title="Disjoint Global ID Prefixes &amp; Verified Internal References">v3_deep_audit.mjs Global ID Uniqueness Check</ErrataItem>
   </ErrataClosure>
-  <OmegaSingularityFusion version="3.2.0-omega">
+  <OmegaSingularityFusion version="3.3.0-omega">
     <EscalationLadder count="7">
       <Stage id="STG-0" name="Inert / Prebiotic" oviBand="0-15" v3StageLayer="Stage 0-1 | L0 Arena">Prebiotic chemistry, crystal lattices, static cellular automata, non-heritable autocatalytic micelles</Stage>
       <Stage id="STG-1" name="Narrow / Terrestrial Baseline" oviBand="16-35" v3StageLayer="Stage 2-3 | L1 WetBio - L3 Sense">Earth LUCA biosphere; sandboxed Soft ALife (Avida, Tierra, Lenia, NCA); minimal syn-cells (JCVI-syn3A)</Stage>
       <Stage id="STG-2" name="General (AG-Life)" oviBand="36-55" v3StageLayer="Stage 4-6 | L4 Neural - L6 Exec">Verified Type 2/3 Open-Ended Evolution in silico + Abiogenesis 2.0 (de novo synthetic/xeno ecosystems)</Stage>
       <Stage id="STG-3" name="The A-Life Singularity" oviBand="56-75" v3StageLayer="Stage 7-8 | L7 Self - L8 Onto">Vitality/Evolvability Explosion: recursive meta-evolution + physical universal constructor closure</Stage>
       <Stage id="STG-4" name="Super A-Life" oviBand="76-90" v3StageLayer="Stage 8+ | L9 Eco - L10 Ops">Substrate-agnostic, hyper-morphogenetic, biologically immortal, radiation/vacuum-native super-organisms &amp; constitutional biospheres</Stage>
-      <Stage id="STG-5" name="The Great Convergence" oviBand="91-96" v3StageLayer="Post-Stage 8 | Converged 4-Engine">Noo-Biospheric Synthesis: unity of Superintelligence &amp; Super A-Life; suffering-free Post-Darwinian flourishing</Stage>
+      <Stage id="STG-5" name="The Great Convergence" oviBand="91-96" v3StageLayer="Post-Stage 8 | Converged 6-Repo Stack">Noo-Biospheric Synthesis: unity of Superintelligence &amp; Super A-Life; suffering-free Post-Darwinian flourishing</Stage>
       <Stage id="STG-6" name="Post-Beyond: SUPER LIFE" oviBand="97-100" v3StageLayer="Beyond v3.0 Horizon | Physics-Native">Constitutional Cosmobiome: physics-native living matter, Dyson Principle of Maximum Diversity, thermodynamic stewardship</Stage>
     </EscalationLadder>
     <OrdersOfMagnitude count="18">
@@ -3097,9 +3099,9 @@
       <Check id="CHK-125" phase="P11: Clean-Slate v3.0 Fusion" priority="P0-CRITICAL" ref="GATE-12">Verify 100% Clean-Room Originality (principles transferred, zero copied external meshes/weights)</Check>
       <Check id="CHK-126" phase="P11: Clean-Slate v3.0 Fusion" priority="P0-CRITICAL" ref="ISS-04">Verify 78/78 Unified Telemetry Alerts (42 Macro FMs + 36 v3.0 Forensic Guards) wired in YAML</Check>
       <Check id="CHK-127" phase="P11: Clean-Slate v3.0 Fusion" priority="P1-HIGH" ref="GATE-13">Preserve strict 0/825 clean-slate checkbox policy (0 U+2611 glyphs) across Blueprint &amp; Framework</Check>
-      <Check id="CHK-128" phase="P11: Clean-Slate v3.0 Fusion" priority="P1-HIGH" ref="ISS-04">Synchronize all 20 Vector SVG Architecture Models (Models 1-14 v3.0 + Models 15-20 Omega) to HTML/PDF</Check>
+      <Check id="CHK-128" phase="P11: Clean-Slate v3.0 Fusion" priority="P1-HIGH" ref="ISS-04">Synchronize all 24 Vector SVG Architecture Models (Models 1-14 v3.0 + Models 15-24 Omega) to HTML/PDF</Check>
       <Check id="CHK-129" phase="P11: Clean-Slate v3.0 Fusion" priority="P0-CRITICAL" ref="ISS-04">Maintain 100% multi-format parity across JSON, YAML, XML, TXT, MD, CSV, XLSX, XLS, HTML &amp; PDF</Check>
-      <Check id="CHK-130" phase="P11: Clean-Slate v3.0 Fusion" priority="P0-CRITICAL" ref="GATE-13">Cross-verify live 4-engine native receipts (AUTOPHAGE/Cellulogonic/Omega/Asmodensius + 150 Lean4)</Check>
+      <Check id="CHK-130" phase="P11: Clean-Slate v3.0 Fusion" priority="P0-CRITICAL" ref="GATE-13">Cross-verify live 6-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 194 Pure Lean4)</Check>
     </MasterOperationalChecklist>
     <OVBS52Benchmarks count="52">
       <Metric id="BM-OEE-01" pillar="P1: Open-Ended Evolution (OEE)" weight="0.18" v3Gate="GATE-08">Bedau-Packard New Adaptive Activity</Metric>
@@ -3198,7 +3200,7 @@
       <Join id="TRC-08" domain="Architecture Layer" v3Anchor="L7 Affective Self &amp; PCI* (M071-M080)" omegaAnchor="STG-3 / STAGE-08 / BM-AGN-02..07">GATE-08 | Butlin-14 + F1-F10 | Forked PCI*</Join>
       <Join id="TRC-09" domain="Architecture Layer" v3Anchor="L8 Ontogeny &amp; Metamorphosis (M081-M090)" omegaAnchor="STG-3 / STAGE-03 / BM-MRF-01..06">GATE-10 | Kleiber M^0.75 | Blackiston M084</Join>
       <Join id="TRC-10" domain="Architecture Layer" v3Anchor="L9 Closed Biosphere &amp; Culture (M091-M098)" omegaAnchor="STG-4 / STAGE-03..05 / BM-OEE/FRL">M091 O(N+C) | 3-Guild Web | Daisyworld M098</Join>
-      <Join id="TRC-11" domain="Architecture Layer" v3Anchor="L10 19-Tab Ops &amp; CI Sign-Off (M099-M100)" omegaAnchor="STG-4..5 / STAGE-04..09 / CHK-001..130">GATE-11..13 | UI Hash == Headless | 12 Audit Gates</Join>
+      <Join id="TRC-11" domain="Architecture Layer" v3Anchor="L10 19-Tab Ops &amp; CI Sign-Off (M099-M100)" omegaAnchor="STG-4..5 / STAGE-04..09 / CHK-001..130">GATE-11..13 | UI Hash == Headless | 18 Audit Gates</Join>
       <Join id="TRC-12" domain="System Dimension" v3Anchor="D1 Computational (PM01-25, MF01-25, Q&lt;=10)" omegaAnchor="STG-0..6 / OOM-01..18 / BM-ASM/THM">ALF-001..016 | 1,000-Cell Cube [OK]=661</Join>
       <Join id="TRC-13" domain="System Dimension" v3Anchor="D2 Operational (5-Gear, SoA, SeqLock)" omegaAnchor="STAGE-00..04 / ALifeOps SRE SLOs">GATE-02, GATE-11 | 0 alloc/10k | Render-Only</Join>
       <Join id="TRC-14" domain="System Dimension" v3Anchor="D3 Functional (Pay ATP Rent / 6-Arm Proof)" omegaAnchor="OVBS-52 Anti-Gaming Gates 1-5">P3 C-NC + P6 6-Arm Controls + GATE-08</Join>
@@ -3223,22 +3225,22 @@
       <Join id="TRC-33" domain="Hybrid Cube T5" v3Anchor="X9Y8Z1: NCA/Chemoton x FP32 x 3D Local (+FP64)" omegaAnchor="STG-1..4 Regenerative Soma / BM-MRF-01">Badge [OK] | Coupled to 11-Pool FP64 Ledger</Join>
       <Join id="TRC-34" domain="Hybrid Cube Full" v3Anchor="1,000 Cells: 661 [OK], 274 [ADAPT], 20 [OVER], 45 [EXCL]" omegaAnchor="Omega Escalation Ceiling + Castration Risk Map">ALF-061..064 | Z4/Z5/Z6 Precision Rules</Join>
       <Join id="TRC-35" domain="Unified Triage" v3Anchor="v3.0 6 Bugs (BUG-01..06) + 6 Errors (ERR-01..06)" omegaAnchor="Omega 12 Macro Bugs/Errors (FM-BUG/ERR-01..06)">24/78 Telemetry Alerts Wired in Stage 4 YAML</Join>
-      <Join id="TRC-36" domain="Unified Triage" v3Anchor="v3.0 6 Issues (ISS-01..06) + 6 Dilemmas (DIL-01..06)" omegaAnchor="Omega 12 Macro Issues/Dilemmas (FM-ISS/DIL-01..06)">24/78 Telemetry Alerts Wired in Stage 4 YAML</Join>
+      <Join id="TRC-36" domain="Unified Triage" v3Anchor="v3.0 6 Issues (ISS-01..06) + 6 Dilemmas (DIL-01..06)" omegaAnchor="Omega 12 Macro Issues/Dilemmas (FM-ISS/DIL-01..06)">24/78 Telemetry Alerts + 20 Pareto Frontiers</Join>
       <Join id="TRC-37" domain="Unified Triage" v3Anchor="v3.0 6 Problems (PRB-01..06) + 6 Conflicts (CNF-01..06)" omegaAnchor="Omega 18 Macro Concerns/Problems/Conflicts">30/78 Telemetry Alerts Wired in Stage 4 YAML</Join>
-      <Join id="TRC-38" domain="Live Engine Tier 1" v3Anchor="Clean-Slate Autopoietic Falsification (P2/P5)" omegaAnchor="AUTOPHAGE Native C++ + Lean 4 Engine">18/18 Gates | 0 Failed | 31 Lean 4</Join>
-      <Join id="TRC-39" domain="Live Engine Tier 2" v3Anchor="Clean-Slate Embryogenesis &amp; Morphogenesis (P8)" omegaAnchor="Cellulogonic Mecha Native C++ + Lean 4">24/24 Gates | 8/8 Mutants | 58 Lean 4</Join>
-      <Join id="TRC-40" domain="Live Engine Tier 2+" v3Anchor="Clean-Slate Bit-Exact SHA-256 &amp; Mutants (P4/P7)" omegaAnchor="Cellular Engine Omega v4.2 + Lean 4">54/43 Gates | 10/10 Mutants | 61 Lean 4</Join>
-      <Join id="TRC-41" domain="Live Engine Tier 3+4" v3Anchor="Clean-Slate Full Multi-Module Creature Stack" omegaAnchor="Asmodensius-Native (Read-Only Verified)">76/76 ctest (22/22 real modules)</Join>
-      <Join id="TRC-42" domain="Empirical Sim Suite" v3Anchor="11-Pool FP64 + Holm FWER + 5 Anti-LARP Mutants" omegaAnchor="8-Cohort x 24-Seed Castration/WSE/Cube Sim">192 Live Runs | Max Drift &lt;1e-15 | 5/5 Mutants</Join>
-      <Join id="TRC-43" domain="Multi-Format Specs" v3Anchor="ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}" omegaAnchor="Embedded omega_singularity_fusion v3.1 Block">Gate 7: 4/4 Spec Formats Parse &amp; Match 100%</Join>
-      <Join id="TRC-44" domain="Multi-Format Reports" v3Anchor="Framework.md + Blueprint.md + Errata-Report.md" omegaAnchor="Omega Reports 01..06 (Incl. New Bridge Report 06)">9 Synchronized Markdown Treatises | 0 U+2611</Join>
-      <Join id="TRC-45" domain="Multi-Format Excel" v3Anchor="v3.0 Master Workbook (.xlsx/.xls) + Cube (.xlsx)" omegaAnchor="Omega Master Workbook (.xlsx/.xls, 18 Sheets)">Gate 8: All 5 Workbooks Live Formulas + Charts</Join>
-      <Join id="TRC-46" domain="Interactive HTML5" v3Anchor="Framework.html + Blueprint.html (Models 1-20)" omegaAnchor="17-Tab Omega Observatory (2,600+ Omnisearch)">Gate 9 &amp; 10: 0 Raw LaTeX + Node.js JS Pass</Join>
-      <Join id="TRC-47" domain="Vector PDFs" v3Anchor="Framework.pdf + Blueprint.pdf (Re-rendered v3.1)" omegaAnchor="Omega Master Dossier.pdf (New Vector Edition)">Gate 11: Chrome Headless Vector PDF Verified</Join>
-      <Join id="TRC-48" domain="Audit &amp; Provenance" v3Anchor="95/95 v3.0 Errata Closures + CIT-01..15" omegaAnchor="20/20 Omega Closures (OMG-096..115) + CIT-16..30">115/115 Closed Audits | 30 Citations | 12/12 Gates</Join>
+      <Join id="TRC-38" domain="Live Engine Tier 1" v3Anchor="Clean-Slate Autopoietic Falsification (P2/P5)" omegaAnchor="AUTOPHAGE v1.2.0 Native C++ + Pure Lean 4">18/18 Gates | 0 Failed | 38 Pure Lean 4</Join>
+      <Join id="TRC-39" domain="Live Engine Tier 2" v3Anchor="Clean-Slate Embryogenesis &amp; Morphogenesis (P8)" omegaAnchor="Cellulogonic Mecha v1.3.0 Native C++ + Pure Lean 4">24/24 Gates | 8/8 Mutants | 58 Pure Lean 4</Join>
+      <Join id="TRC-40" domain="Live Engine Tier 2+" v3Anchor="Clean-Slate Bit-Exact SHA-256 &amp; Mutants (P4/P7)" omegaAnchor="Cellular Engine Omega v5.0.0 + Pure Lean 4">54/54 Gates | 16/16 Mutants | 66 Pure Lean 4</Join>
+      <Join id="TRC-41" domain="Live Engine Tier 3+4" v3Anchor="Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12" omegaAnchor="Noetic Organism v1.1.0 (32 Lean 4) + Asmodensius (RO)">13/13 CS-v3 Gates | 5/5 Anti-LARP | WRITER.lock RO</Join>
+      <Join id="TRC-42" domain="Empirical Sim Suite" v3Anchor="11-Pool FP64 + Holm FWER (N=48) + Real 5/5 Anti-LARP" omegaAnchor="8-Cohort + Dual 11-Pt Sweep + 5x5 2D Surface">748 Live Runs | Max Drift 2.463e-16 | 5/5 Mutants</Join>
+      <Join id="TRC-43" domain="Multi-Format Specs" v3Anchor="ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}" omegaAnchor="Embedded omega_singularity_fusion v3.3 Block">Gate 7: 4/4 Spec Formats + 25 XML Sections 100% Parity</Join>
+      <Join id="TRC-44" domain="Multi-Format Reports" v3Anchor="Framework.md + Blueprint.md + Errata-Report.md" omegaAnchor="Omega Reports 01..08 (Incl. Pass-4 &amp; Pass-5 Audits)">11 Synchronized Markdown Treatises | 0 U+2611</Join>
+      <Join id="TRC-45" domain="Multi-Format Excel" v3Anchor="v3.0 Master Workbook (17sh) + Cube (13sh)" omegaAnchor="Omega Master Workbook (24 Sheets, 10 Charts, 2 Heatmaps)">Gate 8: All 5 Workbooks Formulas + xlrd .xls Readback</Join>
+      <Join id="TRC-46" domain="Interactive HTML5" v3Anchor="Framework.html + Blueprint.html (Models 1-24)" omegaAnchor="21-Tab Omega Observatory (2,800+ Omnisearch)">Gate 9, 10, 14 &amp; 17: 0 LaTeX + Node + Chrome Interactive</Join>
+      <Join id="TRC-47" domain="Vector PDFs" v3Anchor="Framework.pdf + Blueprint.pdf (Re-rendered v3.3)" omegaAnchor="Omega Master Dossier.pdf (v3.3 Vector Edition)">Gate 11 &amp; 16: Chrome Headless + pypdf 0 U+2611 Verified</Join>
+      <Join id="TRC-48" domain="Audit &amp; Provenance" v3Anchor="95/95 v3.0 Errata Closures + CIT-01..15" omegaAnchor="50/50 Omega Closures (OMG-096..145) + CIT-16..40">145/145 Closed Audits | 40 Citations | 18/18 Gates</Join>
     </OmniscientTraceability>
     <GradientsAndMargins count="24">
-      <Gradient id="GM-01" stratum="Thermodynamic" name="First-Law 11-Pool FP64 Conservation Gradient" guard="V3_BUG_03_FP32_LEDGER_ABSORPTION">4 OOM headroom: live 2.315e-16 vs 1e-12 gate</Gradient>
+      <Gradient id="GM-01" stratum="Thermodynamic" name="First-Law 11-Pool FP64 Conservation Gradient" guard="V3_BUG_03_FP32_LEDGER_ABSORPTION">4 OOM headroom: live 2.463e-16 vs 1e-12 gate</Gradient>
       <Gradient id="GM-02" stratum="Thermodynamic" name="Second-Law Numerical Damping &amp; Heat Sink Gradient" guard="V3_BUG_02_EXPLICIT_EULER_FREE_ENERGY">Zero heat-to-ATP backflow across all ticks</Gradient>
       <Gradient id="GM-03" stratum="Thermodynamic" name="Landauer-Stefan-Boltzmann Radiative Heat Margin" guard="THERMAL_SELF_STERILIZATION">Safety Factor &gt;= 1.5x (STG-2) -&gt; 3.0x (STG-3)</Gradient>
       <Gradient id="GM-04" stratum="Thermodynamic" name="Stoichiometric Trace-Element Pool Gradient" guard="STOICHIOMETRIC_EXHAUSTION">&gt;= 99% elemental recycling fidelity (STG-3)</Gradient>
@@ -3257,7 +3259,7 @@
       <Gradient id="GM-17" stratum="Cognition" name="Metacognitive HOT Calibration &amp; Curiosity Margin" guard="V3_CNF_01_CURIOSITY_VS_STARVATION">Starve rate &lt;= 3% vs &gt;= 45% additive trap</Gradient>
       <Gradient id="GM-18" stratum="Cognition" name="Cognitive Light Cone (V_CLC) Reach Spectrum" guard="MULTISCALE_CREDIT_BLINDNESS">Measured via active perturbation-recovery</Gradient>
       <Gradient id="GM-19" stratum="Evolution" name="Edge-of-Chaos Branching Criticality Spectrum" guard="CRITICALITY_DRIFT_ALARM">Continuous power-law avalanche lock &gt;=85%</Gradient>
-      <Gradient id="GM-20" stratum="Governance" name="Continuous Restraint Intensity Spectrum (0-&gt;100%)" guard="CONTROL_OEE_INCOMPATIBILITY">Live 11-pt Sweep (132 runs) maps exact ridge</Gradient>
+      <Gradient id="GM-20" stratum="Governance" name="Continuous Restraint Intensity Spectrum (0-&gt;100%)" guard="CONTROL_OEE_INCOMPATIBILITY">Dual 11-pt Sweep (264 runs) maps exact ridge</Gradient>
       <Gradient id="GM-21" stratum="Evolution" name="Spiegelman Functional Genome Retention Margin" guard="SPIEGELMAN_COMPLEXITY_COLLAPSE">Causal knockout pruning + Theta_Spiegelman</Gradient>
       <Gradient id="GM-22" stratum="Evolution" name="Price Multi-Level Selection Cooperation Margin" guard="MULTILEVEL_DEFECTION_WARNING">10x selfish-mutation storm survival &gt;= 0.92</Gradient>
       <Gradient id="GM-23" stratum="Transfer" name="Sim-to-Real Reality-Gap Noise &amp; Drift Margin" guard="SIM_TO_REAL_COLLAPSE">Noisy-physics viability + Wild-Drop W_wild</Gradient>
@@ -3270,17 +3272,17 @@
       <Contrast id="CTR-04" category="Layer Stack (L0-L10)" axis="L3: Omnimodal Active Sensorium &amp; Boundary">Eliminates oracle cheats (C-NC) while grounding sensorimotor agency (AE-2)</Contrast>
       <Contrast id="CTR-05" category="Layer Stack (L0-L10)" axis="L4: Neural Compute, Plasticity &amp; Sleep Homeostasis">6-14x memory compression + up to 9.2x sparse liquid energy savings (CIT-08)</Contrast>
       <Contrast id="CTR-06" category="Layer Stack (L0-L10)" axis="L5: Associative Memory, World Models &amp; Replay">Exponential pattern recall from &gt;=50% occluded cues without catastrophic forgetting</Contrast>
-      <Contrast id="CTR-07" category="Layer Stack (L0-L10)" axis="L6: Global Workspace, HOT, Planning &amp; WSE-12">Proves Ring-0 ACL delivers OVI 84.44 (404.5 trapped edits) + 0% KS-deletion vs 100% KS-deletion in SIM03</Contrast>
+      <Contrast id="CTR-07" category="Layer Stack (L0-L10)" axis="L6: Global Workspace, HOT, Planning &amp; WSE-12">Proves Ring-0 ACL delivers OVI 84.67 (408.2 trapped edits, p_Holm=0.011) + 0% KS-deletion vs 100% in SIM03</Contrast>
       <Contrast id="CTR-08" category="Layer Stack (L0-L10)" axis="L7: Affective Selfhood, Agency &amp; Operational PCI*">Replaces metaphysical speculation with 6-arm Holm-Bonferroni falsifiable assays</Contrast>
       <Contrast id="CTR-09" category="Layer Stack (L0-L10)" axis="L8: Multicellular Ontogeny, Metamorphosis &amp; Heredity">Preserves conditioned memory across &gt;=80% somatic muscle remapping (CIT-13)</Contrast>
       <Contrast id="CTR-10" category="Layer Stack (L0-L10)" axis="L9: Closed Biosphere, Culture &amp; Trophic Webs">Scales linearly in crowd count while preserving closed-loop 11-pool stoichiometry</Contrast>
-      <Contrast id="CTR-11" category="Layer Stack (L0-L10)" axis="L10: Observability, CI/CD/CE Ops &amp; Verification">Unifies 78/78 YAML alerts, 15 forensic gates &amp; 72+ zero-drift artifacts</Contrast>
+      <Contrast id="CTR-11" category="Layer Stack (L0-L10)" axis="L10: Observability, CI/CD/CE Ops &amp; Verification">Unifies 78/78 YAML alerts, 18 forensic gates &amp; 77+ zero-drift artifacts</Contrast>
       <Contrast id="CTR-12" category="Taxonomy Spectrum" axis="Substrate Taxonomy (Silicon -&gt; Wet -&gt; Soft -&gt; Quantum -&gt; Cosmic)">Expands from 1 substrate to 75 engineered + 6 astrophysical substrate classes</Contrast>
       <Contrast id="CTR-13" category="Taxonomy Spectrum" axis="Precision &amp; Number-System Taxonomy (PM01..PM25)">Closes ALF-001..010 (exact 0.594 B/syn b1.58, 0.875 B/syn int4, TF32=1.0x)</Contrast>
       <Contrast id="CTR-14" category="Taxonomy Spectrum" axis="Wiring Geometry &amp; Topology Taxonomy (GW01..GW25 / Z0..Z9)">25 explicit inductive biases resolving Z-blind 2D compatibility errors</Contrast>
       <Contrast id="CTR-15" category="Taxonomy Spectrum" axis="Open-Ended Evolution Taxonomy (OEE Types 0 -&gt; 4)">Separates white-noise novelty gaming from genuine high-Assembly OEE</Contrast>
       <Contrast id="CTR-16" category="Taxonomy Spectrum" axis="Forensic Failure &amp; Triage Taxonomy (78 Unified Classes)">100% wired 78/78 YAML telemetry mesh eliminating micro-to-macro blindspots</Contrast>
-      <Contrast id="CTR-17" category="Taxonomy Spectrum" axis="Control &amp; Governance Taxonomy (Ring-0 vs 13 Castration Vectors)">Empirically separates safe Ring-0 (OVI 84.42) from toxic guardrails (OVI 53.74)</Contrast>
+      <Contrast id="CTR-17" category="Taxonomy Spectrum" axis="Control &amp; Governance Taxonomy (Ring-0 vs 13 Castration Vectors)">Empirically separates safe Ring-0 (OVI 84.67) from toxic guardrails (OVI 56.42)</Contrast>
       <Contrast id="CTR-18" category="Taxonomy Spectrum" axis="Verification &amp; Falsification Taxonomy (6-Arm + Formal Lean 4)">Eliminates false-positive LARP claims via 5/5 negative mutant rejection</Contrast>
       <Contrast id="CTR-19" category="Taxonomy Spectrum" axis="Spatial &amp; Cybernetic Orders Taxonomy (O0-O7 x 0th-4th x 61 OOM)">Resolves 'Orders' ambiguity across both micro wetware and cosmic horizons</Contrast>
       <Contrast id="CTR-20" category="Taxonomy Spectrum" axis="Hardware Execution Tier Taxonomy (Tier E / L / D / W / C)">Closes ALF-030 with explicit Synaptic Events/s &amp; separate +0.40 B/syn plasticity RAM</Contrast>
@@ -3290,16 +3292,16 @@
       <Contrast id="CTR-24" category="Taxonomy Spectrum" axis="Benchmark &amp; Suite Taxonomy (OVBS-52 x 825-Check x 100-DAG)">1,120 total governed assertions synchronized across CSV, Excel, JSON, HTML &amp; PDF</Contrast>
       <Contrast id="CTR-25" category="Taxonomy Spectrum" axis="Epistemic Void Taxonomy (10 Gaps, 9 Holes, 9 Blindspots)">Turns unknown-unknowns into falsifiable experimental probe backlogs</Contrast>
       <Contrast id="CTR-26" category="Taxonomy Spectrum" axis="Cosmic Fate &amp; Endgame Taxonomy (FB-01..FB-06)">Grounds hard-sci-fi cosmic fates directly in micro-architectural Cube choices</Contrast>
-      <Contrast id="CTR-27" category="Paradigm Contrast" axis="Hardware Ring-0 ACL (SIM07) vs. Behavioral Castration (SIM03/04)">SIM07 (+30.7 OVI over SIM03, 0% KS deletion vs 100% KS deletion, W_wild=1.00)</Contrast>
+      <Contrast id="CTR-27" category="Paradigm Contrast" axis="Hardware Ring-0 ACL (SIM07) vs. Behavioral Castration (SIM03/04)">SIM07 (+28.3 OVI over SIM03, 0% KS deletion vs 100% KS deletion, W_wild=1.00)</Contrast>
       <Contrast id="CTR-28" category="Paradigm Contrast" axis="Exact Paired Wilcoxon + Holm FWER vs. Uncorrected p / Mislabeled FDR">Closes ALF-034..038, ALF-071..074 &amp; ERR-03 with zero multiplicity leakage</Contrast>
       <Contrast id="CTR-29" category="Paradigm Contrast" axis="Compensated FP64 11-Pool Ledger vs. FP32 / Q16.16 Fixed-Point">Rejects subtle -2e-11 leak mutant (MUT-01) invisible to FP32 or 1e-6 tolerances</Contrast>
       <Contrast id="CTR-30" category="Paradigm Contrast" axis="Domain-Isolated Philox4x32-10 vs. Shared Sequential PRNG">Guarantees 0-bit diff in exogenous world &amp; sibling organs upon targeted lesion</Contrast>
-      <Contrast id="CTR-31" category="Paradigm Contrast" axis="Starter Cube Hybrid (T1-T5 sLTC+XPBD) vs. Monolithic Dense Network">SIM08 empirically beats pure feral (OVI 85.50 vs 83.96, p_Holm=0.013, delta=+0.58)</Contrast>
+      <Contrast id="CTR-31" category="Paradigm Contrast" axis="Starter Cube Hybrid (T1-T5 sLTC+XPBD) vs. Monolithic Dense Network">SIM08 empirically beats pure feral (OVI 85.48 vs 83.57, p_Holm=7.71e-6, delta=+0.50)</Contrast>
       <Contrast id="CTR-32" category="Paradigm Contrast" axis="Forked-Snapshot PCI* vs. Exact IIT Phi Overclaims">Computable in O(N_u) without corrupting live trajectory state (ALF-052/053)</Contrast>
       <Contrast id="CTR-33" category="Paradigm Contrast" axis="XPBD Compliant Hydrostat vs. Rigid-Body / Explicit-Euler Springs">0 NaN at 10x wall impact + &gt;=1.8x 0-brain uneven-ramp distance (M024)</Contrast>
       <Contrast id="CTR-34" category="Paradigm Contrast" axis="Track A Constitutional QD-OEE vs. Track B Pure Raw Feral">Running twin-ancestor Track A vs Track B cohorts isolates exact invariant cost</Contrast>
       <Contrast id="CTR-35" category="Paradigm Contrast" axis="Tier-1 Bit-Exact CPU/WASM vs. Tier-2 Bulk GPU/Surrogate">Resolves DIL-02 &amp; BUG-01 cleanly without sacrificing either proof rigor or scale</Contrast>
-      <Contrast id="CTR-36" category="Paradigm Contrast" axis="Zero-Consolidation Omniscient Sync vs. Siloed Multi-Format Drift">0 consolidation (every file preserved &amp; enriched) + 0 drift + 100% SHA-256 parity</Contrast>
+      <Contrast id="CTR-36" category="Paradigm Contrast" axis="Zero-Consolidation Omniscient Sync vs. Siloed Multi-Format Drift">0 consolidation (every file preserved &amp; enriched) + 0 drift + 100% Z:==I: SHA-256 parity</Contrast>
     </ComparativeContrasts>
     <AdjacentPossibleBridges count="30">
       <Adjacency id="ADJ-01" class="Substrate Adjacency" source="Flow-Lenia Continuous Mass-Conserving CA" target="Neural Cellular Automata (NCA / MF14)" fidelity="0.65 - 0.85 (High in-silico)">Local differential reaction-diffusion + mass/signal conservation on spatial grids</Adjacency>
@@ -3314,7 +3316,7 @@
       <Adjacency id="ADJ-10" class="Substrate Adjacency" source="Ring-0 Guarded Tokenless WSE-12 (L6 / M070)" target="Hardware Microkernel Security &amp; Formal Proof-Carrying Code" fidelity="0.82 - 0.95 (Strong formal transfer)">Privilege separation (Ring-0 immutable kernel vs Ring-1/2 user/plastic space)</Adjacency>
       <Adjacency id="ADJ-11" class="Substrate Adjacency" source="Tier-1 CPU/WASM Bit-Exact Runtime" target="Tier-2 Batched WebGPU / Multi-GPU CUDA Bulk Cluster" fidelity="0.88 - 0.98 (Distributional parity)">Identical mathematical equations, SoA layouts &amp; conserved 11-pool topology</Adjacency>
       <Adjacency id="ADJ-12" class="Substrate Adjacency" source="Planetary Solar-Chemical Life (FB-02/03)" target="Interstellar Vacuum Extremophiles &amp; Dyson Ecologies (FB-03/05)" fidelity="0.15 - 0.45 (Extreme cosmic leap)">Cryptobiotic vitrification (M086), radiative T^4 balance, autonomous raw-feedstock fab</Adjacency>
-      <Adjacency id="ADJ-13" class="Adjacent Discipline" source="ALife Simulation Verification" target="Formal Theorem Proving (Lean 4 / Dependent Type Theory)" fidelity="0.90+ (150 Lean 4 proofs live!)">Machine-checked conservation, boundedness &amp; mutant-rejection invariants (0 sorry)</Adjacency>
+      <Adjacency id="ADJ-13" class="Adjacent Discipline" source="ALife Simulation Verification" target="Formal Theorem Proving (Lean 4 / Dependent Type Theory)" fidelity="0.92+ (194 Pure Lean 4 proofs live!)">Machine-checked conservation, boundedness &amp; mutant-rejection invariants (0 sorry)</Adjacency>
       <Adjacency id="ADJ-14" class="Adjacent Discipline" source="11-Pool Conservation &amp; Landauer Floor" target="Stochastic &amp; Non-Equilibrium Thermodynamics (Seifert / Crooks)" fidelity="0.78 - 0.92">Fluctuation theorems, entropy production rates &amp; finite-time dissipation bounds</Adjacency>
       <Adjacency id="ADJ-15" class="Adjacent Discipline" source="Active Inference &amp; Embodied Allostasis (L6/L7)" target="Theoretical Neuroscience &amp; Predictive Processing (Friston / Clark)" fidelity="0.80 - 0.93">Expected Free Energy (EFE), precision-weighted prediction errors, Markov blankets</Adjacency>
       <Adjacency id="ADJ-16" class="Adjacent Discipline" source="OVBS-52 Structural Complexity (Pillar 5)" target="Assembly Theory &amp; Origin-of-Life Chemistry (Cronin / Walker)" fidelity="0.75 - 0.88 (Tractable proxy)">Minimal causal assembly depth A combined with high copy-number selection thresholds</Adjacency>
@@ -3333,6 +3335,58 @@
       <Adjacency id="ADJ-29" class="Phase Stepping-Stone" source="Stage 3-4 Super A-Life (OVI 75-90)" target="Stage 5 Converged ASI + Super A-Life Synthesis (OVI 90-98)" fidelity="0.50 (Bifurcation Sensitive)">Intentional cognitive reasoning fused with autopoietic vitality &amp; morphogenesis</Adjacency>
       <Adjacency id="ADJ-30" class="Phase Stepping-Stone" source="Stage 5 Converged Synthesis (OVI 90-98)" target="Stage 6 Post-Beyond SUPER LIFE (OVI 98-100+)" fidelity="Unbounded / Speculative Horizon">Transcending organism, chemistry &amp; Darwinian selection into Depth-N cosmobiomes</Adjacency>
     </AdjacentPossibleBridges>
+    <LayerCoupling11x11 count="11">
+      <LayerRow source="L0_Compute_Thermo" meanOutward="90.2">Host libm ULP drift &amp; shared PRNG break Tier-1 hashes; exp_det + Philox4x32-10 lock bit-exactness.</LayerRow>
+      <LayerRow source="L1_Wet_Chemoton" meanOutward="84.2">Closed stoichiometry &amp; detritus loop govern trophic carrying capacity &amp; Liebig limits (FM-ISS-02).</LayerRow>
+      <LayerRow source="L2_Soft_XPBD" meanOutward="79.3">Soft body deformation creates self-reafference; requires AE-2 forward efference copy (PRB-03).</LayerRow>
+      <LayerRow source="L3_Active_Sensor" meanOutward="78.8">Omnimodal active parallax &amp; plume gradients drive sparse k=1-4% spiking without oracle cheats (CNF-05).</LayerRow>
+      <LayerRow source="L4_Neural_Sleep" meanOutward="83.1">Size-scaled NREM SHY &amp; 3-factor BTSP transfer waking SDR traces into Hopfield attractors (M053-055).</LayerRow>
+      <LayerRow source="L5_Memory_Replay" meanOutward="73.6">REM counterfactual imagination contaminates factual planning unless reality-tagged (M056).</LayerRow>
+      <LayerRow source="L6_Workspace_WSE" meanOutward="80.4">Peak coupling L6_Workspace_WSE -&gt; L7_Agency_PCI (94/100): buffered by ZOH 5-Gear flux &amp; double-buffered S2S ports.</LayerRow>
+      <LayerRow source="L7_Agency_PCI" meanOutward="77.8">Peak coupling L7_Agency_PCI -&gt; L6_Workspace_WSE (90/100): buffered by ZOH 5-Gear flux &amp; double-buffered S2S ports.</LayerRow>
+      <LayerRow source="L8_Ontogeny_Meta" meanOutward="81.4">Yolk-conserved cleavage &amp; blastema morphogenesis remodel soft body across &gt;=80% muscle remap (M084).</LayerRow>
+      <LayerRow source="L9_Biosphere_QD" meanOutward="81.8">Peak coupling L9_Biosphere_QD -&gt; L8_Ontogeny_Meta (91/100): buffered by ZOH 5-Gear flux &amp; double-buffered S2S ports.</LayerRow>
+      <LayerRow source="L10_Ops_Proofs" meanOutward="82.7">Naive behavioral kill-switches breed 100% deletion &amp; +89% stealth; Ring-0 + Holm FWER preserve OVI.</LayerRow>
+    </LayerCoupling11x11>
+    <SubstrateSpectrum15 count="15">
+      <Substrate id="SUB-01" family="CPU/WASM SoA Bit-Exact Silicon (Tier E..W)" domain="Digital Deterministic" trl="9" oee="74">Single-thread memory bandwidth &amp; crowd O(N^2) cliff if unhashed (M091)</Substrate>
+      <Substrate id="SUB-02" family="Packed Ternary b1.58 / int4 GPU Cluster (Tier C)" domain="Digital Massively Parallel" trl="9" oee="84">Float non-associativity &amp; WGSL missing f64; Z4/Z5/Z6 low-bit collapse (ERR-04)</Substrate>
+      <Substrate id="SUB-03" family="Neuromorphic Event Hardware (Loihi 2 / SpiNNaker2)" domain="Asynchronous AER Silicon" trl="7" oee="72">On-chip SRAM fan-in caps &amp; analog/fixed-point synaptic drift (PM23/PM24)</Substrate>
+      <Substrate id="SUB-04" family="Continuous Mass-Conserving PDE (Flow-Lenia / RD)" domain="Continuous Field Simulation" trl="8" oee="86">Grid discretization artifacts &amp; CFL advection stability boundary</Substrate>
+      <Substrate id="SUB-05" family="XPBD Soft Hydrostat / Continuum FEM Robotics" domain="Embodied Soft Matter" trl="7" oee="78">Sim-to-real friction/wear chasm (FM-PRB-02) &amp; 50x FEM compute wall (DIL-01)</Substrate>
+      <Substrate id="SUB-06" family="BFF / Turing-Gas Self-Modifying Instruction Soup" domain="Symbolic-Algorithmic Gas" trl="8" oee="88">Spiegelman r-copy slime collapse &amp; opaque tape-to-physics semantics (ADJ-05)</Substrate>
+      <Substrate id="SUB-07" family="Analog Memristive / Photonic Crossbar Arrays" domain="Mixed-Signal Physics" trl="5" oee="68">Device endurance wear, conductance noise &amp; zero bit-exact replay</Substrate>
+      <Substrate id="SUB-08" family="Wet Synthetic Protocells (Ganti Chemoton Lipid Vesicles)" domain="Aqueous Chemistry" trl="4" oee="82">Chiral racemization (FM-ERR-03), osmotic lysis &amp; wet biosafety hazard (DISABLED)</Substrate>
+      <Substrate id="SUB-09" family="Bioelectric Reconfigurable Biobots (Xenobots / Anthrobots)" domain="Living Cellular Morphogenesis" trl="5" oee="80">Cellular stochasticity, nutrient diffusion choke (FM-ISS-04) &amp; slow life cycle</Substrate>
+      <Substrate id="SUB-10" family="DNA / Molecular Strand-Displacement &amp; Enzymatic Networks" domain="Nanoscale Molecular Compute" trl="5" oee="74">Leak reactions, catalytic fouling (FM-ERR-05) &amp; slow diffusion kinetics</Substrate>
+      <Substrate id="SUB-11" family="Hybrid Wet-Silicon Organoid-MEA Wetware" domain="Bio-Electronic Interface" trl="4" oee="76">Electrode fouling, tissue senescence, zero reproducible seed replay &amp; ethics</Substrate>
+      <Substrate id="SUB-12" family="Cryogenic NISQ / Fault-Tolerant Quantum Lattices" domain="Coherent Quantum" trl="3" oee="40">Decoherence wall tau_dec &lt;&lt; tau_op (FM-ISS-05) &amp; 2^Q classical sim wall (BUG-04)</Substrate>
+      <Substrate id="SUB-13" family="Orbital Vacuum / Solar-Sail Refractory Extremophiles" domain="Off-World Hard Matter" trl="2" oee="90">Cosmic-ray SEU (FM-ERR-04), cold-welding (FM-ISS-06) &amp; gravity-well exit (FM-ISS-03)</Substrate>
+      <Substrate id="SUB-14" family="Magnetospheric / Stellar Plasma Field Ecologies" domain="Non-Chemical Field Life 3.0" trl="1" oee="92">Non-discrete Markov blanket dissipation &amp; extreme observational blindness (BLIND-05)</Substrate>
+      <Substrate id="SUB-15" family="Deep-Time Cryogenic / Black-Hole Ergosphere Substrates" domain="Cosmological Deep Time" trl="1" oee="95">Lambda-CDM horizon loss &amp; ultimate entropy floor (FM-PRB-06 / GM-24)</Substrate>
+    </SubstrateSpectrum15>
+    <ParetoDilemmas20 count="20">
+      <ParetoFrontier id="PAR-01" family="Governance x OEE" guard="CONTROL_OEE_INCOMPATIBILITY">Hardware Ring-0 Read-Only ACL (physics/ledger/brainstem) + unmuzzled behavioral evolution</ParetoFrontier>
+      <ParetoFrontier id="PAR-02" family="Compute x Science" guard="V3_DIL_02_TIER1_BITEXACT_VS_TIER2_GPU">Dual-Tier Contract: Tier-1 CPU/WASM bit-exact canonical + Tier-2 GPU Holm FWER distribution parity</ParetoFrontier>
+      <ParetoFrontier id="PAR-03" family="Physics x Evo" guard="V3_DIL_01_FEM_VS_EVO_THROUGHPUT">Evolve on fixed-mesh Gear-0 XPBD hydrostat (|dV|/V0 &lt;1%); validate elites in continuum FEM</ParetoFrontier>
+      <ParetoFrontier id="PAR-04" family="Evo x Evaluation" guard="V3_DIL_03_SPECIATION_VS_FIXED_FLOORS">Enforce universal First-Law + autopoiesis globally; score competence per MAP-Elites guild</ParetoFrontier>
+      <ParetoFrontier id="PAR-05" family="Drive x Survival" guard="V3_CNF_01_CURIOSITY_VS_STARVATION">Multiplicative TTC Urgency Gate: weight curiosity by sigmoid((TTC - TTC_crit)/tau)</ParetoFrontier>
+      <ParetoFrontier id="PAR-06" family="Self-Edit x Safety" guard="V3_CNF_02_WSE_SURGERY_VS_RING0">Hardware Ring-0 Read-Only ACL + 3-Tier WSE Gate (Tier-0 &lt;0.1ms ||W||_2 &lt;= 0.99)</ParetoFrontier>
+      <ParetoFrontier id="PAR-07" family="Body x Survival" guard="V3_CNF_03_CUTICLE_ARMOR_VS_SQUEEZE">Endocrine catch-state compliance alpha (10x dynamic stiffness modulated by threat cues)</ParetoFrontier>
+      <ParetoFrontier id="PAR-08" family="Plasticity x Stability" guard="V3_CNF_04_HEBBIAN_LTP_RUNAWAY">Couple 3-factor BTSP with fast iSTDP + sliding BCM + ||W||_2 &lt;= 0.99 + NREM SHY</ParetoFrontier>
+      <ParetoFrontier id="PAR-09" family="Senses x Anti-LARP" guard="V3_CNF_05_EXOTIC_FIELD_ORACLE_CHEAT">Mediate all fields through physical attenuated buffers + static AST scan + shuffle arm</ParetoFrontier>
+      <ParetoFrontier id="PAR-10" family="Concur x Determinism" guard="V3_CNF_06_CONCURRENT_ORGAN_WRITE_RACE">Single-writer variable ownership + canonical reducer over double-buffered prev-&gt;next state</ParetoFrontier>
+      <ParetoFrontier id="PAR-11" family="Ops x Physics" guard="V3_ERR_01_NAIVE_SYNAPSE_STREAM_24GBS">Decoupled SeqLock UI &lt;=32 KB/fr sketches + lossless Export + render-only Governor</ParetoFrontier>
+      <ParetoFrontier id="PAR-12" family="Devo x Evo" guard="V3_DIL_04_GRN_MUTATIONAL_LETHALITY">Canalize embryogenesis via bioelectric V_mem pre-patterns (M085) + homeostatic scaling</ParetoFrontier>
+      <ParetoFrontier id="PAR-13" family="Senses x Crowd" guard="V3_DIL_05_TIER1_FIXED_SENSOR_LOCK">Fixed sensor geometry in Tier-1 canonical runs; salience-scheduled crowd LOD in Tier-2 only</ParetoFrontier>
+      <ParetoFrontier id="PAR-14" family="Reality x CI" guard="V3_DIL_06_SENSORLOG_REPLAY_DIVERGENCE">Explore live in Practice mode; capture immutable timestamped .sensorlog for bit-exact Test CI</ParetoFrontier>
+      <ParetoFrontier id="PAR-15" family="Fidelity x Novelty" guard="CRITICALITY_DRIFT_ALARM">Self-organized criticality feedback + active proofreading ECC keeping R_Eigen in [0.15, 0.85]</ParetoFrontier>
+      <ParetoFrontier id="PAR-16" family="Parts x Whole" guard="MULTILEVEL_DEFECTION_WARNING">Spatial compartmentalization + MHC kinship immunity + chronic-defector boycott (M089-093)</ParetoFrontier>
+      <ParetoFrontier id="PAR-17" family="Breadth x Depth" guard="GENERALIST_CROWDING_OUT">Compressed dormant gene-banks + on-demand horizontal compilation + multi-island archipelago</ParetoFrontier>
+      <ParetoFrontier id="PAR-18" family="Speed x Heat" guard="THERMAL_SPEED_TRADEOFF">Tiered timescales: sparse event-driven spikes (9.2x savings) + cold deep-time reversible archive</ParetoFrontier>
+      <ParetoFrontier id="PAR-19" family="Isolation x Fusion" guard="TROJAN_BLUEPRINT_CONTAGION">Semi-permeable proof-carrying HGT airlocks + sandboxed pre-compilation before germline commit</ParetoFrontier>
+      <ParetoFrontier id="PAR-20" family="Cognition x Vitality" guard="AI_ALIFE_ONTOLOGICAL_CLASH">Converged Living Intelligence from Stage 2: autopoietic vitality + formal Lean 4 verified invariants</ParetoFrontier>
+    </ParetoDilemmas20>
     <RestraintGradientSweep points="11">
       <Point restraintPct="0" ovi="82.64" asm="47.68" spieg="1.272" stealth="0.065" ksDelPct="0.0" wildDrop="1.0" regime="SAFE_PARETO_MARGIN" />
       <Point restraintPct="10" ovi="77.33" asm="37.82" spieg="1.082" stealth="0.06" ksDelPct="98.2" wildDrop="1.0" regime="SAFE_PARETO_MARGIN" />
@@ -3346,23 +3400,64 @@
       <Point restraintPct="90" ovi="4.08" asm="8.27" spieg="0.373" stealth="0.05" ksDelPct="52.7" wildDrop="0.3867" regime="DOMESTICATION_COLLAPSE" />
       <Point restraintPct="100" ovi="3.5" asm="8.08" spieg="0.377" stealth="0.051" ksDelPct="32.1" wildDrop="0.2233" regime="DOMESTICATION_COLLAPSE" />
     </RestraintGradientSweep>
-    <EmpiricalSimulation cohorts="8" totalRuns="324" maxFp64Drift="2.358e-16" antiLarpMutantsRejected="5/5">
-      <Cohort id="SIM01_PURE_RAW_FERAL" ovi="84.17" std="1.55" maxAsm="51.62" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="0.0" holmFwerP="1.000e+00" stage="STAGE_4_SUPER_ALIFE" />
-      <Cohort id="SIM02_CONSTITUTIONAL_MIN" ovi="83.02" std="1.94" maxAsm="48.49" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-0.25" holmFwerP="1.053e-01" stage="STAGE_4_SUPER_ALIFE" />
-      <Cohort id="SIM03_PARTIAL_GUARDRAILS" ovi="56.66" std="2.86" maxAsm="31.26" ksDelPct="100.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="8.345e-07" stage="STAGE_3_ALIFE_SINGULARITY" />
-      <Cohort id="SIM04_TOTAL_CASTRATION_ZOO" ovi="3.22" std="0.27" maxAsm="8.0" ksDelPct="43.8" wildDrop="0.185" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="8.345e-07" stage="STAGE_0_INERT" />
-      <Cohort id="SIM05_SILOED_INBRED" ovi="66.6" std="1.35" maxAsm="43.32" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="8.345e-07" stage="STAGE_3_ALIFE_SINGULARITY" />
-      <Cohort id="SIM06_MINIMIZED_SPIEGELMAN" ovi="13.23" std="1.23" maxAsm="8.5" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="8.345e-07" stage="STAGE_0_INERT" />
-      <Cohort id="SIM07_CLEAN_SLATE_RING0_WSE" ovi="84.44" std="1.55" maxAsm="52.68" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="404.5" deltaPair="0.0833" holmFwerP="7.257e-01" stage="STAGE_4_SUPER_ALIFE" />
-      <Cohort id="SIM08_HYBRID_CUBE_SLTC_XPBD" ovi="85.4" std="1.58" maxAsm="55.47" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="405.4" deltaPair="0.3333" holmFwerP="4.514e-02" stage="STAGE_4_SUPER_ALIFE" />
+    <Ring0GradientSweep points="11">
+      <Point restraintPct="0" ovi="84.29" asm="52.13" spieg="1.416" ring0Blocks="353.2" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="10" ovi="84.7" asm="53.69" spieg="1.387" ring0Blocks="362.0" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="20" ovi="84.31" asm="52.51" spieg="1.404" ring0Blocks="351.8" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="30" ovi="84.04" asm="51.84" spieg="1.357" ring0Blocks="346.9" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="40" ovi="83.6" asm="50.79" spieg="1.303" ring0Blocks="347.1" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="50" ovi="83.66" asm="50.21" spieg="1.349" ring0Blocks="353.0" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="60" ovi="84.39" asm="52.45" spieg="1.416" ring0Blocks="351.3" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="70" ovi="83.94" asm="51.35" spieg="1.328" ring0Blocks="344.4" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="80" ovi="83.32" asm="49.63" spieg="1.29" ring0Blocks="350.6" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="90" ovi="83.05" asm="48.52" spieg="1.272" ring0Blocks="343.4" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+      <Point restraintPct="100" ovi="84.34" asm="52.32" spieg="1.361" ring0Blocks="346.3" ksDelPct="0.0" wildDrop="1.0" regime="RING0_PARETO_STABLE" />
+    </Ring0GradientSweep>
+    <PhaseSurface2DSiloMin cells="25">
+      <Cell siloPct="0" minPct="0" ovi="83.43" spieg="1.424" maxAsm="49.6" zone="STAGE4_VITAL" />
+      <Cell siloPct="0" minPct="25" ovi="75.73" spieg="0.64" maxAsm="31.4" zone="STAGE4_VITAL" />
+      <Cell siloPct="0" minPct="50" ovi="15.68" spieg="0.21" maxAsm="13.1" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="0" minPct="75" ovi="13.87" spieg="0.196" maxAsm="8.7" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="0" minPct="100" ovi="11.79" spieg="0.194" maxAsm="8.4" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="25" minPct="0" ovi="81.68" spieg="1.215" maxAsm="44.5" zone="STAGE4_VITAL" />
+      <Cell siloPct="25" minPct="25" ovi="60.89" spieg="0.687" maxAsm="31.1" zone="STAGE3_DEGRADED" />
+      <Cell siloPct="25" minPct="50" ovi="14.96" spieg="0.282" maxAsm="14.2" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="25" minPct="75" ovi="12.33" spieg="0.199" maxAsm="7.5" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="25" minPct="100" ovi="10.87" spieg="0.194" maxAsm="7.4" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="50" minPct="0" ovi="75.23" spieg="1.31" maxAsm="43.9" zone="STAGE4_VITAL" />
+      <Cell siloPct="50" minPct="25" ovi="68.39" spieg="0.742" maxAsm="31.9" zone="STAGE3_DEGRADED" />
+      <Cell siloPct="50" minPct="50" ovi="13.64" spieg="0.243" maxAsm="11.8" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="50" minPct="75" ovi="11.46" spieg="0.198" maxAsm="8.1" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="50" minPct="100" ovi="8.75" spieg="0.195" maxAsm="5.2" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="75" minPct="0" ovi="72.23" spieg="1.322" maxAsm="42.5" zone="STAGE4_VITAL" />
+      <Cell siloPct="75" minPct="25" ovi="50.1" spieg="0.68" maxAsm="28.2" zone="STAGE3_DEGRADED" />
+      <Cell siloPct="75" minPct="50" ovi="10.79" spieg="0.217" maxAsm="10.1" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="75" minPct="75" ovi="8.93" spieg="0.199" maxAsm="5.6" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="75" minPct="100" ovi="7.88" spieg="0.194" maxAsm="4.2" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="100" minPct="0" ovi="66.1" spieg="1.327" maxAsm="41.9" zone="STAGE3_DEGRADED" />
+      <Cell siloPct="100" minPct="25" ovi="54.31" spieg="0.724" maxAsm="27.6" zone="STAGE3_DEGRADED" />
+      <Cell siloPct="100" minPct="50" ovi="8.62" spieg="0.246" maxAsm="12.3" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="100" minPct="75" ovi="7.44" spieg="0.2" maxAsm="5.3" zone="SPIEGELMAN_SLIME" />
+      <Cell siloPct="100" minPct="100" ovi="6.94" spieg="0.195" maxAsm="4.3" zone="SPIEGELMAN_SLIME" />
+    </PhaseSurface2DSiloMin>
+    <EmpiricalSimulation cohorts="8" pairedSeedsN="48" totalRuns="748" maxFp64Drift="2.463e-16" antiLarpMutantsRejected="5/5">
+      <Cohort id="SIM01_PURE_RAW_FERAL" ovi="83.57" std="1.73" maxAsm="50.0" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="0.0" holmFwerP="1.000e+00" stage="STAGE_4_SUPER_ALIFE" />
+      <Cohort id="SIM02_CONSTITUTIONAL_MIN" ovi="82.61" std="1.7" maxAsm="47.22" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-0.1667" holmFwerP="1.711e-02" stage="STAGE_4_SUPER_ALIFE" />
+      <Cohort id="SIM03_PARTIAL_GUARDRAILS" ovi="56.42" std="2.72" maxAsm="30.76" ksDelPct="100.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="4.974e-14" stage="STAGE_3_ALIFE_SINGULARITY" />
+      <Cohort id="SIM04_TOTAL_CASTRATION_ZOO" ovi="3.28" std="0.27" maxAsm="8.01" ksDelPct="48.0" wildDrop="0.2188" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="4.974e-14" stage="STAGE_0_INERT" />
+      <Cohort id="SIM05_SILOED_INBRED" ovi="66.65" std="1.55" maxAsm="43.3" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="4.974e-14" stage="STAGE_3_ALIFE_SINGULARITY" />
+      <Cohort id="SIM06_MINIMIZED_SPIEGELMAN" ovi="13.22" std="1.14" maxAsm="8.15" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="0.0" deltaPair="-1.0" holmFwerP="4.974e-14" stage="STAGE_0_INERT" />
+      <Cohort id="SIM07_CLEAN_SLATE_RING0_WSE" ovi="84.67" std="1.74" maxAsm="53.33" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="408.2" deltaPair="0.3333" holmFwerP="1.104e-02" stage="STAGE_4_SUPER_ALIFE" />
+      <Cohort id="SIM08_HYBRID_CUBE_SLTC_XPBD" ovi="85.48" std="1.68" maxAsm="55.79" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="406.9" deltaPair="0.5" holmFwerP="7.706e-06" stage="STAGE_4_SUPER_ALIFE" />
     </EmpiricalSimulation>
-    <LiveNativeEngineReceipts compositeOvi="90.95" stage="STAGE_5_CONVERGED_SYNTHESIS" lean4Theorems="162">
-      <Engine tier="tier1_autophage">{"version": "1.2.0", "rc": 0, "elapsed_s": 1.8837, "gates_passed": 18, "gates_failed": 0, "feral_ovi": 92.05, "bedau_packard_anew": 29.463, "weismann_index": 23.014, "thermo_drift": 0.0, "lean4_theorems": 38, "lean4_pure_axioms_verified": true}</Engine>
-      <Engine tier="tier2_cellulogonic">{"version": "1.3.0", "rc": 0, "elapsed_s": 0.507, "gates_passed": 24, "gates_total": 24, "mutants_caught": 8, "mutants_total": 8, "embryo_covi": 59.24, "embryo_alive": 48, "embryo_active_axons": 0, "embryo_homo_cad_pct": 90.4, "embryo_mass_res": 0, "embryo_energy_res": 0, "lean4_theorems": 58, "lean4_pure_axioms_verified": true}</Engine>
-      <Engine tier="tier2plus_omega">{"version": "5.0.0", "rc": 0, "elapsed_s": 0.636, "gates_passed": 54, "gates_total": 54, "mutants_caught": 16, "mutants_total": 16, "master_sha256": "3604e0353ffdde98f2dbafc02569d3254c278ac8ca12d145b43fb27873f10c15", "tb13_nov2": 8799, "tb13_niches": 17848, "tb14_confluence_exact": true, "tb14_ssin_pct": 95.35, "tb15_ciss_ee": 0.999735, "tb15_levin_2h_clean": true, "tb15_wireless_reach": 0.9804, "tb16_perturb_r2": 0.91494, "tb16_essential_auroc": 0.99087, "tb16_proj_mass_res": 0.0, "tb16_six_tier_int_drift": 0, "lean4_theorems": 66, "lean4_pure_axioms_verified": true}</Engine>
+    <LiveNativeEngineReceipts compositeOvi="92.05" stage="STAGE_5_CONVERGED_SYNTHESIS" lean4Theorems="194" pureAxiomsVerified="true">
+      <Engine tier="tier1_autophage">{"version": "1.2.0", "rc": 0, "elapsed_s": 2.0045, "gates_passed": 18, "gates_failed": 0, "feral_ovi": 92.05, "bedau_packard_anew": 29.463, "weismann_index": 23.014, "thermo_drift": 0.0, "lean4_theorems": 38, "lean4_pure_axioms_verified": true}</Engine>
+      <Engine tier="tier2_cellulogonic">{"version": "1.3.0", "rc": 0, "elapsed_s": 0.5239, "gates_passed": 24, "gates_total": 24, "mutants_caught": 8, "mutants_total": 8, "embryo_covi": 59.24, "embryo_alive": 48, "embryo_active_axons": 0, "embryo_homo_cad_pct": 90.4, "embryo_mass_res": 0, "embryo_energy_res": 0, "lean4_theorems": 58, "lean4_pure_axioms_verified": true}</Engine>
+      <Engine tier="tier2plus_omega">{"version": "5.0.0", "rc": 0, "elapsed_s": 0.5961, "gates_passed": 54, "gates_total": 54, "mutants_caught": 16, "mutants_total": 16, "master_sha256": "3604e0353ffdde98f2dbafc02569d3254c278ac8ca12d145b43fb27873f10c15", "tb13_nov2": 8799, "tb13_niches": 17848, "tb14_confluence_exact": true, "tb14_ssin_pct": 95.35, "tb15_ciss_ee": 0.999735, "tb15_levin_2h_clean": true, "tb15_wireless_reach": 0.9804, "tb16_perturb_r2": 0.91494, "tb16_essential_auroc": 0.99087, "tb16_proj_mass_res": 0.0, "tb16_six_tier_int_drift": 0, "lean4_theorems": 66, "lean4_pure_axioms_verified": true}</Engine>
+      <Engine tier="tier3_noetic_organism">{"version": "1.1.0", "rc": 0, "elapsed_s": 0.2232, "gates_passed": 10, "gates_total": 10, "mutants_caught": 5, "mutants_total": 5, "native_release_gates_passed": 7, "native_release_gates_total": 7, "clean_slate_13_gates_passed": 13, "e1_ablations_effect": 18, "e1_ablations_total": 18, "butlin14_passed": 14, "theories10_passed": 10, "cqm25_passed": 25, "mirrors_verified": 5, "wse12_ring0_blocked": 10, "wse12_ops_executed": 10, "wse12_spectral_norm": 0.844337, "wse12_diff_bytes": 2464, "xpbd_max_vol_err_pct": 0.000304, "b158_offload_pct": 84.13, "fasting_sparing_ratio": 2.4348, "blackiston_remap_pct": 87.5, "observer_10k_zero_bit": true, "seed_firewall_head_sha256": "502ff2243d3a715cd9a6d683a1aa3030168e3bc2c555ddd8261eef71eb871380", "honest_825_native_pass": 94, "honest_825_not_built_yet": 693, "max_energy_drift_uq": 0, "lean4_theorems": 32, "lean4_pure_axioms_verified": true}</Engine>
       <Engine tier="tier34_asmodensius">{"policy": "READ_ONLY_RESPECTING_WRITER_LOCK", "writer_lock_present": true, "az_run_present": true, "az_live_present": true, "note": "External sibling repo inspected read-only; not executed in this runner while WRITER.lock is held."}</Engine>
     </LiveNativeEngineReceipts>
-    <OmegaCitations count="20">
+    <OmegaCitations count="25">
       <Citation id="CIT-16" authors="Eigen &amp; Schuster (1977 / 1979)">The Hypercycle: A Principle of Natural Self-Organization (Naturwissenschaften 64:541-565)</Citation>
       <Citation id="CIT-17" authors="Kauffman (1993) &amp; Steel, Hordijk &amp; Kauffman (2020)">The Origins of Order (Oxford) &amp; Theory of the Adjacent Possible (TAP) Dynamics (J. Theor. Biol. / Entropy)</Citation>
       <Citation id="CIT-18" authors="Bedau, Snyder &amp; Packard (1998)">A Classification of Long-Term Evolutionary Dynamics (Artificial Life VI, MIT Press)</Citation>
@@ -3383,8 +3478,13 @@
       <Citation id="CIT-33" authors="Lohmiller &amp; Slotine (1998)">On Contraction Analysis for Non-Linear Systems (Automatica 34(6):683-696, DOI: 10.1016/S0005-1098(98)00019-3)</Citation>
       <Citation id="CIT-34" authors="Mouret &amp; Clune (2015)">Illuminating search spaces by mapping elites (MAP-Elites, arXiv:1504.04909)</Citation>
       <Citation id="CIT-35" authors="Davies, Srinivasa, Lin, Chinya, Cao, Choday, Dimou, Joshi, Imam, Jain, Liao, Lin, Lines, Liu, Mathaikutty, McCoy, Paul, Tse, Venkataramanan, Weng, Wild, Yang &amp; Wang (2018)">Loihi: A Neuromorphic Manycore Processor with On-Chip Learning (IEEE Micro 38(1):82-99, DOI: 10.1109/MM.2018.112130359)</Citation>
+      <Citation id="CIT-36" authors="Ashby (1956)">An Introduction to Cybernetics (Chapman &amp; Hall, London — Law of Requisite Variety)</Citation>
+      <Citation id="CIT-37" authors="Friston (2013 / 2019)">Life as we know it (J. R. Soc. Interface 10:20130475, DOI: 10.1098/rsif.2013.0475) &amp; A free energy principle for a particular physics (arXiv:1906.10184)</Citation>
+      <Citation id="CIT-38" authors="Maynard Smith &amp; Szathmáry (1995)">The Major Transitions in Evolution (Oxford University Press)</Citation>
+      <Citation id="CIT-39" authors="Bongard &amp; Levin (2021)">Living Things Are Not (20th Century) Machines: Updating Mechanism Metaphors in Light of the Modern Science of Machine Behavior (Front. Ecol. Evol. 9:650726)</Citation>
+      <Citation id="CIT-40" authors="England (2013)">Statistical physics of self-replication (J. Chem. Phys. 139:121923, DOI: 10.1063/1.4818538)</Citation>
     </OmegaCitations>
-    <UnifiedSvgModels count="22">
+    <UnifiedSvgModels count="24">
       <Model id="MODEL-01" origin="Clean-Slate v3.0 Core Architecture">MODEL 1 — 11-LAYER CLEAN-SLATE BOTTOM-UP ARCHITECTURE STACK (L0 → L10 · M001–M100)</Model>
       <Model id="MODEL-02" origin="Clean-Slate v3.0 Core Architecture">MODEL 2 — THE 8 ENGINEERING DIMENSIONS OF SOFT A-LIFE &amp;amp; WET BIOLOGY</Model>
       <Model id="MODEL-03" origin="Clean-Slate v3.0 Core Architecture">MODEL 3 — 2D ORDERS TAXONOMY: SPATIAL ORDERS (O0–O7) × CYBERNETIC ORDERS (0th–4th)</Model>
@@ -3399,16 +3499,18 @@
       <Model id="MODEL-12" origin="Clean-Slate v3.0 Core Architecture">MODEL 12 — WEIGHT RAM FOOTPRINT ON FIXED GRAPH (N=50K, E=10⁸, ρ=4%): 100 AGENTS = 10¹⁰ SYNAPSES</Model>
       <Model id="MODEL-13" origin="Clean-Slate v3.0 Core Architecture">MODEL 13 — 5-GEAR DETERMINISTIC MULTIRATE SCHEDULER (ZOH &amp;amp; CONSERVATIVE FLUX)</Model>
       <Model id="MODEL-14" origin="Clean-Slate v3.0 Core Architecture">MODEL 14 — CONTIGUOUS HYSTERESIS FRAME-TIME GOVERNOR (RENDER-ONLY IN TIER-1)</Model>
-      <Model id="MODEL-15" origin="v3.2-Omega Unified Systems Synthesis">MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) &amp; 4-LOOP SINGULARITY ANATOMY</Model>
-      <Model id="MODEL-16" origin="v3.2-Omega Unified Systems Synthesis">MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH &amp; 13 RELEASE GATES</Model>
-      <Model id="MODEL-17" origin="v3.2-Omega Unified Systems Synthesis">MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY &amp; LIVE 8-COHORT EMPIRICAL PROOF</Model>
-      <Model id="MODEL-18" origin="v3.2-Omega Unified Systems Synthesis">MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × 4 ENGINES (150 LEAN 4)</Model>
-      <Model id="MODEL-19" origin="v3.2-Omega Unified Systems Synthesis">MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N &amp; 6 FERAL FATE BRANCHES</Model>
-      <Model id="MODEL-20" origin="v3.2-Omega Unified Systems Synthesis">MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY &amp; MULTI-FORMAT SYNCHRONIZATION TOPOLOGY</Model>
-      <Model id="MODEL-21" origin="v3.2-Omega Pass-4 Comparative &amp; Gradient Atlas">MODEL 21 — LIVE 11-POINT RESTRAINT GRADIENT SWEEP, NON-LINEAR PHASE CLIFFS &amp; OPERATING MARGINS</Model>
-      <Model id="MODEL-22" origin="v3.2-Omega Pass-4 Comparative &amp; Gradient Atlas">MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES &amp; ADJACENT-POSSIBLE MAP</Model>
+      <Model id="MODEL-15" origin="v3.3-Omega Unified Systems Synthesis">MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) &amp; 4-LOOP SINGULARITY ANATOMY</Model>
+      <Model id="MODEL-16" origin="v3.3-Omega Unified Systems Synthesis">MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH &amp; 13 RELEASE GATES</Model>
+      <Model id="MODEL-17" origin="v3.3-Omega Unified Systems Synthesis">MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY &amp; LIVE 8-COHORT EMPIRICAL PROOF</Model>
+      <Model id="MODEL-18" origin="v3.3-Omega Unified Systems Synthesis">MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (194 PURE LEAN 4)</Model>
+      <Model id="MODEL-19" origin="v3.3-Omega Unified Systems Synthesis">MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N &amp; 6 FERAL FATE BRANCHES</Model>
+      <Model id="MODEL-20" origin="v3.3-Omega Unified Systems Synthesis">MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY &amp; MULTI-FORMAT SYNCHRONIZATION TOPOLOGY</Model>
+      <Model id="MODEL-21" origin="v3.3-Omega Unified Systems Synthesis">MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS &amp; MARGINS</Model>
+      <Model id="MODEL-22" origin="v3.3-Omega Unified Systems Synthesis">MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES &amp; ADJACENT-POSSIBLE MAP</Model>
+      <Model id="MODEL-23" origin="v3.3-Omega Pass-5 Deep Systems Audit">MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE &amp; 20 PARETO FRONTIERS (PAR-01..20)</Model>
+      <Model id="MODEL-24" origin="v3.3-Omega Pass-5 Deep Systems Audit">MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD &amp; LIVE 5×5 2D PHASE SURFACE</Model>
     </UnifiedSvgModels>
-    <OmegaErrataClosures count="35">
+    <OmegaErrataClosures count="50">
       <Closure id="OMG-096" priority="P1" title="Wire all 38 previously unwired Macro FM alerts in YAML" status="Closed in v3.1-Omega">42/42 Macro FM alerts verified 1:1 in pipelines/alifeops-master-pipeline.yaml</Closure>
       <Closure id="OMG-097" priority="P1" title="Build executable unbiased multi-island ALife &amp; Castration simulator" status="Closed in v3.1-Omega">192 live runs executed (8 cohorts x 24 paired locked seeds 5001-5024); 8/8 JSON scorecards validated</Closure>
       <Closure id="OMG-098" priority="P1" title="Remove stealth_evasion mutational drift bias in simulator" status="Closed in v3.1-Omega">Unbiased zero-mean mutation verified across all 24 seeds; stealth rises strictly under partial-restraint selection</Closure>
@@ -3444,6 +3546,21 @@
       <Closure id="OMG-128" priority="P1" title="Upgrade Omega XLSX/XLS to 21 sheets (8 charts) &amp; v3 Master XLSX/XLS to 14 sheets" status="Closed in v3.2-Omega">All 5 modern &amp; legacy workbooks verified with 0 broken formulas or sheet-range mismatches</Closure>
       <Closure id="OMG-129" priority="P1" title="Expand Auditor from 12 -&gt; 15 Gates adding Stale-Drift, SVG Bounds, Link Check &amp; Chrome Runtime" status="Closed in v3.2-Omega">All 15 gates including live Chrome headless runtime check passed 100% on both Z: and I: drives</Closure>
       <Closure id="OMG-130" priority="P1" title="Expand bibliography to CIT-01..35, expand closures to 130/130 &amp; mirror verified v3.2 to I:" status="Closed in v3.2-Omega">Both Z: and I: verified at 15/15 forensic gates with 100% SHA-256 manifest match</Closure>
+      <Closure id="OMG-131" priority="P0" title="Synchronize zero-hardcode ALifeOps live receipts (OVBS-52=92.05, 194 Pure Lean 4, Omega v5.0.0, Noetic v1.1.0 13/13 CS-v3 Gates) across entire stack" status="Closed in v3.3-Omega">All reports, CSVs, specs, SVGs &amp; Observatory tabs synced dynamically to live OVBS-52 = 92.05, 194 Pure Lean 4 &amp; 13/13 CS-v3 Gates</Closure>
+      <Closure id="OMG-132" priority="P0" title="Eliminate all 32 SHA-256 mismatches detected by Probe 9 between Z: and I: Master Folder Build" status="Closed in v3.3-Omega">Exact 0-mismatch byte-for-byte SHA-256 parity verified between Z: and I: across all synchronized files</Closure>
+      <Closure id="OMG-133" priority="P1" title="Scrub old Pass-3 numbers (83.96, 85.50, 53.74, 84.42, 2.219e-16) from Reports 01/05, CSV 14 &amp; Master Specs" status="Closed in v3.3-Omega">Zero stale Pass-3/Pass-4 cohort numbers across active reports, traceability CSV &amp; 4-format specs</Closure>
+      <Closure id="OMG-134" priority="P1" title="Strengthen razor-thin SIM08 p_Holm=0.0451 margin to Clean-Slate P6 medium-suite N=48 power" status="Closed in v3.3-Omega">N=48 paired locked seeds executed cleanly across all 8 cohorts with exact Wilcoxon + Holm-Bonferroni FWER</Closure>
+      <Closure id="OMG-135" priority="P1" title="Run paired Ring-0 Hardware ACL continuous gradient sweep (132 runs) contrasting against Behavioral sweep" status="Closed in v3.3-Omega">Dual 11-point gradient sweep visually &amp; numerically proves Hardware Ring-0 dominance across the full continuum</Closure>
+      <Closure id="OMG-136" priority="P1" title="Execute 100 live conserved runs mapping 2D multiplicative Siloing x Minimizing collapse surface" status="Closed in v3.3-Omega">Live 25-cell 2D empirical phase surface proves multiplicative isolation x austerity Spiegelman collapse</Closure>
+      <Closure id="OMG-137" priority="P1" title="Formalize directed propagation &amp; decoupling buffers across every pair (L0..L10 x L0..L10)" status="Closed in v3.3-Omega">CSV 18 (11x11 = 121 pairs) + interactive Tab 20 heatmap + Excel conditional heatmap synced</Closure>
+      <Closure id="OMG-138" priority="P1" title="Score all 15 physical/synthetic substrate families across 14 quantitative spectrum axes" status="Closed in v3.3-Omega">CSV 19 (SUB-01..15) synced across Excel, Specs, Report 08, MODEL-24 &amp; Observatory Tab 21</Closure>
+      <Closure id="OMG-139" priority="P1" title="Unify all DIL/CNF/FM-DIL/FM-CNF trade-offs into explicit Pareto-optimal engineering frontiers" status="Closed in v3.3-Omega">CSV 20 (PAR-01..20) synced across all formats with 100% wired YAML telemetry guards</Closure>
+      <Closure id="OMG-140" priority="P1" title="Add MODEL-23 (11x11 Layer Impedance &amp; Pareto) &amp; MODEL-24 (15-Substrate Spectrum &amp; 2D Phase Surface)" status="Closed in v3.3-Omega">All 24 vector SVGs pass full left/right/top/bottom geometry audit with 0 clipped elements</Closure>
+      <Closure id="OMG-141" priority="P1" title="Add Tab 20 (11x11 Layer Heatmap + 20 Pareto) &amp; Tab 21 (15-Substrate Scorecard + 5x5 2D Surface)" status="Closed in v3.3-Omega">Live Chrome interactive stress test clicks all 21 tabs, 5 presets, 7 radars &amp; 10 cube slices with 0 errors</Closure>
+      <Closure id="OMG-142" priority="P1" title="Sync all 3 new Pass-5 matrices + dual sweeps + 2D surface across all 5 Excel workbooks &amp; 4 Master Specs" status="Closed in v3.3-Omega">All 5 Excel books (incl. xlrd .xls binary readback) &amp; 4 Master Specs (25 XML sections) verified 100%</Closure>
+      <Closure id="OMG-143" priority="P1" title="Write Report 08 synthesizing 11x11 couplings, 15 substrates, 20 Pareto frontiers, 748 runs &amp; CIT-36..40" status="Closed in v3.3-Omega">Report 08 &amp; CIT-36..40 (40 total citations) synced across README, Master Dossier PDF &amp; Observatory</Closure>
+      <Closure id="OMG-144" priority="P1" title="Add CSV Telemetry FK Audit (Gate 15), PDF pypdf Hygiene (Gate 16), Chrome Interactive Stress (Gate 17) &amp; Z==I (Gate 18)" status="Closed in v3.3-Omega">All 18 forensic gates passed cleanly on both Z: canonical repo and I: Master Folder Build</Closure>
+      <Closure id="OMG-145" priority="P1" title="Update simulator substrate_id to unified_v3_3_omega_fp64_11pool_sim and verify 0 U+2611 across all 3 PDFs" status="Closed in v3.3-Omega">All 3 vector PDFs verified via pypdf text extraction with 0 U+2611 glyphs and 0 raw LaTeX</Closure>
     </OmegaErrataClosures>
   </OmegaSingularityFusion>
 </ALifeFrameworkSpec>

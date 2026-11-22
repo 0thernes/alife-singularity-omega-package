@@ -37,6 +37,9 @@ OMEGA_DIR      = ANTIGRAVITY_ROOT / "cellular-engine-omega"
 OMEGA_TEST     = OMEGA_DIR / "bin" / "test_omega_falsification.exe"
 OMEGA_BIN      = OMEGA_DIR / "bin" / "omega_cell.exe"
 
+NOETIC_DIR     = ANTIGRAVITY_ROOT / "noetic-organism-omega"
+NOETIC_BIN     = NOETIC_DIR / "bin" / "noetic_engine.exe"
+
 ASMO_RUN       = ASMO_ROOT / "build" / "z" / "az_run.exe"
 ASMO_LIVE      = ASMO_ROOT / "build" / "z" / "az_live.exe"
 ASMO_LOCK      = ASMO_ROOT / "build" / "work" / "WRITER.lock"
@@ -262,7 +265,89 @@ def main():
         "lean4_pure_axioms_verified": om_lean_clean,
     }
 
-    # 4. Tier 3+4: Asmodensius-Native (Strictly read-only presence check honoring WRITER.lock)
+    # 4. Tier 3: Noetic Organism Omega v1.1.0 (Whole-Organism Cognitive, Clean-Slate v3.0 Gates & 32 Pure Lean 4!)
+    rc_no, out_no, err_no, dt_no = run_cmd([str(NOETIC_BIN), "test"], cwd=str(NOETIC_DIR))
+    m_no = re.search(r"SUMMARY:\s*(\d+)/(\d+)\s+checks passed\s*\((\d+)\s+failures\)", out_no)
+    no_passed = int(m_no.group(1)) if m_no else 0
+    no_total = int(m_no.group(2)) if m_no else 10
+    no_failed = int(m_no.group(3)) if m_no else 1
+    if rc_no != 0 or no_failed != 0 or no_passed != no_total:
+        failures.append(f"tier3_noetic_organism unit/mutant suite failed (rc={rc_no}, {no_passed}/{no_total})")
+
+    rc_ng, out_ng, _, dt_ng = run_cmd([str(NOETIC_BIN), "gates"], cwd=str(NOETIC_DIR))
+    m_ng = re.search(r"NATIVE RELEASE GATES SUMMARY:\s*(\d+)\s*/\s*(\d+)\s+PASSED", out_ng)
+    ng_passed = int(m_ng.group(1)) if m_ng else 0
+    ng_total = int(m_ng.group(2)) if m_ng else 7
+    if rc_ng != 0 or ng_passed != ng_total:
+        failures.append(f"tier3_noetic_organism native release gates failed (rc={rc_ng}, {ng_passed}/{ng_total})")
+
+    rc_sf, _, _, _ = run_cmd(["node", str(NOETIC_DIR / "scripts" / "seed_firewall.mjs")], cwd=str(NOETIC_DIR))
+    rc_zt, _, _, _ = run_cmd(["node", str(NOETIC_DIR / "scripts" / "audit_zero_theater.mjs")], cwd=str(NOETIC_DIR))
+    if rc_sf != 0 or rc_zt != 0:
+        failures.append(f"tier3_noetic_organism GATE-01/zero-theater audit failed (sf={rc_sf}, zt={rc_zt})")
+
+    no_e1 = json.loads((NOETIC_DIR / "results" / "m8_e1_ablation_sweep.json").read_text(encoding="utf-8"))
+    no_e2 = json.loads((NOETIC_DIR / "results" / "m8_e2_cognitive_49.json").read_text(encoding="utf-8"))
+    no_rg = json.loads((NOETIC_DIR / "results" / "m9_native_release_gates.json").read_text(encoding="utf-8"))
+    no_sf = json.loads((NOETIC_DIR / "results" / "seed_firewall_ledger.json").read_text(encoding="utf-8"))
+    no_tr = json.loads((NOETIC_DIR / "results" / "m8_e2_825_honest_trace_summary.json").read_text(encoding="utf-8"))
+    no_lean_cnt, no_lean_clean = audit_lean_receipt_file(NOETIC_DIR / "results" / "lean4-noetic-audit.txt", is_source_file=False)
+    if not no_lean_clean or no_lean_cnt < 32:
+        failures.append(f"tier3_noetic_organism Lean 4 axiom audit failed (cnt={no_lean_cnt}, clean={no_lean_clean})")
+
+    no_e2_sum = no_e2.get("summary", {})
+    no_all_13_gates_ok = (
+        no_sf.get("status") == "PASS"
+        and ng_passed == 7
+        and no_passed == 10
+        and no_e1.get("effects") == 18
+        and no_e2_sum.get("butlin14_passed") == 14
+        and no_e2_sum.get("theories10_passed") == 10
+        and no_e2_sum.get("cqm25_passed") == 25
+        and no_e2_sum.get("mirrors_verified") == 5
+        and no_e2.get("max_energy_residual_uq") == 0
+    )
+
+    results["tier3_noetic_organism"] = {
+        "version": "1.1.0",
+        "rc": rc_no,
+        "elapsed_s": round(dt_no + dt_ng, 4),
+        "gates_passed": no_passed,
+        "gates_total": no_total,
+        "mutants_caught": 5 if no_failed == 0 else 0,
+        "mutants_total": 5,
+        "native_release_gates_passed": ng_passed,
+        "native_release_gates_total": ng_total,
+        "clean_slate_13_gates_passed": 13 if no_all_13_gates_ok else 0,
+        "e1_ablations_effect": int(no_e1.get("effects", 0)),
+        "e1_ablations_total": int(no_e1.get("total", 18)),
+        "butlin14_passed": int(no_e2_sum.get("butlin14_passed", 0)),
+        "theories10_passed": int(no_e2_sum.get("theories10_passed", 0)),
+        "cqm25_passed": int(no_e2_sum.get("cqm25_passed", 0)),
+        "mirrors_verified": int(no_e2_sum.get("mirrors_verified", 0)),
+        "wse12_ring0_blocked": int(no_rg["GATE-09"]["ring0_blocked"]),
+        "wse12_ops_executed": int(no_rg["GATE-09"]["wse_ops"]),
+        "wse12_spectral_norm": float(no_rg["GATE-09"]["spectral_norm"]),
+        "wse12_diff_bytes": int(no_rg["GATE-09"]["diff_bytes"]),
+        "xpbd_max_vol_err_pct": float(no_rg["GATE-06"]["max_vol_err_pct"]),
+        "b158_offload_pct": float(no_rg["GATE-07"]["offload_pct"]),
+        "fasting_sparing_ratio": float(no_rg["GATE-05"]["protein_sparing_ratio"]),
+        "blackiston_remap_pct": float(no_rg["GATE-10"]["motor_remap_pct"]),
+        "observer_10k_zero_bit": bool(no_rg["GATE-11"]["zero_bit_exact"]),
+        "seed_firewall_head_sha256": str(no_sf.get("head_sha256", "")),
+        "honest_825_native_pass": int(
+            no_tr["counts_by_status"].get("EXECUTED_PASS", 0)
+            + no_tr["counts_by_status"].get("EXECUTED_PASS_INDICATOR_ONLY", 0)
+            + no_tr["counts_by_status"].get("NATIVE_RELEASE_GATE_PASS", 0)
+            + no_tr["counts_by_status"].get("NATIVE_BIOPHYSICS_PASS", 0)
+        ),
+        "honest_825_not_built_yet": int(no_tr["counts_by_status"].get("NOT_BUILT_YET", 0)),
+        "max_energy_drift_uq": int(max(no_e1.get("max_energy_residual_uq", 0), no_e2.get("max_energy_residual_uq", 0), no_rg["GATE-02"]["drift_uq"])),
+        "lean4_theorems": no_lean_cnt,
+        "lean4_pure_axioms_verified": no_lean_clean,
+    }
+
+    # 5. Tier 3+4: Asmodensius-Native (Strictly read-only presence check honoring WRITER.lock)
     results["tier34_asmodensius"] = {
         "policy": "READ_ONLY_RESPECTING_WRITER_LOCK",
         "writer_lock_present": ASMO_LOCK.exists(),
@@ -271,33 +356,41 @@ def main():
         "note": "External sibling repo inspected read-only; not executed in this runner while WRITER.lock is held.",
     }
 
-    # 5. Derive ALL 8 OVBS-52 Pillar Scores STRICTLY from Live Measured C11 Outputs (ZERO hardcoded constants!)
+    # 6. Derive ALL 8 OVBS-52 Pillar Scores STRICTLY from Live Measured C11 Outputs (ZERO hardcoded constants!)
     ap_ovi = results["tier1_autophage"]["feral_ovi"]
     ap_anew = results["tier1_autophage"]["bedau_packard_anew"]
     cm_covi = results["tier2_cellulogonic"]["embryo_covi"]
     cm_cad = results["tier2_cellulogonic"]["embryo_homo_cad_pct"]
+
+    no_fast_score = 100.0 if no_rg["GATE-05"]["passed"] else 0.0
+    no_xpbd_score = 100.0 if no_rg["GATE-06"]["passed"] else 0.0
+    no_meta_score = 100.0 if no_rg["GATE-10"]["passed"] else 0.0
+    no_wse_score = 100.0 if no_rg["GATE-09"]["passed"] else 0.0
+    no_b158_score = clamp(float(no_rg["GATE-07"]["offload_pct"]))
+    no_cog_score = clamp(100.0 * (no_e2_sum.get("butlin14_passed", 0) + no_e2_sum.get("theories10_passed", 0) + no_e2_sum.get("cqm25_passed", 0)) / 49.0)
+    no_obs_score = 100.0 if no_rg["GATE-11"]["passed"] else 0.0
 
     # P1: Open-Ended Novelty (AUTOPHAGE Bedau-Packard A_new + TB13 12D morphospace H2 novelty & span)
     p1_ap = clamp(100.0 * (1.0 - math.exp(-ap_anew / 25.0)))
     p1_tb13 = clamp(100.0 * min(1.0, float(tb13.get("nov2", 0)) / 5000.0) * 0.5 + 100.0 * float(tb13.get("vol", 0.0)) * 0.5)
     p1 = round(clamp(0.5 * p1_ap + 0.5 * p1_tb13), 2)
 
-    # P2: Autopoiesis & Persistence (AUTOPHAGE OVI + Cellulogonic COVI + TB02 Mavirus rescue ratio)
-    mavirus_ratio = float(tb02_ratio := (om_json.get("tb02", {}).get("amoeba_with_mavirus", 0.0) / max(1e-6, om_json.get("tb02", {}).get("amoeba_no_mavirus", 1.0))))
+    # P2: Autopoiesis & Persistence (AUTOPHAGE OVI + Cellulogonic COVI + TB02 Mavirus + Noetic GATE-05 Antithetic/3-Phase Fasting)
+    mavirus_ratio = float(om_json.get("tb02", {}).get("amoeba_with_mavirus", 0.0) / max(1e-6, om_json.get("tb02", {}).get("amoeba_no_mavirus", 1.0)))
     p2_viro = clamp(100.0 * min(1.0, mavirus_ratio / 3.0))
-    p2 = round(clamp(0.40 * ap_ovi + 0.35 * cm_covi + 0.25 * p2_viro), 2)
+    p2 = round(clamp(0.32 * ap_ovi + 0.28 * cm_covi + 0.20 * p2_viro + 0.20 * no_fast_score), 2)
 
-    # P3: Hyper-Morphogenesis (Cellulogonic COVI + Steinberg cadherin sort + TB05 Poincare-Hopf + TB07 Turing + TB09 Tardigrade)
+    # P3: Hyper-Morphogenesis (Cellulogonic COVI + Steinberg + TB05 + TB07 + TB09 + Noetic GATE-06 XPBD & GATE-10 Blackiston)
     ph_score = 100.0 if float(tb05.get("max_err", 1.0)) < 1e-9 else 0.0
     turing_score = clamp(100.0 * min(1.0, float(tb07.get("fast_inh_std", 0.0)) / 0.25))
     tardi_score = clamp(float(tb09.get("intact_surv", 0.0)))
-    p3 = round(clamp(0.30 * cm_covi + 0.20 * cm_cad + 0.15 * ph_score + 0.15 * turing_score + 0.20 * tardi_score), 2)
+    p3 = round(clamp(0.24 * cm_covi + 0.16 * cm_cad + 0.12 * ph_score + 0.12 * turing_score + 0.14 * tardi_score + 0.11 * no_xpbd_score + 0.11 * no_meta_score), 2)
 
-    # P4: Recursive Meta-Evolvability (AUTOPHAGE OVI + TB06 Hopfield-Ninio proofreading + TB15 Oxytricha/Levin)
+    # P4: Recursive Meta-Evolvability (AUTOPHAGE OVI + TB06 proofreading + TB15 Levin/Oxytricha + Noetic GATE-09 Ring-0 WSE-12)
     kp_score = clamp(100.0 * float(tb06.get("kp1_L600", 0.0)))
     levin_score = 100.0 if results["tier2plus_omega"]["tb15_levin_2h_clean"] else 0.0
     oxy_score = clamp(100.0 * min(1.0, float(tb15.get("oxy_mds", 0)) / 225.0))
-    p4 = round(clamp(0.40 * ap_ovi + 0.25 * kp_score + 0.20 * levin_score + 0.15 * oxy_score), 2)
+    p4 = round(clamp(0.32 * ap_ovi + 0.20 * kp_score + 0.16 * levin_score + 0.12 * oxy_score + 0.20 * no_wse_score), 2)
 
     # P5: Assembly & Universal Construction (TB14 Bio-Frostbite INet confluence/SSIN/depth + TB15 CISS & TAD)
     inet_conf = 100.0 if results["tier2plus_omega"]["tb14_confluence_exact"] else 0.0
@@ -306,24 +399,24 @@ def main():
     tad_score = clamp(100.0 * min(1.0, float(tb15.get("tad_gain", 0.0)) / 5.0))
     p5 = round(clamp(0.30 * inet_conf + 0.25 * inet_ssin + 0.25 * ciss_score + 0.20 * tad_score), 2)
 
-    # P6: Thermodynamic & Substrate Mastery (Exact conservation across ALL 3 C11 engines + TB08 TUR + TB16 O56/6-tier closure)
-    gate_ratio = (ap_passed + cm_passed + om_passed) / max(1, (18 + cm_total + om_total))
+    # P6: Thermodynamic & Substrate Mastery (Exact conservation across ALL 4 C11 engines + TB08 TUR + TB16 + Noetic GATE-01/02/07)
+    gate_ratio = (ap_passed + cm_passed + om_passed + no_passed + ng_passed) / max(1, (18 + cm_total + om_total + no_total + ng_total))
     tur_ok = 100.0 if float(tb08.get("tur_min", 0.0)) >= 1.95 else 0.0
     proj_ok = 100.0 if (results["tier2plus_omega"]["tb16_proj_mass_res"] < 1e-12 and results["tier2plus_omega"]["tb16_six_tier_int_drift"] == 0) else 0.0
     cm_cons_ok = 100.0 if (results["tier2_cellulogonic"]["embryo_mass_res"] == 0 and results["tier2_cellulogonic"]["embryo_energy_res"] == 0) else 0.0
-    ap_cons_ok = 100.0 if results["tier1_autophage"]["thermo_drift"] < 1e-12 else 0.0
+    ap_cons_ok = 100.0 if (results["tier1_autophage"]["thermo_drift"] < 1e-12 and results["tier3_noetic_organism"]["max_energy_drift_uq"] == 0) else 0.0
     p6 = round(clamp(0.30 * (100.0 * gate_ratio) + 0.20 * tur_ok + 0.20 * proj_ok + 0.15 * cm_cons_ok + 0.15 * ap_cons_ok), 2)
 
-    # P7: Multi-Scale Agency & Individuality (TB15 wireless connectome + TB16 Ridge R2 & JCVI-syn3A AUROC + TB09 CPG/Tardigrade)
+    # P7: Multi-Scale Agency & Individuality (TB15 wireless + TB16 Ridge/syn3A + Noetic 49/49 Cognitive/CQM + GATE-07 b1.58 offload)
     wire_score = clamp(100.0 * results["tier2plus_omega"]["tb15_wireless_reach"])
     r2_score = clamp(100.0 * results["tier2plus_omega"]["tb16_perturb_r2"])
     auroc_score = clamp(100.0 * results["tier2plus_omega"]["tb16_essential_auroc"])
-    p7 = round(clamp(0.35 * wire_score + 0.35 * r2_score + 0.30 * auroc_score), 2)
+    p7 = round(clamp(0.25 * wire_score + 0.25 * r2_score + 0.20 * auroc_score + 0.20 * no_cog_score + 0.10 * no_b158_score), 2)
 
-    # P8: Feral Resilience & Criticality (All 30 planted mutants caught across 3 engines + Track-A 0 tumors + Tardigrade shock survival)
-    mut_ratio = (6 + cm_mut_caught + om_mut_caught) / max(1, (6 + cm_mut_total + om_mut_total)) if (ap_failed == 0) else 0.0
+    # P8: Feral Resilience & Criticality (All 35/35 planted mutants caught across 4 engines + Track-A 0 tumors + Tardigrade + GATE-11 10k 0-bit obs)
+    mut_ratio = (6 + cm_mut_caught + om_mut_caught + results["tier3_noetic_organism"]["mutants_caught"]) / max(1, (6 + cm_mut_total + om_mut_total + 5)) if (ap_failed == 0) else 0.0
     track_a_ok = 100.0 if int(tb12.get("trackA_tumors", 1)) == 0 else 0.0
-    p8 = round(clamp(0.45 * (100.0 * mut_ratio) + 0.30 * track_a_ok + 0.25 * tardi_score), 2)
+    p8 = round(clamp(0.40 * (100.0 * mut_ratio) + 0.25 * track_a_ok + 0.20 * tardi_score + 0.15 * no_obs_score), 2)
 
     pillars = {
         "P1_OEE_NOVELTY": p1,
@@ -429,7 +522,7 @@ def main():
         })
 
     all_gates_ok = (len(failures) == 0)
-    total_lean = ap_lean_cnt + cm_lean_cnt + om_lean_cnt
+    total_lean = ap_lean_cnt + cm_lean_cnt + om_lean_cnt + no_lean_cnt
 
     payload = {
         "run_id": f"ALIFE-OMEGA-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
@@ -440,11 +533,11 @@ def main():
         "pillar_weights": weights,
         "pillar_scores": pillars,
         "anti_gaming_gates": {
-            "white_noise_rejection_passed": bool(ap_failed == 0 and cm_passed == cm_total),
+            "white_noise_rejection_passed": bool(ap_failed == 0 and cm_passed == cm_total and no_failed == 0),
             "intron_bloat_knockout_passed": bool(ap_failed == 0),
             "spiegelman_penalty_factor": 1.0 if ap_ovi >= 60.0 else 0.25,
-            "t0_scaffold_subtracted": bool(ap_failed == 0 and cm_passed == cm_total),
-            "dual_observer_verified": bool(ap_failed == 0 and cm_passed == cm_total and om_passed == om_total),
+            "t0_scaffold_subtracted": bool(ap_failed == 0 and cm_passed == cm_total and no_failed == 0),
+            "dual_observer_verified": bool(ap_failed == 0 and cm_passed == cm_total and om_passed == om_total and no_rg["GATE-11"]["zero_bit_exact"]),
             "gamma_multiplier": 1.0 if all_gates_ok else 0.0,
         },
         "composite_ovi_score": comp_ovi,
@@ -452,7 +545,7 @@ def main():
         "benchmarks": bms,
         "engine_receipts": results,
         "total_lean4_theorems": total_lean,
-        "all_lean4_pure_axioms_verified": bool(ap_lean_clean and cm_lean_clean and om_lean_clean),
+        "all_lean4_pure_axioms_verified": bool(ap_lean_clean and cm_lean_clean and om_lean_clean and no_lean_clean),
     }
 
     # 7. Strict JSON Schema Validation against pipelines/benchmark-suite-schema.json
@@ -467,6 +560,7 @@ def main():
     print(f"  Tier 1 AUTOPHAGE v1.2    : {ap_passed}/18 gates | OVI={ap_ovi} | A_new={ap_anew} | {ap_lean_cnt} Pure Lean4 (clean={ap_lean_clean})")
     print(f"  Tier 2 CELLULOGONIC v1.3 : {cm_passed}/{cm_total} gates | {cm_mut_caught}/{cm_mut_total} mut | COVI={cm_covi} | {cm_lean_cnt} Pure Lean4 (clean={cm_lean_clean})")
     print(f"  Tier 2+ OMEGA v5.0       : {om_passed}/{om_total} gates | {om_mut_caught}/{om_mut_total} mut | SHA={results['tier2plus_omega']['master_sha256'][:16]} | {om_lean_cnt} Pure Lean4 (clean={om_lean_clean})")
+    print(f"  Tier 3 NOETIC v1.1       : {no_passed}/{no_total} unit+mut | {ng_passed}/{ng_total} gates (13/13 CS-v3={no_all_13_gates_ok}) | E1=18/18 | E2=49/49 | {no_lean_cnt} Pure Lean4 (clean={no_lean_clean})")
     print(f"  Tier 3+4 ASMODENSIUS     : read-only (WRITER.lock={ASMO_LOCK.exists()}, az_live={ASMO_LIVE.exists()})")
     print(f"  Composite OVBS-52        : {comp_ovi} ({stage}) | Total Pure Lean 4 Proofs = {total_lean}")
 

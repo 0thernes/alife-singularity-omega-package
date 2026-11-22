@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alifeops.omega/schemas/ovbs-52-v3.2-unified.json",
-  "title": "Unified Omega Vitality (OVBS-52) & Clean-Slate v3.0 Verification Schema (v3.2-Omega)",
+  "$id": "https://alifeops.omega/schemas/ovbs-52-v3.3-unified.json",
+  "title": "Unified Omega Vitality (OVBS-52) & Clean-Slate v3.0 Verification Schema (v3.3-Omega)",
   "description": "Machine-readable schema evaluating Artificial Life, AG-Life, A-Life Singularity, Super A-Life, and Post-Singularity SUPER LIFE across 8 weighted OVBS-52 pillars, 52 metrics, 5 anti-gaming gates, and optional/extended Clean-Slate v3.0 11-Pool FP64 conservation, Holm-Bonferroni FWER statistics, and 5-mutant Anti-LARP verification.",
   "type": "object",
   "required": [

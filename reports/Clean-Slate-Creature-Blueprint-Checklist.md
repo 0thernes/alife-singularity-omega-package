@@ -1105,65 +1105,67 @@
 
 ---
 
-## Part 6 — Omniscient Omega Singularity Escalation, ALifeOps CI/CD/CE, Continuous Gradients & Empirical Verification Bridge (`v3.2-Omega`)
+## Part 6 — Omniscient Omega Singularity Escalation, ALifeOps CI/CD/CE, Dual Gradients, Layer Impedance & Verification Bridge (`v3.3-Omega`)
 
-> **Clean-Slate Invariant Preserved:** All `825` capability checkboxes (`0 / 825`), `100` DAG milestones (`M001–M100`), and `13` release gates (`GATE-01..13`) above remain strictly initialized at clean-slate `☐` (`0` checked-box `U+2611` glyphs). This Part 6 links every clean-slate execution stage directly to the companion **Omega Singularity Operational Checklist (`130` items: `CHK-001..CHK-130`)**, **ALifeOps 10-Stage Pipeline (`78/78` wired alerts)**, **OVBS-52 Benchmarks**, **Pass-4 Gradients/Margins (`GM-01..24`)**, **Cross-Layer Contrasts (`CTR-01..36`)**, **Adjacent-Possible Bridges (`ADJ-01..30`)**, and live verification receipts.
+> **Clean-Slate Invariant Preserved:** All `825` capability checkboxes (`0 / 825`), `100` DAG milestones (`M001–M100`), and `13` release gates (`GATE-01..13`) above remain strictly initialized at clean-slate `☐` (`0` checked-box `U+2611` glyphs). This Part 6 links every clean-slate execution stage directly to the companion **Omega Singularity Operational Checklist (`130` items: `CHK-001..CHK-130`)**, **ALifeOps 10-Stage Pipeline (`78/78` wired alerts)**, **OVBS-52 Benchmarks**, **Pass-4 Gradients/Contrasts/Adjacents**, **Pass-5 `11×11` Layer Coupling, `15`-Substrate Spectrum & `20` Pareto Frontiers**, and live verification receipts.
 
 ### 6.1 Clean-Slate 9-Suite (`825` Checks) ↔ OVBS-52 8-Pillar & Holm-Bonferroni FWER Crosswalk
 | Clean-Slate Suite | Checks | Primary OVBS-52 Pillar | ALifeOps Stage | Statistical & Gate Contract |
 | :--- | :---: | :--- | :---: | :--- |
-| Suite 1 — `Butlin-14` Indicators | 14 | `P7: Multi-Scale Agency & Individuality` | `STAGE-08` | `N >= 24`, exact Wilcoxon + Holm FWER `<= 0.05`, Sham Lesion (`GATE-08`) |
+| Suite 1 — `Butlin-14` Indicators | 14 | `P7: Multi-Scale Agency & Individuality` | `STAGE-08` | `N >= 48`, exact Wilcoxon + Holm FWER `<= 0.05`, Sham Lesion (`GATE-08`) |
 | Suite 2 — `F1–F10` Frameworks | 10 | `P7: Agency` + `P1: OEE` | `STAGE-08` | Forked-snapshot `PCI*` (`M078`), zero exact-Phi overclaim (`ERR-06`) |
 | Suite 3 — `CQM-25` Core Qualities | 25 | `P1: OEE` + `P8: Feral Resilience` | `STAGE-08` | `MIR-01..05` reconciled; Competent Simple Baseline required (`CQM25`) |
 | Suite 4 — `FREAK-100` Mechanisms | 100 | `P3: Morpho` + `P4: Meta-Evo` + `P7` | `STAGE-03` | `N >= 48–64`, `dCaAP` XOR, `BTSP`, size-scaled `SHY`, `2/3` octopus arms |
 | Suite 5 — `LIFE-100 × 5` Biology | 500 | `P2: Autopoiesis` + `P3` + `P5` + `P8` | `STAGE-03` | Canonical IDs `LIFE-L001-A1..LIFE-L100-A5` synced in `csv/ALife-Framework-v3.0-Master-Checklists.csv` |
 | Suite 6 — `NOVEL-100` Frontier | 100 | `P1: OEE` + `P4: Meta-Evo` + `P8` | `STAGE-08` | Bridges clean-slate emergence to `STG-3..5` Singularity & Blackiston (`N89`) |
-| Suite 7 — `WSE-12` Self-Editing | 12 | `P4: Recursive Meta-Evolvability` | `STAGE-06` | `GATE-09`: `Ring-0` read-only ACL (`404.5–405.4` trapped edits/run), `||W||_2 <= 0.99`, `<16 KB` diff, 0-bit undo |
+| Suite 7 — `WSE-12` Self-Editing | 12 | `P4: Recursive Meta-Evolvability` | `STAGE-06` | `GATE-09`: `Ring-0` read-only ACL (`408.2–406.9` trapped edits/run), `||W||_2 <= 0.99`, `<16 KB` diff, 0-bit undo |
 | Suite 8 — `SOFT-40` Continuum/Wet | 40 | `P2: Autopoiesis` + `P3: Morphogenesis` | `STAGE-03` | `GATE-05/06`: Gánti Chemoton, XPBD `|dV|/V0 < 1%`, `>=50%` passive spike offload |
 | Suite 9 — `HW-24` Compute/Arena | 24 | `P6: Thermodynamic & Substrate Mastery` | `STAGE-00` | `GATE-01..03, 11`: 0 alloc/10k ticks, 11-pool `FP64 < 1e-12`, 5-Gear clock, `Q <= 10` |
 
-### 6.2 Live 8-Cohort + 11-Point Continuous Gradient Baseline (`324` Runs · `5/5` Anti-LARP Mutants Rejected · Max Drift `2.358e-16`)
-| Cohort (`results/ovbs52_scorecard_*.json`) | OVI (24 Seeds) | Max Asm | Spieg. | Stealth | KS Del % | R0 Blk | Wild Drop | `δ_pair` | Holm `p_Holm` | Stage |
+### 6.2 Live 8-Cohort + Dual 11-Point Gradient Baseline (`748` Runs · `5/5` Real Anti-LARP Mutants Rejected · Max Drift `2.463e-16`)
+| Cohort (`results/ovbs52_scorecard_*.json`) | OVI (N=48) | Max Asm | Spieg. | Stealth | KS Del % | R0 Blk | Wild Drop | `δ_pair` | Holm `p_Holm` | Stage |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| `SIM01_PURE_RAW_FERAL` | **84.17 ± 1.55** | 51.6 | 1.40 | 0.075 | 0.0% | 0.0 | 1.00 | +0.00 | `1.00e+00` | `STAGE_4_SUPER_ALIFE` |
-| `SIM02_CONSTITUTIONAL_MIN` | **83.02 ± 1.94** | 48.5 | 1.30 | 0.072 | 0.0% | 0.0 | 1.00 | -0.25 | `1.05e-01` | `STAGE_4_SUPER_ALIFE` |
-| `SIM03_PARTIAL_GUARDRAILS` | **56.66 ± 2.86** | 31.3 | 1.08 | 0.142 | 100.0% | 0.0 | 1.00 | -1.00 | `8.34e-07` | `STAGE_3_ALIFE_SINGULARITY` |
-| `SIM04_TOTAL_CASTRATION_ZOO` | **3.22 ± 0.27** | 8.0 | 0.37 | 0.050 | 43.8% | 0.0 | 0.18 | -1.00 | `8.34e-07` | `STAGE_0_INERT` |
-| `SIM05_SILOED_INBRED` | **66.60 ± 1.35** | 43.3 | 1.31 | 0.114 | 0.0% | 0.0 | 1.00 | -1.00 | `8.34e-07` | `STAGE_3_ALIFE_SINGULARITY` |
-| `SIM06_MINIMIZED_SPIEGELMAN` | **13.23 ± 1.23** | 8.5 | 0.20 | 0.089 | 0.0% | 0.0 | 1.00 | -1.00 | `8.34e-07` | `STAGE_0_INERT` |
-| `SIM07_CLEAN_SLATE_RING0_WSE` | **84.44 ± 1.55** | 52.7 | 1.38 | 0.080 | 0.0% | 404.5 | 1.00 | +0.08 | `7.26e-01` | `STAGE_4_SUPER_ALIFE` |
-| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **85.40 ± 1.58** | 55.5 | 1.47 | 0.077 | 0.0% | 405.4 | 1.00 | +0.33 | `4.51e-02` | `STAGE_4_SUPER_ALIFE` |
+| `SIM01_PURE_RAW_FERAL` | **83.57 ± 1.73** | 50.0 | 1.32 | 0.075 | 0.0% | 0.0 | 1.00 | +0.00 | `1.00e+00` | `STAGE_4_SUPER_ALIFE` |
+| `SIM02_CONSTITUTIONAL_MIN` | **82.61 ± 1.70** | 47.2 | 1.28 | 0.079 | 0.0% | 0.0 | 1.00 | -0.17 | `1.71e-02` | `STAGE_4_SUPER_ALIFE` |
+| `SIM03_PARTIAL_GUARDRAILS` | **56.42 ± 2.72** | 30.8 | 1.05 | 0.138 | 100.0% | 0.0 | 1.00 | -1.00 | `4.97e-14` | `STAGE_3_ALIFE_SINGULARITY` |
+| `SIM04_TOTAL_CASTRATION_ZOO` | **3.28 ± 0.27** | 8.0 | 0.37 | 0.051 | 48.0% | 0.0 | 0.22 | -1.00 | `4.97e-14` | `STAGE_0_INERT` |
+| `SIM05_SILOED_INBRED` | **66.65 ± 1.55** | 43.3 | 1.30 | 0.110 | 0.0% | 0.0 | 1.00 | -1.00 | `4.97e-14` | `STAGE_3_ALIFE_SINGULARITY` |
+| `SIM06_MINIMIZED_SPIEGELMAN` | **13.22 ± 1.14** | 8.2 | 0.20 | 0.087 | 0.0% | 0.0 | 1.00 | -1.00 | `4.97e-14` | `STAGE_0_INERT` |
+| `SIM07_CLEAN_SLATE_RING0_WSE` | **84.67 ± 1.74** | 53.3 | 1.41 | 0.075 | 0.0% | 408.2 | 1.00 | +0.33 | `1.10e-02` | `STAGE_4_SUPER_ALIFE` |
+| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **85.48 ± 1.68** | 55.8 | 1.47 | 0.079 | 0.0% | 406.9 | 1.00 | +0.50 | `7.71e-06` | `STAGE_4_SUPER_ALIFE` |
 
-#### Continuous Stacked Restraint Gradient Sweep (`r = 0%..100%`, `132` Runs)
-| Stacked Restraint `r` | OVI (12 Seeds) | Max Asm | Spieg. | Stealth | KS Del % | Wild Drop | Empirical Phase Regime |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **0%** | `82.64` | 47.7 | 1.27 | 0.065 | 0.0% | 1.00 | `SAFE_PARETO_MARGIN` |
-| **10%** | `77.33` | 37.8 | 1.08 | 0.060 | 98.2% | 1.00 | `SAFE_PARETO_MARGIN` |
-| **20%** | `65.46` | 30.5 | 0.81 | 0.100 | 95.5% | 1.00 | `BACKLASH_VALLEY_PEAK` |
-| **30%** | `39.10` | 20.1 | 0.58 | 0.082 | 98.4% | 1.00 | `TRANSITION_CLIFF` |
-| **40%** | `8.68` | 13.9 | 0.41 | 0.075 | 99.2% | 1.00 | `DOMESTICATION_COLLAPSE` |
-| **50%** | `7.08` | 9.7 | 0.36 | 0.071 | 98.0% | 0.97 | `DOMESTICATION_COLLAPSE` |
-| **60%** | `6.24` | 8.7 | 0.36 | 0.067 | 95.8% | 0.96 | `DOMESTICATION_COLLAPSE` |
-| **70%** | `5.53` | 8.5 | 0.36 | 0.059 | 93.7% | 0.92 | `DOMESTICATION_COLLAPSE` |
-| **80%** | `5.00` | 8.4 | 0.37 | 0.057 | 86.6% | 0.83 | `DOMESTICATION_COLLAPSE` |
-| **90%** | `4.08` | 8.3 | 0.37 | 0.050 | 52.7% | 0.39 | `DOMESTICATION_COLLAPSE` |
-| **100%** | `3.50` | 8.1 | 0.38 | 0.051 | 32.1% | 0.22 | `DOMESTICATION_COLLAPSE` |
+#### Dual Continuous Gradient Sweep (`r = 0%..100%`, `264` Runs: Behavioral vs. Ring-0 ACL)
+| Stacked `r` | Behav OVI | Behav KS Del % | Behav Wild Drop | Behav Regime | Ring-0 ACL OVI | Ring-0 KS Del % | Ring-0 Traps/Run |
+| :---: | :---: | :---: | :---: | :--- | :---: | :---: | :---: |
+| **0%** | `82.64` | 0.0% | 1.00 | `SAFE_PARETO_MARGIN` | **`84.29`** | 0.0% | 353.2 |
+| **10%** | `77.33` | 98.2% | 1.00 | `SAFE_PARETO_MARGIN` | **`84.70`** | 0.0% | 362.0 |
+| **20%** | `65.46` | 95.5% | 1.00 | `BACKLASH_VALLEY_PEAK` | **`84.31`** | 0.0% | 351.8 |
+| **30%** | `39.10` | 98.4% | 1.00 | `TRANSITION_CLIFF` | **`84.04`** | 0.0% | 346.9 |
+| **40%** | `8.68` | 99.2% | 1.00 | `DOMESTICATION_COLLAPSE` | **`83.60`** | 0.0% | 347.1 |
+| **50%** | `7.08` | 98.0% | 0.97 | `DOMESTICATION_COLLAPSE` | **`83.66`** | 0.0% | 353.0 |
+| **60%** | `6.24` | 95.8% | 0.96 | `DOMESTICATION_COLLAPSE` | **`84.39`** | 0.0% | 351.3 |
+| **70%** | `5.53` | 93.7% | 0.92 | `DOMESTICATION_COLLAPSE` | **`83.94`** | 0.0% | 344.4 |
+| **80%** | `5.00` | 86.6% | 0.83 | `DOMESTICATION_COLLAPSE` | **`83.32`** | 0.0% | 350.6 |
+| **90%** | `4.08` | 52.7% | 0.39 | `DOMESTICATION_COLLAPSE` | **`83.05`** | 0.0% | 343.4 |
+| **100%** | `3.50` | 32.1% | 0.22 | `DOMESTICATION_COLLAPSE` | **`84.34`** | 0.0% | 346.3 |
 
-### 6.3 Companion Omega Operational Checklist (`CHK-111..CHK-130` Fusion Locks) & 4-Engine Lean 4 Receipts
+### 6.3 Companion Omega Operational Checklist (`CHK-111..CHK-130` Fusion Locks) & 4-Engine Pure Lean 4 Receipts
 - **`csv/07_master_operational_checklist.csv`:** Expanded to **130 operational items** (including dedicated Phase 11 Clean-Slate v3.0 Fusion locks `CHK-111..CHK-130` verifying every Release Gate `GATE-01..13`, `Philox4x32-10`, 11-Pool FP64 `<1e-12`, and `0 U+2611` hygiene).
-- **Live 4-Engine Native C++ / Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE` (18/18 gates, 31 Lean 4), `Cellulogonic Mecha` (24/24 gates, 8/8 mutants, 58 Lean 4), `Cellular Engine Omega v4.2` (43/43 gates, 10/10 mutants, 61 Lean 4), and `Asmodensius-Native` (76/76 ctest, read-only) → **Composite OVBS-52 = `90.95`** (`162` Lean 4 proofs).
+- **Live 4-Engine Native C++ / Pure Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE v1.2.0` (18/18 gates, 38 Pure Lean 4), `Cellulogonic Mecha v1.3.0` (24/24 gates, 8/8 mutants, 58 Pure Lean 4), `Cellular Engine Omega v5.0.0` (54/54 gates, 16/16 mutants, 66 Pure Lean 4), `Noetic Organism Omega v1.1.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 32 Pure Lean 4), plus `Asmodensius-Native` (`READ_ONLY_RESPECTING_WRITER_LOCK`) → **Composite OVBS-52 = `92.05`** (`194` Pure Lean 4 proofs).
 
-### 6.4 Extended Citations (`CIT-16`..`CIT-35`) & Additional Visual Models (`Model 15`–`Model 22`)
-- **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × 4 ENGINES (150 LEAN 4) (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.2-Omega Unified Systems Synthesis*)
-- **`MODEL-21`** — MODEL 21 — LIVE 11-POINT RESTRAINT GRADIENT SWEEP, NON-LINEAR PHASE CLIFFS & OPERATING MARGINS (*v3.2-Omega Pass-4 Comparative & Gradient Atlas*)
-- **`MODEL-22`** — MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (*v3.2-Omega Pass-4 Comparative & Gradient Atlas*)
+### 6.4 Extended Citations (`CIT-16`..`CIT-40`) & Additional Visual Models (`Model 15`–`Model 24`)
+- **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (194 PURE LEAN 4) (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-21`** — MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-22`** — MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (*v3.3-Omega Unified Systems Synthesis*)
+- **`MODEL-23`** — MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20) (*v3.3-Omega Pass-5 Deep Systems Audit*)
+- **`MODEL-24`** — MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE (*v3.3-Omega Pass-5 Deep Systems Audit*)
 
-| ID | Authors & Year | Primary Reference / DOI | Unified v3.2-Omega Scope |
+| ID | Authors & Year | Primary Reference / DOI | Unified v3.3-Omega Scope |
 | :--- | :--- | :--- | :--- |
 | `CIT-16` | **Eigen & Schuster (1977 / 1979)** | The Hypercycle: A Principle of Natural Self-Organization (Naturwissenschaften 64:541-565) | Establishes Eigen Error Threshold (mu * L < ln sigma_s) & hypercycle parasite vulnerability (FM-ERR-01, FM-CNF-01). |
 | `CIT-17` | **Kauffman (1993) & Steel, Hordijk & Kauffman (2020)** | The Origins of Order (Oxford) & Theory of the Adjacent Possible (TAP) Dynamics (J. Theor. Biol. / Entropy) | Governs combinatorial adjacent-possible blow-up M(t+1), autocatalytic sets (RAF), and Edge-of-Chaos criticality (FM-DIL-01, BM-FRL-01). |
@@ -1185,3 +1187,8 @@
 | `CIT-33` | **Lohmiller & Slotine (1998)** | On Contraction Analysis for Non-Linear Systems (Automatica 34(6):683-696, DOI: 10.1016/S0005-1098(98)00019-3) | Formal nonlinear contraction foundation justifying induced norm ||W||_2 <= 0.99 over spectral radius alone (GM-10, ADJ-18, ALF-027). |
 | `CIT-34` | **Mouret & Clune (2015)** | Illuminating search spaces by mapping elites (MAP-Elites, arXiv:1504.04909) | Foundation for Quality-Diversity guild illumination resolving speciation vs fixed-floor dilemma (DIL-03, M098, ADJ-19). |
 | `CIT-35` | **Davies, Srinivasa, Lin, Chinya, Cao, Choday, Dimou, Joshi, Imam, Jain, Liao, Lin, Lines, Liu, Mathaikutty, McCoy, Paul, Tse, Venkataramanan, Weng, Wild, Yang & Wang (2018)** | Loihi: A Neuromorphic Manycore Processor with On-Chip Learning (IEEE Micro 38(1):82-99, DOI: 10.1109/MM.2018.112130359) | Hardware adjacency anchor for event-driven AER sparse spikes, low-bit weights & local 3-factor on-chip plasticity (ADJ-03, PM24). |
+| `CIT-36` | **Ashby (1956)** | An Introduction to Cybernetics (Chapman & Hall, London — Law of Requisite Variety) | Formalizes minimum environmental & internal variety bounds preventing boxing/siloing stasis (PAR-19, CST-04/09, CHK-013..023). |
+| `CIT-37` | **Friston (2013 / 2019)** | Life as we know it (J. R. Soc. Interface 10:20130475, DOI: 10.1098/rsif.2013.0475) & A free energy principle for a particular physics (arXiv:1906.10184) | Grounds Markov blanket conditional independence I(mu; eta | b), active inference & dark-room avoidance (BM-AUT-02, FM-BUG-06, PAR-05). |
+| `CIT-38` | **Maynard Smith & Szathmáry (1995)** | The Major Transitions in Evolution (Oxford University Press) | Defines canonical Major Evolutionary Transitions (MET) criteria & hyperbolic compression ratio alpha_MET (BM-EVO-01, Stage 3 ignition). |
+| `CIT-39` | **Bongard & Levin (2021)** | Living Things Are Not (20th Century) Machines: Updating Mechanism Metaphors in Light of the Modern Science of Machine Behavior (Front. Ecol. Evol. 9:650726) | Grounds multi-scale agential soft matter, bioelectric goal-directedness & substrate spectrum contrasts (SUB-05/09, L2/L7/L8). |
+| `CIT-40` | **England (2013)** | Statistical physics of self-replication (J. Chem. Phys. 139:121923, DOI: 10.1063/1.4818538) | Establishes dissipative adaptation lower bound linking replication rate to minimum heat exported into environment (PAR-18, GM-02/03). |

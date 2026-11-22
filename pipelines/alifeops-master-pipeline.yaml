@@ -1,5 +1,5 @@
 # ==============================================================================
-# ALIFEOPS / EVOOPS MASTER DECLARATIVE PIPELINE (CI/CD/CE) — v3.2.0-OMEGA
+# ALIFEOPS / EVOOPS MASTER DECLARATIVE PIPELINE (CI/CD/CE) — v3.3.0-OMEGA
 # Unified Clean-Slate v3.0 Micro-Hardware Runtime × Singularity Omega Macro OEE
 # Continuous Integration / Continuous Discovery / Continuous Open-Ended Evolution
 # ==============================================================================
@@ -10,16 +10,16 @@
 #   - 36/36 Clean-Slate v3.0 Forensic Triage Guards Wired (PRB-01..CNF-06)
 #   - 78/78 Total Unified Pathology & Engineering Alerts Wired (0 Unwired)
 #   - 13/13 Clean-Slate Release Gates Wired (GATE-01..GATE-13)
-#   - 5/5 Anti-LARP Negative Mutants Wired & Enforced
-#   - 24 Continuous Gradients & Operating Margins Monitored (GM-01..GM-24)
+#   - 5/5 Real Anti-LARP Negative Mutants Wired & Enforced
+#   - 24 Continuous Gradients (GM-01..24) & 20 Pareto Frontiers (PAR-01..20) Wired
 # ==============================================================================
-apiVersion: alifeops.omega/v3.2
+apiVersion: alifeops.omega/v3.3
 kind: ContinuousEvolutionPipeline
 metadata:
-  name: alife-singularity-omega-v3-2-unified-pipeline
-  version: "3.2.0-omega"
+  name: alife-singularity-omega-v3-3-unified-pipeline
+  version: "3.3.0-omega"
   classification: "DUAL-TRACK-UNIFIED-CLEANSLATE-SINGULARITY"
-  cross_corpus_source: "Clean-Slate v3.0 (I:\\A-Life God Plan) x Zeta-Omega v3.2 (Z:\\ANTIGRAVITY)"
+  cross_corpus_source: "Clean-Slate v3.0 (I:\\A-Life God Plan) x Zeta-Omega v3.3 (Z:\\ANTIGRAVITY)"
   description: >
     10-stage, 40-step DevOps/ALifeOps pipeline unifying Clean-Slate v3.0 bottom-up
     engineering (10 Invariants P1-P10, 11-Pool Compensated FP64 Thermodynamics,
@@ -27,7 +27,8 @@ metadata:
     Ring-0 WSE-12, 825-Check Suite, 100-Milestone DAG, 13 Release Gates) with
     Top-Down Omega Singularity Dual-Track Evolution (Track A Constitutional QD-OEE
     & Track B Pure Raw Feral Simulation, 78/78 wired alerts, 13x13 castration
-    synergy lab, 8-cohort 24-seed Holm-Bonferroni FWER simulator, and OVBS-52).
+    synergy lab, 11x11 layer coupling, 15-substrate spectrum, 20 Pareto frontiers,
+    748-run N=48 Holm-Bonferroni FWER simulator, and OVBS-52).
 
 global_boundaries:
   execution_domain: "COMPUTATIONAL_SIMULATION_ONLY"

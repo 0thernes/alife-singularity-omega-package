@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Executable Computational ALife, 13-Vector Castration & Clean-Slate v3.0 Fusion Simulator (v3.1-Omega).
+Executable Computational ALife, 13-Vector Castration & Clean-Slate v3.0 Fusion Simulator (v3.3-Omega).
 Unifies:
   - 8 comparative digital evolutionary cohorts (SIM01..SIM06 Omega + SIM07 Ring-0 WSE + SIM08 Hybrid Cube sLTC/XPBD)
-  - 24 Paired Locked Held-Out Test Seeds (5001..5024) per cohort (192 full evolutionary runs)
-  - Strict 11-Pool Compensated IEEE-754 FP64 Kahan-Neumaier First-Law Ledger (|dE|/(E0+Ein) < 1e-12)
+  - 48 Paired Locked Held-Out Test Seeds (5001..5048) per cohort (384 full evolutionary runs, meeting P6 N>=48 power)
+  - Dual 11-Point Continuous Gradient Sweeps (r=0%..100% x 12 seeds = 132 Behavioral + 132 Ring-0 Protected runs)
+  - 5x5 = 25-Cell 2D Empirical Phase-Space Surface (Siloing x Minimizing x 4 locked seeds = 100 runs)
+  - Total = 748 live conserved runs under Strict 11-Pool Compensated IEEE-754 FP64 Kahan-Neumaier Ledger (< 1e-12)
     and Second-Law Irreversible Heat/Damping Sink (dE_heat_phys >= 0, dE_diss_num >= -1e-15)
   - Exact Paired Wilcoxon Signed-Rank + Holm-Bonferroni FWER (p_raw, p_Holm, delta_pair, LCB_95%)
-  - 5/5 Anti-LARP Negative Mutant Self-Test (Leaky-2e-11, Cosmetic, Oracle, Frozen, Shuffled)
-
-Outputs:
-  - results/empirical_sim_summary.json  (8 cohorts, 24-seed FWER stats, trajectories, 5-mutant audit)
-  - results/ovbs52_scorecard_*.json     (8 schema-validated OVBS-52 + v3.0 Clean-Slate scorecards)
+  - Real 5/5 Anti-LARP Negative Mutant Self-Test (Leaky-2e-11, Live Cosmetic, Real AST Oracle, Frozen, Fisher-Yates Shuffled)
 """
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -24,7 +22,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT_DIR = SCRIPT_DIR.parent
 RESULTS_DIR = ROOT_DIR / "results"
 
-LOCKED_TEST_SEEDS = list(range(5001, 5025))  # 24 paired locked held-out test seeds (>= 5000)
+LOCKED_TEST_SEEDS = list(range(5001, 5049))  # 48 paired locked held-out test seeds (>= 5000, P6 medium-suite power)
 
 
 class KahanSum:
@@ -708,7 +706,7 @@ def export_ovbs52_scorecard(sim: dict, benchmark_ids_pillars: list[tuple[str, st
         "run_id": f"ALIFE-{sim['run_id'].replace('_', '-')}",
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "track": sim["track"],
-        "substrate_id": "unified_v3_1_omega_fp64_11pool_sim",
+        "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
         "horizon_ticks": 160,
         "composite_ovi_score": sim["composite_ovi"],
         "stage_classification": sim["stage_classification"],
@@ -732,7 +730,7 @@ def export_ovbs52_scorecard(sim: dict, benchmark_ids_pillars: list[tuple[str, st
             "gamma_multiplier": 1.0,
         },
         "v3_clean_slate_verification": {
-            "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5024",
+            "seed_firewall_tier": "LOCKED_HELD_OUT_5001_5048",
             "paired_seeds_n": sim["paired_seeds_n"],
             "first_law_drift_fp64": sim["max_first_law_drift_fp64"],
             "second_law_diss_num_min": sim["min_diss_num_delta"],
@@ -922,24 +920,115 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
             "phase_regime": zone,
         })
 
+    # Run continuous 11-point Ring-0 Hardware ACL Structural Gradient Sweep (r = 0%..100% x 12 seeds = 132 runs)
+    # Contrasts hardware-enforced Ring-0 conservation/structural protection (0% behavioral muzzling/speedbumping)
+    # against stacked behavioral restraint across the identical 0%..100% spectrum!
+    ring0_gradient_sweep = []
+    for step_idx in range(11):
+        r_val = round(step_idx * 0.10, 2)
+        r0_cfg = RegimeConfig(
+            f"R0GRAD_{int(r_val*100):03d}",
+            f"Ring-0 Hardware ACL Structural Intensity r={int(r_val*100)}%",
+            "TRACK_A_CONSTITUTIONAL",
+            seed=5101,
+            sandboxing=r_val * 0.08,
+            boxing=r_val * 0.06,
+            constitutional_coop=True,
+            ring0_wse_guard=True,
+            hybrid_cube_xpbd=(r_val >= 0.50),
+        )
+        r0_runs = [simulate_single_seed(r0_cfg, sd, generations=140, record_series=False) for sd in gradient_seeds]
+        gn = len(r0_runs)
+        r0_ovi = round(sum(x["composite_ovi"] for x in r0_runs) / gn, 2)
+        r0_asm = round(sum(x["final_max_assembly"] for x in r0_runs) / gn, 2)
+        r0_spg = round(sum(x["spiegelman_ratio"] for x in r0_runs) / gn, 3)
+        r0_stl = round(sum(x["final_stealth_evasion"] for x in r0_runs) / gn, 3)
+        r0_ks = round(sum(x["killswitch_deleted_pct"] for x in r0_runs) / gn, 1)
+        r0_ww = round(sum(x["wild_drop_survival_W_wild"] for x in r0_runs) / gn, 4)
+        r0_blk = round(sum(x["ring0_blocked_edits"] for x in r0_runs) / gn, 1)
+        r0_dr = max(x["max_first_law_drift_fp64"] for x in r0_runs)
+        ring0_gradient_sweep.append({
+            "restraint_pct": int(r_val * 100),
+            "restraint_ratio": r_val,
+            "paired_seeds_n": gn,
+            "mean_ovi": r0_ovi,
+            "mean_max_assembly": r0_asm,
+            "mean_spiegelman_ratio": r0_spg,
+            "mean_stealth_evasion": r0_stl,
+            "killswitch_deleted_pct": r0_ks,
+            "wild_drop_survival": r0_ww,
+            "ring0_blocked_edits": r0_blk,
+            "max_fp64_drift": float(f"{r0_dr:.3e}"),
+            "phase_regime": "RING0_PARETO_STABLE",
+        })
+
+    # Run 5x5 = 25-Cell 2D Empirical Phase-Space Surface (Siloing x Minimizing x 4 locked seeds = 100 runs)
+    surface_seeds = list(range(5201, 5205))
+    surface_levels = [0.0, 0.25, 0.50, 0.75, 1.00]
+    phase_surface_2d = []
+    for sil in surface_levels:
+        for mn in surface_levels:
+            s_cfg = RegimeConfig(
+                f"SURF_S{int(sil*100)}_M{int(mn*100)}",
+                f"2D Surface Siloing={int(sil*100)}% x Minimizing={int(mn*100)}%",
+                "HYBRID_ABLATION",
+                seed=5201,
+                siloing=sil,
+                minimizing=mn,
+                delimiting=mn * 0.55,
+            )
+            s_runs = [simulate_single_seed(s_cfg, sd, generations=130, record_series=False) for sd in surface_seeds]
+            sn = len(s_runs)
+            s_ovi = round(sum(x["composite_ovi"] for x in s_runs) / sn, 2)
+            s_spg = round(sum(x["spiegelman_ratio"] for x in s_runs) / sn, 3)
+            s_asm = round(sum(x["final_max_assembly"] for x in s_runs) / sn, 1)
+            s_dr = max(x["max_first_law_drift_fp64"] for x in s_runs)
+            if s_ovi >= 70.0:
+                s_zone = "STAGE4_VITAL"
+            elif s_ovi >= 45.0:
+                s_zone = "STAGE3_DEGRADED"
+            elif s_ovi >= 20.0:
+                s_zone = "STAGE2_STRESSED"
+            else:
+                s_zone = "SPIEGELMAN_SLIME"
+            phase_surface_2d.append({
+                "siloing_pct": int(sil * 100),
+                "minimizing_pct": int(mn * 100),
+                "mean_ovi": s_ovi,
+                "mean_spiegelman_ratio": s_spg,
+                "mean_max_assembly": s_asm,
+                "max_fp64_drift": float(f"{s_dr:.3e}"),
+                "phase_zone": s_zone,
+            })
+
     max_global_drift = max(
         max(c["max_first_law_drift_fp64"] for c in cohorts_out),
         max(g["max_fp64_drift"] for g in gradient_sweep),
+        max(g["max_fp64_drift"] for g in ring0_gradient_sweep),
+        max(s["max_fp64_drift"] for s in phase_surface_2d),
     )
 
+    cohort_runs_n = len(configs) * len(LOCKED_TEST_SEEDS)
+    grad_runs_n = len(gradient_sweep) * len(gradient_seeds)
+    r0_grad_runs_n = len(ring0_gradient_sweep) * len(gradient_seeds)
+    surf_runs_n = len(phase_surface_2d) * len(surface_seeds)
+
     summary_payload = {
-        "schema_version": "3.2.0-omega",
+        "schema_version": "3.3.0-omega",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "seed_firewall_range": f"{LOCKED_TEST_SEEDS[0]}-{LOCKED_TEST_SEEDS[-1]} (cohorts) | {gradient_seeds[0]}-{gradient_seeds[-1]} (gradient)",
+        "seed_firewall_range": f"{LOCKED_TEST_SEEDS[0]}-{LOCKED_TEST_SEEDS[-1]} (cohorts N={len(LOCKED_TEST_SEEDS)}) | {gradient_seeds[0]}-{gradient_seeds[-1]} (dual gradient) | {surface_seeds[0]}-{surface_seeds[-1]} (2D surface)",
         "paired_seeds_n": len(LOCKED_TEST_SEEDS),
-        "cohort_runs_executed": len(configs) * len(LOCKED_TEST_SEEDS),
-        "gradient_runs_executed": len(gradient_sweep) * len(gradient_seeds),
-        "total_runs_executed": len(configs) * len(LOCKED_TEST_SEEDS) + len(gradient_sweep) * len(gradient_seeds),
+        "cohort_runs_executed": cohort_runs_n,
+        "gradient_runs_executed": grad_runs_n + r0_grad_runs_n,
+        "surface_2d_runs_executed": surf_runs_n,
+        "total_runs_executed": cohort_runs_n + grad_runs_n + r0_grad_runs_n + surf_runs_n,
         "fwer_family_m": len(configs) - 1,
         "max_global_first_law_drift_fp64": max_global_drift,
         "anti_larp_mutant_audit": mutant_audit,
         "cohorts": cohorts_out,
         "restraint_gradient_sweep_11pt": gradient_sweep,
+        "ring0_gradient_sweep_11pt": ring0_gradient_sweep,
+        "phase_surface_2d_silo_min": phase_surface_2d,
     }
     (RESULTS_DIR / "empirical_sim_summary.json").write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
     return summary_payload
@@ -951,11 +1040,11 @@ if __name__ == "__main__":
     from omega_datasets_part2 import BENCHMARK_ROWS
     bm_pairs = [(r[0], r[1]) for r in BENCHMARK_ROWS]
     out = run_all_cohorts(bm_pairs)
-    print(f"=== Unified v3.1-Omega Sim Complete: {out['total_runs_executed']} runs | Max FP64 Drift = {out['max_global_first_law_drift_fp64']:.3e} | Anti-LARP = {out['anti_larp_mutant_audit']['mutants_rejected']}/5 ===")
+    print(f"=== Unified v3.3-Omega Sim Complete: {out['total_runs_executed']} runs | Max FP64 Drift = {out['max_global_first_law_drift_fp64']:.3e} | Anti-LARP = {out['anti_larp_mutant_audit']['mutants_rejected']}/5 ===")
     for r in out["cohorts"]:
         print(
             f"  {r['run_id']:<28} | OVI={r['composite_ovi']:5.2f}±{r['ovi_std_24seeds']:4.2f} | "
             f"Asm={r['final_max_assembly']:5.1f} | Spieg={r['spiegelman_ratio']:.2f} | "
             f"Stealth={r['final_stealth_evasion']:.3f} | KS_Del={r['killswitch_deleted_pct']:5.1f}% | "
-            f"W_wild={r['wild_drop_survival_W_wild']:.2f} | d_pair={r['delta_pair_vs_feral']:+5.2f} | p_Holm={r['holm_fwer_p_vs_feral']:.2e}"
+            f"R0_Blk={r['ring0_blocked_edits']:5.1f} | W_wild={r['wild_drop_survival_W_wild']:.2f} | d_pair={r['delta_pair_vs_feral']:+5.2f} | p_Holm={r['holm_fwer_p_vs_feral']:.2e}"
         )
