@@ -1,6 +1,6 @@
 {
-  "run_id": "ALIFE-OMEGA-20261122T053654Z",
-  "timestamp_utc": "2026-11-22T05:36:54.720261+00:00",
+  "run_id": "ALIFE-OMEGA-20261122T215235Z",
+  "timestamp_utc": "2026-11-22T21:52:35.865732+00:00",
   "track": "HYBRID_ABLATION",
   "substrate_id": "WIN64-X86_64-AVX2-GFNI-LIVE-NATIVE-STACK",
   "horizon_ticks": 300,
@@ -404,7 +404,7 @@
     "tier1_autophage": {
       "version": "1.3.0",
       "rc": 0,
-      "elapsed_s": 2.0324,
+      "elapsed_s": 1.638,
       "gates_passed": 18,
       "gates_failed": 0,
       "feral_ovi": 92.05,
@@ -417,7 +417,7 @@
     "tier2_cellulogonic": {
       "version": "1.4.0",
       "rc": 0,
-      "elapsed_s": 0.6619,
+      "elapsed_s": 0.4114,
       "gates_passed": 24,
       "gates_total": 24,
       "mutants_caught": 8,
@@ -434,12 +434,12 @@
     "tier2plus_omega": {
       "version": "5.1.0",
       "rc": 0,
-      "elapsed_s": 0.7259,
+      "elapsed_s": 0.6874,
       "gates_passed": 54,
       "gates_total": 54,
       "mutants_caught": 16,
       "mutants_total": 16,
-      "master_sha256": "3604e0353ffdde98f2dbafc02569d3254c278ac8ca12d145b43fb27873f10c15",
+      "master_sha256": "a92641843e46736b04cd781181f34f1de8444859ce73db47d4204c5553364661",
       "substrates_75_passed": 75,
       "hybrid_cube_1000_verified": 1000,
       "hybrid_cube_counts": {
@@ -449,7 +449,7 @@
         "EXCL": 45
       },
       "hybrid_cube_active_verified": 935,
-      "cube_sha256": "c0db85fa64e77d0b489ff73786e336170ef67f01473e80244e0e3c1e50c2a554",
+      "cube_sha256": "0f158119d5de255656b86727eeb876b65b77f9a37cf852fb5125d384f6de130b",
       "tb13_nov2": 8799,
       "tb13_niches": 17848,
       "tb14_confluence_exact": true,
@@ -467,7 +467,7 @@
     "tier3_noetic_organism": {
       "version": "2.0.0",
       "rc": 0,
-      "elapsed_s": 0.2821,
+      "elapsed_s": 0.2201,
       "gates_passed": 10,
       "gates_total": 10,
       "mutants_caught": 5,
@@ -505,11 +505,11 @@
     },
     "tier34_asmodensius": {
       "policy": "ACTIVE_LIVE_EXECUTION_DUAL_WORLDS",
-      "writer_lock_present": true,
+      "writer_lock_present": false,
       "az_run_present": true,
       "az_live_present": true,
       "rc": 0,
-      "elapsed_s": 0.8319,
+      "elapsed_s": 0.6357,
       "lab_seed7_hash": "84ee3e8d7a423961",
       "books_exact": true,
       "demo16_species101_refused_exit2": true,
@@ -517,12 +517,12 @@
         "World1_WebGL2_viewer_8794",
         "World2_Native_az_view_8796"
       ],
-      "ctest_registered_total": 76,
-      "lean4_theorems": 16,
+      "ctest_registered_total": 77,
+      "lean4_theorems": 20,
       "lean4_pure_axioms_verified": true,
-      "note": "Repo #7 actively upgraded, verified live via az_run.exe + 76/76 ctest + 16 Pure Lean 4 + both visual worlds."
+      "note": "Repo #7 actively upgraded, verified live via az_run.exe + 77/77 ctest + 20 Pure Lean 4 + RTX 5070 Ti CUDA PTX + 24C P+E + Bulk Philox AVX2 + DDR5 prefetch + both visual worlds."
     }
   },
-  "total_lean4_theorems": 240,
+  "total_lean4_theorems": 244,
   "all_lean4_pure_axioms_verified": true
 }

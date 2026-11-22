@@ -307,7 +307,7 @@ _ESCALATION_V3_MAP = {
     "STG-2": ("Stage 4-6 | L4 Neural - L6 Exec", "Starter Cube T1-T4 (X1Y2Z1..X7Y7Z3) | M041-M070", "GATE-07, GATE-08, GATE-09 | WSE-12"),
     "STG-3": ("Stage 7-8 | L7 Self - L8 Onto", "Ring-0 WSE + Blackiston Metamorphosis | M071-M090", "GATE-10 | Butlin-14 + F1-F10"),
     "STG-4": ("Stage 8+ | L9 Eco - L10 Ops", "Multi-Dome QD + 19-Tab SeqLock | M091-M100", "GATE-11, GATE-12, GATE-13 | NOVEL-100"),
-    "STG-5": ("Post-Stage 8 | Converged 7-Repo Stack", "AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius", "240 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05"),
+    "STG-5": ("Post-Stage 8 | Converged 7-Repo Stack", "AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius", "244 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05"),
     "STG-6": ("Beyond v3.0 Horizon | Physics-Native", "Post-Z9 Manifold & Cross-Substrate Compilers", "Extends CQM-25 & NOVEL-100 to Cosmic OOM"),
 }
 
@@ -703,7 +703,7 @@ def build_omniscient_traceability_table(v3_spec: dict, live_receipts: dict, sim_
         ["TRC-11", "Architecture Layer", "L10 19-Tab Ops & CI Sign-Off (M099-M100)", "STG-4..5 / STAGE-04..09 / CHK-001..130", "Model 7, Model 14, Model 16, Model 20", "GATE-11..13 | UI Hash == Headless | 18 Audit Gates", f"Composite Live OVBS-52={live_ovi} ({lean_tot} Pure Lean 4 Proofs)", "README.md, MANIFEST_SHA256.txt, scripts/audit_omniscient_integrity.py"],
         # 8 Engineering Dimensions (D1..D8)
         ["TRC-12", "System Dimension", "D1 Computational (PM01-25, MF01-25, Q<=10)", "STG-0..6 / OOM-01..18 / BM-ASM/THM", "Model 2, Model 9, Model 11-12, Model 24", "ALF-001..016 | 1,000-Cell Cube [OK]=661", "Packed b1.58 (0.594 B/syn) & int4 (0.875 B/syn) + 15-Substrate Scorecard", "csv/12, csv/19, csv/ALife-Hybrid-Cube-10x10x10.csv, excel/Hybrid-Cube.xlsx"],
-        ["TRC-13", "System Dimension", "D2 Operational (5-Gear, SoA, SeqLock)", "STAGE-00..04 / ALifeOps SRE SLOs", "Model 2, Model 7, Model 13-14, Model 16", "GATE-02, GATE-11 | 0 alloc/10k | Render-Only", f"Omega v{om_ver} {om_g}/{om_gt} Gates Deterministic SHA + Asmodensius Read-Only Lock", "reports/02, pipelines/alifeops-master-pipeline.yaml"],
+        ["TRC-13", "System Dimension", "D2 Operational (5-Gear, SoA, SeqLock)", "STAGE-00..04 / ALifeOps SRE SLOs", "Model 2, Model 7, Model 13-14, Model 16", "GATE-02, GATE-11 | 0 alloc/10k | Render-Only", f"Omega v{om_ver} {om_g}/{om_gt} Gates Deterministic SHA + Asmodensius 77/77 ctest 24C+RTX GPU", "reports/02, pipelines/alifeops-master-pipeline.yaml"],
         ["TRC-14", "System Dimension", "D3 Functional (Pay ATP Rent / 6-Arm Proof)", "OVBS-52 Anti-Gaming Gates 1-5", "Model 2, Model 6, Model 18", "P3 C-NC + P6 6-Arm Controls + GATE-08", f"Real 5/5 Anti-LARP Mutants Rejected + N={n_seeds} Paired Tests", "results/empirical_sim_summary.json, reports/04"],
         ["TRC-15", "System Dimension", "D4 Systems (Closed Thermodynamic Knot)", "4-Loop Singularity + 11-Pool Closure", "Model 2, Model 10, Model 15, Model 23", "P2/GATE-03 (<1e-12) | Second-Law Sink", f"{tot_runs} Live Runs Max Rel Drift = {max_drift} (0 Heat Backflow)", "results/ovbs52_scorecard_SIM01..08.json, reports/01, csv/18"],
         ["TRC-16", "System Dimension", "D5 Design (Soft Bauplan, Wiring, Ring-0)", "Track A Minimal Constitutional Frontier", "Model 2, Model 8, Model 10, Model 17, Model 21", "GATE-06, GATE-09, GATE-12 | Ring-0 Read-Only", "SIM07/08 + Dual Behavioral vs Ring-0 Sweep + 20 Pareto Frontiers", "reports/03, reports/08, csv/20, html/Omega_Dashboard.html"],

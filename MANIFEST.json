@@ -2,7 +2,7 @@
   "package": "alife-singularity-omega-package",
   "version": "3.3.0-omega",
   "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Pass-5 Layer Coupling, Multi-Substrate & Pareto Atlas (Zero Consolidation)",
-  "generated_utc": "2026-11-22T05:40:22.297430+00:00",
+  "generated_utc": "2026-11-22T22:00:16.227472+00:00",
   "file_count": 78,
   "files": [
     {
@@ -23,7 +23,7 @@
     {
       "path": "csv/01_escalation_ladder_ai_vs_alife_matrix.csv",
       "bytes": 7112,
-      "sha256": "8c7944ec30d2de5ada3f15bb34e60b800ec796f97301a3d8cd7d587bc5f64026"
+      "sha256": "f4b244a078d1380d66535079d754816386eed8e6915550e9b02de73bc988499e"
     },
     {
       "path": "csv/02_orders_of_magnitude_breadth_depth_matrix.csv",
@@ -53,7 +53,7 @@
     {
       "path": "csv/07_master_operational_checklist.csv",
       "bytes": 38651,
-      "sha256": "9954171dfe903e5706fcb925825d285b3aa5c5754263fbb7c81ab2af3eac12d5"
+      "sha256": "364a59ff6f6d9092f86a13385764509d4422860ece4b8185199a537756328f7e"
     },
     {
       "path": "csv/08_super_life_benchmarks_suite.csv",
@@ -87,8 +87,8 @@
     },
     {
       "path": "csv/14_omniscient_cross_corpus_traceability_matrix.csv",
-      "bytes": 14682,
-      "sha256": "0c17f537c86b9bc3b9857d633d62f5ec430938c7f18e531f35c11dfd1cea15c3"
+      "bytes": 14691,
+      "sha256": "5ffef0e631d5307dd80349cbf7941576c8639a1f3759c19502d966c083bec42b"
     },
     {
       "path": "csv/15_gradients_margins_and_phase_spectrums_matrix.csv",
@@ -98,12 +98,12 @@
     {
       "path": "csv/16_comparative_contrast_layers_taxonomies_matrix.csv",
       "bytes": 21472,
-      "sha256": "aa0678fd18bc2c0ff6f90e16f7d5adb7f2193cac05c5c3cca67b928ca91b6d0a"
+      "sha256": "d11c6095a6c029b7547a9b09573bc155de93a1babacd1bf5819b2ecfae61b390"
     },
     {
       "path": "csv/17_adjacent_possible_and_substrate_adjacencies_matrix.csv",
       "bytes": 13564,
-      "sha256": "b7bf5aa128a2b8c96b5e9571e1786d692897f64b50a57ac390d20bb06b030684"
+      "sha256": "fb2f2ceafc9f05133800436ef53b029a82b7794eb97d8cd2fda056468b11daef"
     },
     {
       "path": "csv/18_layer_11x11_coupling_impedance_matrix.csv",
@@ -118,7 +118,7 @@
     {
       "path": "csv/20_pareto_frontiers_and_dilemmas_matrix.csv",
       "bytes": 9182,
-      "sha256": "29c5d3bd79cb29f567d744b109603b88261f12bd8e0d99b167d813bbf0ce4a9c"
+      "sha256": "a7716ba27626bfc252746f648d310071f3102c9246fa4aa0073e773cbab12b94"
     },
     {
       "path": "csv/ALife-Framework-v3.0-Master-Checklists.csv",
@@ -132,33 +132,33 @@
     },
     {
       "path": "csv/ALife-v3.0-Errata-Closure-Register.csv",
-      "bytes": 189183,
-      "sha256": "7ad575a2051b3fe6008a92f2efbc0af561898257dcf663127e150d9b7dd23b1f"
+      "bytes": 189253,
+      "sha256": "5979fe8a1d1c19f912c48f0a7137052d56299851be47a53a64443750da2fa844"
     },
     {
       "path": "excel/ALife-Framework-v3.0-Master-Workbook.xls",
       "bytes": 1161216,
-      "sha256": "22e451a2c9ef5d78f5a0ffd8a5270e5b8e3f828d6f53e7529dba22c0460f2da5"
+      "sha256": "703626376ee4b8ba2d6b328689dac6b04ba7a155b68c6ef5ea59533844500ccc"
     },
     {
       "path": "excel/ALife-Framework-v3.0-Master-Workbook.xlsx",
-      "bytes": 403166,
-      "sha256": "85eb2c52e21a4ea6cbf8a1db66f3cf03b219d37f3f52464b76484b0de1879223"
+      "bytes": 403218,
+      "sha256": "ea69dc9f6c9d651f3244e10c956c1858ebcb32feda053f8eda9055261f8835dd"
     },
     {
       "path": "excel/ALife-Hybrid-Cube-10x10x10.xlsx",
-      "bytes": 101525,
-      "sha256": "cd82ba7146a1267ed087f027daf8f328a770ea58a182f5bec160e2b9ef655138"
+      "bytes": 101524,
+      "sha256": "34d98a08362298fe7a0d1caa5c8e9a6ba8c50af6f845e9bc1813b9f50cfb2265"
     },
     {
       "path": "excel/ALife_Singularity_SuperLife_Omega_Workbook.xls",
       "bytes": 694784,
-      "sha256": "5329026b4767231210fdb6b90d56ddb6f585fd6081407a328c26dbd5ead9b9c0"
+      "sha256": "9ea6e50accaaf4bcd011a853f324caa38c76c13a495ffa66dc93011317457e1c"
     },
     {
       "path": "excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx",
-      "bytes": 302422,
-      "sha256": "8880788fc71f242d9d4822f48d922bac85bf356613710e167a55e91d81f23b28"
+      "bytes": 302473,
+      "sha256": "ccc9ff3248004406b16e39a5a5a17f91661b44e970c6e8da5e1a53b086ffd6ec"
     },
     {
       "path": "HANDOFF.md",
@@ -168,32 +168,32 @@
     {
       "path": "html/ALife-Build-Framework-Template.html",
       "bytes": 793095,
-      "sha256": "6f36b79df7e08367ddcd700b567b0dd0089514e90150268606beefa6508db4aa"
+      "sha256": "4c5bb00b042711e9612548f658ac34ff8766fadffb6366ea410fce76cb4b1a77"
     },
     {
       "path": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html",
-      "bytes": 2286137,
-      "sha256": "748378d057200062f74dfad43c56f1dae2f5d4cef5d36687b4f6e824da9686fc"
+      "bytes": 2286393,
+      "sha256": "e0d3484a639e70fc75076b308f898ea376da13cc97b9be4811d0620d9f901238"
     },
     {
       "path": "html/Clean-Slate-Creature-Blueprint-Checklist.html",
       "bytes": 683001,
-      "sha256": "7577ceecc629fdac551b18ee4f83fb3e930bdaf9e35959cfc0337fbf15c536e0"
+      "sha256": "c2214b85363b900668629903c6e1f548e2c256173dac1c0c2f755cffb90e183a"
     },
     {
       "path": "pdf/ALife-Build-Framework-Template.pdf",
-      "bytes": 5537670,
-      "sha256": "27e2b6938cc62c5c611eb33bd21505ce167c699a1af7c3c85f2d8aaf3706034d"
+      "bytes": 5537665,
+      "sha256": "004e8f1d08f4ef9a6404a6fa62ad3ea9fd71eed4e913a4e153a3b61c58e08e94"
     },
     {
       "path": "pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf",
-      "bytes": 1136850,
-      "sha256": "83da1d8202863ec2ee6f0802a4c0bec255d1411230cfe6cfaaf4a60663fa79ea"
+      "bytes": 1136909,
+      "sha256": "eb8a5d5148bd36e6513d267b27f9c1d39a50d0b8da88330b0343d4a53d9b04fa"
     },
     {
       "path": "pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf",
-      "bytes": 4802602,
-      "sha256": "3aa37fefdd5f62464d5698dba2155d88933e921592049dc1c5c11350c0ff482a"
+      "bytes": 4802596,
+      "sha256": "431f979d299d6480313dde36720270350b235b0e750f53127bfe6b8fb4cbaeee"
     },
     {
       "path": "pipelines/alifeops-master-pipeline.yaml",
@@ -207,18 +207,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 11664,
-      "sha256": "36ec8042d6d0634b7b4fc86d98a1b76395054f8d8571ab44805a59a7e90a96be"
+      "bytes": 11725,
+      "sha256": "4e93c682030c5a2a4672880a27dcf48e736aa8aec406917b5423037a04ea7388"
     },
     {
       "path": "reports/01_MASTER_DEEP_DIVE_REPORT.md",
       "bytes": 54001,
-      "sha256": "739d75cca772297c14a31713da4b66d09fd1eb43bc9164ac899937e70f922e72"
+      "sha256": "04863d649ae81543d1b9eb06a85834b3490c6a014087212fd6e355d577a30bf5"
     },
     {
       "path": "reports/02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md",
-      "bytes": 29200,
-      "sha256": "8c2866eee34b19499e292e9ce8de924154719c71a8005462e655783d081e8c20"
+      "bytes": 29287,
+      "sha256": "777dcf3f9741d4098f36e0bc572e8a69afe3ab78dcb7b1c5e773a796744aa408"
     },
     {
       "path": "reports/03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md",
@@ -227,8 +227,8 @@
     },
     {
       "path": "reports/04_BENCHMARKS_CHECKLISTS_AND_MATRICES_MANUAL.md",
-      "bytes": 20512,
-      "sha256": "066f69ad52b8c17355ce716233ac76791c2ee6ff144b47041dc24c7ba8b56ec9"
+      "bytes": 20591,
+      "sha256": "d403c6605273207081e0ac9fd8424404baacd71ed4710ad64a717b6732fc562a"
     },
     {
       "path": "reports/05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md",
@@ -237,38 +237,38 @@
     },
     {
       "path": "reports/06_OMNISCIENT_UNIFIED_ARCHITECTURE_AND_SYSTEMS_SYNTHESIS.md",
-      "bytes": 17684,
-      "sha256": "588eab5a9c0151c9c32f110c85cf88ed027c87ae744cdc5ff833f4e0431b8b8d"
+      "bytes": 17747,
+      "sha256": "5de42dbb9abeadc8deb1b644346e6140aeb7d5733d6ce4d78dc64e42d2a588a1"
     },
     {
       "path": "reports/07_PASS4_COMPARATIVE_CONTRAST_GRADIENTS_MARGINS_AND_ADJACENTS_AUDIT.md",
-      "bytes": 31727,
-      "sha256": "db3a8f0f6f7ffcd1a8f0a2c050ad894e894ba6eb76be6e075a9eced7c68733c8"
+      "bytes": 31741,
+      "sha256": "fa25c60dde317bd41ad9fce00c9d3472c74a1b5e9e4a87465d4a0bde8dbeea38"
     },
     {
       "path": "reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md",
-      "bytes": 27055,
-      "sha256": "5f76f48f5ef9048774fe6ef36370da2a16be4f5db36cd5b8cb1f91a5b3928ea0"
+      "bytes": 27108,
+      "sha256": "6894cba4627613d837d3560884fc99ec5c2b4b6aeaabaf92edbade292c731598"
     },
     {
       "path": "reports/ALife-Build-Framework-Template.md",
       "bytes": 248820,
-      "sha256": "60da0a64d92e343d4af9978d2af2b18b2d4419db1344f125b2847c2c2990247b"
+      "sha256": "d7350401627cf38a0a452e2eccf9180b96dbf7f68b9f1b52b604f5f7125fe7aa"
     },
     {
       "path": "reports/ALife-v3.0-Errata-Closure-Report.md",
-      "bytes": 40350,
-      "sha256": "c396780dbb9ce4ef15da4e194468763ed4293c0d56929046ac1b3697baf1e50f"
+      "bytes": 40387,
+      "sha256": "f15a5b5d7e4634318e01128fce3fa4ded2d5d81fbde4ec8f6181fba34da40d3d"
     },
     {
       "path": "reports/Clean-Slate-Creature-Blueprint-Checklist.md",
       "bytes": 191786,
-      "sha256": "ec3fc94c80a49ab721dacb9574c0da338ed94584f096ade66a81f92cfb9a565f"
+      "sha256": "a3f91bec17b70a15f9d5ffdb368a67ac77c9d4c5e07eedc00f9d8855a918f27d"
     },
     {
       "path": "results/alifeops_live_verification.json",
-      "bytes": 15958,
-      "sha256": "60c6c832e91ffb440e1f361f989bf7e27f75ae83561abdc96f4f4c1221533b5f"
+      "bytes": 16026,
+      "sha256": "53ab1d12cd9d640d83d51fe2f53216d3ab920401fa72649ca01c71e0e8ff969b"
     },
     {
       "path": "results/empirical_sim_summary.json",
@@ -322,8 +322,8 @@
     },
     {
       "path": "scripts/build_html_dashboard.py",
-      "bytes": 144284,
-      "sha256": "ea07f3aac4f4654f235ccdd9a5fca3cf311c6fd89733fc01d9aa9dfed6a2bdcc"
+      "bytes": 144393,
+      "sha256": "16c2201e78f19b881fb32381485c1e9594f8267785ed1ddee400606a2493646a"
     },
     {
       "path": "scripts/build_omega_package.py",
@@ -343,22 +343,22 @@
     {
       "path": "scripts/omega_datasets_part2.py",
       "bytes": 79718,
-      "sha256": "1b5bb18b9060bed04ff1d66cf559906b7bd0c4311f45a3ab42257d7075596c7d"
+      "sha256": "7263417641ebc0523de3ace7bd449daf2de183ef3d0d32c6e45cf7bb68fcda74"
     },
     {
       "path": "scripts/omega_datasets_part3.py",
-      "bytes": 86506,
-      "sha256": "f7b420491719c61035baeab365c2b958ad85975415a9165d0976ae8a3da861b8"
+      "bytes": 86515,
+      "sha256": "bbede7296a2796e512928a1ecaa5e97797893b57c3840110c15d1f8e62084616"
     },
     {
       "path": "scripts/omega_datasets_part4.py",
       "bytes": 65281,
-      "sha256": "9cd2c25c5fa1adc98b5b42cec3bfdf5a2f51fd122da06eb31eb9b6ffc76a83f7"
+      "sha256": "85cc203c7eb54a7ff06a0599179ab4b331093df05391525f37e0dfc95224ca67"
     },
     {
       "path": "scripts/omega_datasets_part5.py",
-      "bytes": 36456,
-      "sha256": "0f2ea5e334dce2fc4a66880578b26cda81d494961841ea231e3e5abd84949b5c"
+      "bytes": 36526,
+      "sha256": "40d50a4321559654a54e3508a13be3b2a4ec8f6c96a95bbfe9197c2bee0c43bd"
     },
     {
       "path": "scripts/run_alife_castration_sim.py",
@@ -367,8 +367,8 @@
     },
     {
       "path": "scripts/run_alifeops_suite.py",
-      "bytes": 34908,
-      "sha256": "7d2f2f0dca28d24ece39d62257bd56f1fed3f02fb1a1d03216b2f379d71eea16"
+      "bytes": 34976,
+      "sha256": "ea0ddd7122d54beffc8fbceeea33e7e64410b8af5c4cee880c3c2da28dc52e97"
     },
     {
       "path": "scripts/svg_architecture_models.py",
@@ -377,23 +377,23 @@
     },
     {
       "path": "specs/ALife-Framework-v3.0-Master-Spec.json",
-      "bytes": 2408951,
-      "sha256": "3a55f5691e8bd6b94c7bdbc087a313557812540564127165bd6ecd611365e081"
+      "bytes": 2409098,
+      "sha256": "d5b7de675a7b9ba22c0d096e622718cf6345d4f05a7f0dc16fff9d02f5030dfa"
     },
     {
       "path": "specs/ALife-Framework-v3.0-Master-Spec.txt",
-      "bytes": 333354,
-      "sha256": "d08c2de0eb7af445f4369bcf4fd7c555c1847d2f756c3191544786cacb4dc1ae"
+      "bytes": 333459,
+      "sha256": "711229396f080bb1d73997d1fab49ec017cf4cf581b58783a4cb87d707b3f1f5"
     },
     {
       "path": "specs/ALife-Framework-v3.0-Master-Spec.xml",
-      "bytes": 747726,
-      "sha256": "cfc916dd31abda0e1652092e262637f5952659763b0bcee209bf2199f4226998"
+      "bytes": 747831,
+      "sha256": "69de693c51fd10d991325a70a885c362ddec819f88f4106bc82befb487430539"
     },
     {
       "path": "specs/ALife-Framework-v3.0-Master-Spec.yaml",
-      "bytes": 2016992,
-      "sha256": "44d48afce29f006128dd278a1c7293ef751b62092e06472a18f956e9dc62e147"
+      "bytes": 2017150,
+      "sha256": "5cc5529e8bf631c69849b882cf01aa54f0b7489312ef0fd191bb43b9356a542c"
     }
   ]
 }
