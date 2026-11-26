@@ -2,7 +2,7 @@
   "package": "alife-singularity-omega-package",
   "version": "3.4.0-omega",
   "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Mega-Atlas 1,900 Crosswalk x Lean 4.35.0 x AMS-LaTeX White Paper (Zero Consolidation)",
-  "generated_utc": "2026-11-26T03:58:58.955091+00:00",
+  "generated_utc": "2026-11-26T04:08:03.089648+00:00",
   "file_count": 200,
   "files": [
     {
@@ -272,13 +272,13 @@
     },
     {
       "path": "dist/arxiv_submission.tar.gz",
-      "bytes": 147287,
-      "sha256": "1066f733c737dc02b08a876febffc87b5d103a27373947ae7c76eb5013beecd6"
+      "bytes": 147286,
+      "sha256": "8746076cfe67d27472c10bfd4b9b3b90681740bde06496aa89edc8b28487255b"
     },
     {
       "path": "dist/Donahue_2026_alife_singularity_omega.pdf",
-      "bytes": 310437,
-      "sha256": "50184d45f3c025ac9244e894f7a1e5a5ab113c342b13f5afa03461a7f636c427"
+      "bytes": 310409,
+      "sha256": "b682df46a4a9372e879d05cffb0beecffa70ac4bac96291aba6fa3bd721771fe"
     },
     {
       "path": "docs/ACADEMIC_REVIEW.md",
@@ -457,8 +457,8 @@
     },
     {
       "path": "HARDENING_LOG.md",
-      "bytes": 10937,
-      "sha256": "1da45a8a0dc7af7c484333cba832e00968b17709d21960d3c4c8b32830f33dc8"
+      "bytes": 11585,
+      "sha256": "cd4624f9a68f23aca4f5a2ba884beab5afce7923fac10bbb7b3881f74d9eee5e"
     },
     {
       "path": "html/ALife-Build-Framework-Template.html",
@@ -598,27 +598,27 @@
     {
       "path": "paper/figures/fig01_dual_sweep_pareto.pdf",
       "bytes": 38635,
-      "sha256": "fa7eda3d073a97b3c1e5662441f4624dc164fe261255d6e285eaa0e9f39420be"
+      "sha256": "b5c0b8feb020f213a4721aaace25d9392580ff8c38b2ffd104d8b2cd4ffbff2d"
     },
     {
       "path": "paper/figures/fig02_8cohort_ovi_fwer.pdf",
       "bytes": 32856,
-      "sha256": "f2691b2833e3126b5e0446f8397e666cd5a2ab085128566803d912dce109efe0"
+      "sha256": "1bed5fb1f5555f0423c1d3f7c1ce81d9dc9ea1bae9042affee5f5e28f5377795"
     },
     {
       "path": "paper/figures/fig03_2d_phase_surface.pdf",
       "bytes": 35542,
-      "sha256": "5fa450d46261a796c1bc77f55fc2805bde94597f317656b269ceac62784202c8"
+      "sha256": "06d3947bd8a19b9310683aa28569c6c73531fecf638a9a846c5e454a04c72a0b"
     },
     {
       "path": "paper/figures/fig04_5engine_pillars_lean.pdf",
       "bytes": 36445,
-      "sha256": "3bbbd797351db5f80ae686a7cb2c79df40fdce40ee804aa540f7226b77c2f8d7"
+      "sha256": "238d01fcae0891508d4227683c70e035c0b62dece51ef0f0d5961b870abb9f0a"
     },
     {
       "path": "paper/main.tex",
-      "bytes": 34250,
-      "sha256": "b7450a20521f7cb53f7ca729ad125ebf272fa6ca9ff25d0b3f05daa74cefbfb6"
+      "bytes": 34289,
+      "sha256": "a03a498110ec8cd9e9854519c1dbb8f6696e4cdb30b79984632d49705c439096"
     },
     {
       "path": "paper/refs.bib",
@@ -872,8 +872,8 @@
     },
     {
       "path": "scripts/build_paper_and_figures.py",
-      "bytes": 16750,
-      "sha256": "c0fdb92c328bff9107ed3abe3516b50bcccd73ead67ea307718e0cd044244ab5"
+      "bytes": 16894,
+      "sha256": "bc4e424096c8b7eb0e4173cdd6788dbee91d5706079b06bbd3e7f73251af6c74"
     },
     {
       "path": "scripts/build_v3_unified_artifacts.py",

@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import io
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -33,7 +34,10 @@ PAPER_DIR = ROOT / "paper"
 FIG_DIR = PAPER_DIR / "figures"
 DIST_DIR = ROOT / "dist"
 MEDIA_DIR = ROOT / "docs" / "media"
-TECTONIC = Path(r"C:\Users\Alexa\.local\bin\tectonic.exe")
+_TECTONIC_WHICH = shutil.which("tectonic")
+TECTONIC = Path(_TECTONIC_WHICH) if _TECTONIC_WHICH else (
+    Path.home() / ".local" / "bin" / ("tectonic.exe" if os.name == "nt" else "tectonic")
+)
 
 # Colorblind-safe Okabe-Ito inspired palette
 C_TEAL = "#009E73"

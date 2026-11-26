@@ -1,5 +1,5 @@
 # A-LIFE SINGULARITY x CLEAN-SLATE v3.0 UNIFIED OMNISCIENT PACKAGE (v3.4-OMEGA) — SHA-256 INTEGRITY MANIFEST
-# Generated UTC: 2026-11-26T03:58:58.954455+00:00
+# Generated UTC: 2026-11-26T04:08:03.088928+00:00
 # File Count: 200
 
 e6ff4e00b3ce4dc43b99e420bf17c0530778c788b9ac9ad3ff59585a52622c11  .cursor/rules/build-standard.mdc  (775 bytes)
@@ -55,8 +55,8 @@ c96ef9ac82ee56cd52e46a2e7682b9e1bb38c6a4491229b3c0c34272a1503cc7  csv/ALife-Fram
 f90d4da1d0169034f3fce70506a4887bf82692d567e14d956d0d335a6d77fc41  csv/ALife-Hybrid-Cube-10x10x10.csv  (344408 bytes)
 cb02ef518a63785dda894178f0e5b61e8506884a13ac7738f6492a2ba54e5659  csv/ALife-v3.0-Errata-Closure-Register.csv  (202574 bytes)
 e0b8969a36c95de84895cd88b0cff2aa0620f488b75523979d5be694a4f4bd95  DEVIATIONS.md  (2156 bytes)
-1066f733c737dc02b08a876febffc87b5d103a27373947ae7c76eb5013beecd6  dist/arxiv_submission.tar.gz  (147287 bytes)
-50184d45f3c025ac9244e894f7a1e5a5ab113c342b13f5afa03461a7f636c427  dist/Donahue_2026_alife_singularity_omega.pdf  (310437 bytes)
+8746076cfe67d27472c10bfd4b9b3b90681740bde06496aa89edc8b28487255b  dist/arxiv_submission.tar.gz  (147286 bytes)
+b682df46a4a9372e879d05cffb0beecffa70ac4bac96291aba6fa3bd721771fe  dist/Donahue_2026_alife_singularity_omega.pdf  (310409 bytes)
 362bf1a0832a2e1c049d2142145f3825849670a94b5764c9efbe34a5334b4f83  docs/ACADEMIC_REVIEW.md  (2739 bytes)
 cd5ee3fcb969d4c499803a8ee4db8099206b77ed8b6540b763568117d01594bf  docs/adr/0001-zero-consolidation-dual-drive-fusion.md  (1199 bytes)
 d9859a3dbc905d1feadebb2d126d4ca3a0ea396f9290aca7c86c0ebbae63b133  docs/adr/0002-ring0-acl-vs-behavioral-castration.md  (1241 bytes)
@@ -92,7 +92,7 @@ ae97ce7ce4566b8e639850133214db4de472e9b89b801bafac107c88cc7e0b72  excel/ALife-Hy
 3027a96934659d8e7b4fa17ccd08bf0cb683a7d76fec92d853e3b03ec8d464a3  excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx  (317019 bytes)
 42fbbc9d55ee0d149c90e4bf93abe8b7278a5482b232be6f5bfc59cc0465e694  GEMINI.md  (13 bytes)
 7ea94698540ced82986e0d8d287fcf049042381abfcfeb105bc7ceab06cbe21c  HANDOFF.md  (3328 bytes)
-1da45a8a0dc7af7c484333cba832e00968b17709d21960d3c4c8b32830f33dc8  HARDENING_LOG.md  (10937 bytes)
+cd4624f9a68f23aca4f5a2ba884beab5afce7923fac10bbb7b3881f74d9eee5e  HARDENING_LOG.md  (11585 bytes)
 d33c8fd268aa856d04638d94d94618cf24fb3b2e15f37f55fcf77a3548cc085a  html/ALife-Build-Framework-Template.html  (794879 bytes)
 05913e244e6463dd8e494973ba818a07a59e3245f158ad5d05bd52c4fb4a98c9  html/ALife_Singularity_SuperLife_Omega_Dashboard.html  (2548582 bytes)
 a305a9391e6361602ee994f08762855ee08eeaa34650a19fa5f1d7565be6e25e  html/Clean-Slate-Creature-Blueprint-Checklist.html  (684785 bytes)
@@ -120,11 +120,11 @@ af492266ee750376f86e6f75bf107910bd6cf5030b177d785bba77d0945caa92  LIMITATIONS.md
 3e6f20a0cdad7ff5e2dd5882860ffecdda17e82296a97100b09965a52f094141  llms.txt  (3344 bytes)
 8c94d834ea0836eba5e598c4ebe8ffbd05ef77bb503e8591f3a7dceb1c934714  NOTICE  (603 bytes)
 4d19624b2ccbeb9180108bf5c8ca83b0ce800afe53acf3495ecb474e59a8fcf9  palomar/PalomarChallenge.lean  (1852 bytes)
-fa7eda3d073a97b3c1e5662441f4624dc164fe261255d6e285eaa0e9f39420be  paper/figures/fig01_dual_sweep_pareto.pdf  (38635 bytes)
-f2691b2833e3126b5e0446f8397e666cd5a2ab085128566803d912dce109efe0  paper/figures/fig02_8cohort_ovi_fwer.pdf  (32856 bytes)
-5fa450d46261a796c1bc77f55fc2805bde94597f317656b269ceac62784202c8  paper/figures/fig03_2d_phase_surface.pdf  (35542 bytes)
-3bbbd797351db5f80ae686a7cb2c79df40fdce40ee804aa540f7226b77c2f8d7  paper/figures/fig04_5engine_pillars_lean.pdf  (36445 bytes)
-b7450a20521f7cb53f7ca729ad125ebf272fa6ca9ff25d0b3f05daa74cefbfb6  paper/main.tex  (34250 bytes)
+b5c0b8feb020f213a4721aaace25d9392580ff8c38b2ffd104d8b2cd4ffbff2d  paper/figures/fig01_dual_sweep_pareto.pdf  (38635 bytes)
+1bed5fb1f5555f0423c1d3f7c1ce81d9dc9ea1bae9042affee5f5e28f5377795  paper/figures/fig02_8cohort_ovi_fwer.pdf  (32856 bytes)
+06d3947bd8a19b9310683aa28569c6c73531fecf638a9a846c5e454a04c72a0b  paper/figures/fig03_2d_phase_surface.pdf  (35542 bytes)
+238d01fcae0891508d4227683c70e035c0b62dece51ef0f0d5961b870abb9f0a  paper/figures/fig04_5engine_pillars_lean.pdf  (36445 bytes)
+a03a498110ec8cd9e9854519c1dbb8f6696e4cdb30b79984632d49705c439096  paper/main.tex  (34289 bytes)
 d3eb4d685847bb959dac7111de8bb64eb69bacc7425e27ec1b897859bd441c57  paper/refs.bib  (8052 bytes)
 593015973b008c9ae5567be259889c1e4488b8187b09096280e90cfb77f95dc4  pdf/ALife-Build-Framework-Template.pdf  (2329081 bytes)
 7fb46e2ae712fab5db5cbefc6ba92f5a5d97046c73425fc727419a9d8d29ed78  pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf  (542514 bytes)
@@ -175,7 +175,7 @@ a48b38e90a40982c98c3cb2e3ed5c4f6d23a54071eb7871205481a3f50726fcf  scripts/benchm
 07a04a56475aff5bca1016f41178b864dbb06594a6dc6ebab3a441428fa14328  scripts/build_html_dashboard.py  (147912 bytes)
 9cded7befdf388827a34d608babfdaf230e5c543e8fcdac90e70aef7f2473fc4  scripts/build_omega_package.py  (48906 bytes)
 fecfd29966237d0f9584cb4b7d28fcb71b14b0fd057ccc5c24f2b716869ba974  scripts/build_paper.py  (319 bytes)
-c0fdb92c328bff9107ed3abe3516b50bcccd73ead67ea307718e0cd044244ab5  scripts/build_paper_and_figures.py  (16750 bytes)
+bc4e424096c8b7eb0e4173cdd6788dbee91d5706079b06bbd3e7f73251af6c74  scripts/build_paper_and_figures.py  (16894 bytes)
 7352129895e43e3d10348579fd9a194e0a8300116904647b9d10caee4b0c489b  scripts/build_v3_unified_artifacts.py  (87996 bytes)
 ebdb6f54882bed498d851f1e3593421d57e6afd0712da62f5cc85b9469a2aa39  scripts/check_citations.py  (3404 bytes)
 c9b641f5c6e2d5be6a193e23965a6dfb58349feec1128c25bc59f12bf38152ff  scripts/check_readme_axioms.py  (2051 bytes)
