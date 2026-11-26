@@ -1,7 +1,7 @@
-A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`) unifies hardware Ring-0 constitutional invariants, 748-run paired evolutionary falsification, 327 Pure 6-Kernel Lean 4.35.0 theorems (`291` native + `36` local), an AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit into one zero-consolidation, offline-verifiable scientific engineering stack.
+A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`) collects four parts: a zero-Mathlib Lean 4.35.0 model of the package's integer scoring and access-control rules (`36` core declarations plus `4` Palomar comparator wrappers, built and checked in this repository), a `748`-run paired in-silico simulation study, an AMS-LaTeX white paper, and a crosswalk against a `1,900`-problem open-problem atlas in which no problem is retired. The `291` Lean theorems reported by five companion repositories are not built or checked here.
 
 [![Version](https://img.shields.io/badge/version-3.4.0-00f5d4?style=flat-square)](VERSION)
-[![Lean 4.35.0](https://img.shields.io/badge/Lean%204.35.0-327%20Pure%206--Kernel%20Theorems-38bdf8?style=flat-square)](lean/README.md)
+[![Lean 4.35.0](https://img.shields.io/badge/Lean%204.35.0-36%20core%20%2B%204%20Palomar%20declarations-38bdf8?style=flat-square)](lean/README.md)
 [![Forensic Gates](https://img.shields.io/badge/Forensic%20Gates-22%2F22%20PASS-22c55e?style=flat-square)](VERIFICATION.md)
 [![Build Standard](https://img.shields.io/badge/Build%20Standard%20v1.2.0-100.0%25-10b981?style=flat-square)](repo.yaml)
 [![Mega-Atlas Audit](https://img.shields.io/badge/Mega--Atlas%201%2C900-0%2F1%2C900%20Retired%20(Honest)-f59e0b?style=flat-square)](docs/MEGA_ATLAS_CROSSCHECK.md)
@@ -20,14 +20,18 @@ A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`) unifies hardware
 ## Honest Verification & Non-Retirement Boundary
 
 1. **Zero Mega-Atlas Retirements (`0 / 1,900`):** An automated and manual audit across all `1,900` open problems in [`0thernes/unsolved-problems-mega-atlas`](https://github.com/0thernes/unsolved-problems-mega-atlas) (V2.4.0) confirms that **exactly `0 / 1,900` overarching open scientific or mathematical problems are solved or retired**. We map `25` direct and adjacent targets (`MA-01..MA-25`) to scoped in-silico sub-results, formal bounds, and architectural indicators in [`csv/21_mega_atlas_1900_open_problems_crosswalk.csv`](csv/21_mega_atlas_1900_open_problems_crosswalk.csv) and [`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md) while keeping every grand parent problem strictly **OPEN**.
-2. **Scope of 6-Kernel Lean 4.35.0 Proofs (`36` Local + `291` Native = `327` Total):** This repository directly builds and checks **`36` core + `4` Palomar zero-Mathlib Lean 4.35.0 theorems** (`lean/OmegaPackageProofs/`) in `< 5` seconds on any clean clone, verified across `lean4`, `leanchecker --fresh`, `leanchecker-paranoid --fresh`, `nanoda_bin`, `con-leche --verified`, and `con-ron --verified` (plus `lean4lean` + `bubblewrap` comparator in Ubuntu CI; transcript in [`results/lean4-multi-kernel.txt`](results/lean4-multi-kernel.txt)). The remaining **`291` Pure 6-Kernel Lean 4.35.0 theorems** (`48` AUTOPHAGE v1.4.0 + `70` Cellulogonic Mecha v1.5.0 + `89` Cellular Engine Omega v5.2.0 + `54` Noetic Organism Omega v2.1.0 + `30` Asmodensius-Native v1.1.0) live in the five companion live native C11/C23 engine repositories whose executed receipts are stored in [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json) (alongside `omega-triscale-observatory v6.7.0`).
+2. **Scope of the Lean 4.35.0 Suite (`36` core + `4` Palomar declarations checked here):** This repository builds and checks **`36` core + `4` Palomar zero-Mathlib Lean 4.35.0 declarations** (`lean/OmegaPackageProofs/`, `lean/PalomarSolution.lean`). They are kernel-checked by Lean (`lake build`, `leanchecker`); in Ubuntu CI the `4` comparator targets in `lean/comparator.json` were also accepted by `6` independent kernels (run `45821196180`). A local multi-checker transcript (`lean4`, `leanchecker --fresh`, `leanchecker-paranoid --fresh`, `nanoda_bin`, `con-leche --verified`, `con-ron --verified`) is in [`results/lean4-multi-kernel.txt`](results/lean4-multi-kernel.txt). What the declarations say:
+   - `15` of the `36` core items are quantified statements about the package's own natural-number scoring definitions: the raw score is monotone in each pillar and is `≤ 10000` for pillars `≤ 100`; the gated score is `≤ 10000` for a penalty percentage `≤ 100`, is `0` when the gate fails, and is non-decreasing in that percentage when the gate passes; the stage classifier is monotone; the synergy cap `min(100, (a+b)/2+k)` is `≤ 100`, symmetric and monotone; the write predicate is false on every ring for an argument above `9900`; the Pareto predicate is irreflexive and transitive. Two of the `15` (`anti_gaming_gate_annihilation`, `ring0_write_always_blocked`) hold by unfolding a definition.
+   - The other `21` are closed numeric evaluations, literal sums or non-vacuity witnesses. The cube, `825`-check, `78`-alert, `748`-run, `291` and `327` declarations check arithmetic on reported counts (for example `48 + 70 + 89 + 54 + 30 = 291 := rfl`) and certify no data, run or theorem.
+   - `ring0_kernel_state_invariant` holds because the modelled write function `applyWseToKernel` returns its input state for every ring; it is not a non-interference result. No hardware is modelled in Lean, and the "spectral norm" gate compares a natural number with `9900` without computing any matrix norm.
+   - The **`291` Lean theorems** (`48` AUTOPHAGE v1.4.0 + `70` Cellulogonic Mecha v1.5.0 + `89` Cellular Engine Omega v5.2.0 + `54` Noetic Organism Omega v2.1.0 + `30` Asmodensius-Native v1.1.0) are counts reported by five companion C11/C23 repositories at those versions and recorded in [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json) (alongside `omega-triscale-observatory v6.7.0`). They are **not built or checked at this commit**, and later companion releases may report different counts. The figure `327 = 291 + 36` is a sum of reported counts, not a number of theorems checked here.
 3. **Null Results, Indicators & Peer Review:** Minimal behavioral constraints without Ring-0/Cube offload (`SIM02`) show **zero statistically significant lift** over pure feral evolution (`SIM01`, $\delta_{\mathrm{pair}} = -0.02$, $p_{\mathrm{Holm}} = 1.00$). The `29/825` cognitive checks in `Noetic Organism Omega v2.1.0` are explicitly tagged `EXECUTED_PASS_INDICATOR_ONLY` (not sentience). Neither this package nor the white paper has undergone external journal peer review. See [`CLAIMS.md`](CLAIMS.md), [`LIMITATIONS.md`](LIMITATIONS.md), and [`docs/AI_DISCLOSURE.md`](docs/AI_DISCLOSURE.md).
 
 ---
 
 ## 5-Second Machine-Checked Lean 4.35.0 Verification
 
-Zero Mathlib, zero `sorry`, zero `admit`, zero `native_decide`, zero compiler warnings, strictly constructive axioms $\subseteq [\text{propext}, \text{Quot.sound}]$ (no `Classical.choice`), verified by both `leanchecker` and `leanchecker-paranoid`:
+Zero Mathlib, zero `sorry` outside the `4` intentional challenge stubs in `lean/palomar/PalomarChallenge.lean` (not imported by any proof module), zero `admit`, zero `native_decide`, zero compiler warnings. The `40` audited declarations use axioms $\subseteq [\text{propext}, \text{Quot.sound}]$ (none uses `Classical.choice`). The CI `lake check --paranoid` summary line also lists `Classical.choice`; it reports the whole checked environment (`58,087` declarations), not these `40`. Checked by both `leanchecker` and `leanchecker-paranoid`:
 
 ```bash
 cd lean
@@ -151,9 +155,9 @@ Max relative 11-pool FP64 First-Law drift across all `748` runs = **`2.463e-16 <
 | `SIM07_CLEAN_SLATE_RING0_WSE` | `84.67 ± 1.22` | `45.9` | `1.22` | `0.077` | **`0.0%`** | **`408.2`** | `1.00` | `+0.34` | `2.22e-03` |
 | `SIM08_HYBRID_CUBE_SLTC_XPBD` | **`85.48 ± 1.35`** | **`48.2`** | **`1.25`** | `0.076` | **`0.0%`** | **`406.9`** | `1.00` | **`+0.50`** | **`7.71e-06`** |
 
-### 2. Five Live Companion Native C11/C23 Engines + Observatory (`OVBS-52 = 91.84`, `291` Native + `36` Local = `327` Pure 6-Kernel Lean 4.35.0)
+### 2. Five Companion Native C11/C23 Engines + Observatory (`OVBS-52 = 91.84`; companion-reported Lean counts, not checked here)
 
-| Layer / Repository | Verified Gates & Mutants | Pure 6-Kernel Lean 4.35.0 |
+| Layer / Repository | Reported Gates & Mutants | Lean theorems (as reported) |
 | :--- | :--- | :---: |
 | Tier 1 `AUTOPHAGE v1.4.0` | `18/18` falsification gates, `6/6` mutants, $A_{\mathrm{new}}=29.463$, `0.0` thermo drift | `48` |
 | Tier 2 `Cellulogonic Mecha v1.5.0` | `26/26` gates, `8/8` compiled mutants killed, COVI `58.19`, `82.5%` cadherin sort | `70` |
@@ -161,8 +165,8 @@ Max relative 11-pool FP64 First-Law drift across all `748` runs = **`2.463e-16 <
 | Tier 3 `Noetic Organism Omega v2.1.0` | `10/10` unit+mut (`5/5` Anti-LARP), `13/13` CS-v3, `825/825` C11 (`29` `INDICATOR_ONLY`), `100/100` M | `54` |
 | Tier 3+4 `Asmodensius-Native v1.1.0` | LIVE C23 dual worlds, `77/77` ctests, `164/164` `test_gpu`, live 24C==RTX 5070 Ti GPU hash parity | `30` |
 | Companion `omega-triscale-observatory v6.7.0` | `12/12` Node + `5/5` Python + `6/6` mutants (interactive tri-scale observatory) | — |
-| **Local Package (`lean/OmegaPackageProofs/`)** | **`36` core + `4` Palomar (`40` audited axioms), 6-kernel verified (`results/lean4-multi-kernel.txt`)** | **`36`** |
-| **7-Repo Ecosystem Total** | **Live Composite `OVBS-52 = 91.84` (`STAGE_5`) · `35/35` Native + `6/6` Python Mutants** | **`327`** |
+| **Local Package (`lean/OmegaPackageProofs/`)** | **`36` core + `4` Palomar (`40` audited axiom lines), checked at this commit: `15` quantified invariants, `21` closed evaluations, literal sums or witnesses** | **`36`** |
+| **Sum of Reported Counts (7 repositories)** | Live composite `OVBS-52 = 91.84` (`STAGE_5`) · `35/35` native + `6/6` Python mutants (companion receipts) | `327` (`291` not checked here + `36`) |
 
 ---
 
@@ -171,7 +175,7 @@ Max relative 11-pool FP64 First-Law drift across all `748` runs = **`2.463e-16 <
 See [`INDEX.md`](INDEX.md) for the complete generated file-by-file, byte-count, and token-count master index.
 
 - **White Paper & Figures:** [`paper/main.tex`](paper/main.tex), [`paper/refs.bib`](paper/refs.bib), [`dist/Donahue_2026_alife_singularity_omega.pdf`](dist/Donahue_2026_alife_singularity_omega.pdf), [`dist/arxiv_submission.tar.gz`](dist/arxiv_submission.tar.gz)
-- **Lean 4.35.0 Formal Proofs:** [`lean/`](lean/README.md), [`palomar/PalomarChallenge.lean`](palomar/PalomarChallenge.lean), [`blueprint/index.html`](blueprint/index.html), [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt), [`results/lean4-multi-kernel.txt`](results/lean4-multi-kernel.txt)
+- **Lean 4.35.0 Formal Proofs:** [`lean/`](lean/README.md), [`lean/palomar/PalomarChallenge.lean`](lean/palomar/PalomarChallenge.lean), [`blueprint/index.html`](blueprint/index.html), [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt), [`results/lean4-multi-kernel.txt`](results/lean4-multi-kernel.txt)
 - **Interactive HTML5 & Lossless Vector PDFs (`< 2.5 MB` each):** [`html/`](html/ALife_Singularity_SuperLife_Omega_Dashboard.html), [`pdf/`](pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf)
 - **Structured Data (`24` CSVs = `2,822` rows, `4` Specs, `5` Excel Workbooks):** `csv/`, `specs/`, `excel/`, `pipelines/`, `results/`
 - **Treatises & Audits (`12` Reports + Mega-Atlas Cross-Check):** `reports/01`–`09`, [`docs/MEGA_ATLAS_CROSSCHECK.md`](docs/MEGA_ATLAS_CROSSCHECK.md), + 3 Clean-Slate v3.0 reports

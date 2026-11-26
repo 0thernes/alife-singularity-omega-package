@@ -3,6 +3,11 @@
 All notable changes to `alife-singularity-omega-package` are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/).
 
+## [Unreleased] - 2026-11-26
+
+### Changed (documentation only)
+- Corrected public claims to match the 2026-11-26 statement audit (see `ERRATA.md`, section "2026-11-26 statement audit"). The headline now states `36` core + `4` Palomar Lean declarations checked here; the `291` companion-reported theorems are not checked at this commit, and `327` is described as a sum of reported counts. `21` of the `36` core items are disclosed as closed evaluations or literal sums. Ring-0 "hardware" and "non-interference" wording replaced. Stale `244`/`92.05` figures, non-existent Lean identifiers, the broken `PalomarChallenge.lean` link, and checker-count and PDF-size drift corrected. Report-only CI and the scope of the `Classical.choice` statement disclosed. No Lean, paper, data or CI file changed.
+
 ## [3.4.0] - 2026-11-25
 
 ### Added

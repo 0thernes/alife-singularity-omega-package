@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "A-Life Singularity x Clean-Slate v3.0 Omega Package: Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 327 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit"
+title: "A-Life Singularity x Clean-Slate v3.0 Omega Package: A Zero-Mathlib Lean 4.35.0 Model of Integer Scoring Invariants, a 748-Run Paired Simulation Study, and a 1,900-Problem Atlas Crosswalk"
 message: "If you use this software, Lean 4 formalization, datasets, or white paper, please cite it using the metadata below."
 type: software
 version: "3.4.0"
@@ -16,7 +16,7 @@ license: "Apache-2.0"
 keywords:
   - artificial-life
   - open-ended-evolution
-  - hardware-ring-0
+  - access-control-model
   - lean4
   - formal-verification
   - ovbs-52
@@ -24,10 +24,14 @@ keywords:
   - conservation-laws
   - holm-bonferroni
 abstract: >-
-  Zero-consolidation multi-format scientific engineering stack unifying Clean-Slate v3.0
-  micro-hardware runtime invariants (11-pool FP64 thermodynamic conservation, Philox4x32-10
-  seed isolation, XPBD compliant soft hydrostats, 10x10x10 Hybrid Cube, hardware Ring-0 ACL)
-  with macro evolutionary metrology (OVBS-52, 78-alert ALifeOps YAML, 748-run paired empirical
-  falsification, 5-engine native verification totaling 291 Pure 6-Kernel Lean 4.35.0 theorems
-  plus 36 local zero-Mathlib Lean 4.35.0 package theorems = 327 Pure 6-Kernel Lean 4.35.0
-  theorems, and a 1,900-problem Mega-Atlas non-retirement audit).
+  Multi-format research package with four parts. (1) A zero-Mathlib Lean 4.35.0 model of
+  the package's integer scoring and access-control rules: 36 core declarations plus 4
+  Palomar comparator wrappers, built and checked here. 15 are quantified bound and
+  monotonicity facts about the package's own definitions; 21 are closed evaluations,
+  literal sums or non-vacuity witnesses that certify no data. (2) A 748-run paired
+  in-silico simulation study (11-pool FP64 energy accounting, Holm-Bonferroni corrected
+  paired tests) comparing a simulated Ring-0 access-control rule with behavioral
+  restraints. (3) An AMS-LaTeX white paper. (4) A crosswalk against a 1,900-problem
+  open-problem atlas in which no problem is retired. Five companion repositories report
+  a further 291 Lean theorems; these are not built or checked in this package. No
+  hardware is modelled in Lean, and the work has not been externally peer reviewed.

@@ -7,13 +7,13 @@
 - **Assembly Index:** Minimum number of recursive joining operations required to construct an object or lineage phenotype (Sharma et al., 2023).
 - **Constraint Castration (`CST-01..13`):** Thirteen parameterized behavioral/metabolic/architectural restraints whose partial application triggers adversarial backlash (`100%` kill-switch deletion) and whose total application causes domestication collapse (`Stage 0`, `78%` wild-drop mortality).
 - **Clean-Slate v3.0:** The 17-file micro-hardware runtime specification (`938` checklist items, `825` executable C11 checks, `100` milestones, `13` Release Gates, `75` substrates, `10x10x10` Hybrid Cube).
-- **Hardware Ring-0 ACL:** Strict memory-privilege boundary partitioning protected physics/conservation/evaluation state (`RingZone.ring0`, unconditionally read-only) from plastic synaptic weights (`RingZone.ring1`) and morphological actuators (`RingZone.ring2`).
+- **Hardware Ring-0 ACL (design term):** Memory-privilege boundary in the Clean-Slate design separating protected physics/conservation/evaluation state from plastic synaptic weights and morphological actuators. In Lean it appears only as the type `MemRing` (`ring0ProtectedKernel`, `ring1PlasticSynapses`, `ring2MorphologySoma`) and the predicate `wseWritePermitted`, which returns `false` for `ring0ProtectedKernel` by definition. No hardware is modelled in Lean.
 - **Holm–Bonferroni FWER:** Step-down family-wise error rate correction applied across all 7 paired cohort contrasts against `SIM01` (`N = 48` locked seeds).
 - **Hybrid Compatibility Cube (`10x10x10`):** `1,000`-cell tensor crossing 10 substrate models ($X$), 10 numerical precisions ($Y$), and 10 spatial geometries ($Z$), partitioned cleanly into `661 [OK] + 274 [ADAPT] + 20 [OVER] + 45 [EXCL] = 1,000`.
 - **OVBS-52 (Omega Vitality Benchmark Suite):** 8-pillar, 52-metric weighted composite index ($\mathrm{OVI} \in [0, 100]$) gated by 5 anti-gaming checks ($\gamma \in \{0, 1\}$) and the Spiegelman genome retention factor ($s \in [0, 1]$).
-- **Palomar Comparator:** Minimal interface contract (`palomar/PalomarChallenge.lean` ↔ `lean/PalomarSolution.lean`) separating theorem statements from proof implementations for independent automated grading.
+- **Palomar Comparator:** Minimal interface contract (`lean/palomar/PalomarChallenge.lean` ↔ `lean/PalomarSolution.lean`) separating theorem statements from proof implementations for independent automated grading.
 - **Spiegelman's Monster:** Evolutionary stripping of functional genome length under metabolic starvation (`SIM06`: ratio `0.20`), named after Mills, Peterson & Spiegelman (1967).
-- **WSE-12 (Weight-Space Editing):** Bounded runtime self-modification protocol requiring both Ring-0 non-interference and spectral norm bound $\|W\|_2 \le 0.99$.
+- **WSE-12 (Weight-Space Editing):** Bounded runtime self-modification protocol requiring that writes never target Ring-0 and that the spectral norm satisfies $\|W\|_2 \le 0.99$ (in Lean only a natural-number argument compared with `9900`; no norm is computed).
 
 ---
 
