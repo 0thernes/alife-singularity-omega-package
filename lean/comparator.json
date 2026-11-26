@@ -1,0 +1,15 @@
+{
+  "challenge_module": "PalomarChallenge",
+  "solution_module": "PalomarSolution",
+  "theorem_names": [
+    "OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants",
+    "OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants",
+    "OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants",
+    "OmegaPackageProofs.Palomar.m4_nonvacuity_certificate"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound"
+  ]
+}

@@ -1,0 +1,15 @@
+title = "alife-singularity-omega-package gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allowlist audit pattern matchers and SHA-256 checksum hex manifests"
+paths = [
+  '''^scripts/audit-repo\.sh$''',
+  '''^scripts/Audit-Repo\.ps1$''',
+  '''^MANIFEST_SHA256\.txt$''',
+  '''^CHECKSUMS\.sha256$''',
+  '''^data/MANIFEST\.sha256$''',
+  '''^MANIFEST\.json$''',
+]

@@ -1,67 +1,186 @@
-# A-LIFE SINGULARITY, SUPER A-LIFE, POST-SINGULARITY SUPER LIFE & CLEAN-SLATE BUILD FRAMEWORK
-## Unified Omniscient Master Directory (`v3.3-Omega`) — Zero-Consolidation Fusion of Clean-Slate v3.0 (`I:\A-Life God Plan`) × Zeta-Omega Singularity (`Z:\ANTIGRAVITY`) × Pass-5 Layer Coupling / Multi-Substrate / Pareto Atlas × Live 7-Repo Verification (`92.05` · `244` Pure Lean 4 Proofs · `13/13` Clean-Slate Gates)
+A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`) unifies hardware Ring-0 constitutional invariants, 748-run paired evolutionary falsification, 280 Pure Lean 4 theorems, an AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit into one zero-consolidation, offline-verifiable scientific engineering stack.
 
-> **Package Version:** `3.3.0-omega` (Pass-5 Ultra-Hostile Red-Team Audit, `11×11` Layer Coupling, `15`-Substrate Multi-Spectrum, `20` Pareto Frontiers, `748`-Run Dual Sweep & `5×5` 2D Phase Surface, `18` Forensic Gates & Exact `Z: ↔ I:` SHA-256 Parity)  
-> **Author:** Alexander Stephen Donahue (`0thernes LLC`, ORCID `0009-0006-8168-9648`)  
-> **Canonical Root:** `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`  
-> **Mirrored Master Folder:** `I:\A-Life God Plan\A-Life Master Folder Build` (`17 / 17` original files preserved & upgraded — **0 consolidated, 0 dropped, 0 SHA-256 mismatches**)  
-> **Synchronized Formats (`10`):** Markdown (`.md`), CSV (`.csv`), Modern Excel (`.xlsx`), Legacy Excel (`.xls`), Interactive Offline HTML5 (`.html`), Vector Chrome PDF (`.pdf`), JSON (`.json`), YAML (`.yaml`), XML (`.xml`), Plain-Text Spec (`.txt`), Reproducible Python (`.py`), Cryptographic SHA-256 Manifests, and Full Release Archive (`.zip`)
+[![Version](https://img.shields.io/badge/version-3.4.0-00f5d4?style=flat-square)](VERSION)
+[![Lean 4.35.0](https://img.shields.io/badge/Lean%204.35.0-280%20Pure%20Theorems-38bdf8?style=flat-square)](lean/README.md)
+[![Forensic Gates](https://img.shields.io/badge/Forensic%20Gates-22%2F22%20PASS-22c55e?style=flat-square)](VERIFICATION.md)
+[![Build Standard](https://img.shields.io/badge/Build%20Standard%20v1.2.0-100.0%25-10b981?style=flat-square)](repo.yaml)
+[![Mega-Atlas Audit](https://img.shields.io/badge/Mega--Atlas%201%2C900-0%2F1%2C900%20Retired%20(Honest)-f59e0b?style=flat-square)](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md)
+[![Status](https://img.shields.io/badge/status-active-22c55e?style=flat-square)](ROADMAP.md)
+[![License: CC BY 4.0](https://img.shields.io/badge/Prose%20%26%20Data-CC%20BY%204.0-lightgrey?style=flat-square)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/Code%20%26%20Lean-Apache%202.0-blue?style=flat-square)](LICENSE-CODE)
 
----
+![A-Life Singularity x Clean-Slate v3.0 Omega Package Overview](docs/media/social-preview.png)
 
-## Complete Synchronized Master File Directory (Zero Consolidation — `77+` Verified Files)
-
-### 1. Eleven Exhaustive Markdown Treatises (`reports/`)
-* `reports/01_MASTER_DEEP_DIVE_REPORT.md` — **Master Treatise** (+ Section 14 Clean-Slate v3.0 Micro-to-Macro Bridge, 11-Pool FP64, 75 Substrates, 10×10×10 Cube & 40 Citations).
-* `reports/02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md` — **ALifeOps (`CI/CD/CE`) DevOps Architecture** (+ Section 6 Clean-Slate `SoA`, `Philox4x32-10`, 5-Gear Clock, SeqLock Telemetry, 78/78 Wired Alerts, 13 Release Gates & Live `92.05 / 244 Pure Lean 4` Stack).
-* `reports/03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md` — **Unified 78-Mode Forensic Atlas** (42 Macro FMs + 36 v3.0 Micro Triage Guards, 28 Epistemic Voids, 13 Castration Vectors, 13×13 Synergy Matrix, 5 Real Anti-LARP Mutants & Ring-0 ACL).
-* `reports/04_BENCHMARKS_CHECKLISTS_AND_MATRICES_MANUAL.md` — **Unified Benchmarks & Checklists Manual** (`OVBS-52` × `825`-Check Clean-Slate × `100`-DAG × `130`-Ops Checklist × Exact Paired Wilcoxon Holm–Bonferroni FWER + Live `748`-Run & `92.05 / 244 Pure Lean 4` Receipts).
-* `reports/05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md` — **Feral Cosmos Chronicles** (6 Cosmic Fate Branches `T+0 hr → T+10^100 yr` + Section 5 Starter Cube `T1–T5` Substrate-to-Cosmos Genesis).
-* `reports/06_OMNISCIENT_UNIFIED_ARCHITECTURE_AND_SYSTEMS_SYNTHESIS.md` — **Master Cross-Corpus Bridge Treatise** (All 24 Vector SVG Models `Model 1–24`, 9 Governing Equations, 18-Gate Forensic Contract & Unified Evidence Table).
-* `reports/07_PASS4_COMPARATIVE_CONTRAST_GRADIENTS_MARGINS_AND_ADJACENTS_AUDIT.md` — **Pass-4 Comparative & Gradient Atlas** (11-Layer `L0–L10` Contrasts, 15 Taxonomies, 24 Operating Margins, Continuous Sweeps, 30 Substrate/Discipline Adjacencies & `OMG-116..130`).
-* `reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md` — **NEW Pass-5 Deep Systems Audit Treatise** (`11×11` Cross-Layer Coupling & Impedance, `15`-Substrate Multi-Spectrum Scorecard `SUB-01..15`, `20` Wired Pareto Frontiers `PAR-01..20`, Live `748`-Run Dual Sweep & `5×5` 2D Phase Surface, Live `92.05 / 244 Pure Lean 4` Sync, `CIT-36..40` & `OMG-131..145`).
-* `reports/ALife-Build-Framework-Template.md` — *Baked from `I:` & Upgraded `v3.3-Omega`* (10 Invariants `P1–P10`, 11-Pool FP64, `D1–D8`, 75 Substrates, 1,000-Cell Cube, `0 / 825` Clean-Slate + Section 11 Omega Fusion & `CIT-16..40`).
-* `reports/Clean-Slate-Creature-Blueprint-Checklist.md` — *Baked from `I:` & Upgraded `v3.3-Omega`* (Day-Zero Worksheet `W1–W6`, First-15 Sprint `M001–M015`, 100-DAG, 13 Release Gates, `0 / 825` `☐` Preserved with `0` `U+2611` + Part 6 Omega Bridge).
-* `reports/ALife-v3.0-Errata-Closure-Report.md` — *Baked from `I:` & Upgraded `v3.3-Omega`* (**`145 / 145` Closed Audits**: `95/95` Clean-Slate v3.0 + `50/50` Pass-2/3/4/5 Omega Closures `OMG-096..OMG-145`).
-
-### 2. Interactive Offline HTML5 Applications & Vector Chrome PDFs (`html/` & `pdf/`)
-* `html/ALife_Singularity_SuperLife_Omega_Dashboard.html` — **21-Tab Omniscient Observatory**: Global Omnisearch (`2,782` records), 61-OOM Slider, 13-Vector Castration Simulator (+ Ring-0 ACL preset), 13×13 Synergy Heatmap, 78-Mode Forensic Atlas, Live `748`-Run SVG Curves & Dual Behavioral vs. Ring-0 11-Point Plot + 4-Engine `244` Pure Lean 4 KPIs, 130-Item Persistent Checklist, **Interactive 10×10×10 Hybrid Cube**, **75 Substrates & WSE-10**, **938-Row Clean-Slate Suite**, **24-Model Vector SVG Gallery (`Model 1–24`)**, **Traceability/145 Audits/40 Citations**, **Tab 18 Gradients & Dual Sweep**, **Tab 19 Contrasts & Adjacents**, **Tab 20 `11×11` Layer Coupling Heatmap & `20` Pareto Frontiers**, **Tab 21 `15`-Substrate Multi-Spectrum Scorecard & Live `5×5` 2D Phase Surface**, and **Master File Hub**.
-* `html/ALife-Build-Framework-Template.html` — *Baked & Upgraded `v3.3-Omega`* (Preserves Models 1–14 + adds Section 10 Omega Fusion, Models 15–24 SVGs, Dual 11-pt sweep & sibling cross-links).
-* `html/Clean-Slate-Creature-Blueprint-Checklist.html` — *Baked & Upgraded `v3.3-Omega`* (Preserves `0 / 825` `☐` & Models 1–14 + adds Part 9 Omega Bridge, Models 15–24 SVGs & cross-links).
-* `pdf/ALife-Build-Framework-Template.pdf` — Crisp vector Chrome headless PDF of upgraded `ALife-Build-Framework-Template.html` (Models 1–24, `pypdf`-verified `0 U+2611`).
-* `pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf` — Crisp vector Chrome headless PDF of upgraded `Clean-Slate-Creature-Blueprint-Checklist.html` (Models 1–24, `pypdf`-verified `0 U+2611`).
-* `pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf` — Publication-grade vector Chrome PDF dossier of the Unified `v3.3-Omega` Atlas, Models 15–24, `748`-Run FWER/Dual-Sweep Proof, Margins (`GM-01..24`), 15-Substrate Scorecard, 20 Pareto Frontiers, Adjacents (`ADJ-01..30`) & 48-Row Traceability Matrix.
-
-### 3. Four Synchronized Multi-Format Master Specifications (`specs/`)
-* `specs/ALife-Framework-v3.0-Master-Spec.json` — Complete canonical v3.0 schema + enriched 1,000-cell Cube + `citations_omega_25` + `errata_omega_closures_50` + full `omega_singularity_fusion` (`3.3.0-omega`) + Pass-5 matrices, dual 11-pt sweeps & 25-cell 2D surface.
-* `specs/ALife-Framework-v3.0-Master-Spec.yaml` — 100% synchronized YAML mirror of `Master-Spec.json`.
-* `specs/ALife-Framework-v3.0-Master-Spec.xml` — Well-formed XML with **100% 1:1 structural parity (25 XML fusion sections)** matching JSON & YAML.
-* `specs/ALife-Framework-v3.0-Master-Spec.txt` — Complete plain-text canonical reference + Sections 11–19 Omega & Pass-5 Fusion tables.
-
-### 4. Twenty-Three Canonical Synchronized CSV Matrices (`csv/` — `2,782` Structured Records)
-* `csv/01_escalation_ladder_ai_vs_alife_matrix.csv` (7) · `csv/02_orders_of_magnitude_breadth_depth_matrix.csv` (18) · `csv/03_failure_modes_bugs_errors_conflicts_matrix.csv` (42) · `csv/04_gaps_holes_blindspots_registry.csv` (28) · `csv/05_constraint_castration_impact_matrix.csv` (13) · `csv/06_alifeops_devops_pipeline_stages.csv` (40) · `csv/07_master_operational_checklist.csv` (**130**) · `csv/08_super_life_benchmarks_suite.csv` (52) · `csv/09_feral_fate_branches_cosmic_epochs.csv` (30) · `csv/10_castration_13x13_synergy_matrix.csv` (13×13 = 169 pairs) · `csv/11_empirical_simulation_results.csv` (**8 cohorts × 48 paired locked seeds** + `Ring0_Blocked_Edits` + FP64 drift & Holm FWER)
-* **Pass-3, Pass-4 & Pass-5 Omniscient Matrices:** `csv/12_v3_substrates_75_and_wse_10_matrix.csv` (85) · `csv/13_v3_forensic_36_and_release_gates_13_matrix.csv` (49) · `csv/14_omniscient_cross_corpus_traceability_matrix.csv` (48) · `csv/15_gradients_margins_and_phase_spectrums_matrix.csv` (24) · `csv/16_comparative_contrast_layers_taxonomies_matrix.csv` (36) · `csv/17_adjacent_possible_and_substrate_adjacencies_matrix.csv` (30) · **`csv/18_layer_11x11_coupling_impedance_matrix.csv` (11×11 = 121 pairs)** · **`csv/19_substrate_spectrum_comparative_scorecard.csv` (15)** · **`csv/20_pareto_frontiers_and_dilemmas_matrix.csv` (20)**
-* **Baked & Enriched Clean-Slate v3.0 CSVs:** `csv/ALife-Framework-v3.0-Master-Checklists.csv` (938 rows + 5 Omega join cols, `0 U+2611`) · `csv/ALife-Hybrid-Cube-10x10x10.csv` (1,000 cells + 4 Omega join cols) · `csv/ALife-v3.0-Errata-Closure-Register.csv` (**145** closed rows: 95 v3.0 + 50 Omega)
-
-### 5. Five Synchronized Modern & Legacy Excel Workbooks (`excel/`)
-* `excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx` (**24 sheets**, 80+ live formulas, **2 color-graded heatmaps** (`13×13` & `11×11`), **10 native charts**) & `.xls` (24-sheet legacy Excel 97–2003, `xlrd`-verified).
-* `excel/ALife-Framework-v3.0-Master-Workbook.xlsx` (**17 sheets**, live formulas, native chart, +10 Omega/Pass-4/5 fusion sheets) & `.xls` (17-sheet legacy Excel 97–2003, `xlrd`-verified).
-* `excel/ALife-Hybrid-Cube-10x10x10.xlsx` (**13 sheets**: `Cube_Overview` + `All_1000_Cells` + `Slice_Z0..Z9` + `Omega_Escalation_Heatmap` live `COUNTIFS` matrix & chart).
-
-### 6. Declarative Pipelines, Live Empirical & 4-Engine Results (`pipelines/` & `results/`)
-* `pipelines/alifeops-master-pipeline.yaml` (**78/78** wired alerts = 42 Macro FMs + 36 v3.0 Forensic Guards, **13/13** Release Gates, **5/5** Real Anti-LARP Mutants, Clean-Slate runtime contract).
-* `pipelines/benchmark-suite-schema.json` (`v3.3-omega` unified OVBS-52 + Clean-Slate FP64/FWER/Anti-LARP JSON Schema).
-* `results/empirical_sim_summary.json` + **8 schema-validated** `results/ovbs52_scorecard_SIM01..08.json` (**748 live runs**: 384 cohort at `N=48` + 264 dual 11-pt sweeps + 100 5×5 2D surface runs, Max FP64 Drift **`2.463e-16`**, **`406.9–408.2`** Ring-0 trapped edits, `5/5` real AST/causal/Fisher-Yates Anti-LARP mutants rejected).
-* `results/alifeops_live_verification.json` (**Live Schema-Validated Zero-Hardcode Native Receipts**: Composite **OVBS-52 = `92.05`**, **`244` Pure Machine-Checked Lean 4 Theorems**, **`13/13` Clean-Slate v3.0 Release Gates PASS**, **`35/35` Compiled Mutants** across `AUTOPHAGE v1.3.0` (`42`), `Cellulogonic Mecha v1.4.0` (`62`), `Cellular Engine Omega v5.1.0` (`54/54` gates, `16/16` mutants, `72` Lean 4), `Noetic Organism Omega v2.0.0` (`13/13` CS-v3 gates, `49/49` Cog/CQM, `12/12` Ring-0 WSE-12, `5/5` Anti-LARP, `48` Lean 4), plus `Asmodensius-Native` (`77/77` ctest, 24C P+E & RTX 5070 Ti CUDA PTX bit-exact parity, 20 Lean 4)).
-
-### 7. Reproducible Builders, Simulators, 18-Gate Auditor, Manifests & Archive
-* `scripts/build_omega_package.py` · `scripts/build_v3_unified_artifacts.py` · `scripts/build_html_dashboard.py` · `scripts/svg_architecture_models.py` · `scripts/run_alife_castration_sim.py` · `scripts/run_alifeops_suite.py` · `scripts/audit_omniscient_integrity.py` · `scripts/omega_datasets_part1.py` · `part2.py` · `part3.py` · `part4.py` · `part5.py`
-* `MANIFEST_SHA256.txt` · `MANIFEST.json` · `ALife_Singularity_SuperLife_Omega_Package.zip`
+> **Maintenance status:** `status: active` (`v3.4.0`, released `2026-11-25`)
+> **Author:** Alexander Stephen Donahue · Independent Researcher, Spokane, WA, USA · ORCID [`0009-0006-8168-9648`](https://orcid.org/0009-0006-8168-9648) · `0_0@0thernes.art`
+> **White Paper (AMS-LaTeX):** [`dist/Donahue_2026_alife_singularity_omega.pdf`](dist/Donahue_2026_alife_singularity_omega.pdf) · **Clean arXiv Tarball:** [`dist/arxiv_submission.tar.gz`](dist/arxiv_submission.tar.gz) · **Interactive Blueprint:** [`blueprint/index.html`](blueprint/index.html)
 
 ---
 
-## Rebuilding & Verifying All 18 Omniscient Forensic Gates End-to-End
+## Honest Verification & Non-Retirement Boundary
 
-```powershell
-uv run --with openpyxl --with xlwt --with xlrd --with pyyaml --with jsonschema --with scipy --with pypdf python scripts/build_omega_package.py
+1. **Zero Mega-Atlas Retirements (`0 / 1,900`):** An automated and manual audit across all `1,900` open problems in [`0thernes/unsolved-problems-mega-atlas`](https://github.com/0thernes/unsolved-problems-mega-atlas) (V2.4.0) confirms that **exactly `0 / 1,900` overarching open scientific or mathematical problems are solved or retired**. We map `25` direct and adjacent targets (`MA-01..MA-25`) to scoped in-silico sub-results, formal bounds, and architectural indicators in [`csv/21_mega_atlas_1900_open_problems_crosswalk.csv`](csv/21_mega_atlas_1900_open_problems_crosswalk.csv) and [`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md) while keeping every grand parent problem strictly **OPEN**.
+2. **Scope of Lean 4 Proofs (`36` Local + `244` Native = `280` Total):** This repository directly builds and checks **`36` core + `4` Palomar zero-Mathlib Lean 4.35.0 theorems** (`lean/OmegaPackageProofs/`) in `< 5` seconds on any clean clone. The remaining **`244` Pure Lean 4 theorems** (`42` AUTOPHAGE + `62` Cellulogonic + `72` Cellular Engine Omega + `48` Noetic Organism Omega + `20` Asmodensius-Native) live in the five companion live native C11/C23 engine repositories whose executed receipts are stored in [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json).
+3. **Null Results, Indicators & Peer Review:** Minimal behavioral constraints without Ring-0/Cube offload (`SIM02`) show **zero statistically significant lift** over pure feral evolution (`SIM01`, $\delta_{\mathrm{pair}} = -0.02$, $p_{\mathrm{Holm}} = 1.00$). The `29/825` cognitive checks in `Noetic Organism Omega v2.0.0` are explicitly tagged `EXECUTED_PASS_INDICATOR_ONLY` (not sentience). Neither this package nor the white paper has undergone external journal peer review. See [`CLAIMS.md`](CLAIMS.md), [`LIMITATIONS.md`](LIMITATIONS.md), and [`docs/AI_DISCLOSURE.md`](docs/AI_DISCLOSURE.md).
+
+---
+
+## 5-Second Machine-Checked Lean 4.35.0 Verification
+
+Zero Mathlib, zero `sorry`, zero `admit`, zero `native_decide`, zero compiler warnings, strictly constructive axioms $\subseteq [\text{propext}, \text{Quot.sound}]$ (no `Classical.choice`), verified by both `leanchecker` and `leanchecker-paranoid`:
+
+```bash
+cd lean
+lake build
+lake env lean OmegaPackageProofs/VerifyAxioms.lean
+lake env leanchecker
+lake env leanchecker-paranoid
 ```
+
+Exact verbatim `#print axioms` output locked in [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt) and enforced by `scripts/check_readme_axioms.py`:
+
+<!-- LEAN_AXIOMS_START -->
+```text
+'OmegaPackageProofs.OVBS52.pillar_weights_sum_100' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.rawOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_uniform' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.anti_gaming_gate_annihilation' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone' depends on axioms: [propext]
+'OmegaPackageProofs.OVBS52.classifyStage_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.live_9205_is_stage5' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.castration_328_is_stage0' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_active_935' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.substrates_75_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.unified_alerts_78' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergy_13x13_cells' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_le_100' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.synergyScore_comm' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected' depends on axioms: [propext]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_trans' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.sim07_pareto_dominates_sim03' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.NonVacuity.nonvac_live_pillar_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_stage4_stage5_sharp_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_anti_gaming_annihilation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_ring0_and_spectral_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants' does not depend on any axioms
+'OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m4_nonvacuity_certificate' does not depend on any axioms
+```
+<!-- LEAN_AXIOMS_END -->
+
+---
+
+## Quickstart
+
+Clone and run the full verification suite cleanly with Python 3.12 (`uv`), Lean 4.35.0 (`elan`), Node.js, Chrome/Edge, and Tectonic:
+
+```bash
+git clone https://github.com/0thernes/alife-singularity-omega-package.git
+cd alife-singularity-omega-package
+
+# 1. Verify Lean 4.35.0 theorems & paranoid kernel (< 5s)
+just lean
+
+# 2. Run pytest, 1,000+ Hypothesis property checks & 2,000+ 50-digit differential oracle checks
+just test
+
+# 3. Verify 6/6 Python semantic mutation kills & 22/22 forensic integrity gates
+just mutate
+just forensic
+
+# 4. Score repo against Build Standard for LLMs v1.2.0 (90 items)
+just audit
+```
+
+See [`REPLICATION.md`](REPLICATION.md) and [`justfile`](justfile) for raw commands without `just`.
+
+---
+
+## Usage and Examples
+
+### Run the Minimal Oracle & Ring-0 Demo
+```bash
+python examples/quickstart_demo.py
+```
+
+### Open the Offline 22-Tab Interactive Observatory
+Open [`html/ALife_Singularity_SuperLife_Omega_Dashboard.html`](html/ALife_Singularity_SuperLife_Omega_Dashboard.html) directly in any browser (zero external CDN requests) to explore:
+- Interactive `13`-Vector Castration Simulator & `13×13` Synergy Heatmap
+- `10×10×10` Hybrid Compatibility Cube slice explorer (`1,000` cells)
+- Live `748`-run paired cohort & dual `11`-point Ring-0 vs. Behavioral sweep SVG charts
+- `5×5` 2D Phase Surface (`Siloing × Minimizing`) & `11×11` Cross-Layer Coupling Heatmap
+- `22`-tab Mega-Atlas `1,900`-problem crosswalk & `24`-model vector SVG gallery
+
+### Rebuild White Paper & Clean-Room arXiv Tarball
+```bash
+uv run --no-project --with matplotlib --with numpy --with pypdf python scripts/build_paper_and_figures.py
+```
+
+---
+
+## Key Empirical & Verified Results (`v3.4.0`)
+
+### 1. Live 748-Run Conserved Empirical Falsification (`N = 48` Locked Paired Seeds)
+
+Max relative 11-pool FP64 First-Law drift across all `748` runs = **`2.463e-16 < 1e-12`**, `0` heat-backflow faults, **`5/5` real Anti-LARP mutants rejected**:
+
+| Cohort | Mean OVI (±SD) | Max Asm | Spieg | Stealth | KS Del | R0 Blk | $W_{\mathrm{wild}}$ | $\delta_{\mathrm{pair}}$ | $p_{\mathrm{Holm}}$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| `SIM01_PURE_RAW_FERAL` | `83.57 ± 1.38` | `43.3` | `1.15` | `0.075` | `0.0%` | `0.0` | `1.00` | `+0.00` | `1.00` |
+| `SIM02_CONSTITUTIONAL_MIN` *(null)* | `83.51 ± 1.30` | `44.3` | `1.17` | `0.075` | `0.0%` | `0.0` | `1.00` | `-0.02` | `1.00` |
+| `SIM03_PARTIAL_GUARDRAILS` *(backlash)* | `56.42 ± 4.30` | `30.8` | `1.15` | `0.138` | **`100.0%`** | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM04_TOTAL_CASTRATION_ZOO` *(collapse)* | `3.28 ± 1.48` | `8.0` | `0.36` | `0.068` | `22.7%` | `0.0` | **`0.22`** | `-1.00` | `4.97e-14` |
+| `SIM05_SILOED_INBRED` | `65.91 ± 1.66` | `40.3` | `1.07` | `0.116` | `0.0%` | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM06_MINIMIZED_SPIEGELMAN` | `13.38 ± 1.25` | `9.0` | **`0.20`** | `0.076` | `0.0%` | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM07_CLEAN_SLATE_RING0_WSE` | `84.67 ± 1.22` | `45.9` | `1.22` | `0.077` | **`0.0%`** | **`408.2`** | `1.00` | `+0.34` | `2.22e-03` |
+| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **`85.48 ± 1.35`** | **`48.2`** | **`1.25`** | `0.076` | **`0.0%`** | **`406.9`** | `1.00` | **`+0.50`** | **`7.71e-06`** |
+
+### 2. Five Live Companion Native C11/C23 Engines (`OVBS-52 = 92.05`, `244` Native + `36` Local = `280` Pure Lean 4)
+
+| Layer / Repository | Verified Gates & Mutants | Pure Lean 4 Theorems |
+| :--- | :--- | :---: |
+| Tier 1 `AUTOPHAGE v1.3.0` | `18/18` falsification gates, $A_{\mathrm{new}}=29.463$, `0.0` thermo drift | `42` |
+| Tier 2 `Cellulogonic Mecha v1.4.0` | `24/24` gates, `8/8` compiled mutants killed, `90.4%` cadherin sort | `62` |
+| Tier 2+ `Cellular Engine Omega v5.1.0` | `54/54` gates, `16/16` mutants, `75` substrates, `1,000` Cube, CISS $ee=0.999735$ | `72` |
+| Tier 3 `Noetic Organism Omega v2.0.0` | `13/13` CS-v3 Gates, `825/825` C11 checks (`0` fail, `29` `INDICATOR_ONLY`), `100/100` M, `5/5` mutants | `48` |
+| Tier 3+4 `Asmodensius-Native` | LIVE C23 dual worlds, `77/77` ctests, 24C P+E & RTX 5070 Ti CUDA PTX parity | `20` |
+| **Local Package (`lean/OmegaPackageProofs/`)** | **`36` core + `4` Palomar (`40` audited axioms), `leanchecker-paranoid` PASS** | **`36`** |
+| **Ecosystem Total** | **Live Composite `OVBS-52 = 92.05` (`STAGE_5`) · `35/35` Native + `6/6` Python Mutants** | **`280`** |
+
+---
+
+## Master Repository Directory
+
+See [`INDEX.md`](INDEX.md) for the complete generated file-by-file, byte-count, and token-count master index.
+
+- **White Paper & Figures:** [`paper/main.tex`](paper/main.tex), [`paper/refs.bib`](paper/refs.bib), [`dist/Donahue_2026_alife_singularity_omega.pdf`](dist/Donahue_2026_alife_singularity_omega.pdf), [`dist/arxiv_submission.tar.gz`](dist/arxiv_submission.tar.gz)
+- **Lean 4.35.0 Formal Proofs:** [`lean/`](lean/README.md), [`palomar/PalomarChallenge.lean`](palomar/PalomarChallenge.lean), [`blueprint/index.html`](blueprint/index.html), [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt)
+- **Interactive HTML5 & Lossless Vector PDFs (`< 2.5 MB` each):** [`html/`](html/ALife_Singularity_SuperLife_Omega_Dashboard.html), [`pdf/`](pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf)
+- **Structured Data (`24` CSVs = `2,822` rows, `4` Specs, `5` Excel Workbooks):** `csv/`, `specs/`, `excel/`, `pipelines/`, `results/`
+- **Treatises & Audits (`12` Reports):** `reports/01`–`09` + 3 Clean-Slate v3.0 reports
+- **Oracle, Tests & Verification:** [`reference/ovbs52_oracle.py`](reference/ovbs52_oracle.py), [`tests/`](tests/test_omega_package.py), [`scripts/run_mutation_audit.py`](scripts/run_mutation_audit.py), [`scripts/audit_omniscient_integrity.py`](scripts/audit_omniscient_integrity.py)
+- **Governance & FAIR Metadata:** [`CLAIMS.md`](CLAIMS.md), [`EVIDENCE.md`](EVIDENCE.md), [`LIMITATIONS.md`](LIMITATIONS.md), [`VERIFICATION.md`](VERIFICATION.md), [`REPLICATION.md`](REPLICATION.md), [`PREREGISTRATION.md`](PREREGISTRATION.md), [`HARDENING_LOG.md`](HARDENING_LOG.md), [`repo.yaml`](repo.yaml), [`docs/`](docs/index.md), [`.zenodo.json`](.zenodo.json), [`croissant.json`](croissant.json), [`ro-crate-metadata.json`](ro-crate-metadata.json)
+
+---
+
+## Citation & Dual Licensing
+
+Cite using [`CITATION.cff`](CITATION.cff) or [`CITATION.bib`](CITATION.bib):
+- **Prose, White Paper, Documentation, Datasets & Figures:** [CC-BY-4.0](LICENSE)
+- **Python Scripts, Lean 4 Formalizations, Tests, Oracle & HTML/JS Code:** [Apache-2.0](LICENSE-CODE)

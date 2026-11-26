@@ -1,0 +1,106 @@
+{
+  "bib_file": "paper/refs.bib",
+  "total_entries": 14,
+  "resolved_count": 14,
+  "failures": [],
+  "entries": [
+    {
+      "key": "moura2021lean4",
+      "kind": "doi",
+      "target": "10.1007/978-3-030-79876-5_37",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "holm1979simple",
+      "kind": "url",
+      "target": "https://www.jstor.org/stable/4615733",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "key": "bedau1998classification",
+      "kind": "url",
+      "target": "https://direct.mit.edu/isal/proceedings/alife1998/10/228/99527",
+      "ok": true,
+      "status": 403
+    },
+    {
+      "key": "mills1967extracellular",
+      "kind": "doi",
+      "target": "10.1073/pnas.58.1.217",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "sharma2023assembly",
+      "kind": "doi",
+      "target": "10.1038/s41586-023-06600-9",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "salmon2011parallel",
+      "kind": "doi",
+      "target": "10.1145/2063384.2063405",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "macklin2016xpbd",
+      "kind": "doi",
+      "target": "10.1145/2994258.2994272",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "england2013statistical",
+      "kind": "doi",
+      "target": "10.1063/1.4818538",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "friston2013life",
+      "kind": "doi",
+      "target": "10.1098/rsif.2013.0475",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "bongard2021living",
+      "kind": "doi",
+      "target": "10.3389/fevo.2021.650726",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "gebru2021datasheets",
+      "kind": "doi",
+      "target": "10.1145/3458723",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "akhtar2024croissant",
+      "kind": "doi",
+      "target": "10.1145/3650203.3663326",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "soilandreyes2022rocrate",
+      "kind": "doi",
+      "target": "10.3233/DS-210053",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "donahue2026megaatlas",
+      "kind": "url",
+      "target": "https://github.com/0thernes/unsolved-problems-mega-atlas",
+      "ok": true,
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: Academic Review / Replication Report
+description: Submit an independent replication, Lean statement-fidelity audit, or peer critique.
+labels: ["replication"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Review / Replication Scope
+      options:
+        - "Lean 4.35.0 formal proofs & statement-fidelity audit"
+        - "748-run paired empirical simulation & Holm-Bonferroni FWER replication"
+        - "AMS-LaTeX white paper & clean-room arXiv tarball verification"
+        - "Mega-Atlas 1,900-problem non-retirement crosswalk review"
+        - "22-gate forensic integrity audit / full clean-clone reproduction"
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - "PASS — reproduced cleanly"
+        - "PARTIAL — reproduced with minor caveats"
+        - "FAIL — discrepancy or refutation found"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Technical details, environment & SHA-256 verification evidence
+    validations:
+      required: true

@@ -1,7 +1,7 @@
 # Report 08 — Pass-5 Ultra-Hostile Red-Team Audit: 11×11 Cross-Layer Coupling & Impedance, 15-Substrate Multi-Spectrums, 20 Pareto Frontiers, Dual 11-Point Sweeps & 2D Empirical Phase Surface (`v3.3-Omega`)
 
 > **Document Class:** Pass-5 Exhaustive Systems Coupling, Substrate Spectrum, Pareto-Frontier Dilemma Resolution & Dual-Drive Cryptographic Parity Treatise (`v3.3-Omega`)  
-> **Author:** Alexander Stephen Donahue (`0thernes LLC`, Spokane, WA · ORCID `0009-0006-8168-9648` · `0_0@0thernes.art`)  
+> **Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA`, Spokane, WA · ORCID `0009-0006-8168-9648` · `0_0@0thernes.art`)  
 > **Master Repository:** `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package` (Byte-for-Byte SHA-256 Mirrored to `I:\A-Life God Plan\A-Life Master Folder Build`)  
 > **Companion Matrices:** [`csv/18_layer_11x11_coupling_impedance_matrix.csv`](../csv/18_layer_11x11_coupling_impedance_matrix.csv) (`121` pairs) · [`csv/19_substrate_spectrum_comparative_scorecard.csv`](../csv/19_substrate_spectrum_comparative_scorecard.csv) (`SUB-01..15`) · [`csv/20_pareto_frontiers_and_dilemmas_matrix.csv`](../csv/20_pareto_frontiers_and_dilemmas_matrix.csv) (`PAR-01..20`) · [`results/empirical_sim_summary.json`](../results/empirical_sim_summary.json) (`748` runs) · [`results/alifeops_live_verification.json`](../results/alifeops_live_verification.json) (`OVBS-52 = 92.05`, `244` Pure Lean 4)  
 > **Vector Visual Synthesis:** `MODEL-21` (Dual 11-Pt Sweep), `MODEL-23` (`11×11` Layer Impedance & 20 Pareto Frontiers), `MODEL-24` (`15`-Substrate Multi-Spectrum & Live `5×5` 2D Phase Surface)

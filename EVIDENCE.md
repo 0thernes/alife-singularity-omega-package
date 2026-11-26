@@ -1,0 +1,14 @@
+# Evidence Index
+
+This document maps each claim in [`CLAIMS.md`](CLAIMS.md) to its exact primary evidence artifacts, cryptographic hashes, and verification logs inside `alife-singularity-omega-package` (`v3.4.0`).
+
+| Claim ID | Evidence Artifact(s) | Automated Verifier | Status |
+| :--- | :--- | :--- | :--- |
+| **C1** | `lean/OmegaPackageProofs/{OVBS52Scoring,EscalationAndCube,CastrationAndRing0,NonVacuity,VerifyAxioms}.lean`, `lean/{Challenge,Solution,PalomarSolution}.lean`, `palomar/PalomarChallenge.lean`, `results/lean_package_axioms.txt` | `lake build`, `lake env lean OmegaPackageProofs/VerifyAxioms.lean`, `leanchecker`, `leanchecker-paranoid`, Gate 19, `scripts/check_readme_axioms.py` | **VERIFIED** (`36+4 = 40` audited lines, axioms $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings) |
+| **C2** | `results/alifeops_live_verification.json` (`engine_receipts.tier1..tier34`), `docs/statement-fidelity.md` | `scripts/run_alifeops_suite.py`, Gate 5, `OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244` | **VERIFIED** (`42+62+72+48+20 = 244` native + `36` local = `280` total) |
+| **C3** | `results/empirical_sim_summary.json`, `results/ovbs52_scorecard_SIM01..SIM08.json`, `csv/11_empirical_simulation_results.csv`, `paper/figures/fig01..fig03.pdf` | `scripts/run_alife_castration_sim.py`, Gate 5, Gate 6, `tests/test_omega_package.py` | **VERIFIED** (`748` runs, max FP64 drift `2.463e-16`, `5/5` real Anti-LARP mutants rejected) |
+| **C4** | `results/alifeops_live_verification.json`, `paper/figures/fig04_5engine_pillars_lean.pdf` | `scripts/run_alifeops_suite.py`, Gate 5 | **VERIFIED** (`OVBS-52 = 92.05`, `13/13` CS-v3 Gates, `825/825` C11 checks, `35/35` compiled mutants, `77/77` Asmodensius ctests) |
+| **C5** | `reference/ovbs52_oracle.py`, `scripts/run_mutation_audit.py`, `tests/test_properties_and_differential.py` | `pytest tests/ -v`, `python scripts/run_mutation_audit.py`, Gate 22 | **VERIFIED** (`2,000+` differential/Hypothesis checks, `6/6 = 100%` mutation kill score) |
+| **C6** | `MANIFEST_SHA256.txt`, `CHECKSUMS.sha256`, `data/MANIFEST.sha256`, `MANIFEST.json`, `dist/Donahue_2026_alife_singularity_omega.pdf`, `dist/arxiv_submission.tar.gz` | `scripts/audit_omniscient_integrity.py` (Gates 1–22), `scripts/Audit-Repo.ps1` | **VERIFIED** (`22/22` Forensic Gates, `100.0%` Build Standard v1.2.0, `0` Z:↔I: SHA mismatches) |
+| **C7** | `csv/10_castration_13x13_synergy_matrix.csv`, `csv/18_layer_11x11_coupling_impedance_matrix.csv`, `csv/19_substrate_spectrum_comparative_scorecard.csv`, `LIMITATIONS.md` | Declared rubric boundary (human-audited) | **DISCLOSED** |
+| **C8** | `csv/21_mega_atlas_1900_open_problems_crosswalk.csv`, `reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`, `paper/main.tex` (Section 6) | Programmatic scan of `MegaAtlas_Unsolved_Problems_V2.json.gz` (`N=1,900`) | **VERIFIED** (`0 / 1,900` retired; `25` scoped relations documented) |

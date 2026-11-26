@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "dct": "http://purl.org/dc/terms/",
+    "sc": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package Datasets (v3.4.0)",
+  "description": "24 structured canonical CSV tables (2,822 rows), 4-format Master Specifications (JSON/YAML/XML/TXT), 748-run paired empirical simulation receipts, 280 Pure Lean 4 theorem verification logs, and a 25-target Mega-Atlas 1,900-problem non-retirement crosswalk.",
+  "version": "3.4.0",
+  "datePublished": "2026-11-25",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://github.com/0thernes/alife-singularity-omega-package",
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Alexander Stephen Donahue",
+    "identifier": "https://orcid.org/0009-0006-8168-9648",
+    "affiliation": "Independent Researcher, Spokane, WA, USA"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "empirical-sim-csv",
+      "name": "11_empirical_simulation_results.csv",
+      "contentUrl": "csv/11_empirical_simulation_results.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "hybrid-cube-csv",
+      "name": "ALife-Hybrid-Cube-10x10x10.csv",
+      "contentUrl": "csv/ALife-Hybrid-Cube-10x10x10.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "master-checklists-csv",
+      "name": "ALife-Framework-v3.0-Master-Checklists.csv",
+      "contentUrl": "csv/ALife-Framework-v3.0-Master-Checklists.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "mega-atlas-crosswalk-csv",
+      "name": "21_mega_atlas_1900_open_problems_crosswalk.csv",
+      "contentUrl": "csv/21_mega_atlas_1900_open_problems_crosswalk.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "data-manifest-sha256",
+      "name": "MANIFEST.sha256",
+      "contentUrl": "data/MANIFEST.sha256",
+      "encodingFormat": "text/plain"
+    }
+  ]
+}

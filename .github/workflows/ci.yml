@@ -1,0 +1,97 @@
+name: CI (Informational / Report-Only)
+
+# Build Standard v1.2.0 (A10, A25, B35, B38): informational CI on push & manual dispatch.
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  test-matrix:
+    name: Python, Oracle, Mutation & Build Standard (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: Run pytest, Hypothesis & 50-digit differential oracle
+        run: >-
+          uv run --no-project --with pytest --with hypothesis --with openpyxl
+          --with xlwt --with xlrd --with pyyaml --with jsonschema --with scipy
+          --with pypdf pytest tests/ -v
+      - name: Run 6/6 Python semantic mutation audit
+        run: uv run --no-project python scripts/run_mutation_audit.py
+      - name: Verify verbatim README axiom block
+        run: uv run --no-project python scripts/check_readme_axioms.py
+      - name: Run example quickstart demo
+        run: uv run --no-project python examples/quickstart_demo.py
+      - name: Run report-only static linters (ruff & mypy)
+        run: |
+          uv run --no-project --with ruff ruff check scripts reference tests examples || true
+          uv run --no-project --with mypy mypy reference --ignore-missing-imports || true
+      - name: Score repository against Build Standard v1.2.0 (Unix)
+        if: runner.os != 'Windows'
+        run: bash scripts/audit-repo.sh . --json audit.json --markdown "$GITHUB_STEP_SUMMARY"
+      - name: Score repository against Build Standard v1.2.0 (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/Audit-Repo.ps1 -Path . -Json audit.json -Markdown $env:GITHUB_STEP_SUMMARY
+
+  lean-formal-proofs:
+    name: Lean 4.35.0 Zero-Mathlib Proofs & Paranoid Checker
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan & Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build OmegaPackageProofs, audit axioms & run leanchecker-paranoid
+        working-directory: lean
+        run: |
+          lake build
+          lake env lean OmegaPackageProofs/VerifyAxioms.lean > ../live_axioms.txt
+          diff -u --strip-trailing-cr ../results/lean_package_axioms.txt ../live_axioms.txt
+          lake env leanchecker
+          lake env leanchecker-paranoid
+
+  paper-and-security:
+    name: AMS-LaTeX White Paper, Clean arXiv Tarball, Gitleaks & Provenance
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: Install Tectonic
+        uses: wtfjoke/setup-tectonic@v3
+      - name: Build vector figures, AMS-LaTeX PDF & clean-room arXiv tarball
+        run: >-
+          uv run --no-project --with matplotlib --with numpy --with pypdf
+          python scripts/build_paper_and_figures.py
+      - name: Secret scan (gitleaks, report-only)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Attest build provenance for white paper & arXiv tarball
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            dist/Donahue_2026_alife_singularity_omega.pdf
+            dist/arxiv_submission.tar.gz

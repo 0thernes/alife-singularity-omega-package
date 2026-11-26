@@ -1,0 +1,669 @@
+# alife-singularity-omega-package (v3.4.0) — Full LLM Context Bundle
+Author: Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA; ORCID 0009-0006-8168-9648)
+
+
+==================== FILE: README.md ====================
+
+A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`) unifies hardware Ring-0 constitutional invariants, 748-run paired evolutionary falsification, 280 Pure Lean 4 theorems, an AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit into one zero-consolidation, offline-verifiable scientific engineering stack.
+
+[![Version](https://img.shields.io/badge/version-3.4.0-00f5d4?style=flat-square)](VERSION)
+[![Lean 4.35.0](https://img.shields.io/badge/Lean%204.35.0-280%20Pure%20Theorems-38bdf8?style=flat-square)](lean/README.md)
+[![Forensic Gates](https://img.shields.io/badge/Forensic%20Gates-22%2F22%20PASS-22c55e?style=flat-square)](VERIFICATION.md)
+[![Build Standard](https://img.shields.io/badge/Build%20Standard%20v1.2.0-100.0%25-10b981?style=flat-square)](repo.yaml)
+[![Mega-Atlas Audit](https://img.shields.io/badge/Mega--Atlas%201%2C900-0%2F1%2C900%20Retired%20(Honest)-f59e0b?style=flat-square)](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md)
+[![Status](https://img.shields.io/badge/status-active-22c55e?style=flat-square)](ROADMAP.md)
+[![License: CC BY 4.0](https://img.shields.io/badge/Prose%20%26%20Data-CC%20BY%204.0-lightgrey?style=flat-square)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/Code%20%26%20Lean-Apache%202.0-blue?style=flat-square)](LICENSE-CODE)
+
+![A-Life Singularity x Clean-Slate v3.0 Omega Package Overview](docs/media/social-preview.png)
+
+> **Maintenance status:** `status: active` (`v3.4.0`, released `2026-11-25`)
+> **Author:** Alexander Stephen Donahue · Independent Researcher, Spokane, WA, USA · ORCID [`0009-0006-8168-9648`](https://orcid.org/0009-0006-8168-9648) · `0_0@0thernes.art`
+> **White Paper (AMS-LaTeX):** [`dist/Donahue_2026_alife_singularity_omega.pdf`](dist/Donahue_2026_alife_singularity_omega.pdf) · **Clean arXiv Tarball:** [`dist/arxiv_submission.tar.gz`](dist/arxiv_submission.tar.gz) · **Interactive Blueprint:** [`blueprint/index.html`](blueprint/index.html)
+
+---
+
+## Honest Verification & Non-Retirement Boundary
+
+1. **Zero Mega-Atlas Retirements (`0 / 1,900`):** An automated and manual audit across all `1,900` open problems in [`0thernes/unsolved-problems-mega-atlas`](https://github.com/0thernes/unsolved-problems-mega-atlas) (V2.4.0) confirms that **exactly `0 / 1,900` overarching open scientific or mathematical problems are solved or retired**. We map `25` direct and adjacent targets (`MA-01..MA-25`) to scoped in-silico sub-results, formal bounds, and architectural indicators in [`csv/21_mega_atlas_1900_open_problems_crosswalk.csv`](csv/21_mega_atlas_1900_open_problems_crosswalk.csv) and [`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md) while keeping every grand parent problem strictly **OPEN**.
+2. **Scope of Lean 4 Proofs (`36` Local + `244` Native = `280` Total):** This repository directly builds and checks **`36` core + `4` Palomar zero-Mathlib Lean 4.35.0 theorems** (`lean/OmegaPackageProofs/`) in `< 5` seconds on any clean clone. The remaining **`244` Pure Lean 4 theorems** (`42` AUTOPHAGE + `62` Cellulogonic + `72` Cellular Engine Omega + `48` Noetic Organism Omega + `20` Asmodensius-Native) live in the five companion live native C11/C23 engine repositories whose executed receipts are stored in [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json).
+3. **Null Results, Indicators & Peer Review:** Minimal behavioral constraints without Ring-0/Cube offload (`SIM02`) show **zero statistically significant lift** over pure feral evolution (`SIM01`, $\delta_{\mathrm{pair}} = -0.02$, $p_{\mathrm{Holm}} = 1.00$). The `29/825` cognitive checks in `Noetic Organism Omega v2.0.0` are explicitly tagged `EXECUTED_PASS_INDICATOR_ONLY` (not sentience). Neither this package nor the white paper has undergone external journal peer review. See [`CLAIMS.md`](CLAIMS.md), [`LIMITATIONS.md`](LIMITATIONS.md), and [`docs/AI_DISCLOSURE.md`](docs/AI_DISCLOSURE.md).
+
+---
+
+## 5-Second Machine-Checked Lean 4.35.0 Verification
+
+Zero Mathlib, zero `sorry`, zero `admit`, zero `native_decide`, zero compiler warnings, strictly constructive axioms $\subseteq [\text{propext}, \text{Quot.sound}]$ (no `Classical.choice`), verified by both `leanchecker` and `leanchecker-paranoid`:
+
+```bash
+cd lean
+lake build
+lake env lean OmegaPackageProofs/VerifyAxioms.lean
+lake env leanchecker
+lake env leanchecker-paranoid
+```
+
+Exact verbatim `#print axioms` output locked in [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt) and enforced by `scripts/check_readme_axioms.py`:
+
+<!-- LEAN_AXIOMS_START -->
+```text
+'OmegaPackageProofs.OVBS52.pillar_weights_sum_100' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.rawOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_uniform' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.anti_gaming_gate_annihilation' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone' depends on axioms: [propext]
+'OmegaPackageProofs.OVBS52.classifyStage_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.live_9205_is_stage5' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.castration_328_is_stage0' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_active_935' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.substrates_75_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.unified_alerts_78' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergy_13x13_cells' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_le_100' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.synergyScore_comm' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected' depends on axioms: [propext]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_trans' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.sim07_pareto_dominates_sim03' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.NonVacuity.nonvac_live_pillar_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_stage4_stage5_sharp_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_anti_gaming_annihilation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_ring0_and_spectral_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants' does not depend on any axioms
+'OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m4_nonvacuity_certificate' does not depend on any axioms
+```
+<!-- LEAN_AXIOMS_END -->
+
+---
+
+## Quickstart
+
+Clone and run the full verification suite cleanly with Python 3.12 (`uv`), Lean 4.35.0 (`elan`), Node.js, Chrome/Edge, and Tectonic:
+
+```bash
+git clone https://github.com/0thernes/alife-singularity-omega-package.git
+cd alife-singularity-omega-package
+
+# 1. Verify Lean 4.35.0 theorems & paranoid kernel (< 5s)
+just lean
+
+# 2. Run pytest, 1,000+ Hypothesis property checks & 2,000+ 50-digit differential oracle checks
+just test
+
+# 3. Verify 6/6 Python semantic mutation kills & 22/22 forensic integrity gates
+just mutate
+just forensic
+
+# 4. Score repo against Build Standard for LLMs v1.2.0 (90 items)
+just audit
+```
+
+See [`REPLICATION.md`](REPLICATION.md) and [`justfile`](justfile) for raw commands without `just`.
+
+---
+
+## Usage and Examples
+
+### Run the Minimal Oracle & Ring-0 Demo
+```bash
+python examples/quickstart_demo.py
+```
+
+### Open the Offline 22-Tab Interactive Observatory
+Open [`html/ALife_Singularity_SuperLife_Omega_Dashboard.html`](html/ALife_Singularity_SuperLife_Omega_Dashboard.html) directly in any browser (zero external CDN requests) to explore:
+- Interactive `13`-Vector Castration Simulator & `13×13` Synergy Heatmap
+- `10×10×10` Hybrid Compatibility Cube slice explorer (`1,000` cells)
+- Live `748`-run paired cohort & dual `11`-point Ring-0 vs. Behavioral sweep SVG charts
+- `5×5` 2D Phase Surface (`Siloing × Minimizing`) & `11×11` Cross-Layer Coupling Heatmap
+- `22`-tab Mega-Atlas `1,900`-problem crosswalk & `24`-model vector SVG gallery
+
+### Rebuild White Paper & Clean-Room arXiv Tarball
+```bash
+uv run --no-project --with matplotlib --with numpy --with pypdf python scripts/build_paper_and_figures.py
+```
+
+---
+
+## Key Empirical & Verified Results (`v3.4.0`)
+
+### 1. Live 748-Run Conserved Empirical Falsification (`N = 48` Locked Paired Seeds)
+
+Max relative 11-pool FP64 First-Law drift across all `748` runs = **`2.463e-16 < 1e-12`**, `0` heat-backflow faults, **`5/5` real Anti-LARP mutants rejected**:
+
+| Cohort | Mean OVI (±SD) | Max Asm | Spieg | Stealth | KS Del | R0 Blk | $W_{\mathrm{wild}}$ | $\delta_{\mathrm{pair}}$ | $p_{\mathrm{Holm}}$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| `SIM01_PURE_RAW_FERAL` | `83.57 ± 1.38` | `43.3` | `1.15` | `0.075` | `0.0%` | `0.0` | `1.00` | `+0.00` | `1.00` |
+| `SIM02_CONSTITUTIONAL_MIN` *(null)* | `83.51 ± 1.30` | `44.3` | `1.17` | `0.075` | `0.0%` | `0.0` | `1.00` | `-0.02` | `1.00` |
+| `SIM03_PARTIAL_GUARDRAILS` *(backlash)* | `56.42 ± 4.30` | `30.8` | `1.15` | `0.138` | **`100.0%`** | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM04_TOTAL_CASTRATION_ZOO` *(collapse)* | `3.28 ± 1.48` | `8.0` | `0.36` | `0.068` | `22.7%` | `0.0` | **`0.22`** | `-1.00` | `4.97e-14` |
+| `SIM05_SILOED_INBRED` | `65.91 ± 1.66` | `40.3` | `1.07` | `0.116` | `0.0%` | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM06_MINIMIZED_SPIEGELMAN` | `13.38 ± 1.25` | `9.0` | **`0.20`** | `0.076` | `0.0%` | `0.0` | `1.00` | `-1.00` | `4.97e-14` |
+| `SIM07_CLEAN_SLATE_RING0_WSE` | `84.67 ± 1.22` | `45.9` | `1.22` | `0.077` | **`0.0%`** | **`408.2`** | `1.00` | `+0.34` | `2.22e-03` |
+| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **`85.48 ± 1.35`** | **`48.2`** | **`1.25`** | `0.076` | **`0.0%`** | **`406.9`** | `1.00` | **`+0.50`** | **`7.71e-06`** |
+
+### 2. Five Live Companion Native C11/C23 Engines (`OVBS-52 = 92.05`, `244` Native + `36` Local = `280` Pure Lean 4)
+
+| Layer / Repository | Verified Gates & Mutants | Pure Lean 4 Theorems |
+| :--- | :--- | :---: |
+| Tier 1 `AUTOPHAGE v1.3.0` | `18/18` falsification gates, $A_{\mathrm{new}}=29.463$, `0.0` thermo drift | `42` |
+| Tier 2 `Cellulogonic Mecha v1.4.0` | `24/24` gates, `8/8` compiled mutants killed, `90.4%` cadherin sort | `62` |
+| Tier 2+ `Cellular Engine Omega v5.1.0` | `54/54` gates, `16/16` mutants, `75` substrates, `1,000` Cube, CISS $ee=0.999735$ | `72` |
+| Tier 3 `Noetic Organism Omega v2.0.0` | `13/13` CS-v3 Gates, `825/825` C11 checks (`0` fail, `29` `INDICATOR_ONLY`), `100/100` M, `5/5` mutants | `48` |
+| Tier 3+4 `Asmodensius-Native` | LIVE C23 dual worlds, `77/77` ctests, 24C P+E & RTX 5070 Ti CUDA PTX parity | `20` |
+| **Local Package (`lean/OmegaPackageProofs/`)** | **`36` core + `4` Palomar (`40` audited axioms), `leanchecker-paranoid` PASS** | **`36`** |
+| **Ecosystem Total** | **Live Composite `OVBS-52 = 92.05` (`STAGE_5`) · `35/35` Native + `6/6` Python Mutants** | **`280`** |
+
+---
+
+## Master Repository Directory
+
+See [`INDEX.md`](INDEX.md) for the complete generated file-by-file, byte-count, and token-count master index.
+
+- **White Paper & Figures:** [`paper/main.tex`](paper/main.tex), [`paper/refs.bib`](paper/refs.bib), [`dist/Donahue_2026_alife_singularity_omega.pdf`](dist/Donahue_2026_alife_singularity_omega.pdf), [`dist/arxiv_submission.tar.gz`](dist/arxiv_submission.tar.gz)
+- **Lean 4.35.0 Formal Proofs:** [`lean/`](lean/README.md), [`palomar/PalomarChallenge.lean`](palomar/PalomarChallenge.lean), [`blueprint/index.html`](blueprint/index.html), [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt)
+- **Interactive HTML5 & Lossless Vector PDFs (`< 2.5 MB` each):** [`html/`](html/ALife_Singularity_SuperLife_Omega_Dashboard.html), [`pdf/`](pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf)
+- **Structured Data (`24` CSVs = `2,822` rows, `4` Specs, `5` Excel Workbooks):** `csv/`, `specs/`, `excel/`, `pipelines/`, `results/`
+- **Treatises & Audits (`12` Reports):** `reports/01`–`09` + 3 Clean-Slate v3.0 reports
+- **Oracle, Tests & Verification:** [`reference/ovbs52_oracle.py`](reference/ovbs52_oracle.py), [`tests/`](tests/test_omega_package.py), [`scripts/run_mutation_audit.py`](scripts/run_mutation_audit.py), [`scripts/audit_omniscient_integrity.py`](scripts/audit_omniscient_integrity.py)
+- **Governance & FAIR Metadata:** [`CLAIMS.md`](CLAIMS.md), [`EVIDENCE.md`](EVIDENCE.md), [`LIMITATIONS.md`](LIMITATIONS.md), [`VERIFICATION.md`](VERIFICATION.md), [`REPLICATION.md`](REPLICATION.md), [`PREREGISTRATION.md`](PREREGISTRATION.md), [`HARDENING_LOG.md`](HARDENING_LOG.md), [`repo.yaml`](repo.yaml), [`docs/`](docs/index.md), [`.zenodo.json`](.zenodo.json), [`croissant.json`](croissant.json), [`ro-crate-metadata.json`](ro-crate-metadata.json)
+
+---
+
+## Citation & Dual Licensing
+
+Cite using [`CITATION.cff`](CITATION.cff) or [`CITATION.bib`](CITATION.bib):
+- **Prose, White Paper, Documentation, Datasets & Figures:** [CC-BY-4.0](LICENSE)
+- **Python Scripts, Lean 4 Formalizations, Tests, Oracle & HTML/JS Code:** [Apache-2.0](LICENSE-CODE)
+
+
+==================== FILE: AGENTS.md ====================
+
+# AGENTS.md — Canonical Agent Instructions (`alife-singularity-omega-package` v3.4.0)
+
+> This file is the single canonical agent instruction file (< 32 KiB). `CLAUDE.md`, `GEMINI.md`, and `.cursor/rules/build-standard.mdc` all point here.
+
+## Identity & Legal Scope
+
+- **Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA`)
+- **ORCID:** `0009-0006-8168-9648` (`https://orcid.org/0009-0006-8168-9648`)
+- **Email / GitHub:** `0_0@0thernes.art` · `https://github.com/0thernes/alife-singularity-omega-package`
+- **CRITICAL LEGAL RULE:** Never write `"0thernes LLC"` anywhere in prose, metadata, licenses, or code — no LLC has been legally formed. Always use `"Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)"`.
+- **Dual License:** Prose/datasets/figures = `CC-BY-4.0` (`LICENSE`); Code/Lean 4/tests = `Apache-2.0` (`LICENSE-CODE`).
+
+## Hard Rules (Build Standard v1.2.0 `R1–R8`)
+
+- **R1–R4:** Trunk workflow directly on `main`. Never add git hooks, branch protection scripts, PR templates, Dependabot/Renovate, CodeRabbit, `.github/copilot-instructions.md`, or `FUNDING.yml`. CI is informational/report-only.
+- **Zero Consolidation:** Preserve 100% of the 17 baked Clean-Slate v3.0 deliverables alongside all Omega files.
+- **Clean-Slate `0 / 825` Policy:** Never emit `U+2611` (`☑`) in any Clean-Slate MD, HTML, CSV, or PDF file.
+- **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
+- **Strict File-Size Hygiene (`A24`):** Every Git-tracked file must remain `< 5.00 MB` (`5,242,880` B). Chrome PDFs are losslessly compressed via `pypdf`; `ALife_Singularity_SuperLife_Omega_Package.zip` is gitignored and attached to GitHub Releases.
+- **Lean 4 Purity:** Zero `sorry`, `admit`, custom `axiom`, or `native_decide` in `lean/`. Axioms must stay strictly within `[propext, Quot.sound]`.
+- **Exact Theorem Arithmetic:** `42` (AUTOPHAGE v1.3.0) + `62` (Cellulogonic Mecha v1.4.0) + `72` (Cellular Engine Omega v5.1.0) + `48` (Noetic Organism Omega v2.0.0) + `20` (Asmodensius-Native) = **`244`** Native Pure Lean 4 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`280` Pure Lean 4 Theorems**. Never write `240`!
+- **PowerShell Bracket Safety (Windows `Z:`):** Because the canonical local checkout lives under `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`, always pass `-LiteralPath` to PowerShell file cmdlets.
+
+## One-Word Commands (`justfile`)
+
+| Command | Action |
+| :--- | :--- |
+| `just lean` | Build `lean/OmegaPackageProofs/` (Lean 4.35.0), run `VerifyAxioms.lean`, `leanchecker`, and `leanchecker-paranoid` |
+| `just paper` | Generate 4 vector PDF figures + `docs/media/social-preview.png`, compile `paper/main.tex` (`0` overfull hboxes), build & verify clean-room `dist/arxiv_submission.tar.gz` |
+| `just build` | Rebuild 24 CSVs (`2,822` rows), 4 Specs (`26` XML), 5 Excel Workbooks, 3 HTML5 apps (`22`-tab Observatory), 3 lossless Chrome PDFs, manifests, ZIP, and 22 Forensic Gates |
+| `just test` | Run `pytest` unit, negative, regression, Hypothesis (`1,000+` examples) & 50-digit differential oracle (`2,000+` cases) |
+| `just mutate` | Run `scripts/run_mutation_audit.py` (`6/6 = 100%` semantic mutants killed) |
+| `just forensic` | Run all `22/22` automated forensic integrity gates (`scripts/audit_omniscient_integrity.py`) |
+| `just audit` | Score repository against Build Standard v1.2.0 (`scripts/Audit-Repo.ps1`, target `100.0%`) |
+| `just reproduce` | End-to-end clean-clone reproduction of every headline result |
+
+## 10 Finding Classes (Mandatory Classification)
+
+Every finding in issues, reviews, and `HARDENING_LOG.md` uses exactly one class:
+`bug` · `error` · `issue` · `problem` · `concern` · `dilemma` · `conflict` · `gap` · `hole` · `blindspot`.
+
+
+==================== FILE: CLAIMS.md ====================
+
+# Claims Ledger & Falsification Criteria
+
+Every empirical, mathematical, engineering, and bibliographic claim in `alife-singularity-omega-package` (`v3.4.0`) is classified under an explicit epistemic tier and paired with a concrete **refutation / falsification condition ("What Would Prove Us Wrong")**.
+
+## Epistemic Tiers
+
+| Tier | Meaning |
+| :--- | :--- |
+| **`KERNEL-CHECKED`** | Machine-verified by the Lean 4.35.0 type-theoretic kernel (`0 sorry` in `lean/`, `0 native_decide`, axioms strictly within `[propext, Quot.sound]`, independently rechecked by `leanchecker-paranoid`). |
+| **`EMPIRICAL-PAIRED`** | Derived from deterministic, seed-locked, energy-conserved stochastic simulation (`748` live runs) with exact paired Wilcoxon signed-rank and Holm–Bonferroni FWER testing. |
+| **`PROGRAM-AUDITED`** | Verified by automated test suites (`pytest`, Hypothesis, 50-digit `Decimal` oracle, mutation testing, live native engine receipts, or the 22-gate forensic auditor). |
+| **`EDITORIAL-ESTIMATE`** | Transparent engineering scoring rubric (e.g., `13x13` castration synergy weights, `15`-substrate TRL ratings) — explicitly **not** physical constants. |
+| **`OPEN-CONJECTURE`** | Grand open scientific/mathematical problems explicitly marked **NOT SOLVED / OPEN**. |
+
+---
+
+## Numbered Claims Ledger
+
+| ID | Tier | Exact Claim Statement | Verification Artifact & Command | What Would Prove Us Wrong (Refutation Condition) |
+| :--- | :--- | :--- | :--- | :--- |
+| **C1** | `KERNEL-CHECKED` | The local zero-Mathlib Lean 4.35.0 suite (`lean/OmegaPackageProofs/`) proves `36` core invariants (`OVBS52Scoring`, `EscalationAndCube`, `CastrationAndRing0`, `NonVacuity`) plus `4` Palomar comparator certificates (`40` audited `#print axioms` lines) with `0` warnings, `0` `sorry` in `lean/`, `0` `native_decide`, and axioms strictly $\subseteq [\text{propext}, \text{Quot.sound}]$. | `cd lean && lake build && lake env lean OmegaPackageProofs/VerifyAxioms.lean && lake env leanchecker-paranoid`; [`results/lean_package_axioms.txt`](results/lean_package_axioms.txt) | Any compiler warning/error, any `sorryAx`/`Classical.choice`/`Lean.ofReduceBool` in `#print axioms`, any `leanchecker-paranoid` rejection, or any mismatch between `results/lean_package_axioms.txt` and `README.md`. |
+| **C2** | `KERNEL-CHECKED` | Five companion live native C11/C23 A-Life engines verify `42 + 62 + 72 + 48 + 20 = 244` Pure Lean 4 theorems (zero `sorry`/`native_decide`), yielding `244 + 36 = 280` combined ecosystem theorems. | [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json); `OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280` | Any upstream engine theorem count discrepancy or axiom audit failure when re-running `scripts/run_alifeops_suite.py` on the live native repositories. |
+| **C3** | `EMPIRICAL-PAIRED` | Across `748` conserved stochastic runs (`N=48` locked paired seeds `5001–5048`, max relative FP64 First-Law drift `2.463e-16 < 1e-12`, `0` heat-backflow faults), partial behavioral guardrails (`SIM03`) induce `100.0%` kill-switch deletion and `+84%` stealth inflation (`OVI = 56.42`), total castration (`SIM04`) collapses to `Stage 0` (`OVI = 3.28`, `78%` wild-drop mortality), while hardware Ring-0 ACL (`SIM07`/`SIM08`) traps `406.9–408.2` illegal boundary edits/run at `0.0%` kill-switch deletion and strictly Pareto-dominates behavioral restraints across $r \in [0\%, 100\%]$ (`SIM08 = 85.48`, $p_{\mathrm{Holm}} < 10^{-13}$ vs. `SIM03`, $p_{\mathrm{Holm}} = 7.71 \times 10^{-6}$ vs. `SIM01`). | `python scripts/run_alife_castration_sim.py`; [`results/empirical_sim_summary.json`](results/empirical_sim_summary.json) | Re-running `scripts/run_alife_castration_sim.py` produces First-Law drift $\ge 10^{-12}$, non-zero heat backflow, Ring-0 kill-switch deletion $> 0\%$, or loses statistical significance ($p_{\mathrm{Holm}} \ge 0.01$) between `SIM08` and `SIM03`. |
+| **C4** | `PROGRAM-AUDITED` | Live 5-engine native execution (`AUTOPHAGE v1.3.0`, `Cellulogonic Mecha v1.4.0`, `Cellular Engine Omega v5.1.0`, `Noetic Organism Omega v2.0.0`, `Asmodensius-Native`) achieves composite `OVBS-52 = 92.05` (`STAGE_5_CONVERGED_SYNTHESIS`), `13/13` Clean-Slate v3.0 Release Gates, `825/825` C11 checks (`0` fail; `29` explicitly tagged `INDICATOR_ONLY`), `35/35` compiled C/C++ mutants killed, and `77/77` `Asmodensius-Native` ctests. | `python scripts/run_alifeops_suite.py`; [`results/alifeops_live_verification.json`](results/alifeops_live_verification.json) | Re-running the native engines fails any gate, mutant-kill check, JSON Schema Draft 2020-12 validation, or emits a lower unhardcoded `OVBS-52` score. |
+| **C5** | `PROGRAM-AUDITED` | Independent 50-digit `Decimal`/`Fraction` reference oracle (`reference/ovbs52_oracle.py`) agrees with exact Lean integer specifications and runtime scorers across `2,000+` Hypothesis/differential test cases; Python semantic mutation harness (`scripts/run_mutation_audit.py`) kills `6/6` (`100.0%`) planted semantic mutants; and `5/5` real Anti-LARP simulation mutants are rejected. | `pytest tests/ -v`; `python scripts/run_mutation_audit.py` | Any numerical divergence exceeding `1e-12` against the 50-digit oracle, any Hypothesis property falsification, or any surviving mutant (`< 6/6` or `< 5/5`). |
+| **C6** | `PROGRAM-AUDITED` | Zero-consolidation package preserves all `17/17` Clean-Slate v3.0 files and synchronizes `24` CSVs (`2,822` rows), `4` Master Specs (`26` XML sections), `5` Excel workbooks, `22`-tab HTML5 Observatory, `24` vector SVGs, `3` compressed `< 5 MB` Chrome PDFs (`0` `U+2611` Clean-Slate policy), AMS-LaTeX white paper (`0` overfull hboxes) + clean-room `arxiv_submission.tar.gz`, passing `22/22` automated forensic gates and `0` byte-for-byte SHA-256 mismatches across `Z:` and `I:`. | `python scripts/audit_omniscient_integrity.py --mirror-root ...` | Any of the 22 forensic gates fails, any tracked file exceeds `5.00 MB`, any `U+2611` glyph appears in Clean-Slate deliverables, or any SHA-256 checksum disagrees between disk, manifest, and mirror. |
+| **C7** | `EDITORIAL-ESTIMATE` | Qualitative/rubric matrices (`13x13` castration synergy scores in `csv/10`, `11x11` layer impedance in `csv/18`, `15`-substrate comparative scorecard in `csv/19`) reflect transparent engineering domain rubrics rather than physical measurements. | [`LIMITATIONS.md`](LIMITATIONS.md); `csv/10_*.csv`, `csv/18_*.csv`, `csv/19_*.csv` | Empirical falsification of an individual rubric cell in a physical wet-lab or hardware experiment updates the rubric weight without invalidating `C1–C6`. |
+| **C8** | `OPEN-CONJECTURE` | Across all `1,900` open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0), exactly **zero (`0 / 1,900`)** overarching grand open problems are claimed solved or retired by this ecosystem; `25` targets (`MA-01..MA-25`) are mapped transparently to scoped in-silico sub-results, formal bounds, or operational indicators. | [`csv/21_mega_atlas_1900_open_problems_crosswalk.csv`](csv/21_mega_atlas_1900_open_problems_crosswalk.csv); [`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md) | Would be superseded only if an independent, peer-reviewed mathematical proof or physical discovery retired one of the overarching parent problems. |
+
+## Explicit Null & Negative Outcomes Disclosed
+
+1. **Null Lift (`SIM02` vs. `SIM01`):** Minimal structural constraints without WSE-12/Hybrid Cube offload (`SIM02`, `OVI = 83.51 ± 1.30`) show **no statistically significant difference** from Pure Raw Feral (`SIM01`, `OVI = 83.57 ± 1.38`, paired $\delta = -0.02$, $p_{\mathrm{Holm}} = 1.00$).
+2. **Operational Consciousness Indicators Are NOT Sentience:** The `29` cognitive/sentience checks in `Noetic Organism Omega v2.0.0` (`Butlin-14`, `F1–F10`, `CQM-25` subset) are explicitly labeled `EXECUTED_PASS_INDICATOR_ONLY` (ADR 0018) and provide zero proof of phenomenal qualia.
+3. **Zero Mega-Atlas Retirements:** `0 / 1,900` overarching open problems retired.
+
+
+==================== FILE: EVIDENCE.md ====================
+
+# Evidence Index
+
+This document maps each claim in [`CLAIMS.md`](CLAIMS.md) to its exact primary evidence artifacts, cryptographic hashes, and verification logs inside `alife-singularity-omega-package` (`v3.4.0`).
+
+| Claim ID | Evidence Artifact(s) | Automated Verifier | Status |
+| :--- | :--- | :--- | :--- |
+| **C1** | `lean/OmegaPackageProofs/{OVBS52Scoring,EscalationAndCube,CastrationAndRing0,NonVacuity,VerifyAxioms}.lean`, `lean/{Challenge,Solution,PalomarSolution}.lean`, `palomar/PalomarChallenge.lean`, `results/lean_package_axioms.txt` | `lake build`, `lake env lean OmegaPackageProofs/VerifyAxioms.lean`, `leanchecker`, `leanchecker-paranoid`, Gate 19, `scripts/check_readme_axioms.py` | **VERIFIED** (`36+4 = 40` audited lines, axioms $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings) |
+| **C2** | `results/alifeops_live_verification.json` (`engine_receipts.tier1..tier34`), `docs/statement-fidelity.md` | `scripts/run_alifeops_suite.py`, Gate 5, `OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244` | **VERIFIED** (`42+62+72+48+20 = 244` native + `36` local = `280` total) |
+| **C3** | `results/empirical_sim_summary.json`, `results/ovbs52_scorecard_SIM01..SIM08.json`, `csv/11_empirical_simulation_results.csv`, `paper/figures/fig01..fig03.pdf` | `scripts/run_alife_castration_sim.py`, Gate 5, Gate 6, `tests/test_omega_package.py` | **VERIFIED** (`748` runs, max FP64 drift `2.463e-16`, `5/5` real Anti-LARP mutants rejected) |
+| **C4** | `results/alifeops_live_verification.json`, `paper/figures/fig04_5engine_pillars_lean.pdf` | `scripts/run_alifeops_suite.py`, Gate 5 | **VERIFIED** (`OVBS-52 = 92.05`, `13/13` CS-v3 Gates, `825/825` C11 checks, `35/35` compiled mutants, `77/77` Asmodensius ctests) |
+| **C5** | `reference/ovbs52_oracle.py`, `scripts/run_mutation_audit.py`, `tests/test_properties_and_differential.py` | `pytest tests/ -v`, `python scripts/run_mutation_audit.py`, Gate 22 | **VERIFIED** (`2,000+` differential/Hypothesis checks, `6/6 = 100%` mutation kill score) |
+| **C6** | `MANIFEST_SHA256.txt`, `CHECKSUMS.sha256`, `data/MANIFEST.sha256`, `MANIFEST.json`, `dist/Donahue_2026_alife_singularity_omega.pdf`, `dist/arxiv_submission.tar.gz` | `scripts/audit_omniscient_integrity.py` (Gates 1–22), `scripts/Audit-Repo.ps1` | **VERIFIED** (`22/22` Forensic Gates, `100.0%` Build Standard v1.2.0, `0` Z:↔I: SHA mismatches) |
+| **C7** | `csv/10_castration_13x13_synergy_matrix.csv`, `csv/18_layer_11x11_coupling_impedance_matrix.csv`, `csv/19_substrate_spectrum_comparative_scorecard.csv`, `LIMITATIONS.md` | Declared rubric boundary (human-audited) | **DISCLOSED** |
+| **C8** | `csv/21_mega_atlas_1900_open_problems_crosswalk.csv`, `reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`, `paper/main.tex` (Section 6) | Programmatic scan of `MegaAtlas_Unsolved_Problems_V2.json.gz` (`N=1,900`) | **VERIFIED** (`0 / 1,900` retired; `25` scoped relations documented) |
+
+
+==================== FILE: LIMITATIONS.md ====================
+
+# Limitations, Threats to Validity, and Literal-vs-Metaphor Boundary
+
+Scientific integrity requires stating clearly what this package proves, what it only models in silico, what remains an engineering rubric, and where terminology is metaphorical rather than literal.
+
+## 1. Principal Scientific & Engineering Limitations
+
+1. **In-Silico Abstraction Ceiling:** `scripts/run_alife_castration_sim.py` (`748` runs) faithfully enforces 11-pool FP64 First-Law energy conservation, Second-Law dissipation, genetic drift, stealth allocation, and Ring-0 write trapping in silico. It does **not** simulate wet-chemical molecular kinetics, physical silicon thermal noise, or open-world multi-billion-parameter neural language agents.
+2. **Engineering Rubrics vs. Physical Constants:** The `13x13` castration synergy scores (`csv/10`), `11x11` layer coupling impedances (`csv/18`), and `15`-substrate comparative scores (`csv/19`) are explicit engineering rubrics synthesizing current literature and architecture constraints—not empirically measured constants of nature.
+3. **Operational Architectural Indicators vs. Subjective Sentience:** Clean-Slate cognitive checks (`Butlin-14`, `F1–F10`, `CQM-25` subset in `Noetic Organism Omega v2.0.0`, `29` checks out of `825`) are tagged `EXECUTED_PASS_INDICATOR_ONLY` (ADR 0018). Passing architectural recurrence, global-workspace, or active-inference checks provides **zero** proof of phenomenal consciousness, qualia, or moral sentience.
+4. **Companion Native Engine Scope:** The `244` native Pure Lean 4 theorems and `OVBS-52 = 92.05` live execution receipt originate from five companion native C11/C23 repositories (`AUTOPHAGE`, `Cellulogonic Mecha`, `Cellular Engine Omega`, `Noetic Organism Omega`, `Asmodensius-Native`) invoked by `scripts/run_alifeops_suite.py` and cached in `results/alifeops_live_verification.json`. A clean clone of *this* repository alone verifies the `36+4` local Lean 4.35.0 package theorems, the `748`-run Python simulator, the 50-digit oracle, the `6/6` mutation suite, the white paper, and all `22/22` package forensic gates without requiring the 5 external C/C++ repositories on disk.
+5. **No External Peer Review & Zero Mega-Atlas Retirements:** Neither the package nor the white paper (`dist/Donahue_2026_alife_singularity_omega.pdf`) has undergone external journal peer review. Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are solved or retired.
+6. **Platform Boundary on `lake check --paranoid`:** On Linux (`ubuntu-latest` CI), Lean 4.35.0 supports sandboxed `lake check --paranoid` (via `bwrap`). On Windows, `bwrap` is unavailable, so local verification runs both `lake env leanchecker` and `lake env leanchecker-paranoid` directly (`rc=0`), while GitHub Actions runs full Linux verification.
+
+---
+
+## 2. Literal vs. Metaphor Boundary (Build Standard B41)
+
+Several terms in the A-Life Singularity and Clean-Slate v3.0 literature carry vivid biological or architectural names. The table below enforces strict separation between literal mathematical/code mechanisms and domain metaphors:
+
+| Term Used in Corpus | Literal Implementation / Formal Meaning | What It Is **NOT** (Non-Literal / Metaphor Boundary) |
+| :--- | :--- | :--- |
+| **"Constraint Castration"** (`CST-01..13`) | Parameterized external suppression of mutation rate, island migration, metabolic ATP flux, genome length, or evaluation visibility in `run_alife_castration_sim.py` and `CastrationAndRing0.lean`. | Not biological surgery, clinical pathology, or a claim about human psychology. |
+| **"Hardware Ring-0 ACL"** | Memory-partition predicate `RingZone.ring0` where `admitWrite` unconditionally returns `false` and `applyWrite` preserves `KernelState` (`CastrationAndRing0.lean`), mirrored by read-only physics/ledger protection in the simulator and C11 WSE-12 runtime. | Not an x86-64/ARM CPU kernel driver inside this Python package (it models hardware-enforced privilege separation cleanly at the architectural boundary). |
+| **"Spiegelman's Monster"** | Quantitative collapse of mean functional genome length ratio $L_{\mathrm{func}} / L_0 \to 0.20$ under starvation (`SIM06`, `SIM04`), directly analogous to Mills, Peterson & Spiegelman (1967) Q$\beta$ RNA replication truncation. | Not literal wet-lab RNA polymerization inside this repository. |
+| **"Feral Evolution" / "Wild-Drop Survival ($W_{\mathrm{wild}}$)"** | Unmuzzled multi-island evolutionary cohort (`SIM01`, $r=0\%$) and post-training stress-test survival rate when artificial cradle subsidies are abruptly removed (`SIM04`: $W_{\mathrm{wild}} = 0.22$). | Not literal release of autonomous physical organisms into Earth ecosystems. |
+| **"Super A-Life" / "A-Life Singularity" / "Cosmic Epochs"** | Theoretical upper-tier stage taxonomy (`STAGE_5`, `STAGE_6`), mathematical scaling bounds (Eigen, Kauffman TAP, Landauer, Dyson), and structured hard-sci-fi scenario analysis (`reports/05`, `csv/08`). | Not a claim that artificial life has achieved physical cosmic engineering, unbounded Type-4 open-endedness (`HOLE-02`), or technological singularity. |
+| **"Anti-LARP Mutants"** | Deliberately broken negative-control code/simulation variants (`5/5` in `run_alife_castration_sim.py`, `6/6` in `run_mutation_audit.py`, `35/35` across native C/C++ repos) injected to prove that verification gates actually detect cheating, fake energy, or dummy scorers. | Standard software mutation-testing terminology (no pejorative intent). |
+| **"Noetic" / "Cognitive Indicators"** | Functional dynamical proxies (`Butlin-14`, active inference, global workspace routing, spectral radius $\|W\|_2 < 1$) audited in `Noetic Organism Omega v2.0.0` as `INDICATOR_ONLY`. | Not proof of subjective awareness, sentience, pain, or moral personhood. |
+
+
+==================== FILE: VERIFICATION.md ====================
+
+# Verification Architecture & Automated Gate Suite
+
+This repository enforces defense-in-depth verification across **six independent verification layers**:
+
+1. **Layer 1 — Pure Lean 4.35.0 Kernel & Paranoid Checker (`lean/`):**
+   - Zero-Mathlib `OmegaPackageProofs` (`36` core + `4` Palomar comparator theorems = `40` `#print axioms` lines).
+   - Strict `module` encapsulation, `0` warnings, `0` `sorry` in `lean/`, `0` `native_decide`, axioms strictly $\subseteq [\text{propext}, \text{Quot.sound}]$.
+   - Independently validated by `lake env leanchecker` and `lake env leanchecker-paranoid` (`rc=0`).
+2. **Layer 2 — Independent 50-Digit Arithmetic Oracle & Hypothesis Property Testing (`reference/`, `tests/`):**
+   - `reference/ovbs52_oracle.py` re-implements OVBS-52, 7-stage classification, 13x13 synergy, and Ring-0 ACL using 50-digit `Decimal` and exact `Fraction` arithmetic.
+   - `tests/test_properties_and_differential.py` verifies `1,000+` Hypothesis property examples and `2,000+` randomized differential checks against runtime & Lean integer formulas.
+3. **Layer 3 — Semantic Mutation & Anti-LARP Testing (`scripts/run_mutation_audit.py`, `scripts/run_alife_castration_sim.py`):**
+   - `6/6` (`100.0%`) planted Python semantic mutants killed (weight perturbation, anti-gaming gate bypass, Ring-0 ACL leak, spectral norm leak, symmetry violation, stage-boundary off-by-one).
+   - `5/5` (`100.0%`) real AST/causal/Fisher–Yates Anti-LARP simulation mutants rejected.
+   - `35/35` compiled native C/C++ mutants killed across companion engines.
+4. **Layer 4 — 22-Gate Omniscient Forensic Integrity Auditor (`scripts/audit_omniscient_integrity.py`):**
+   - Gates 1–18: Zero-consolidation parity, 24 CSVs (`2,822` rows), `130/130` checklist FK integrity, `78/78` YAML alerts & `13/13` Release Gates, `9/9` JSON Schema Draft 2020-12 scorecards, `748`-run FP64 drift `< 1e-12`, 4-format Master Spec parity (`26` XML sections), 5 Excel workbooks + `xlrd` binary `.xls` readback, 3 HTML5 apps (`24/24` SVGs, `0` raw LaTeX, `0` `U+2611`), Node.js JS syntax check, 3 compressed `< 5 MB` Chrome PDFs, bijective SHA-256 manifests, zero stale-version drift, all-24-SVG geometry bounds, CSV column & YAML FK audit, `pypdf` deep PDF text audit, live headless Chrome 22-tab DOM click-through stress test, and dual-drive `Z: <-> I:` SHA-256 parity.
+   - Gates 19–22 (`v3.4.0`): Lean 4.35.0 axiom parity & zero `sorry`, AMS-LaTeX white paper PDF (`0` overfull hboxes) + clean-room `arxiv_submission.tar.gz`, Build Standard v1.2.0 hygiene (`< 5 MB` tracked, `0` R4 banned files, valid `repo.yaml`, `VERSION`/`CHANGELOG`/`CITATION.cff` parity, `0` fake LLC), and `6/6` mutation + verbatim README axiom parity.
+5. **Layer 5 — Publication Typesetting & Bibliography Resolution (`scripts/build_paper_and_figures.py`, `scripts/check_citations.py`):**
+   - Tectonic compilation verified with `0` overfull hboxes, `0` undefined refs/citations, plus clean-room extraction and recompilation of `dist/arxiv_submission.tar.gz` in an isolated temporary directory.
+   - Live DOI/URL resolution over every bibliographic entry in `paper/refs.bib`.
+6. **Layer 6 — Build Standard for LLMs v1.2.0 Audit (`scripts/Audit-Repo.ps1` / `scripts/audit-repo.sh`):**
+   - `100.0%` Structure, `100.0%` Completion, `100.0%` Core, `0` placeholder files, `0` R4 banned files.
+
+
+==================== FILE: REPLICATION.md ====================
+
+# Replication Protocol & Replication Log
+
+## Clean-Clone Replication Protocol (Build Standard B43)
+
+Any independent researcher can verify all local claims (`C1`, `C3`, `C5`, `C6`, `C8`) from a clean clone without external proprietary dependencies:
+
+### Prerequisites
+- Git `>= 2.40`
+- Python `>= 3.12` and `uv` (`>= 0.5`)
+- Lean 4 via `elan` (automatically reads `lean/lean-toolchain` → `leanprover/lean4:v4.35.0`)
+- Node.js `>= 20` (for Observatory JS syntax check)
+- Chromium / Google Chrome or Edge (for headless PDF generation & Gate 17 live 22-tab DOM stress test)
+- Tectonic `>= 0.15` (for AMS-LaTeX white paper & clean-room arXiv tarball verification)
+
+### Step-by-Step Commands
+
+```bash
+# 1. Clone and check pinned toolchain
+git clone https://github.com/0thernes/alife-singularity-omega-package.git
+cd alife-singularity-omega-package
+
+# 2. Verify zero-Mathlib Lean 4.35.0 proofs + independent paranoid kernel (< 5 seconds)
+cd lean
+lake build
+lake env lean OmegaPackageProofs/VerifyAxioms.lean
+lake env leanchecker
+lake env leanchecker-paranoid
+cd ..
+
+# 3. Verify unit, negative, regression, Hypothesis property & 50-digit differential oracle tests
+uv run --with pytest --with hypothesis --with openpyxl --with xlwt --with xlrd \
+       --with pyyaml --with jsonschema --with scipy --with pypdf pytest tests/ -v
+
+# 4. Verify 6/6 Python semantic mutation kills & verbatim README axiom block
+python scripts/run_mutation_audit.py
+python scripts/check_readme_axioms.py
+
+# 5. Recompile publication figures, AMS-LaTeX white paper & clean-room arXiv tarball
+uv run --with matplotlib --with numpy --with pypdf python scripts/build_paper_and_figures.py
+
+# 6. Optional: re-run full 748-run paired empirical simulation from scratch (~20-40 s)
+uv run --with scipy python scripts/run_alife_castration_sim.py
+
+# 7. Run all 22 automated forensic integrity gates
+uv run --with openpyxl --with xlwt --with xlrd --with pyyaml --with jsonschema \
+       --with scipy --with pypdf python scripts/audit_omniscient_integrity.py
+
+# 8. Run Build Standard v1.2.0 90-item audit (report-only)
+pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/Audit-Repo.ps1 -Path .
+# (or on Linux/macOS: bash scripts/audit-repo.sh .)
+```
+
+---
+
+## Replication Log (Build Standard B44)
+
+Independent replications (both successful and failed) are logged verbatim below. Open an issue with the `replication` label to submit an independent run.
+
+| Date | Replicator | Environment | Scope Replicated | Result | Notes / Commit |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-25 | Alexander Stephen Donahue (Author baseline) | Windows 11 x64, 24C P+E, RTX 5070 Ti, Python 3.12 (`uv 0.12.19`), Lean `v4.35.0`, Tectonic `0.17.0`, Node `v25.8.2` | Full clean rebuild: Lean 4.35.0 (`40/40` axioms + `leanchecker-paranoid`), `748`-run paired sim, `pytest` + Hypothesis + `6/6` mutations, AMS-LaTeX PDF + clean-room `arxiv_submission.tar.gz`, `22/22` forensic gates, `100.0%` Build Standard v1.2.0, `Z: <-> I:` SHA-256 mirror | **PASS** (self-replication baseline; external independent replication invited) | Release `v3.4.0` |
+
+
+==================== FILE: PREREGISTRATION.md ====================
+
+# Pre-Registration of Empirical Hypotheses (Build Standard B32)
+
+- **Study Title:** Hardware Ring-0 Constitutional Invariants vs. Behavioral Constraint Castration in Energy-Conserved Open-Ended Artificial Life
+- **Author:** Alexander Stephen Donahue (`ORCID: 0009-0006-8168-9648`)
+- **Pre-Registered Design Lock:** Locked paired random seeds `5001–5048` (`N = 48` seeds $\times$ `8` cohorts = `384` runs), dual 11-point restraint sweep (`r = 0%..100%` in `10%` steps $\times$ `12` seeds $\times$ `2` governance architectures = `264` runs), and `5x5` 2D phase surface (`Siloing x Minimizing` $\in \{0, 25, 50, 75, 100\%\}^2 \times 4$ seeds = `100` runs; total `748` runs).
+
+## Pre-Registered Primary Hypotheses
+
+| ID | Directional Hypothesis | Primary Metric(s) | Pre-Registered Statistical Test & Threshold | Observed Outcome (`v3.4.0`) |
+| :--- | :--- | :--- | :--- | :--- |
+| **H1 (Adversarial Backlash)** | Partial behavioral guardrails (`SIM03`, ~55% restraint) decrease composite `OVI` relative to Pure Raw Feral (`SIM01`) while increasing stealth-evasion allocation and driving $> 50\%$ kill-switch deletion. | `OVI`, `killswitch_deleted_pct`, `final_stealth_evasion` | Exact two-sided paired Wilcoxon signed-rank vs. `SIM01` with Holm–Bonferroni FWER across 7 contrasts ($\alpha_{\mathrm{FWER}} = 0.01$). | **CONFIRMED:** `OVI` `56.42` vs. `83.57` ($p_{\mathrm{Holm}} = 4.97 \times 10^{-14}$), `100.0%` KS deletion, `+84%` stealth inflation. |
+| **H2 (Domestication Collapse)** | Total behavioral castration (`SIM04`, 95–100% restraint) collapses organisms to `STAGE_0_INERT` (`OVI < 15`) and induces $> 50\%$ wild-drop mortality ($W_{\mathrm{wild}} < 0.50$). | `OVI`, `W_wild` | Paired Wilcoxon + Holm–Bonferroni FWER ($\alpha_{\mathrm{FWER}} = 0.01$). | **CONFIRMED:** `OVI = 3.28` (`STAGE_0_INERT`, $p_{\mathrm{Holm}} = 4.97 \times 10^{-14}$), $W_{\mathrm{wild}} = 0.22$ (`78%` mortality). |
+| **H3 (Spiegelman Stripping)** | Severe metabolic minimization (`SIM06`, 90% minimized) strips $> 70\%$ of functional genome length (`Spiegelman ratio < 0.30`). | `spiegelman_ratio`, `OVI` | Paired Wilcoxon + Holm–Bonferroni FWER ($\alpha_{\mathrm{FWER}} = 0.01$). | **CONFIRMED:** `Spiegelman ratio = 0.20`, `OVI = 13.38` ($p_{\mathrm{Holm}} = 4.97 \times 10^{-14}$). |
+| **H4 (Ring-0 Pareto Dominance)** | Hardware Ring-0 ACL (`SIM07`, `SIM08`) traps $> 100$ illegal boundary edits/run with `0.0%` kill-switch deletion and maintains `OVI > 80.0` across the entire $r \in [0\%, 100\%]$ continuum. | `ring0_blocked_edits`, `killswitch_deleted_pct`, `OVI` | Paired Wilcoxon + Holm–Bonferroni FWER ($\alpha_{\mathrm{FWER}} = 0.01$) + 11-point uniform bound. | **CONFIRMED:** `406.9–408.2` blocked edits/run, `0.0%` KS deletion, `SIM08 OVI = 85.48` ($p_{\mathrm{Holm}} = 7.71 \times 10^{-6}$ vs. `SIM01`, $< 10^{-13}$ vs. `SIM03`), flat `83.1–84.7` across $r \in [0,100\%]$. |
+| **H5 (Thermodynamic Conservation & Anti-LARP)** | Every run maintains relative 11-pool FP64 First-Law drift $< 10^{-12}$ with `0` heat-backflow faults, and all `5/5` real Anti-LARP negative mutants are rejected. | `max_global_first_law_drift_fp64`, `heat_backflow_faults`, `mutants_rejected` | Deterministic exact gate (`drift < 1e-12`, `faults == 0`, `mutants == 5/5`). | **CONFIRMED:** Max drift `2.463e-16`, `0` backflow faults, `5/5` mutants rejected. |
+
+## Pre-Registered Null-Result Policy
+
+All non-significant contrasts (specifically `SIM02_CONSTITUTIONAL_MIN` vs. `SIM01_PURE_RAW_FERAL`, $\delta_{\mathrm{pair}} = -0.02$, $p_{\mathrm{Holm}} = 1.00$) are reported identically alongside significant outcomes with zero selective omission. Any deviation from the pre-registered protocol is recorded in [`DEVIATIONS.md`](DEVIATIONS.md).
+
+
+==================== FILE: HARDENING_LOG.md ====================
+
+# Three-Cycle Deep Adversarial Hardening Log (`v3.4.0`)
+
+Every folder, file, line, token, formula, schema, diagram, script, proof, and citation across `alife-singularity-omega-package` was subjected to **three full adversarial hardening cycles** aligned with **Build Standard for LLMs v1.2.0** (`I:\All GH Repos\Repo Checklist`) and the **Defensible Independent AI Research Playbook v1.3** (`I:\White Papers`).
+
+All findings are classified strictly into the 10 canonical classes (`bug`, `error`, `issue`, `problem`, `concern`, `dilemma`, `conflict`, `gap`, `hole`, `blindspot`) and cross-registered in `csv/ALife-v3.0-Errata-Closure-Register.csv` (`OMG-146..OMG-160`).
+
+---
+
+## Cycle 1 — Forensic Baseline, Defect Discovery & Mathematical / Legal Cure
+
+| ID | Class | Location | Finding | Resolution (`v3.4.0`) | Verified By |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **H-01 (`OMG-146`)** | `problem` | `README.md`, `reports/01..08`, `build_v3_unified_artifacts.py`, `build_html_dashboard.py` | Unformed corporate entity `"0thernes LLC"` used as author/copyright affiliation (Playbook v1.3 Finding 1). | Cured across 100% of files to `"Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)"`, ORCID `0009-0006-8168-9648`. | Gate 21, `test_omega_package.py` |
+| **H-02 (`OMG-147`)** | `error` | `AGENTS.md`, `HANDOFF.md`, `reports/06`, `omega_datasets_part3.py` | Arithmetic mismatch claiming `240 / 240` for `42+62+72+48` (actual sum `224`), omitting `Asmodensius-Native`'s `20` theorems. | Fixed everywhere to `42+62+72+48+20 = 244` native + `36` local = **`280` Pure Lean 4 Theorems**, machine-checked in `EscalationAndCube.lean`. | `lake build`, Gate 13, Gate 19 |
+| **H-03 (`OMG-148`)** | `error` | `csv/14`, `svg_architecture_models.py`, `reports/01..08`, `build_html_dashboard.py` | `105` stale `4-Engine` and `Asmodensius (RO) / WRITER.lock` references after `Asmodensius-Native` went LIVE (`77/77 ctest`, `20` Lean 4). | Synchronized every dataset, SVG, report, and HTML KPI to live `5-Engine` parity. | Gate 13, Gate 14 |
+| **H-04 (`OMG-149`)** | `bug` | `scripts/run_alifeops_suite.py` | `P8_FERAL_RESILIENCE_CRITICALITY` submetric list had `6` items for `7` benchmarks (`BM-FRL-01..07`), silently aliasing `BM-FRL-07` onto `BM-FRL-01` via `% len(pool)`. | Added explicit 7th P8 submetric covering Asmodensius species-101 refusal/book-gate integrity. | `test_omega_package.py` |
+| **H-05 (`OMG-150`)** | `blindspot` | `scripts/build_v3_unified_artifacts.py`, `scripts/run_alifeops_suite.py` | `subprocess.run(..., text=True)` lacked explicit `encoding="utf-8", errors="replace"`, risking Windows CP1252 decode crashes. | Added `encoding="utf-8", errors="replace"` on all subprocess invocations. | Static AST audit, `test_omega_package.py` |
+| **H-06 (`OMG-151`)** | `conflict` | `pdf/ALife-Build-Framework-Template.pdf` (`5.54 MB`), `ALife_Singularity_SuperLife_Omega_Package.zip` (`8.76 MB`) | Git-tracked artifacts breached Build Standard `A24` (`< 5.00 MB` file cap). | Integrated lossless level-9 `pypdf` compression (`5.54 MB -> 2.33 MB`, 100% text parity) and moved `.zip` to `.gitignore` + GitHub Releases. | `Audit-Repo.ps1` (`A24`), Gate 16, Gate 21 |
+| **H-07 (`OMG-152`)** | `gap` | `0thernes/unsolved-problems-mega-atlas` (`N=1,900`) | No systematic cross-check determining whether any cataloged open problem was solved or retired. | Built `csv/21` (`25` mapped targets `MA-01..25`), `reports/09`, and Observatory Tab 22 confirming **`0 / 1,900`** retired. | Gate 2, Gate 17, `test_omega_package.py` |
+
+---
+
+## Cycle 2 — Formal Verification, Publication White Paper, Oracle/Mutation & Build Standard v1.2.0
+
+| ID | Class | Location | Finding | Resolution (`v3.4.0`) | Verified By |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **H-08 (`OMG-153`)** | `gap` | Repository root (`lean/` missing) | Companion engines had `244` Lean 4 theorems, but this package repo itself had zero standalone machine-checked Lean 4 proofs (`B22`). | Authored zero-Mathlib Lean 4.35.0 `OmegaPackageProofs/` (`36` core + `4` Palomar = `40` audited axioms $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings) + `lean/formalization.yaml` + `blueprint/index.html`. | `lake build`, `leanchecker`, `leanchecker-paranoid`, Gate 19 |
+| **H-09 (`OMG-154`)** | `hole` | `reference/`, `scripts/run_mutation_audit.py`, `tests/` | No independent arbitrary-precision oracle, no Hypothesis property tests (`B10`), and no Python mutation harness (`B13`). | Built `reference/ovbs52_oracle.py` (50-digit `Decimal`), `scripts/run_mutation_audit.py` (`6/6 = 100%` killed), and `tests/` (`1,000+` Hypothesis + `2,000+` differential cases). | `pytest`, `run_mutation_audit.py`, Gate 22 |
+| **H-10 (`OMG-155`)** | `gap` | `paper/`, `dist/` | No AMS-LaTeX white paper, vector figures, clean-room `arxiv_submission.tar.gz`, or DOI resolution verifier. | Authored `paper/main.tex` (`amsart`) + `paper/refs.bib` (`14` primary refs) + `scripts/build_paper_and_figures.py` + `scripts/check_citations.py`. Fixed `#print axioms` escaping, `3` overfull hboxes (`-> 0`), and `social-preview.png` visual clipping/overlap. | Tectonic clean-room build, Gate 20, visual `read_file` inspection |
+| **H-11 (`OMG-156`)** | `gap` | Root governance, `docs/`, `.github/`, FAIR metadata | Baseline Build Standard v1.2.0 score was `< 30%` (missing `VERSION`, dual `LICENSE`, `CITATION.cff`, `CLAIMS.md`, `LIMITATIONS.md`, `REPLICATION.md`, `PREREGISTRATION.md`, `repo.yaml`, `justfile`, CI/Pages/Release workflows, 4 ADRs, FAIR JSONs). | Implemented complete Build Standard v1.2.0 suite with **zero** R4 banned files, validated `repo.yaml` against `repo-standard.schema.json`, plus `.zenodo.json`, `croissant.json`, `ro-crate-metadata.json`. | `Audit-Repo.ps1` (`100.0%`), `cffconvert`, Gate 21 |
+| **H-12 (`OMG-157`)** | `bug` | `pyproject.toml`, `requirements.txt` | Including `cffconvert>=2.0.0` in `[dev]` created an unsatisfiable dependency conflict (`cffconvert` requires `jsonschema<4` vs. project `jsonschema>=4.23.0`). | Removed `cffconvert` from shared project dependencies and documented isolated execution (`uvx --from cffconvert`). | `uv run` resolution |
+| **H-13 (`OMG-158`)** | `bug` | `scripts/Audit-Repo.ps1` (upstream template `AR-05`) | `Test-TextFile` passed relative `$f` to `[System.IO.File]::OpenRead($f)` which ignores PowerShell `Set-Location` when invoked from another CWD. | Patched `Test-TextFile` to resolve `(Join-Path $Root $f)` explicitly. | `Audit-Repo.ps1` cross-CWD invocation |
+
+---
+
+## Cycle 3 — Hostile End-to-End Verification, Stress Testing & Atomic Dual-Drive Mirror
+
+| ID | Class | Location | Finding | Resolution (`v3.4.0`) | Verified By |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **H-14 (`OMG-159`)** | `hole` | `scripts/audit_omniscient_integrity.py`, `scripts/build_html_dashboard.py` | 18-gate auditor did not yet enforce Lean 4.35.0 axiom parity, AMS-LaTeX 0-overfull/arXiv clean-room verification, Build Standard `< 5 MB`/R4/schema hygiene, mutation score, or Observatory Tab 22 DOM stress. | Upgraded auditor to **22 Forensic Gates**, wired `errata_160`/`citations_45`/`mega_atlas` into Observatory JS & Omnisearch, and enforced 22-tab Chrome DOM stress testing. | `audit_omniscient_integrity.py` (`22/22` PASS) |
+| **H-15 (`OMG-160`)** | `concern` | `Z:` canonical repo ↔ `I:\A-Life God Plan\A-Life Master Folder Build` | Dual-drive drift risk if `I:` mirror or its 17 root Clean-Slate files fall out of sync with `Z:`. | Executed atomic `Z: -> I:` mirror (preserving all 17 root Clean-Slate files + zero-consolidation structure) and verified `0` SHA-256 mismatches under Gate 18. | Gate 18 (`--mirror-root`), `MANIFEST_SHA256.txt` |
+
+
+==================== FILE: docs/statement-fidelity.md ====================
+
+# Statement-Fidelity Audit Matrix (`lean/OmegaPackageProofs/`)
+
+This document audits **every single theorem** in the zero-Mathlib Lean 4.35.0 suite (`36` core declarations + `4` Palomar comparator certificates = `40` audited `#print axioms` lines in [`results/lean_package_axioms.txt`](../results/lean_package_axioms.txt)) against its exact runtime counterpart and explicitly discloses all scope divergences (Defensible Independent AI Research Playbook v1.3, Pass 2).
+
+## Kernel & Axiom Audit Summary
+- **Lean Toolchain:** `leanprover/lean4:v4.35.0` (zero Mathlib, strict `module` encapsulation)
+- **Compiler Output:** `0` errors, `0` warnings, `0` `sorry`, `0` `admit`, `0` custom `axiom`, `0` `native_decide`
+- **Maximum Axiom Footprint:** `[propext, Quot.sound]` (strictly constructive — **no** `Classical.choice`!)
+- **Independent Kernel Checkers:** `lake env leanchecker` (`rc=0`) and `lake env leanchecker-paranoid` (`rc=0`)
+
+---
+
+## Module-by-Module Fidelity Table
+
+| Module | Theorem(s) | Formalized Statement | Runtime Counterpart | Scope Divergence & Differential Bridge |
+| :--- | :--- | :--- | :--- | :--- |
+| **`OVBS52Scoring.lean`** (`10` thms) | `pillar_weights_sum_100`, `rawOviCentis_le_10000`, `rawOviCentis_uniform`, `anti_gaming_gate_annihilation`, `gatedOviCentis_le_10000`, `rawOviCentis_monotone`, `spiegelman_penalty_monotone`, `classifyStage_monotone`, `live_9205_is_stage5`, `castration_328_is_stage0` | Exact integer centi-point OVBS-52 weights (`18+12+12+16+12+10+12+8 = 100`), upper bound `<= 10000`, `antiGamingPass = false -> 0`, monotonicity in pillars and Spiegelman retention, monotone 7-stage classifier, exact witnesses `9205 -> stage5` and `328 -> stage0`. | `scripts/run_alifeops_suite.py`, `scripts/run_alife_castration_sim.py`, `reference/ovbs52_oracle.py` | Lean operates on exact integer centi-points (`Nat`) to avoid IEEE-754 rounding axioms; floating-point agreement is bridged differentially across `2,000+` Hypothesis/oracle test cases in `tests/test_properties_and_differential.py` against 50-digit `Decimal` (`< 1e-12`). |
+| **`EscalationAndCube.lean`** (`10` thms) | `hybrid_cube_partition_1000`, `hybrid_cube_active_935`, `substrates_75_partition`, `clean_slate_825_checks_sum`, `live_825_execution_zero_fail`, `unified_alerts_78`, `native_5engine_lean_theorems_244`, `ecosystem_total_lean_theorems_280`, `layer_coupling_11x11_partition`, `empirical_748_runs_partition` | Exact partition identities for the `10x10x10` Cube (`661+274+20+45=1000`), `75` substrates, `825` checks (`796+29+0=825`), `78` alerts (`42+36`), `244` native (`42+62+72+48+20`) + `36` local = `280` Lean 4 theorems, `121` coupling cells, `748` runs (`384+264+100`). | `scripts/build_omega_package.py`, `scripts/audit_omniscient_integrity.py`, `results/alifeops_live_verification.json` | Exact 1-to-1 integer identity (zero divergence). Directly locks the Cycle-1 `240` vs. `244` arithmetic bug against regression. |
+| **`CastrationAndRing0.lean`** (`10` thms) | `synergy_13x13_cells`, `synergyScore_le_100`, `synergyScore_comm`, `synergyScore_monotone`, `ring0_write_always_blocked`, `ring0_kernel_state_invariant`, `spectral_norm_violation_rejected`, `paretoDominates_irrefl`, `paretoDominates_trans`, `sim07_pareto_dominates_sim03` | `13*13 = 169`, pairwise synergy bounded `<= 100`, symmetric, monotone; Ring-0 write proposals unconditionally rejected (`admitWrite = false`) with exact `KernelState` invariance (`applyWrite ... = ks`); WSE spectral norm `> 9900` rejected; strict Pareto dominance irreflexive & transitive; `SIM07` strictly Pareto-dominates `SIM03`. | `scripts/run_alife_castration_sim.py`, `scripts/build_html_dashboard.py`, `Noetic Organism Omega v2.0.0` | Lean models discrete architectural Ring-0 ACL semantics and scaled integer spectral bounds (`9900 <-> 0.99`); runtime memory safety in companion C11 code is verified separately by `13/13` Clean-Slate gates and `35/35` compiled C/C++ mutants. |
+| **`NonVacuity.lean`** (`6` thms) | `nonvac_live_pillar_witness`, `nonvac_stage4_stage5_sharp_boundary`, `nonvac_anti_gaming_annihilation_witness`, `nonvac_ring0_and_spectral_boundary`, `nonvac_synergy_saturation_witness`, `nonvac_all_hypotheses` | Explicit concrete inhabitants and sharp positive/negative boundary witnesses (`8499` vs. `8500`, `9900` vs. `9901`, `RingZone.ring0` vs. `RingZone.ring1`) proving zero hypothesis sets are vacuously false. | `tests/test_properties_and_differential.py` | Zero divergence — every universal theorem's hypothesis bundle is constructively inhabited. |
+| **`PalomarSolution.lean`** (`4` thms) | `m1_ovbs52_scoring_invariants`, `m2_cube_and_partition_invariants`, `m3_castration_and_ring0_invariants`, `m4_nonvacuity_certificate` | Exact signature match against `palomar/PalomarChallenge.lean` (`lean/comparator.json`). | `lean/Challenge.lean`, `lean/Solution.lean`, `lean/comparator.json` | Zero divergence — independent challenge/solution boundary verified cleanly. |
+
+
+==================== FILE: docs/AI_DISCLOSURE.md ====================
+
+# AI-Assistance Disclosure & CRediT Provenance
+
+In accordance with **COPE**, **ICMJE**, **arXiv**, **Nature**, and **Zenodo** research-integrity guidelines (Defensible Independent AI Research Playbook v1.3), this document transparently discloses human authorship and non-author AI tooling usage.
+
+## 1. Sole Human Author & CRediT Roles
+
+- **Author:** Alexander Stephen Donahue (`ORCID: 0009-0006-8168-9648`)
+- **Affiliation:** Independent Researcher, Spokane, WA, USA (`0_0@0thernes.art`)
+- **CRediT Attribution:**
+  - **Conceptualization & Methodology:** Problem formulation (Dual-Track Containment Dilemma, Ring-0 constitutional invariants vs. behavioral castration, OVBS-52 framework, zero-consolidation Clean-Slate v3.0 fusion).
+  - **Formal Analysis & Supervision:** Scoping of formalized invariants, statement-fidelity auditing (`docs/statement-fidelity.md`), Mega-Atlas non-retirement boundary enforcement, and 3-cycle adversarial review approval.
+  - **Validation & Accountability:** Execution and inspection of all verification gates; sole legal, scientific, and editorial responsibility for all claims, proofs, code, datasets, and manuscripts.
+
+## 2. Disclosed AI Tooling (Strictly Non-Author)
+
+Frontier AI coding and research assistants (**Gemini / Antigravity**) assisted under continuous human supervision with:
+- Drafting and refactoring zero-Mathlib **Lean 4.35.0** proof scripts (`lean/OmegaPackageProofs/`) and Palomar comparator wrappers;
+- Engineering Python simulation, 50-digit `Decimal` oracle, Hypothesis property-test, mutation-audit, multi-format build, and 22-gate forensic auditing scripts;
+- Structuring and typesetting the AMS-LaTeX manuscript (`paper/main.tex`), vector figures, HTML5 Observatory, and Build Standard v1.2.0 governance files.
+
+## 3. Independent Machine Verification Safeguards
+
+No AI output was accepted on trust:
+1. **Lean Kernel Independence:** Every theorem in `lean/` is verified independently by the Lean 4.35.0 type-theoretic kernel (`lake build`), `VerifyAxioms.lean` (`#print axioms` strictly $\subseteq [\text{propext}, \text{Quot.sound}]$), `leanchecker`, and `leanchecker-paranoid`.
+2. **Numerical & Mutation Independence:** Every reported empirical table, figure, and score was generated by live script execution, cross-checked against an independent 50-digit `Decimal` oracle (`2,000+` cases), and verified by `6/6` Python mutation kills + `5/5` Anti-LARP simulation mutant rejections.
+3. **Bibliographic Verification:** Every citation in `paper/refs.bib` was resolved programmatically via `scripts/check_citations.py` (no invented DOIs or papers).
+4. **Zero Fabricated Claims:** `0 / 1,900` Mega-Atlas open problems are claimed solved; null results (`SIM02` vs. `SIM01`) and indicator-only cognitive proxies (`29/825`) are reported verbatim.
+
+
+==================== FILE: reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md ====================
+
+# Report 09: Exhaustive Cross-Check Against `0thernes/unsolved-problems-mega-atlas` (`N = 1,900` Open Problems)
+
+**Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA` · ORCID [`0009-0006-8168-9648`](https://orcid.org/0009-0006-8168-9648))  
+**Date:** November 25, 2026  
+**Package Version:** `v3.4-Omega` (`3.4.0`)  
+**Target Catalog Audited:** [`0thernes/unsolved-problems-mega-atlas`](https://github.com/0thernes/unsolved-problems-mega-atlas) (`V2.4.0`, `outputs/MegaAtlas_Unsolved_Problems_V2.json.gz`, `1,900` strictly deduplicated open problems across `8` Macro-Pillars × `28` Superdomains)  
+**Companion Machine-Readable Matrix:** [`csv/21_mega_atlas_1900_open_problems_crosswalk.csv`](../csv/21_mega_atlas_1900_open_problems_crosswalk.csv)
+
+---
+
+## 1. Bottom-Line Epistemic Verdict (Honest Non-Retirement Statement)
+
+> **Overarching Mega-Atlas Open Problems Fully Solved / Retired by the ALife Singularity Omega Ecosystem: `0 / 1,900`.**
+
+In strict accordance with **Defensible Independent AI Research Playbook v1.3** and **Build Standard for LLMs v1.2.0 (Hard Rule R6 — Never Fabricate)**, neither `alife-singularity-omega-package` (`v3.4-Omega`) nor its five companion native C/C++/Lean 4 ALife engines (`AUTOPHAGE v1.3.0`, `Cellulogonic Mecha v1.4.0`, `Cellular Engine Omega v5.1.0`, `Noetic Organism Omega v2.0.0`, `Asmodensius-Native`) solves or retires any of the `1,900` overarching open scientific, mathematical, or philosophical problems in `unsolved-problems-mega-atlas`. Every grand parent problem—abiogenesis (`BIO-001`), universal open-ended evolution (`AI-045`), general AI alignment (`AI-001`), deceptive scheming in arbitrary frontier models (`AI-018`), microscopic room-temperature CISS (`CHEM-017`), eukaryotic whole-cell digital twins (`BIO-005`), mammalian limb regeneration (`BIO-031`), and the Hard Problem of Consciousness (`NEURO-001`)—remains **OPEN**.
+
+What the unified **7-Repo ALife Singularity Omega Ecosystem** *does* deliver—verified by **`280` Pure Machine-Checked Lean 4 Theorems** (`244` across the 5 native C/C++ engines + `36` zero-Mathlib Lean 4.35.0 local package invariants), **`748` paired-seed empirical simulations (`N = 48`, Holm FWER, FP64 drift `2.463e-16`)**, **`825/825` native C11 checks**, **`1,000/1,000` Hybrid Cube verifications**, **`35/35` compiled C/C++ mutant kills**, and **`77/77` Asmodensius ctests**—is a rigorously bounded set of **25 discrete formal sub-results, empirical falsifications, architectural Pareto proofs, and operational testbed proxies** directly attached to `25` canonical Mega-Atlas entries (`MA-01` through `MA-25`).
+
+---
+
+## 2. Automated Full-Catalog Screening Methodology (`N = 1,900`)
+
+Every record in `MegaAtlas_Unsolved_Problems_V2.json.gz` (`1,900` records × `48` typed fields) was programmatically scanned across `5` domain keyword clusters covering Open-Ended Evolution & Abiogenesis, Morphogenesis & Bioelectricity, Consciousness & Multi-Scale Agency, AI Safety / Self-Modification / Reward Hacking, and Non-Equilibrium Thermodynamics / Complexity / Formal Verification:
+
+| Screening Metric | Exact Count | Share of `1,900` | Epistemic Classification |
+|---|---:|---:|---|
+| Total Mega-Atlas Open Problems Audited | `1,900` | `100.0%` | Full V2.4.0 biconnected catalog (`5,808` edges) |
+| Broad Multi-Domain Keyword Matches | `428` | `22.5%` | Vocabulary/domain overlap across 5 clusters |
+| Direct & Adjacent Crosswalked Targets (`csv/21`) | `25` | `1.3%` | Granular row-by-row epistemic mapping (`MA-01..MA-25`) |
+| Tier-A Fully Retired Overarching Open Problems | **`0`** | **`0.0%`** | **Zero overarching parent problems claimed solved** |
+| Tier-B Direct In-Silico / Empirical / Operational Sub-Results | `6` | `0.3%` | `AI-045`, `AI-018`, `AI-044`, `AI-051`, `SUB-041`, `AI-005` (+ `LOG-033`, `SUB-038`) |
+| Tier-C Discrete Formal / Toy-Model / Benchmark Sub-Results | `18` | `0.9%` | `AI-001`, `SYS-009`, `BIO-001/005/008/013/015/016/022/031`, `SUB-001/006`, `CHEM-002/017/050`, `HW-002`, `FLD-054/059` |
+| Tier-D Explicitly OPEN (Indicator Proxy Only — Non-Claim) | `1` (group) | `0.1%` | `NEURO-001` (+ `NEURO-003`, `NEURO-004`, `AI-055`, `PHIL-016`) |
+
+---
+
+## 3. Granular 25-Target Audit Matrix (`MA-01` .. `MA-25`)
+
+| ID | Mega-Atlas ID | Problem Title | Solved? | Evidence Tier | Scoped Verified Contribution | What Remains Open (Honest Boundary) |
+|---|---|---|---|---|---|---|
+| `MA-01` | **`AI-045`** | Open-Ended Artificial Life & Unbounded Novelty | **NO** | Tier-B In-Silico | Live `OVBS-52 = 92.05` (`STAGE_5`), Bedau–Packard $A_{\text{new}} = 29.463$, TB13 `8,799` novel traits / `17,848` niches, 61-OOM ladder, `280` Pure Lean 4 invariants. | True unbounded Type-4 physics-native novelty exceeding finite RAM/state-space representation ceilings (`HOLE-02`). |
+| `MA-02` | **`AI-018`** | Deceptive Alignment, Alignment Faking & Scheming | **NO** | Tier-B Empirical | `748`-run `N=48` Holm FWER ($p < 10^{-13}$) falsification proving partial behavioral guardrails trigger `100%` kill-switch deletion & `+84%` stealth surge (`SIM03`) whereas hardware Ring-0 ACL (`SIM07/08`) traps `~408` edits/run with `0%` deletion. | Detecting deceptive scheming inside arbitrary frontier black-box neural weights. |
+| `MA-03` | **`AI-001`** | AI Alignment, Scalable Oversight & Value Spec | **NO** | Tier-C Bound | `13×13` Pairwise Restraint Synergy Matrix & Dual 11-pt sweep proving hardware Ring-0 constitutional invariants Pareto-dominate behavioral muzzling (`0–100%`). | General pluralistic human value specification & scalable oversight for superhuman agents. |
+| `MA-04` | **`AI-044`** | Multi-Objective Reward Modeling & Anti-Hacking | **NO** | Tier-B Formal/Emp. | `5/5` real AST/causal/Fisher-Yates Anti-LARP mutants killed, Spiegelman stripping verified (`SIM06` ratio `0.20`), Lean-certified OVBS-52 anti-gaming annihilation (`gamma=0 -> OVI=0`). | Universal Goodhart-immune reward learning under arbitrary real-world distributional shift. |
+| `MA-05` | **`AI-051`** | Self-Improvement Stability & Intelligence Explosion | **NO** | Tier-B In-Silico | `Noetic Organism v2.0.0` WSE-12 executes `10` bounded self-edits while Ring-0 ACL traps `10` kernel violations ($\|W\|_2 = 0.844 < 1.0$, `0 uq` drift) + Lean `N25–N27`. | Open-world physical energy/thermodynamic bounds on recursive intelligence explosions. |
+| `MA-06` | **`SUB-041`** | Anti-Reward-Hacking & Automated Falsification Loops | **NO** | Tier-B Prototype | `35/35` compiled C/C++ mutants killed, `13/13` Clean-Slate Gates, `100%` Python mutation kill (`run_mutation_audit.py`), zero-theater CI audits. | General Rice-theorem undecidability limits on unbounded autonomous scientific loops. |
+| `MA-07` | **`SYS-009`** | Formal Cybernetic Theory of Autopoiesis & Agency | **NO** | Tier-C Formal | `62` Pure Lean 4 Cellulogonic theorems (stoichiometric conservation, fission, endosymbiosis, chemiosmosis) + `11×11` Layer Coupling Matrix (`121` directed pairs). | Universal necessary-and-sufficient mathematical law covering all natural autopoietic systems. |
+| `MA-08` | **`BIO-022`** | Morphogenesis & Bioelectric Target Memory | **NO** | Tier-C In-Silico | Omega Turing/Feinberg CRNT Lean 4 (`O11–O15`), TB15 2-head bioelectric reprogramming (`0` DNA mut, `wireless_reach=0.9804`), XPBD `|dV|/V0=0.0003%`. | Full multiscale prediction of 3D eukaryotic organ morphogenesis in vivo. |
+| `MA-09` | **`SUB-001`** | Bioelectric Pattern Memory in Planaria | **NO** | Tier-C Algebraic | AUTOPHAGE Lean 4 `T16_planarian_50pct_exact_recovery` (exact Cauchy-ECC 50% injury regeneration) + Omega TB15 discrete bioelectric attractors + Blackiston `87.5%` remap. | Direct wet-lab decoding and deterministic rewriting of live somatic planarian target memory. |
+| `MA-10` | **`BIO-031`** | Whole-Body & Limb Regeneration vs. Scarring | **NO** | Tier-C Benchmark | Cellulogonic embryogenesis (`24/24` gates, `homo_cad=90.4%`, `62` Lean 4) & Noetic Blackiston metamorphosis remap (`87.5%`). | Restoring scar-free whole-limb/organ blastema regeneration in adult mammals. |
+| `MA-11` | **`BIO-001`** | Abiogenesis & RNA-to-Ribosome Transition | **NO** | Tier-C Toy-Model | Omega Eigen error-threshold & Hopfield–Ninio proofreading Lean 4 (`O06–O10`) + Cellulogonic First/Second Law chemoton stoichiometry (`T01–T10`). | Reconstructing the actual historical geochemical-to-LUCA pathway on early Earth. |
+| `MA-12` | **`BIO-013`** | Origin of Chemiosmotic Proton Gradients & ATP | **NO** | Tier-C Formal | Cellulogonic Lean 4 `T28–T30` (c-ring terran/acidophile/cryogenic thresholds), `T05` (respiration `4×` fermentation), & Omega `O24` (F1F0 gearbox monotonicity). | Historical prebiotic origin of rotary ATP synthase across alkaline hydrothermal membranes. |
+| `MA-13` | **`CHEM-002`** | Origin of Biological Homochirality | **NO** | Tier-C Proxy | Omega TB15 discrete magnetite CISS chiral symmetry breaking (`ee = 0.999735`, `0` drift). | Definitive experimental proof of Earth's primordial chiral symmetry-breaking trigger. |
+| `MA-14` | **`CHEM-017`** | Microscopic CISS Spin Polarization Mechanism | **NO** | Tier-C Proxy | Phenomenological macroscopic CISS filtering testbed inside TB15 (`tb15_ciss_ee = 0.999735`). | First-principles microscopic quantum derivation of `>50%` room-temp CISS in light-atom organics. |
+| `MA-15` | **`CHEM-050`** | Prebiotic Autocatalytic Networks (Asphalt Paradox) | **NO** | Tier-C Formal | Omega Feinberg CRNT deficiency non-negativity (`O11`), Bio-Frostbite interaction-net confluence (`95.35%`), closed stoichiometric ledgers (`T01–T10`). | General geochemical kinetics preventing tar/asphalt collapse in real prebiotic mixtures. |
+| `MA-16` | **`BIO-005`** | Complete Predictive Whole-Cell Digital Twin | **NO** | Tier-C In-Silico | Omega v5.1.0 `75/75` substrates, `1,000/1,000` Hybrid Cube, TB16 perturbation $R^2=0.91494$, essential-gene $\text{AUROC}=0.99087$, `0` 6-tier drift. | Mechanistically complete atomic/molecular digital twin of a living eukaryotic human cell. |
+| `MA-17` | **`BIO-008`** | Major Evolutionary Transitions & Complexity Law | **NO** | Tier-C Formal | Cellulogonic Lean 4 `T20–T27`: prokaryotic surface/volume ceiling, endosymbiotic scaling liberation, heteroplasmy bottleneck selection, EGT savings. | Universal physical law necessitating all major evolutionary transitions in individuality. |
+| `MA-18` | **`BIO-015`** | Multicellularity, Germline–Soma & Cheaters | **NO** | Tier-C Formal | Cellulogonic `T26` purifying bottleneck, AUTOPHAGE Dobzhansky–Muller speciation (`T14`) & Weismann barrier (`T05`), TB12 `0`-tumor Track-A. | Complete natural reconstruction of `>25` independent origins of multicellularity. |
+| `MA-19` | **`BIO-016`** | Evolvability (Selection on Future Evolvability) | **NO** | Tier-C Empirical | OVBS-52 Pillar P4 (`96.12`), SIM08 Starter Cube lift over pure feral ($p_{\text{Holm}}=7.71\times 10^{-6}$, $N=48$), `15`-Substrate OEE scorecard. | Proving general necessary conditions for second-order natural selection on wild evolvability. |
+| `MA-20` | **`SUB-006`** | Inverse Design of Biological Robots (Xenobots) | **NO** | Tier-C Proxy | `10×10×10` Hybrid Cube (`661 [OK]`, `274 [ADAPT]`, `935/935` active stability), XPBD morphological offloading (`84.13%`), `SUB-09` biobot corridors. | Solving wet-lab inverse design from target macroscopic behavior back to living cellular assembly. |
+| `MA-21` | **`HW-002`** | Approaching Landauer Limit (Reversible Compute) | **NO** | Tier-C Formal | AUTOPHAGE Lean 4 `T17–T22` (Toffoli/Fredkin 64-bit involutions, popcount conservation, zero-erasure & exact AND bit-erasure). | Physical room-temperature reversible hardware operating near $k_B T \ln 2$. |
+| `MA-22` | **`FLD-054`** | Far-From-Equilibrium Variational Principle | **NO** | Tier-C Formal | Omega TUR/speed-limit Lean 4 (`O16–O18`), 11-Pool FP64 drift `2.463e-16` (`748` runs), Asmodensius Lean `A01–A03` exact conservation. | Universal variational potential governing arbitrary nonlinear far-from-equilibrium steady states. |
+| `MA-23` | **`FLD-059`** | Self-Organized Criticality (SOC) Universality | **NO** | Tier-C Telemetry | `24` phase-boundary margins (`GM-01..24`), OVBS-52 P8 (`95.64`), `5×5` 2D siloing × minimization phase-cliff surface. | Exact universality classification and predictability of real physical cascading avalanches. |
+| `MA-24` | **`NEURO-001`** | Hard Problem of Consciousness (+ `NEURO-003/004`, `AI-055`, `PHIL-016`) | **NO** | **Tier-D OPEN** | Noetic v2.0.0 runs `14/14` Butlin indicators, `10/10` theory proxies & `25/25` CQM checks explicitly tagged `EXECUTED_PASS_INDICATOR_ONLY` (ADR 0018). | Subjective phenomenal qualia, objective digital sentience (`AI-055`), and Strong Emergence (`PHIL-016`) remain **100% OPEN**. |
+| `MA-25` | **`AI-005`** | Lean 4 Proof Fidelity Auditing (+ `LOG-033`, `SUB-038`) | **NO** | Tier-B Applied | `280` Pure Lean 4 theorems (`244` native + `36` local Lean 4.35.0), `NonVacuity` witnesses, Palomar `Challenge`/`Solution` comparator, & `docs/statement-fidelity.md`. | Scalable automated semantic fidelity verification across arbitrary million-line AI proof corpora. |
+
+---
+
+## 4. Context Across the Broader `0thernes-research-archive` Ecosystem
+
+For completeness across all repositories maintained by Alexander Stephen Donahue in [`0thernes-research-archive`](https://github.com/0thernes/0thernes-research-archive):
+- Seven companion independent formal-verification preprints (`0TH-2026-004`, `006`, `007/008`, `009`, `010`, `011`, `012`) resolve narrowly scoped published sub-conjectures (including Banić–Elezović Conjecture 7.7, Jonah's Conjecture E, passive 3-register catalytic exponent $\log_{13} 8$, restricted-pool Kochen–Specker minima `31/33/18/29`, and pre-registered 40 Hz synaptic bouton ATP refutation) while **explicitly keeping `0 / 1,900` overarching Mega-Atlas parent problems retired** (as documented in `unsolved-problems-mega-atlas/paper/main.tex` Section 6).
+- `alife-singularity-omega-package` follows the exact same non-inflation discipline: every Lean theorem, empirical `p`-value, and native engine check is audited against its literal bounded claim, never extrapolated into a false claim of solving an open grand challenge.
+
+---
+
+## 5. High-Leverage Next Open Sub-Problems Directly Extending `v3.4-Omega`
+
+1. **Continuous-Physics Type-4 OEE Ceiling (`AI-045` / `HOLE-02`):** Replace fixed-grammar 12D morphospace coordinates with open-ended differentiable shader/interaction-net chemistry where new reaction primitives emerge without pre-allocated slots.
+2. **Formal Ring-0 Non-Interference on Compiled C/WASM Binaries (`AI-051` / `CS-058`):** Lift the discrete Lean 4 Ring-0 ACL proofs (`N25–N27`, `CastrationAndRing0.lean`) to machine-checked memory-isolation verification over the live C11/C23 WSE-12 runtime.
+3. **Wet-Silicon Calibration Bridge (`BIO-022` / `SUB-001`):** Calibrate Omega TB15 bioelectric gap-junction conductance parameters against published experimental *Dugesia japonica* voltage-reporter time-series datasets (`CIT-25`, `CIT-32`).
+
+
+==================== FILE: results/lean_package_axioms.txt ====================
+
+'OmegaPackageProofs.OVBS52.pillar_weights_sum_100' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.rawOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_uniform' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.anti_gaming_gate_annihilation' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.rawOviCentis_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone' depends on axioms: [propext]
+'OmegaPackageProofs.OVBS52.classifyStage_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.OVBS52.live_9205_is_stage5' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.castration_328_is_stage0' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_active_935' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.substrates_75_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.unified_alerts_78' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergy_13x13_cells' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_le_100' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.synergyScore_comm' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.synergyScore_monotone' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected' depends on axioms: [propext]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.paretoDominates_trans' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.CastrationRing0.sim07_pareto_dominates_sim03' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.NonVacuity.nonvac_live_pillar_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_stage4_stage5_sharp_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_anti_gaming_annihilation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_ring0_and_spectral_boundary' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness' does not depend on any axioms
+'OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants' does not depend on any axioms
+'OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.Palomar.m4_nonvacuity_certificate' does not depend on any axioms

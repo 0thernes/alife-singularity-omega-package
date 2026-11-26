@@ -1,0 +1,36 @@
+# A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0)
+
+> Zero-consolidation scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool FP64 conservation, Philox4x32-10, XPBD, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro A-Life Singularity metrology (OVBS-52, 78-alert ALifeOps YAML, 748-run paired falsification, 280 Pure Lean 4 theorems, AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit).
+
+## Core Entry Points
+
+- [README.md](README.md): Overview, 5-second Lean 4.35.0 verification, quickstart, honest boundary, file directory
+- [CLAIMS.md](CLAIMS.md): Numbered claims ledger (`C1–C8`) with epistemic tiers and explicit falsification conditions
+- [EVIDENCE.md](EVIDENCE.md): Primary verification artifact map per claim
+- [LIMITATIONS.md](LIMITATIONS.md): Threats to validity and Literal-vs-Metaphor boundary table
+- [VERIFICATION.md](VERIFICATION.md): Six-layer verification architecture (`22/22` Forensic Gates + `90`-item Build Standard)
+- [REPLICATION.md](REPLICATION.md): Clean-clone step-by-step replication protocol and replication log
+- [HARDENING_LOG.md](HARDENING_LOG.md): 3-cycle adversarial hardening log classified under the 10 finding classes
+- [INDEX.md](INDEX.md): Complete folder/file/byte/token master index across the entire repository
+
+## Formal Proofs & Mathematical Verification
+
+- [lean/README.md](lean/README.md): Zero-Mathlib Lean 4.35.0 suite (`36` core + `4` Palomar = `40` audited axioms)
+- [results/lean_package_axioms.txt](results/lean_package_axioms.txt): Verbatim `#print axioms` output strictly within `[propext, Quot.sound]`
+- [docs/statement-fidelity.md](docs/statement-fidelity.md): 1:1 mapping from every Lean theorem to runtime code and scope divergences
+- [reference/ovbs52_oracle.py](reference/ovbs52_oracle.py): Independent 50-digit `Decimal`/`Fraction` test oracle
+- [blueprint/index.html](blueprint/index.html): Interactive SVG dependency graph of all 40 formalized declarations
+
+## White Paper & Empirical Reports
+
+- [paper/main.tex](paper/main.tex): Publication AMS-LaTeX manuscript (`dist/Donahue_2026_alife_singularity_omega.pdf`)
+- [reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md](reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md): 1,900-problem Mega-Atlas audit (`0/1,900` retired, `25` mapped targets)
+- [reports/01_MASTER_DEEP_DIVE_REPORT.md](reports/01_MASTER_DEEP_DIVE_REPORT.md): Master deep-dive treatise & physical derivations
+- [reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md](reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md): 11x11 layer coupling, 15 substrates, 20 Pareto frontiers & 2D phase surface
+
+## Interactive & Structured Artifacts
+
+- [html/ALife_Singularity_SuperLife_Omega_Dashboard.html](html/ALife_Singularity_SuperLife_Omega_Dashboard.html): 22-tab offline interactive Observatory
+- [specs/ALife-Framework-v3.0-Master-Spec.json](specs/ALife-Framework-v3.0-Master-Spec.json): Canonical unified JSON Master Spec (`3.4.0-omega`)
+- [pipelines/alifeops-master-pipeline.yaml](pipelines/alifeops-master-pipeline.yaml): 78-alert / 13-gate ALifeOps master pipeline
+- [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md): Transparent human CRediT and non-author AI tooling provenance

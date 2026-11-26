@@ -1,0 +1,45 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+      "about": { "@id": "./" }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "./",
+      "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0)",
+      "version": "3.4.0",
+      "datePublished": "2026-11-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "author": { "@id": "https://orcid.org/0009-0006-8168-9648" },
+      "hasPart": [
+        { "@id": "dist/Donahue_2026_alife_singularity_omega.pdf" },
+        { "@id": "dist/arxiv_submission.tar.gz" },
+        { "@id": "results/lean_package_axioms.txt" },
+        { "@id": "results/empirical_sim_summary.json" },
+        { "@id": "results/alifeops_live_verification.json" },
+        { "@id": "csv/21_mega_atlas_1900_open_problems_crosswalk.csv" },
+        { "@id": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html" },
+        { "@id": "data/MANIFEST.sha256" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0006-8168-9648",
+      "name": "Alexander Stephen Donahue",
+      "affiliation": "Independent Researcher, Spokane, WA, USA",
+      "email": "0_0@0thernes.art"
+    },
+    { "@type": "File", "@id": "dist/Donahue_2026_alife_singularity_omega.pdf", "encodingFormat": "application/pdf" },
+    { "@type": "File", "@id": "dist/arxiv_submission.tar.gz", "encodingFormat": "application/gzip" },
+    { "@type": "File", "@id": "results/lean_package_axioms.txt", "encodingFormat": "text/plain" },
+    { "@type": "File", "@id": "results/empirical_sim_summary.json", "encodingFormat": "application/json" },
+    { "@type": "File", "@id": "results/alifeops_live_verification.json", "encodingFormat": "application/json" },
+    { "@type": "File", "@id": "csv/21_mega_atlas_1900_open_problems_crosswalk.csv", "encodingFormat": "text/csv" },
+    { "@type": "File", "@id": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html", "encodingFormat": "text/html" },
+    { "@type": "File", "@id": "data/MANIFEST.sha256", "encodingFormat": "text/plain" }
+  ]
+}

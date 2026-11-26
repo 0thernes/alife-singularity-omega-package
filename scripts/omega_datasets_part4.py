@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
-Canonical Structured Datasets (Part 4 of 4 — v3.2-Omega Pass-4 Comparative & Gradient Expansion).
+Canonical Structured Datasets (Part 4 of 6 — Pass-4 Comparative & Gradient Expansion, synced v3.4-Omega).
 Covers:
   15. Gradients, Operating Margins & Phase-Boundary Spectrums Matrix (24 Quantitative Continuous Regimes)
   16. Comparative Contrast Across Layers (L0-L10), Taxonomies & Paradigms Matrix (36 Systematic Contrasts)
@@ -424,7 +425,7 @@ CONTRAST_LAYERS_ROWS = [
      "P4 | DIL-02 | BUG-01 | ALF-015/016"],
     ["CTR-36", "Paradigm Contrast", "Zero-Consolidation Omniscient Sync vs. Siloed Multi-Format Drift",
      "Hand-editing PDFs, CSVs, Excel & Markdown separately -> silent ID/number divergence",
-     "Single-source-of-truth Python orchestrator + 18-Gate Forensic Auditor across 77+ files",
+     "Single-source-of-truth Python orchestrator + 22-Gate Forensic Auditor across 140+ synchronized artifacts",
      "Live bidirectional foreign keys linking 17 v3.0 + 60+ Omega + bridge artifacts",
      "Self-verifying cryptographic knowledge graphs across every human/machine format",
      "0 consolidation (every file preserved & enriched) + 0 drift + 100% Z:==I: SHA-256 parity",

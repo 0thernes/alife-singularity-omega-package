@@ -1,0 +1,10 @@
+# Protocol Deviations Log
+
+All methodological, statistical, or toolchain deviations from initial design plans (`v2.1-Omega` through `v3.4.0`) are logged transparently below:
+
+| Date | Version | Deviation | Rationale | Impact on Claims |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-10-18 | `v2.1-Omega` | Removed an unintended upward mutational drift bias on `stealth_evasion` discovered during initial 6-cohort testing in `run_alife_castration_sim.py`. | Eliminated artificial stealth inflation in baseline feral cohorts (`SIM01`). | Made `SIM03` stealth backlash (`+84%`) a genuine causal effect of partial restraint selection rather than mutation bias. |
+| 2026-11-16 | `v3.3-Omega` | Expanded paired simulation sample size from `N=24` (`324` runs) to `N=48` (`748` runs) and added the dual 11-point Ring-0 sweep plus `5x5` 2D phase surface. | Resolved under-powered statistical margin between `SIM07`/`SIM08` and `SIM01` under Holm–Bonferroni FWER correction. | Improved statistical precision without altering pre-registered directional hypotheses (`H1–H5`). |
+| 2026-11-25 | `v3.4.0` | Upgraded Chrome PDF pipeline with lossless level-9 `pypdf` stream compression (`compress_identical_objects(remove_duplicates=True, remove_unreferenced=True)`) and removed the local `ALife_Singularity_SuperLife_Omega_Package.zip` archive from Git tracking (still generated locally & attached to GitHub Releases). | Enforced Build Standard v1.2.0 `A24` (`< 5.00 MB` cap on all Git-tracked files); `ALife-Build-Framework-Template.pdf` shrank from `5.54 MB` to `2.33 MB` with `100%` text extraction parity. | Zero content or visual change; full compliance with Git hygiene standards. |
+| 2026-11-25 | `v3.4.0` | On Windows hosts, local Lean 4.35.0 paranoid verification invokes `lake env leanchecker` and `lake env leanchecker-paranoid` directly instead of `lake check --paranoid` (which requires Linux `bwrap`). | `bwrap` is Linux-only; Ubuntu GitHub Actions CI runs the Linux kernel workflow while Windows verifies identical binary checkers directly. | Zero reduction in kernel verification strength (`leanchecker-paranoid` verifies the exact same environment). |

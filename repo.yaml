@@ -1,0 +1,117 @@
+standard: "1.2.0"
+name: "alife-singularity-omega-package"
+description: "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0): Hardware Ring-0 constitutional invariants, 748-run paired falsification, 280 Pure Lean 4 theorems, AMS-LaTeX white paper, and 1,900-problem Mega-Atlas non-retirement audit."
+owner: "0thernes"
+year: 2026
+project_type: "research"
+stack:
+  - "python"
+  - "other"
+flags:
+  public: true
+  package: true
+  visual: true
+  ui: true
+  native: false
+  ai: false
+  personal_data: false
+  service: false
+  deployed: false
+  api: true
+  perf: true
+  concurrent: false
+  numeric: true
+  experimental: true
+  ml: false
+  formal: true
+items:
+  A01: { status: done, evidence: "README.md opening line states exact repository purpose." }
+  A02: { status: done, evidence: "README.md badge ribbon with shields.io badges." }
+  A03: { status: done, evidence: "README.md Quickstart section reproducible from clean clone." }
+  A04: { status: done, evidence: "README.md Usage & Examples section plus examples/quickstart_demo.py." }
+  A05: { status: done, evidence: "README.md embeds docs/media/social-preview.png." }
+  A06: { status: done, evidence: "Dual LICENSE (CC-BY-4.0) and LICENSE-CODE (Apache-2.0)." }
+  A07: { status: done, evidence: "CHANGELOG.md follows Keep a Changelog through v3.4.0." }
+  A08: { status: done, evidence: "VERSION (3.4.0) synced with CHANGELOG.md, CITATION.cff, pyproject.toml, and lean/formalization.yaml." }
+  A09: { status: done, evidence: "tests/test_omega_package.py and tests/test_properties_and_differential.py pass 100%." }
+  A10: { status: done, evidence: ".github/workflows/ci.yml runs report-only on push." }
+  A11: { status: done, evidence: ".github/workflows/release.yml triggers on v* tags with SHA256SUMS." }
+  A12: { status: done, evidence: ".gitignore excludes caches, .lake, paper/build, .env, and >5MB local release zip." }
+  A13: { status: done, evidence: ".gitattributes and .editorconfig enforce UTF-8 LF hygiene." }
+  A14: { status: done, evidence: "CONTRIBUTING.md defines trunk workflow and 10 finding classes." }
+  A15: { status: done, evidence: "CODE_OF_CONDUCT.md (Contributor Covenant 2.1)." }
+  A16: { status: done, evidence: "SECURITY.md documents supported version and private advisory reporting." }
+  A17: { status: done, evidence: "SUPPORT.md directs users to FAQ, replication guide, and issue templates." }
+  A18: { status: done, evidence: ".github/ISSUE_TEMPLATE/{bug,feature,question,academic-review,config}.yml with zero PR templates." }
+  A19: { status: done, evidence: "GitHub About description and topics documented in repo.yaml, CITATION.cff, and .zenodo.json." }
+  A20: { status: done, evidence: "docs/ folder with architecture.md, index.md, methodology, datasheet, AI disclosure, and statement fidelity." }
+  A21: { status: done, evidence: "docs/adr/0001..0004 record architectural decisions." }
+  A22: { status: done, evidence: "CITATION.cff v1.2.0 validated with independent researcher identity and ORCID." }
+  A23: { status: done, evidence: "Active branch main with authentic author identity." }
+  A24: { status: done, evidence: "All Git-tracked files < 5 MB (lossless pypdf PDFs, gitignored release zip), zero secrets, zero build output." }
+  A25: { status: done, evidence: ".github/workflows/ci.yml matrix covers ubuntu-latest, macos-latest, and windows-latest." }
+  A26: { status: done, evidence: "docs/media/social-preview.png (1280x640, visually verified)." }
+  A27: { status: done, evidence: ".github/workflows/pages.yml uses actions/deploy-pages to publish Observatory, Blueprint & White Paper." }
+  A28: { status: done, evidence: "pyproject.toml defines package metadata, pytest, ruff, and mypy config." }
+  A29: { status: done, evidence: "ROADMAP.md includes completed milestones, next releases, and explicit Not Planned section." }
+  A30: { status: done, evidence: ".github/labels.tsv declares all 10 finding classes plus research labels." }
+  A31: { status: done, evidence: "justfile provides lean, paper, build, test, mutate, lint, bench, forensic, audit, reproduce." }
+  A32: { status: done, evidence: "AGENTS.md (<32 KiB canonical), CLAUDE.md, GEMINI.md, .cursor/rules/build-standard.mdc, llms.txt, llms-full.txt." }
+  A33: { status: done, evidence: ".env.example and docs/configuration.md document all configuration knobs." }
+  A34: { status: n/a, note: "Not a long-running service (flag service=false)." }
+  A35: { status: done, evidence: "docs/operations.md documents Z:<->I: SHA-256 mirror, git bundle backup, and Software Heritage preservation." }
+  A36: { status: n/a, note: "Not a deployed server/service (flag deployed=false)." }
+  A37: { status: done, evidence: "docs/benchmarks.md defines explicit runtime budgets (Lean < 5s, oracle < 1ms/1k calls, forensic audit < 90s)." }
+  A38: { status: done, evidence: "Observatory HTML5 uses semantic landmarks, aria-labels, keyboard tabbing, high-contrast tokens, and @media print CSS." }
+  A39: { status: done, evidence: "NOTICE and THIRD_PARTY_NOTICES.md attribute all upstream toolchains and libraries." }
+  A40: { status: n/a, note: "Repository does not call or ship an AI model SDK at runtime (flag ai=false); non-author AI tooling disclosed in docs/AI_DISCLOSURE.md." }
+  A41: { status: done, evidence: "UPGRADING.md documents v3.3 -> v3.4.0 migration steps and breaking schema changes." }
+  A42: { status: done, evidence: "README.md explicitly declares maintenance status: active." }
+  A43: { status: done, evidence: "examples/quickstart_demo.py and examples/README.md execute cleanly." }
+  A44: { status: done, evidence: "docs/faq.md and docs/glossary.md cover all technical terms and 10 finding classes." }
+  A45: { status: n/a, note: "No personal data collected, stored, or processed (flag personal_data=false)." }
+  B01: { status: done, evidence: "justfile reproduce recipe rebuilds and checks every headline number from a clean clone." }
+  B02: { status: done, evidence: "requirements.txt pins Python versions and lean/lean-toolchain pins leanprover/lean4:v4.35.0." }
+  B03: { status: done, evidence: "Determinism verified in tests/test_omega_package.py (identical locked-seed runs & SHA-256 idempotence)." }
+  B04: { status: done, evidence: "CLAIMS.md enumerates C1-C8 with epistemic tiers and verification commands." }
+  B05: { status: done, evidence: "Every claim C1-C8 has explicit falsifiable automated tests in tests/ and audit_omniscient_integrity.py." }
+  B06: { status: done, evidence: "Negative tests verify anti-gaming gate annihilation, Ring-0 rejection, spectral-norm rejection, and 5/5 Anti-LARP mutants." }
+  B07: { status: done, evidence: "Regression tests lock every Cycle 1-3 defect (zero fake LLC, 244+36=280 sum, P8 7th metric, UTF-8, <5MB PDFs, 0 U+2611)." }
+  B08: { status: done, evidence: "Golden snapshot checks verify results/lean_package_axioms.txt, README axiom block, and schema-locked scorecards." }
+  B09: { status: done, evidence: "JSON Schema Draft 2020-12 contract tests validate 9/9 OVBS-52 scorecards, repo.yaml, and 4-format Master Spec parity." }
+  B10: { status: done, evidence: "tests/test_properties_and_differential.py runs 1,000+ Hypothesis property-based test cases." }
+  B11: { status: done, evidence: "Differential tests cross-check Python runtime scorers against 50-digit Decimal oracle and exact Lean integer formulas over 2,000+ cases." }
+  B12: { status: done, evidence: "reference/ovbs52_oracle.py provides an independent 50-digit Decimal/Fraction test oracle." }
+  B13: { status: done, evidence: "scripts/run_mutation_audit.py kills 6/6 (100.0%) planted Python semantic mutants; 5/5 Anti-LARP mutants rejected." }
+  B14: { status: done, evidence: "Metamorphic tests verify OVBS-52 monotonicity, synergy commutativity/monotonicity, and Ring-0 invariance under arbitrary write payloads." }
+  B15: { status: n/a, note: "No native C/C++ source code inside this repo (flag native=false; companion native engines run fuzzing/mutants in sibling repos)." }
+  B16: { status: n/a, note: "No native C/C++ source code inside this repo (flag native=false)." }
+  B17: { status: done, evidence: "ruff configured in pyproject.toml and executed report-only in CI and just lint." }
+  B18: { status: done, evidence: "mypy strict configured in pyproject.toml on reference/ and executed report-only in CI and just lint." }
+  B19: { status: n/a, note: "Deterministic single-threaded Python/Lean execution (flag concurrent=false)." }
+  B20: { status: done, evidence: "11-pool Kahan-Neumaier FP64 drift verified <= 2.463e-16 < 1e-12 plus 50-digit Decimal oracle tests." }
+  B21: { status: n/a, note: "Not a long-running service (flag service=false)." }
+  B22: { status: done, evidence: "lean/OmegaPackageProofs/ proves 36 core + 4 Palomar Lean 4.35.0 theorems (0 sorry, leanchecker-paranoid PASS)." }
+  B23: { status: n/a, note: "Formal invariants proved constructively in Lean 4.35.0; TLA+/Alloy state-machine model checking is not required for arithmetic/ACL proofs." }
+  B24: { status: done, evidence: "Formal proof core written in pure zero-Mathlib Lean 4.35.0 with strict module encapsulation and Palomar comparator." }
+  B25: { status: n/a, note: "No C/Rust source code in this repository to run CBMC/Kani bounded model checking against." }
+  B26: { status: done, evidence: "docs/benchmarks.md reports 10-iteration warmed median/IQR/p95 timings from scripts/benchmark_omega.py." }
+  B27: { status: done, evidence: "results/bench-history.csv tracks versioned benchmark timings over time (report-only)." }
+  B28: { status: done, evidence: "748 runs use N=48 locked paired seeds (5001-5048) with pure feral (SIM01) and minimal (SIM02) controls." }
+  B29: { status: done, evidence: "Exact two-sided paired Wilcoxon signed-rank tests executed in run_alife_castration_sim.py." }
+  B30: { status: done, evidence: "Paired Cliff-like effect sizes (delta_pair) and +/- SD spreads reported in csv/11, reports, and paper Table 2." }
+  B31: { status: done, evidence: "Holm-Bonferroni FWER correction applied across all 7 cohort contrasts vs SIM01." }
+  B32: { status: done, evidence: "PREREGISTRATION.md locks hypotheses H1-H5, seeds, metrics, statistical thresholds, and null-result policy." }
+  B33: { status: n/a, note: "No ML model training or fine-tuning in this repository (flag ml=false)." }
+  B34: { status: n/a, note: "No runtime AI/LLM components shipped in this repository (flag ai=false)." }
+  B35: { status: done, evidence: ".github/workflows/ci.yml runs gitleaks secret scanning report-only alongside .gitleaks.toml." }
+  B36: { status: done, evidence: "docs/threat-model.md analyzes trust boundaries, HTML XSS hygiene, supply chain, and Lean kernel TCB." }
+  B37: { status: done, evidence: ".github/workflows/release.yml publishes SHA256SUMS; CHECKSUMS.sha256 and MANIFEST_SHA256.txt verified locally." }
+  B38: { status: done, evidence: ".github/workflows/ci.yml and release.yml emit SLSA provenance via actions/attest-build-provenance." }
+  B39: { status: done, evidence: "data/MANIFEST.sha256 locks cryptographic hashes of all 24 CSVs, 4 specs, and empirical JSON datasets." }
+  B40: { status: done, evidence: "docs/run-log.md and HARDENING_LOG.md maintain timestamped audit trails." }
+  B41: { status: done, evidence: "LIMITATIONS.md documents principal limitations plus explicit Literal-vs-Metaphor boundary table." }
+  B42: { status: done, evidence: "CLAIMS.md includes explicit What Would Prove Us Wrong refutation criteria for every claim C1-C8." }
+  B43: { status: done, evidence: "REPLICATION.md provides clean-clone commands and prerequisites." }
+  B44: { status: done, evidence: "REPLICATION.md includes dated replication log table and open invitation for external replications." }
+  B45: { status: done, evidence: "docs/reviews/2026-11-25-three-cycle-redteam-hardening.md documents the complete 3-cycle adversarial review." }

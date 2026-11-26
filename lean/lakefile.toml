@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: Apache-2.0
+name = "OmegaPackageProofs"
+version = "3.4.0"
+defaultTargets = ["OmegaPackageProofs", "Challenge", "Solution", "PalomarSolution"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+linter.unusedVariables = true
+linter.deprecated = true
+
+[[lean_lib]]
+name = "OmegaPackageProofs"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "PalomarSolution"
+
+[[lean_lib]]
+name = "PalomarChallenge"
+srcDir = "../palomar"

@@ -1,0 +1,12 @@
+# Verification & Hardening Run Log (Build Standard B40)
+
+Timestamped audit trail of major build, proof, simulation, and hardening executions for `alife-singularity-omega-package`.
+
+| Timestamp (UTC) | Version | Operation | Key Verified Metrics | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| `2026-11-16T04:00:00Z` | `3.3.0-omega` (`c5319dd`) | Live 5-engine native execution (`run_alifeops_suite.py`) + 748-run paired simulation (`N=48`) + 18-gate audit | `OVBS-52 = 92.05` (`STAGE_5`), `244` native Lean 4, `77/77` Asmodensius ctest, `825/825` C11 checks, `35/35` native mutants, max FP64 drift `2.463e-16`, `18/18` gates | **PASS** |
+| `2026-11-25T23:10:00Z` | `3.4.0` (Cycle 1) | Mega-Atlas `1,900`-problem automated scan + Cycle-1 full static/AST/size/link audit | `428` broad hits → `25` mapped targets (`MA-01..25`), **`0 / 1,900` retired**; identified `OMG-146..160` defects | **PASS** |
+| `2026-11-26T02:15:00Z` | `3.4.0` (Cycle 2) | Zero-Mathlib Lean 4.35.0 build + axiom audit + paranoid kernel check | `36` core + `4` Palomar = `40` audited axioms $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings, `leanchecker` & `leanchecker-paranoid` `rc=0` | **PASS** |
+| `2026-11-26T02:35:00Z` | `3.4.0` (Cycle 2) | Independent 50-digit `Decimal` oracle & Python semantic mutation harness | `6/6` (`100.0%`) planted semantic mutants killed | **PASS** |
+| `2026-11-26T03:15:00Z` | `3.4.0` (Cycle 2) | AMS-LaTeX white paper (`paper/main.tex`), 4 vector PDF figures, `social-preview.png` & clean-room `dist/arxiv_submission.tar.gz` | `0` overfull hboxes, `0` undefined refs/citations, clean-room tarball compiled cleanly | **PASS** |
+| `2026-11-26T03:35:00Z` | `3.4.0` (Cycle 3) | Full end-to-end rebuild (`build_omega_package.py --reuse-sim`), `pytest` + Hypothesis (`1,000+`), 22 Forensic Gates, Build Standard v1.2.0 (`Audit-Repo.ps1`), & atomic `Z: <-> I:` mirror | `22/22` Forensic Gates PASS, `100.0%` Build Standard v1.2.0 (`0` placeholders), `0` `Z:<->I:` SHA-256 mismatches | **PASS** |

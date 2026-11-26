@@ -1,7 +1,7 @@
 # THE OMEGA BENCHMARKS, CHECKLISTS & MATRICES REFERENCE MANUAL
 ## Complete Quantitative Formulations, 8-Pillar Vitality Scoring Rubrics, 52 Benchmarks, Anti-Gaming Audits & 130-Item Operational Checklist Guide
 
-> **Document ID:** `ALIFE-OMEGA-RPT-004` (`v3.3-Omega`)  
+> **Document ID:** `ALIFE-OMEGA-RPT-004` (`v3.4-Omega`)  
 > **Companion Data Files:** `csv/08_super_life_benchmarks_suite.csv` (52 benchmarks), `csv/07_master_operational_checklist.csv` (130 items across 11 phases), `csv/ALife-Framework-v3.0-Master-Checklists.csv` (938 Clean-Slate v3.0 checks/DAG/gates), `pipelines/benchmark-suite-schema.json`, `excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx` (24 sheets)
 
 ---
@@ -123,11 +123,11 @@ Every checklist item carries a unique ID, Phase, Applicable Track, Priority (`P0
 
 ---
 
-## 6. Live Empirical Computational Verification (`run_alife_castration_sim.py` — `v3.3-Omega` `748`-Run `N=48` FWER, Dual Sweep & 2D Phase Surface Upgrade)
+## 6. Live Empirical Computational Verification (`run_alife_castration_sim.py` — `v3.4-Omega` `748`-Run `N=48` FWER, Dual Sweep & 2D Phase Surface Upgrade)
 
-To move beyond purely conceptual modeling, this package ships with an executable, reproducible multi-island stochastic digital ALife simulator (`scripts/run_alife_castration_sim.py`), upgraded in `v3.3-Omega` with Clean-Slate v3.0's **11-Pool Compensated `FP64` Kahan–Neumaier Thermodynamic Ledger**, **48 Paired Locked Held-Out Test Seeds (`5001–5048`, `384` cohort runs)**, **Dual 11-Point Continuous Sweeps (`264` runs: Behavioral vs. Ring-0 ACL across locked seeds `5101–5112`)**, **Live `5×5` 2D Empirical Phase Surface (`100` runs: `Siloing × Minimizing` → `748` total live runs)**, **Causal Endogenous Ring-0 ACL Violation Trapping (`406.9–408.2` blocked edits/run)**, **Exact Paired Wilcoxon Signed-Rank + Holm–Bonferroni FWER (`m = 7`)**, and **5/5 Real Anti-LARP Negative Mutants (`GATE-04`)**.
+To move beyond purely conceptual modeling, this package ships with an executable, reproducible multi-island stochastic digital ALife simulator (`scripts/run_alife_castration_sim.py`), upgraded in `v3.4-Omega` with Clean-Slate v3.0's **11-Pool Compensated `FP64` Kahan–Neumaier Thermodynamic Ledger**, **48 Paired Locked Held-Out Test Seeds (`5001–5048`, `384` cohort runs)**, **Dual 11-Point Continuous Sweeps (`264` runs: Behavioral vs. Ring-0 ACL across locked seeds `5101–5112`)**, **Live `5×5` 2D Empirical Phase Surface (`100` runs: `Siloing × Minimizing` → `748` total live runs)**, **Causal Endogenous Ring-0 ACL Violation Trapping (`406.9–408.2` blocked edits/run)**, **Exact Paired Wilcoxon Signed-Rank + Holm–Bonferroni FWER (`m = 7`)**, and **5/5 Real Anti-LARP Negative Mutants (`GATE-04`)**.
 
-All **8 generated cohort scorecards** (`results/ovbs52_scorecard_SIM01..08.json`) AND the live 4-engine native C++/Lean 4 receipt (`results/alifeops_live_verification.json`) pass strict `jsonschema` validation against `pipelines/benchmark-suite-schema.json`. Across all `748` live runs, maximum global 11-pool relative enthalpy drift is **`2.463e-16`** (`< 1e-12` gate cleared by `4,060×`), `0` heat-to-ATP backflow faults occur, and **`5 / 5` Real Anti-LARP Negative Mutants** are rejected:
+All **8 generated cohort scorecards** (`results/ovbs52_scorecard_SIM01..08.json`) AND the live 5-engine native C++/Lean 4 receipt (`results/alifeops_live_verification.json`) pass strict `jsonschema` validation against `pipelines/benchmark-suite-schema.json`. Across all `748` live runs, maximum global 11-pool relative enthalpy drift is **`2.463e-16`** (`< 1e-12` gate cleared by `4,060×`), `0` heat-to-ATP backflow faults occur, and **`5 / 5` Real Anti-LARP Negative Mutants** are rejected:
 
 | Cohort ID | Regime Description | Composite OVI (`N=48` Seeds) | Max Asm | Spieg. Ratio | Stealth Avg | KS Del % | Ring-0 Blk | Wild Drop ($W_{\text{wild}}$) | $\delta_{\text{pair}}$ vs Feral | Holm FWER $p_{\text{Holm}}$ | Empirical Scientific Verification |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
@@ -144,7 +144,7 @@ All **8 generated cohort scorecards** (`results/ovbs52_scorecard_SIM01..08.json`
 
 ---
 
-## 7. Unified 877-Benchmark & 1,068-Check Rigor Protocol (`OVBS-52` × Clean-Slate `825`-Check Suite × `100`-DAG × `130`-Ops Checklist × Live 4-Engine Receipts)
+## 7. Unified 877-Benchmark & 1,068-Check Rigor Protocol (`OVBS-52` × Clean-Slate `825`-Check Suite × `100`-DAG × `130`-Ops Checklist × Live 5-Engine Receipts)
 
 Baking `ALife-Framework-v3.0-Master-Checklists.csv` (`938` rows: `825` Clean-Slate checks across 9 suites, `100` acyclic bottom-up DAG milestones `M001–M100`, and `13` Release Gates `GATE-01..13`) directly alongside `OVBS-52` (`52` benchmarks) and the expanded **130-Item Master Operational Checklist (`CHK-001..CHK-130`, adding Phase 11 Clean-Slate Fusion locks `CHK-111..130`)** produces a unified **1,120-assertion scientific verification hierarchy** (`Model 18`):
 

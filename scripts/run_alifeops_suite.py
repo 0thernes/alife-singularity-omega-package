@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
 r"""
-ALifeOps Master Live Verification Runner (Zeta-Omega v3.2-Omega)
-Executes all unlocked native simulation engines on Z:\[Vibe Coded (AI)]\ANTIGRAVITY\
-(read-only on Asmodensius-Native while WRITER.lock is active), parses real Lean 4
-axiom-audit receipts, derives ALL 8 OVBS-52 pillars and 52 canonical benchmarks strictly
-from measured C11 outputs (zero hardcoded pillar scores), validates against
-pipelines/benchmark-suite-schema.json via jsonschema, and writes
-results/alifeops_live_verification.json.
+ALifeOps Master Live Verification Runner (Zeta-Omega v3.4-Omega)
+Executes all 5 live native simulation engines (AUTOPHAGE v1.3.0, Cellulogonic Mecha v1.4.0,
+Cellular Engine Omega v5.1.0, Noetic Organism Omega v2.0.0, and Asmodensius-Native),
+parses real Lean 4 axiom-audit receipts (244 native theorems), derives ALL 8 OVBS-52
+pillars and 52 canonical benchmarks strictly from measured C11/C23 outputs (zero hardcoded
+pillar scores), validates against pipelines/benchmark-suite-schema.json via jsonschema,
+and writes results/alifeops_live_verification.json.
 """
 import csv
 import json
@@ -55,7 +56,7 @@ def clamp(v: float, lo: float = 0.0, hi: float = 100.0) -> float:
 
 def run_cmd(cmd, cwd=None, timeout=90):
     t0 = time.perf_counter()
-    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout)
     dt = round(time.perf_counter() - t0, 4)
     return p.returncode, p.stdout, p.stderr, dt
 
@@ -136,7 +137,7 @@ def main():
     results = {}
     failures = []
 
-    # 1. Tier 1: AUTOPHAGE v1.2.0
+    # 1. Tier 1: AUTOPHAGE v1.3.0
     rc_ap, out_ap, err_ap, dt_ap = run_cmd([str(AUTOPHAGE_TEST)], cwd=str(AUTOPHAGE_TEST.parent))
     m_ap = re.search(r"SUMMARY:\s*(\d+)\s+PASSED\s*/\s*(\d+)\s+FAILED", out_ap)
     ap_passed = int(m_ap.group(1)) if m_ap else 0
@@ -169,7 +170,7 @@ def main():
         "lean4_pure_axioms_verified": ap_lean_clean,
     }
 
-    # 2. Tier 2: Cellulogonic Mecha v1.3.0
+    # 2. Tier 2: Cellulogonic Mecha v1.4.0
     rc_cm, out_cm, err_cm, dt_cm = run_cmd([str(CELL_TEST)], cwd=str(CELL_TEST.parent))
     m_cm = re.search(r"SUMMARY:\s*(\d+)\s*/\s*(\d+)\s+GATES PASSED\s*\|\s*(\d+)\s*/\s*(\d+)", out_cm)
     cm_passed = int(m_cm.group(1)) if m_cm else 0
@@ -207,7 +208,7 @@ def main():
         "lean4_pure_axioms_verified": cm_lean_clean,
     }
 
-    # 3. Tier 2+: Cellular Engine Omega v5.0 (live JSON telemetry across all 16 testbeds!)
+    # 3. Tier 2+: Cellular Engine Omega v5.1.0 (live JSON telemetry across all 16 testbeds!)
     rc_om, out_om, err_om, dt_om = run_cmd([str(OMEGA_TEST)], cwd=str(OMEGA_TEST.parent))
     m_om = re.search(r"FALSIFICATION SUMMARY:\s*(\d+)\s*/\s*(\d+)\s+PASSED.*?(\d+)/(\d+)\s+MUTANTS", out_om)
     om_passed = int(m_om.group(1)) if m_om else 0
@@ -373,7 +374,7 @@ def main():
         "lean4_pure_axioms_verified": no_lean_clean,
     }
 
-    # 5. Tier 3+4: Asmodensius-Native (LIVE C23 EXECUTION — NO MORE READ-ONLY! + 16 Pure Lean 4 Proofs!)
+    # 5. Tier 3+4: Asmodensius-Native (LIVE C23 EXECUTION — NO MORE READ-ONLY! + 20 Pure Lean 4 Proofs!)
     rc_as, out_as, err_as, dt_as = run_cmd(
         [str(ASMO_RUN), "--lab", "--seed", "7", "--n", "2000", "--cap", "8000", "--grid", "6,6,5", "--ticks", "40"],
         cwd=str(ASMO_ROOT),
@@ -455,7 +456,7 @@ def main():
     tad_score = clamp(100.0 * min(1.0, float(tb15.get("tad_gain", 0.0)) / 5.0))
     p5 = round(clamp(0.30 * inet_conf + 0.25 * inet_ssin + 0.25 * ciss_score + 0.20 * tad_score), 2)
 
-    # P6: Thermodynamic & Substrate Mastery (Exact conservation across ALL 4 C11 engines + TB08 TUR + TB16 + Noetic GATE-01/02/07)
+    # P6: Thermodynamic & Substrate Mastery (Exact conservation across ALL 5 native engines + TB08 TUR + TB16 + Noetic GATE-01/02/07)
     gate_ratio = (ap_passed + cm_passed + om_passed + no_passed + ng_passed) / max(1, (18 + cm_total + om_total + no_total + ng_total))
     tur_ok = 100.0 if float(tb08.get("tur_min", 0.0)) >= 1.95 else 0.0
     proj_ok = 100.0 if (results["tier2plus_omega"]["tb16_proj_mass_res"] < 1e-12 and results["tier2plus_omega"]["tb16_six_tier_int_drift"] == 0) else 0.0
@@ -469,7 +470,7 @@ def main():
     auroc_score = clamp(100.0 * results["tier2plus_omega"]["tb16_essential_auroc"])
     p7 = round(clamp(0.25 * wire_score + 0.25 * r2_score + 0.20 * auroc_score + 0.20 * no_cog_score + 0.10 * no_b158_score), 2)
 
-    # P8: Feral Resilience & Criticality (All 35/35 planted mutants caught across 4 engines + Track-A 0 tumors + Tardigrade + GATE-11 10k 0-bit obs)
+    # P8: Feral Resilience & Criticality (All 35/35 planted mutants caught across native engines + Track-A 0 tumors + Tardigrade + GATE-11 + Asmodensius refusal)
     mut_ratio = (6 + cm_mut_caught + om_mut_caught + results["tier3_noetic_organism"]["mutants_caught"]) / max(1, (6 + cm_mut_total + om_mut_total + 5)) if (ap_failed == 0) else 0.0
     track_a_ok = 100.0 if int(tb12.get("trackA_tumors", 1)) == 0 else 0.0
     p8 = round(clamp(0.40 * (100.0 * mut_ratio) + 0.25 * track_a_ok + 0.20 * tardi_score + 0.15 * no_obs_score), 2)
@@ -550,6 +551,7 @@ def main():
             (100.0 * mut_ratio, round(100.0 * mut_ratio, 2)), (track_a_ok, track_a_ok),
             (tardi_score, tardi_score), (float(tb15.get("cnidocyte_g", 0.0)) / 1e6, clamp(100.0 * min(1.0, float(tb15.get("cnidocyte_g", 0.0)) / 5e6))),
             (p8, p8), (p8, p8),
+            (100.0 if (as_refusal_ok and as_books_ok) else 0.0, 100.0 if (as_refusal_ok and as_books_ok) else 0.0),
         ],
     }
     bm_csv = PKG_ROOT / "csv" / "08_super_life_benchmarks_suite.csv"

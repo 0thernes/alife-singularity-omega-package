@@ -1,0 +1,4 @@
+timestamp_utc,version,host,benchmark,median_ms,iqr_ms,p95_ms,budget_ms,within_budget
+2026-11-26T03:23:09Z,3.4.0,Windows 11 / Python 3.12.10,oracle_ovi_1000_calls,6.461,0.165,6.589,100.0,PASS
+2026-11-26T03:23:09Z,3.4.0,Windows 11 / Python 3.12.10,ring0_acl_10000_checks,2.039,0.013,2.048,50.0,PASS
+2026-11-26T03:23:09Z,3.4.0,Windows 11 / Python 3.12.10,synergy_13x13_100_sweeps,3.628,0.133,3.754,50.0,PASS

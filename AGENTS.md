@@ -1,11 +1,40 @@
-# alife-singularity-omega-package (v3.3-Omega) — Agent Engineering Guide
+# AGENTS.md — Canonical Agent Instructions (`alife-singularity-omega-package` v3.4.0)
 
-## Unified 7-Repo A-Life Singularity Omega Ecosystem (Clean-Slate v3.0 Complete)
-- **Canonical Package Repo (Z:):** `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`
-- **Dual-Drive Byte-Exact Mirror (I:):** `I:\A-Life God Plan\A-Life Master Folder Build` (`18/18` Omniscient Forensic Gates, `0` SHA-256 mismatches)
-- **Total Pure Lean 4 Theorems:** **`240 / 240`** (`42` `autophage v1.3.0` + `62` `cellulogonic-mecha v1.4.0` + `72` `cellular-engine-omega v5.1.0` + `48` `noetic-organism-omega v2.0.0`) strictly within `{propext, Classical.choice, Quot.sound}`, `0 sorry`, `0 admit`, `0 bv_decide`, `0 warnings`.
-- **Clean-Slate v3.0 Executable Checks:** **`825 / 825` individually executed in native C11 (`0` fail)** — `779` `EXECUTED_PASS`, `29` `EXECUTED_PASS_INDICATOR_ONLY` (ADR 0018 Rule-4 & Rule-6), `12` `NATIVE_RELEASE_GATE_PASS` (`L7_WSE12`), `5` `PASS_CLASSICAL_PARITY_DISCLOSED` (`F-092`, `N01`, `N02`, `N50`, `LIFE-L040-A5`, Policy P7).
-- **Bottom-Up Milestones:** **`100 / 100` (`M001..M100`, Stages `0..8`, First-15 Playable `LOCKED_PASS`, `0 uq` drift)**.
-- **Substrates & Hybrid Cube:** **`75 / 75` Substrates (`PM01..25`, `MF01..25`, `GW01..25`)** + **`1,000 / 1,000` Hybrid Cube (`661 [OK]`, `274 [ADAPT]`, `20 [OVER]`, `45 [EXCL]`, `935/935` active forward stability)**.
-- **Release & Forensic Gates:** **`13 / 13` Clean-Slate v3.0 Release Gates PASS**, **`35 / 35` Compiled Mutants Caught**, **`18 / 18` Package Forensic Gates PASS**, **`OVBS-52 = 92.05` (`STAGE_5_CONVERGED_SYNTHESIS`)**.
-- **Clean-Slate Template Rule:** Clean-slate checklist/template deliverables strictly maintain `0 U+2611` glyphs (verified by Gate 9 & Gate 16); live execution passes live in `results/*.json` and `noetic-organism-omega`.
+> This file is the single canonical agent instruction file (< 32 KiB). `CLAUDE.md`, `GEMINI.md`, and `.cursor/rules/build-standard.mdc` all point here.
+
+## Identity & Legal Scope
+
+- **Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA`)
+- **ORCID:** `0009-0006-8168-9648` (`https://orcid.org/0009-0006-8168-9648`)
+- **Email / GitHub:** `0_0@0thernes.art` · `https://github.com/0thernes/alife-singularity-omega-package`
+- **CRITICAL LEGAL RULE:** Never write `"0thernes LLC"` anywhere in prose, metadata, licenses, or code — no LLC has been legally formed. Always use `"Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)"`.
+- **Dual License:** Prose/datasets/figures = `CC-BY-4.0` (`LICENSE`); Code/Lean 4/tests = `Apache-2.0` (`LICENSE-CODE`).
+
+## Hard Rules (Build Standard v1.2.0 `R1–R8`)
+
+- **R1–R4:** Trunk workflow directly on `main`. Never add git hooks, branch protection scripts, PR templates, Dependabot/Renovate, CodeRabbit, `.github/copilot-instructions.md`, or `FUNDING.yml`. CI is informational/report-only.
+- **Zero Consolidation:** Preserve 100% of the 17 baked Clean-Slate v3.0 deliverables alongside all Omega files.
+- **Clean-Slate `0 / 825` Policy:** Never emit `U+2611` (`☑`) in any Clean-Slate MD, HTML, CSV, or PDF file.
+- **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
+- **Strict File-Size Hygiene (`A24`):** Every Git-tracked file must remain `< 5.00 MB` (`5,242,880` B). Chrome PDFs are losslessly compressed via `pypdf`; `ALife_Singularity_SuperLife_Omega_Package.zip` is gitignored and attached to GitHub Releases.
+- **Lean 4 Purity:** Zero `sorry`, `admit`, custom `axiom`, or `native_decide` in `lean/`. Axioms must stay strictly within `[propext, Quot.sound]`.
+- **Exact Theorem Arithmetic:** `42` (AUTOPHAGE v1.3.0) + `62` (Cellulogonic Mecha v1.4.0) + `72` (Cellular Engine Omega v5.1.0) + `48` (Noetic Organism Omega v2.0.0) + `20` (Asmodensius-Native) = **`244`** Native Pure Lean 4 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`280` Pure Lean 4 Theorems**. Never write `240`!
+- **PowerShell Bracket Safety (Windows `Z:`):** Because the canonical local checkout lives under `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`, always pass `-LiteralPath` to PowerShell file cmdlets.
+
+## One-Word Commands (`justfile`)
+
+| Command | Action |
+| :--- | :--- |
+| `just lean` | Build `lean/OmegaPackageProofs/` (Lean 4.35.0), run `VerifyAxioms.lean`, `leanchecker`, and `leanchecker-paranoid` |
+| `just paper` | Generate 4 vector PDF figures + `docs/media/social-preview.png`, compile `paper/main.tex` (`0` overfull hboxes), build & verify clean-room `dist/arxiv_submission.tar.gz` |
+| `just build` | Rebuild 24 CSVs (`2,822` rows), 4 Specs (`26` XML), 5 Excel Workbooks, 3 HTML5 apps (`22`-tab Observatory), 3 lossless Chrome PDFs, manifests, ZIP, and 22 Forensic Gates |
+| `just test` | Run `pytest` unit, negative, regression, Hypothesis (`1,000+` examples) & 50-digit differential oracle (`2,000+` cases) |
+| `just mutate` | Run `scripts/run_mutation_audit.py` (`6/6 = 100%` semantic mutants killed) |
+| `just forensic` | Run all `22/22` automated forensic integrity gates (`scripts/audit_omniscient_integrity.py`) |
+| `just audit` | Score repository against Build Standard v1.2.0 (`scripts/Audit-Repo.ps1`, target `100.0%`) |
+| `just reproduce` | End-to-end clean-clone reproduction of every headline result |
+
+## 10 Finding Classes (Mandatory Classification)
+
+Every finding in issues, reviews, and `HARDENING_LOG.md` uses exactly one class:
+`bug` · `error` · `issue` · `problem` · `concern` · `dilemma` · `conflict` · `gap` · `hole` · `blindspot`.

@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+# SPDX-License-Identifier: Apache-2.0
+version: "v0.4"
+release_version: "3.4.0"
+
+project:
+  name: "ALife Singularity Omega Package Formal Invariant Suite (OmegaPackageProofs)"
+  description: >-
+    Zero-Mathlib, strictly constructive Lean 4.35.0 formalization of 36 core package
+    invariant theorems (plus 4 Palomar comparator certificates = 40 printed audit lines)
+    certifying the OVBS-52 8-pillar weighting, boundedness, monotonicity, anti-gaming
+    annihilation, 7-stage escalation classifier, 10x10x10 Hybrid Cube & 825-check
+    partitions, 5-engine 244-theorem + 36-local = 280-theorem accounting, 13x13
+    castration synergy bounds/symmetry/monotonicity, Hardware Ring-0 ACL kernel
+    non-interference, spectral-norm contraction gating, Pareto dominance order axioms,
+    and concrete NonVacuity boundary witnesses.
+  authors:
+    - name: "Alexander Stephen Donahue"
+      orcid: "0009-0006-8168-9648"
+      email: "0_0@0thernes.art"
+      affiliation: "Independent Researcher, Spokane, WA, USA"
+  responsible_maintainers:
+    - name: "Alexander Stephen Donahue"
+      github: "0thernes"
+      orcid: "0009-0006-8168-9648"
+      email: "0_0@0thernes.art"
+  license: "Apache-2.0"
+
+classification:
+  arxiv:
+    - "cs.NE"
+    - "cs.LO"
+    - "cs.AI"
+  msc2020:
+    - "03B35"
+    - "92B05"
+    - "68T05"
+
+sources:
+  - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.4-Omega): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, and 280 Pure Lean 4 Theorems"
+    authors:
+      - "Alexander Stephen Donahue"
+    id: "https://github.com/0thernes/alife-singularity-omega-package"
+    type: "original-proof"
+    relationship: "other"
+    note: >-
+      Original formal invariant suite accompanying alife-singularity-omega-package v3.4.0.
+      No external DOI, arXiv ID, or peer review is claimed prior to confirmed assignment.
+
+status:
+  scope: >-
+    Certifies discrete integer/basis-point scoring, anti-gaming annihilation, stage
+    monotonicity, combinatorial partitions, castration synergy bounds, Hardware Ring-0
+    kernel non-interference, Pareto order axioms, and concrete NonVacuity witnesses
+    with zero Mathlib and zero Classical.choice (axioms strictly within [propext, Quot.sound]).
+    Explicitly NOT formalized in this package suite: continuous IEEE-754 Kahan-Neumaier
+    simulations (verified empirically + via 50-digit Decimal oracle) or any of the 1,900
+    overarching open problems in unsolved-problems-mega-atlas (0/1,900 retired).
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+    - "propext"
+    - "Quot.sound"
+  main_results:
+    - declaration: "OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants"
+      file: "lean/PalomarSolution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound"]
+      comparator_config: "lean/comparator.json"
+    - declaration: "OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants"
+      file: "lean/PalomarSolution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound"]
+      comparator_config: "lean/comparator.json"
+    - declaration: "OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants"
+      file: "lean/PalomarSolution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound"]
+      comparator_config: "lean/comparator.json"
+    - declaration: "OmegaPackageProofs.Palomar.m4_nonvacuity_certificate"
+      file: "lean/PalomarSolution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound"]
+      comparator_config: "lean/comparator.json"
+
+automation:
+  methods:
+    - method: "manual"
+      notes: "Alexander Stephen Donahue conceived the unified ALife Singularity architecture, formal invariant scope, Ring-0 constitutional framing, and multi-cycle hardening discipline, and bears sole responsibility for the work."
+    - method: "agent"
+      models:
+        - "Gemini (Antigravity)"
+      framework: "Antigravity"
+      notes: >-
+        Assisted with Lean 4.35.0 proof engineering, NonVacuity witness construction,
+        Python verification/oracle/mutation suites, and AMS-LaTeX white-paper production
+        under human direction and audit.
+
+fidelity:
+  divergences: >-
+    Lean 4.35.0 verifies exact integer centi-point OVBS-52 formulas and discrete Ring-0
+    access-control transitions; IEEE-754 float64 scoring and Kahan-Neumaier 11-pool energy
+    conservation (max drift 2.463e-16 across 748 live runs) are verified differentially
+    against reference/ovbs52_oracle.py (50-digit Decimal/Fraction) and empirical runtime gates.
+    See docs/statement-fidelity.md for the complete row-by-row correspondence matrix.
+
+review:
+  status: "self-assessed"
+  notes: >-
+    Not externally peer-reviewed. Machine-checked locally with Lean 4.35.0, leanchecker,
+    and multi-kernel CI replay with 0 warnings, 0 sorry in lean/, and 0 native_decide.

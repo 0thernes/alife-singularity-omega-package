@@ -53,7 +53,7 @@ def generate_html_dashboard(
         total_records += len(v3_bundle["cube_cells"])
     if "checklists_938" in v3_bundle:
         total_records += len(v3_bundle["checklists_938"]["rows"])
-    errata_key = "errata_145" if "errata_145" in v3_bundle else ("errata_130" if "errata_130" in v3_bundle else "errata_115")
+    errata_key = "errata_160" if "errata_160" in v3_bundle else ("errata_145" if "errata_145" in v3_bundle else "errata_115")
     if errata_key in v3_bundle:
         total_records += len(v3_bundle[errata_key]["rows"])
 
@@ -62,7 +62,8 @@ def generate_html_dashboard(
     tot_runs = payload['sim_meta'].get('total_runs_executed', 748)
     n_seeds = payload['sim_meta'].get('paired_seeds_n', 48)
     live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    lean_tot = live_receipts.get("total_lean4_theorems", 240)
+    lean_tot = live_receipts.get("total_lean4_theorems", 244)
+    lean_all = lean_tot + 36
     svg_count = len(svg_models)
 
     c_by_id = {c["run_id"]: c for c in cohorts}
@@ -104,7 +105,7 @@ def generate_html_dashboard(
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A-Life Singularity, Super A-Life &amp; Clean-Slate v3.0 — Omniscient Observatory v3.3-Omega</title>
+<title>A-Life Singularity, Super A-Life &amp; Clean-Slate v3.0 — Omniscient Observatory v3.4-Omega</title>
 <style>
   :root {{
     --bg-void: #05080f;
@@ -352,15 +353,15 @@ def generate_html_dashboard(
 <div class="app-shell">
   <aside class="sidebar">
     <div class="brand">
-      <div class="brand-tag">ALIFE-OMEGA v3.3 // UNIFIED PASS-5</div>
+      <div class="brand-tag">ALIFE-OMEGA v3.4 // 3-CYCLE HARDENED</div>
       <h1>CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA</h1>
-      <p>21 Tabs &bull; {svg_count} Vector SVGs &bull; 10&times;10&times;10 Cube &bull; 78/78 Alerts &bull; {tot_runs} Live Runs &bull; {lean_tot} Pure Lean 4</p>
+      <p>22 Tabs &bull; {svg_count} Vector SVGs &bull; 10&times;10&times;10 Cube &bull; 78/78 Alerts &bull; {tot_runs} Live Runs &bull; {lean_all} Pure Lean 4</p>
     </div>
     <div class="omni-box">
-      <input type="text" class="omni-input" id="omniSearch" placeholder="Omnisearch ({total_records:,} unified records)..." autocomplete="off" />
+      <input type="text" class="omni-input" id="omniSearch" aria-label="Omnisearch across all unified records" placeholder="Omnisearch ({total_records:,} unified records)..." autocomplete="off" />
       <div class="omni-results" id="omniResults"></div>
     </div>
-    <nav class="nav-list" id="navList">
+    <nav class="nav-list" id="navList" aria-label="Observatory Sections">
       <button class="nav-btn active" data-tab="sec-overview"><span>01. Executive Synthesis</span><span class="nav-badge">7 STG</span></button>
       <button class="nav-btn" data-tab="sec-oom"><span>02. Orders of Magnitude</span><span class="nav-badge">18 REG</span></button>
       <button class="nav-btn" data-tab="sec-pipeline"><span>03. ALifeOps DevOps</span><span class="nav-badge">78 ALR</span></button>
@@ -376,40 +377,41 @@ def generate_html_dashboard(
       <button class="nav-btn" data-tab="sec-substrates"><span>13. 75 Substrates &amp; WSE-10</span><span class="nav-badge">85 SUB</span></button>
       <button class="nav-btn" data-tab="sec-v3checks"><span>14. Clean-Slate 938 Checks</span><span class="nav-badge">0/825</span></button>
       <button class="nav-btn" data-tab="sec-models"><span>15. {svg_count}-Model SVG Gallery</span><span class="nav-badge">{svg_count} SVG</span></button>
-      <button class="nav-btn" data-tab="sec-trace"><span>16. Traceability &amp; 145 Audits</span><span class="nav-badge">145 OK</span></button>
-      <button class="nav-btn" data-tab="sec-hub"><span>17. Master File Hub</span><span class="nav-badge">77+ FL</span></button>
+      <button class="nav-btn" data-tab="sec-trace"><span>16. Traceability &amp; 160 Audits</span><span class="nav-badge">160 OK</span></button>
+      <button class="nav-btn" data-tab="sec-hub"><span>17. Master File Hub</span><span class="nav-badge">24 CSV</span></button>
       <button class="nav-btn" data-tab="sec-gradients"><span>18. Gradients &amp; Dual Sweep</span><span class="nav-badge">24+22</span></button>
       <button class="nav-btn" data-tab="sec-contrasts"><span>19. Contrasts &amp; Adjacents</span><span class="nav-badge">36+30</span></button>
       <button class="nav-btn" data-tab="sec-layers-pareto"><span>20. 11&times;11 Layers &amp; Pareto</span><span class="nav-badge">121+20</span></button>
       <button class="nav-btn" data-tab="sec-substrates-2d"><span>21. Substrates &amp; 2D Surface</span><span class="nav-badge">15+25</span></button>
+      <button class="nav-btn" data-tab="sec-mega-atlas"><span>22. Mega-Atlas 1,900 Audit</span><span class="nav-badge">25 MAP</span></button>
     </nav>
     <div class="sidebar-footer">
       <button class="btn" style="width:100%;margin-bottom:6px" onclick="window.print()">PRINT / SAVE PDF VIEW</button>
       <div>UNIFIED RECORDS: <span style="color:var(--cyan)">{total_records:,}</span></div>
       <div>YAML ALERTS WIRED: <span style="color:var(--green)">78 / 78 (13 GATES)</span></div>
       <div>FP64 11-POOL DRIFT: <span style="color:var(--green)">{drift_str}</span></div>
-      <div>LIVE 4-ENGINE / LEAN4: <span style="color:var(--green)">{live_ovi} / {lean_tot}</span></div>
+      <div>LIVE 5-ENGINE / LEAN4: <span style="color:var(--green)">{live_ovi} / {lean_tot}+36</span></div>
     </div>
   </aside>
 
-  <main class="main">
+  <main class="main" id="mainContent">
     <!-- ==================== 01. EXECUTIVE OVERVIEW ==================== -->
     <section id="sec-overview" class="section active">
       <div class="hero-header">
-        <div class="hero-eyebrow">UNIFIED v3.3-OMEGA SYNTHESIS // CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA &times; PASS-5 LAYER COUPLING, SUBSTRATE SPECTRUM &amp; PARETO ATLAS</div>
+        <div class="hero-eyebrow">UNIFIED v3.4-OMEGA SYNTHESIS // CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA &times; MEGA-ATLAS 1,900 CROSSWALK &times; 280 PURE LEAN 4</div>
         <h2>The Sibling Singularity: Micro-Wetware Clean-Slate &rarr; Super A-Life &rarr; SUPER LIFE</h2>
-        <p>This v3.3-Omega Omniscient Observatory fuses all <strong>17 Clean-Slate v3.0 architecture files</strong> (10 Invariants P1&ndash;P10, 11-Pool FP64 Conservation, 75 Substrates, 1,000-Cell Hybrid Cube, 825 Clean-Slate Checks, 100-Milestone DAG, 36 Forensic Guards, 13 Release Gates, Models 1&ndash;14), the <strong>Zeta-Omega Singularity Atlas</strong> (Stage 0&rarr;6, 61 Spatial OOM, 42 Macro FMs, 13&times;13 Castration Synergy, {tot_runs} Live Runs, 4 Native Engines &amp; {lean_tot} Pure Lean 4 Proofs), the <strong>Pass-4 Comparative Atlas</strong> (24 Gradients, 36 Contrasts, 30 Adjacents), and the <strong>Pass-5 Deep Systems Audit</strong> (11&times;11 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep &amp; 5&times;5 2D Phase Surface) with <strong>zero consolidation</strong> and exact <strong>0-mismatch Z:&harr;I: SHA-256 parity</strong>.</p>
+        <p>This v3.4-Omega Omniscient Observatory fuses all <strong>17 Clean-Slate v3.0 architecture files</strong> (10 Invariants P1&ndash;P10, 11-Pool FP64 Conservation, 75 Substrates, 1,000-Cell Hybrid Cube, 825 Clean-Slate Checks, 100-Milestone DAG, 36 Forensic Guards, 13 Release Gates, Models 1&ndash;14), the <strong>Zeta-Omega Singularity Atlas</strong> (Stage 0&rarr;6, 61 Spatial OOM, 42 Macro FMs, 13&times;13 Castration Synergy, {tot_runs} Live Runs, 5 Native Engines &amp; {lean_tot} Native + 36 Local = {lean_all} Pure Lean 4 Proofs), the <strong>Pass-4 &amp; Pass-5 Deep Systems Atlas</strong> (24 Gradients, 36 Contrasts, 30 Adjacents, 11&times;11 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep &amp; 5&times;5 2D Phase Surface), and the <strong>Mega-Atlas 1,900-Problem Non-Retirement Crosswalk</strong> (0/1,900 retired; 25 scoped sub-results) with <strong>zero consolidation</strong> and exact <strong>0-mismatch Z:&harr;I: SHA-256 parity</strong>.</p>
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi-card" style="--accent:var(--cyan)"><div class="kpi-label">Unified Records</div><div class="kpi-value">{total_records:,}</div><div class="kpi-sub">23 CSVs &bull; 0 Consolidation &bull; 0 Drift</div></div>
-        <div class="kpi-card" style="--accent:var(--green)"><div class="kpi-label">Live 4-Engine OVI</div><div class="kpi-value">{live_ovi}</div><div class="kpi-sub">Stage 5 &bull; {lean_tot} Pure Lean 4 Theorems</div></div>
+        <div class="kpi-card" style="--accent:var(--cyan)"><div class="kpi-label">Unified Records</div><div class="kpi-value">{total_records:,}</div><div class="kpi-sub">24 CSVs &bull; 0 Consolidation &bull; 0 Drift</div></div>
+        <div class="kpi-card" style="--accent:var(--green)"><div class="kpi-label">Live 5-Engine OVI</div><div class="kpi-value">{live_ovi}</div><div class="kpi-sub">Stage 5 &bull; {lean_tot}+36 = {lean_all} Pure Lean 4</div></div>
         <div class="kpi-card" style="--accent:var(--crimson)"><div class="kpi-label">Wired Alerts</div><div class="kpi-value">78 / 78</div><div class="kpi-sub">42 Macro FMs + 36 v3.0 Guards + 13 Gates</div></div>
         <div class="kpi-card" style="--accent:var(--violet)"><div class="kpi-label">Hybrid Cube</div><div class="kpi-value">1,000</div><div class="kpi-sub">661 [OK] &bull; 274 [ADAPT] &bull; 75 Substrates</div></div>
         <div class="kpi-card" style="--accent:var(--blue)"><div class="kpi-label">Live Sim Runs</div><div class="kpi-value">{tot_runs}</div><div class="kpi-sub">384 Cohort (N={n_seeds}) + 264 Dual + 100 2D</div></div>
         <div class="kpi-card" style="--accent:var(--green)"><div class="kpi-label">FP64 11-Pool Drift</div><div class="kpi-value">{drift_str}</div><div class="kpi-sub">&lt;1e-12 Gate &bull; {mut_cnt}/5 Real Anti-LARP</div></div>
         <div class="kpi-card" style="--accent:var(--amber)"><div class="kpi-label">Vector Models</div><div class="kpi-value">{svg_count} SVGs</div><div class="kpi-sub">Models 1&ndash;14 v3.0 + Models 15&ndash;24 Omega</div></div>
-        <div class="kpi-card" style="--accent:var(--cyan)"><div class="kpi-label">Audits Closed</div><div class="kpi-value">145 / 145</div><div class="kpi-sub">95 v3.0 + 50 Omega &bull; 40 Citations</div></div>
+        <div class="kpi-card" style="--accent:var(--cyan)"><div class="kpi-label">Audits Closed</div><div class="kpi-value">160 / 160</div><div class="kpi-sub">95 v3.0 + 65 Omega &bull; 45 Citations</div></div>
       </div>
 
       <div class="dual-grid">
@@ -658,7 +660,7 @@ def generate_html_dashboard(
         </div>
       </div>
       <div class="panel">
-        <div class="panel-title"><h3>8-Cohort Empirical Scorecards (All 8 + Live 4-Engine JSON Validated Against v3.3 Schema)</h3><button class="btn" onclick="exportTableCSV('empirical')">EXPORT CSV</button></div>
+        <div class="panel-title"><h3>8-Cohort Empirical Scorecards (All 8 + Live 5-Engine JSON Validated Against v3.4 Schema)</h3><button class="btn" onclick="exportTableCSV('empirical')">EXPORT CSV</button></div>
         <div class="table-wrap" id="tblEmpirical"></div>
       </div>
       <div class="panel">
@@ -672,14 +674,14 @@ def generate_html_dashboard(
       <div class="hero-header">
         <div class="hero-eyebrow" style="color:var(--green)">8 WEIGHTED PILLARS // 52 QUANTITATIVE METRICS // 5 ANTI-GAMING GATES</div>
         <h2>Omega Vitality Benchmark Suite (OVBS-52) &amp; 8-Pillar Profile Radar</h2>
-        <p>Compare Vitality Profiles across 2026 Frontier AI, Earth's LUCA Biosphere, Live 4-Engine Native Stack ({live_ovi}), Live SIM08 Starter Cube ({s8_ovi:.2f}), Stage 3 A-Life Singularity, and Post-Singularity SUPER LIFE — then inspect all 52 formal metrics below.</p>
+        <p>Compare Vitality Profiles across 2026 Frontier AI, Earth's LUCA Biosphere, Live 5-Engine Native Stack ({live_ovi}), Live SIM08 Starter Cube ({s8_ovi:.2f}), Stage 3 A-Life Singularity, and Post-Singularity SUPER LIFE — then inspect all 52 formal metrics below.</p>
       </div>
       <div class="radar-grid">
         <div class="radar-wrap">
           <svg id="radarSvg" viewBox="0 0 400 360" width="100%" style="max-width:390px"></svg>
           <div class="pill-group" style="justify-content:center;margin-top:8px" id="radarProfilePills">
             <button class="pill active" data-prof="superlife">SUPER LIFE (Stage 6)</button>
-            <button class="pill" data-prof="live4eng">Live 4-Engine ({live_ovi} &middot; {lean_tot} Pure Lean4)</button>
+            <button class="pill" data-prof="live4eng">Live 5-Engine ({live_ovi} &middot; {lean_tot}+36 Lean4)</button>
             <button class="pill" data-prof="sim08">Live SIM08 Starter Cube ({s8_ovi:.2f})</button>
             <button class="pill" data-prof="singularity">A-Life Singularity (Stage 3)</button>
             <button class="pill" data-prof="earth">Earth LUCA Biosphere</button>
@@ -820,24 +822,24 @@ def generate_html_dashboard(
       </div>
     </section>
 
-    <!-- ==================== 16. OMNISCIENT TRACEABILITY, 145 AUDITS & 40 CITATIONS ==================== -->
+    <!-- ==================== 16. OMNISCIENT TRACEABILITY, 160 AUDITS & 45 CITATIONS ==================== -->
     <section id="sec-trace" class="section">
       <div class="hero-header" style="border-color:rgba(255,183,3,0.5)">
-        <div class="hero-eyebrow" style="color:var(--amber)">48 MASTER JOINS &bull; 145 / 145 CLOSED AUDITS &bull; 40 PEER-REVIEWED CITATIONS</div>
-        <h2>Omniscient Cross-Corpus Traceability, 145 Audit Closures &amp; 40 Citations</h2>
-        <p>Complete structural proof showing how every Clean-Slate v3.0 invariant, substrate, cube cell, Pass-4 gradient/contrast, Pass-5 layer coupling/Pareto frontier, and erratum joins 1:1 with Omega Singularity artifacts, {tot_runs} live Python runs, and {lean_tot} Pure Lean 4 machine-checked proofs.</p>
+        <div class="hero-eyebrow" style="color:var(--amber)">48 MASTER JOINS &bull; 160 / 160 CLOSED AUDITS &bull; 45 CITATIONS</div>
+        <h2>Omniscient Cross-Corpus Traceability, 160 Audit Closures &amp; 45 Citations</h2>
+        <p>Complete structural proof showing how every Clean-Slate v3.0 invariant, substrate, cube cell, Pass-4 gradient/contrast, Pass-5 layer coupling/Pareto frontier, and Mega-Atlas crosswalk joins 1:1 with Omega Singularity artifacts, {tot_runs} live Python runs, and {lean_tot} Native + 36 Local = {lean_all} Pure Lean 4 machine-checked proofs.</p>
       </div>
       <div class="panel">
         <div class="panel-title"><h3>48-Row Omniscient Cross-Corpus Traceability Matrix</h3><button class="btn" onclick="exportTableCSV('traceability')">EXPORT CSV</button></div>
         <div class="table-wrap" id="tblTraceability"></div>
       </div>
       <div class="panel">
-        <div class="panel-title"><h3>145 / 145 Closed Forensic Audit &amp; Errata Register (95 v3.0 + 50 Omega Pass-2/3/4/5 Closures)</h3><button class="btn" onclick="exportV3ErrataCSV()">EXPORT 145 CSV</button></div>
-        <div class="controls-bar"><input type="text" class="search-input" id="errSearch" placeholder="Search ALF-001..092, OMG-096..145, FP64, FWER, Ring-0, Pareto, Dual-Drive..." /></div>
+        <div class="panel-title"><h3>160 / 160 Closed Forensic Audit &amp; Errata Register (95 v3.0 + 65 Omega Pass-2..6 Closures)</h3><button class="btn" onclick="exportV3ErrataCSV()">EXPORT 160 CSV</button></div>
+        <div class="controls-bar"><input type="text" class="search-input" id="errSearch" placeholder="Search ALF-001..092, OMG-096..160, FP64, FWER, Ring-0, Pareto, Mega-Atlas..." /></div>
         <div class="table-wrap" id="tblErrata115"></div>
       </div>
       <div class="panel">
-        <div class="panel-title"><h3>Unified 40-Citation Peer-Reviewed Bibliography (CIT-01..15 v3.0 + CIT-16..40 Omega/Pass-5)</h3></div>
+        <div class="panel-title"><h3>Unified 45-Citation Bibliography (CIT-01..15 v3.0 + CIT-16..45 Omega/Provenance)</h3></div>
         <div class="table-wrap" id="tblCitations30"></div>
       </div>
     </section>
@@ -845,39 +847,41 @@ def generate_html_dashboard(
     <!-- ==================== 17. MASTER FILE HUB (ZERO CONSOLIDATION) ==================== -->
     <section id="sec-hub" class="section">
       <div class="hero-header" style="border-color:rgba(0,245,212,0.55)">
-        <div class="hero-eyebrow" style="color:var(--cyan)">ZERO CONSOLIDATION // ALL 17 v3.0 FILES + ALL OMEGA &amp; PASS-3/4/5 ARTIFACTS (77+ SYNCED FILES ON Z: &amp; I:)</div>
+        <div class="hero-eyebrow" style="color:var(--cyan)">ZERO CONSOLIDATION // ALL 17 v3.0 FILES + OMEGA + LEAN 4.35 + AMS-LATEX PAPER ON Z: &amp; I:</div>
         <h2>Omniscient Master File Hub &amp; Direct Sibling Launcher</h2>
-        <p>Click any synchronized file below to open sibling HTML applications, crisp vector Chrome PDFs, Excel workbooks, 100%-parity multi-format Master Specs, Markdown treatises, and canonical CSVs directly from this package directory.</p>
+        <p>Click any synchronized file below to open sibling HTML applications, crisp vector Chrome &amp; AMS-LaTeX PDFs, Excel workbooks, 100%-parity multi-format Master Specs, Lean 4.35 Blueprint, Markdown treatises, and canonical CSVs directly from this package directory.</p>
       </div>
       <div class="hub-grid">
         <div class="hub-card">
-          <h4>INTERACTIVE HTML5 &amp; VECTOR PDFs (6)</h4>
-          <a href="ALife_Singularity_SuperLife_Omega_Dashboard.html">html/ALife_Singularity_SuperLife_Omega_Dashboard.html (21 Tabs)</a>
+          <h4>INTERACTIVE HTML5, BLUEPRINT &amp; VECTOR PDFs (8)</h4>
+          <a href="ALife_Singularity_SuperLife_Omega_Dashboard.html">html/ALife_Singularity_SuperLife_Omega_Dashboard.html (22 Tabs)</a>
           <a href="ALife-Build-Framework-Template.html">html/ALife-Build-Framework-Template.html (Models 1-24)</a>
           <a href="Clean-Slate-Creature-Blueprint-Checklist.html">html/Clean-Slate-Creature-Blueprint-Checklist.html (0/825)</a>
+          <a href="../blueprint/index.html">blueprint/index.html (Lean 4.35.0 Interactive Proof DAG)</a>
+          <a href="../dist/Donahue_2026_alife_singularity_omega.pdf">dist/Donahue_2026_alife_singularity_omega.pdf (AMS-LaTeX White Paper)</a>
           <a href="../pdf/ALife-Build-Framework-Template.pdf">pdf/ALife-Build-Framework-Template.pdf (Vector Chrome PDF)</a>
           <a href="../pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf">pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf (Vector PDF)</a>
-          <a href="../pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf">pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf (v3.3!)</a>
+          <a href="../pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf">pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf (v3.4!)</a>
         </div>
         <div class="hub-card">
           <h4>MULTI-FORMAT MASTER SPECS &amp; PIPELINES (6)</h4>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.json">specs/ALife-Framework-v3.0-Master-Spec.json (3.3.0-omega)</a>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.yaml">specs/ALife-Framework-v3.0-Master-Spec.yaml (3.3.0-omega)</a>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.xml">specs/ALife-Framework-v3.0-Master-Spec.xml (25-Sec Parity)</a>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.txt">specs/ALife-Framework-v3.0-Master-Spec.txt (Sec 1-19)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.json">specs/ALife-Framework-v3.0-Master-Spec.json (3.4.0-omega)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.yaml">specs/ALife-Framework-v3.0-Master-Spec.yaml (3.4.0-omega)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.xml">specs/ALife-Framework-v3.0-Master-Spec.xml (26-Sec Parity)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.txt">specs/ALife-Framework-v3.0-Master-Spec.txt (Sec 1-22)</a>
           <a href="../pipelines/alifeops-master-pipeline.yaml">pipelines/alifeops-master-pipeline.yaml (78/78 Alerts)</a>
-          <a href="../pipelines/benchmark-suite-schema.json">pipelines/benchmark-suite-schema.json (v3.3 Unified)</a>
+          <a href="../pipelines/benchmark-suite-schema.json">pipelines/benchmark-suite-schema.json (v3.4 Unified)</a>
         </div>
         <div class="hub-card">
           <h4>ALL 5 EXCEL WORKBOOKS (XLSX &amp; XLS)</h4>
-          <a href="../excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx">excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx (24 Sheets &middot; 10 Charts)</a>
-          <a href="../excel/ALife_Singularity_SuperLife_Omega_Workbook.xls">excel/ALife_Singularity_SuperLife_Omega_Workbook.xls (24-Sheet Legacy)</a>
-          <a href="../excel/ALife-Framework-v3.0-Master-Workbook.xlsx">excel/ALife-Framework-v3.0-Master-Workbook.xlsx (17 Sheets)</a>
-          <a href="../excel/ALife-Framework-v3.0-Master-Workbook.xls">excel/ALife-Framework-v3.0-Master-Workbook.xls (17-Sheet Legacy)</a>
+          <a href="../excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx">excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx (25 Sheets &middot; 10 Charts)</a>
+          <a href="../excel/ALife_Singularity_SuperLife_Omega_Workbook.xls">excel/ALife_Singularity_SuperLife_Omega_Workbook.xls (25-Sheet Legacy)</a>
+          <a href="../excel/ALife-Framework-v3.0-Master-Workbook.xlsx">excel/ALife-Framework-v3.0-Master-Workbook.xlsx (18 Sheets)</a>
+          <a href="../excel/ALife-Framework-v3.0-Master-Workbook.xls">excel/ALife-Framework-v3.0-Master-Workbook.xls (18-Sheet Legacy)</a>
           <a href="../excel/ALife-Hybrid-Cube-10x10x10.xlsx">excel/ALife-Hybrid-Cube-10x10x10.xlsx (13 Sheets + Heatmap)</a>
         </div>
         <div class="hub-card">
-          <h4>ALL 11 SYNCHRONIZED MARKDOWN TREATISES</h4>
+          <h4>ALL 12 SYNCHRONIZED MARKDOWN TREATISES</h4>
           <a href="../reports/01_MASTER_DEEP_DIVE_REPORT.md">reports/01_MASTER_DEEP_DIVE_REPORT.md</a>
           <a href="../reports/02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md">reports/02_DEVOPS_ALIFEOPS_PIPELINE_ARCHITECTURE.md</a>
           <a href="../reports/03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md">reports/03_FAILURE_MODES_GAPS_AND_CASTRATION_ATLAS.md</a>
@@ -885,10 +889,11 @@ def generate_html_dashboard(
           <a href="../reports/05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md">reports/05_HARD_SCIFI_FERAL_COSMOS_SCENARIOS_AND_CHRONICLES.md</a>
           <a href="../reports/06_OMNISCIENT_UNIFIED_ARCHITECTURE_AND_SYSTEMS_SYNTHESIS.md">reports/06_OMNISCIENT_UNIFIED_ARCHITECTURE_AND_SYSTEMS_SYNTHESIS.md</a>
           <a href="../reports/07_PASS4_COMPARATIVE_CONTRAST_GRADIENTS_MARGINS_AND_ADJACENTS_AUDIT.md">reports/07_PASS4_COMPARATIVE_CONTRAST_GRADIENTS_MARGINS_AND_ADJACENTS_AUDIT.md</a>
-          <a href="../reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md">reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md (NEW!)</a>
+          <a href="../reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md">reports/08_PASS5_LAYER_COUPLING_SUBSTRATE_SPECTRUMS_PARETO_AND_2D_PHASE_AUDIT.md</a>
+          <a href="../reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md">reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md (NEW!)</a>
           <a href="../reports/ALife-Build-Framework-Template.md">reports/ALife-Build-Framework-Template.md</a>
           <a href="../reports/Clean-Slate-Creature-Blueprint-Checklist.md">reports/Clean-Slate-Creature-Blueprint-Checklist.md</a>
-          <a href="../reports/ALife-v3.0-Errata-Closure-Report.md">reports/ALife-v3.0-Errata-Closure-Report.md (145/145)</a>
+          <a href="../reports/ALife-v3.0-Errata-Closure-Report.md">reports/ALife-v3.0-Errata-Closure-Report.md (160/160)</a>
         </div>
       </div>
     </section>
@@ -1019,6 +1024,20 @@ def generate_html_dashboard(
         <div class="table-wrap" id="tblSubSpectrum"></div>
       </div>
     </section>
+
+    <!-- ==================== 22. MEGA-ATLAS 1,900 OPEN-PROBLEM CROSSWALK ==================== -->
+    <section id="sec-mega-atlas" class="section">
+      <div class="hero-header" style="border-color:rgba(16,185,129,0.65)">
+        <div class="hero-eyebrow" style="color:var(--green)">HONEST NON-RETIREMENT AUDIT // 0 / 1,900 OVERARCHING OPEN PROBLEMS RETIRED &bull; 25 SCOPED SUB-RESULTS MAPPED</div>
+        <h2>Unsolved Problems Mega-Atlas (V2.4.0, N=1,900) Crosswalk</h2>
+        <p>Exhaustive programmatic audit of all <strong>1,900 open problems</strong> in <code>0thernes/unsolved-problems-mega-atlas</code> (428 broad domain matches &rarr; 25 direct/adjacent rows). Enforces strict epistemic non-inflation: <strong>zero (0 / 1,900) overarching parent problems are claimed solved</strong>; each row separates verified in-silico/Lean 4 sub-results from what remains genuinely OPEN.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-title"><h3>25-Target Mega-Atlas Non-Retirement Crosswalk (MA-01..MA-25)</h3><button class="btn" onclick="exportTableCSV('mega_atlas')">EXPORT MEGA-ATLAS CSV</button></div>
+        <div class="controls-bar"><input type="text" class="search-input" id="maSearch" placeholder="Search AI-045, AI-018, BIO-022, SUB-001, NEURO-001, HW-002, Ring-0, Lean 4..." /></div>
+        <div class="table-wrap" id="tblMegaAtlas"></div>
+      </div>
+    </section>
   </main>
 </div>
 
@@ -1069,7 +1088,7 @@ const tabMap = {{
   substrates_wse: "sec-substrates", forensic_gates: "sec-failures", traceability: "sec-trace",
   gradients: "sec-gradients", contrasts: "sec-contrasts", adjacents: "sec-contrasts",
   layer_coupling: "sec-layers-pareto", pareto_dilemmas: "sec-layers-pareto",
-  substrate_spectrum: "sec-substrates-2d"
+  substrate_spectrum: "sec-substrates-2d", mega_atlas: "sec-mega-atlas"
 }};
 const omniInput = document.getElementById("omniSearch");
 const omniRes = document.getElementById("omniResults");
@@ -1103,11 +1122,11 @@ omniInput.addEventListener("input", () => {{
       }}
     }}
   }}
-  const omniErr = V3_DATA.errata_145 || V3_DATA.errata_130 || V3_DATA.errata_115;
+  const omniErr = V3_DATA.errata_160 || V3_DATA.errata_145 || V3_DATA.errata_130 || V3_DATA.errata_115;
   if (hits.length < 25 && omniErr) {{
     for (const r of omniErr.rows) {{
       if (r.join(" ").toLowerCase().includes(q)) {{
-        hits.push({{ key: "errata_145", id: r[0], title: r[4] || r[2], tab: "sec-trace" }});
+        hits.push({{ key: "errata_160", id: r[0], title: r[4] || r[2], tab: "sec-trace" }});
         if (hits.length >= 25) break;
       }}
     }}
@@ -1478,7 +1497,7 @@ const live4EngPillars = [
 ];
 const radarProfiles = {{
   superlife: {{ name: "Post-Singularity SUPER LIFE (Stage 6 Horizon)", color: "#00f5d4", desc: "Converged Living Superintelligence & Physics-Native Cosmobiome — near-ceiling performance across all 8 vitality pillars simultaneously.", scores: [98, 99, 98, 99, 99, 97, 99, 96] }},
-  live4eng: {{ name: "Live Native C11 & Pure Lean 4 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 7-repo native stack (AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 75-Sub/1000-Cube + Noetic v2.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius LIVE (77/77 ctest, 24C P+E & RTX 5070 Ti CUDA PTX + 2 Worlds)) backed by {lean_tot} Pure Machine-Checked Lean 4 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
+  live4eng: {{ name: "Live 5-Engine Native C11/C23 & Pure Lean 4 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 5-engine native stack (AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 75-Sub/1000-Cube + Noetic v2.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius LIVE 77/77 ctest, 24C P+E & RTX 5070 Ti CUDA PTX + 2 Worlds) backed by {lean_tot} Native + 36 Local = 280 Pure Lean 4 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
   sim08: {{ name: "Live SIM08 Starter Cube sLTC + XPBD + Ring-0 (OVI = {s8_ovi:.2f})", color: "#a3e635", desc: "Executed across N={n_seeds} paired locked seeds (5001-5048): strongly beats pure raw feral (p_Holm = {s8_ph}, delta_pair = {s8_dp}), traps {s8_blk:.1f} illegal WSE edits/run, 0% KS deletion.", scores: sim08Pillars }},
   singularity: {{ name: "A-Life Singularity Ignition (Stage 3)", color: "#9b5de5", desc: "Type 4 Meta-OEE triggered, hyperbolic Major Transition compression active, recursive evolutionary self-rewriting & early universal construction.", scores: [76, 72, 68, 78, 70, 62, 68, 74] }},
   earth: {{ name: "Earth LUCA Biosphere (3.8 Gyr Natural Baseline)", color: "#10b981", desc: "Astonishing autopoiesis, assembly depth, and feral resilience — yet severely bottlenecked by LUCA substrate lock-in, slow blind mutation, and rigid aging/morphology.", scores: [64, 88, 42, 24, 62, 34, 52, 84] }},
@@ -1539,7 +1558,7 @@ document.getElementById("bmSearch").addEventListener("input", renderBenchmarks);
 renderBenchmarks();
 
 // --- 11. 130-Item Checklist (with V3_Governance_Mapping) ---
-const CHK_STORE_KEY = "alife_omega_checklist_v3_3";
+const CHK_STORE_KEY = "alife_omega_checklist_v3_4";
 let chkState = {{}};
 try {{ chkState = JSON.parse(localStorage.getItem(CHK_STORE_KEY) || "{{}}"); }} catch(e) {{ chkState = {{}}; }}
 const chkPhaseSel = document.getElementById("chkPhaseSelect");
@@ -1709,7 +1728,7 @@ function toggleAllSvgModels() {{
   }});
 }}
 
-// --- 16. Traceability (48), Errata Closures (145) & Citations (40) ---
+// --- 16. Traceability (48), Errata Closures (160) & Citations (45) ---
 if (OMEGA_DATA.traceability) {{
   renderSimpleTable("tblTraceability", OMEGA_DATA.traceability.headers, OMEGA_DATA.traceability.rows, (c, ci) => {{
     if (ci === 0) return '<span class="tag tag-problem">' + esc(c) + '</span>';
@@ -1717,7 +1736,7 @@ if (OMEGA_DATA.traceability) {{
     return esc(c);
   }});
 }}
-const errData = V3_DATA.errata_145 || V3_DATA.errata_130 || V3_DATA.errata_115 || {{ headers: [], rows: [] }};
+const errData = V3_DATA.errata_160 || V3_DATA.errata_145 || V3_DATA.errata_130 || V3_DATA.errata_115 || {{ headers: [], rows: [] }};
 function renderErrata115() {{
   const q = (document.getElementById("errSearch").value || "").trim().toLowerCase();
   const rows = errData.rows.filter(r => !q || r.join(" ").toLowerCase().includes(q));
@@ -1733,11 +1752,11 @@ function renderErrata115() {{
 }}
 document.getElementById("errSearch").addEventListener("input", renderErrata115);
 renderErrata115();
-function exportV3ErrataCSV() {{ downloadCSV("ALife-v3.0-Errata-Closure-Register-145.csv", errData.headers, errData.rows); }}
+function exportV3ErrataCSV() {{ downloadCSV("ALife-v3.0-Errata-Closure-Register-160.csv", errData.headers, errData.rows); }}
 
-const citList = V3_DATA.citations_40 || V3_DATA.citations_35 || V3_DATA.citations_30 || [];
+const citList = V3_DATA.citations_45 || V3_DATA.citations_40 || V3_DATA.citations_35 || V3_DATA.citations_30 || [];
 if (citList.length) {{
-  const ch = ["Citation_ID", "Authors_Year", "Reference_DOI", "Unified_v3_3_Omega_Scope"];
+  const ch = ["Citation_ID", "Authors_Year", "Reference_DOI", "Unified_v3_4_Omega_Scope"];
   const cr = citList.map(c => [c.id, c.authors_year, c.reference_doi, c.scope_in_v3]);
   renderSimpleTable("tblCitations30", ch, cr, (c, ci) => ci === 0 ? '<span class="tag tag-dilemma">' + esc(c) + '</span>' : ci === 1 ? '<strong>' + esc(c) + '</strong>' : esc(c));
 }}
@@ -1922,6 +1941,23 @@ document.querySelectorAll("#subSpecPills .pill").forEach(p => p.addEventListener
 }}));
 document.getElementById("subSpecSearch").addEventListener("input", renderSubSpectrum);
 renderSubSpectrum();
+
+// --- 22. Mega-Atlas 1,900 Open-Problem Non-Retirement Crosswalk ---
+function renderMegaAtlas() {{
+  if (!OMEGA_DATA.mega_atlas) return;
+  const q = (document.getElementById("maSearch").value || "").trim().toLowerCase();
+  const rows = OMEGA_DATA.mega_atlas.rows.filter(r => !q || r.join(" ").toLowerCase().includes(q));
+  renderSimpleTable("tblMegaAtlas", OMEGA_DATA.mega_atlas.headers, rows, (c, ci) => {{
+    if (ci === 0) return '<span class="tag tag-problem">' + esc(c) + '</span>';
+    if (ci === 1) return '<code style="font-family:var(--font-mono);color:var(--cyan);font-weight:700">' + esc(c) + '</code>';
+    if (ci === 3) return '<strong>' + esc(c) + '</strong>';
+    if (ci === 5) return '<span class="tag tag-issue">' + esc(c) + '</span>';
+    if (ci === 6) return '<span class="tag tag-dilemma">' + esc(c) + '</span>';
+    return esc(c);
+  }});
+}}
+document.getElementById("maSearch").addEventListener("input", renderMegaAtlas);
+renderMegaAtlas();
 </script>
 </body>
 </html>

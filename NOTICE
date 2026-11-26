@@ -1,0 +1,11 @@
+A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0)
+Copyright 2026 Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)
+ORCID: https://orcid.org/0009-0006-8168-9648
+Repository: https://github.com/0thernes/alife-singularity-omega-package
+
+Dual Licensing:
+- Prose, white paper, documentation, datasets, specifications, and figures: CC-BY-4.0 (see LICENSE)
+- Python scripts, Lean 4 formalizations, tests, oracle, and HTML/JS code: Apache-2.0 (see LICENSE-CODE)
+
+See THIRD_PARTY_NOTICES.md for upstream toolchains, Python libraries, and
+Build Standard v1.2.0 template attributions.

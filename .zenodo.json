@@ -1,0 +1,40 @@
+{
+  "title": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 280 Pure Lean 4 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit",
+  "upload_type": "software",
+  "version": "3.4.0",
+  "publication_date": "2026-11-25",
+  "description": "Zero-consolidation multi-format scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool Kahan-Neumaier FP64 thermodynamic conservation, Philox4x32-10 seed isolation, XPBD soft hydrostats, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro evolutionary metrology (OVBS-52, 78-alert ALifeOps pipeline, 748-run paired falsification with Holm-Bonferroni FWER, 280 Pure Lean 4 theorems including 36+4 local zero-Mathlib Lean 4.35.0 theorems verified by leanchecker-paranoid, AMS-LaTeX white paper + clean-room arXiv tarball, and an honest 1,900-problem Mega-Atlas non-retirement audit: 0/1,900 retired). Dual-licensed CC-BY-4.0 (prose/data/figures) and Apache-2.0 (code/Lean 4).",
+  "creators": [
+    {
+      "name": "Donahue, Alexander Stephen",
+      "affiliation": "Independent Researcher, Spokane, WA, USA",
+      "orcid": "0009-0006-8168-9648"
+    }
+  ],
+  "access_right": "open",
+  "license": "apache-2.0",
+  "keywords": [
+    "artificial life",
+    "open-ended evolution",
+    "hardware ring-0",
+    "Lean 4",
+    "formal verification",
+    "OVBS-52",
+    "constraint castration",
+    "Holm-Bonferroni",
+    "conservation laws"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/0thernes/alife-singularity-omega-package",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/0thernes/unsolved-problems-mega-atlas",
+      "relation": "references",
+      "scheme": "url"
+    }
+  ],
+  "notes": "AI-assistance disclosed transparently in docs/AI_DISCLOSURE.md and paper/main.tex. Neither this package nor the accompanying white paper has undergone external journal peer review."
+}

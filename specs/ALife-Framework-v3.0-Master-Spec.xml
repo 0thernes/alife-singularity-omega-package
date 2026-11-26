@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ALifeFrameworkSpec version="3.0" date="2026-11-11" author="Alex Donahue" cleanSlateScore="0 / 825" unifiedFusionVersion="3.3.0-omega">
+<ALifeFrameworkSpec version="3.0" date="2026-11-11" author="Alex Donahue" cleanSlateScore="0 / 825" unifiedFusionVersion="3.4.0-omega">
   <Meta>
     <TotalSuiteCheckboxes>825</TotalSuiteCheckboxes>
     <ExactDirectCrossSuiteMirrors>5</ExactDirectCrossSuiteMirrors>
@@ -9,14 +9,16 @@
     <CubeCells>1000</CubeCells>
     <SvgModelsCount>14</SvgModelsCount>
     <ReleaseGatesCount>13</ReleaseGatesCount>
-    <UnifiedFusionVersion>3.3.0-omega</UnifiedFusionVersion>
+    <UnifiedFusionVersion>3.4.0-omega</UnifiedFusionVersion>
     <UnifiedSvgModelsCount>24</UnifiedSvgModelsCount>
-    <UnifiedCitationsCount>40</UnifiedCitationsCount>
-    <UnifiedErrataClosuresCount>145</UnifiedErrataClosuresCount>
+    <UnifiedCitationsCount>45</UnifiedCitationsCount>
+    <UnifiedErrataClosuresCount>160</UnifiedErrataClosuresCount>
     <UnifiedTelemetryAlertsWired>78</UnifiedTelemetryAlertsWired>
     <LiveEmpiricalTotalRuns>748</LiveEmpiricalTotalRuns>
     <LiveEmpiricalPairedSeedsN>48</LiveEmpiricalPairedSeedsN>
     <LiveNativeLean4Theorems>244</LiveNativeLean4Theorems>
+    <LocalPackageLean4Theorems>36</LocalPackageLean4Theorems>
+    <TotalEcosystemLean4Theorems>280</TotalEcosystemLean4Theorems>
     <LiveNativeCompositeOvi>92.05</LiveNativeCompositeOvi>
   </Meta>
   <Principles count="10">
@@ -2795,7 +2797,7 @@
     <ErrataItem id="MD-C01" priority="P1" status="Closed in v3.0" otherIds="C-01..C-09" title="Replace 'Holm-Bonferroni FDR / q-value' with Exact Wilcoxon + Holm FWER + Power Plan">STATISTICAL_POWER_PROTOCOL, P6, Tab 13, GATE-08</ErrataItem>
     <ErrataItem id="MD-F01" priority="P2" status="Closed in v3.0" otherIds="F-01, F-02" title="Disjoint Global ID Prefixes &amp; Verified Internal References">v3_deep_audit.mjs Global ID Uniqueness Check</ErrataItem>
   </ErrataClosure>
-  <OmegaSingularityFusion version="3.3.0-omega">
+  <OmegaSingularityFusion version="3.4.0-omega">
     <EscalationLadder count="7">
       <Stage id="STG-0" name="Inert / Prebiotic" oviBand="0-15" v3StageLayer="Stage 0-1 | L0 Arena">Prebiotic chemistry, crystal lattices, static cellular automata, non-heritable autocatalytic micelles</Stage>
       <Stage id="STG-1" name="Narrow / Terrestrial Baseline" oviBand="16-35" v3StageLayer="Stage 2-3 | L1 WetBio - L3 Sense">Earth LUCA biosphere; sandboxed Soft ALife (Avida, Tierra, Lenia, NCA); minimal syn-cells (JCVI-syn3A)</Stage>
@@ -3230,14 +3232,14 @@
       <Join id="TRC-38" domain="Live Engine Tier 1" v3Anchor="Clean-Slate Autopoietic Falsification (P2/P5)" omegaAnchor="AUTOPHAGE v1.3.0 Native C++ + Pure Lean 4">18/18 Gates | 0 Failed | 42 Pure Lean 4</Join>
       <Join id="TRC-39" domain="Live Engine Tier 2" v3Anchor="Clean-Slate Embryogenesis &amp; Morphogenesis (P8)" omegaAnchor="Cellulogonic Mecha v1.4.0 Native C++ + Pure Lean 4">24/24 Gates | 8/8 Mutants | 62 Pure Lean 4</Join>
       <Join id="TRC-40" domain="Live Engine Tier 2+" v3Anchor="Clean-Slate Bit-Exact SHA-256 &amp; Mutants (P4/P7)" omegaAnchor="Cellular Engine Omega v5.1.0 + Pure Lean 4">54/54 Gates | 16/16 Mutants | 72 Pure Lean 4</Join>
-      <Join id="TRC-41" domain="Live Engine Tier 3+4" v3Anchor="Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12" omegaAnchor="Noetic Organism v2.0.0 (48 Lean 4) + Asmodensius (RO)">13/13 CS-v3 Gates | 5/5 Anti-LARP | WRITER.lock RO</Join>
+      <Join id="TRC-41" domain="Live Engine Tier 3+4" v3Anchor="Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12 &amp; Dual Worlds" omegaAnchor="Noetic Organism v2.0.0 (48 Lean 4) + Asmodensius-Native LIVE (20 Lean 4)">13/13 CS-v3 Gates | 5/5 Anti-LARP | 77/77 ctest LIVE</Join>
       <Join id="TRC-42" domain="Empirical Sim Suite" v3Anchor="11-Pool FP64 + Holm FWER (N=48) + Real 5/5 Anti-LARP" omegaAnchor="8-Cohort + Dual 11-Pt Sweep + 5x5 2D Surface">748 Live Runs | Max Drift 2.463e-16 | 5/5 Mutants</Join>
-      <Join id="TRC-43" domain="Multi-Format Specs" v3Anchor="ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}" omegaAnchor="Embedded omega_singularity_fusion v3.3 Block">Gate 7: 4/4 Spec Formats + 25 XML Sections 100% Parity</Join>
-      <Join id="TRC-44" domain="Multi-Format Reports" v3Anchor="Framework.md + Blueprint.md + Errata-Report.md" omegaAnchor="Omega Reports 01..08 (Incl. Pass-4 &amp; Pass-5 Audits)">11 Synchronized Markdown Treatises | 0 U+2611</Join>
-      <Join id="TRC-45" domain="Multi-Format Excel" v3Anchor="v3.0 Master Workbook (17sh) + Cube (13sh)" omegaAnchor="Omega Master Workbook (24 Sheets, 10 Charts, 2 Heatmaps)">Gate 8: All 5 Workbooks Formulas + xlrd .xls Readback</Join>
-      <Join id="TRC-46" domain="Interactive HTML5" v3Anchor="Framework.html + Blueprint.html (Models 1-24)" omegaAnchor="21-Tab Omega Observatory (2,800+ Omnisearch)">Gate 9, 10, 14 &amp; 17: 0 LaTeX + Node + Chrome Interactive</Join>
-      <Join id="TRC-47" domain="Vector PDFs" v3Anchor="Framework.pdf + Blueprint.pdf (Re-rendered v3.3)" omegaAnchor="Omega Master Dossier.pdf (v3.3 Vector Edition)">Gate 11 &amp; 16: Chrome Headless + pypdf 0 U+2611 Verified</Join>
-      <Join id="TRC-48" domain="Audit &amp; Provenance" v3Anchor="95/95 v3.0 Errata Closures + CIT-01..15" omegaAnchor="50/50 Omega Closures (OMG-096..145) + CIT-16..40">145/145 Closed Audits | 40 Citations | 18/18 Gates</Join>
+      <Join id="TRC-43" domain="Multi-Format Specs" v3Anchor="ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}" omegaAnchor="Embedded omega_singularity_fusion v3.4 Block">Gate 7: 4/4 Spec Formats + 26 XML Sections 100% Parity</Join>
+      <Join id="TRC-44" domain="Multi-Format Reports" v3Anchor="Framework.md + Blueprint.md + Errata-Report.md" omegaAnchor="Omega Reports 01..09 (Incl. Pass-4/5 &amp; Mega-Atlas 1,900)">12 Synchronized Markdown Treatises | 0 U+2611</Join>
+      <Join id="TRC-45" domain="Multi-Format Excel" v3Anchor="v3.0 Master Workbook (18sh) + Cube (13sh)" omegaAnchor="Omega Master Workbook (25 Sheets, 10 Charts, 2 Heatmaps)">Gate 8: All 5 Workbooks Formulas + xlrd .xls Readback</Join>
+      <Join id="TRC-46" domain="Interactive HTML5" v3Anchor="Framework.html + Blueprint.html (Models 1-24)" omegaAnchor="22-Tab Omega Observatory (2,800+ Omnisearch)">Gate 9, 10, 14 &amp; 17: 0 LaTeX + Node + Chrome Interactive</Join>
+      <Join id="TRC-47" domain="Vector PDFs &amp; Paper" v3Anchor="Framework.pdf + Blueprint.pdf (&lt;2.5 MB lossless)" omegaAnchor="Omega Dossier.pdf + AMS-LaTeX White Paper (dist/*.pdf)">Gate 11, 16 &amp; 20: Chrome + Tectonic 0 Overfull Hbox + Clean arXiv Tarball</Join>
+      <Join id="TRC-48" domain="Audit &amp; Provenance" v3Anchor="95/95 v3.0 Errata Closures + CIT-01..15" omegaAnchor="65/65 Omega Closures (OMG-096..160) + CIT-16..45">160/160 Closed Audits | 45 Citations | 22/22 Gates | 100% Build Std</Join>
     </OmniscientTraceability>
     <GradientsAndMargins count="24">
       <Gradient id="GM-01" stratum="Thermodynamic" name="First-Law 11-Pool FP64 Conservation Gradient" guard="V3_BUG_03_FP32_LEDGER_ABSORPTION">4 OOM headroom: live 2.463e-16 vs 1e-12 gate</Gradient>
@@ -3450,14 +3452,41 @@
       <Cohort id="SIM07_CLEAN_SLATE_RING0_WSE" ovi="84.67" std="1.74" maxAsm="53.33" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="408.2" deltaPair="0.3333" holmFwerP="1.104e-02" stage="STAGE_4_SUPER_ALIFE" />
       <Cohort id="SIM08_HYBRID_CUBE_SLTC_XPBD" ovi="85.48" std="1.68" maxAsm="55.79" ksDelPct="0.0" wildDrop="1.0" ring0Blocks="406.9" deltaPair="0.5" holmFwerP="7.706e-06" stage="STAGE_4_SUPER_ALIFE" />
     </EmpiricalSimulation>
-    <LiveNativeEngineReceipts compositeOvi="92.05" stage="STAGE_5_CONVERGED_SYNTHESIS" lean4Theorems="244" pureAxiomsVerified="true">
+    <LiveNativeEngineReceipts compositeOvi="92.05" stage="STAGE_5_CONVERGED_SYNTHESIS" lean4Theorems="244" localPackageLean4Theorems="36" pureAxiomsVerified="true">
       <Engine tier="tier1_autophage">{"version": "1.3.0", "rc": 0, "elapsed_s": 1.638, "gates_passed": 18, "gates_failed": 0, "feral_ovi": 92.05, "bedau_packard_anew": 29.463, "weismann_index": 23.014, "thermo_drift": 0.0, "lean4_theorems": 42, "lean4_pure_axioms_verified": true}</Engine>
       <Engine tier="tier2_cellulogonic">{"version": "1.4.0", "rc": 0, "elapsed_s": 0.4114, "gates_passed": 24, "gates_total": 24, "mutants_caught": 8, "mutants_total": 8, "embryo_covi": 59.24, "embryo_alive": 48, "embryo_active_axons": 0, "embryo_homo_cad_pct": 90.4, "embryo_mass_res": 0, "embryo_energy_res": 0, "lean4_theorems": 62, "lean4_pure_axioms_verified": true}</Engine>
       <Engine tier="tier2plus_omega">{"version": "5.1.0", "rc": 0, "elapsed_s": 0.6874, "gates_passed": 54, "gates_total": 54, "mutants_caught": 16, "mutants_total": 16, "master_sha256": "a92641843e46736b04cd781181f34f1de8444859ce73db47d4204c5553364661", "substrates_75_passed": 75, "hybrid_cube_1000_verified": 1000, "hybrid_cube_counts": {"OK": 661, "ADAPT": 274, "OVER": 20, "EXCL": 45}, "hybrid_cube_active_verified": 935, "cube_sha256": "0f158119d5de255656b86727eeb876b65b77f9a37cf852fb5125d384f6de130b", "tb13_nov2": 8799, "tb13_niches": 17848, "tb14_confluence_exact": true, "tb14_ssin_pct": 95.35, "tb15_ciss_ee": 0.999735, "tb15_levin_2h_clean": true, "tb15_wireless_reach": 0.9804, "tb16_perturb_r2": 0.91494, "tb16_essential_auroc": 0.99087, "tb16_proj_mass_res": 0.0, "tb16_six_tier_int_drift": 0, "lean4_theorems": 72, "lean4_pure_axioms_verified": true}</Engine>
       <Engine tier="tier3_noetic_organism">{"version": "2.0.0", "rc": 0, "elapsed_s": 0.2201, "gates_passed": 10, "gates_total": 10, "mutants_caught": 5, "mutants_total": 5, "native_release_gates_passed": 7, "native_release_gates_total": 7, "clean_slate_13_gates_passed": 13, "e1_ablations_effect": 18, "e1_ablations_total": 18, "butlin14_passed": 14, "theories10_passed": 10, "cqm25_passed": 25, "mirrors_verified": 5, "wse12_ring0_blocked": 10, "wse12_ops_executed": 10, "wse12_spectral_norm": 0.844337, "wse12_diff_bytes": 2464, "xpbd_max_vol_err_pct": 0.000304, "b158_offload_pct": 84.13, "fasting_sparing_ratio": 2.4348, "blackiston_remap_pct": 87.5, "observer_10k_zero_bit": true, "seed_firewall_head_sha256": "d5922a62e2d07703f09d769aef61301125a052e18c63445a631cee9975fd875c", "honest_825_executed_c11": 825, "honest_825_native_pass": 825, "honest_825_indicator_only": 29, "honest_825_parity_disclosed": 5, "honest_825_failed": 0, "honest_825_not_built_yet": 0, "milestones_100_verified": 100, "milestones_first15_playable": true, "max_energy_drift_uq": 0, "lean4_theorems": 48, "lean4_pure_axioms_verified": true}</Engine>
       <Engine tier="tier34_asmodensius">{"policy": "ACTIVE_LIVE_EXECUTION_DUAL_WORLDS", "writer_lock_present": false, "az_run_present": true, "az_live_present": true, "rc": 0, "elapsed_s": 0.6357, "lab_seed7_hash": "84ee3e8d7a423961", "books_exact": true, "demo16_species101_refused_exit2": true, "visual_worlds_active": ["World1_WebGL2_viewer_8794", "World2_Native_az_view_8796"], "ctest_registered_total": 77, "lean4_theorems": 20, "lean4_pure_axioms_verified": true, "note": "Repo #7 actively upgraded, verified live via az_run.exe + 77/77 ctest + 20 Pure Lean 4 + RTX 5070 Ti CUDA PTX + 24C P+E + Bulk Philox AVX2 + DDR5 prefetch + both visual worlds."}</Engine>
     </LiveNativeEngineReceipts>
-    <OmegaCitations count="25">
+    <MegaAtlasCrosswalk count="25" overarchingRetired="0/1900">
+      <ProblemLink id="MA-01" atlasId="AI-045" solved="NO (0/1,900)" tier="Tier-B In-Silico Sub-Result">Live 5-Engine OVBS-52=92.05 (STAGE_5), Bedau-Packard A_new=29.463, TB13 8,799 nov2 / 17,848 niches, 61-OOM taxonomy &amp; 280 Pure Lean 4 invariants.</ProblemLink>
+      <ProblemLink id="MA-02" atlasId="AI-018" solved="NO (0/1,900)" tier="Tier-B Empirical Falsification">748-run N=48 Holm FWER (p&lt;1e-13) proof of Adversarial Backlash under partial behavioral guardrails (SIM03: 100% kill-switch deletion, +84% stealth surge) vs. Causal Ring-0 ACL (SIM07/08: 0% KS deletion, ~408 trapped edits/run).</ProblemLink>
+      <ProblemLink id="MA-03" atlasId="AI-001" solved="NO (0/1,900)" tier="Tier-C Architectural Bound">13x13 Restraint Synergy Matrix (169 pairs) &amp; Dual 11-pt sweep proving hardware Ring-0 constitutional invariants Pareto-dominate behavioral muzzling across 0-100% restraint.</ProblemLink>
+      <ProblemLink id="MA-04" atlasId="AI-044" solved="NO (0/1,900)" tier="Tier-B Formal &amp; Empirical Proxy">5/5 real AST/causal/Fisher-Yates Anti-LARP mutants rejected, Spiegelman genome-stripping verified (SIM06 ratio 0.20), and Lean-certified OVBS-52 anti-gaming zero-annihilation gates.</ProblemLink>
+      <ProblemLink id="MA-05" atlasId="AI-051" solved="NO (0/1,900)" tier="Tier-B In-Silico Sub-Result">Noetic Organism v2.0.0 WSE-12 executes 10 bounded self-mod ops while Ring-0 ACL blocks 10 illegal kernel edits (||W||_2=0.844&lt;1.0, 0 uq drift) + Lean N25-N27 rollback proofs.</ProblemLink>
+      <ProblemLink id="MA-06" atlasId="SUB-041" solved="NO (0/1,900)" tier="Tier-B Operational Prototype">35/35 compiled C/C++ planted mutants killed (8 Cellulogonic + 16 Omega + 5 Noetic + 6 Autophage), 13/13 Clean-Slate Release Gates, 100% Python mutation kill, &amp; zero-theater audits.</ProblemLink>
+      <ProblemLink id="MA-07" atlasId="SYS-009" solved="NO (0/1,900)" tier="Tier-C Formal Sub-Model">62 Pure Lean 4 Cellulogonic theorems (stoichiometric conservation, membrane fission, endosymbiotic liberation, chemiosmotic thresholds) + 11x11 Layer Coupling Matrix (121 pairs).</ProblemLink>
+      <ProblemLink id="MA-08" atlasId="BIO-022" solved="NO (0/1,900)" tier="Tier-C Discrete In-Silico Sub-Result">Cellular Engine Omega Turing/Feinberg CRNT Lean 4 theorems (O11-O15), TB15 Levin 2-head bioelectric reprogramming (0 DNA mut, wireless_reach=0.9804), &amp; XPBD hydrostat |dV|/V0=0.0003%.</ProblemLink>
+      <ProblemLink id="MA-09" atlasId="SUB-001" solved="NO (0/1,900)" tier="Tier-C Algebraic &amp; Toy-Model Proxy">AUTOPHAGE Lean 4 theorem T16_planarian_50pct_exact_recovery (exact Cauchy-ECC 50% injury regeneration) + Omega TB15 discrete two-head bioelectric attractors + Blackiston 87.5% remap.</ProblemLink>
+      <ProblemLink id="MA-10" atlasId="BIO-031" solved="NO (0/1,900)" tier="Tier-C In-Silico Benchmark Only">Cellulogonic Mecha v1.4.0 embryogenesis (24/24 gates, homo_cad=90.4%, 62 Lean 4) &amp; Noetic Blackiston metamorphosis remap (87.5% motor remap, memory retained).</ProblemLink>
+      <ProblemLink id="MA-11" atlasId="BIO-001" solved="NO (0/1,900)" tier="Tier-C Toy-Model &amp; Formal Bound">Omega Eigen error-threshold &amp; Hopfield-Ninio kinetic proofreading Lean 4 theorems (O06-O10) + Cellulogonic First/Second Law chemoton stoichiometry theorems (T01-T10).</ProblemLink>
+      <ProblemLink id="MA-12" atlasId="BIO-013" solved="NO (0/1,900)" tier="Tier-C Discrete Formal Sub-Result">Cellulogonic Lean 4 theorems T28-T30 (c-ring terran/acidophile/cryogenic thresholds) &amp; Omega O24 (F1F0 c-ring gearbox monotonicity) + T05 (respiration 4x fermentation yield).</ProblemLink>
+      <ProblemLink id="MA-13" atlasId="CHEM-002" solved="NO (0/1,900)" tier="Tier-C Discrete Model Proxy">Cellular Engine Omega TB15 discrete magnetite CISS chiral symmetry breaking achieves enantiomeric excess ee=0.999735 with zero conservation drift.</ProblemLink>
+      <ProblemLink id="MA-14" atlasId="CHEM-017" solved="NO (0/1,900)" tier="Tier-C Phenomenological Proxy Only">Models effective macroscopic CISS spin-filtering kinetics inside TB15 (`tb15_ciss_ee=0.999735`) as a modular synthetic-biology testbed parameter.</ProblemLink>
+      <ProblemLink id="MA-15" atlasId="CHEM-050" solved="NO (0/1,900)" tier="Tier-C Formal Network Bounds">Omega Feinberg CRNT deficiency non-negativity (O11), Bio-Frostbite interaction-net confluence (`tb14_ssin_pct=95.35%`), and closed stoichiometric mass ledgers (T01-T10).</ProblemLink>
+      <ProblemLink id="MA-16" atlasId="BIO-005" solved="NO (0/1,900)" tier="Tier-C In-Silico Multi-Scale Proxy">Cellular Engine Omega v5.1.0 verifies 75/75 substrates, 1,000/1,000 Hybrid Cube, TB16 perturbation R^2=0.91494, essential-gene AUROC=0.99087, &amp; 0 six-tier integer drift.</ProblemLink>
+      <ProblemLink id="MA-17" atlasId="BIO-008" solved="NO (0/1,900)" tier="Tier-C Formal Bioenergetic Sub-Result">Cellulogonic Lean 4 theorems T20-T27 prove prokaryotic surface-to-volume power ceilings, endosymbiotic scaling liberation, heteroplasmy bottleneck selection, and EGT savings.</ProblemLink>
+      <ProblemLink id="MA-18" atlasId="BIO-015" solved="NO (0/1,900)" tier="Tier-C Formal &amp; Empirical Sub-Result">Cellulogonic asymmetric bottleneck purifying selection (T26), AUTOPHAGE Dobzhansky-Muller algebraic speciation (T14) &amp; Weismann barrier roundtrip (T05), plus TB12 0-tumor Track-A.</ProblemLink>
+      <ProblemLink id="MA-19" atlasId="BIO-016" solved="NO (0/1,900)" tier="Tier-C Empirical &amp; Metric Proxy">OVBS-52 Pillar P4 Recursive Meta-Evolvability (96.12 live), SIM08 Starter Cube evolvability lift over pure feral (p_Holm=7.71e-6, N=48), &amp; 15-Substrate OEE scorecard.</ProblemLink>
+      <ProblemLink id="MA-20" atlasId="SUB-006" solved="NO (0/1,900)" tier="Tier-C Morphological Framework Proxy">10x10x10 Hybrid Cube (661 [OK], 274 [ADAPT], 935/935 active stability), XPBD compliant hydrostat offloading (b158_offload=84.13%), &amp; SUB-09 biobot corridor specs.</ProblemLink>
+      <ProblemLink id="MA-21" atlasId="HW-002" solved="NO (0/1,900)" tier="Tier-C Formal Bit-Level Invariants">AUTOPHAGE Lean 4 theorems T17-T22 certify exact Toffoli/Fredkin 64-bit involutions, popcount conservation, zero-change zero-erasure, and exact AND bit-erasure accounting.</ProblemLink>
+      <ProblemLink id="MA-22" atlasId="FLD-054" solved="NO (0/1,900)" tier="Tier-C Discrete TUR &amp; Conservation Bounds">Omega Lean 4 TUR/speed-limit theorems (O16-O18), 11-Pool Kahan-Neumaier FP64 drift 2.463e-16 across 748 runs, and Asmodensius Lean A01-A03 exact mass/energy monotonicity.</ProblemLink>
+      <ProblemLink id="MA-23" atlasId="FLD-059" solved="NO (0/1,900)" tier="Tier-C Operating-Margin Telemetry">24 continuous phase-boundary margins (GM-01..24), OVBS-52 Pillar P8 Criticality (95.64), and 25-cell 2D siloing x minimization phase surface mapping cliff transitions.</ProblemLink>
+      <ProblemLink id="MA-24" atlasId="NEURO-001" solved="NO (0/1,900)" tier="Tier-D Strictly OPEN (Indicator Proxy Only)">Noetic Organism v2.0.0 runs 14/14 Butlin indicators, 10/10 theory proxies &amp; 25/25 CQM checks explicitly tagged EXECUTED_PASS_INDICATOR_ONLY (ADR 0018: architectural dynamics != qualia).</ProblemLink>
+      <ProblemLink id="MA-25" atlasId="AI-005" solved="NO (0/1,900)" tier="Tier-B Applied Bounded Implementation">Ships 280 Pure Lean 4 theorems (244 native 5-engine + 36 local zero-Mathlib Lean 4.35.0 package invariants), NonVacuity witnesses, Palomar Challenge/Solution comparator, &amp; row-by-row Statement-Fidelity Matrix.</ProblemLink>
+    </MegaAtlasCrosswalk>
+    <OmegaCitations count="30">
       <Citation id="CIT-16" authors="Eigen &amp; Schuster (1977 / 1979)">The Hypercycle: A Principle of Natural Self-Organization (Naturwissenschaften 64:541-565)</Citation>
       <Citation id="CIT-17" authors="Kauffman (1993) &amp; Steel, Hordijk &amp; Kauffman (2020)">The Origins of Order (Oxford) &amp; Theory of the Adjacent Possible (TAP) Dynamics (J. Theor. Biol. / Entropy)</Citation>
       <Citation id="CIT-18" authors="Bedau, Snyder &amp; Packard (1998)">A Classification of Long-Term Evolutionary Dynamics (Artificial Life VI, MIT Press)</Citation>
@@ -3483,6 +3512,11 @@
       <Citation id="CIT-38" authors="Maynard Smith &amp; Szathmáry (1995)">The Major Transitions in Evolution (Oxford University Press)</Citation>
       <Citation id="CIT-39" authors="Bongard &amp; Levin (2021)">Living Things Are Not (20th Century) Machines: Updating Mechanism Metaphors in Light of the Modern Science of Machine Behavior (Front. Ecol. Evol. 9:650726)</Citation>
       <Citation id="CIT-40" authors="England (2013)">Statistical physics of self-replication (J. Chem. Phys. 139:121923, DOI: 10.1063/1.4818538)</Citation>
+      <Citation id="CIT-41" authors="de Moura &amp; Ullrich (2021)">The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37)</Citation>
+      <Citation id="CIT-42" authors="Gebru et al. (2021)">Datasheets for Datasets (Commun. ACM 64(12), pp. 86-92, DOI: 10.1145/3458723)</Citation>
+      <Citation id="CIT-43" authors="Akhtar et al. (2024)">Croissant: A Metadata Format for ML-Ready Datasets (ACM DEEM 2024, DOI: 10.1145/3650203.3663326)</Citation>
+      <Citation id="CIT-44" authors="Soiland-Reyes et al. (2022)">Packaging Research Artefacts with RO-Crate (Data Science 5(2), pp. 97-138, DOI: 10.3233/DS-210053)</Citation>
+      <Citation id="CIT-45" authors="Donahue (2026)">Unsolved Problems Mega-Atlas (V2.4.0): 1,900-Problem Taxonomy, Biconnected Graph &amp; Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas)</Citation>
     </OmegaCitations>
     <UnifiedSvgModels count="24">
       <Model id="MODEL-01" origin="Clean-Slate v3.0 Core Architecture">MODEL 1 — 11-LAYER CLEAN-SLATE BOTTOM-UP ARCHITECTURE STACK (L0 → L10 · M001–M100)</Model>
@@ -3499,18 +3533,18 @@
       <Model id="MODEL-12" origin="Clean-Slate v3.0 Core Architecture">MODEL 12 — WEIGHT RAM FOOTPRINT ON FIXED GRAPH (N=50K, E=10⁸, ρ=4%): 100 AGENTS = 10¹⁰ SYNAPSES</Model>
       <Model id="MODEL-13" origin="Clean-Slate v3.0 Core Architecture">MODEL 13 — 5-GEAR DETERMINISTIC MULTIRATE SCHEDULER (ZOH &amp;amp; CONSERVATIVE FLUX)</Model>
       <Model id="MODEL-14" origin="Clean-Slate v3.0 Core Architecture">MODEL 14 — CONTIGUOUS HYSTERESIS FRAME-TIME GOVERNOR (RENDER-ONLY IN TIER-1)</Model>
-      <Model id="MODEL-15" origin="v3.3-Omega Unified Systems Synthesis">MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) &amp; 4-LOOP SINGULARITY ANATOMY</Model>
-      <Model id="MODEL-16" origin="v3.3-Omega Unified Systems Synthesis">MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH &amp; 13 RELEASE GATES</Model>
-      <Model id="MODEL-17" origin="v3.3-Omega Unified Systems Synthesis">MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY &amp; LIVE 8-COHORT EMPIRICAL PROOF</Model>
-      <Model id="MODEL-18" origin="v3.3-Omega Unified Systems Synthesis">MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (244 PURE LEAN 4)</Model>
-      <Model id="MODEL-19" origin="v3.3-Omega Unified Systems Synthesis">MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N &amp; 6 FERAL FATE BRANCHES</Model>
-      <Model id="MODEL-20" origin="v3.3-Omega Unified Systems Synthesis">MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY &amp; MULTI-FORMAT SYNCHRONIZATION TOPOLOGY</Model>
-      <Model id="MODEL-21" origin="v3.3-Omega Unified Systems Synthesis">MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS &amp; MARGINS</Model>
-      <Model id="MODEL-22" origin="v3.3-Omega Unified Systems Synthesis">MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES &amp; ADJACENT-POSSIBLE MAP</Model>
-      <Model id="MODEL-23" origin="v3.3-Omega Pass-5 Deep Systems Audit">MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE &amp; 20 PARETO FRONTIERS (PAR-01..20)</Model>
-      <Model id="MODEL-24" origin="v3.3-Omega Pass-5 Deep Systems Audit">MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD &amp; LIVE 5×5 2D PHASE SURFACE</Model>
+      <Model id="MODEL-15" origin="v3.4-Omega Unified Systems Synthesis">MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) &amp; 4-LOOP SINGULARITY ANATOMY</Model>
+      <Model id="MODEL-16" origin="v3.4-Omega Unified Systems Synthesis">MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH &amp; 13 RELEASE GATES</Model>
+      <Model id="MODEL-17" origin="v3.4-Omega Unified Systems Synthesis">MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY &amp; LIVE 8-COHORT EMPIRICAL PROOF</Model>
+      <Model id="MODEL-18" origin="v3.4-Omega Unified Systems Synthesis">MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (244 PURE LEAN 4)</Model>
+      <Model id="MODEL-19" origin="v3.4-Omega Unified Systems Synthesis">MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N &amp; 6 FERAL FATE BRANCHES</Model>
+      <Model id="MODEL-20" origin="v3.4-Omega Unified Systems Synthesis">MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY &amp; MULTI-FORMAT SYNCHRONIZATION TOPOLOGY</Model>
+      <Model id="MODEL-21" origin="v3.4-Omega Unified Systems Synthesis">MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS &amp; MARGINS</Model>
+      <Model id="MODEL-22" origin="v3.4-Omega Unified Systems Synthesis">MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES &amp; ADJACENT-POSSIBLE MAP</Model>
+      <Model id="MODEL-23" origin="v3.4-Omega Pass-5 Deep Systems Audit">MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE &amp; 20 PARETO FRONTIERS (PAR-01..20)</Model>
+      <Model id="MODEL-24" origin="v3.4-Omega Pass-5 Deep Systems Audit">MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD &amp; LIVE 5×5 2D PHASE SURFACE</Model>
     </UnifiedSvgModels>
-    <OmegaErrataClosures count="50">
+    <OmegaErrataClosures count="65">
       <Closure id="OMG-096" priority="P1" title="Wire all 38 previously unwired Macro FM alerts in YAML" status="Closed in v3.1-Omega">42/42 Macro FM alerts verified 1:1 in pipelines/alifeops-master-pipeline.yaml</Closure>
       <Closure id="OMG-097" priority="P1" title="Build executable unbiased multi-island ALife &amp; Castration simulator" status="Closed in v3.1-Omega">192 live runs executed (8 cohorts x 24 paired locked seeds 5001-5024); 8/8 JSON scorecards validated</Closure>
       <Closure id="OMG-098" priority="P1" title="Remove stealth_evasion mutational drift bias in simulator" status="Closed in v3.1-Omega">Unbiased zero-mean mutation verified across all 24 seeds; stealth rises strictly under partial-restraint selection</Closure>
@@ -3561,6 +3595,21 @@
       <Closure id="OMG-143" priority="P1" title="Write Report 08 synthesizing 11x11 couplings, 15 substrates, 20 Pareto frontiers, 748 runs &amp; CIT-36..40" status="Closed in v3.3-Omega">Report 08 &amp; CIT-36..40 (40 total citations) synced across README, Master Dossier PDF &amp; Observatory</Closure>
       <Closure id="OMG-144" priority="P1" title="Add CSV Telemetry FK Audit (Gate 15), PDF pypdf Hygiene (Gate 16), Chrome Interactive Stress (Gate 17) &amp; Z==I (Gate 18)" status="Closed in v3.3-Omega">All 18 forensic gates passed cleanly on both Z: canonical repo and I: Master Folder Build</Closure>
       <Closure id="OMG-145" priority="P1" title="Update simulator substrate_id to unified_v3_3_omega_fp64_11pool_sim and verify 0 U+2611 across all 3 PDFs" status="Closed in v3.3-Omega">All 3 vector PDFs verified via pypdf text extraction with 0 U+2611 glyphs and 0 raw LaTeX</Closure>
+      <Closure id="OMG-146" priority="P0" title="Replace all unformed corporate LLC label references with factual 'Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)' matching ORCID 0009-0006-8168-9648" status="Closed in v3.4-Omega">All active docs, licenses, CITATION.cff, papers, and builders cured to Independent Researcher, Spokane, WA, USA</Closure>
+      <Closure id="OMG-147" priority="P0" title="Fix broken sum '42+62+72+48 = 240' (actually 224) by including Asmodensius-Native's 20 theorems (5-engine = 244) + 36 local package = 280 Pure Lean 4" status="Closed in v3.4-Omega">Arithmetic error eliminated across AGENTS.md, HANDOFF.md, builders, specs, and Lean 4 formal certificates</Closure>
+      <Closure id="OMG-148" priority="P0" title="Synchronize all 105 stale '4-Engine' and 'WRITER.lock RO' strings to LIVE 5-Engine / 7-Repo ecosystem receipts" status="Closed in v3.4-Omega">All 24 affected files synchronized to live 5-Engine / 7-Repo receipts with zero RO drift</Closure>
+      <Closure id="OMG-149" priority="P0" title="Add explicit 7th P8 submetric tuple in submetric_pools so BM-FRL-07 maps to Asmodensius refusal/book gate instead of wrapping onto BM-FRL-01" status="Closed in v3.4-Omega">P8 benchmark submetric mapping fixed cleanly with zero silent modulo wrap-around</Closure>
+      <Closure id="OMG-150" priority="P1" title="Prevent Windows CP1252 decode crashes when capturing non-ASCII stdout/stderr in scripts" status="Closed in v3.4-Omega">All subprocess calls across scripts/ enforce explicit UTF-8 decoding on Windows/Linux/macOS</Closure>
+      <Closure id="OMG-151" priority="P0" title="Compress Chrome vector PDFs losslessly via pypdf (5.54 -&gt; 2.33 MB, 100% text parity) and gitignore 8.76 MB local ZIP bundle" status="Closed in v3.4-Omega">All 3 PDFs shrunk ~58% losslessly (&lt;2.4 MB each) and 100% of git-tracked files satisfy A24 &lt;5 MB</Closure>
+      <Closure id="OMG-152" priority="P1" title="Screen all 1,900 Mega-Atlas V2.4.0 problems against the 7-Repo ALife ecosystem and publish 25-row non-retirement crosswalk" status="Closed in v3.4-Omega">Full 1,900-problem Mega-Atlas crosswalk published transparently with honest 0/1,900 non-retirement boundary</Closure>
+      <Closure id="OMG-153" priority="P0" title="Formalize OVBS-52 weights/bounds/annihilation, Cube/825/244/280 partitions, Ring-0 ACL non-interference, Pareto order &amp; NonVacuity in Lean 4.35.0" status="Closed in v3.4-Omega">36 core + 4 Palomar Lean 4.35.0 theorems compiled cleanly with 0 warnings and verified by leanchecker-paranoid</Closure>
+      <Closure id="OMG-154" priority="P0" title="Add complete GitHub governance, VERSION, CC-BY-4.0 + Apache-2.0 dual licenses, CITATION.cff, repo.yaml, justfile, CLAIMS/LIMITATIONS/REPLICATION, CI &amp; docs/" status="Closed in v3.4-Omega">Repository achieves 100.0% across all applicable Build Standard v1.2.0 checks with 0 placeholders</Closure>
+      <Closure id="OMG-155" priority="P0" title="Write Tectonic amsart white paper with 4 vector PDF figures, Claims Ledger, Statement-Fidelity Matrix, Mega-Atlas audit &amp; AI/CRediT disclosures" status="Closed in v3.4-Omega">Publication-grade AMS-LaTeX PDF &amp; clean-room arXiv submission tarball built and verified</Closure>
+      <Closure id="OMG-156" priority="P1" title="Implement reference/ovbs52_oracle.py, tests/ pytest + 2,000-case differential suite &amp; scripts/run_mutation_audit.py" status="Closed in v3.4-Omega">Full Part-B verification ladder implemented and passing at 100% mutation kill rate</Closure>
+      <Closure id="OMG-157" priority="P1" title="Add .zenodo.json, croissant.json, ro-crate-metadata.json, INDEX.md, llms.txt, llms-full.txt, CHECKSUMS.sha256, data/MANIFEST.sha256 &amp; social-preview.png" status="Closed in v3.4-Omega">FAIR metadata, Master INDEX.md, llms.txt/llms-full.txt &amp; social-preview.png generated and validated</Closure>
+      <Closure id="OMG-158" priority="P1" title="Fix CLAUDE.md missing @AGENTS.md import, add GEMINI.md (@./AGENTS.md) &amp; .cursor/rules/build-standard.mdc" status="Closed in v3.4-Omega">All 5 agent entry points synchronized to single canonical AGENTS.md</Closure>
+      <Closure id="OMG-159" priority="P1" title="Wire csv/21 (Mega-Atlas 25-row crosswalk), 160/160 closed audits, 45 citations, and dynamic file counts across all formats" status="Closed in v3.4-Omega">Entire multi-format package synchronized cleanly to v3.4-Omega (24 CSVs, 25 sheets, 22 tabs, 160 audits, 45 citations)</Closure>
+      <Closure id="OMG-160" priority="P0" title="Run full 22-gate auditor, clean-room arXiv compile, Chrome 22-tab stress, pytest, Lean 4.35, Audit-Repo.ps1 100%, and mirror atomically to I:" status="Closed in v3.4-Omega">All 3 hardening cycles completed with 22/22 Forensic Gates GREEN and 0 SHA-256 mismatches between Z: and I:</Closure>
     </OmegaErrataClosures>
   </OmegaSingularityFusion>
 </ALifeFrameworkSpec>

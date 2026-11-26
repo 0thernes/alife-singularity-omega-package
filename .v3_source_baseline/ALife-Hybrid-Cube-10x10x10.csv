@@ -1,0 +1,1001 @@
+Cell_ID,X_Index,X_Code,X_Model,Y_Index,Y_Code,Y_Precision,Z_Index,Z_Code,Z_Geometry,Compatibility_Badge,Status,Engineering_Rationale
+X0Y0Z0,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y0Z0,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y0Z0,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y0Z0,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z0,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z0,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z0,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y0Z0,7,X7,Active Inf PC,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z0,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z0,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z0,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y1Z0,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y1Z0,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y1Z0,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z0,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z0,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z0,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y1Z0,7,X7,Active Inf PC,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z0,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z0,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z0,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y2Z0,1,X1,Closed-Form CfC,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y2Z0,2,X2,Spiking sLTC,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y2Z0,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y2Z0,4,X4,Modern Hopfield,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y2Z0,5,X5,KAN Spline-LUT,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z0,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y2Z0,7,X7,Active Inf PC,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y2Z0,8,X8,VSA / HDC Bind,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z0,9,X9,NCA / Chemoton,2,Y2,int4 Group,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y3Z0,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z0,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z0,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z0,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z0,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z0,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z0,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z0,7,X7,Active Inf PC,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z0,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z0,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z0,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z0,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z0,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z0,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z0,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z0,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z0,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z0,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z0,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z0,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z0,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z0,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z0,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z0,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z0,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z0,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z0,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z0,7,X7,Active Inf PC,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z0,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z0,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z0,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z0,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z0,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z0,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z0,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z0,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z0,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z0,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z0,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z0,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z0,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z0,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z0,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z0,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z0,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z0,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z0,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z0,7,X7,Active Inf PC,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z0,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z0,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z0,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z0,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z0,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z0,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z0,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z0,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z0,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z0,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z0,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z0,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z0,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z0,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z0,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z0,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z0,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z0,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z0,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z0,7,X7,Active Inf PC,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z0,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z0,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,0,Z0,Metric Vector Sheet,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z1,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y0Z1,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y0Z1,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y0Z1,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z1,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z1,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z1,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y0Z1,7,X7,Active Inf PC,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z1,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z1,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z1,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y1Z1,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y1Z1,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y1Z1,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z1,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z1,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z1,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y1Z1,7,X7,Active Inf PC,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z1,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z1,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z1,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y2Z1,1,X1,Closed-Form CfC,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y2Z1,2,X2,Spiking sLTC,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y2Z1,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y2Z1,4,X4,Modern Hopfield,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y2Z1,5,X5,KAN Spline-LUT,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z1,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y2Z1,7,X7,Active Inf PC,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y2Z1,8,X8,VSA / HDC Bind,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z1,9,X9,NCA / Chemoton,2,Y2,int4 Group,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y3Z1,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z1,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z1,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z1,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z1,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z1,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z1,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z1,7,X7,Active Inf PC,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z1,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z1,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z1,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z1,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z1,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z1,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z1,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z1,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z1,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z1,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z1,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z1,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z1,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z1,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z1,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z1,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z1,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z1,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z1,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z1,7,X7,Active Inf PC,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z1,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z1,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z1,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z1,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z1,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z1,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z1,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z1,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z1,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z1,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z1,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z1,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z1,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z1,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z1,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z1,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z1,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z1,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z1,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z1,7,X7,Active Inf PC,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z1,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z1,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z1,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z1,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z1,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z1,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z1,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z1,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z1,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z1,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z1,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z1,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z1,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z1,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z1,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z1,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z1,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z1,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z1,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z1,7,X7,Active Inf PC,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z1,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z1,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,1,Z1,3D Distance-Delay Wiring,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z2,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y0Z2,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y0Z2,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y0Z2,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z2,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z2,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z2,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y0Z2,7,X7,Active Inf PC,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z2,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z2,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z2,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y1Z2,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y1Z2,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y1Z2,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z2,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z2,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z2,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y1Z2,7,X7,Active Inf PC,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z2,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z2,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z2,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y2Z2,1,X1,Closed-Form CfC,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y2Z2,2,X2,Spiking sLTC,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y2Z2,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y2Z2,4,X4,Modern Hopfield,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y2Z2,5,X5,KAN Spline-LUT,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z2,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y2Z2,7,X7,Active Inf PC,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y2Z2,8,X8,VSA / HDC Bind,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z2,9,X9,NCA / Chemoton,2,Y2,int4 Group,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y3Z2,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z2,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z2,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z2,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z2,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z2,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z2,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z2,7,X7,Active Inf PC,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z2,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z2,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z2,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z2,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z2,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z2,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z2,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z2,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z2,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z2,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z2,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z2,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z2,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z2,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z2,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z2,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z2,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z2,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z2,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z2,7,X7,Active Inf PC,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z2,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z2,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z2,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z2,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z2,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z2,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z2,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z2,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z2,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z2,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z2,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z2,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z2,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z2,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z2,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z2,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z2,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z2,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z2,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z2,7,X7,Active Inf PC,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z2,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z2,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z2,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z2,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z2,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z2,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z2,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z2,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z2,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z2,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z2,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z2,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z2,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z2,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z2,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z2,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z2,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z2,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z2,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z2,7,X7,Active Inf PC,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z2,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z2,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,2,Z2,Watts-Strogatz Small-World,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z3,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y0Z3,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y0Z3,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y0Z3,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z3,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z3,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z3,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y0Z3,7,X7,Active Inf PC,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z3,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z3,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z3,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y1Z3,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y1Z3,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y1Z3,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z3,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z3,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z3,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y1Z3,7,X7,Active Inf PC,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z3,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z3,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z3,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y2Z3,1,X1,Closed-Form CfC,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y2Z3,2,X2,Spiking sLTC,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y2Z3,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y2Z3,4,X4,Modern Hopfield,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y2Z3,5,X5,KAN Spline-LUT,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z3,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y2Z3,7,X7,Active Inf PC,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y2Z3,8,X8,VSA / HDC Bind,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z3,9,X9,NCA / Chemoton,2,Y2,int4 Group,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y3Z3,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z3,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z3,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z3,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z3,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z3,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z3,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z3,7,X7,Active Inf PC,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z3,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z3,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z3,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z3,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z3,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z3,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z3,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z3,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z3,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z3,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z3,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z3,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z3,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z3,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z3,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z3,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z3,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z3,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z3,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z3,7,X7,Active Inf PC,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z3,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z3,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z3,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z3,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z3,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z3,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z3,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z3,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z3,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z3,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z3,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z3,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z3,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z3,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z3,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z3,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z3,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z3,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z3,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z3,7,X7,Active Inf PC,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z3,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z3,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z3,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z3,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z3,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z3,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z3,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z3,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z3,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z3,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z3,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z3,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z3,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z3,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z3,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z3,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z3,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z3,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z3,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z3,7,X7,Active Inf PC,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z3,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z3,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,3,Z3,Hub-and-Sphere Modular,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z4,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X1Y0Z4,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X2Y0Z4,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X3Y0Z4,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X4Y0Z4,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X5Y0Z4,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z4,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X7Y0Z4,7,X7,Active Inf PC,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X8Y0Z4,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X9Y0Z4,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X0Y1Z4,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X1Y1Z4,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X2Y1Z4,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X3Y1Z4,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X4Y1Z4,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X5Y1Z4,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X6Y1Z4,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X7Y1Z4,7,X7,Active Inf PC,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X8Y1Z4,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X9Y1Z4,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,4,Z4,Hyperbolic Tree Manifold,[EXCL],Excluded (Curvature Overflow),Hyperbolic Poincaré/Lorentz norm ‖x‖→1 overflows/collapses in 1–1.58b.
+X0Y2Z4,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X1Y2Z4,1,X1,Closed-Form CfC,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X2Y2Z4,2,X2,Spiking sLTC,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X3Y2Z4,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X4Y2Z4,4,X4,Modern Hopfield,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X5Y2Z4,5,X5,KAN Spline-LUT,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X6Y2Z4,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X7Y2Z4,7,X7,Active Inf PC,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X8Y2Z4,8,X8,VSA / HDC Bind,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X9Y2Z4,9,X9,NCA / Chemoton,2,Y2,int4 Group,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X0Y3Z4,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X1Y3Z4,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X2Y3Z4,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X3Y3Z4,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X4Y3Z4,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X5Y3Z4,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X6Y3Z4,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X7Y3Z4,7,X7,Active Inf PC,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X8Y3Z4,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X9Y3Z4,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X0Y4Z4,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X1Y4Z4,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X2Y4Z4,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X3Y4Z4,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X4Y4Z4,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X5Y4Z4,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X6Y4Z4,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X7Y4Z4,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X8Y4Z4,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X9Y4Z4,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X0Y5Z4,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X1Y5Z4,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X2Y5Z4,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X3Y5Z4,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X4Y5Z4,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X5Y5Z4,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X6Y5Z4,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X7Y5Z4,7,X7,Active Inf PC,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X8Y5Z4,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X9Y5Z4,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,4,Z4,Hyperbolic Tree Manifold,[ADAPT],Adapter Required (FP32 Tangent Map),Requires FP32 exp_0/log_0 tangent-space projection around low-bit weights.
+X0Y6Z4,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z4,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z4,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z4,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z4,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z4,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z4,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z4,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z4,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z4,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z4,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z4,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z4,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z4,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z4,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z4,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z4,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z4,7,X7,Active Inf PC,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z4,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z4,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z4,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z4,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z4,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z4,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z4,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z4,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z4,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z4,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z4,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z4,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z4,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z4,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z4,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z4,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z4,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z4,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z4,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z4,7,X7,Active Inf PC,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z4,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z4,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,4,Z4,Hyperbolic Tree Manifold,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z5,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X1Y0Z5,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X2Y0Z5,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X3Y0Z5,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X4Y0Z5,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X5Y0Z5,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z5,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X7Y0Z5,7,X7,Active Inf PC,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X8Y0Z5,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z5,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,5,Z5,Toroidal / Ring Attractor,[EXCL],Excluded (Attractor Pinning),1-bit weights pin continuous ring/torus bump attractors onto discrete lattice traps.
+X0Y1Z5,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X1Y1Z5,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X2Y1Z5,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X3Y1Z5,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X4Y1Z5,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X5Y1Z5,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X6Y1Z5,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X7Y1Z5,7,X7,Active Inf PC,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X8Y1Z5,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z5,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X0Y2Z5,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X1Y2Z5,1,X1,Closed-Form CfC,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X2Y2Z5,2,X2,Spiking sLTC,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X3Y2Z5,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X4Y2Z5,4,X4,Modern Hopfield,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X5Y2Z5,5,X5,KAN Spline-LUT,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X6Y2Z5,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X7Y2Z5,7,X7,Active Inf PC,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X8Y2Z5,8,X8,VSA / HDC Bind,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z5,9,X9,NCA / Chemoton,2,Y2,int4 Group,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (Stoch-Round Drift),Low-bit attractor sheet needs keyed stochastic rounding to prevent bump pinning.
+X0Y3Z5,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z5,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z5,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z5,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z5,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z5,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z5,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z5,7,X7,Active Inf PC,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z5,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z5,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z5,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z5,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z5,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z5,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z5,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z5,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z5,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z5,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z5,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z5,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z5,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z5,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z5,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z5,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z5,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z5,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z5,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z5,7,X7,Active Inf PC,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z5,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z5,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z5,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z5,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z5,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z5,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z5,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z5,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z5,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z5,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z5,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z5,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z5,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z5,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z5,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z5,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z5,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z5,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z5,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z5,7,X7,Active Inf PC,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z5,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z5,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z5,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z5,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z5,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z5,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z5,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z5,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z5,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z5,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z5,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z5,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z5,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z5,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z5,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z5,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z5,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z5,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z5,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z5,7,X7,Active Inf PC,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z5,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z5,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,5,Z5,Toroidal / Ring Attractor,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z6,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X1Y0Z6,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X2Y0Z6,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X3Y0Z6,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X4Y0Z6,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X5Y0Z6,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z6,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X7Y0Z6,7,X7,Active Inf PC,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X8Y0Z6,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X9Y0Z6,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,6,Z6,SE(2)/SE(3) Steerable,[EXCL],Excluded (Broken Equivariance),Continuous SE(2)/SE(3) steerable harmonics lose group equivariance under 1-bit sign.
+X0Y1Z6,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X1Y1Z6,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X2Y1Z6,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X3Y1Z6,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X4Y1Z6,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X5Y1Z6,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X6Y1Z6,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X7Y1Z6,7,X7,Active Inf PC,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X8Y1Z6,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X9Y1Z6,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X0Y2Z6,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X1Y2Z6,1,X1,Closed-Form CfC,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X2Y2Z6,2,X2,Spiking sLTC,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X3Y2Z6,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X4Y2Z6,4,X4,Modern Hopfield,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X5Y2Z6,5,X5,KAN Spline-LUT,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X6Y2Z6,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X7Y2Z6,7,X7,Active Inf PC,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X8Y2Z6,8,X8,VSA / HDC Bind,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X9Y2Z6,9,X9,NCA / Chemoton,2,Y2,int4 Group,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X0Y3Z6,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X1Y3Z6,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X2Y3Z6,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X3Y3Z6,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X4Y3Z6,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X5Y3Z6,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X6Y3Z6,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X7Y3Z6,7,X7,Active Inf PC,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X8Y3Z6,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X9Y3Z6,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X0Y4Z6,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X1Y4Z6,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X2Y4Z6,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X3Y4Z6,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X4Y4Z6,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X5Y4Z6,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X6Y4Z6,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X7Y4Z6,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X8Y4Z6,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X9Y4Z6,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,6,Z6,SE(2)/SE(3) Steerable,[ADAPT],Adapter Required (Steerable Scale),Sub-8-bit steerable kernels require per-irrep FP16 gain normalization.
+X0Y5Z6,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z6,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z6,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z6,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z6,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z6,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z6,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z6,7,X7,Active Inf PC,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z6,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z6,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z6,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z6,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z6,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z6,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z6,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z6,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z6,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z6,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z6,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z6,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z6,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z6,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z6,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z6,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z6,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z6,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z6,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z6,7,X7,Active Inf PC,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z6,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z6,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z6,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z6,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z6,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z6,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z6,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z6,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z6,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z6,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z6,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z6,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z6,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z6,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z6,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z6,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z6,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z6,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z6,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z6,7,X7,Active Inf PC,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z6,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z6,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,6,Z6,SE(2)/SE(3) Steerable,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z7,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y0Z7,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y0Z7,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y0Z7,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z7,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z7,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z7,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y0Z7,7,X7,Active Inf PC,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z7,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y0Z7,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z7,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y1Z7,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y1Z7,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y1Z7,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z7,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z7,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z7,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y1Z7,7,X7,Active Inf PC,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z7,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y1Z7,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z7,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y2Z7,1,X1,Closed-Form CfC,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y2Z7,2,X2,Spiking sLTC,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y2Z7,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y2Z7,4,X4,Modern Hopfield,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y2Z7,5,X5,KAN Spline-LUT,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z7,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y2Z7,7,X7,Active Inf PC,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y2Z7,8,X8,VSA / HDC Bind,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y2Z7,9,X9,NCA / Chemoton,2,Y2,int4 Group,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y3Z7,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z7,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z7,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z7,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z7,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z7,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z7,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z7,7,X7,Active Inf PC,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z7,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z7,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z7,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z7,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z7,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z7,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z7,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z7,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z7,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z7,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z7,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z7,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z7,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z7,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z7,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z7,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z7,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z7,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z7,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z7,7,X7,Active Inf PC,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z7,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z7,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z7,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z7,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z7,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z7,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z7,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z7,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z7,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z7,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z7,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z7,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z7,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z7,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z7,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z7,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z7,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z7,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z7,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z7,7,X7,Active Inf PC,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z7,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z7,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z7,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OVER],Over-Provisioned (Sparse SDR),"2% k-WTA spiking SDR needs only ternary/int4/int8 weights, not 32-bit floats."
+X1Y8Z7,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z7,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OVER],Over-Provisioned (Sparse SDR),"2% k-WTA spiking SDR needs only ternary/int4/int8 weights, not 32-bit floats."
+X3Y8Z7,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z7,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z7,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z7,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z7,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z7,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z7,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z7,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z7,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z7,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z7,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z7,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z7,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z7,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z7,7,X7,Active Inf PC,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z7,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z7,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,7,Z7,k-WTA 2% Sparse SDR,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z8,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X1Y0Z8,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X2Y0Z8,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X3Y0Z8,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y0Z8,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y0Z8,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z8,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X7Y0Z8,7,X7,Active Inf PC,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y0Z8,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X9Y0Z8,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y1Z8,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X1Y1Z8,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X2Y1Z8,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X3Y1Z8,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X4Y1Z8,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X5Y1Z8,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y1Z8,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X7Y1Z8,7,X7,Active Inf PC,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X8Y1Z8,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X9Y1Z8,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (FP32 State Accum),1–1.58b weights valid only with ≥FP16/FP32 recurrent/chemical state accumulators.
+X0Y2Z8,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X1Y2Z8,1,X1,Closed-Form CfC,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X2Y2Z8,2,X2,Spiking sLTC,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X3Y2Z8,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X4Y2Z8,4,X4,Modern Hopfield,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X5Y2Z8,5,X5,KAN Spline-LUT,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y2Z8,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X7Y2Z8,7,X7,Active Inf PC,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X8Y2Z8,8,X8,VSA / HDC Bind,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X9Y2Z8,9,X9,NCA / Chemoton,2,Y2,int4 Group,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (Salience Tag),Low-bit sleep pruning requires separate 8–16b activity tag counter.
+X0Y3Z8,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y3Z8,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y3Z8,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y3Z8,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y3Z8,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y3Z8,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[ADAPT],Adapter Required (LUT Scale),4-bit KAN requires per-knot FP16 affine scale adapter.
+X6Y3Z8,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y3Z8,7,X7,Active Inf PC,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y3Z8,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y3Z8,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y4Z8,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y4Z8,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y4Z8,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y4Z8,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y4Z8,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y4Z8,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y4Z8,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y4Z8,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y4Z8,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y4Z8,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y5Z8,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y5Z8,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y5Z8,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y5Z8,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y5Z8,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y5Z8,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y5Z8,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y5Z8,7,X7,Active Inf PC,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y5Z8,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y5Z8,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y6Z8,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y6Z8,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y6Z8,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y6Z8,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y6Z8,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y6Z8,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y6Z8,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y6Z8,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y6Z8,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y6Z8,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y7Z8,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y7Z8,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y7Z8,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y7Z8,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y7Z8,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y7Z8,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y7Z8,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y7Z8,7,X7,Active Inf PC,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y7Z8,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y7Z8,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y8Z8,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y8Z8,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y8Z8,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y8Z8,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y8Z8,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y8Z8,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y8Z8,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y8Z8,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y8Z8,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OVER],Over-Provisioned (Bandwidth Waste),VSA/HDC algebraic binding runs natively in 1–4b; FP16/FP32 wastes 4–32× RAM.
+X9Y8Z8,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y9Z8,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z8,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z8,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z8,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z8,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z8,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z8,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z8,7,X7,Active Inf PC,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z8,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z8,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,8,Z8,Sleep-Pruned Dynamic Graph,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X0Y0Z9,0,X0,LIF/AdEx SNN,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y0Z9,1,X1,Closed-Form CfC,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y0Z9,2,X2,Spiking sLTC,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y0Z9,3,X3,Mamba / S4 SSM,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y0Z9,4,X4,Modern Hopfield,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y0Z9,5,X5,KAN Spline-LUT,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[EXCL],Excluded (Ill-Conditioned),KAN spline LUT collapses to step sign in 1-bit.
+X6Y0Z9,6,X6,dCaAP 2-Comp,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y0Z9,7,X7,Active Inf PC,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y0Z9,8,X8,VSA / HDC Bind,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y0Z9,9,X9,NCA / Chemoton,0,Y0,Binary 1-bit,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y1Z9,0,X0,LIF/AdEx SNN,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y1Z9,1,X1,Closed-Form CfC,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y1Z9,2,X2,Spiking sLTC,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y1Z9,3,X3,Mamba / S4 SSM,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y1Z9,4,X4,Modern Hopfield,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y1Z9,5,X5,KAN Spline-LUT,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y1Z9,6,X6,dCaAP 2-Comp,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y1Z9,7,X7,Active Inf PC,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y1Z9,8,X8,VSA / HDC Bind,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y1Z9,9,X9,NCA / Chemoton,1,Y1,Ternary b1.58,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y2Z9,0,X0,LIF/AdEx SNN,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y2Z9,1,X1,Closed-Form CfC,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y2Z9,2,X2,Spiking sLTC,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y2Z9,3,X3,Mamba / S4 SSM,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y2Z9,4,X4,Modern Hopfield,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y2Z9,5,X5,KAN Spline-LUT,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y2Z9,6,X6,dCaAP 2-Comp,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y2Z9,7,X7,Active Inf PC,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y2Z9,8,X8,VSA / HDC Bind,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y2Z9,9,X9,NCA / Chemoton,2,Y2,int4 Group,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y3Z9,0,X0,LIF/AdEx SNN,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y3Z9,1,X1,Closed-Form CfC,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y3Z9,2,X2,Spiking sLTC,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y3Z9,3,X3,Mamba / S4 SSM,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y3Z9,4,X4,Modern Hopfield,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y3Z9,5,X5,KAN Spline-LUT,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y3Z9,6,X6,dCaAP 2-Comp,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y3Z9,7,X7,Active Inf PC,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y3Z9,8,X8,VSA / HDC Bind,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y3Z9,9,X9,NCA / Chemoton,3,Y3,NF4 Quantile,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y4Z9,0,X0,LIF/AdEx SNN,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y4Z9,1,X1,Closed-Form CfC,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y4Z9,2,X2,Spiking sLTC,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y4Z9,3,X3,Mamba / S4 SSM,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y4Z9,4,X4,Modern Hopfield,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y4Z9,5,X5,KAN Spline-LUT,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y4Z9,6,X6,dCaAP 2-Comp,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y4Z9,7,X7,Active Inf PC,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y4Z9,8,X8,VSA / HDC Bind,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y4Z9,9,X9,NCA / Chemoton,4,Y4,MXFP4 Shared,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y5Z9,0,X0,LIF/AdEx SNN,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y5Z9,1,X1,Closed-Form CfC,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y5Z9,2,X2,Spiking sLTC,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y5Z9,3,X3,Mamba / S4 SSM,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y5Z9,4,X4,Modern Hopfield,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y5Z9,5,X5,KAN Spline-LUT,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y5Z9,6,X6,dCaAP 2-Comp,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y5Z9,7,X7,Active Inf PC,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y5Z9,8,X8,VSA / HDC Bind,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y5Z9,9,X9,NCA / Chemoton,5,Y5,int8 Symmetric,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y6Z9,0,X0,LIF/AdEx SNN,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y6Z9,1,X1,Closed-Form CfC,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y6Z9,2,X2,Spiking sLTC,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y6Z9,3,X3,Mamba / S4 SSM,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y6Z9,4,X4,Modern Hopfield,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y6Z9,5,X5,KAN Spline-LUT,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y6Z9,6,X6,dCaAP 2-Comp,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y6Z9,7,X7,Active Inf PC,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y6Z9,8,X8,VSA / HDC Bind,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y6Z9,9,X9,NCA / Chemoton,6,Y6,FP8 / MXFP8,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y7Z9,0,X0,LIF/AdEx SNN,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y7Z9,1,X1,Closed-Form CfC,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y7Z9,2,X2,Spiking sLTC,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y7Z9,3,X3,Mamba / S4 SSM,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y7Z9,4,X4,Modern Hopfield,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y7Z9,5,X5,KAN Spline-LUT,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y7Z9,6,X6,dCaAP 2-Comp,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y7Z9,7,X7,Active Inf PC,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y7Z9,8,X8,VSA / HDC Bind,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y7Z9,9,X9,NCA / Chemoton,7,Y7,FP16 / BF16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y8Z9,0,X0,LIF/AdEx SNN,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X1Y8Z9,1,X1,Closed-Form CfC,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X2Y8Z9,2,X2,Spiking sLTC,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X3Y8Z9,3,X3,Mamba / S4 SSM,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X4Y8Z9,4,X4,Modern Hopfield,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X5Y8Z9,5,X5,KAN Spline-LUT,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X6Y8Z9,6,X6,dCaAP 2-Comp,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X7Y8Z9,7,X7,Active Inf PC,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X8Y8Z9,8,X8,VSA / HDC Bind,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X9Y8Z9,9,X9,NCA / Chemoton,8,Y8,FP32 / Q16.16,9,Z9,Nested Brains-in-Brains,[ADAPT],Adapter Required (S2S Bridge),Nested hierarchy requires explicit typed S2S scale/rounding bridges across levels.
+X0Y9Z9,0,X0,LIF/AdEx SNN,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X1Y9Z9,1,X1,Closed-Form CfC,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X2Y9Z9,2,X2,Spiking sLTC,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X3Y9Z9,3,X3,Mamba / S4 SSM,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X4Y9Z9,4,X4,Modern Hopfield,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X5Y9Z9,5,X5,KAN Spline-LUT,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X6Y9Z9,6,X6,dCaAP 2-Comp,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X7Y9Z9,7,X7,Active Inf PC,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X8Y9Z9,8,X8,VSA / HDC Bind,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.
+X9Y9Z9,9,X9,NCA / Chemoton,9,Y9,Hetero + StochR,9,Z9,Nested Brains-in-Brains,[OK],Direct-Valid,Numerically well-conditioned under standard SoA + contractive norm contract.

@@ -1356,8 +1356,8 @@ Second Law     : Heat sinks (E_heat_phys, E_diss_num) are strictly one-way irrev
 ============================================================================================================
 
 ============================================================================================================
-OMNISCIENT FUSION EXTENSION (v3.3-OMEGA): CLEAN-SLATE v3.0 x SINGULARITY OMEGA x PASS-5 DEEP SYSTEMS ATLAS
-Synchronized UTC: 2026-11-22T22:00:05.005752+00:00 | 78/78 Alerts | 145/145 Closures | 24 SVG Models | 748 Live Runs
+OMNISCIENT FUSION EXTENSION (v3.4-OMEGA): CLEAN-SLATE v3.0 x SINGULARITY OMEGA x MEGA-ATLAS 1,900 CROSSWALK
+Synchronized UTC: 2026-11-26T03:31:48.910345+00:00 | 78/78 Alerts | 160/160 Closures | 24 SVG Models | 748 Live Runs | 244+36=280 Pure Lean 4
 ============================================================================================================
 
 11. DUAL-TRACK ESCALATION LADDER (STG-0 -> STG-6) BRIDGED TO CLEAN-SLATE v3.0 (L0-L10 / M001-M100)
@@ -1441,6 +1441,7 @@ Composite OVBS-52 = 92.05 (STAGE_5_CONVERGED_SYNTHESIS) | Total Pure Lean 4 Theo
   csv/18_layer_11x11_coupling_impedance_matrix.csv             (11 rows: L0..L10 x L0..L10 = 121 pairs)
   csv/19_substrate_spectrum_comparative_scorecard.csv          (15 rows: SUB-01..SUB-15)
   csv/20_pareto_frontiers_and_dilemmas_matrix.csv              (20 rows: PAR-01..PAR-20)
+  csv/21_mega_atlas_1900_open_problems_crosswalk.csv           (25 rows: MA-01..MA-25, 0/1,900 retired)
 
 17. UNIFIED 24 VECTOR SVG ARCHITECTURE MODELS (MODELS 1-14 v3.0 + MODELS 15-24 OMEGA)
 ------------------------------------------------------------------------------------------------------------
@@ -1458,18 +1459,18 @@ Composite OVBS-52 = 92.05 (STAGE_5_CONVERGED_SYNTHESIS) | Total Pure Lean 4 Theo
   [MODEL-12] MODEL 12 — WEIGHT RAM FOOTPRINT ON FIXED GRAPH (N=50K, E=10⁸, ρ=4%): 100 AGENTS = 10¹⁰ SYNAPSES (Clean-Slate v3.0 Core Architecture)
   [MODEL-13] MODEL 13 — 5-GEAR DETERMINISTIC MULTIRATE SCHEDULER (ZOH &amp; CONSERVATIVE FLUX) (Clean-Slate v3.0 Core Architecture)
   [MODEL-14] MODEL 14 — CONTIGUOUS HYSTERESIS FRAME-TIME GOVERNOR (RENDER-ONLY IN TIER-1) (Clean-Slate v3.0 Core Architecture)
-  [MODEL-15] MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-16] MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-17] MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-18] MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (244 PURE LEAN 4) (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-19] MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-20] MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-21] MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-22] MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (v3.3-Omega Unified Systems Synthesis)
-  [MODEL-23] MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20) (v3.3-Omega Pass-5 Deep Systems Audit)
-  [MODEL-24] MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE (v3.3-Omega Pass-5 Deep Systems Audit)
+  [MODEL-15] MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-16] MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-17] MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-18] MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (244 PURE LEAN 4) (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-19] MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-20] MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-21] MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-22] MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (v3.4-Omega Unified Systems Synthesis)
+  [MODEL-23] MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20) (v3.4-Omega Pass-5 Deep Systems Audit)
+  [MODEL-24] MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE (v3.4-Omega Pass-5 Deep Systems Audit)
 
-18. EXTENDED PEER-REVIEWED CITATIONS (CIT-16..CIT-40 -> TOTAL 40 CITATIONS)
+18. EXTENDED PEER-REVIEWED CITATIONS (CIT-16..CIT-45 -> TOTAL 45 CITATIONS)
 ------------------------------------------------------------------------------------------------------------
   [CIT-16] Eigen & Schuster (1977 / 1979) — The Hypercycle: A Principle of Natural Self-Organization (Naturwissenschaften 64:541-565) :: Establishes Eigen Error Threshold (mu * L < ln sigma_s) & hypercycle parasite vulnerability (FM-ERR-01, FM-CNF-01).
   [CIT-17] Kauffman (1993) & Steel, Hordijk & Kauffman (2020) — The Origins of Order (Oxford) & Theory of the Adjacent Possible (TAP) Dynamics (J. Theor. Biol. / Entropy) :: Governs combinatorial adjacent-possible blow-up M(t+1), autocatalytic sets (RAF), and Edge-of-Chaos criticality (FM-DIL-01, BM-FRL-01).
@@ -1496,8 +1497,13 @@ Composite OVBS-52 = 92.05 (STAGE_5_CONVERGED_SYNTHESIS) | Total Pure Lean 4 Theo
   [CIT-38] Maynard Smith & Szathmáry (1995) — The Major Transitions in Evolution (Oxford University Press) :: Defines canonical Major Evolutionary Transitions (MET) criteria & hyperbolic compression ratio alpha_MET (BM-EVO-01, Stage 3 ignition).
   [CIT-39] Bongard & Levin (2021) — Living Things Are Not (20th Century) Machines: Updating Mechanism Metaphors in Light of the Modern Science of Machine Behavior (Front. Ecol. Evol. 9:650726) :: Grounds multi-scale agential soft matter, bioelectric goal-directedness & substrate spectrum contrasts (SUB-05/09, L2/L7/L8).
   [CIT-40] England (2013) — Statistical physics of self-replication (J. Chem. Phys. 139:121923, DOI: 10.1063/1.4818538) :: Establishes dissipative adaptation lower bound linking replication rate to minimum heat exported into environment (PAR-18, GM-02/03).
+  [CIT-41] de Moura & Ullrich (2021) — The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37) :: Foundational dependent-type kernel certifying all 280 Pure Lean 4 theorems (244 native 5-engine + 36 local package invariants).
+  [CIT-42] Gebru et al. (2021) — Datasheets for Datasets (Commun. ACM 64(12), pp. 86-92, DOI: 10.1145/3458723) :: Dataset documentation standard governing docs/DATASHEET.md across all 24 canonical CSV matrices.
+  [CIT-43] Akhtar et al. (2024) — Croissant: A Metadata Format for ML-Ready Datasets (ACM DEEM 2024, DOI: 10.1145/3650203.3663326) :: Machine-readable FAIR dataset descriptor implemented in croissant.json.
+  [CIT-44] Soiland-Reyes et al. (2022) — Packaging Research Artefacts with RO-Crate (Data Science 5(2), pp. 97-138, DOI: 10.3233/DS-210053) :: Research Object Crate provenance packaging implemented in ro-crate-metadata.json.
+  [CIT-45] Donahue (2026) — Unsolved Problems Mega-Atlas (V2.4.0): 1,900-Problem Taxonomy, Biconnected Graph & Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas) :: Target 1,900-problem open-problem catalog audited for non-retirement crosswalk in csv/21 & Report 09.
 
-19. PASS-2, PASS-3, PASS-4 & PASS-5 OMEGA FORENSIC AUDIT CLOSURES (OMG-096..OMG-145 -> 145/145 CLOSED)
+19. PASS-2..PASS-6 OMEGA FORENSIC AUDIT CLOSURES (OMG-096..OMG-160 -> 160/160 CLOSED)
 ------------------------------------------------------------------------------------------------------------
   [OMG-096] (P1) Wire all 38 previously unwired Macro FM alerts in YAML -> 42/42 Macro FM alerts verified 1:1 in pipelines/alifeops-master-pipeline.yaml
   [OMG-097] (P1) Build executable unbiased multi-island ALife & Castration simulator -> 192 live runs executed (8 cohorts x 24 paired locked seeds 5001-5024); 8/8 JSON scorecards validated
@@ -1549,3 +1555,18 @@ Composite OVBS-52 = 92.05 (STAGE_5_CONVERGED_SYNTHESIS) | Total Pure Lean 4 Theo
   [OMG-143] (P1) Write Report 08 synthesizing 11x11 couplings, 15 substrates, 20 Pareto frontiers, 748 runs & CIT-36..40 -> Report 08 & CIT-36..40 (40 total citations) synced across README, Master Dossier PDF & Observatory
   [OMG-144] (P1) Add CSV Telemetry FK Audit (Gate 15), PDF pypdf Hygiene (Gate 16), Chrome Interactive Stress (Gate 17) & Z==I (Gate 18) -> All 18 forensic gates passed cleanly on both Z: canonical repo and I: Master Folder Build
   [OMG-145] (P1) Update simulator substrate_id to unified_v3_3_omega_fp64_11pool_sim and verify 0 U+2611 across all 3 PDFs -> All 3 vector PDFs verified via pypdf text extraction with 0 U+2611 glyphs and 0 raw LaTeX
+  [OMG-146] (P0) Replace all unformed corporate LLC label references with factual 'Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)' matching ORCID 0009-0006-8168-9648 -> All active docs, licenses, CITATION.cff, papers, and builders cured to Independent Researcher, Spokane, WA, USA
+  [OMG-147] (P0) Fix broken sum '42+62+72+48 = 240' (actually 224) by including Asmodensius-Native's 20 theorems (5-engine = 244) + 36 local package = 280 Pure Lean 4 -> Arithmetic error eliminated across AGENTS.md, HANDOFF.md, builders, specs, and Lean 4 formal certificates
+  [OMG-148] (P0) Synchronize all 105 stale '4-Engine' and 'WRITER.lock RO' strings to LIVE 5-Engine / 7-Repo ecosystem receipts -> All 24 affected files synchronized to live 5-Engine / 7-Repo receipts with zero RO drift
+  [OMG-149] (P0) Add explicit 7th P8 submetric tuple in submetric_pools so BM-FRL-07 maps to Asmodensius refusal/book gate instead of wrapping onto BM-FRL-01 -> P8 benchmark submetric mapping fixed cleanly with zero silent modulo wrap-around
+  [OMG-150] (P1) Prevent Windows CP1252 decode crashes when capturing non-ASCII stdout/stderr in scripts -> All subprocess calls across scripts/ enforce explicit UTF-8 decoding on Windows/Linux/macOS
+  [OMG-151] (P0) Compress Chrome vector PDFs losslessly via pypdf (5.54 -> 2.33 MB, 100% text parity) and gitignore 8.76 MB local ZIP bundle -> All 3 PDFs shrunk ~58% losslessly (<2.4 MB each) and 100% of git-tracked files satisfy A24 <5 MB
+  [OMG-152] (P1) Screen all 1,900 Mega-Atlas V2.4.0 problems against the 7-Repo ALife ecosystem and publish 25-row non-retirement crosswalk -> Full 1,900-problem Mega-Atlas crosswalk published transparently with honest 0/1,900 non-retirement boundary
+  [OMG-153] (P0) Formalize OVBS-52 weights/bounds/annihilation, Cube/825/244/280 partitions, Ring-0 ACL non-interference, Pareto order & NonVacuity in Lean 4.35.0 -> 36 core + 4 Palomar Lean 4.35.0 theorems compiled cleanly with 0 warnings and verified by leanchecker-paranoid
+  [OMG-154] (P0) Add complete GitHub governance, VERSION, CC-BY-4.0 + Apache-2.0 dual licenses, CITATION.cff, repo.yaml, justfile, CLAIMS/LIMITATIONS/REPLICATION, CI & docs/ -> Repository achieves 100.0% across all applicable Build Standard v1.2.0 checks with 0 placeholders
+  [OMG-155] (P0) Write Tectonic amsart white paper with 4 vector PDF figures, Claims Ledger, Statement-Fidelity Matrix, Mega-Atlas audit & AI/CRediT disclosures -> Publication-grade AMS-LaTeX PDF & clean-room arXiv submission tarball built and verified
+  [OMG-156] (P1) Implement reference/ovbs52_oracle.py, tests/ pytest + 2,000-case differential suite & scripts/run_mutation_audit.py -> Full Part-B verification ladder implemented and passing at 100% mutation kill rate
+  [OMG-157] (P1) Add .zenodo.json, croissant.json, ro-crate-metadata.json, INDEX.md, llms.txt, llms-full.txt, CHECKSUMS.sha256, data/MANIFEST.sha256 & social-preview.png -> FAIR metadata, Master INDEX.md, llms.txt/llms-full.txt & social-preview.png generated and validated
+  [OMG-158] (P1) Fix CLAUDE.md missing @AGENTS.md import, add GEMINI.md (@./AGENTS.md) & .cursor/rules/build-standard.mdc -> All 5 agent entry points synchronized to single canonical AGENTS.md
+  [OMG-159] (P1) Wire csv/21 (Mega-Atlas 25-row crosswalk), 160/160 closed audits, 45 citations, and dynamic file counts across all formats -> Entire multi-format package synchronized cleanly to v3.4-Omega (24 CSVs, 25 sheets, 22 tabs, 160 audits, 45 citations)
+  [OMG-160] (P0) Run full 22-gate auditor, clean-room arXiv compile, Chrome 22-tab stress, pytest, Lean 4.35, Audit-Repo.ps1 100%, and mirror atomically to I: -> All 3 hardening cycles completed with 22/22 Forensic Gates GREEN and 0 SHA-256 mismatches between Z: and I:

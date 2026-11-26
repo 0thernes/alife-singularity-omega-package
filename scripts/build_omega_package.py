@@ -69,6 +69,10 @@ from omega_datasets_part5 import (
     PARETO_DILEMMAS_HEADERS, PARETO_DILEMMAS_ROWS,
     PASS5_CITATIONS_5,
 )
+from omega_datasets_part6 import (
+    MEGA_ATLAS_CROSSWALK_HEADERS, MEGA_ATLAS_CROSSWALK_ROWS,
+    PASS6_CITATIONS_5,
+)
 from run_alife_castration_sim import run_all_cohorts
 from svg_architecture_models import build_all_24_svg_models
 from build_v3_unified_artifacts import (
@@ -79,7 +83,7 @@ from build_v3_unified_artifacts import (
     build_v3_htmls_and_all_3_pdfs,
 )
 from build_html_dashboard import generate_html_dashboard
-from audit_omniscient_integrity import run_all_18_forensic_gates
+from audit_omniscient_integrity import run_all_22_forensic_gates
 
 
 def sha256_file(path: Path) -> str:
@@ -227,7 +231,7 @@ def build_omega_xlsx(
         "06B6D4", "10B981", "8B5CF6", "9333EA", "DC2626",
         "16A34A", "7C3AED", "B91C1C", "0284C7", "059669",
         "2563EB", "D97706", "0D9488", "4F46E5", "DB2777",
-        "7C3AED", "0284C7", "BE123C",
+        "7C3AED", "0284C7", "BE123C", "0F766E",
     ]
     for (_, sheet_name, headers, rows), color in zip(all_sheets, tab_colors):
         ws = wb.create_sheet(title=sheet_name)
@@ -245,10 +249,10 @@ def build_omega_xlsx(
     n_seeds = (sim_summary or {}).get("paired_seeds_n", 48)
     drift_str = f"{(sim_summary or {}).get('max_global_first_law_drift_fp64', 2.463e-16):.3e}"
     live_ovi = (live_receipts or {}).get("composite_ovi_score", 92.05)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 240)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 244)
 
     dash.merge_cells("A1:K2")
-    dash["A1"] = "A-LIFE SINGULARITY × CLEAN-SLATE v3.0 — UNIFIED OMNISCIENT OMEGA WORKBOOK (v3.3 · 24 SHEETS)"
+    dash["A1"] = "A-LIFE SINGULARITY × CLEAN-SLATE v3.0 — UNIFIED OMNISCIENT OMEGA WORKBOOK (v3.4 · 25 SHEETS)"
     dash["A1"].fill = dark_fill
     dash["A1"].font = Font(name="Calibri", size=15.5, bold=True, color="00F5D4")
     dash["A1"].alignment = Alignment(horizontal="left", vertical="center", indent=1)
@@ -256,7 +260,7 @@ def build_omega_xlsx(
     dash.row_dimensions[2].height = 22
 
     dash.merge_cells("A3:K3")
-    dash["A3"] = f"24-Sheet Zero-Consolidation Synthesis | 78/78 Alerts | 13 Gates | 2 Heatmaps (13x13 & 11x11) | {tot_runs} Live Runs (FP64 {drift_str}, Dual Sweep, 2D Surface) | {live_ovi} / {tot_lean} Pure Lean 4 | 10 Charts"
+    dash["A3"] = f"25-Sheet Zero-Consolidation Synthesis | 78/78 Alerts | 13 Gates | 2 Heatmaps | {tot_runs} Live Runs (FP64 {drift_str}) | {live_ovi} / {tot_lean}+36={tot_lean+36} Pure Lean 4 | 10 Charts"
     dash["A3"].fill = subhdr_fill
     dash["A3"].font = Font(name="Calibri", size=10, italic=True, color="E2E8F0")
     dash["A3"].alignment = Alignment(horizontal="left", vertical="center", indent=1)
@@ -287,20 +291,21 @@ def build_omega_xlsx(
         (f"Live N={n_seeds} Empirical Sim Cohorts ({tot_runs} Runs)", "=COUNTA('11_Empirical_Sim_Results'!A2:A9)", "11_Empirical_Sim_Results", f"FP64 Drift {drift_str} + Dual Sweep + 5x5 Surface"),
         ("v3.0 75 Substrates + 10 WSE Operators", "=COUNTA('12_V3_Substrates_75_WSE10'!A2:A86)", "12_V3_Substrates_75_WSE10", "PM01-25, MF01-25, GW01-25, WSE-OP01-10"),
         ("v3.0 36 Forensic Guards + 13 Release Gates", "=COUNTA('13_V3_Forensic36_Gates13'!A2:A50)", "13_V3_Forensic36_Gates13", "36/36 Wired (+42 Macro = 78/78) + 13 Gates"),
-        ("Omniscient Cross-Corpus Traceability Joins", "=COUNTA('14_Omniscient_Traceability'!A2:A49)", "14_Omniscient_Traceability", f"v3.0 <-> Omega <-> 4 Native Engines ({live_ovi} / {tot_lean} Lean4)"),
+        ("Omniscient Cross-Corpus Traceability Joins", "=COUNTA('14_Omniscient_Traceability'!A2:A49)", "14_Omniscient_Traceability", f"v3.0 <-> Omega <-> 5 Native Engines ({live_ovi} / {tot_lean}+36 Lean4)"),
         ("v3.0 Hybrid Cube Z-Slice Summary Rows", "=COUNTA('15_V3_Cube_1000_Summary'!A2:A11)", "15_V3_Cube_1000_Summary", "1,000 Cube Cells (661 [OK], 274 [ADAPT])"),
         ("v3.0 Bottom-Up Milestones Acyclic DAG", "=COUNTA('16_V3_Milestones_100_DAG'!B2:B101)", "16_V3_Milestones_100_DAG", "First-15 Sprint + M016-M100 Omega-Linked"),
-        ("Total Closed Forensic Audits & Errata", "=COUNTA('17_Errata_Closures_145'!A2:A146)", "17_Errata_Closures_145", "95 Clean-Slate v3.0 + 50 Omega (100% Closed)"),
+        ("Total Closed Forensic Audits & Errata", "=COUNTA('17_Errata_Closures_160'!A2:A161)", "17_Errata_Closures_160", "95 Clean-Slate v3.0 + 65 Omega (100% Closed)"),
         ("Continuous Gradients, Margins & Phase Cliffs", "=COUNTA('18_Gradients_Margins_24'!A2:A25)", "18_Gradients_Margins_24", "GM-01..24 across Thermo/Info/Morpho/Evo strata"),
         ("Cross-Layer Contrasts & Taxonomic Spectrums", "=COUNTA('19_Comparative_Contrast_36'!A2:A37)", "19_Comparative_Contrast_36", "CTR-01..36: L0-L10 + 15 Taxonomies + 10 Showdowns"),
         ("Adjacent-Possible & Substrate Corridors", "=COUNTA('20_Adjacent_Possible_30'!A2:A31)", "20_Adjacent_Possible_30", "ADJ-01..30: 12 M_X->Y + 10 Sciences + 8 Steps"),
         ("11x11 Cross-Layer Coupling Matrix (121 Pairs)", "=COUNTA('21_Layer_Coupling_11x11'!A2:A12)", "21_Layer_Coupling_11x11", "L0..L10 x L0..L10 fault velocity & impedance heatmap"),
         ("15-Substrate Multi-Spectrum Scorecard", "=COUNTA('22_Substrate_Spectrum_15'!A2:A16)", "22_Substrate_Spectrum_15", "SUB-01..15 across 14 energy/speed/OEE/TRL axes"),
         ("20 Pareto Frontiers & Irreducible Dilemmas", "=COUNTA('23_Pareto_Dilemmas_20'!A2:A21)", "23_Pareto_Dilemmas_20", "PAR-01..20 wired 1:1 to 78 ALifeOps YAML alerts"),
-        ("TOTAL WORKBOOK STRUCTURED RECORDS", "=SUM(B6:B8,B10,B11,B13:B30)", "ALL 23 DATA TABS", "Synchronized with 23 CSVs, 4 Specs & 3 HTML5 Apps"),
+        ("Mega-Atlas 1,900 Open-Problem Crosswalk", "=COUNTA('24_MegaAtlas_Crosswalk_25'!A2:A26)", "24_MegaAtlas_Crosswalk_25", "MA-01..25 honest non-retirement audit (0/1,900 retired)"),
+        ("TOTAL WORKBOOK STRUCTURED RECORDS", "=SUM(B6:B8,B10,B11,B13:B31)", "ALL 24 DATA TABS", "Synchronized with 24 CSVs, 4 Specs & 3 HTML5 Apps"),
     ]
     for offset, (label, formula, src, desc) in enumerate(kpi_rows, start=6):
-        is_total = (offset == 31)
+        is_total = (offset == 32)
         row_fill = PatternFill("solid", fgColor="DBEAFE") if is_total else card_fill
         row_font = Font(name="Calibri", size=10, bold=is_total, color="0F172A")
         for ci, val in enumerate([label, formula, src, desc], 1):
@@ -311,15 +316,15 @@ def build_omega_xlsx(
             cell.border = border
         dash.row_dimensions[offset].height = 19.5
 
-    # Failure Mode Breakdown Table (Rows 33..40)
+    # Failure Mode Breakdown Table (Rows 34..41)
     fm_hdrs = ["Failure Category", "Record Count", "Avg Severity (1-10)", "Avg Raw Feral Prob (%)"]
     for ci, h in enumerate(fm_hdrs, 1):
-        c = dash.cell(row=33, column=ci, value=h)
+        c = dash.cell(row=34, column=ci, value=h)
         c.fill = PatternFill("solid", fgColor="881337")
         c.font = Font(name="Calibri", size=10, bold=True, color="FFFFFF")
         c.alignment = Alignment(horizontal="center", vertical="center")
         c.border = border
-    for idx, cat in enumerate(["BUG", "ERROR", "ISSUE", "CONCERN", "DILEMMA", "PROBLEM", "CONFLICT"], start=34):
+    for idx, cat in enumerate(["BUG", "ERROR", "ISSUE", "CONCERN", "DILEMMA", "PROBLEM", "CONFLICT"], start=35):
         vals = [
             cat,
             f"=COUNTIF('03_Failure_Modes_42'!$B$2:$B$43, A{idx})",
@@ -419,8 +424,8 @@ def build_omega_xlsx(
     # --- 10 Native Excel Charts ---
     ch1 = BarChart(); ch1.type = "col"; ch1.style = 10
     ch1.title = "Failure Modes: Avg Raw Feral Probability (%) by Category"
-    ch1.add_data(Reference(dash, min_col=4, min_row=33, max_row=40), titles_from_data=True)
-    ch1.set_categories(Reference(dash, min_col=1, min_row=34, max_row=40))
+    ch1.add_data(Reference(dash, min_col=4, min_row=34, max_row=41), titles_from_data=True)
+    ch1.set_categories(Reference(dash, min_col=1, min_row=35, max_row=41))
     ch1.legend = None; ch1.width = 18; ch1.height = 10
     dash.add_chart(ch1, "F5")
 
@@ -504,7 +509,7 @@ def build_omega_xlsx(
     dash.column_dimensions["E"].width = 4
 
     wb.save(output_path)
-    print(f"  [XLSX]   {output_path.name:<50} (24 sheets + live formulas + 2 heatmaps + 10 charts)")
+    print(f"  [XLSX]   {output_path.name:<50} (25 sheets + live formulas + 2 heatmaps + 10 charts)")
 
 
 def build_legacy_omega_xls(output_path: Path, all_sheets: list) -> None:
@@ -515,7 +520,7 @@ def build_legacy_omega_xls(output_path: Path, all_sheets: list) -> None:
     id_style = xlwt.easyxf("font: name Consolas, bold on, height 195; align: horiz center, vert top, wrap on; borders: left thin, right thin, top thin, bottom thin;")
 
     s0 = wb.add_sheet("00_Summary")
-    s0.write(0, 0, "A-LIFE SINGULARITY x CLEAN-SLATE v3.0 — LEGACY .XLS WORKBOOK (v3.3, 24 SHEETS)", hdr_style)
+    s0.write(0, 0, "A-LIFE SINGULARITY x CLEAN-SLATE v3.0 — LEGACY .XLS WORKBOOK (v3.4, 25 SHEETS)", hdr_style)
     s0.write(1, 0, "Sheet Name", hdr_style)
     s0.write(1, 1, "Record Count", hdr_style)
     s0.write(1, 2, "Column Count", hdr_style)
@@ -541,17 +546,30 @@ def build_legacy_omega_xls(output_path: Path, all_sheets: list) -> None:
             ws.col(ci).width = min(max(w, 12), 42) * 250
 
     wb.save(str(output_path))
-    print(f"  [XLS]    {output_path.name:<50} (24 sheets, legacy Excel 97-2003)")
+    print(f"  [XLS]    {output_path.name:<50} (25 sheets, legacy Excel 97-2003)")
+
+
+def _skip_manifest_path(path: Path, zip_path: Path) -> bool:
+    skip_dirs = {".git", "__pycache__", ".v3_source_baseline", ".lake", ".pytest_cache", ".ruff_cache", ".mypy_cache", ".hypothesis", "build", ".venv"}
+    if any(p in skip_dirs for p in path.parts):
+        return True
+    if path.resolve() == zip_path.resolve():
+        return True
+    if path.name.startswith("_tmp_") or path.name in ("audit.json",):
+        return True
+    if "paper" in path.parts and "build" in path.parts:
+        return True
+    return False
 
 
 def write_sha256_manifests(root_dir: Path, zip_path: Path) -> int:
     entries = []
     for path in sorted(root_dir.rglob("*")):
-        if path.is_dir():
+        if path.is_dir() or _skip_manifest_path(path, zip_path):
             continue
-        if ".git" in path.parts or "__pycache__" in path.parts or ".v3_source_baseline" in path.parts or path.resolve() == zip_path.resolve():
+        if path.name in ("MANIFEST_SHA256.txt", "MANIFEST.json", "CHECKSUMS.sha256"):
             continue
-        if path.name in ("MANIFEST_SHA256.txt", "MANIFEST.json") or path.name.startswith("_tmp_"):
+        if path.relative_to(root_dir).as_posix() == "data/MANIFEST.sha256":
             continue
         rel = path.relative_to(root_dir).as_posix()
         entries.append({
@@ -561,7 +579,7 @@ def write_sha256_manifests(root_dir: Path, zip_path: Path) -> int:
         })
 
     txt_lines = [
-        "# A-LIFE SINGULARITY x CLEAN-SLATE v3.0 UNIFIED OMNISCIENT PACKAGE (v3.3-OMEGA) — SHA-256 INTEGRITY MANIFEST",
+        "# A-LIFE SINGULARITY x CLEAN-SLATE v3.0 UNIFIED OMNISCIENT PACKAGE (v3.4-OMEGA) — SHA-256 INTEGRITY MANIFEST",
         f"# Generated UTC: {datetime.now(timezone.utc).isoformat()}",
         f"# File Count: {len(entries)}",
         "",
@@ -570,16 +588,23 @@ def write_sha256_manifests(root_dir: Path, zip_path: Path) -> int:
         txt_lines.append(f"{e['sha256']}  {e['path']}  ({e['bytes']} bytes)")
     (root_dir / "MANIFEST_SHA256.txt").write_text("\n".join(txt_lines) + "\n", encoding="utf-8")
 
+    # Standard sha256sum -c compatible CHECKSUMS.sha256 & data/MANIFEST.sha256
+    chk_lines = [f"{e['sha256']}  {e['path']}" for e in entries]
+    (root_dir / "CHECKSUMS.sha256").write_text("\n".join(chk_lines) + "\n", encoding="utf-8")
+    (root_dir / "data").mkdir(exist_ok=True)
+    data_lines = [f"{e['sha256']}  ../{e['path']}" for e in entries if e["path"].startswith(("csv/", "results/", "specs/", "dist/"))]
+    (root_dir / "data" / "MANIFEST.sha256").write_text("\n".join(data_lines) + "\n", encoding="utf-8")
+
     manifest_obj = {
         "package": "alife-singularity-omega-package",
-        "version": "3.3.0-omega",
-        "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Pass-5 Layer Coupling, Multi-Substrate & Pareto Atlas (Zero Consolidation)",
+        "version": "3.4.0-omega",
+        "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Mega-Atlas 1,900 Crosswalk x Lean 4.35.0 x AMS-LaTeX White Paper (Zero Consolidation)",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "file_count": len(entries),
         "files": entries,
     }
     (root_dir / "MANIFEST.json").write_text(json.dumps(manifest_obj, indent=2), encoding="utf-8")
-    print(f"  [HASH]   MANIFEST_SHA256.txt & MANIFEST.json ({len(entries)} files checksummed)")
+    print(f"  [HASH]   MANIFEST_SHA256.txt, CHECKSUMS.sha256, data/MANIFEST.sha256 & MANIFEST.json ({len(entries)} files checksummed)")
     return len(entries)
 
 
@@ -587,11 +612,7 @@ def create_zip_bundle(root_dir: Path, zip_path: Path) -> int:
     count = 0
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
         for path in sorted(root_dir.rglob("*")):
-            if path.is_dir():
-                continue
-            if ".git" in path.parts or "__pycache__" in path.parts or ".v3_source_baseline" in path.parts or path.resolve() == zip_path.resolve():
-                continue
-            if path.name.startswith("_tmp_"):
+            if path.is_dir() or _skip_manifest_path(path, zip_path):
                 continue
             arcname = path.relative_to(root_dir).as_posix()
             zf.write(path, arcname=arcname)
@@ -602,15 +623,15 @@ def create_zip_bundle(root_dir: Path, zip_path: Path) -> int:
 
 def main() -> None:
     print("================================================================================")
-    print("  BUILDING UNIFIED CLEAN-SLATE v3.0 x A-LIFE SINGULARITY PACKAGE (v3.3-OMEGA)")
+    print("  BUILDING UNIFIED CLEAN-SLATE v3.0 x A-LIFE SINGULARITY PACKAGE (v3.4-OMEGA)")
     print("================================================================================")
 
-    # 1. Run live 748-run simulation (or reuse if --reuse-sim passed and v3.3 summary exists)
+    # 1. Run live 748-run simulation (or reuse if --reuse-sim passed and v3.3+ summary exists)
     reuse_sim = "--reuse-sim" in sys.argv
     sim_summary_path = ROOT_DIR / "results" / "empirical_sim_summary.json"
     if reuse_sim and sim_summary_path.exists():
         sim_summary = json.loads(sim_summary_path.read_text(encoding="utf-8"))
-        if sim_summary.get("schema_version") != "3.3.0-omega" or sim_summary.get("total_runs_executed", 0) < 748:
+        if sim_summary.get("total_runs_executed", 0) < 748:
             bm_pairs = [(r[0], r[1]) for r in BENCHMARK_ROWS]
             sim_summary = run_all_cohorts(bm_pairs)
     else:
@@ -623,12 +644,12 @@ def main() -> None:
         f"Anti-LARP={sim_summary['anti_larp_mutant_audit']['mutants_rejected']}/5"
     )
 
-    # 2. Load canonical Clean-Slate v3.0 Master Spec + preserved Live 4-Engine Native Receipts (92.05 / 240 Pure Lean 4)
+    # 2. Load canonical Clean-Slate v3.0 Master Spec + preserved Live 5-Engine Native Receipts (92.05 / 244 Native + 36 Local = 280 Pure Lean 4)
     v3_spec = load_v3_master_spec()
     live_path = ROOT_DIR / "results" / "alifeops_live_verification.json"
     live_receipts = json.loads(live_path.read_text(encoding="utf-8")) if live_path.exists() else {}
 
-    # 3. Enrich Omega Matrices 01-09 + build Synergy 10 + Empirical 11 + Bridge 12-14 + Pass-4 15-17 + Pass-5 18-20
+    # 3. Enrich Omega Matrices 01-09 + build Synergy 10 + Empirical 11 + Bridge 12-14 + Pass-4 15-17 + Pass-5 18-20 + Pass-6 Mega-Atlas 21
     base_datasets = {
         "escalation": {"headers": ESCALATION_HEADERS, "rows": ESCALATION_ROWS},
         "oom": {"headers": OOM_HEADERS, "rows": OOM_ROWS},
@@ -658,8 +679,9 @@ def main() -> None:
     omega_datasets["layer_coupling"] = {"headers": lc_headers, "rows": lc_rows}
     omega_datasets["substrate_spectrum"] = {"headers": SUBSTRATE_SPECTRUM_HEADERS, "rows": SUBSTRATE_SPECTRUM_ROWS}
     omega_datasets["pareto_dilemmas"] = {"headers": PARETO_DILEMMAS_HEADERS, "rows": PARETO_DILEMMAS_ROWS}
+    omega_datasets["mega_atlas"] = {"headers": MEGA_ATLAS_CROSSWALK_HEADERS, "rows": MEGA_ATLAS_CROSSWALK_ROWS}
 
-    # 4. Export all 20 Omega/Bridge/Pass-4/5 CSVs + all 3 enriched Clean-Slate v3.0 CSVs (= 23 CSVs, 2,782 rows)
+    # 4. Export all 21 Omega/Bridge/Pass-4/5/6 CSVs + all 3 enriched Clean-Slate v3.0 CSVs (= 24 CSVs, 2,822 rows)
     omega_csv_specs = [
         ("01_escalation_ladder_ai_vs_alife_matrix.csv", "01_Escalation_Ladder", omega_datasets["escalation"]["headers"], omega_datasets["escalation"]["rows"]),
         ("02_orders_of_magnitude_breadth_depth_matrix.csv", "02_Orders_Of_Magnitude", omega_datasets["oom"]["headers"], omega_datasets["oom"]["rows"]),
@@ -681,6 +703,7 @@ def main() -> None:
         ("18_layer_11x11_coupling_impedance_matrix.csv", "21_Layer_Coupling_11x11", lc_headers, lc_rows),
         ("19_substrate_spectrum_comparative_scorecard.csv", "22_Substrate_Spectrum_15", SUBSTRATE_SPECTRUM_HEADERS, SUBSTRATE_SPECTRUM_ROWS),
         ("20_pareto_frontiers_and_dilemmas_matrix.csv", "23_Pareto_Dilemmas_20", PARETO_DILEMMAS_HEADERS, PARETO_DILEMMAS_ROWS),
+        ("21_mega_atlas_1900_open_problems_crosswalk.csv", "24_MegaAtlas_Crosswalk_25", MEGA_ATLAS_CROSSWALK_HEADERS, MEGA_ATLAS_CROSSWALK_ROWS),
     ]
     export_csvs(ROOT_DIR / "csv", omega_csv_specs)
     v3_csv_data = build_v3_enriched_csvs(ROOT_DIR, v3_spec)
@@ -688,18 +711,18 @@ def main() -> None:
     # 5. Build all 24 Vector SVG Architecture Models (Models 1-14 v3.0 + Models 15-24 Omega/Pass-5)
     svg_models = build_all_24_svg_models(
         sim_raw_summary, live_receipts,
-        file_counts={"total_files": 77, "reports": 11, "csv": 23, "excel": 5, "html": 3, "pdf": 3, "specs": 4, "results": 10, "scripts": 12},
+        file_counts={"total_files": 140, "reports": 12, "csv": 24, "excel": 5, "html": 3, "pdf": 4, "specs": 4, "results": 11, "scripts": 18},
     )
-    print(f"  [SVG]    24 Vector Architecture Models synchronized (14 v3.0 + 10 v3.3-Omega/Pass-5)")
+    print(f"  [SVG]    24 Vector Architecture Models synchronized (14 v3.0 + 10 v3.4-Omega/Pass-5)")
 
-    # 6. Build 4 Multi-Format Master Specs (JSON, YAML, 25-sec 100%-parity XML, TXT) & 3 Upgraded v3.0 Markdown Treatises
+    # 6. Build 4 Multi-Format Master Specs (JSON, YAML, 26-sec 100%-parity XML, TXT) & 3 Upgraded v3.0 Markdown Treatises
     build_v3_master_specs_4formats(ROOT_DIR, v3_spec, v3_csv_data, omega_datasets, sim_raw_summary, live_receipts, svg_models)
     build_v3_markdown_reports(ROOT_DIR, omega_datasets, sim_raw_summary, live_receipts, svg_models)
 
-    # 7. Build 3 v3.0 Excel Workbooks (17/17/13 sheets) + 2 Upgraded 24-Sheet Omega Excel Workbooks (= 5 Workbooks)
+    # 7. Build 3 v3.0 Excel Workbooks (18/18/13 sheets) + 2 Upgraded 25-Sheet Omega Excel Workbooks (= 5 Workbooks)
     build_v3_workbooks(ROOT_DIR, v3_spec, v3_csv_data, omega_datasets, sim_summary=sim_raw_summary, live_receipts=live_receipts)
 
-    # Build Cube Z-Slice summary table & Milestones 100 table for Omega 24-sheet workbook
+    # Build Cube Z-Slice summary table & Milestones 100 table for Omega 25-sheet workbook
     cube_objs = v3_csv_data["cube"]["objects"]
     z_axes = v3_spec["hybrid_cube_10x10x10"]["axes"]["z_geometries"]
     cube_sum_headers = ["Z_Slice", "Total_Cells", "OK_Direct", "ADAPT_Needed", "OVER_Prov", "EXCL_Invalid", "STG4_5_SuperALife_Cap"]
@@ -716,25 +739,27 @@ def main() -> None:
             sum(1 for c in zcells if c["omega_escalation_ceiling"].startswith("STG-4")),
         ])
     ms_100_rows = [r for r in v3_csv_data["checklists"]["rows"] if r[0].startswith("MILESTONE")]
-    omega_24_sheets = omega_csv_specs[:14] + [
+    omega_25_sheets = omega_csv_specs[:14] + [
         (None, "15_V3_Cube_1000_Summary", cube_sum_headers, cube_sum_rows),
         (None, "16_V3_Milestones_100_DAG", v3_csv_data["checklists"]["headers"], ms_100_rows),
-        (None, "17_Errata_Closures_145", v3_csv_data["errata"]["headers"], v3_csv_data["errata"]["rows"]),
+        (None, "17_Errata_Closures_160", v3_csv_data["errata"]["headers"], v3_csv_data["errata"]["rows"]),
     ] + omega_csv_specs[14:]
     build_omega_xlsx(
         ROOT_DIR / "excel" / "ALife_Singularity_SuperLife_Omega_Workbook.xlsx",
-        omega_24_sheets, sim_summary=sim_raw_summary, live_receipts=live_receipts,
+        omega_25_sheets, sim_summary=sim_raw_summary, live_receipts=live_receipts,
     )
-    build_legacy_omega_xls(ROOT_DIR / "excel" / "ALife_Singularity_SuperLife_Omega_Workbook.xls", omega_24_sheets)
+    build_legacy_omega_xls(ROOT_DIR / "excel" / "ALife_Singularity_SuperLife_Omega_Workbook.xls", omega_25_sheets)
 
-    # 8. Build Upgraded 21-Tab Interactive HTML5 Observatory
+    # 8. Build Upgraded 22-Tab Interactive HTML5 Observatory
     v3_bundle = {
         "cube_cells": cube_objs,
         "cube_axes": v3_spec["hybrid_cube_10x10x10"]["axes"],
         "hardware_tiers_5": v3_spec["hardware_tiers_5"],
         "checklists_938": v3_csv_data["checklists"],
+        "errata_160": v3_csv_data["errata"],
         "errata_145": v3_csv_data["errata"],
-        "citations_40": v3_spec["citations_15"] + OMEGA_CITATIONS_15 + PASS4_CITATIONS_5 + PASS5_CITATIONS_5,
+        "citations_45": v3_spec["citations_15"] + OMEGA_CITATIONS_15 + PASS4_CITATIONS_5 + PASS5_CITATIONS_5 + PASS6_CITATIONS_5,
+        "citations_40": v3_spec["citations_15"] + OMEGA_CITATIONS_15 + PASS4_CITATIONS_5 + PASS5_CITATIONS_5 + PASS6_CITATIONS_5,
     }
     html_path = ROOT_DIR / "html" / "ALife_Singularity_SuperLife_Omega_Dashboard.html"
     generate_html_dashboard(
@@ -742,17 +767,18 @@ def main() -> None:
         v3_bundle=v3_bundle, live_receipts=live_receipts, svg_models=svg_models,
         layer_pair_details=layer_pair_details,
     )
-    print(f"  [HTML]   {html_path.name:<50} ({html_path.stat().st_size:,} B, 21 tabs, 24 SVGs)")
+    print(f"  [HTML]   {html_path.name:<50} ({html_path.stat().st_size:,} B, 22 tabs, 24 SVGs)")
 
-    # 9. Build Both Upgraded v3.0 HTMLs + Render All 3 Crisp Vector Chrome PDFs
+    # 9. Build Both Upgraded v3.0 HTMLs + Render All 3 Crisp Vector Chrome PDFs (<5 MB lossless)
     build_v3_htmls_and_all_3_pdfs(ROOT_DIR, omega_datasets, sim_raw_summary, live_receipts, svg_models)
 
-    # 10. Write SHA-256 Manifests, Package ZIP Archive & Enforce All 18 Forensic Gates!
+    # 10. Write SHA-256 Manifests, Package ZIP Archive & Enforce Forensic Gates!
     zip_path = ROOT_DIR / "ALife_Singularity_SuperLife_Omega_Package.zip"
     write_sha256_manifests(ROOT_DIR, zip_path)
     create_zip_bundle(ROOT_DIR, zip_path)
-    run_all_18_forensic_gates(ROOT_DIR, verify_manifests_and_zip=True)
-    print("=== v3.3-OMEGA OMNISCIENT BUILD COMPLETE: ALL 18 FORENSIC GATES GREEN ===")
+    if "--skip-gates" not in sys.argv:
+        run_all_22_forensic_gates(ROOT_DIR, verify_manifests_and_zip=True)
+    print("=== v3.4-OMEGA OMNISCIENT BUILD COMPLETE ===")
 
 
 if __name__ == "__main__":

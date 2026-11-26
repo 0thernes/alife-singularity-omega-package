@@ -198,7 +198,7 @@ Unlike web services that measure `p99 latency` and `99.99% uptime`, ALifeOps SRE
 
 ## 5. Declarative Pipeline Reference
 
-See the companion machine-readable production blueprint in `pipelines/alifeops-master-pipeline.yaml` (upgraded `v3.3.0-omega`: **78/78 wired alerts** = 42 Macro FMs + 36 Clean-Slate v3.0 Forensic Triage Guards, **13/13 Release Gates**, **5/5 Real Anti-LARP Mutants**, **24 Gradients & 20 Pareto Frontiers**, and full Clean-Slate runtime contract) and the unified verification schema in `pipelines/benchmark-suite-schema.json`.
+See the companion machine-readable production blueprint in `pipelines/alifeops-master-pipeline.yaml` (upgraded `v3.4.0-omega`: **78/78 wired alerts** = 42 Macro FMs + 36 Clean-Slate v3.0 Forensic Triage Guards, **13/13 Release Gates**, **5/5 Real Anti-LARP Mutants**, **24 Gradients & 20 Pareto Frontiers**, and full Clean-Slate runtime contract) and the unified verification schema in `pipelines/benchmark-suite-schema.json`.
 
 ---
 

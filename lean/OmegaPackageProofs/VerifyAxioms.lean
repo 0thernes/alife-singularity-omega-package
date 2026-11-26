@@ -1,0 +1,52 @@
+-- SPDX-License-Identifier: Apache-2.0
+module
+
+import OmegaPackageProofs
+import Solution
+import PalomarSolution
+
+-- Audit all 36 core theorems + 4 Palomar headline certificates (40 printed entries)
+#print axioms OmegaPackageProofs.OVBS52.pillar_weights_sum_100
+#print axioms OmegaPackageProofs.OVBS52.rawOviCentis_le_10000
+#print axioms OmegaPackageProofs.OVBS52.rawOviCentis_uniform
+#print axioms OmegaPackageProofs.OVBS52.anti_gaming_gate_annihilation
+#print axioms OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000
+#print axioms OmegaPackageProofs.OVBS52.rawOviCentis_monotone
+#print axioms OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone
+#print axioms OmegaPackageProofs.OVBS52.classifyStage_monotone
+#print axioms OmegaPackageProofs.OVBS52.live_9205_is_stage5
+#print axioms OmegaPackageProofs.OVBS52.castration_328_is_stage0
+
+#print axioms OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000
+#print axioms OmegaPackageProofs.CubeAndPartitions.hybrid_cube_active_935
+#print axioms OmegaPackageProofs.CubeAndPartitions.substrates_75_partition
+#print axioms OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum
+#print axioms OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail
+#print axioms OmegaPackageProofs.CubeAndPartitions.unified_alerts_78
+#print axioms OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244
+#print axioms OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280
+#print axioms OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition
+#print axioms OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition
+
+#print axioms OmegaPackageProofs.CastrationRing0.synergy_13x13_cells
+#print axioms OmegaPackageProofs.CastrationRing0.synergyScore_le_100
+#print axioms OmegaPackageProofs.CastrationRing0.synergyScore_comm
+#print axioms OmegaPackageProofs.CastrationRing0.synergyScore_monotone
+#print axioms OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked
+#print axioms OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant
+#print axioms OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected
+#print axioms OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl
+#print axioms OmegaPackageProofs.CastrationRing0.paretoDominates_trans
+#print axioms OmegaPackageProofs.CastrationRing0.sim07_pareto_dominates_sim03
+
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_live_pillar_witness
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_stage4_stage5_sharp_boundary
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_anti_gaming_annihilation_witness
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_ring0_and_spectral_boundary
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness
+#print axioms OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses
+
+#print axioms OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants
+#print axioms OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants
+#print axioms OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants
+#print axioms OmegaPackageProofs.Palomar.m4_nonvacuity_certificate

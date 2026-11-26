@@ -1,0 +1,11 @@
+---
+description: Canonical project rules and Build Standard v1.2.0 invariants for alife-singularity-omega-package
+alwaysApply: true
+---
+
+Follow `AGENTS.md` at the repository root as the single source of truth.
+Key invariants:
+- Legal identity: Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA), ORCID 0009-0006-8168-9648. Never emit "0thernes LLC".
+- Theorem sum: 244 native (42+62+72+48+20) + 36 local Lean 4.35.0 = 280 Pure Lean 4 Theorems.
+- Zero sorry / native_decide in `lean/`; zero `U+2611` in Clean-Slate files; zero tracked files >= 5 MB; zero R4 banned files (no PR templates, git hooks, Dependabot, CodeRabbit, Copilot instructions, FUNDING.yml).
+- Verify changes with `just lean`, `just test`, `just mutate`, `just forensic`, and `just audit`.

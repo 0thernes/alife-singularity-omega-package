@@ -1,6 +1,39 @@
+# Python caches & virtualenvs
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+*.egg-info/
+build/
+
+# Lean 4 build caches (reproducible from lean/lean-toolchain + lean/lakefile.toml)
+lean/.lake/
+
+# LaTeX build intermediates (reproducible via scripts/build_paper_and_figures.py)
+paper/build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
 *.log
+*.out
+*.synctex.gz
+*.xdv
+
+# Large release bundle (> 5 MB, built locally & attached to GitHub Releases; never git-tracked per A24)
+ALife_Singularity_SuperLife_Omega_Package.zip
+
+# Transient audit/test outputs & local secrets
+audit.json
+_site/
+_tmp_*
+.env
+.env.local
 .DS_Store
 Thumbs.db
-.v3_source_baseline/
