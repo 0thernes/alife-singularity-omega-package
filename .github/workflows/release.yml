@@ -27,7 +27,7 @@ jobs:
           cp results/lean_package_axioms.txt release_assets/
           cp results/lean4-multi-kernel.txt release_assets/
           zip -r release_assets/ALife_Singularity_SuperLife_Omega_Package.zip \
-            README.md VERSION LICENSE LICENSE-DOCS CITATION.cff csv specs excel reports html pdf pipelines results lean palomar paper blueprint reference docs
+            README.md VERSION LICENSE LICENSE-DOCS CITATION.cff csv specs excel reports html pdf pipelines results lean paper blueprint reference docs
           (cd release_assets && sha256sum * > SHA256SUMS)
       - name: Attest build provenance
         uses: actions/attest-build-provenance@v2
