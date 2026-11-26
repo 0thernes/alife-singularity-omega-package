@@ -270,7 +270,7 @@ def run_all_22_forensic_gates(
     assert len(sp_json["hybrid_cube_10x10x10"]["cells_1000"]) == 1000
     assert len(sp_json["executable_checks_825"]) == 825
     assert len(sp_json["citations_15"]) + len(sp_json["citations_omega_30"]) == 45
-    assert sp_json["spec_meta"]["totalEcosystemLean4Theorems"] == 280
+    assert sp_json["spec_meta"]["totalEcosystemLean4Theorems"] == 327
     fus_xml = sp_xml.find("OmegaSingularityFusion")
     assert fus_xml is not None and fus_xml.attrib.get("version") == "3.4.0-omega"
     xml_children = {el.tag for el in fus_xml}
@@ -417,8 +417,10 @@ def run_all_22_forensic_gates(
         r"\(42/42 Alerts Wired\)",
         r"\b87\.01\b", r"\b90\.95\b", r"\b150\s+(?:Lean|machine-checked)\b",
         r"\b162\s+(?:Pure|Lean|machine-checked)\b", r"\b194\s+(?:Pure|Lean|machine-checked)\b",
+        r"\b244\s+(?:Pure|Native|Lean|machine-checked)\b", r"\b280\s+(?:Pure|Lean|machine-checked)\b",
         r"\b240\s*/\s*240\b", r"0thernes LLC", r"Asmodensius\s*\(RO\)",
-        r"Omega\s+v4\.2", r"Omega\s+v5\.0", r"Noetic\s+v1\.1", r"\b43\s*/\s*43\b",
+        r"Omega\s+v4\.2", r"Omega\s+v5\.0", r"Omega\s+v5\.1", r"Noetic\s+v1\.1", r"Noetic\s+v2\.0",
+        r"AUTOPHAGE\s+v1\.3", r"Cellulogonic(?:\s+Mecha)?\s+v1\.4", r"\b43\s*/\s*43\b",
         r"2\.219e-16", r"2\.315e-16", r"\b83\.96\b", r"\b85\.50\b", r"\b53\.74\b", r"\b84\.42\b",
         r"\b84\.17\b", r"\b85\.40\b", r"\b84\.44\b", r"\b56\.66\b", r"\b404\.5\b", r"\b405\.4\b",
         r"\b324\s+(?:Live|live)\b",

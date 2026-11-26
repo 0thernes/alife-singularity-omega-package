@@ -41,10 +41,10 @@ spec_meta:
   liveEmpiricalCohortsCount: 8
   liveEmpiricalTotalRuns: 748
   liveEmpiricalPairedSeedsN: 48
-  liveNativeLean4Theorems: 244
+  liveNativeLean4Theorems: 291
   localPackageLean4Theorems: 36
-  totalEcosystemLean4Theorems: 280
-  liveNativeCompositeOvi: 92.05
+  totalEcosystemLean4Theorems: 327
+  liveNativeCompositeOvi: 91.84
 principles_10:
 - id: P1
   name: Clean-Room Originality (Principles Only, Never Copies)
@@ -32842,7 +32842,8 @@ citations_omega_30:
 - id: CIT-41
   authors_year: de Moura & Ullrich (2021)
   reference_doi: 'The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37)'
-  scope_in_v3: Foundational dependent-type kernel certifying all 280 Pure Lean 4 theorems (244 native 5-engine + 36 local package invariants).
+  scope_in_v3: Foundational dependent-type kernel certifying all 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native 5-engine + 36 local package
+    invariants).
 - id: CIT-42
   authors_year: Gebru et al. (2021)
   reference_doi: 'Datasheets for Datasets (Commun. ACM 64(12), pp. 86-92, DOI: 10.1145/3458723)'
@@ -33979,8 +33980,8 @@ errata_omega_closures_65:
   Owner: Cycle-3 Auditor
   Closure_evidence: 'All 3 hardening cycles completed with 22/22 Forensic Gates GREEN and 0 SHA-256 mismatches between Z: and I:'
 omega_singularity_fusion:
-  fusion_architecture: Dual-Track Unified Clean-Slate v3.0 x Singularity Omega v3.4 Academic Release, Mega-Atlas 1,900 Crosswalk & 280 Pure Lean
-    4 (Zero Consolidation)
+  fusion_architecture: Dual-Track Unified Clean-Slate v3.0 x Singularity Omega v3.4 Academic Release, Mega-Atlas 1,900 Crosswalk & 327 Pure 6-Kernel
+    Lean 4.35.0 (Zero Consolidation)
   escalation_ladder_7:
   - Stage_ID: STG-0
     Stage_Name: Inert / Prebiotic
@@ -34078,8 +34079,8 @@ omega_singularity_fusion:
     Dominant_Existential_Risk: Relativistic speciation wars, AI-optimizer vs. feral-vitality ideological/physical clash
     Reference_Exemplar: Living Dyson ecologies, fluid multi-scale planetary consciousness
     V3_Build_Stage_And_Layer: Post-Stage 8 | Converged 7-Repo Stack
-    V3_Substrate_And_Milestones: AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius
-    V3_Release_Gates_And_Suites: 244 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05
+    V3_Substrate_And_Milestones: AUTOPHAGE v1.4.0 + Cellulogonic v1.5.0 + Omega v5.2.0 + Noetic v2.1.0 + Asmodensius v1.1.0 + Observatory v6.7.0
+    V3_Release_Gates_And_Suites: 291+36=327 Pure 6-Kernel Lean 4.35.0 | 13/13 CS-v3 Gates | OVBS-52 = 91.84
   - Stage_ID: STG-6
     Stage_Name: 'Post-Beyond: SUPER LIFE'
     OVI_Band: 97-100
@@ -37864,12 +37865,14 @@ omega_singularity_fusion:
     V3_Governance_Mapping: Direct Clean-Slate v3.0 Gate/Triage Lock (ISS-04)
   - Check_ID: CHK-130
     Phase: 'P11: Clean-Slate v3.0 Fusion'
-    Item_Title: Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 244 Pure Lean4)
+    Item_Title: Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 291 Native + 36 Local = 327 Pure 6-Kernel
+      Lean 4.35.0)
     Track_Scope: BOTH
     Priority: P0-CRITICAL
     Category: V3-LiveProof
     Verification_Method: Live suite schema check
-    Quantitative_Pass_Criterion: Composite live OVBS-52 >= 85 (live 92.05), 244 Pure Lean 4 proofs, 13/13 CS-v3 gates & 748-run sim validated
+    Quantitative_Pass_Criterion: Composite live OVBS-52 >= 85 (live 91.84), 291+36=327 Pure 6-Kernel Lean 4.35.0 proofs, 13/13 CS-v3 gates & 748-run
+      sim validated
     Linked_Ref_ID: GATE-13
     Status: PENDING
     V3_Governance_Mapping: Direct Clean-Slate v3.0 Gate/Triage Lock (GATE-13)
@@ -39085,7 +39088,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-0 / STAGE-00 / CHK-111..116
     SVG_Model_Refs: Model 1, Model 11-14, Model 16, Model 23
     Primary_Metrics_And_Gates: GATE-01..04 | HW-24 | 11-Pool FP64 <1e-12
-    Live_Engine_Or_Sim_Evidence: 748 Sim Runs Max Drift 2.463e-16; Omega v5.1.0 54/54
+    Live_Engine_Or_Sim_Evidence: 748 Sim Runs Max Drift 2.463e-16; Omega v5.2.0 60/60
     Synchronized_Artifact_Files: specs/Master-Spec.*, csv/06, csv/13, csv/18, pipelines/*.yaml
   - Trace_ID: TRC-02
     Bridge_Domain: Architecture Layer
@@ -39093,7 +39096,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-1 / STAGE-01 / BM-AUT-01..06
     SVG_Model_Refs: Model 1, Model 6, Model 10, Model 15, Model 23
     Primary_Metrics_And_Gates: GATE-05 | SOFT21-29 | LIFE L001-L020
-    Live_Engine_Or_Sim_Evidence: AUTOPHAGE v1.3.0 18/18 Gates (42 Pure Lean 4); SIM08
+    Live_Engine_Or_Sim_Evidence: AUTOPHAGE v1.4.0 18/18 Gates (48 Pure Lean 4); SIM08
     Synchronized_Artifact_Files: reports/01, reports/ALife-Build-Framework-Template.md, csv/08
   - Trace_ID: TRC-03
     Bridge_Domain: Architecture Layer
@@ -39101,7 +39104,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-1 / STAGE-03 / BM-MRF-01..06
     SVG_Model_Refs: Model 1, Model 10, Model 15, Model 23
     Primary_Metrics_And_Gates: GATE-06 | SOFT01-20 | |dV|/V0 < 1%
-    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.4.0 24/24 Gates (62 Pure Lean 4); SIM08
+    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.5.0 26/26 Gates (70 Pure 6-Kernel Lean 4.35.0); SIM08
     Synchronized_Artifact_Files: reports/06, html/ALife-Build-Framework-Template.html, pdf/*
   - Trace_ID: TRC-04
     Bridge_Domain: Architecture Layer
@@ -39149,7 +39152,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-3 / STAGE-03 / BM-MRF-01..06
     SVG_Model_Refs: Model 1, Model 3, Model 15, Model 19
     Primary_Metrics_And_Gates: GATE-10 | Kleiber M^0.75 | Blackiston M084
-    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.4.0 Embryo COVI=59.24 (62 Pure Lean 4)
+    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.5.0 Embryo COVI=58.19 (70 Pure 6-Kernel Lean 4.35.0)
     Synchronized_Artifact_Files: reports/05, reports/06, csv/09, pdf/*
   - Trace_ID: TRC-10
     Bridge_Domain: Architecture Layer
@@ -39165,7 +39168,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-4..5 / STAGE-04..09 / CHK-001..130
     SVG_Model_Refs: Model 7, Model 14, Model 16, Model 20
     Primary_Metrics_And_Gates: GATE-11..13 | UI Hash == Headless | 18 Audit Gates
-    Live_Engine_Or_Sim_Evidence: Composite Live OVBS-52=92.05 (244 Pure Lean 4 Proofs)
+    Live_Engine_Or_Sim_Evidence: Composite Live OVBS-52=91.84 (291 Pure Lean 4 Proofs)
     Synchronized_Artifact_Files: README.md, MANIFEST_SHA256.txt, scripts/audit_omniscient_integrity.py
   - Trace_ID: TRC-12
     Bridge_Domain: System Dimension
@@ -39181,7 +39184,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STAGE-00..04 / ALifeOps SRE SLOs
     SVG_Model_Refs: Model 2, Model 7, Model 13-14, Model 16
     Primary_Metrics_And_Gates: GATE-02, GATE-11 | 0 alloc/10k | Render-Only
-    Live_Engine_Or_Sim_Evidence: Omega v5.1.0 54/54 Gates Deterministic SHA + Asmodensius 77/77 ctest 24C+RTX GPU
+    Live_Engine_Or_Sim_Evidence: Omega v5.2.0 60/60 Gates Deterministic SHA + Asmodensius 77/77 ctest 24C+RTX GPU
     Synchronized_Artifact_Files: reports/02, pipelines/alifeops-master-pipeline.yaml
   - Trace_ID: TRC-14
     Bridge_Domain: System Dimension
@@ -39301,7 +39304,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: OVBS-52 P6 Thermodynamic/Substrate Mastery
     SVG_Model_Refs: Model 4, Model 11-14, Model 16
     Primary_Metrics_And_Gates: GATE-01..03, GATE-11 | 0-Alloc + 5-Gear + Q<=10
-    Live_Engine_Or_Sim_Evidence: 748 Live Runs 100% FP64 Closed + 5 Native C/C++ Engines (244 Native + 36 Pkg = 280 Pure Lean 4)
+    Live_Engine_Or_Sim_Evidence: 748 Live Runs 100% FP64 Closed + 5 Native C/C++ Engines (291 Native + 36 Pkg = 327 Pure Lean 4)
     Synchronized_Artifact_Files: csv/13, pipelines/alifeops-master-pipeline.yaml
   - Trace_ID: TRC-29
     Bridge_Domain: Hybrid Cube T1
@@ -39341,7 +39344,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-1..4 Regenerative Soma / BM-MRF-01
     SVG_Model_Refs: Model 9, Model 10, Model 19
     Primary_Metrics_And_Gates: Badge [OK] | Coupled to 11-Pool FP64 Ledger
-    Live_Engine_Or_Sim_Evidence: SIM08 Regenerative Soma + Cellulogonic v1.4.0 / Omega v5.1.0
+    Live_Engine_Or_Sim_Evidence: SIM08 Regenerative Soma + Cellulogonic v1.5.0 / Omega v5.2.0
     Synchronized_Artifact_Files: csv/ALife-Hybrid-Cube-10x10x10.csv, excel/Hybrid-Cube.xlsx
   - Trace_ID: TRC-34
     Bridge_Domain: Hybrid Cube Full
@@ -39378,35 +39381,35 @@ omega_singularity_fusion:
   - Trace_ID: TRC-38
     Bridge_Domain: Live Engine Tier 1
     CleanSlate_v3_Anchor: Clean-Slate Autopoietic Falsification (P2/P5)
-    Omega_v3_3_Anchor: AUTOPHAGE v1.3.0 Native C++ + Pure Lean 4
+    Omega_v3_3_Anchor: AUTOPHAGE v1.4.0 Native C11 + Pure 6-Kernel Lean 4.35.0
     SVG_Model_Refs: Model 18, Model 20
-    Primary_Metrics_And_Gates: 18/18 Gates | 0 Failed | 42 Pure Lean 4
+    Primary_Metrics_And_Gates: 18/18 Gates | 6/6 Mutants | 48 Pure 6-Kernel Lean 4.35.0
     Live_Engine_Or_Sim_Evidence: Feral OVI=92.05, A_new=29.463, Drift=0.0
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-39
     Bridge_Domain: Live Engine Tier 2
     CleanSlate_v3_Anchor: Clean-Slate Embryogenesis & Morphogenesis (P8)
-    Omega_v3_3_Anchor: Cellulogonic Mecha v1.4.0 Native C++ + Pure Lean 4
+    Omega_v3_3_Anchor: Cellulogonic Mecha v1.5.0 Native C11 + Pure 6-Kernel Lean 4.35.0
     SVG_Model_Refs: Model 10, Model 18, Model 20
-    Primary_Metrics_And_Gates: 24/24 Gates | 8/8 Mutants | 62 Pure Lean 4
-    Live_Engine_Or_Sim_Evidence: Embryo COVI=59.24, HomoCad=90.4%
+    Primary_Metrics_And_Gates: 26/26 Gates | 8/8 Mutants | 70 Pure 6-Kernel Lean 4.35.0
+    Live_Engine_Or_Sim_Evidence: Embryo COVI=58.19, HomoCad=82.5%
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-40
     Bridge_Domain: Live Engine Tier 2+
     CleanSlate_v3_Anchor: Clean-Slate Bit-Exact SHA-256 & Mutants (P4/P7)
-    Omega_v3_3_Anchor: Cellular Engine Omega v5.1.0 + Pure Lean 4
+    Omega_v3_3_Anchor: Cellular Engine Omega v5.2.0 + Pure 6-Kernel Lean 4.35.0
     SVG_Model_Refs: Model 18, Model 20
-    Primary_Metrics_And_Gates: 54/54 Gates | 16/16 Mutants | 72 Pure Lean 4
+    Primary_Metrics_And_Gates: 60/60 Gates | 16/16 Mutants | 89 Pure 6-Kernel Lean 4.35.0
     Live_Engine_Or_Sim_Evidence: Master SHA=a92641843e46736b... | Niches=17848
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-41
     Bridge_Domain: Live Engine Tier 3+4
     CleanSlate_v3_Anchor: Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12 & Dual Worlds
-    Omega_v3_3_Anchor: Noetic Organism v2.0.0 (48 Lean 4) + Asmodensius-Native LIVE (20 Lean 4)
+    Omega_v3_3_Anchor: Noetic Organism v2.1.0 (54 Lean 4.35) + Asmodensius-Native v1.1.0 LIVE (30 Lean 4.35)
     SVG_Model_Refs: Model 18, Model 20
-    Primary_Metrics_And_Gates: 13/13 CS-v3 Gates | 5/5 Anti-LARP | 77/77 ctest LIVE
-    Live_Engine_Or_Sim_Evidence: 'Noetic v2.0.0: 14/14 Butlin, 10/10 F1-F10, 25/25 CQM, 12/12 WSE (48 Lean 4); Asmo LIVE hash=84ee3e8d7a423961,
-      24C P+E & RTX 5070 Ti CUDA PTX'
+    Primary_Metrics_And_Gates: 13/13 CS-v3 Gates | 5/5 Anti-LARP | 77/77 ctest + 164/164 test_gpu
+    Live_Engine_Or_Sim_Evidence: 'Noetic v2.1.0: 14/14 Butlin, 10/10 F1-F10, 25/25 CQM, 12/12 WSE (54 Lean 4.35); Asmo v1.1.0 LIVE hash=84ee3e8d7a423961,
+      24C==RTX 5070 Ti parity; Observatory v6.7.0'
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-42
     Bridge_Domain: Empirical Sim Suite
@@ -39858,7 +39861,8 @@ omega_singularity_fusion:
     Analysis_Category: Layer Stack (L0-L10)
     Layer_Or_Axis_Name: 'L10: Observability, CI/CD/CE Ops & Verification'
     Classical_AI_Or_Legacy_Baseline: Manual notebooks, unseeded runs, ad-hoc unit tests, multi-file spec drift
-    CleanSlate_v3_TrackA_Engineering: 19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 244 Pure Lean4
+    CleanSlate_v3_TrackA_Engineering: 19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 291+36=327 Pure 6-Kernel
+      Lean 4.35.0
     Pure_Raw_Feral_TrackB_Dynamics: ASAL dual-observer >4-sigma alien anomaly spotters + immutable fossil DAG replay
     PostSingularity_SUPERLIFE_Horizon: Self-verifying formal-proof + empirical cosmological stewardship observatories
     Breadth_And_Depth_Delta: Unifies 78/78 YAML alerts, 18 forensic gates & 77+ zero-drift artifacts
@@ -39928,7 +39932,8 @@ omega_singularity_fusion:
     Analysis_Category: Taxonomy Spectrum
     Layer_Or_Axis_Name: Verification & Falsification Taxonomy (6-Arm + Formal Lean 4)
     Classical_AI_Or_Legacy_Baseline: Single-seed qualitative demos or uncalibrated lesion comparisons
-    CleanSlate_v3_TrackA_Engineering: 6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 244 Pure Lean 4 proofs
+    CleanSlate_v3_TrackA_Engineering: 6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 291+36=327 Pure 6-Kernel Lean 4.35.0
+      proofs
     Pure_Raw_Feral_TrackB_Dynamics: 1,000-seed Gould counterfactual fossil replays + dual ASAL observer replication
     PostSingularity_SUPERLIFE_Horizon: Continuous machine-checked invariant monitoring across evolving biospheres
     Breadth_And_Depth_Delta: Eliminates false-positive LARP claims via 5/5 negative mutant rejection
@@ -40241,10 +40246,10 @@ omega_singularity_fusion:
     Adjacent_Target_Or_Discipline: Formal Theorem Proving (Lean 4 / Dependent Type Theory)
     Shared_Invariant_Or_Bridge_Physics: Machine-checked conservation, boundedness & mutant-rejection invariants (0 sorry)
     Transfer_Friction_Or_Cliff: Spec-to-code semantic gap between Lean abstractions and C++/Python/WASM kernels
-    Estimated_Transfer_Fidelity_M_XY: 0.92+ (244 Pure Lean 4 proofs live!)
+    Estimated_Transfer_Fidelity_M_XY: 0.92+ (291+36=327 Pure 6-Kernel Lean 4.35.0 proofs live!)
     Blindspot_Or_Gap_Closed: GAP-09 (Formal Vitality Proofs)
-    Required_Adapter_Or_Stepping_Stone: Verified 7-repo native stack (AUTOPHAGE 42 + Cellulogonic 62 + Omega v5.1 72 + Noetic v2.0 48 + Asmodensius
-      20 = 244)
+    Required_Adapter_Or_Stepping_Stone: Verified 7-repo native stack (AUTOPHAGE v1.4.0 48 + Cellulogonic v1.5.0 70 + Omega v5.2.0 89 + Noetic
+      v2.1.0 54 + Asmodensius v1.1.0 30 = 291 + 36 local = 327)
     Cross_Corpus_Refs: results/alifeops_live_verification
   - Adj_ID: ADJ-14
     Adjacency_Class: Adjacent Discipline
@@ -40404,7 +40409,8 @@ omega_singularity_fusion:
     Transfer_Friction_Or_Cliff: AI-vs-ALife Ontological War (FM-CNF-03 / FB-04) if utility-ASI sterilizes life
     Estimated_Transfer_Fidelity_M_XY: 0.50 (Bifurcation Sensitive)
     Blindspot_Or_Gap_Closed: FM-CNF-03 (Dual-Singularity Clash)
-    Required_Adapter_Or_Stepping_Stone: Live 7-repo native stack already hits 92.05 (Stage 5 threshold, 244 Pure Lean 4, 13/13 CS-v3 Gates) in-silico
+    Required_Adapter_Or_Stepping_Stone: Live 7-repo native stack already hits 91.84 (Stage 5 threshold, 291+36=327 Pure 6-Kernel Lean 4.35.0,
+      13/13 CS-v3 Gates) in-silico
     Cross_Corpus_Refs: FB-04/05 | results/alifeops_live
   - Adj_ID: ADJ-30
     Adjacency_Class: Phase Stepping-Stone
@@ -40983,7 +40989,7 @@ omega_singularity_fusion:
     Governing_Tradeoff_Law: Fixed-goal instrumental convergence vs unprestatable open-ended vitality
     Dominated_Failure_Trap: Utility-ASI sterilizes chaotic life; feral life consumes ASI hardware as ore (FM-CNF-03 / FB-04)
     Pareto_Optimal_Resolution: 'Converged Living Intelligence from Stage 2: autopoietic vitality + formal Lean 4 verified invariants'
-    Quantitative_Margin_Contract: 'Live 7-Repo Convergence: OVBS-52 = 92.05 (Stage 5) + 244 Pure Lean 4 + 13/13 CS-v3 Gates'
+    Quantitative_Margin_Contract: 'Live 7-Repo Convergence: OVBS-52 = 91.84 (Stage 5) + 291+36=327 Pure 6-Kernel Lean 4.35.0 + 13/13 CS-v3 Gates'
     ALifeOps_Telemetry_Guard: AI_ALIFE_ONTOLOGICAL_CLASH
     Empirical_Or_Formal_Proof: results/alifeops_live_verification
   mega_atlas_crosswalk_25:
@@ -40994,8 +41000,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-B In-Silico Sub-Result
-    Scoped_ALife_Omega_Contribution: Live 5-Engine OVBS-52=92.05 (STAGE_5), Bedau-Packard A_new=29.463, TB13 8,799 nov2 / 17,848 niches, 61-OOM
-      taxonomy & 280 Pure Lean 4 invariants.
+    Scoped_ALife_Omega_Contribution: Live 5-Engine OVBS-52=91.84 (STAGE_5), Bedau-Packard A_new=29.463, TB13 8,799 nov2 / 17,848 niches, 61-OOM
+      taxonomy & 327 Pure 6-Kernel Lean 4.35.0 invariants (291 native + 36 local).
     Primary_Verification_Artifact: results/alifeops_live_verification.json; reports/01; lean/
     What_Remains_Open_Honest_Boundary: True unbounded Type-4 physics-native novelty exceeding finite RAM/state-space representation ceilings remains
       OPEN (HOLE-02).
@@ -41040,8 +41046,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-B In-Silico Sub-Result
-    Scoped_ALife_Omega_Contribution: Noetic Organism v2.0.0 WSE-12 executes 10 bounded self-mod ops while Ring-0 ACL blocks 10 illegal kernel
-      edits (||W||_2=0.844<1.0, 0 uq drift) + Lean N25-N27 rollback proofs.
+    Scoped_ALife_Omega_Contribution: Noetic Organism v2.1.0 WSE-12 executes 10 bounded self-mod ops while Ring-0 ACL blocks 10 illegal kernel
+      edits (||W||_2=0.844<1.0, 0 uq drift) + 54 Pure 6-Kernel Lean 4.35.0 proofs.
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier3_noetic_organism); reports/05
     What_Remains_Open_Honest_Boundary: Physical energy/thermodynamic ceilings and unbounded open-world recursive intelligence explosion dynamics
       remain OPEN.
@@ -41064,8 +41070,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Completely Open
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C Formal Sub-Model
-    Scoped_ALife_Omega_Contribution: 62 Pure Lean 4 Cellulogonic theorems (stoichiometric conservation, membrane fission, endosymbiotic liberation,
-      chemiosmotic thresholds) + 11x11 Layer Coupling Matrix (121 pairs).
+    Scoped_ALife_Omega_Contribution: 70 Pure 6-Kernel Lean 4.35.0 Cellulogonic v1.5.0 theorems (stoichiometric conservation, membrane fission,
+      endosymbiotic liberation, chemiosmotic thresholds) + 11x11 Layer Coupling Matrix (121 pairs).
     Primary_Verification_Artifact: csv/18_layer_11x11_coupling_impedance_matrix.csv; reports/06; reports/08
     What_Remains_Open_Honest_Boundary: A universal necessary-and-sufficient mathematical law covering all natural autopoietic and multi-scale
       biological agents remains OPEN.
@@ -41099,8 +41105,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C In-Silico Benchmark Only
-    Scoped_ALife_Omega_Contribution: Cellulogonic Mecha v1.4.0 embryogenesis (24/24 gates, homo_cad=90.4%, 62 Lean 4) & Noetic Blackiston metamorphosis
-      remap (87.5% motor remap, memory retained).
+    Scoped_ALife_Omega_Contribution: Cellulogonic Mecha v1.5.0 embryogenesis (26/26 gates, 8/8 mutants, homo_cad=82.5%, 70 Pure 6-Kernel Lean
+      4.35.0) & Noetic v2.1.0 Blackiston metamorphosis remap (87.5% motor remap, memory retained).
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier2_cellulogonic, tier3_noetic_organism)
     What_Remains_Open_Honest_Boundary: Restoring scar-free whole-limb/organ blastema regeneration in adult mammals remains completely OPEN.
   - Crosswalk_ID: MA-11
@@ -41168,8 +41174,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C In-Silico Multi-Scale Proxy
-    Scoped_ALife_Omega_Contribution: Cellular Engine Omega v5.1.0 verifies 75/75 substrates, 1,000/1,000 Hybrid Cube, TB16 perturbation R^2=0.91494,
-      essential-gene AUROC=0.99087, & 0 six-tier integer drift.
+    Scoped_ALife_Omega_Contribution: Cellular Engine Omega v5.2.0 verifies 60/60 gates, 75/75 substrates, 1,000/1,000 Hybrid Cube, TB16 perturbation
+      R^2=0.91494, essential-gene AUROC=0.99087, 89 Pure 6-Kernel Lean 4.35.0 & 0 six-tier integer drift.
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier2plus_omega); csv/ALife-Hybrid-Cube-10x10x10.csv
     What_Remains_Open_Honest_Boundary: A mechanistically complete atomic/molecular digital twin of a living human eukaryotic cell remains OPEN.
   - Crosswalk_ID: MA-17
@@ -41262,7 +41268,7 @@ omega_singularity_fusion:
     Atlas_2026_Status: Completely Open
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-D Strictly OPEN (Indicator Proxy Only)
-    Scoped_ALife_Omega_Contribution: 'Noetic Organism v2.0.0 runs 14/14 Butlin indicators, 10/10 theory proxies & 25/25 CQM checks explicitly
+    Scoped_ALife_Omega_Contribution: 'Noetic Organism v2.1.0 runs 14/14 Butlin indicators, 10/10 theory proxies & 25/25 CQM checks explicitly
       tagged EXECUTED_PASS_INDICATOR_ONLY (ADR 0018: architectural dynamics != qualia).'
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier3_noetic_organism); LIMITATIONS.md; reports/03 (HOLE-01)
     What_Remains_Open_Honest_Boundary: Subjective phenomenal experience (qualia), digital sentience verification (AI-055), and Strong Emergence
@@ -41274,8 +41280,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Experimental Tension
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-B Applied Bounded Implementation
-    Scoped_ALife_Omega_Contribution: Ships 280 Pure Lean 4 theorems (244 native 5-engine + 36 local zero-Mathlib Lean 4.35.0 package invariants),
-      NonVacuity witnesses, Palomar Challenge/Solution comparator, & row-by-row Statement-Fidelity Matrix.
+    Scoped_ALife_Omega_Contribution: Ships 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native 5-engine + 36 local zero-Mathlib Lean 4.35.0 package
+      invariants), NonVacuity witnesses, Palomar Challenge/Solution comparator, & row-by-row Statement-Fidelity Matrix.
     Primary_Verification_Artifact: lean/; docs/statement-fidelity.md; results/lean_package_axioms.txt
     What_Remains_Open_Honest_Boundary: Automated semantic fidelity auditing for arbitrary multi-million-line AI-generated mathematical proof corpora
       remains OPEN.
@@ -42036,46 +42042,48 @@ omega_singularity_fusion:
         P7_MULTISCALE_AGENCY_INDIVIDUALITY: 96.0
         P8_FERAL_RESILIENCE_CRITICALITY: 96.0
   live_4engine_receipts:
-    run_id: ALIFE-OMEGA-20261122T215235Z
-    composite_ovi_score: 92.05
+    run_id: ALIFE-OMEGA-20261126T033955Z
+    composite_ovi_score: 91.84
     stage_classification: STAGE_5_CONVERGED_SYNTHESIS
-    total_lean4_theorems: 244
+    total_lean4_theorems: 291
     all_lean4_pure_axioms_verified: true
     engine_receipts:
       tier1_autophage:
-        version: 1.3.0
+        version: 1.4.0
         rc: 0
-        elapsed_s: 1.638
+        elapsed_s: 2.073
         gates_passed: 18
         gates_failed: 0
+        mutants_caught: 6
+        mutants_total: 6
         feral_ovi: 92.05
         bedau_packard_anew: 29.463
         weismann_index: 23.014
         thermo_drift: 0.0
-        lean4_theorems: 42
+        lean4_theorems: 48
         lean4_pure_axioms_verified: true
       tier2_cellulogonic:
-        version: 1.4.0
+        version: 1.5.0
         rc: 0
-        elapsed_s: 0.4114
-        gates_passed: 24
-        gates_total: 24
+        elapsed_s: 0.8144
+        gates_passed: 26
+        gates_total: 26
         mutants_caught: 8
         mutants_total: 8
-        embryo_covi: 59.24
-        embryo_alive: 48
-        embryo_active_axons: 0
-        embryo_homo_cad_pct: 90.4
+        embryo_covi: 58.19
+        embryo_alive: 39
+        embryo_active_axons: 2
+        embryo_homo_cad_pct: 82.5
         embryo_mass_res: 0
         embryo_energy_res: 0
-        lean4_theorems: 62
+        lean4_theorems: 70
         lean4_pure_axioms_verified: true
       tier2plus_omega:
-        version: 5.1.0
+        version: 5.2.0
         rc: 0
-        elapsed_s: 0.6874
-        gates_passed: 54
-        gates_total: 54
+        elapsed_s: 0.8512
+        gates_passed: 60
+        gates_total: 60
         mutants_caught: 16
         mutants_total: 16
         master_sha256: a92641843e46736b04cd781181f34f1de8444859ce73db47d4204c5553364661
@@ -42087,7 +42095,7 @@ omega_singularity_fusion:
           OVER: 20
           EXCL: 45
         hybrid_cube_active_verified: 935
-        cube_sha256: 0f158119d5de255656b86727eeb876b65b77f9a37cf852fb5125d384f6de130b
+        cube_sha256: c9fd6d3dfcf1492c2271e2fd7a6e30473ff02187ca17a9d664493df0fb0a55ab
         tb13_nov2: 8799
         tb13_niches: 17848
         tb14_confluence_exact: true
@@ -42099,12 +42107,12 @@ omega_singularity_fusion:
         tb16_essential_auroc: 0.99087
         tb16_proj_mass_res: 0.0
         tb16_six_tier_int_drift: 0
-        lean4_theorems: 72
+        lean4_theorems: 89
         lean4_pure_axioms_verified: true
       tier3_noetic_organism:
-        version: 2.0.0
+        version: 2.1.0
         rc: 0
-        elapsed_s: 0.2201
+        elapsed_s: 0.2675
         gates_passed: 10
         gates_total: 10
         mutants_caught: 5
@@ -42127,7 +42135,7 @@ omega_singularity_fusion:
         fasting_sparing_ratio: 2.4348
         blackiston_remap_pct: 87.5
         observer_10k_zero_bit: true
-        seed_firewall_head_sha256: d5922a62e2d07703f09d769aef61301125a052e18c63445a631cee9975fd875c
+        seed_firewall_head_sha256: 4224f4288b93f915d43ea3032c81d3cd532f445eda91bf689f893561ed84d1a8
         honest_825_executed_c11: 825
         honest_825_native_pass: 825
         honest_825_indicator_only: 29
@@ -42137,15 +42145,16 @@ omega_singularity_fusion:
         milestones_100_verified: 100
         milestones_first15_playable: true
         max_energy_drift_uq: 0
-        lean4_theorems: 48
+        lean4_theorems: 54
         lean4_pure_axioms_verified: true
       tier34_asmodensius:
+        version: 1.1.0
         policy: ACTIVE_LIVE_EXECUTION_DUAL_WORLDS
         writer_lock_present: false
         az_run_present: true
         az_live_present: true
         rc: 0
-        elapsed_s: 0.6357
+        elapsed_s: 0.9423
         lab_seed7_hash: 84ee3e8d7a423961
         books_exact: true
         demo16_species101_refused_exit2: true
@@ -42153,10 +42162,19 @@ omega_singularity_fusion:
         - World1_WebGL2_viewer_8794
         - World2_Native_az_view_8796
         ctest_registered_total: 77
-        lean4_theorems: 20
+        test_gpu_passed: 164
+        test_gpu_total: 164
+        cpu_gpu_hash_parity: true
+        lean4_theorems: 30
         lean4_pure_axioms_verified: true
-        note: 'Repo #7 actively upgraded, verified live via az_run.exe + 77/77 ctest + 20 Pure Lean 4 + RTX 5070 Ti CUDA PTX + 24C P+E + Bulk
-          Philox AVX2 + DDR5 prefetch + both visual worlds.'
+        companion_observatory:
+          repo: omega-triscale-observatory
+          version: 6.7.0
+          node_tests: 12/12
+          python_tests: 5/5
+          mutants: 6/6
+        note: 'Repo #7 v1.1.0 actively verified live via az_run.exe + 77/77 ctest + 164/164 test_gpu + 30 Pure 6-Kernel Lean 4.35.0 + live 24C==RTX
+          5070 Ti GPU hash parity + both visual worlds (companion omega-triscale-observatory v6.7.0).'
   svg_models_24_registry:
   - id: MODEL-01
     num: 1
@@ -42228,7 +42246,7 @@ omega_singularity_fusion:
     origin: v3.4-Omega Unified Systems Synthesis
   - id: MODEL-18
     num: 18
-    title: 'MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (244 PURE LEAN 4)'
+    title: 'MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (291 PURE LEAN 4)'
     origin: v3.4-Omega Unified Systems Synthesis
   - id: MODEL-19
     num: 19

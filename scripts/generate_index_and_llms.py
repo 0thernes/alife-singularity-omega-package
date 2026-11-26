@@ -21,9 +21,11 @@ LLMS_FULL_SOURCES = [
     "PREREGISTRATION.md",
     "HARDENING_LOG.md",
     "docs/statement-fidelity.md",
+    "docs/MEGA_ATLAS_CROSSCHECK.md",
     "docs/AI_DISCLOSURE.md",
     "reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md",
     "results/lean_package_axioms.txt",
+    "results/lean4-multi-kernel.txt",
 ]
 
 
@@ -77,7 +79,7 @@ def main() -> None:
         for f in by_folder[folder]:
             rel = f.relative_to(ROOT).as_posix()
             sz = f.stat().st_size
-            if f.suffix.lower() in TEXT_EXTS or f.name in {"VERSION", "LICENSE", "LICENSE-CODE", "NOTICE", "justfile", ".gitignore", ".gitattributes", ".editorconfig"}:
+            if f.suffix.lower() in TEXT_EXTS or f.name in {"VERSION", "LICENSE", "LICENSE-DOCS", "NOTICE", "justfile", ".gitignore", ".gitattributes", ".editorconfig"}:
                 try:
                     txt = f.read_text(encoding="utf-8", errors="replace")
                     lc = txt.count("\n") + (1 if txt and not txt.endswith("\n") else 0)

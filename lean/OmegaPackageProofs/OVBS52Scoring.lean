@@ -174,10 +174,10 @@ public theorem classifyStage_monotone {x y : Nat} (h : x ≤ y) :
               have hy5 : ¬ y < 9500 := by omega
               simp [hx0, hx1, hx2, hx3, hx4, hx5, hy0, hy1, hy2, hy3, hy4, hy5, stageRank]
 
-/-- Theorem 9: Exact live 5-engine benchmark receipt (OVBS-52 = 92.05 = 9205 centis)
+/-- Theorem 9: Exact live 5-engine benchmark receipt (OVBS-52 = 91.84 = 9184 centis)
     maps deterministically into STAGE_5_CONVERGED_SYNTHESIS. -/
-public theorem live_9205_is_stage5 :
-    classifyStage 9205 = .stage5ConvergedSynthesis := rfl
+public theorem live_9184_is_stage5 :
+    classifyStage 9184 = .stage5ConvergedSynthesis := rfl
 
 /-- Theorem 10: Total castration collapse (SIM04 OVI = 3.28 = 328 centis)
     maps deterministically into STAGE_0_INERT. -/

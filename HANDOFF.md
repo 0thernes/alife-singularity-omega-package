@@ -7,17 +7,18 @@
 
 ## Verified Headline Metrics (`v3.4.0`)
 
-1. **Five Live Companion Native Engines (`results/alifeops_live_verification.json`):**
-   - `AUTOPHAGE v1.3.0`: `18/18` gates, `42` Pure Lean 4 theorems
-   - `Cellulogonic Mecha v1.4.0`: `24/24` gates, `8/8` mutants, `62` Pure Lean 4 theorems
-   - `Cellular Engine Omega v5.1.0`: `54/54` gates, `16/16` mutants, `75/75` substrates, `1,000/1,000` Cube, `72` Pure Lean 4 theorems
-   - `Noetic Organism Omega v2.0.0`: `13/13` Clean-Slate v3.0 Release Gates, `825/825` C11 checks (`0` fail; `29` `INDICATOR_ONLY`), `100/100` milestones, `5/5` Anti-LARP mutants, `48` Pure Lean 4 theorems
-   - `Asmodensius-Native`: LIVE C23 dual worlds, `77/77` registered ctests, 24C P+E & RTX 5070 Ti CUDA PTX parity, `20` Pure Lean 4 theorems
-   - **Native Subtotal:** `42 + 62 + 72 + 48 + 20 = 244` Pure Lean 4 Theorems; composite `OVBS-52 = 92.05` (`STAGE_5_CONVERGED_SYNTHESIS`); `35/35` compiled C/C++ mutants killed.
+1. **Five Live Companion Native Engines + Observatory (`results/alifeops_live_verification.json`):**
+   - `AUTOPHAGE v1.4.0`: `18/18` gates, `6/6` mutants, `48` Pure 6-Kernel Lean 4.35.0 theorems
+   - `Cellulogonic Mecha v1.5.0`: `26/26` gates, `8/8` mutants, COVI `58.19`, `70` Pure 6-Kernel Lean 4.35.0 theorems
+   - `Cellular Engine Omega v5.2.0`: `60/60` gates, `16/16` mutants, `75/75` substrates, `1,000/1,000` Cube, `89` Pure 6-Kernel Lean 4.35.0 theorems
+   - `Noetic Organism Omega v2.1.0`: `10/10` unit+mut (`5/5` Anti-LARP), `13/13` Clean-Slate v3.0 Release Gates, `825/825` C11 checks (`0` fail; `29` `INDICATOR_ONLY`), `100/100` milestones, `54` Pure 6-Kernel Lean 4.35.0 theorems
+   - `Asmodensius-Native v1.1.0`: LIVE C23 dual worlds, `77/77` registered ctests, `164/164` `test_gpu`, live 24C==RTX 5070 Ti GPU hash parity, `30` Pure 6-Kernel Lean 4.35.0 theorems
+   - `omega-triscale-observatory v6.7.0`: `12/12` Node + `5/5` Python + `6/6` mutants
+   - **Native Subtotal:** `48 + 70 + 89 + 54 + 30 = 291` Pure 6-Kernel Lean 4.35.0 Theorems; composite `OVBS-52 = 91.84` (`STAGE_5_CONVERGED_SYNTHESIS`); `35/35` compiled C/C++ mutants killed.
 2. **Local Zero-Mathlib Lean 4.35.0 Package Suite (`lean/`):**
    - `36` core theorems + `4` Palomar comparator certificates = `40` audited `#print axioms` lines in `results/lean_package_axioms.txt`.
-   - Axioms strictly $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings, `0` `sorry` in `lean/`, verified by `leanchecker` and `leanchecker-paranoid`.
-   - **Combined Ecosystem Total:** **`280` Pure Lean 4 Theorems**.
+   - Axioms strictly $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings, `0` `sorry` in `lean/`, verified across `lean4`, `leanchecker`, `leanchecker-paranoid`, `nanoda_bin`, `con-leche`, and `con-ron` (`results/lean4-multi-kernel.txt`, plus `lean4lean` + `bubblewrap` comparator in Ubuntu CI).
+   - **Combined 7-Repo Ecosystem Total:** **`327` Pure 6-Kernel Lean 4.35.0 Theorems**.
 3. **Live 748-Run Conserved Paired Simulation (`results/empirical_sim_summary.json`):**
    - Max FP64 First-Law drift `2.463e-16 < 1e-12`, `0` heat-backflow faults, `5/5` real Anti-LARP mutants rejected.
    - `SIM08` (`OVI = 85.48`, `406.9` Ring-0 blocked edits/run, `0.0%` KS deletion) beats `SIM03` (`56.42`, `100.0%` KS deletion, $p_{\mathrm{Holm}} < 10^{-13}$) and `SIM01` (`83.57`, $p_{\mathrm{Holm}} = 7.71 \times 10^{-6}$).

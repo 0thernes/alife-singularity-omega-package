@@ -14,7 +14,7 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.OVBS52.rawOviCentis_monotone
 #print axioms OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone
 #print axioms OmegaPackageProofs.OVBS52.classifyStage_monotone
-#print axioms OmegaPackageProofs.OVBS52.live_9205_is_stage5
+#print axioms OmegaPackageProofs.OVBS52.live_9184_is_stage5
 #print axioms OmegaPackageProofs.OVBS52.castration_328_is_stage0
 
 #print axioms OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000
@@ -23,8 +23,8 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum
 #print axioms OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail
 #print axioms OmegaPackageProofs.CubeAndPartitions.unified_alerts_78
-#print axioms OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_244
-#print axioms OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_280
+#print axioms OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_291
+#print axioms OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_327
 #print axioms OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition
 #print axioms OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition
 

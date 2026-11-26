@@ -8,7 +8,7 @@
 - **ORCID:** `0009-0006-8168-9648` (`https://orcid.org/0009-0006-8168-9648`)
 - **Email / GitHub:** `0_0@0thernes.art` · `https://github.com/0thernes/alife-singularity-omega-package`
 - **CRITICAL LEGAL RULE:** Never write `"0thernes LLC"` anywhere in prose, metadata, licenses, or code — no LLC has been legally formed. Always use `"Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)"`.
-- **Dual License:** Prose/datasets/figures = `CC-BY-4.0` (`LICENSE`); Code/Lean 4/tests = `Apache-2.0` (`LICENSE-CODE`).
+- **Dual License:** Code/Lean 4/tests = `Apache-2.0` (`LICENSE`); Prose/datasets/figures = `CC-BY-4.0` (`LICENSE-DOCS`).
 
 ## Hard Rules (Build Standard v1.2.0 `R1–R8`)
 
@@ -18,7 +18,7 @@
 - **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
 - **Strict File-Size Hygiene (`A24`):** Every Git-tracked file must remain `< 5.00 MB` (`5,242,880` B). Chrome PDFs are losslessly compressed via `pypdf`; `ALife_Singularity_SuperLife_Omega_Package.zip` is gitignored and attached to GitHub Releases.
 - **Lean 4 Purity:** Zero `sorry`, `admit`, custom `axiom`, or `native_decide` in `lean/`. Axioms must stay strictly within `[propext, Quot.sound]`.
-- **Exact Theorem Arithmetic:** `42` (AUTOPHAGE v1.3.0) + `62` (Cellulogonic Mecha v1.4.0) + `72` (Cellular Engine Omega v5.1.0) + `48` (Noetic Organism Omega v2.0.0) + `20` (Asmodensius-Native) = **`244`** Native Pure Lean 4 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`280` Pure Lean 4 Theorems**. Never write `240`!
+- **Exact Theorem Arithmetic:** `48` (AUTOPHAGE v1.4.0) + `70` (Cellulogonic Mecha v1.5.0) + `89` (Cellular Engine Omega v5.2.0) + `54` (Noetic Organism Omega v2.1.0) + `30` (Asmodensius-Native v1.1.0) = **`291`** Native Pure 6-Kernel Lean 4.35.0 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`327` Pure 6-Kernel Lean 4.35.0 Theorems**. Never write `240`, `244`, or `280` for current live counts!
 - **PowerShell Bracket Safety (Windows `Z:`):** Because the canonical local checkout lives under `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`, always pass `-LiteralPath` to PowerShell file cmdlets.
 
 ## One-Word Commands (`justfile`)

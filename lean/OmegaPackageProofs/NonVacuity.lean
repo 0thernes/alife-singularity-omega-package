@@ -21,7 +21,7 @@ open OmegaPackageProofs.CastrationRing0
 
 /-- Theorem 31: Concrete live pillar vector (rounded integer live profile) inhabits bounded OVBS-52 and sits in Stage 5. -/
 public theorem nonvac_live_pillar_witness :
-    let ovi := rawOviCentis 84 86 86 96 99 100 96 96
+    let ovi := rawOviCentis 84 86 84 96 99 100 96 96
     ovi ≤ 10000 ∧ classifyStage ovi = .stage5ConvergedSynthesis := by
   decide
 
@@ -46,7 +46,7 @@ public theorem nonvac_synergy_saturation_witness :
 
 /-- Theorem 36: Master Non-Vacuity Certificate bundling all concrete positive & negative boundary witnesses. -/
 public theorem nonvac_all_hypotheses :
-    (rawOviCentis 84 86 86 96 99 100 96 96 ≤ 10000) ∧
+    (rawOviCentis 84 86 84 96 99 100 96 96 ≤ 10000) ∧
     (classifyStage 8499 = .stage4SuperAlife) ∧
     (classifyStage 8500 = .stage5ConvergedSynthesis) ∧
     (gatedOviCentis 100 100 100 100 100 100 100 100 false 100 = 0) ∧

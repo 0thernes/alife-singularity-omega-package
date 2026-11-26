@@ -20,6 +20,6 @@ Thank you for your interest in `alife-singularity-omega-package`! This repositor
 
 ## Licensing of Contributions
 
-- Prose, documentation, datasets, and figures are licensed under **CC-BY-4.0** (`LICENSE`).
-- Code, scripts, tests, and Lean 4 formalizations are licensed under **Apache-2.0** (`LICENSE-CODE`).
+- Code, scripts, tests, and Lean 4 formalizations are licensed under **Apache-2.0** (`LICENSE`).
+- Prose, documentation, datasets, and figures are licensed under **CC-BY-4.0** (`LICENSE-DOCS`).
 By submitting a contribution, you agree that it may be distributed under these dual terms.

@@ -10,7 +10,7 @@ project:
     invariant theorems (plus 4 Palomar comparator certificates = 40 printed audit lines)
     certifying the OVBS-52 8-pillar weighting, boundedness, monotonicity, anti-gaming
     annihilation, 7-stage escalation classifier, 10x10x10 Hybrid Cube & 825-check
-    partitions, 5-engine 244-theorem + 36-local = 280-theorem accounting, 13x13
+    partitions, 5-engine 291-theorem + 36-local = 327-theorem accounting, 13x13
     castration synergy bounds/symmetry/monotonicity, Hardware Ring-0 ACL kernel
     non-interference, spectral-norm contraction gating, Pareto dominance order axioms,
     and concrete NonVacuity boundary witnesses.
@@ -37,7 +37,7 @@ classification:
     - "68T05"
 
 sources:
-  - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.4-Omega): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, and 280 Pure Lean 4 Theorems"
+  - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.4-Omega): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, and 327 Pure 6-Kernel Lean 4.35.0 Theorems"
     authors:
       - "Alexander Stephen Donahue"
     id: "https://github.com/0thernes/alife-singularity-omega-package"

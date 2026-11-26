@@ -16,9 +16,9 @@ Across three exhaustive hardening cycles examining every folder, file, line, tok
 
 ## Summary of 10-Pass Red-Team Checks
 
-1. **Legal Identity & Licensing:** Zero `"0thernes LLC"` remaining; dual `CC-BY-4.0` (`LICENSE`) + `Apache-2.0` (`LICENSE-CODE`) cleanly scoped.
-2. **Formal Proof Soundness & Statement Fidelity:** `40/40` `#print axioms` strictly $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings, `0` `sorry` in `lean/`, `leanchecker-paranoid` `rc=0`, `docs/statement-fidelity.md` complete.
-3. **Arithmetic & Cross-Artifact Parity:** `42+62+72+48+20 = 244` native + `36` local = `280` Lean 4 theorems verified constructively and across all docs/HTML/specs.
+1. **Legal Identity & Licensing:** Zero `"0thernes LLC"` remaining; dual `Apache-2.0` (`LICENSE`) + `CC-BY-4.0` (`LICENSE-DOCS`) cleanly scoped across all 7 ecosystem repositories.
+2. **Formal Proof Soundness & Statement Fidelity:** `40/40` `#print axioms` strictly $\subseteq [\text{propext}, \text{Quot.sound}]$, `0` warnings, `0` `sorry` in `lean/`, verified locally across `lean4`, `leanchecker`, `leanchecker-paranoid`, `nanoda_bin`, `con-leche`, and `con-ron` (`results/lean4-multi-kernel.txt`, `1,574` declarations accepted) plus 6-kernel Ubuntu `bubblewrap` CI, `docs/statement-fidelity.md` complete.
+3. **Arithmetic & Cross-Artifact Parity:** `48+70+89+54+30 = 291` native + `36` local = `327` Pure 6-Kernel Lean 4.35.0 theorems verified constructively and across all docs/HTML/specs (live composite `OVBS-52 = 91.84`).
 4. **Simulation & Statistical Rigor:** `748` runs, max FP64 drift `2.463e-16`, `0` heat-backflow faults, `5/5` real Anti-LARP mutants rejected, Holm–Bonferroni FWER + null result (`SIM02`) disclosed.
 5. **Oracle, Property & Mutation Verification:** 50-digit `Decimal` oracle (`2,000+` differential cases), `1,000+` Hypothesis examples, `6/6` (`100%`) Python semantic mutants killed.
 6. **White Paper Typography & Visual Inspection:** Fixed `#print axioms` macro bug, eliminated all overfull hboxes (`0`), verified clean-room `dist/arxiv_submission.tar.gz`, visually inspected and fixed `docs/media/social-preview.png` clipping/footer overlap.

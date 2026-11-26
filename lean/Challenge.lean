@@ -25,8 +25,8 @@ open OmegaPackageProofs.CastrationRing0
   (cubeOK + cubeADAPT + cubeOVER + cubeEXCL = 1000) ∧
   (cubeOK + cubeADAPT = 935) ∧
   (14 + 10 + 25 + 100 + 500 + 100 + 12 + 40 + 24 = 825) ∧
-  (42 + 62 + 72 + 48 + 20 = 244) ∧
-  (244 + 36 = 280)
+  (48 + 70 + 89 + 54 + 30 = 291) ∧
+  (291 + 36 = 327)
 
 @[expose] public def M3Statement : Prop :=
   (∀ a b k, synergyScore a b k ≤ 100) ∧

@@ -41,14 +41,14 @@ public theorem live_825_execution_zero_fail :
 public theorem unified_alerts_78 :
     42 + 36 = 78 := rfl
 
-/-- Theorem 17: Five-engine native Pure Lean 4 theorem accounting:
-    42 (AUTOPHAGE) + 62 (Cellulogonic) + 72 (Cellular Omega) + 48 (Noetic) + 20 (Asmodensius) = 244. -/
-public theorem native_5engine_lean_theorems_244 :
-    42 + 62 + 72 + 48 + 20 = 244 := rfl
+/-- Theorem 17: Five-engine native Pure 6-Kernel Lean 4.35.0 theorem accounting:
+    48 (AUTOPHAGE v1.4.0) + 70 (Cellulogonic v1.5.0) + 89 (Cellular Omega v5.2.0) + 54 (Noetic v2.1.0) + 30 (Asmodensius v1.1.0) = 291. -/
+public theorem native_5engine_lean_theorems_291 :
+    48 + 70 + 89 + 54 + 30 = 291 := rfl
 
-/-- Theorem 18: Combined ecosystem Pure Lean 4 theorem total (244 native + 36 local package = 280). -/
-public theorem ecosystem_total_lean_theorems_280 :
-    244 + 36 = 280 := rfl
+/-- Theorem 18: Combined ecosystem Pure 6-Kernel Lean 4.35.0 theorem total (291 native + 36 local package = 327). -/
+public theorem ecosystem_total_lean_theorems_327 :
+    291 + 36 = 327 := rfl
 
 /-- Theorem 19: Cross-layer 11x11 coupling matrix has 121 directed pairs (11 diagonal + 110 off-diagonal). -/
 public theorem layer_coupling_11x11_partition :

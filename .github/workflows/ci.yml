@@ -1,9 +1,10 @@
 name: CI (Informational / Report-Only)
 
-# Build Standard v1.2.0 (A10, A25, B35, B38): informational CI on push & manual dispatch.
+# Build Standard v1.2.0 (A10, A25, B35, B38): informational CI on push, tags & manual dispatch.
 on:
   push:
     branches: ["main"]
+    tags: ["v*"]
   workflow_dispatch:
 
 permissions:
@@ -49,23 +50,35 @@ jobs:
         run: pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/Audit-Repo.ps1 -Path . -Json audit.json -Markdown $env:GITHUB_STEP_SUMMARY
 
   lean-formal-proofs:
-    name: Lean 4.35.0 Zero-Mathlib Proofs & Paranoid Checker
+    name: Pure Lean 4.35.0 — 36+4 Theorems & 6-Kernel Palomar Comparator
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
+      - name: Install bubblewrap for 6-kernel Palomar sandbox
+        run: sudo apt-get update && sudo apt-get install -y bubblewrap
       - name: Install elan & Lean 4.35.0
         run: |
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Build OmegaPackageProofs, audit axioms & run leanchecker-paranoid
+      - name: Build OmegaPackageProofs, PalomarChallenge & audit all 40 axioms
         working-directory: lean
         run: |
+          set -euo pipefail
           lake build
+          lake build PalomarChallenge
           lake env lean OmegaPackageProofs/VerifyAxioms.lean > ../live_axioms.txt
           diff -u --strip-trailing-cr ../results/lean_package_axioms.txt ../live_axioms.txt
-          lake env leanchecker
-          lake env leanchecker-paranoid
+      - name: Run all 6 independent kernels (leanchecker-paranoid, lean4lean, nanoda_bin, con-leche, con-ron + comparator)
+        working-directory: lean
+        run: |
+          set -euo pipefail
+          lake env leanchecker --fresh Solution
+          lake env leanchecker --fresh PalomarSolution
+          lake env leanchecker-paranoid --fresh Solution
+          lake env leanchecker-paranoid --fresh PalomarSolution
+          lake check --paranoid
+          lake comparator --config comparator.json --paranoid
 
   paper-and-security:
     name: AMS-LaTeX White Paper, Clean arXiv Tarball, Gitleaks & Provenance
@@ -84,6 +97,10 @@ jobs:
         run: >-
           uv run --no-project --with matplotlib --with numpy --with pypdf
           python scripts/build_paper_and_figures.py
+      - name: Generate CI SHA256SUMS
+        run: |
+          sha256sum dist/Donahue_2026_alife_singularity_omega.pdf dist/arxiv_submission.tar.gz results/lean_package_axioms.txt results/lean4-multi-kernel.txt results/alifeops_live_verification.json > SHA256SUMS
+          cat SHA256SUMS
       - name: Secret scan (gitleaks, report-only)
         uses: gitleaks/gitleaks-action@v2
         env:
@@ -95,3 +112,4 @@ jobs:
           subject-path: |
             dist/Donahue_2026_alife_singularity_omega.pdf
             dist/arxiv_submission.tar.gz
+            SHA256SUMS

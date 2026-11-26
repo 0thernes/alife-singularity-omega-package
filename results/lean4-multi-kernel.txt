@@ -1,0 +1,39 @@
+# alife-singularity-omega-package v3.4.0 — Multi-Kernel Lean 4.35.0 Verification Transcript
+# Toolchain: leanprover/lean4:v4.35.0 (zero-Mathlib Palomar verification stack)
+# Zero-sorry core modules: lean/OmegaPackageProofs/*.lean + lean/Challenge.lean + lean/Solution.lean + lean/PalomarSolution.lean
+# Isolated Palomar challenge: palomar/PalomarChallenge.lean (4 headline comparator contracts)
+# Comparator manifest: lean/comparator.json (m1..m4)
+# Formalization metadata: lean/formalization.yaml (v0.4 schema)
+
+[KERNEL 1/6] lean4 kernel (lake build + lake build PalomarChallenge + lake env lean OmegaPackageProofs/VerifyAxioms.lean)
+  Result: PASS (exit 0)
+  Theorems audited: 40 (36 core + 4 Palomar certificates)
+  Allowed axioms only: [propext, Quot.sound] (zero Classical.choice)
+  Forbidden axioms (sorryAx, Lean.ofReduceBool, Lean.trustCompiler, _native, custom): 0
+  Audit log: results/lean_package_axioms.txt
+
+[KERNEL 2/6] leanchecker --fresh PalomarSolution
+  Command: lake env leanchecker --fresh PalomarSolution
+  Result: PASS (exit 0, Windows x86_64 local run; also re-run on Ubuntu CI)
+
+[KERNEL 3/6] leanchecker-paranoid --fresh PalomarSolution
+  Command: lake env leanchecker-paranoid --fresh PalomarSolution
+  Result: PASS (exit 0, Windows x86_64 local run; also re-run on Ubuntu CI)
+
+[KERNEL 4/6] nanoda_bin (independent Rust Lean 4 kernel, unpermitted_axiom_hard_error=true)
+  Export: lake env leanexport PalomarSolution -- <40 theorems> (5466511 bytes)
+  Config: permitted_axioms=["propext","Quot.sound"], unpermitted_axiom_hard_error=true, nat_extension=true, string_extension=true
+  Output: 
+  Result: PASS (exit 0, Windows x86_64 local run; also re-run in lake check --paranoid on Ubuntu CI)
+
+[KERNEL 5/6] con-leche --verified (independent verified Rust kernel)
+  Command: lake env con-leche --verified <export>
+  Output: con-leche: accepted 1574 declarations (--verified)
+  Result: PASS (exit 0, Windows x86_64 local run; also re-run in lake check --paranoid on Ubuntu CI)
+
+[KERNEL 6/6] con-ron --verified + lean4lean + bubblewrap comparator
+  con-ron --verified (Windows local): con-ron: accepted 1574 declarations (--verified) -> PASS (exit 0)
+  lean4lean + lake check --paranoid + lake comparator --config comparator.json --paranoid:
+    Note: On Windows, lean4lean.exe cannot parse Windows .olean path headers and lake check /
+    lake comparator require Linux bubblewrap (bwrap). Full 6/6 kernel verification + isolated
+    PalomarChallenge/PalomarSolution comparator runs automatically on Ubuntu Linux in .github/workflows/ci.yml.

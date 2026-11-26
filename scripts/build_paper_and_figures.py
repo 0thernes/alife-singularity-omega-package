@@ -155,7 +155,7 @@ def build_figures(sim: dict, live: dict) -> None:
     fig.savefig(FIG_DIR / "fig03_2d_phase_surface.pdf")
     plt.close(fig)
 
-    # --- Fig 04: 5-Engine Live Pillars (92.05) + 280 Pure Lean 4 Breakdown ---
+    # --- Fig 04: 5-Engine Live Pillars + 327 Pure 6-Kernel Lean 4.35.0 Breakdown ---
     p_scores = live["pillar_scores"]
     p_names = ["P1 OEE", "P2 Auto", "P3 Morph", "P4 Meta", "P5 Asm", "P6 Thm", "P7 Agnc", "P8 Feral"]
     p_vals = [
@@ -164,14 +164,37 @@ def build_figures(sim: dict, live: dict) -> None:
         p_scores["P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION"], p_scores["P6_THERMODYNAMIC_SUBSTRATE_MASTERY"],
         p_scores["P7_MULTISCALE_AGENCY_INDIVIDUALITY"], p_scores["P8_FERAL_RESILIENCE_CRITICALITY"],
     ]
-    lean_names = ["AUTOPHAGE\nv1.3.0", "Cellulogonic\nv1.4.0", "Cellular\nOmega v5.1", "Noetic\nv2.0.0", "Asmodensius\nNative", "Package\nLean 4.35"]
-    lean_vals = [42, 62, 72, 48, 20, 36]
+    er = live["engine_receipts"]
+    t1 = er["tier1_autophage"]
+    t2 = er["tier2_cellulogonic"]
+    t2p = er["tier2plus_omega"]
+    t3n = er["tier3_noetic_organism"]
+    t34 = er["tier34_asmodensius"]
+    native_lean = int(live["total_lean4_theorems"])
+    total_lean = native_lean + 36
+    comp_ovi_live = float(live["composite_ovi_score"])
+    lean_names = [
+        f"AUTOPHAGE\nv{t1.get('version', '1.4.0')}",
+        f"Cellulogonic\nv{t2.get('version', '1.5.0')}",
+        f"Cellular\nOmega v{t2p.get('version', '5.2.0')}",
+        f"Noetic\nv{t3n.get('version', '2.1.0')}",
+        f"Asmodensius\nv{t34.get('version', '1.1.0')}",
+        "Package\nLean 4.35",
+    ]
+    lean_vals = [
+        int(t1["lean4_theorems"]),
+        int(t2["lean4_theorems"]),
+        int(t2p["lean4_theorems"]),
+        int(t3n["lean4_theorems"]),
+        int(t34["lean4_theorems"]),
+        36,
+    ]
     lean_cols = [C_BLUE, C_TEAL, C_PURPLE, "#0891B2", C_AMBER, "#10B981"]
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.4, 3.6), constrained_layout=True)
     y1 = np.arange(len(p_names))
     ax1.barh(y1, p_vals, color=C_BLUE, edgecolor="#0F172A", linewidth=0.6)
-    ax1.axvline(live["composite_ovi_score"], color=C_RED, ls="--", lw=1.8, label=f"Composite OVI = {live['composite_ovi_score']:.2f}")
+    ax1.axvline(comp_ovi_live, color=C_RED, ls="--", lw=1.8, label=f"Composite OVI = {comp_ovi_live:.2f}")
     for i, v in enumerate(p_vals):
         ax1.text(v + 1.0, i, f"{v:.1f}", va="center", fontsize=8, fontweight="bold")
     ax1.set_yticks(y1)
@@ -185,12 +208,12 @@ def build_figures(sim: dict, live: dict) -> None:
     x2 = np.arange(len(lean_names))
     b2 = ax2.bar(x2, lean_vals, color=lean_cols, edgecolor="#0F172A", linewidth=0.6)
     for b, v in zip(b2, lean_vals, strict=True):
-        ax2.text(b.get_x() + b.get_width() / 2, v + 1.5, str(v), ha="center", va="bottom", fontsize=8.5, fontweight="bold")
+        ax2.text(b.get_x() + b.get_width() / 2, v + 1.8, str(v), ha="center", va="bottom", fontsize=8.5, fontweight="bold")
     ax2.set_xticks(x2)
-    ax2.set_xticklabels(lean_names, fontsize=7.6)
-    ax2.set_ylim(0, 86)
-    ax2.set_ylabel("Audited Pure Lean 4 Theorems")
-    ax2.set_title("B. 280 Pure Lean 4 Theorems (244 Native + 36 Pkg)")
+    ax2.set_xticklabels(lean_names, fontsize=7.4)
+    ax2.set_ylim(0, max(lean_vals) + 16)
+    ax2.set_ylabel("Audited Pure 6-Kernel Lean 4.35 Theorems")
+    ax2.set_title(f"B. {total_lean} Pure 6-Kernel Lean 4.35 ({native_lean} Native + 36 Pkg)")
     fig.savefig(FIG_DIR / "fig04_5engine_pillars_lean.pdf")
     plt.close(fig)
 
@@ -207,12 +230,12 @@ def build_figures(sim: dict, live: dict) -> None:
     ax.add_patch(FancyBboxPatch((24, 596), 1232, 20, boxstyle="round,pad=0,rounding_size=4", facecolor="#00F5D4", edgecolor="none"))
 
     ax.text(64, 542, "A-LIFE SINGULARITY × CLEAN-SLATE v3.0 (v3.4.0)", color="#00F5D4", fontsize=24, fontweight="bold")
-    ax.text(64, 498, "Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification & 280 Pure Lean 4 Theorems", color="#E2ECFF", fontsize=12.6, fontweight="bold")
+    ax.text(64, 498, f"Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification & {total_lean} Pure 6-Kernel Lean 4.35 Theorems", color="#E2ECFF", fontsize=12.0, fontweight="bold")
     ax.text(64, 462, "Zero-Consolidation Multi-Format Scientific Stack · 1,900-Problem Mega-Atlas Non-Retirement Audit (0/1,900 Retired)", color="#94A3B8", fontsize=11.0)
 
     kpis = [
-        ("92.05", "Live 5-Engine OVI", "#10B981"),
-        ("280", "Pure Lean 4 Thms", "#38BDF8"),
+        (f"{comp_ovi_live:.2f}", "Live 5-Engine OVI", "#10B981"),
+        (f"{total_lean}", "6-Kernel Lean 4.35", "#38BDF8"),
         ("748", "Conserved Runs", "#A78BFA"),
         ("2.46e-16", "Max FP64 Drift", "#00F5D4"),
         ("0.0%", "Ring-0 KS Deletion", "#F59E0B"),
@@ -245,8 +268,8 @@ def build_figures(sim: dict, live: dict) -> None:
         "• 24 CSVs (2,822 rows) · 5 Excel Workbooks",
         "• 22-Tab Offline Observatory · 24 Vector SVGs",
         "• AMS-LaTeX White Paper + Clean arXiv Tarball",
-        "• 36 Local Lean 4.35 + 244 Native = 280 Thms",
-        "• Build Standard v1.2.0 (100%) · Dual CC-BY/Apache",
+        f"• 36 Local + {native_lean} Native = {total_lean} 6-Kernel Lean 4.35",
+        "• Build Standard v1.2.0 (100%) · Apache-2.0/CC-BY",
     ]
     for bi, btxt in enumerate(bullets):
         ax.text(840, 212 - bi * 22, btxt, color="#CBD5E1", fontsize=9.8)

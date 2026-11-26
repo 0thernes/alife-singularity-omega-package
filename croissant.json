@@ -8,7 +8,7 @@
   },
   "@type": "sc:Dataset",
   "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package Datasets (v3.4.0)",
-  "description": "24 structured canonical CSV tables (2,822 rows), 4-format Master Specifications (JSON/YAML/XML/TXT), 748-run paired empirical simulation receipts, 280 Pure Lean 4 theorem verification logs, and a 25-target Mega-Atlas 1,900-problem non-retirement crosswalk.",
+  "description": "24 structured canonical CSV tables (2,822 rows), 4-format Master Specifications (JSON/YAML/XML/TXT), 748-run paired empirical simulation receipts, 327 Pure 6-Kernel Lean 4.35.0 theorem verification logs (291 native + 36 local), and a 25-target Mega-Atlas 1,900-problem non-retirement crosswalk.",
   "version": "3.4.0",
   "datePublished": "2026-11-25",
   "license": "https://creativecommons.org/licenses/by/4.0/",

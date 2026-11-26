@@ -307,7 +307,7 @@ _ESCALATION_V3_MAP = {
     "STG-2": ("Stage 4-6 | L4 Neural - L6 Exec", "Starter Cube T1-T4 (X1Y2Z1..X7Y7Z3) | M041-M070", "GATE-07, GATE-08, GATE-09 | WSE-12"),
     "STG-3": ("Stage 7-8 | L7 Self - L8 Onto", "Ring-0 WSE + Blackiston Metamorphosis | M071-M090", "GATE-10 | Butlin-14 + F1-F10"),
     "STG-4": ("Stage 8+ | L9 Eco - L10 Ops", "Multi-Dome QD + 19-Tab SeqLock | M091-M100", "GATE-11, GATE-12, GATE-13 | NOVEL-100"),
-    "STG-5": ("Post-Stage 8 | Converged 7-Repo Stack", "AUTOPHAGE v1.3 + Cellulogonic v1.4 + Omega v5.1 + Noetic v2.0 + Asmodensius", "244 Pure Lean 4 | 13/13 CS-v3 Gates | OVBS-52 = 92.05"),
+    "STG-5": ("Post-Stage 8 | Converged 7-Repo Stack", "AUTOPHAGE v1.4.0 + Cellulogonic v1.5.0 + Omega v5.2.0 + Noetic v2.1.0 + Asmodensius v1.1.0 + Observatory v6.7.0", "291+36=327 Pure 6-Kernel Lean 4.35.0 | 13/13 CS-v3 Gates | OVBS-52 = 91.84"),
     "STG-6": ("Beyond v3.0 Horizon | Physics-Native", "Post-Z9 Manifold & Cross-Substrate Compilers", "Extends CQM-25 & NOVEL-100 to Cosmic OOM"),
 }
 
@@ -650,22 +650,23 @@ def build_omniscient_traceability_table(v3_spec: dict, live_receipts: dict, sim_
     no = er.get("tier3_noetic_organism", {})
     asmo = er.get("tier34_asmodensius", {})
 
-    live_ovi = live_receipts.get("composite_ovi_score", 92.05)
-    lean_tot = live_receipts.get("total_lean4_theorems", 244)
-    ap_ver = ap.get("version", "1.2.0")
+    live_ovi = live_receipts.get("composite_ovi_score", 91.84)
+    lean_tot = live_receipts.get("total_lean4_theorems", 291)
+    ap_ver = ap.get("version", "1.4.0")
     ap_g = ap.get("gates_passed", 18)
-    ap_lean = ap.get("lean4_theorems", 38)
-    cm_ver = cm.get("version", "1.3.0")
-    cm_g = cm.get("gates_passed", 24)
-    cm_lean = cm.get("lean4_theorems", 58)
-    om_ver = om.get("version", "5.0.0")
-    om_g = om.get("gates_passed", 54)
-    om_gt = om.get("gates_total", 54)
+    ap_lean = ap.get("lean4_theorems", 48)
+    cm_ver = cm.get("version", "1.5.0")
+    cm_g = cm.get("gates_passed", 26)
+    cm_gt = cm.get("gates_total", 26)
+    cm_lean = cm.get("lean4_theorems", 70)
+    om_ver = om.get("version", "5.2.0")
+    om_g = om.get("gates_passed", 60)
+    om_gt = om.get("gates_total", 60)
     om_m = om.get("mutants_caught", 16)
     om_mt = om.get("mutants_total", 16)
-    om_lean = om.get("lean4_theorems", 66)
-    no_ver = no.get("version", "1.1.0")
-    no_lean = no.get("lean4_theorems", 32)
+    om_lean = om.get("lean4_theorems", 89)
+    no_ver = no.get("version", "2.1.0")
+    no_lean = no.get("lean4_theorems", 54)
     no_cs13 = no.get("clean_slate_13_gates_passed", 13)
 
     sim_summary = sim_summary or {}
@@ -692,13 +693,13 @@ def build_omniscient_traceability_table(v3_spec: dict, live_receipts: dict, sim_
         # 11 Architecture Layers (L0..L10)
         ["TRC-01", "Architecture Layer", "L0 Arena (M001-M010, P2/P4/P10)", "STG-0 / STAGE-00 / CHK-111..116", "Model 1, Model 11-14, Model 16, Model 23", "GATE-01..04 | HW-24 | 11-Pool FP64 <1e-12", f"{tot_runs} Sim Runs Max Drift {max_drift}; Omega v{om_ver} {om_g}/{om_gt}", "specs/Master-Spec.*, csv/06, csv/13, csv/18, pipelines/*.yaml"],
         ["TRC-02", "Architecture Layer", "L1 WetBio Chemoton (M011-M020, P5)", "STG-1 / STAGE-01 / BM-AUT-01..06", "Model 1, Model 6, Model 10, Model 15, Model 23", "GATE-05 | SOFT21-29 | LIFE L001-L020", f"AUTOPHAGE v{ap_ver} {ap_g}/18 Gates ({ap_lean} Pure Lean 4); SIM08", "reports/01, reports/ALife-Build-Framework-Template.md, csv/08"],
-        ["TRC-03", "Architecture Layer", "L2 Soft XPBD Hydrostat (M021-M030)", "STG-1 / STAGE-03 / BM-MRF-01..06", "Model 1, Model 10, Model 15, Model 23", "GATE-06 | SOFT01-20 | |dV|/V0 < 1%", f"Cellulogonic v{cm_ver} {cm_g}/24 Gates ({cm_lean} Pure Lean 4); SIM08", "reports/06, html/ALife-Build-Framework-Template.html, pdf/*"],
+        ["TRC-03", "Architecture Layer", "L2 Soft XPBD Hydrostat (M021-M030)", "STG-1 / STAGE-03 / BM-MRF-01..06", "Model 1, Model 10, Model 15, Model 23", "GATE-06 | SOFT01-20 | |dV|/V0 < 1%", f"Cellulogonic v{cm_ver} {cm_g}/{cm_gt} Gates ({cm_lean} Pure 6-Kernel Lean 4.35.0); SIM08", "reports/06, html/ALife-Build-Framework-Template.html, pdf/*"],
         ["TRC-04", "Architecture Layer", "L3 Omnimodal Sensorium (M031-M040)", "STG-1..2 / STAGE-02 / FM-BUG-06", "Model 1, Model 10, Model 16, Model 23", "DIL-05/06 | .sensorlog | LIFE L021-L040", "Tier-1 Fixed Sensor Lock + Real AST Zero-Oracle Mutant Rejected", "csv/13, csv/ALife-Framework-v3.0-Master-Checklists.csv"],
         ["TRC-05", "Architecture Layer", "L4 Sparse Spiking sLTC/CfC (M041-M050)", "STG-2 / STAGE-03 / BM-THM-01..06", "Model 1, Model 8, Model 12, Model 17, Model 24", "GATE-07 | >=50% Offload | PM03/PM05/MF04", f"SIM08 Starter Cube OVI={s8_ovi:.2f} (N={n_seeds}, p_Holm={s8_p:.3e} vs Feral)", "csv/12, csv/19, csv/ALife-Hybrid-Cube-10x10x10.csv, excel/*"],
         ["TRC-06", "Architecture Layer", "L5 Hopfield/SDR/Replay (M051-M060)", "STG-2 / STAGE-03 / BM-AGN-01..07", "Model 1, Model 8, Model 9, Model 23", "X4Y5Z7 | FREAK-100 | LIFE L041-L060", "SIM08 Hopfield SDR Recall & Shock Resilience", "specs/Master-Spec.json, html/Omega_Dashboard.html Tab 12"],
         ["TRC-07", "Architecture Layer", "L6 Workspace/HOT/WSE-12 (M061-M070)", "STG-2..3 / STAGE-06 / CST-01..13", "Model 1, Model 8, Model 17, Model 21, Model 23", "GATE-09 | WSE-12 | Ring-0 ACL ||W||_2<=0.99", f"SIM07 Ring-0 WSE OVI={s7_ovi:.2f} ({s7_blk:.1f} trapped edits, 0% KS Del vs 100% SIM03)", "reports/03, reports/07, csv/05, csv/10, csv/11, csv/20"],
         ["TRC-08", "Architecture Layer", "L7 Affective Self & PCI* (M071-M080)", "STG-3 / STAGE-08 / BM-AGN-02..07", "Model 1, Model 4, Model 6, Model 18", "GATE-08 | Butlin-14 + F1-F10 | Forked PCI*", f"Exact Wilcoxon + Holm FWER across N={n_seeds} Paired Locked Seeds", "reports/04, reports/Clean-Slate-Creature-Blueprint-Checklist.md"],
-        ["TRC-09", "Architecture Layer", "L8 Ontogeny & Metamorphosis (M081-M090)", "STG-3 / STAGE-03 / BM-MRF-01..06", "Model 1, Model 3, Model 15, Model 19", "GATE-10 | Kleiber M^0.75 | Blackiston M084", f"Cellulogonic v{cm_ver} Embryo COVI={cm.get('embryo_covi',59.24)} ({cm_lean} Pure Lean 4)", "reports/05, reports/06, csv/09, pdf/*"],
+        ["TRC-09", "Architecture Layer", "L8 Ontogeny & Metamorphosis (M081-M090)", "STG-3 / STAGE-03 / BM-MRF-01..06", "Model 1, Model 3, Model 15, Model 19", "GATE-10 | Kleiber M^0.75 | Blackiston M084", f"Cellulogonic v{cm_ver} Embryo COVI={cm.get('embryo_covi',58.19)} ({cm_lean} Pure 6-Kernel Lean 4.35.0)", "reports/05, reports/06, csv/09, pdf/*"],
         ["TRC-10", "Architecture Layer", "L9 Closed Biosphere & Culture (M091-M098)", "STG-4 / STAGE-03..05 / BM-OEE/FRL", "Model 1, Model 3, Model 15, Model 19, Model 24", "M091 O(N+C) | 3-Guild Web | Daisyworld M098", f"AUTOPHAGE A_new={ap.get('bedau_packard_anew',29.463)} + 25-Cell 2D Phase Surface", "reports/01, reports/05, reports/08, csv/01, csv/02, csv/09"],
         ["TRC-11", "Architecture Layer", "L10 19-Tab Ops & CI Sign-Off (M099-M100)", "STG-4..5 / STAGE-04..09 / CHK-001..130", "Model 7, Model 14, Model 16, Model 20", "GATE-11..13 | UI Hash == Headless | 18 Audit Gates", f"Composite Live OVBS-52={live_ovi} ({lean_tot} Pure Lean 4 Proofs)", "README.md, MANIFEST_SHA256.txt, scripts/audit_omniscient_integrity.py"],
         # 8 Engineering Dimensions (D1..D8)
@@ -731,11 +732,11 @@ def build_omniscient_traceability_table(v3_spec: dict, live_receipts: dict, sim_
         ["TRC-35", "Unified Triage", "v3.0 6 Bugs (BUG-01..06) + 6 Errors (ERR-01..06)", "Omega 12 Macro Bugs/Errors (FM-BUG/ERR-01..06)", "Model 5, Model 16", "24/78 Telemetry Alerts Wired in Stage 4 YAML", "0 Unwired Alerts (Gate 4 & Gate 15 Enforced)", "reports/03, csv/03, csv/13, pipelines/*.yaml"],
         ["TRC-36", "Unified Triage", "v3.0 6 Issues (ISS-01..06) + 6 Dilemmas (DIL-01..06)", "Omega 12 Macro Issues/Dilemmas (FM-ISS/DIL-01..06)", "Model 5, Model 16, Model 23", "24/78 Telemetry Alerts + 20 Pareto Frontiers", "0 Unwired Alerts (Gate 4 & Gate 15 Enforced)", "reports/03, reports/08, csv/03, csv/13, csv/20"],
         ["TRC-37", "Unified Triage", "v3.0 6 Problems (PRB-01..06) + 6 Conflicts (CNF-01..06)", "Omega 18 Macro Concerns/Problems/Conflicts", "Model 5, Model 16, Model 17, Model 23", "30/78 Telemetry Alerts Wired in Stage 4 YAML", "Ring-0 ACL Resolves CNF-02 & Counters CST-12 (PAR-01/06)", "reports/03, csv/03, csv/05, csv/13, csv/20"],
-        # 5 Native Production Engines + 244 Native (+ 36 Package = 280) Pure Lean 4 Proofs + 748-Run Sim
-        ["TRC-38", "Live Engine Tier 1", "Clean-Slate Autopoietic Falsification (P2/P5)", f"AUTOPHAGE v{ap_ver} Native C++ + Pure Lean 4", "Model 18, Model 20", f"{ap_g}/18 Gates | 0 Failed | {ap_lean} Pure Lean 4", f"Feral OVI={ap.get('feral_ovi',92.05)}, A_new={ap.get('bedau_packard_anew',29.463)}, Drift=0.0", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
-        ["TRC-39", "Live Engine Tier 2", "Clean-Slate Embryogenesis & Morphogenesis (P8)", f"Cellulogonic Mecha v{cm_ver} Native C++ + Pure Lean 4", "Model 10, Model 18, Model 20", f"{cm_g}/24 Gates | 8/8 Mutants | {cm_lean} Pure Lean 4", f"Embryo COVI={cm.get('embryo_covi',59.24)}, HomoCad={cm.get('embryo_homo_cad_pct',90.4)}%", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
-        ["TRC-40", "Live Engine Tier 2+", "Clean-Slate Bit-Exact SHA-256 & Mutants (P4/P7)", f"Cellular Engine Omega v{om_ver} + Pure Lean 4", "Model 18, Model 20", f"{om_g}/{om_gt} Gates | {om_m}/{om_mt} Mutants | {om_lean} Pure Lean 4", f"Master SHA={str(om.get('master_sha256',''))[:16]}... | Niches={om.get('tb13_niches',17848)}", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
-        ["TRC-41", "Live Engine Tier 3+4", "Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12 & Dual Worlds", f"Noetic Organism v{no_ver} ({no_lean} Lean 4) + Asmodensius-Native LIVE ({asmo.get('lean4_theorems',20)} Lean 4)", "Model 18, Model 20", f"{no_cs13}/13 CS-v3 Gates | 5/5 Anti-LARP | {asmo.get('ctest_registered_total',77)}/77 ctest LIVE", f"Noetic v{no_ver}: 14/14 Butlin, 10/10 F1-F10, 25/25 CQM, 12/12 WSE ({no_lean} Lean 4); Asmo LIVE hash={asmo.get('lab_seed7_hash','84ee3e8d7a423961')}, 24C P+E & RTX 5070 Ti CUDA PTX", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
+        # 5 Native Production Engines + 291 Native (+ 36 Package = 327) Pure 6-Kernel Lean 4.35.0 Proofs + 748-Run Sim
+        ["TRC-38", "Live Engine Tier 1", "Clean-Slate Autopoietic Falsification (P2/P5)", f"AUTOPHAGE v{ap_ver} Native C11 + Pure 6-Kernel Lean 4.35.0", "Model 18, Model 20", f"{ap_g}/18 Gates | 6/6 Mutants | {ap_lean} Pure 6-Kernel Lean 4.35.0", f"Feral OVI={ap.get('feral_ovi',92.05)}, A_new={ap.get('bedau_packard_anew',29.463)}, Drift=0.0", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
+        ["TRC-39", "Live Engine Tier 2", "Clean-Slate Embryogenesis & Morphogenesis (P8)", f"Cellulogonic Mecha v{cm_ver} Native C11 + Pure 6-Kernel Lean 4.35.0", "Model 10, Model 18, Model 20", f"{cm_g}/{cm_gt} Gates | 8/8 Mutants | {cm_lean} Pure 6-Kernel Lean 4.35.0", f"Embryo COVI={cm.get('embryo_covi',58.19)}, HomoCad={cm.get('embryo_homo_cad_pct',82.5)}%", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
+        ["TRC-40", "Live Engine Tier 2+", "Clean-Slate Bit-Exact SHA-256 & Mutants (P4/P7)", f"Cellular Engine Omega v{om_ver} + Pure 6-Kernel Lean 4.35.0", "Model 18, Model 20", f"{om_g}/{om_gt} Gates | {om_m}/{om_mt} Mutants | {om_lean} Pure 6-Kernel Lean 4.35.0", f"Master SHA={str(om.get('master_sha256',''))[:16]}... | Niches={om.get('tb13_niches',17848)}", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
+        ["TRC-41", "Live Engine Tier 3+4", "Clean-Slate 13/13 Gates, 49/49 Cog/CQM, WSE-12 & Dual Worlds", f"Noetic Organism v{no_ver} ({no_lean} Lean 4.35) + Asmodensius-Native v{asmo.get('version','1.1.0')} LIVE ({asmo.get('lean4_theorems',30)} Lean 4.35)", "Model 18, Model 20", f"{no_cs13}/13 CS-v3 Gates | 5/5 Anti-LARP | {asmo.get('ctest_registered_total',77)}/77 ctest + 164/164 test_gpu", f"Noetic v{no_ver}: 14/14 Butlin, 10/10 F1-F10, 25/25 CQM, 12/12 WSE ({no_lean} Lean 4.35); Asmo v{asmo.get('version','1.1.0')} LIVE hash={asmo.get('lab_seed7_hash','84ee3e8d7a423961')}, 24C==RTX 5070 Ti parity; Observatory v6.7.0", "results/alifeops_live_verification.json, scripts/run_alifeops_suite.py"],
         ["TRC-42", "Empirical Sim Suite", f"11-Pool FP64 + Holm FWER (N={n_seeds}) + Real 5/5 Anti-LARP", "8-Cohort + Dual 11-Pt Sweep + 5x5 2D Surface", "Model 6, Model 17, Model 21, Model 24", f"{tot_runs} Live Runs | Max Drift {max_drift} | 5/5 Mutants", f"SIM08={s8_ovi:.2f} > SIM07={s7_ovi:.2f} > SIM01={s1_ovi:.2f} >> SIM03={s3_ovi:.2f} >> SIM04={s4_ovi:.2f}", "results/empirical_sim_summary.json, results/ovbs52_scorecard_SIM01..08.json"],
         # Multi-Format Synchronization & Governance Artifacts
         ["TRC-43", "Multi-Format Specs", "ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}", "Embedded omega_singularity_fusion v3.4 Block", "Model 20", "Gate 7: 4/4 Spec Formats + 26 XML Sections 100% Parity", "Zero Drift Across JSON, YAML, XML & TXT", "specs/ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}"],

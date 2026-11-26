@@ -1,7 +1,7 @@
 {
   "bib_file": "paper/refs.bib",
-  "total_entries": 14,
-  "resolved_count": 14,
+  "total_entries": 20,
+  "resolved_count": 20,
   "failures": [],
   "entries": [
     {
@@ -101,6 +101,48 @@
       "target": "https://github.com/0thernes/unsolved-problems-mega-atlas",
       "ok": true,
       "status": 200
+    },
+    {
+      "key": "taylor2016open",
+      "kind": "doi",
+      "target": "10.1162/ARTL_a_00210",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "price1970selection",
+      "kind": "doi",
+      "target": "10.1038/227520a0",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "seifert2012stochastic",
+      "kind": "doi",
+      "target": "10.1088/0034-4885/75/12/126001",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "mouret2015illuminating",
+      "kind": "doi",
+      "target": "10.48550/arXiv.1504.04909",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "butlin2023consciousness",
+      "kind": "doi",
+      "target": "10.48550/arXiv.2308.08708",
+      "ok": true,
+      "status": "handle_rc=1"
+    },
+    {
+      "key": "levin2022technological",
+      "kind": "doi",
+      "target": "10.3389/fnsys.2022.768201",
+      "ok": true,
+      "status": "handle_rc=1"
     }
   ]
 }

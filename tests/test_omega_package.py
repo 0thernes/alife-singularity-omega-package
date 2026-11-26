@@ -88,8 +88,8 @@ def test_regression_h01_zero_unformed_llc_in_active_corpus() -> None:
     assert not hits, f"Unformed '0thernes LLC' found in: {hits}"
 
 
-def test_regression_h02_exact_theorem_arithmetic_244_plus_36_eq_280() -> None:
-    """Regression H-02 (OMG-147): Native 5-engine theorem sum is 42+62+72+48+20=244, plus 36 local = 280."""
+def test_regression_h02_exact_theorem_arithmetic_291_plus_36_eq_327() -> None:
+    """Regression H-02 (OMG-147): Native 5-engine theorem sum is 48+70+89+54+30=291, plus 36 local = 327."""
     live = json.loads((ROOT / "results" / "alifeops_live_verification.json").read_text(encoding="utf-8"))
     er = live["engine_receipts"]
     native_sum = (
@@ -99,11 +99,11 @@ def test_regression_h02_exact_theorem_arithmetic_244_plus_36_eq_280() -> None:
         + er["tier3_noetic_organism"]["lean4_theorems"]
         + er["tier34_asmodensius"]["lean4_theorems"]
     )
-    assert native_sum == 244
-    assert live["total_lean4_theorems"] == 244
+    assert native_sum == 291
+    assert live["total_lean4_theorems"] == 291
     axioms = [ln.strip() for ln in (ROOT / "results" / "lean_package_axioms.txt").read_text(encoding="utf-8").splitlines() if ln.strip()]
     assert len(axioms) == 40  # 36 core + 4 Palomar
-    assert native_sum + 36 == 280
+    assert native_sum + 36 == 327
 
 
 def test_regression_h04_p8_submetric_pool_has_7_distinct_entries() -> None:

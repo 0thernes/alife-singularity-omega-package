@@ -28,8 +28,8 @@ public theorem m2_cube_and_partition_invariants :
     (cubeOK + cubeADAPT + cubeOVER + cubeEXCL = 1000) ∧
     (cubeOK + cubeADAPT = 935) ∧
     (14 + 10 + 25 + 100 + 500 + 100 + 12 + 40 + 24 = 825) ∧
-    (42 + 62 + 72 + 48 + 20 = 244) ∧
-    (244 + 36 = 280) := by
+    (48 + 70 + 89 + 54 + 30 = 291) ∧
+    (291 + 36 = 327) := by
   sorry
 
 public theorem m3_castration_and_ring0_invariants :
@@ -40,7 +40,7 @@ public theorem m3_castration_and_ring0_invariants :
   sorry
 
 public theorem m4_nonvacuity_certificate :
-    (rawOviCentis 84 86 86 96 99 100 96 96 ≤ 10000) ∧
+    (rawOviCentis 84 86 84 96 99 100 96 96 ≤ 10000) ∧
     (classifyStage 8499 = .stage4SuperAlife) ∧
     (classifyStage 8500 = .stage5ConvergedSynthesis) ∧
     (wseWritePermitted .ring1PlasticSynapses 9900 = true) ∧

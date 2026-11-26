@@ -18,8 +18,8 @@ public theorem prove_m1 : M1Statement :=
 
 public theorem prove_m2 : M2Statement :=
   ⟨hybrid_cube_partition_1000.1, hybrid_cube_active_935,
-   clean_slate_825_checks_sum, native_5engine_lean_theorems_244,
-   ecosystem_total_lean_theorems_280⟩
+   clean_slate_825_checks_sum, native_5engine_lean_theorems_291,
+   ecosystem_total_lean_theorems_327⟩
 
 public theorem prove_m3 : M3Statement :=
   ⟨synergyScore_le_100, synergyScore_comm,

@@ -19,9 +19,11 @@
         { "@id": "dist/Donahue_2026_alife_singularity_omega.pdf" },
         { "@id": "dist/arxiv_submission.tar.gz" },
         { "@id": "results/lean_package_axioms.txt" },
+        { "@id": "results/lean4-multi-kernel.txt" },
         { "@id": "results/empirical_sim_summary.json" },
         { "@id": "results/alifeops_live_verification.json" },
         { "@id": "csv/21_mega_atlas_1900_open_problems_crosswalk.csv" },
+        { "@id": "docs/MEGA_ATLAS_CROSSCHECK.md" },
         { "@id": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html" },
         { "@id": "data/MANIFEST.sha256" }
       ]
@@ -36,9 +38,11 @@
     { "@type": "File", "@id": "dist/Donahue_2026_alife_singularity_omega.pdf", "encodingFormat": "application/pdf" },
     { "@type": "File", "@id": "dist/arxiv_submission.tar.gz", "encodingFormat": "application/gzip" },
     { "@type": "File", "@id": "results/lean_package_axioms.txt", "encodingFormat": "text/plain" },
+    { "@type": "File", "@id": "results/lean4-multi-kernel.txt", "encodingFormat": "text/plain" },
     { "@type": "File", "@id": "results/empirical_sim_summary.json", "encodingFormat": "application/json" },
     { "@type": "File", "@id": "results/alifeops_live_verification.json", "encodingFormat": "application/json" },
     { "@type": "File", "@id": "csv/21_mega_atlas_1900_open_problems_crosswalk.csv", "encodingFormat": "text/csv" },
+    { "@type": "File", "@id": "docs/MEGA_ATLAS_CROSSCHECK.md", "encodingFormat": "text/markdown" },
     { "@type": "File", "@id": "html/ALife_Singularity_SuperLife_Omega_Dashboard.html", "encodingFormat": "text/html" },
     { "@type": "File", "@id": "data/MANIFEST.sha256", "encodingFormat": "text/plain" }
   ]

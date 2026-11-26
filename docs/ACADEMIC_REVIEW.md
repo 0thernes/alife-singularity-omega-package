@@ -13,9 +13,9 @@ This checklist audits `alife-singularity-omega-package` (`v3.4.0`) against the *
 | Domain | Verification Artifact | Status |
 | :--- | :--- | :--- |
 | **1. Identity, ORCID & COI** | `AUTHORS.md`, `CITATION.cff`, `paper/main.tex`, `.zenodo.json` | **PASS** |
-| **2. Dual Licensing (Code vs. Prose/Data)** | `LICENSE` (`CC-BY-4.0`) + `LICENSE-CODE` (`Apache-2.0`) + `NOTICE` | **PASS** |
+| **2. Dual Licensing (Code vs. Prose/Data)** | `LICENSE` (`Apache-2.0`) + `LICENSE-DOCS` (`CC-BY-4.0`) + `NOTICE` | **PASS** |
 | **3. AI-Contribution & CRediT Disclosure** | `docs/AI_DISCLOSURE.md`, `AUTHORS.md`, `paper/main.tex` Section 8 | **PASS** |
-| **4. Machine-Checked Formalization** | `lean/OmegaPackageProofs/` (`36+4 = 40` `#print axioms` $\subseteq [\text{propext}, \text{Quot.sound}]$, `leanchecker-paranoid` `rc=0`) | **PASS** |
+| **4. Machine-Checked Formalization** | `lean/OmegaPackageProofs/` (`36+4 = 40` `#print axioms` $\subseteq [\text{propext}, \text{Quot.sound}]$, 6-kernel verified in `results/lean4-multi-kernel.txt` & CI; `291+36=327` ecosystem total) | **PASS** |
 | **5. Statement-Fidelity Audit** | `docs/statement-fidelity.md` + `paper/main.tex` Table 3 (`M1–M4`) | **PASS** |
 | **6. Independent Oracle & Mutation Suite** | `reference/ovbs52_oracle.py` (50-digit `Decimal`), `tests/` (`2,000+` differential + `1,000+` Hypothesis), `6/6` mutants killed | **PASS** |
 | **7. Paired Statistics & Null Disclosure** | `PREREGISTRATION.md`, `748` runs (`N=48` locked seeds), Holm–Bonferroni FWER, `SIM02` null explicitly reported | **PASS** |

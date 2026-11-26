@@ -34,7 +34,7 @@ def _check_invariants(ovi_fn, stage_fn, ring0_fn, syn_fn, lean_sum_fn) -> None:
     assert ring0_fn("RING1_SYNAPSE", Decimal("0.9901")) is False
     assert syn_fn(95, 92, 15) <= 100, "Synergy score must cap at 100"
     assert syn_fn(30, 70, 5) == syn_fn(70, 30, 5), "Synergy must be symmetric"
-    assert lean_sum_fn(42, 62, 72, 48, 20) == 244, "5-engine Lean sum must equal 244"
+    assert lean_sum_fn(48, 70, 89, 54, 30) == 291, "5-engine Lean sum must equal 291"
 
 
 def run_mutation_audit() -> tuple[int, int]:

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "A-Life Singularity x Clean-Slate v3.0 Omega Package: Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 280 Pure Lean 4 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit"
+title: "A-Life Singularity x Clean-Slate v3.0 Omega Package: Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 327 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit"
 message: "If you use this software, Lean 4 formalization, datasets, or white paper, please cite it using the metadata below."
 type: software
 version: "3.4.0"
@@ -28,6 +28,6 @@ abstract: >-
   micro-hardware runtime invariants (11-pool FP64 thermodynamic conservation, Philox4x32-10
   seed isolation, XPBD compliant soft hydrostats, 10x10x10 Hybrid Cube, hardware Ring-0 ACL)
   with macro evolutionary metrology (OVBS-52, 78-alert ALifeOps YAML, 748-run paired empirical
-  falsification, 5-engine native verification totaling 244 Lean 4 theorems plus 36 local
-  zero-Mathlib Lean 4.35.0 package theorems = 280 Pure Lean 4 theorems, and a 1,900-problem
-  Mega-Atlas non-retirement audit).
+  falsification, 5-engine native verification totaling 291 Pure 6-Kernel Lean 4.35.0 theorems
+  plus 36 local zero-Mathlib Lean 4.35.0 package theorems = 327 Pure 6-Kernel Lean 4.35.0
+  theorems, and a 1,900-problem Mega-Atlas non-retirement audit).

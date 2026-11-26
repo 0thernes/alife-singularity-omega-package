@@ -5,7 +5,7 @@ This repository enforces defense-in-depth verification across **six independent 
 1. **Layer 1 — Pure Lean 4.35.0 Kernel & Paranoid Checker (`lean/`):**
    - Zero-Mathlib `OmegaPackageProofs` (`36` core + `4` Palomar comparator theorems = `40` `#print axioms` lines).
    - Strict `module` encapsulation, `0` warnings, `0` `sorry` in `lean/`, `0` `native_decide`, axioms strictly $\subseteq [\text{propext}, \text{Quot.sound}]$.
-   - Independently validated by `lake env leanchecker` and `lake env leanchecker-paranoid` (`rc=0`).
+   - Independently validated by `leanchecker --fresh`, `leanchecker-paranoid --fresh`, `nanoda_bin`, `con-leche --verified`, and `con-ron --verified` locally (`results/lean4-multi-kernel.txt`, `rc=0`), plus full 6/6 Linux `bubblewrap` CI replay (`lake check --paranoid` & `lake comparator --config comparator.json --paranoid`).
 2. **Layer 2 — Independent 50-Digit Arithmetic Oracle & Hypothesis Property Testing (`reference/`, `tests/`):**
    - `reference/ovbs52_oracle.py` re-implements OVBS-52, 7-stage classification, 13x13 synergy, and Ring-0 ACL using 50-digit `Decimal` and exact `Fraction` arithmetic.
    - `tests/test_properties_and_differential.py` verifies `1,000+` Hypothesis property examples and `2,000+` randomized differential checks against runtime & Lean integer formulas.

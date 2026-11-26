@@ -65,7 +65,7 @@ def _svg_frame(height: int, title: str, subtitle: str, body: str) -> str:
 
 def build_model_15_escalation_and_loops(live_receipts: dict | None = None) -> dict:
     """MODEL 15: Dual-Track Escalation Ladder (Stage 0..6) & 4-Loop Autocatalytic Closure bridged to v3.0 L0..L10."""
-    live_ovi = (live_receipts or {}).get("composite_ovi_score", 92.05)
+    live_ovi = (live_receipts or {}).get("composite_ovi_score", 91.84)
     stages = [
         ("STG-0", "Inert / Toy", "OVI 0-15", "v3 L0-L1", "Stage 0-1 (M001-010)", "#64748b", "#f1f5f9"),
         ("STG-1", "Narrow ALife", "OVI 15-35", "v3 L1-L3", "Stage 2-3 (M011-040)", "#0284c7", "#e0f2fe"),
@@ -303,11 +303,11 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
     cm = er.get("tier2_cellulogonic", {})
     om = er.get("tier2plus_omega", {})
     no = er.get("tier3_noetic_organism", {})
-    lean_tot = live_receipts.get("total_lean4_theorems", 244)
-    live_ovi = live_receipts.get("composite_ovi_score", 92.05)
+    lean_tot = live_receipts.get("total_lean4_theorems", 291)
+    live_ovi = live_receipts.get("composite_ovi_score", 91.84)
 
     tiers = [
-        (240, 62, 520, 46, "#1e1b4b", "#e0e7ff", "APEX · FORMAL MACHINE-CHECKED PROOFS & LIVE COMPOSITE", f"{lean_tot} Pure Lean 4 Theorems (0 sorry) · Live Stack OVBS-52 = {live_ovi} (STAGE 5)"),
+        (240, 62, 520, 46, "#1e1b4b", "#e0e7ff", "APEX · FORMAL MACHINE-CHECKED PROOFS & LIVE COMPOSITE", f"{lean_tot}+36={lean_tot+36} Pure 6-Kernel Lean 4.35.0 · Live OVBS-52 = {live_ovi} (STAGE 5)"),
         (195, 118, 610, 48, "#0f766e", "#ccfbf1", "TIER 4 · MACRO EVOLUTIONARY BENCHMARKING (OVBS-52 + 130 CHECKS)", "8 Weighted Vitality Pillars (52 Metrics) · 5 Anti-Gaming Gates · 130 ALifeOps Operational Items"),
         (135, 176, 730, 50, "#1d4ed8", "#dbeafe", "TIER 3 · CLEAN-SLATE v3.0 SUITE (825-SPEC + 49/49 COGNITIVE + 12/12 WSE)", "Butlin-14 · F1-F10 · CQM-25 · FREAK-100 · LIFE-500 · NOVEL-100 · WSE-12 · SOFT-40 · HW-24 · 5 Mirrors"),
         (75, 236, 850, 50, "#7c3aed", "#ede9fe", "TIER 2 · STATISTICAL CAUSAL RIGOR & 5-ARM CONTROLLED ABLATIONS", "N=48 Paired Locked Seeds · Exact Wilcoxon + Holm FWER (α ≤ 0.05) · δ_pair · LCB_95% · Sham Control"),
@@ -322,12 +322,13 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
         )
 
     # Bottom 5-Engine Receipt Cards (100% live from alifeops_live_verification.json; 5x184 + 4x10 = 960px -> x=20..980)
+    asmo = er.get("tier34_asmodensius", {})
     cards = [
-        (f"T1: AUTOPHAGE v{ap.get('version','1.3.0')}", f"{ap.get('gates_passed',18)}/18 G · OVI {ap.get('feral_ovi',92.05)}", f"A_new={ap.get('bedau_packard_anew',29.46)} · {ap.get('lean4_theorems',42)} Lean 4", "#0284c7"),
-        (f"T2: CELLULOGONIC v{cm.get('version','1.3.0')}", f"{cm.get('gates_passed',24)}/24 G · {cm.get('mutants_caught',8)}/8 Mut", f"COVI={cm.get('embryo_covi',59.24)} · {cm.get('lean4_theorems',58)} Lean 4", "#7c3aed"),
-        (f"T2+: OMEGA v{om.get('version','5.0.0')}", f"{om.get('gates_passed',54)}/54 G · {om.get('mutants_caught',16)}/16 Mut", f"SHA={str(om.get('master_sha256',''))[:8]}.. · {om.get('lean4_theorems',66)} Lean 4", "#059669"),
-        (f"T3: NOETIC v{no.get('version','1.1.0')}", f"13/13 CS-v3 · 49/49 Cog", f"5/5 Anti-LARP · {no.get('lean4_theorems',32)} Lean 4", "#0891b2"),
-        ("T3+4: ASMODENSIUS", "LIVE 77/77 ctest · 20 Lean 4", "24C P+E & RTX 5070 Ti GPU", "#047857"),
+        (f"T1: AUTOPHAGE v{ap.get('version','1.4.0')}", f"{ap.get('gates_passed',18)}/18 G · OVI {ap.get('feral_ovi',92.05)}", f"A_new={ap.get('bedau_packard_anew',29.46)} · {ap.get('lean4_theorems',48)} Lean 4", "#0284c7"),
+        (f"T2: CELLULOGONIC v{cm.get('version','1.5.0')}", f"{cm.get('gates_passed',26)}/{cm.get('gates_total',26)} G · {cm.get('mutants_caught',8)}/8 Mut", f"COVI={cm.get('embryo_covi',58.19)} · {cm.get('lean4_theorems',70)} Lean 4", "#7c3aed"),
+        (f"T2+: OMEGA v{om.get('version','5.2.0')}", f"{om.get('gates_passed',60)}/{om.get('gates_total',60)} G · {om.get('mutants_caught',16)}/16 Mut", f"SHA={str(om.get('master_sha256',''))[:8]}.. · {om.get('lean4_theorems',89)} Lean 4", "#059669"),
+        (f"T3: NOETIC v{no.get('version','2.1.0')}", f"13/13 CS-v3 · 49/49 Cog", f"5/5 Anti-LARP · {no.get('lean4_theorems',54)} Lean 4", "#0891b2"),
+        (f"T3+4: ASMO v{asmo.get('version','1.1.0')}", f"77/77 ctest · 164 GPU · {asmo.get('lean4_theorems',30)} L4", "24C==RTX 5070 Ti Parity", "#047857"),
     ]
     for i, (ct, l1, l2, col) in enumerate(cards):
         x = 20 + i * 194
@@ -431,7 +432,7 @@ def build_model_20_omniscient_topology(
     n_spc = file_counts.get("specs", 4)
     n_res = file_counts.get("results", 10)
     n_scr = file_counts.get("scripts", 12)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 244)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 291)
     tot_runs = (sim_summary or {}).get("total_runs_executed", 748)
 
     body = f"""
@@ -618,8 +619,8 @@ def build_model_22_comparative_adjacents(
 ) -> dict:
     """MODEL 22: Cross-Layer Comparative Contrast, Substrate Adjacency Corridors & Adjacent-Possible Manifold."""
     rec = live_receipts or {}
-    comp_ovi = rec.get("composite_ovi_score", 92.05)
-    tot_lean = rec.get("total_lean4_theorems", 244)
+    comp_ovi = rec.get("composite_ovi_score", 91.84)
+    tot_lean = rec.get("total_lean4_theorems", 291)
     cohorts = {c["run_id"]: c for c in (sim_summary or {}).get("cohorts", [])}
     ovi8 = cohorts.get("SIM08_HYBRID_CUBE_SLTC_XPBD", {}).get("composite_ovi", 85.48)
     ovi1 = cohorts.get("SIM01_PURE_RAW_FERAL", {}).get("composite_ovi", 83.57)
@@ -685,8 +686,8 @@ def build_model_23_layer_coupling_and_pareto(live_receipts: dict | None = None) 
     from omega_datasets_part5 import _LAYER_COUPLING_SCORES
 
     rec = live_receipts or {}
-    comp_ovi = rec.get("composite_ovi_score", 92.05)
-    tot_lean = rec.get("total_lean4_theorems", 244)
+    comp_ovi = rec.get("composite_ovi_score", 91.84)
+    tot_lean = rec.get("total_lean4_theorems", 291)
     short_l = ["L0", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"]
 
     parts = [
