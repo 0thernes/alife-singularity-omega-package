@@ -5,7 +5,9 @@ public import OmegaPackageProofs
 
 /-!
 # Palomar Comparator Challenge Contract (`v3.4-Omega`)
-Isolated under `palomar/` so `lean/` remains strictly zero-`sorry`.
+Isolated under `lean/palomar/` inside the `lean/` bubblewrap sandbox root so
+`lake comparator --config comparator.json --paranoid` can mount and verify it
+cleanly while every proof module under `lean/` remains strictly zero-`sorry`.
 -/
 
 namespace OmegaPackageProofs.Palomar

@@ -2,7 +2,7 @@
   "package": "alife-singularity-omega-package",
   "version": "3.4.0-omega",
   "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Mega-Atlas 1,900 Crosswalk x Lean 4.35.0 x AMS-LaTeX White Paper (Zero Consolidation)",
-  "generated_utc": "2026-11-26T04:08:03.089648+00:00",
+  "generated_utc": "2026-11-26T04:14:25.904041+00:00",
   "file_count": 200,
   "files": [
     {
@@ -457,8 +457,8 @@
     },
     {
       "path": "HARDENING_LOG.md",
-      "bytes": 11585,
-      "sha256": "cd4624f9a68f23aca4f5a2ba884beab5afce7923fac10bbb7b3881f74d9eee5e"
+      "bytes": 12331,
+      "sha256": "fe1ba8c3039856a5823450c2834c50f532765b9e53aa7234c38349d7dc74f3ea"
     },
     {
       "path": "html/ALife-Build-Framework-Template.html",
@@ -507,8 +507,8 @@
     },
     {
       "path": "lean/lakefile.toml",
-      "bytes": 495,
-      "sha256": "d370a81f0e4d960dc7c4e779af287bb14a6962a4e1b50837f733a9ca86ac14e1"
+      "bytes": 492,
+      "sha256": "7ea08449caeda69c8240368f5a9c721cd5993a2f9361b9e9d0e117ab19bf76b7"
     },
     {
       "path": "lean/lean-toolchain",
@@ -544,6 +544,11 @@
       "path": "lean/OmegaPackageProofs.lean",
       "bytes": 241,
       "sha256": "401afc830cc121ef581b6d58abd0d098d86ea41857d58a573eafd776ee1b1c58"
+    },
+    {
+      "path": "lean/palomar/PalomarChallenge.lean",
+      "bytes": 2017,
+      "sha256": "df6fd6cc4f79116e52d2454cc504607837c9b7e53ee63ceebf18519f4c886343"
     },
     {
       "path": "lean/PalomarSolution.lean",
@@ -589,11 +594,6 @@
       "path": "NOTICE",
       "bytes": 603,
       "sha256": "8c94d834ea0836eba5e598c4ebe8ffbd05ef77bb503e8591f3a7dceb1c934714"
-    },
-    {
-      "path": "palomar/PalomarChallenge.lean",
-      "bytes": 1852,
-      "sha256": "4d19624b2ccbeb9180108bf5c8ca83b0ce800afe53acf3495ecb474e59a8fcf9"
     },
     {
       "path": "paper/figures/fig01_dual_sweep_pareto.pdf",
@@ -847,8 +847,8 @@
     },
     {
       "path": "scripts/audit_omniscient_integrity.py",
-      "bytes": 42302,
-      "sha256": "0729e0ce39102d319c9f0072bd9860b7d87e5b7d9e7b60f750b9c90f20c595fe"
+      "bytes": 42340,
+      "sha256": "592e5e8b0bcead9387ce1257d53818ed61277f4f71ef9ac159e4f3be72448a8f"
     },
     {
       "path": "scripts/benchmark_omega.py",
@@ -977,8 +977,8 @@
     },
     {
       "path": "tests/test_omega_package.py",
-      "bytes": 10107,
-      "sha256": "c3590b697eee0a7f9f674ff354b394d929b3d8bd666e26acaec5f117c695ee58"
+      "bytes": 10145,
+      "sha256": "656676b30b12bbbbfdf048021fa882e4b7ae693f39e6167022b340ba3ecb1608"
     },
     {
       "path": "tests/test_properties_and_differential.py",

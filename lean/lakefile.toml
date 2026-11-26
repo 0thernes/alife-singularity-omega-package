@@ -23,4 +23,4 @@ name = "PalomarSolution"
 
 [[lean_lib]]
 name = "PalomarChallenge"
-srcDir = "../palomar"
+srcDir = "palomar"

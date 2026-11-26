@@ -1,5 +1,5 @@
 # A-LIFE SINGULARITY x CLEAN-SLATE v3.0 UNIFIED OMNISCIENT PACKAGE (v3.4-OMEGA) — SHA-256 INTEGRITY MANIFEST
-# Generated UTC: 2026-11-26T04:08:03.088928+00:00
+# Generated UTC: 2026-11-26T04:14:25.903086+00:00
 # File Count: 200
 
 e6ff4e00b3ce4dc43b99e420bf17c0530778c788b9ac9ad3ff59585a52622c11  .cursor/rules/build-standard.mdc  (775 bytes)
@@ -92,7 +92,7 @@ ae97ce7ce4566b8e639850133214db4de472e9b89b801bafac107c88cc7e0b72  excel/ALife-Hy
 3027a96934659d8e7b4fa17ccd08bf0cb683a7d76fec92d853e3b03ec8d464a3  excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx  (317019 bytes)
 42fbbc9d55ee0d149c90e4bf93abe8b7278a5482b232be6f5bfc59cc0465e694  GEMINI.md  (13 bytes)
 7ea94698540ced82986e0d8d287fcf049042381abfcfeb105bc7ceab06cbe21c  HANDOFF.md  (3328 bytes)
-cd4624f9a68f23aca4f5a2ba884beab5afce7923fac10bbb7b3881f74d9eee5e  HARDENING_LOG.md  (11585 bytes)
+fe1ba8c3039856a5823450c2834c50f532765b9e53aa7234c38349d7dc74f3ea  HARDENING_LOG.md  (12331 bytes)
 d33c8fd268aa856d04638d94d94618cf24fb3b2e15f37f55fcf77a3548cc085a  html/ALife-Build-Framework-Template.html  (794879 bytes)
 05913e244e6463dd8e494973ba818a07a59e3245f158ad5d05bd52c4fb4a98c9  html/ALife_Singularity_SuperLife_Omega_Dashboard.html  (2548582 bytes)
 a305a9391e6361602ee994f08762855ee08eeaa34650a19fa5f1d7565be6e25e  html/Clean-Slate-Creature-Blueprint-Checklist.html  (684785 bytes)
@@ -102,7 +102,7 @@ dbd7a8330f85ab7503a9dfc9818db61252500184946b112125a95d8ea7aa44d6  lean/Challenge
 f1ac6a7bbe89510ca59c0411ce74bad1f8438a97e364b512101cf18d1ed0590d  lean/comparator.json  (456 bytes)
 2a5eda1647ec06369b7b75fecffc1ace41f843a6c073c5ddae541b1cc6acde5a  lean/formalization.yaml  (4987 bytes)
 96330cc5f5d4a549941c44847311910d9cdf92fad5e78a77b35d8f7fbe0b5020  lean/lake-manifest.json  (150 bytes)
-d370a81f0e4d960dc7c4e779af287bb14a6962a4e1b50837f733a9ca86ac14e1  lean/lakefile.toml  (495 bytes)
+7ea08449caeda69c8240368f5a9c721cd5993a2f9361b9e9d0e117ab19bf76b7  lean/lakefile.toml  (492 bytes)
 ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c  lean/lean-toolchain  (25 bytes)
 0a8339e62871f2cebf765d254fd9c8d40f8c7e0894bb9505eeb51f7d389c2c8a  lean/OmegaPackageProofs/CastrationAndRing0.lean  (5001 bytes)
 9904feee4d8374b734fdd39ce146efd4c64550a8ab0bf277673e942957869e8f  lean/OmegaPackageProofs/EscalationAndCube.lean  (2738 bytes)
@@ -110,6 +110,7 @@ d55284136966bc3d02d80e103ff99734e6e32f9518839a8f464d0bbf080b091b  lean/OmegaPack
 ea942e419e243b8023b0684617fea910988248fd3f773a0570ec03efdafe061f  lean/OmegaPackageProofs/OVBS52Scoring.lean  (8311 bytes)
 ed3ad033403346fd853d8e7bb36112a08d5ec430281a204a5abbc40ac1f5da9b  lean/OmegaPackageProofs/VerifyAxioms.lean  (3103 bytes)
 401afc830cc121ef581b6d58abd0d098d86ea41857d58a573eafd776ee1b1c58  lean/OmegaPackageProofs.lean  (241 bytes)
+df6fd6cc4f79116e52d2454cc504607837c9b7e53ee63ceebf18519f4c886343  lean/palomar/PalomarChallenge.lean  (2017 bytes)
 5ad2d82827f869fa96f1d6f65b3f7341f18f0937139b31764f2802845bbe0d84  lean/PalomarSolution.lean  (2213 bytes)
 a0b94f191e07e31a0c236bbacad49f50b33ae84b0e4d194a97cd428cea5ccdc2  lean/README.md  (2526 bytes)
 c2c092311746cb649537d1e2e2e3f7e43198a25fe238efb7be7c0884d3fd9867  lean/Solution.lean  (905 bytes)
@@ -119,7 +120,6 @@ af492266ee750376f86e6f75bf107910bd6cf5030b177d785bba77d0945caa92  LIMITATIONS.md
 25b58f2f623b23d47751a2362a7f36f6da7faaaff77619932a64e268978e64ae  llms-full.txt  (99454 bytes)
 3e6f20a0cdad7ff5e2dd5882860ffecdda17e82296a97100b09965a52f094141  llms.txt  (3344 bytes)
 8c94d834ea0836eba5e598c4ebe8ffbd05ef77bb503e8591f3a7dceb1c934714  NOTICE  (603 bytes)
-4d19624b2ccbeb9180108bf5c8ca83b0ce800afe53acf3495ecb474e59a8fcf9  palomar/PalomarChallenge.lean  (1852 bytes)
 b5c0b8feb020f213a4721aaace25d9392580ff8c38b2ffd104d8b2cd4ffbff2d  paper/figures/fig01_dual_sweep_pareto.pdf  (38635 bytes)
 1bed5fb1f5555f0423c1d3f7c1ce81d9dc9ea1bae9042affee5f5e28f5377795  paper/figures/fig02_8cohort_ovi_fwer.pdf  (32856 bytes)
 06d3947bd8a19b9310683aa28569c6c73531fecf638a9a846c5e454a04c72a0b  paper/figures/fig03_2d_phase_surface.pdf  (35542 bytes)
@@ -170,7 +170,7 @@ f43e3d7728f0ec2c535ec0a2c8814de181e8be9b090d976ff21abdf23fa0c6b7  results/ovbs52
 90f402c3206aec03a2cc32a98af265a8379b07f53316d84432e7e2d28d722677  scripts/audit-checks.tsv  (8356 bytes)
 4fcbaa329b34db615509cd78d774bbd715d050dc012408d894279bf72ec75c9c  scripts/Audit-Repo.ps1  (17136 bytes)
 3287a1ece0ab194eebbe60ed5046da7836f8df0fe5e37f8264e55ebc2f5bf381  scripts/audit-repo.sh  (14011 bytes)
-0729e0ce39102d319c9f0072bd9860b7d87e5b7d9e7b60f750b9c90f20c595fe  scripts/audit_omniscient_integrity.py  (42302 bytes)
+592e5e8b0bcead9387ce1257d53818ed61277f4f71ef9ac159e4f3be72448a8f  scripts/audit_omniscient_integrity.py  (42340 bytes)
 a48b38e90a40982c98c3cb2e3ed5c4f6d23a54071eb7871205481a3f50726fcf  scripts/benchmark_omega.py  (5440 bytes)
 07a04a56475aff5bca1016f41178b864dbb06594a6dc6ebab3a441428fa14328  scripts/build_html_dashboard.py  (147912 bytes)
 9cded7befdf388827a34d608babfdaf230e5c543e8fcdac90e70aef7f2473fc4  scripts/build_omega_package.py  (48906 bytes)
@@ -196,7 +196,7 @@ b6be745655eda519c3d1dc8c189972f720f55efcb5427c74cd60c364386030a6  specs/ALife-Fr
 5489d916a1fd2d544d511f753aba62cb5f6929f1da91b03d03bcd4150347311a  specs/ALife-Framework-v3.0-Master-Spec.xml  (762220 bytes)
 abba76f2219653ee028715b18b1084ab55cc1ba1c9ca6b70500a513e1a45407b  specs/ALife-Framework-v3.0-Master-Spec.yaml  (2057670 bytes)
 20a8b0b45f4302cce36106f3429b00f46213680fab40289c6ceb2b648a6b078d  SUPPORT.md  (589 bytes)
-c3590b697eee0a7f9f674ff354b394d929b3d8bd666e26acaec5f117c695ee58  tests/test_omega_package.py  (10107 bytes)
+656676b30b12bbbbfdf048021fa882e4b7ae693f39e6167022b340ba3ecb1608  tests/test_omega_package.py  (10145 bytes)
 c29011734e3e4a6d0846669dbcfe489951dbe4d56e5c2d1e24259c9b1e792ac7  tests/test_properties_and_differential.py  (5727 bytes)
 f1b1b12db1cd9a68601e6e21bad0dcac121e638c0506e0aa630485835bc609dc  THIRD_PARTY_NOTICES.md  (2340 bytes)
 566cc174fae5a29be0c88795bcbeaafb5292309ad5c8f0c1182dc8c12e638420  UPGRADING.md  (1785 bytes)
