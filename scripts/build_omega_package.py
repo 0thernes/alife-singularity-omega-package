@@ -550,12 +550,12 @@ def build_legacy_omega_xls(output_path: Path, all_sheets: list) -> None:
 
 
 def _skip_manifest_path(path: Path, zip_path: Path) -> bool:
-    skip_dirs = {".git", "__pycache__", ".v3_source_baseline", ".lake", ".pytest_cache", ".ruff_cache", ".mypy_cache", ".hypothesis", "build", ".venv"}
-    if any(p in skip_dirs for p in path.parts):
+    skip_dirs = {".git", "__pycache__", ".v3_source_baseline", ".lake", ".pytest_cache", ".ruff_cache", ".mypy_cache", ".hypothesis", "build", ".venv", "_site"}
+    if any(p in skip_dirs or p.endswith(".egg-info") for p in path.parts):
         return True
     if path.resolve() == zip_path.resolve():
         return True
-    if path.name.startswith("_tmp_") or path.name in ("audit.json",):
+    if path.name.startswith("_tmp_") or path.name in ("audit.json", "uv.lock"):
         return True
     if "paper" in path.parts and "build" in path.parts:
         return True

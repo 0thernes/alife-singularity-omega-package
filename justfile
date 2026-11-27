@@ -19,7 +19,7 @@ lean:
 paper:
     uv run --with matplotlib --with numpy --with pypdf python scripts/build_paper_and_figures.py
 
-# Rebuild all 24 CSVs, 4 Specs, 5 Workbooks, 3 HTML5 apps, 3 compressed PDFs, manifests & 22 gates (reusing locked 748-run sim)
+# Rebuild all 24 CSVs, 4 Specs, 5 Workbooks, 3 HTML5 apps, 3 compressed PDFs, manifests & 24 gates (reusing locked 748-run sim)
 build:
     uv run --with openpyxl --with xlwt --with xlrd --with pyyaml --with jsonschema --with scipy --with pypdf python scripts/build_omega_package.py --reuse-sim
 
@@ -44,7 +44,7 @@ lint:
 bench:
     uv run --with scipy python scripts/benchmark_omega.py
 
-# Run 22-gate omniscient forensic integrity audit
+# Run 24-gate omniscient forensic integrity audit
 forensic:
     uv run --with openpyxl --with xlwt --with xlrd --with pyyaml --with jsonschema --with scipy --with pypdf python scripts/audit_omniscient_integrity.py
 

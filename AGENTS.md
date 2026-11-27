@@ -18,7 +18,7 @@
 - **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (v2.8.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
 - **Strict File-Size Hygiene (`A24`):** Every Git-tracked file must remain `< 5.00 MB` (`5,242,880` B). Chrome PDFs are losslessly compressed via `pypdf`; `ALife_Singularity_SuperLife_Omega_Package.zip` is gitignored and attached to GitHub Releases.
 - **Lean 4 Purity:** Zero `sorry`, `admit`, custom `axiom`, or `native_decide` in `lean/`. Axioms must stay strictly within `[propext, Quot.sound]`.
-- **Exact Theorem Arithmetic:** `48` (AUTOPHAGE v1.4.0) + `70` (Cellulogonic Mecha v1.6.0) + `89` (Cellular Engine Omega v5.4.0) + `54` (Noetic Organism Omega v2.1.0) + `30` (Asmodensius-Native v1.1.0) = **`310`** Native Pure 6-Kernel Lean 4.35.0 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`360` Pure 6-Kernel Lean 4.35.0 Theorems**. Never write `240`, `244`, or `280` for current live counts!
+- **Exact Theorem Arithmetic (`v3.5.0`):** Local `lean/OmegaPackageProofs/` builds and checks **`50` core + `5` Palomar comparator certificates = `55` audited `#print axioms` declarations** (zero Mathlib, axioms $\subseteq [\text{propext}, \text{Quot.sound}]$). Recorded `CROSS-REPO-REPORTED` companion snapshot sum in `EscalationAndCube.lean` (arithmetic identity only; companion repos are not built or checked at this commit): `48` (AUTOPHAGE v1.4.0) + `78` (Cellulogonic Mecha v1.6.0) + `100` (Cellular Engine Omega v5.4.0) + `54` (Noetic Organism Omega v2.1.0) + `30` (Asmodensius-Native v1.1.0) = **`310`**; `310 + 50 = 360`. Never write stale `240`, `244`, `280`, `36+4=40`, or `48+70+89+54+30=310` counts!
 - **PowerShell Bracket Safety (Windows `Z:`):** Because the canonical local checkout lives under `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`, always pass `-LiteralPath` to PowerShell file cmdlets.
 
 ## One-Word Commands (`justfile`)
@@ -27,10 +27,10 @@
 | :--- | :--- |
 | `just lean` | Build `lean/OmegaPackageProofs/` (Lean 4.35.0), run `VerifyAxioms.lean`, `leanchecker`, and `leanchecker-paranoid` |
 | `just paper` | Generate 4 vector PDF figures + `docs/media/social-preview.png`, compile `paper/main.tex` (`0` overfull hboxes), build & verify clean-room `dist/arxiv_submission.tar.gz` |
-| `just build` | Rebuild 24 CSVs (`2,822` rows), 4 Specs (`26` XML), 5 Excel Workbooks, 3 HTML5 apps (`22`-tab Observatory), 3 lossless Chrome PDFs, manifests, ZIP, and 22 Forensic Gates |
+| `just build` | Rebuild 24 CSVs (`2,822` rows), 4 Specs (`26` XML), 5 Excel Workbooks, 3 HTML5 apps (`22`-tab Observatory), 3 lossless Chrome PDFs, manifests, ZIP, and 24 Forensic Gates |
 | `just test` | Run `pytest` unit, negative, regression, Hypothesis (`1,000+` examples) & 50-digit differential oracle (`2,000+` cases) |
 | `just mutate` | Run `scripts/run_mutation_audit.py` (`6/6 = 100%` semantic mutants killed) |
-| `just forensic` | Run all `22/22` automated forensic integrity gates (`scripts/audit_omniscient_integrity.py`) |
+| `just forensic` | Run all `24/24` automated forensic integrity gates (`scripts/audit_omniscient_integrity.py`) |
 | `just audit` | Score repository against Build Standard v1.2.0 (`scripts/Audit-Repo.ps1`, target `100.0%`) |
 | `just reproduce` | End-to-end clean-clone reproduction of every headline result |
 

@@ -14,13 +14,13 @@ See [`docs/architecture.md`](docs/architecture.md) for the complete system archi
 │  24 CSVs (2,822 rows) | 4 Master Specs (26 XML) | 5 Excel Workbooks          │
 │  12 Reports | 3 HTML5 Apps (22-Tab Observatory, 24 SVGs) | 3 Compressed PDFs │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  LAYER 3: INDEPENDENT VERIFICATION & AUDIT (22 Forensic Gates + 90 Std)      │
+│  LAYER 3: INDEPENDENT VERIFICATION & AUDIT (24 Forensic Gates + 90 Std)      │
 │  scripts/audit_omniscient_integrity.py | tests/ (pytest + Hypothesis)        │
 │  reference/ovbs52_oracle.py (50-digit Decimal) | scripts/run_mutation_audit  │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  LAYER 2: FORMAL PROOFS (Zero-Mathlib Lean 4.35.0 + 5 Native Engines)        │
-│  lean/OmegaPackageProofs/ (50 core + 5 Palomar = 55 audited axioms)          │
-│  + 5 Live Companion Native Engines (42+62+72+48+20 = 244 Lean 4 => 280 tot)  │
+│  LAYER 2: FORMAL PROOFS (Zero-Mathlib Lean 4.35.0 + Reported Companions)     │
+│  lean/OmegaPackageProofs/ (50 core + 5 Palomar = 55 audited declarations)    │
+│  + 5 Companion Repos (48+78+100+54+30 = 310 reported, NOT built here -> 360) │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  LAYER 1: CONSERVED SIMULATION & LIVE TELEMETRY                              │
 │  scripts/run_alife_castration_sim.py (748 runs, FP64 drift 2.46e-16)         │

@@ -110,9 +110,9 @@ def sha256_file(path: Path) -> str:
 
 
 def _is_skipped_pkg_file(p: Path) -> bool:
-    if any(seg in SKIP_DIRS for seg in p.parts):
+    if any(seg in SKIP_DIRS or seg.endswith(".egg-info") for seg in p.parts):
         return True
-    if p.name.endswith(".zip") or p.name.startswith("_tmp_") or p.name == "audit.json":
+    if p.name.endswith(".zip") or p.name.startswith("_tmp_") or p.name in ("audit.json", "uv.lock"):
         return True
     return False
 

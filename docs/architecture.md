@@ -16,9 +16,9 @@ Dataset Modules (scripts/omega_datasets_part1..6.py) + Live Receipts (results/*.
         │       └──▶ Cryptographic Manifests (MANIFEST_SHA256.txt, CHECKSUMS.sha256, data/MANIFEST.sha256, MANIFEST.json)
         │
         ├──▶ lean/ (Zero-Mathlib Lean 4.35.0)
-        │       ├──▶ OmegaPackageProofs/{OVBS52Scoring,EscalationAndCube,CastrationAndRing0,NonVacuity,VerifyAxioms}.lean
+        │       ├──▶ OmegaPackageProofs/{OVBS52Scoring,EscalationAndCube,CastrationAndRing0,NonVacuity,AdversarialTests,VerifyAxioms}.lean
         │       ├──▶ Challenge.lean / Solution.lean / PalomarSolution.lean + palomar/PalomarChallenge.lean
-        │       └──▶ results/lean_package_axioms.txt (40 lines, axioms <= [propext, Quot.sound])
+        │       └──▶ results/lean_package_axioms.txt (55 lines, axioms <= [propext, Quot.sound])
         │
         ├──▶ paper/ (AMS-LaTeX + Matplotlib)
         │       ├──▶ scripts/build_paper_and_figures.py -> 4 vector PDFs + docs/media/social-preview.png
@@ -28,7 +28,7 @@ Dataset Modules (scripts/omega_datasets_part1..6.py) + Live Receipts (results/*.
                 ├──▶ reference/ovbs52_oracle.py (50-digit Decimal/Fraction oracle)
                 ├──▶ tests/ (pytest + Hypothesis + 2,000+ differential + regressions)
                 ├──▶ scripts/run_mutation_audit.py (6/6 semantic mutants killed)
-                ├──▶ scripts/audit_omniscient_integrity.py (22 Forensic Gates)
+                ├──▶ scripts/audit_omniscient_integrity.py (24 Forensic Gates)
                 └──▶ scripts/Audit-Repo.ps1 & audit-repo.sh (Build Standard v1.2.0: 90 items)
 ```
 
@@ -42,10 +42,10 @@ Dataset Modules (scripts/omega_datasets_part1..6.py) + Live Receipts (results/*.
 | `html/` | `3` self-contained offline HTML5 applications (including the `22`-tab Observatory with `24` embedded vector SVGs). |
 | `pdf/` | `3` lossless-compressed Chrome vector PDFs (`< 2.5 MB` each; `0` `U+2611` in Clean-Slate docs). |
 | `reports/` | `12` comprehensive markdown treatises & audit reports (Reports `01–09` + 3 Clean-Slate reports). |
-| `lean/` & `palomar/` | Zero-Mathlib Lean 4.35.0 formal proofs (`36` core + `4` Palomar comparator theorems) & interactive DAG (`blueprint/index.html`). |
+| `lean/` & `palomar/` | Zero-Mathlib Lean 4.35.0 formal proofs (`50` core + `5` Palomar comparator certificates = `55` audited declarations) & interactive DAG (`blueprint/index.html`). |
 | `paper/` & `dist/` | AMS-LaTeX white paper (`main.tex`, `refs.bib`, `4` vector PDF figures), compiled PDF, and clean-room `arxiv_submission.tar.gz`. |
 | `pipelines/` | `alifeops-master-pipeline.yaml` (`78` alerts, `13` Release Gates) & `benchmark-suite-schema.json` (Draft 2020-12). |
-| `results/` | Locked `748`-run simulation JSONs, `8` cohort scorecards, live `5`-engine receipt, `40`-line Lean axiom log, and benchmark history. |
+| `results/` | Locked `748`-run simulation JSONs, `8` cohort scorecards, live `5`-engine receipt, `55`-line Lean axiom log, and benchmark history. |
 | `reference/` & `tests/` | Independent 50-digit `Decimal` oracle, unit/negative/regression/Hypothesis/differential test suites. |
-| `scripts/` | Reproducible build, simulation, mutation, citation, benchmark, indexing, and 22-gate forensic auditing scripts. |
+| `scripts/` | Reproducible build, simulation, mutation, citation, benchmark, indexing, and 24-gate forensic auditing scripts. |
 | `docs/` & `examples/` | Governance documentation, 4 ADRs, Datasheet, AI Disclosure, Statement Fidelity, Build Standard v1.2.0, and executable demo. |
