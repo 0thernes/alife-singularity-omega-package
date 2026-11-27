@@ -107,8 +107,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 5776,
-      "sha256": "8c21031d1288b997901efd259a71caf9731cc6ae375b3fe183d0b8f5767c47c8"
+      "bytes": 6571,
+      "sha256": "51ea924af78a0f2ba6f09c0c545873c982cc9bcfea302225000a1dd35370a991"
     },
     {
       "path": "CITATION.bib",
@@ -117,13 +117,13 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1636,
-      "sha256": "4feffb9d89e1b5fd49627d7d0232d52817915a99616c740c1e2466b5f3515353"
+      "bytes": 1925,
+      "sha256": "33c215757bc580f5dfb89e98952a7de80df4b49be9d905614a37961ef955db63"
     },
     {
       "path": "CLAIMS.md",
-      "bytes": 8410,
-      "sha256": "94f8e4989177fe7a7bf102238a40b07822b1c2b36fd6ea69a3f9c460be4dc5d3"
+      "bytes": 9423,
+      "sha256": "52e1a6de700fe2299666b40a0ae9dfaab48177b0602e9f89ce48aed82329651c"
     },
     {
       "path": "CLAUDE.md",
@@ -282,8 +282,8 @@
     },
     {
       "path": "docs/ACADEMIC_REVIEW.md",
-      "bytes": 2739,
-      "sha256": "362bf1a0832a2e1c049d2142145f3825849670a94b5764c9efbe34a5334b4f83"
+      "bytes": 2831,
+      "sha256": "8a0d5afd14d49dfcc4a1810f05c889621389f5664e8567fe024bd8d1a7b9727d"
     },
     {
       "path": "docs/adr/0001-zero-consolidation-dual-drive-fusion.md",
@@ -292,13 +292,13 @@
     },
     {
       "path": "docs/adr/0002-ring0-acl-vs-behavioral-castration.md",
-      "bytes": 1241,
-      "sha256": "d9859a3dbc905d1feadebb2d126d4ca3a0ea396f9290aca7c86c0ebbae63b133"
+      "bytes": 1425,
+      "sha256": "2ea623b6d75869caf6a28adb7918432a902396e9a40c5ee3e427f42db41ae9a3"
     },
     {
       "path": "docs/adr/0003-zero-mathlib-lean4-and-palomar-boundary.md",
-      "bytes": 1384,
-      "sha256": "d30872525f44e75b7a524eda5f28481c7163d5147a0050d23b464d009778c0a8"
+      "bytes": 1366,
+      "sha256": "1d2e90e569df0a5b96e8ab5a371e8ea61a84797de3ccfd3cf9faaf754d52a98c"
     },
     {
       "path": "docs/adr/0004-sub-5mb-lossless-pdf-and-release-zip.md",
@@ -342,13 +342,13 @@
     },
     {
       "path": "docs/faq.md",
-      "bytes": 3301,
-      "sha256": "a43deecf70630702677b9a18cc386b470ab981e6229f24425b297d381af1cf93"
+      "bytes": 3590,
+      "sha256": "d9a138facfc1af2995beb8f7a7e0dc5a3d8972c39dff8f086d9d3e6ee205f24f"
     },
     {
       "path": "docs/glossary.md",
-      "bytes": 3791,
-      "sha256": "b8df746989409d1361ff2f3e86041260da783e355b02f743f03c86b0f6c36255"
+      "bytes": 4096,
+      "sha256": "cd12f0e9c0b84af7255d4af35ecc5538c02169f114715b4f75557f5cca1dd12a"
     },
     {
       "path": "docs/index.md",
@@ -362,13 +362,13 @@
     },
     {
       "path": "docs/MEGA_ATLAS_CROSSCHECK.md",
-      "bytes": 9224,
-      "sha256": "b3a4031f800d10a6a46dc3a5f9751ce216e650f6a85a1e2823627a708ab95c9a"
+      "bytes": 9483,
+      "sha256": "dc5c963c6b51e11ce1e449ba3f4d175d7bf6dbb07ff00ca9ee96fa7ea492175e"
     },
     {
       "path": "docs/METHODOLOGY.md",
-      "bytes": 3879,
-      "sha256": "ceb68925e9584c1f9b51126c1036513cfff69d66f9587ab82c1d807f026f0082"
+      "bytes": 4061,
+      "sha256": "2005f3de9df44b05ba1b09a66e4ee0d85542ce5c7fc2531f7bead4725c60418a"
     },
     {
       "path": "docs/operations.md",
@@ -387,13 +387,13 @@
     },
     {
       "path": "docs/run-log.md",
-      "bytes": 2697,
-      "sha256": "748a6ab2653fccbed6d9379b1c2fb3e7ca844baeee798a340c4af0dfe529f95f"
+      "bytes": 2721,
+      "sha256": "7a78fb8ae1bbd5bd1dc8ee2e8d6aef9a89168914aaf3a3845422aa8694ea68f5"
     },
     {
       "path": "docs/statement-fidelity.md",
-      "bytes": 5247,
-      "sha256": "8ff5e5f3e076423a8af5bded3f1637e578a49589fa4b2ffce68ef227d34cdb5e"
+      "bytes": 6188,
+      "sha256": "28dc6f838ea58666286617f2b1fd099933a9c4e9942f59215b6145b719b58150"
     },
     {
       "path": "docs/threat-model.md",
@@ -402,8 +402,8 @@
     },
     {
       "path": "ERRATA.md",
-      "bytes": 3119,
-      "sha256": "aa3a908a137b88d6954644650470592ea06543a39d79dcce38b5a4566ae73f04"
+      "bytes": 10056,
+      "sha256": "4204464c8a9461d75eb67a73486ec4f87dda3ae3cb57c9b2300431f4c31518de"
     },
     {
       "path": "EVIDENCE.md",
@@ -497,8 +497,8 @@
     },
     {
       "path": "lean/formalization.yaml",
-      "bytes": 4987,
-      "sha256": "2a5eda1647ec06369b7b75fecffc1ace41f843a6c073c5ddae541b1cc6acde5a"
+      "bytes": 5471,
+      "sha256": "e3f7a7ec6cbd165052950507e5bbca6ea937441fbadb505a04b78ae735ae61ef"
     },
     {
       "path": "lean/lake-manifest.json",
@@ -577,8 +577,8 @@
     },
     {
       "path": "LIMITATIONS.md",
-      "bytes": 5803,
-      "sha256": "af492266ee750376f86e6f75bf107910bd6cf5030b177d785bba77d0945caa92"
+      "bytes": 7717,
+      "sha256": "866462ed7b0a40d9387407c59d794e93005a3c986b3b1728d2bce785ed6e877a"
     },
     {
       "path": "llms-full.txt",
@@ -662,8 +662,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 15803,
-      "sha256": "d29cd469066ab389915297085a9faec338e3dd87b92c254c8c7021760dd12bd8"
+      "bytes": 18013,
+      "sha256": "9f993be5ed0c15346cab51287eaee3673224684417b18908331ca5dbdce9a517"
     },
     {
       "path": "reference/ovbs52_oracle.py",
