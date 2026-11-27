@@ -2,7 +2,7 @@
   "package": "alife-singularity-omega-package",
   "version": "3.5.0-omega",
   "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Mega-Atlas 1,900 Crosswalk x Lean 4.35.0 x AMS-LaTeX White Paper (Zero Consolidation)",
-  "generated_utc": "2026-11-27T06:13:28.506034+00:00",
+  "generated_utc": "2026-11-27T06:22:37.744868+00:00",
   "file_count": 210,
   "files": [
     {
@@ -277,13 +277,13 @@
     },
     {
       "path": "dist/arxiv_submission.tar.gz",
-      "bytes": 147608,
-      "sha256": "e220483fbbd2adaa2e7443d882c1e016e84f851ee9e98971e59c86cab6a2ac8b"
+      "bytes": 147834,
+      "sha256": "1c20d22617d04fcb2cdd4d757981f7ab4a5ddff730a94367854b027f6a1c5399"
     },
     {
       "path": "dist/Donahue_2026_alife_singularity_omega.pdf",
-      "bytes": 316880,
-      "sha256": "566e008c18b3b655ea4bd6be7f8deb409149a8dbd56663ce7e41771c5bfc8a06"
+      "bytes": 316833,
+      "sha256": "d3addc0e5e391f6a1c43c16c37002946079cf4b2b1905e795f9a40a92809186d"
     },
     {
       "path": "docs/ACADEMIC_REVIEW.md",
@@ -623,22 +623,22 @@
     {
       "path": "paper/figures/fig01_dual_sweep_pareto.pdf",
       "bytes": 38276,
-      "sha256": "952de5e41273e72833a5db9e27d5869cff6a73819a89b4dabe7b6b13b6abea9d"
+      "sha256": "0aa6fe133ba29637e5656c1151926e1f23d495693f2316f5476a38e97b6e782b"
     },
     {
       "path": "paper/figures/fig02_8cohort_ovi_fwer.pdf",
       "bytes": 32507,
-      "sha256": "193d85ca5bc54eeebf000002b33624e43c559003a607c39dfdf275cbf13ebcab"
+      "sha256": "180de162ba6ce228e646c768ec3180588ea0f92f11929b4d0542bda77c49cbd4"
     },
     {
       "path": "paper/figures/fig03_2d_phase_surface.pdf",
       "bytes": 34770,
-      "sha256": "6c38399a258ada913b2d05232a43c432ddd2fe8210020cc590119895a2807973"
+      "sha256": "692b42ffef634d24b7a9a780a881ce8f406651d612cc2fb2257648b259bf56ec"
     },
     {
       "path": "paper/figures/fig04_5engine_pillars_lean.pdf",
       "bytes": 36839,
-      "sha256": "589ef2021fa3c9c9317bb3f35c9f87de7b6303c37767715a7a4f52c19c8fa549"
+      "sha256": "4057d0e1c43703260191cb5cb8e7d97d238adc9e41ec7b9186fc4f8dd5ac9fb5"
     },
     {
       "path": "paper/generated_tables.tex",
@@ -647,8 +647,8 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 37323,
-      "sha256": "078a04b43f901171cd6a8feb180415a6fb193280c18370e034bb93eb3fb6940c"
+      "bytes": 37334,
+      "sha256": "6ecce173db4552ecb379b111475a5b8746417760928920b125403e6313333db0"
     },
     {
       "path": "paper/refs.bib",
