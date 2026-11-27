@@ -22,7 +22,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.12"
@@ -33,10 +33,15 @@ jobs:
           --with pypdf pytest tests/ -v
       - name: Run 6/6 Python semantic mutation audit
         run: uv run --no-project python scripts/run_mutation_audit.py
-      - name: Verify verbatim 55-line README axiom block & dual cryptographic timestamps
+      - name: Verify verbatim 55-line README axiom block, SHA-256 manifests & dual cryptographic timestamps
         run: |
           uv run --no-project python scripts/check_readme_axioms.py
           uv run --no-project python scripts/stamp_timestamps.py --verify
+      - name: Verify committed SHA-256 manifests byte-for-byte (Unix)
+        if: runner.os != 'Windows'
+        run: |
+          sha256sum -c CHECKSUMS.sha256
+          (cd data && sha256sum -c MANIFEST.sha256)
       - name: Run example quickstart demo
         run: uv run --no-project python examples/quickstart_demo.py
       - name: Run strict static linters (ruff 0 errors & mypy strict)
@@ -56,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install bubblewrap for 6-kernel Palomar sandbox
         run: sudo apt-get update && sudo apt-get install -y bubblewrap
       - name: Install elan & Lean 4.35.0
@@ -89,7 +94,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: astral-sh/setup-uv@v5
@@ -111,7 +116,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Attest build provenance for white paper & arXiv tarball
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: |
             dist/Donahue_2026_alife_singularity_omega.pdf

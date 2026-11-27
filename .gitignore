@@ -35,5 +35,6 @@ _site/
 _tmp_*
 .env
 .env.local
+!.env.example
 .DS_Store
 Thumbs.db

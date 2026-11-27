@@ -23,7 +23,7 @@ b96903103a9acf07b6277058a78dffc4f4a792f079d8bbe638838d41270a309a  ../csv/21_mega
 5676f1323ea74905d166a2b6ded909934e8d778ba134152f7749877f3dcca3f9  ../csv/ALife-Hybrid-Cube-10x10x10.csv
 8a3f3277e77c89708eaedee422004ef2b5642d45f38536cf8b4805d1a94eaa26  ../csv/ALife-v3.0-Errata-Closure-Register.csv
 e220483fbbd2adaa2e7443d882c1e016e84f851ee9e98971e59c86cab6a2ac8b  ../dist/arxiv_submission.tar.gz
-4011522740698c0449f0a1f6997072966dcf28fb6ab2ffdff87125b840e53dcd  ../dist/Donahue_2026_alife_singularity_omega.pdf
+566e008c18b3b655ea4bd6be7f8deb409149a8dbd56663ce7e41771c5bfc8a06  ../dist/Donahue_2026_alife_singularity_omega.pdf
 9b6f25b6dd7b868837484522627c5b8e7704ee4e959f1112a57c2f50b0d4844e  ../results/alifeops_live_verification.json
 8a10eff7336a0f52c4ac0858f674b47a04d90833f5b0bbe50a4a72fb0f15b3f7  ../results/bench-history.csv
 824def75a67bcfab8bc001bf73e8e2d202d6344e908581c3535a72bad1424147  ../results/citation_verification.json
@@ -41,4 +41,4 @@ d9fee341d90c7e80380ac168dbcedb56a176e5a4fa0baef614ad85e59258c1ae  ../results/ovb
 7a441a31a90aced52f12448c7f9b80640826cc082a309348dfb25b6ea8efe16e  ../specs/ALife-Framework-v3.0-Master-Spec.json
 f6858356cdcf8c51743c8a8d51b955aa89985e11ba635e52b419606e0f6ee411  ../specs/ALife-Framework-v3.0-Master-Spec.txt
 a96b1502afac7a8ac4eda9988fbf550301bf9eac381d9c82114baf3098dc6b5f  ../specs/ALife-Framework-v3.0-Master-Spec.xml
-9fd0d18e7279aff1e78118ca0a4c576d8d3448c79070cfed1384f8ea9a0c0ce5  ../specs/ALife-Framework-v3.0-Master-Spec.yaml
+23a7c30e7823733228883dd4953781ea1510b24484bcaa66784b2964c8111612  ../specs/ALife-Framework-v3.0-Master-Spec.yaml
