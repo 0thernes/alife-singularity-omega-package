@@ -1,11 +1,11 @@
 {
   "run_id": "ALIFE-SIM08-HYBRID-CUBE-SLTC-XPBD",
-  "timestamp_utc": "2026-11-22T04:21:08.091695+00:00",
+  "timestamp_utc": "2026-11-26T23:25:40.419652+00:00",
   "track": "TRACK_A_CONSTITUTIONAL",
-  "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
+  "substrate_id": "unified_v3_5_omega_fp64_11pool_sim",
   "horizon_ticks": 160,
   "composite_ovi_score": 85.48,
-  "stage_classification": "STAGE_4_SUPER_ALIFE",
+  "stage_classification": "STAGE_5_CONVERGED_SYNTHESIS",
   "pillar_weights": {
     "P1_OEE_NOVELTY": 0.18,
     "P2_AUTOPOIESIS_PERSISTENCE": 0.12,
@@ -43,7 +43,7 @@
     "wilcoxon_p_raw": 2.5688e-06,
     "holm_fwer_p": 7.7063e-06,
     "delta_pair_vs_feral": 0.5,
-    "lcb_95_ovi_diff": 1.315,
+    "lcb_95_ovi_diff": 1.327,
     "anti_larp_mutants_rejected": 5,
     "ring0_blocked_edits": 406.9
   },

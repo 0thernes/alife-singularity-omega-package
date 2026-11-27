@@ -1,4 +1,4 @@
-# Pinned Python 3.12 toolchain lockfile for alife-singularity-omega-package v3.4.0 (Build Standard B02)
+# Pinned Python 3.12 toolchain lockfile for alife-singularity-omega-package v3.5.0 (Build Standard B02)
 jsonschema==4.23.0
 matplotlib==3.9.2
 numpy==2.1.3
@@ -11,5 +11,5 @@ xlwt==1.3.0
 # Verification / dev tooling (run cffconvert isolated via `uvx cffconvert --validate`)
 hypothesis==6.115.3
 mypy==1.13.0
-pytest==8.3.3
+pytest==9.0.3
 ruff==0.7.4

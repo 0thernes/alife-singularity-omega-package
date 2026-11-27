@@ -2,11 +2,13 @@
 module
 
 /-!
-# Clean-Slate Hybrid Cube, Substrate Partitions & 5-Engine Theorem Accounting (`v3.4-Omega`)
+# Closed-Arithmetic Accounting Checks (`v3.5-Omega`)
 
-Certifies exact combinatorial partitions of the 10x10x10 Hybrid Cube (1,000 cells),
-the 75 Clean-Slate substrates, the 825 executable checks, the 78 wired ALifeOps alerts,
-and the 5-engine native + local package Lean 4 theorem totals.
+Literal closed-arithmetic (`rfl`) checks for recorded partition totals (10x10x10 Hybrid Cube
+1,000 cells, 75 Clean-Slate substrates, 825 checks, 78 alerts, 748 simulation runs, and the
+historical `v3.5.0` snapshot sum `48 + 78 + 100 + 54 + 30 = 310`, `310 + 50 = 360`).
+These checks verify integer addition identities ONLY; they certify NO simulation data, NO
+runtime outputs, and NO companion-repository proofs (see `docs/statement-fidelity.md`).
 -/
 
 namespace OmegaPackageProofs.CubeAndPartitions
@@ -17,44 +19,43 @@ namespace OmegaPackageProofs.CubeAndPartitions
 @[expose] public def cubeOVER : Nat := 20
 @[expose] public def cubeEXCL : Nat := 45
 
-/-- Theorem 11: Hybrid Cube 10x10x10 partition sums identically to 1,000 cells. -/
+/-- Arithmetic Check 13: Literal sum `661 + 274 + 20 + 45 = 1000 ∧ 10^3 = 1000`. -/
 public theorem hybrid_cube_partition_1000 :
     cubeOK + cubeADAPT + cubeOVER + cubeEXCL = 1000 ∧ 10 * 10 * 10 = 1000 := ⟨rfl, rfl⟩
 
-/-- Theorem 12: Active forward-stability cells (OK + ADAPT) equal exactly 935. -/
+/-- Arithmetic Check 14: Literal sum `661 + 274 = 935`. -/
 public theorem hybrid_cube_active_935 :
     cubeOK + cubeADAPT = 935 := rfl
 
-/-- Theorem 13: Clean-Slate 75-substrate partition (PM + MF + GW = 25 + 25 + 25 = 75). -/
+/-- Arithmetic Check 15: Literal sum `25 + 25 + 25 = 75`. -/
 public theorem substrates_75_partition :
     25 + 25 + 25 = 75 := rfl
 
-/-- Theorem 14: Clean-Slate 9-suite executable checks sum identically to 825. -/
+/-- Arithmetic Check 16: Literal sum of the 9 suite counts equals `825`. -/
 public theorem clean_slate_825_checks_sum :
     14 + 10 + 25 + 100 + 500 + 100 + 12 + 40 + 24 = 825 := rfl
 
-/-- Theorem 15: Live 825-check execution accounting (779 pass + 29 indicator + 12 native gate + 5 parity = 825, 0 fail). -/
+/-- Arithmetic Check 17: Literal sum `779 + 29 + 12 + 5 = 825`. -/
 public theorem live_825_execution_zero_fail :
     779 + 29 + 12 + 5 = 825 := rfl
 
-/-- Theorem 16: Unified ALifeOps telemetry alert mesh sums to 78 (42 Macro FMs + 36 v3.0 Forensic Guards). -/
+/-- Arithmetic Check 18: Literal sum `42 + 36 = 78`. -/
 public theorem unified_alerts_78 :
     42 + 36 = 78 := rfl
 
-/-- Theorem 17: Five-engine native Pure 6-Kernel Lean 4.35.0 theorem accounting:
-    48 (AUTOPHAGE v1.4.0) + 70 (Cellulogonic v1.5.0) + 89 (Cellular Omega v5.2.0) + 54 (Noetic v2.1.0) + 30 (Asmodensius v1.1.0) = 291. -/
-public theorem native_5engine_lean_theorems_291 :
-    48 + 70 + 89 + 54 + 30 = 291 := rfl
+/-- Arithmetic Check 19: Literal snapshot sum `48 + 78 + 100 + 54 + 30 = 310` (does NOT build or check companion repos). -/
+public theorem native_5engine_lean_theorems_310 :
+    48 + 78 + 100 + 54 + 30 = 310 := rfl
 
-/-- Theorem 18: Combined ecosystem Pure 6-Kernel Lean 4.35.0 theorem total (291 native + 36 local package = 327). -/
-public theorem ecosystem_total_lean_theorems_327 :
-    291 + 36 = 327 := rfl
+/-- Arithmetic Check 20: Literal snapshot sum `310 + 50 = 360` (arithmetic sum of reported counts only). -/
+public theorem ecosystem_total_lean_theorems_360 :
+    310 + 50 = 360 := rfl
 
-/-- Theorem 19: Cross-layer 11x11 coupling matrix has 121 directed pairs (11 diagonal + 110 off-diagonal). -/
+/-- Arithmetic Check 21: Literal identity `11 * 11 = 121 ∧ 11 + 110 = 121`. -/
 public theorem layer_coupling_11x11_partition :
     11 * 11 = 121 ∧ 11 + 110 = 121 := ⟨rfl, rfl⟩
 
-/-- Theorem 20: Live 748-run empirical simulation accounting (384 cohort + 264 dual sweep + 100 2D surface = 748). -/
+/-- Arithmetic Check 22: Literal identity `8 * 48 + 2 * 11 * 12 + 25 * 4 = 748`. -/
 public theorem empirical_748_runs_partition :
     8 * 48 + 2 * 11 * 12 + 25 * 4 = 748 := rfl
 

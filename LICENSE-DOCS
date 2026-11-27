@@ -10,7 +10,7 @@ DUAL LICENSING SCOPE:
 - All software source code (Python scripts, test suites, reference oracle,
   examples, Lean 4 formalizations, shell/PowerShell tooling, and HTML/JS
   observatory code) is licensed separately under the Apache License, Version 2.0
-  (see LICENSE-CODE).
+  (see LICENSE).
 
 =======================================================================
 

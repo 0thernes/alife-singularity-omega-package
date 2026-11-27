@@ -1,6 +1,6 @@
 standard: "1.2.0"
 name: "alife-singularity-omega-package"
-description: "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0): Hardware Ring-0 constitutional invariants, 748-run paired falsification, 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native + 36 local), AMS-LaTeX white paper, and 1,900-problem Mega-Atlas non-retirement audit."
+description: "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.5.0): Hardware Ring-0 constitutional invariants, 748-run paired falsification, 360 Pure 6-Kernel Lean 4.35.0 theorems (310 native + 50 local), AMS-LaTeX white paper, and 1,900-problem Mega-Atlas non-retirement audit."
 owner: "0thernes"
 year: 2026
 project_type: "research"
@@ -31,8 +31,8 @@ items:
   A04: { status: done, evidence: "README.md Usage & Examples section plus examples/quickstart_demo.py." }
   A05: { status: done, evidence: "README.md embeds docs/media/social-preview.png." }
   A06: { status: done, evidence: "Dual LICENSE (Apache-2.0) and LICENSE-DOCS (CC-BY-4.0)." }
-  A07: { status: done, evidence: "CHANGELOG.md follows Keep a Changelog through v3.4.0." }
-  A08: { status: done, evidence: "VERSION (3.4.0) synced with CHANGELOG.md, CITATION.cff, pyproject.toml, and lean/formalization.yaml." }
+  A07: { status: done, evidence: "CHANGELOG.md follows Keep a Changelog through v3.5.0." }
+  A08: { status: done, evidence: "VERSION (3.5.0) synced with CHANGELOG.md, CITATION.cff, pyproject.toml, and lean/formalization.yaml." }
   A09: { status: done, evidence: "tests/test_omega_package.py and tests/test_properties_and_differential.py pass 100%." }
   A10: { status: done, evidence: ".github/workflows/ci.yml runs report-only on push." }
   A11: { status: done, evidence: ".github/workflows/release.yml triggers on v* tags with SHA256SUMS." }
@@ -65,7 +65,7 @@ items:
   A38: { status: done, evidence: "Observatory HTML5 uses semantic landmarks, aria-labels, keyboard tabbing, high-contrast tokens, and @media print CSS." }
   A39: { status: done, evidence: "NOTICE and THIRD_PARTY_NOTICES.md attribute all upstream toolchains and libraries." }
   A40: { status: n/a, note: "Repository does not call or ship an AI model SDK at runtime (flag ai=false); non-author AI tooling disclosed in docs/AI_DISCLOSURE.md." }
-  A41: { status: done, evidence: "UPGRADING.md documents v3.3 -> v3.4.0 migration steps and breaking schema changes." }
+  A41: { status: done, evidence: "UPGRADING.md documents v3.3 -> v3.5.0 migration steps and breaking schema changes." }
   A42: { status: done, evidence: "README.md explicitly declares maintenance status: active." }
   A43: { status: done, evidence: "examples/quickstart_demo.py and examples/README.md execute cleanly." }
   A44: { status: done, evidence: "docs/faq.md and docs/glossary.md cover all technical terms and 10 finding classes." }
@@ -76,7 +76,7 @@ items:
   B04: { status: done, evidence: "CLAIMS.md enumerates C1-C8 with epistemic tiers and verification commands." }
   B05: { status: done, evidence: "Every claim C1-C8 has explicit falsifiable automated tests in tests/ and audit_omniscient_integrity.py." }
   B06: { status: done, evidence: "Negative tests verify anti-gaming gate annihilation, Ring-0 rejection, spectral-norm rejection, and 5/5 Anti-LARP mutants." }
-  B07: { status: done, evidence: "Regression tests lock every Cycle 1-4 defect (zero fake LLC, 291+36=327 6-kernel Lean sum, P8 7th metric, UTF-8, <5MB PDFs, 0 U+2611)." }
+  B07: { status: done, evidence: "Regression tests lock every Cycle 1-4 defect (zero fake LLC, 310+50=360 6-kernel Lean sum, P8 7th metric, UTF-8, <5MB PDFs, 0 U+2611)." }
   B08: { status: done, evidence: "Golden snapshot checks verify results/lean_package_axioms.txt, README axiom block, and schema-locked scorecards." }
   B09: { status: done, evidence: "JSON Schema Draft 2020-12 contract tests validate 9/9 OVBS-52 scorecards, repo.yaml, and 4-format Master Spec parity." }
   B10: { status: done, evidence: "tests/test_properties_and_differential.py runs 1,000+ Hypothesis property-based test cases." }
@@ -91,7 +91,7 @@ items:
   B19: { status: n/a, note: "Deterministic single-threaded Python/Lean execution (flag concurrent=false)." }
   B20: { status: done, evidence: "11-pool Kahan-Neumaier FP64 drift verified <= 2.463e-16 < 1e-12 plus 50-digit Decimal oracle tests." }
   B21: { status: n/a, note: "Not a long-running service (flag service=false)." }
-  B22: { status: done, evidence: "lean/OmegaPackageProofs/ proves 36 core + 4 Palomar Lean 4.35.0 theorems (0 sorry, 6-kernel verified in results/lean4-multi-kernel.txt & CI)." }
+  B22: { status: done, evidence: "lean/OmegaPackageProofs/ proves 50 core + 5 Palomar Lean 4.35.0 theorems (0 sorry, 6-kernel verified in results/lean4-multi-kernel.txt & CI)." }
   B23: { status: n/a, note: "Formal invariants proved constructively in Lean 4.35.0; TLA+/Alloy state-machine model checking is not required for arithmetic/ACL proofs." }
   B24: { status: done, evidence: "Formal proof core written in pure zero-Mathlib Lean 4.35.0 with strict module encapsulation and Palomar comparator." }
   B25: { status: n/a, note: "No C/Rust source code in this repository to run CBMC/Kani bounded model checking against." }

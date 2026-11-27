@@ -1,4 +1,4 @@
-# AGENTS.md — Canonical Agent Instructions (`alife-singularity-omega-package` v3.4.0)
+# AGENTS.md — Canonical Agent Instructions (`alife-singularity-omega-package` v3.5.0)
 
 > This file is the single canonical agent instruction file (< 32 KiB). `CLAUDE.md`, `GEMINI.md`, and `.cursor/rules/build-standard.mdc` all point here.
 
@@ -15,10 +15,10 @@
 - **R1–R4:** Trunk workflow directly on `main`. Never add git hooks, branch protection scripts, PR templates, Dependabot/Renovate, CodeRabbit, `.github/copilot-instructions.md`, or `FUNDING.yml`. CI is informational/report-only.
 - **Zero Consolidation:** Preserve 100% of the 17 baked Clean-Slate v3.0 deliverables alongside all Omega files.
 - **Clean-Slate `0 / 825` Policy:** Never emit `U+2611` (`☑`) in any Clean-Slate MD, HTML, CSV, or PDF file.
-- **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
+- **Honest Verification & Non-Retirement Boundary:** Exactly **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (v2.8.0) are solved or retired. Never claim peer review, fabricated DOIs, or sentience.
 - **Strict File-Size Hygiene (`A24`):** Every Git-tracked file must remain `< 5.00 MB` (`5,242,880` B). Chrome PDFs are losslessly compressed via `pypdf`; `ALife_Singularity_SuperLife_Omega_Package.zip` is gitignored and attached to GitHub Releases.
 - **Lean 4 Purity:** Zero `sorry`, `admit`, custom `axiom`, or `native_decide` in `lean/`. Axioms must stay strictly within `[propext, Quot.sound]`.
-- **Exact Theorem Arithmetic:** `48` (AUTOPHAGE v1.4.0) + `70` (Cellulogonic Mecha v1.5.0) + `89` (Cellular Engine Omega v5.2.0) + `54` (Noetic Organism Omega v2.1.0) + `30` (Asmodensius-Native v1.1.0) = **`291`** Native Pure 6-Kernel Lean 4.35.0 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`327` Pure 6-Kernel Lean 4.35.0 Theorems**. Never write `240`, `244`, or `280` for current live counts!
+- **Exact Theorem Arithmetic:** `48` (AUTOPHAGE v1.4.0) + `70` (Cellulogonic Mecha v1.6.0) + `89` (Cellular Engine Omega v5.4.0) + `54` (Noetic Organism Omega v2.1.0) + `30` (Asmodensius-Native v1.1.0) = **`310`** Native Pure 6-Kernel Lean 4.35.0 Theorems + **`36`** Local `lean/OmegaPackageProofs/` Theorems (`+ 4` Palomar comparator certificates = `40` `#print axioms` lines) = **`360` Pure 6-Kernel Lean 4.35.0 Theorems**. Never write `240`, `244`, or `280` for current live counts!
 - **PowerShell Bracket Safety (Windows `Z:`):** Because the canonical local checkout lives under `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`, always pass `-LiteralPath` to PowerShell file cmdlets.
 
 ## One-Word Commands (`justfile`)

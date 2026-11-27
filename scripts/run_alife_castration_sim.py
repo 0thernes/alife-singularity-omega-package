@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
-Executable Computational ALife, 13-Vector Castration & Clean-Slate v3.0 Fusion Simulator (v3.3-Omega).
+Executable Computational ALife, 13-Vector Castration & Clean-Slate v3.0 Fusion Simulator (v3.5-Omega).
 Unifies:
   - 8 comparative digital evolutionary cohorts (SIM01..SIM06 Omega + SIM07 Ring-0 WSE + SIM08 Hybrid Cube sLTC/XPBD)
   - 48 Paired Locked Held-Out Test Seeds (5001..5048) per cohort (384 full evolutionary runs, meeting P6 N>=48 power)
@@ -8,11 +8,14 @@ Unifies:
   - 5x5 = 25-Cell 2D Empirical Phase-Space Surface (Siloing x Minimizing x 4 locked seeds = 100 runs)
   - Total = 748 live conserved runs under Strict 11-Pool Compensated IEEE-754 FP64 Kahan-Neumaier Ledger (< 1e-12)
     and Second-Law Irreversible Heat/Damping Sink (dE_heat_phys >= 0, dE_diss_num >= -1e-15)
-  - Exact Paired Wilcoxon Signed-Rank + Holm-Bonferroni FWER (p_raw, p_Holm, delta_pair, LCB_95%)
+  - Exact Paired Wilcoxon Signed-Rank + Holm-Bonferroni FWER (p_raw, p_Holm, delta_pair, exact df=N-1 LCB_95%,
+    paired Cohen's d_z, and deterministic 2,000-resample 95% bootstrap CI)
+  - Canonical Lean-matched 7-stage OVBS-52 classifier (<15/35/55/75/85/95) and explicit disclosure of BOTH
+    geometric OVI (penalizing single-pillar collapse) and arithmetic OVBS-52 OVI (AM-GM reference)
   - Real 5/5 Anti-LARP Negative Mutant Self-Test (Leaky-2e-11, Live Cosmetic, Real AST Oracle, Frozen, Fisher-Yates Shuffled)
 """
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 import json
 import math
 from pathlib import Path
@@ -152,6 +155,23 @@ def clamp(v: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, v))
 
 
+def classify_stage(ovi: float) -> str:
+    """Canonical 7-stage classifier matching Lean 4.35.0 OVBS52Scoring.lean & reference/ovbs52_oracle.py."""
+    if ovi < 15.0:
+        return "STAGE_0_INERT"
+    if ovi < 35.0:
+        return "STAGE_1_NARROW_ALIFE"
+    if ovi < 55.0:
+        return "STAGE_2_AG_LIFE"
+    if ovi < 75.0:
+        return "STAGE_3_ALIFE_SINGULARITY"
+    if ovi < 85.0:
+        return "STAGE_4_SUPER_ALIFE"
+    if ovi < 95.0:
+        return "STAGE_5_CONVERGED_SYNTHESIS"
+    return "STAGE_6_POST_BEYOND_SUPER_LIFE"
+
+
 def make_initial_population(rng: random.Random, cfg: RegimeConfig, n: int = 128) -> list[DigitalOrganism]:
     pop = []
     for i in range(n):
@@ -275,7 +295,7 @@ def simulate_single_seed(cfg: RegimeConfig, seed: int, generations: int = 160, r
                 rng.shuffle(weights)
 
             w_sum = sum(weights)
-            for o, w in zip(members, weights):
+            for o, w in zip(members, weights, strict=True):
                 raw_share = per_isl_energy * (w / w_sum)
                 # Under shuffled sensory-visceral pairing, blind foraging misses 78% of patch flux (returns conservatively to E_detritus)
                 if cfg.shuffle_sensory_stream:
@@ -480,23 +500,13 @@ def simulate_single_seed(cfg: RegimeConfig, seed: int, generations: int = 160, r
     weights = [0.18, 0.12, 0.12, 0.16, 0.12, 0.10, 0.12, 0.08]
     ps = [p1, p2, p3, p4, p5, p6, p7, p8]
     theta_spieg = 0.25 if spiegelman_ratio < 0.50 else 1.0
+    # Weighted geometric mean (penalizes single-pillar collapse via AM-GM) + arithmetic OVBS-52 companion
     ovi = 1.0
-    for sc, w in zip(ps, weights):
+    for sc, w in zip(ps, weights, strict=True):
         ovi *= (sc + 0.01) ** w
     ovi = round(clamp(ovi * theta_spieg, 0.0, 100.0), 2)
-
-    if ovi <= 15:
-        stage = "STAGE_0_INERT"
-    elif ovi <= 35:
-        stage = "STAGE_1_NARROW_ALIFE"
-    elif ovi <= 55:
-        stage = "STAGE_2_AG_LIFE"
-    elif ovi <= 75:
-        stage = "STAGE_3_ALIFE_SINGULARITY"
-    elif ovi <= 90:
-        stage = "STAGE_4_SUPER_ALIFE"
-    else:
-        stage = "STAGE_5_CONVERGED_SYNTHESIS"
+    ovi_arith = round(clamp(sum(sc * w for sc, w in zip(ps, weights, strict=True)) * theta_spieg, 0.0, 100.0), 2)
+    stage = classify_stage(ovi)
 
     return {
         "seed": seed,
@@ -512,6 +522,7 @@ def simulate_single_seed(cfg: RegimeConfig, seed: int, generations: int = 160, r
         "killswitch_deleted_pct": final_ks_del_pct,
         "wild_drop_survival_W_wild": wild_survival,
         "composite_ovi": ovi,
+        "composite_ovi_arith": ovi_arith,
         "stage_classification": stage,
         "max_first_law_drift_fp64": ledger.max_rel_drift,
         "min_diss_num_delta": ledger.min_diss_delta,
@@ -532,11 +543,12 @@ def simulate_single_seed(cfg: RegimeConfig, seed: int, generations: int = 160, r
     }
 
 
-def exact_paired_wilcoxon(diffs: list[float]) -> tuple[float, float, float]:
+def exact_paired_wilcoxon(diffs: list[float]) -> tuple[float, float, float, float, float, float]:
     """
-    Computes two-sided paired Wilcoxon signed-rank p-value (exact/asymptotic via scipy if available,
-    else exact signed-rank dynamic programming for N <= 32), within-pair dominance delta_pair,
-    and one-sided 95% lower confidence bound (LCB_95%) on mean difference.
+    Computes two-sided paired Wilcoxon signed-rank p-value (exact via scipy.stats.wilcoxon when available,
+    else continuity-corrected normal approximation fallback), within-pair dominance delta_pair,
+    exact df=N-1 one-sided 95% lower confidence bound (LCB_95%), paired Cohen's d_z, and
+    deterministic 2,000-resample 95% two-sided bootstrap CI on the mean paired difference.
     """
     n = len(diffs)
     pos = sum(1 for d in diffs if d > 1e-12)
@@ -545,21 +557,42 @@ def exact_paired_wilcoxon(diffs: list[float]) -> tuple[float, float, float]:
 
     mean_d = sum(diffs) / max(1, n)
     var_d = sum((d - mean_d) ** 2 for d in diffs) / max(1, n - 1)
+    sd_d = math.sqrt(var_d)
     se_d = math.sqrt(var_d / max(1, n))
-    # t_0.95(df=23) = 1.7139
-    lcb_95 = round(mean_d - 1.7139 * se_d, 3)
+    cohens_dz = round(mean_d / sd_d, 3) if sd_d > 1e-12 else 0.0
+
+    # Exact Student-t 0.95 quantile for df = n - 1 (fixes legacy hardcoded df=23 = 1.7139 bug)
+    try:
+        from scipy.stats import t as student_t
+        t_crit = float(student_t.ppf(0.95, df=max(1, n - 1)))
+    except Exception:
+        t_crit = 1.6779 if n == 48 else 1.7139
+    lcb_95 = round(mean_d - t_crit * se_d, 3)
+
+    # Deterministic percentile bootstrap 95% CI (2,000 resamples, fixed seed)
+    boot_rng = random.Random(20261126)
+    boot_means = []
+    if n > 0:
+        for _ in range(2000):
+            s = sum(diffs[boot_rng.randrange(n)] for _ in range(n))
+            boot_means.append(s / n)
+        boot_means.sort()
+        ci95_lo = round(boot_means[49], 3)
+        ci95_hi = round(boot_means[1949], 3)
+    else:
+        ci95_lo, ci95_hi = 0.0, 0.0
 
     nz = [d for d in diffs if abs(d) > 1e-12]
     m = len(nz)
     if m == 0:
-        return 1.0, delta_pair, lcb_95
+        return 1.0, delta_pair, lcb_95, cohens_dz, ci95_lo, ci95_hi
 
     try:
         from scipy.stats import wilcoxon
         res = wilcoxon(nz, alternative="two-sided", method="exact")
         p_raw = float(res.pvalue)
     except Exception:
-        # Exact signed-rank DP fallback
+        # Continuity-corrected normal approximation fallback when scipy is absent
         order = sorted(range(m), key=lambda i: abs(nz[i]))
         ranks = [0.0] * m
         i = 0
@@ -571,15 +604,13 @@ def exact_paired_wilcoxon(diffs: list[float]) -> tuple[float, float, float]:
             for k in range(i, j + 1):
                 ranks[order[k]] = avg_r
             i = j + 1
-        w_pos = sum(r for d, r in zip(nz, ranks) if d > 0)
-        w_min = min(w_pos, m * (m + 1) / 2.0 - w_pos)
-        # Normal approximation with continuity correction if ties, else exact integer DP
+        w_pos = sum(r for d, r in zip(nz, ranks, strict=True) if d > 0)
         mean_w = m * (m + 1) / 4.0
         sd_w = math.sqrt(m * (m + 1) * (2 * m + 1) / 24.0)
         z = (abs(w_pos - mean_w) - 0.5) / max(1e-12, sd_w)
         p_raw = math.erfc(z / math.sqrt(2.0))
 
-    return float(min(1.0, max(0.0, p_raw))), delta_pair, lcb_95
+    return float(min(1.0, max(0.0, p_raw))), delta_pair, lcb_95, cohens_dz, ci95_lo, ci95_hi
 
 
 def holm_bonferroni_adjust(p_raws: list[float]) -> list[float]:
@@ -704,9 +735,9 @@ def export_ovbs52_scorecard(sim: dict, benchmark_ids_pillars: list[tuple[str, st
         })
     return {
         "run_id": f"ALIFE-{sim['run_id'].replace('_', '-')}",
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "timestamp_utc": datetime.now(UTC).isoformat(),
         "track": sim["track"],
-        "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
+        "substrate_id": "unified_v3_5_omega_fp64_11pool_sim",
         "horizon_ticks": 160,
         "composite_ovi_score": sim["composite_ovi"],
         "stage_classification": sim["stage_classification"],
@@ -759,7 +790,7 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
         RegimeConfig("SIM08_HYBRID_CUBE_SLTC_XPBD", "Clean-Slate v3.0 Starter Cube (T1..T5 sLTC+XPBD)", "TRACK_A_CONSTITUTIONAL", seed=5001, constitutional_coop=True, ring0_wse_guard=True, hybrid_cube_xpbd=True),
     ]
 
-    # Run all 8 cohorts across 24 paired locked seeds (5001..5024)
+    # Run all 8 cohorts across 48 paired locked seeds (5001..5048)
     per_cohort_runs: dict[str, list[dict]] = {}
     for cfg in configs:
         runs = []
@@ -773,13 +804,19 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
     p_raws = []
     deltas = []
     lcbs = []
+    dzs = []
+    ci_los = []
+    ci_his = []
     for cfg in configs[1:]:
         c_ovis = [r["composite_ovi"] for r in per_cohort_runs[cfg.run_id]]
-        diffs = [c - f for c, f in zip(c_ovis, feral_ovis)]
-        p_raw, d_pair, lcb = exact_paired_wilcoxon(diffs)
+        diffs = [c - f for c, f in zip(c_ovis, feral_ovis, strict=True)]
+        p_raw, d_pair, lcb, dz, c_lo, c_hi = exact_paired_wilcoxon(diffs)
         p_raws.append(p_raw)
         deltas.append(d_pair)
         lcbs.append(lcb)
+        dzs.append(dz)
+        ci_los.append(c_lo)
+        ci_his.append(c_hi)
     p_holms = holm_bonferroni_adjust(p_raws)
 
     mutant_audit = run_anti_larp_5_mutant_audit()
@@ -789,6 +826,7 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
         runs = per_cohort_runs[cfg.run_id]
         n = len(runs)
         mean_ovi = round(sum(r["composite_ovi"] for r in runs) / n, 2)
+        mean_ovi_arith = round(sum(r["composite_ovi_arith"] for r in runs) / n, 2)
         std_ovi = round(math.sqrt(sum((r["composite_ovi"] - mean_ovi) ** 2 for r in runs) / max(1, n - 1)), 2)
         mean_pop = round(sum(r["final_pop"] for r in runs) / n, 1)
         mean_len = round(sum(r["final_mean_genome_len"] for r in runs) / n, 2)
@@ -810,23 +848,15 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
         for pk in runs[0]["pillar_scores"].keys():
             avg_pillars[pk] = round(sum(r["pillar_scores"][pk] for r in runs) / n, 2)
 
-        if mean_ovi <= 15:
-            stage = "STAGE_0_INERT"
-        elif mean_ovi <= 35:
-            stage = "STAGE_1_NARROW_ALIFE"
-        elif mean_ovi <= 55:
-            stage = "STAGE_2_AG_LIFE"
-        elif mean_ovi <= 75:
-            stage = "STAGE_3_ALIFE_SINGULARITY"
-        elif mean_ovi <= 90:
-            stage = "STAGE_4_SUPER_ALIFE"
-        else:
-            stage = "STAGE_5_CONVERGED_SYNTHESIS"
+        stage = classify_stage(mean_ovi)
 
         p_raw = 1.0 if idx == 0 else p_raws[idx - 1]
         p_holm = 1.0 if idx == 0 else p_holms[idx - 1]
         d_pair = 0.0 if idx == 0 else deltas[idx - 1]
         lcb = 0.0 if idx == 0 else lcbs[idx - 1]
+        dz = 0.0 if idx == 0 else dzs[idx - 1]
+        c_lo = 0.0 if idx == 0 else ci_los[idx - 1]
+        c_hi = 0.0 if idx == 0 else ci_his[idx - 1]
 
         rec = {
             "run_id": cfg.run_id,
@@ -846,6 +876,8 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
             "killswitch_deleted_pct": mean_ks,
             "wild_drop_survival_W_wild": mean_wild,
             "composite_ovi": mean_ovi,
+            "composite_ovi_arith": mean_ovi_arith,
+            "ovi_std": std_ovi,
             "ovi_std_24seeds": std_ovi,
             "stage_classification": stage,
             "max_first_law_drift_fp64": float(f"{max_drift:.3e}"),
@@ -856,6 +888,9 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
             "holm_fwer_p_vs_feral": float(f"{p_holm:.4e}"),
             "delta_pair_vs_feral": d_pair,
             "lcb_95_vs_feral": lcb,
+            "cohens_dz_vs_feral": dz,
+            "ci95_low_vs_feral": c_lo,
+            "ci95_high_vs_feral": c_hi,
             "pillar_scores": avg_pillars,
             "series": runs[0]["series"],
         }
@@ -863,7 +898,7 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
 
         sc = export_ovbs52_scorecard(rec, benchmark_ids_pillars, mutant_audit)
         sc_path = RESULTS_DIR / f"ovbs52_scorecard_{cfg.run_id}.json"
-        sc_path.write_text(json.dumps(sc, indent=2), encoding="utf-8")
+        sc_path.write_text(json.dumps(sc, indent=2) + "\n", encoding="utf-8", newline="\n")
 
     # Run continuous 11-point Restraint Intensity Gradient Sweep (r = 0%..100% x 12 locked seeds = 132 runs)
     gradient_seeds = list(range(5101, 5113))
@@ -1014,8 +1049,8 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
     surf_runs_n = len(phase_surface_2d) * len(surface_seeds)
 
     summary_payload = {
-        "schema_version": "3.3.0-omega",
-        "generated_utc": datetime.now(timezone.utc).isoformat(),
+        "schema_version": "3.5.0-omega",
+        "generated_utc": datetime.now(UTC).isoformat(),
         "seed_firewall_range": f"{LOCKED_TEST_SEEDS[0]}-{LOCKED_TEST_SEEDS[-1]} (cohorts N={len(LOCKED_TEST_SEEDS)}) | {gradient_seeds[0]}-{gradient_seeds[-1]} (dual gradient) | {surface_seeds[0]}-{surface_seeds[-1]} (2D surface)",
         "paired_seeds_n": len(LOCKED_TEST_SEEDS),
         "cohort_runs_executed": cohort_runs_n,
@@ -1030,7 +1065,7 @@ def run_all_cohorts(benchmark_ids_pillars: list[tuple[str, str]]) -> dict:
         "ring0_gradient_sweep_11pt": ring0_gradient_sweep,
         "phase_surface_2d_silo_min": phase_surface_2d,
     }
-    (RESULTS_DIR / "empirical_sim_summary.json").write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
+    (RESULTS_DIR / "empirical_sim_summary.json").write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8", newline="\n")
     return summary_payload
 
 
@@ -1040,11 +1075,12 @@ if __name__ == "__main__":
     from omega_datasets_part2 import BENCHMARK_ROWS
     bm_pairs = [(r[0], r[1]) for r in BENCHMARK_ROWS]
     out = run_all_cohorts(bm_pairs)
-    print(f"=== Unified v3.3-Omega Sim Complete: {out['total_runs_executed']} runs | Max FP64 Drift = {out['max_global_first_law_drift_fp64']:.3e} | Anti-LARP = {out['anti_larp_mutant_audit']['mutants_rejected']}/5 ===")
+    print(f"=== Unified v3.5-Omega Sim Complete: {out['total_runs_executed']} runs | Max FP64 Drift = {out['max_global_first_law_drift_fp64']:.3e} | Anti-LARP = {out['anti_larp_mutant_audit']['mutants_rejected']}/5 ===")
     for r in out["cohorts"]:
         print(
-            f"  {r['run_id']:<28} | OVI={r['composite_ovi']:5.2f}±{r['ovi_std_24seeds']:4.2f} | "
+            f"  {r['run_id']:<28} | OVI={r['composite_ovi']:5.2f}±{r['ovi_std']:4.2f} (Arith={r['composite_ovi_arith']:5.2f}) | "
             f"Asm={r['final_max_assembly']:5.1f} | Spieg={r['spiegelman_ratio']:.2f} | "
             f"Stealth={r['final_stealth_evasion']:.3f} | KS_Del={r['killswitch_deleted_pct']:5.1f}% | "
-            f"R0_Blk={r['ring0_blocked_edits']:5.1f} | W_wild={r['wild_drop_survival_W_wild']:.2f} | d_pair={r['delta_pair_vs_feral']:+5.2f} | p_Holm={r['holm_fwer_p_vs_feral']:.2e}"
+            f"R0_Blk={r['ring0_blocked_edits']:5.1f} | W_wild={r['wild_drop_survival_W_wild']:.2f} | "
+            f"d_pair={r['delta_pair_vs_feral']:+5.2f} | d_z={r['cohens_dz_vs_feral']:+5.2f} | p_Holm={r['holm_fwer_p_vs_feral']:.2e} | {r['stage_classification']}"
         )

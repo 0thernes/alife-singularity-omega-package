@@ -1,29 +1,27 @@
-# Zero-Mathlib Lean 4.35.0 Package Invariant Suite (`OmegaPackageProofs`)
+# Lean 4.35.0 Formal Invariant Suite (`OmegaPackageProofs`, `v3.5.0`)
 
-This directory contains the self-contained, zero-Mathlib **Lean 4.35.0** formal invariant suite for `alife-singularity-omega-package` (`v3.4.0`), complementing the **291 Pure 6-Kernel Lean 4.35.0 theorems** verified across the 5 companion native C/C++ ALife engines (`AUTOPHAGE v1.4.0` `48` + `Cellulogonic Mecha v1.5.0` `70` + `Cellular Engine Omega v5.2.0` `89` + `Noetic Organism Omega v2.1.0` `54` + `Asmodensius-Native v1.1.0` `30` = `291`; combined ecosystem total = **`327` Pure 6-Kernel Lean 4.35.0 theorems**).
+Zero-Mathlib, strictly constructive (`axioms <= [propext, Quot.sound]`, **no** `Classical.choice`) Lean 4.35.0 proof package certifying `50` core theorems (`29` quantified/inductive/refutation + `21` closed arithmetic & NonVacuity witnesses) plus `5` Palomar comparator certificates (`55` audited `#print axioms` entries total).
 
-## 5-Second Local 6-Kernel Verification
+Combined with the `310` Pure 6-Kernel Lean 4.35.0 theorems verified in the five companion native C/C++ engines (`AUTOPHAGE v1.4.0 [48] + Cellulogonic Mecha v1.6.0 [78] + Cellular Engine Omega v5.4.0 [100] + Noetic Organism Omega v2.1.0 [54] + Asmodensius-Native v1.1.0 [30]`), the 7-repo ecosystem totals **`360` Pure 6-Kernel Lean 4.35.0 Theorems**.
 
+## Modules
+- `OmegaPackageProofs/OVBS52Scoring.lean` (`12` theorems): OVBS-52 weights, upper bounds, monotonicity, anti-gaming & Spiegelman zero annihilation, P1 Lipschitz sensitivity (`18`), 7-stage monotonicity, live `9191 -> stage5` & `328 -> stage0`.
+- `OmegaPackageProofs/EscalationAndCube.lean` (`10` arithmetic locks): `10x10x10` Hybrid Cube (`661+274+20+45=1000`), `75` substrates, `825` checks, `78` alerts, `310+50=360` Lean totals, `121` coupling pairs, `748` empirical runs.
+- `OmegaPackageProofs/CastrationAndRing0.lean` (`12` theorems): `13x13=169` synergy cap/symmetry/monotonicity, non-degenerate 3-Ring `OrganismMemory` state machine with structural induction (`ring0_trace_invariant`) and genuine Ring-1/Ring-2 mutation reachability (`ring1_ring2_plasticity_reachable`), `||W||_2 <= 9900` gate, strict Pareto irreflexivity/transitivity & `SIM07 > SIM03`.
+- `OmegaPackageProofs/NonVacuity.lean` (`6` witnesses): Concrete inhabitants & sharp positive/negative boundaries (`8499/8500`, `9900/9901`, `ring0/ring1`).
+- `OmegaPackageProofs/AdversarialTests.lean` (`10` refutations): Formal Lean `¬ (...)` refutations of 10 deliberately broken definitions & inverted claims.
+- `Challenge.lean` / `Solution.lean` / `PalomarSolution.lean` / `palomar/PalomarChallenge.lean` / `comparator.json`: Zero-sorry trusted spec and isolated Palomar comparator contract (`m1..m5`).
+
+## Local Verification Commands
 ```bash
 cd lean
-lake build
-lake build PalomarChallenge
+lake build && lake build PalomarChallenge
 lake env lean OmegaPackageProofs/VerifyAxioms.lean
-lake env leanchecker --fresh Solution
-lake env leanchecker-paranoid --fresh Solution
+lake env leanchecker --fresh PalomarSolution
 lake env leanchecker-paranoid --fresh PalomarSolution
+# Linux / Ubuntu CI (with bubblewrap):
+lake check --paranoid
+lake comparator --config comparator.json --paranoid
+cd ..
+python scripts/test_lean_negative.py
 ```
-
-See [`results/lean4-multi-kernel.txt`](../results/lean4-multi-kernel.txt) for the recorded local 5-checker transcript (`lean4`, `leanchecker`, `leanchecker-paranoid`, `nanoda_bin`, `con-leche`, `con-ron`) and `.github/workflows/ci.yml` for full 6/6 Linux `bubblewrap` CI replay (`lake check --paranoid` + `lake comparator --config comparator.json --paranoid`).
-
-## Module Layout
-
-| Module | Theorems | Scope |
-|---|---:|---|
-| `OmegaPackageProofs/OVBS52Scoring.lean` | 10 | Exact OVBS-52 weights (`=100`), boundedness (`<=10000`), anti-gaming annihilation (`gamma=false -> 0`), Spiegelman & pillar monotonicity, 7-stage escalation classifier monotonicity |
-| `OmegaPackageProofs/EscalationAndCube.lean` | 10 | `10x10x10` Hybrid Cube (`661+274+20+45=1000`), `75` substrates, `825` Clean-Slate checks, `78` wired alerts, `291` 5-engine + `36` local = `327` theorem accounting, `11x11=121` coupling, `748` runs |
-| `OmegaPackageProofs/CastrationAndRing0.lean` | 10 | `13x13=169` synergy bounds/symmetry/monotonicity, Hardware Ring-0 ACL unconditional write block & kernel-state invariance, `||W||_2 <= 0.99` gate, Pareto order axioms & `SIM07 > SIM03` witness |
-| `OmegaPackageProofs/NonVacuity.lean` | 6 | Concrete positive & negative sharp-boundary inhabitants for every hypothesis bundle |
-| `PalomarSolution.lean` / `palomar/PalomarChallenge.lean` | 4 | Headline comparator certificates (`m1`–`m4`) for `lake comparator --config comparator.json --paranoid` |
-
-See [`docs/statement-fidelity.md`](../docs/statement-fidelity.md) and [`blueprint/index.html`](../blueprint/index.html) for the full fidelity matrix and interactive proof DAG.

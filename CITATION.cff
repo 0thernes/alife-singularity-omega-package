@@ -2,8 +2,8 @@ cff-version: 1.2.0
 title: "A-Life Singularity x Clean-Slate v3.0 Omega Package: A Zero-Mathlib Lean 4.35.0 Model of Integer Scoring Invariants, a 748-Run Paired Simulation Study, and a 1,900-Problem Atlas Crosswalk"
 message: "If you use this software, Lean 4 formalization, datasets, or white paper, please cite it using the metadata below."
 type: software
-version: "3.4.0"
-date-released: "2026-11-25"
+version: "3.5.0"
+date-released: "2026-11-26"
 authors:
   - family-names: "Donahue"
     given-names: "Alexander Stephen"
@@ -33,5 +33,5 @@ abstract: >-
   paired tests) comparing a simulated Ring-0 access-control rule with behavioral
   restraints. (3) An AMS-LaTeX white paper. (4) A crosswalk against a 1,900-problem
   open-problem atlas in which no problem is retired. Five companion repositories report
-  a further 291 Lean theorems; these are not built or checked in this package. No
+  a further 310 Lean theorems; these are not built or checked in this package. No
   hardware is modelled in Lean, and the work has not been externally peer reviewed.

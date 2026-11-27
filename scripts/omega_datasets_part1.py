@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
 Canonical Structured Datasets (Part 1 of 2) for the A-Life Singularity & SUPER LIFE Omega Package.
 Covers:

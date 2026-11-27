@@ -1,12 +1,12 @@
-# Academic Review & Pre-Submission Readiness (`v3.4.0`)
+# Academic Review & Pre-Submission Readiness (`v3.5.0`)
 
-This checklist audits `alife-singularity-omega-package` (`v3.4.0`) against the **Defensible Independent AI Research Playbook v1.3** (43-item Gold Standard Release Checklist).
+This checklist audits `alife-singularity-omega-package` (`v3.5.0`) against the **Defensible Independent AI Research Playbook v1.3** (43-item Gold Standard Release Checklist).
 
 ## Status Summary
 
 - **Peer Review Status:** **NOT externally peer-reviewed.** This repository and white paper (`dist/Donahue_2026_alife_singularity_omega.pdf`) constitute an independent technical research preprint and reproducible software/formal-proof artifact.
 - **Legal Identity:** `Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA)`, ORCID `0009-0006-8168-9648`. Zero unformed corporate entity labels (`"0thernes LLC"` completely scrubbed).
-- **Honest Non-Retirement Boundary:** **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (V2.4.0) are claimed solved or retired (`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`).
+- **Honest Non-Retirement Boundary:** **`0 / 1,900`** overarching open problems in `0thernes/unsolved-problems-mega-atlas` (v2.8.0) are claimed solved or retired (`reports/09_MEGA_ATLAS_1900_OPEN_PROBLEMS_CROSSCHECK.md`).
 
 ## Playbook v1.3 Verification Highlights
 
@@ -15,7 +15,7 @@ This checklist audits `alife-singularity-omega-package` (`v3.4.0`) against the *
 | **1. Identity, ORCID & COI** | `AUTHORS.md`, `CITATION.cff`, `paper/main.tex`, `.zenodo.json` | **PASS** |
 | **2. Dual Licensing (Code vs. Prose/Data)** | `LICENSE` (`Apache-2.0`) + `LICENSE-DOCS` (`CC-BY-4.0`) + `NOTICE` | **PASS** |
 | **3. AI-Contribution & CRediT Disclosure** | `docs/AI_DISCLOSURE.md`, `AUTHORS.md`, `paper/main.tex` Section 8 | **PASS** |
-| **4. Machine-Checked Formalization** | `lean/OmegaPackageProofs/` (`36+4 = 40` `#print axioms` $\subseteq [\text{propext}, \text{Quot.sound}]$; `4` comparator targets accepted by `6` kernels in CI; `21` of the `36` core items are closed evaluations or literal sums; the `291` companion-reported theorems are not checked here) | **PASS** |
+| **4. Machine-Checked Formalization** | `lean/OmegaPackageProofs/` (`36+4 = 40` `#print axioms` $\subseteq [\text{propext}, \text{Quot.sound}]$; `4` comparator targets accepted by `6` kernels in CI; `21` of the `36` core items are closed evaluations or literal sums; the `310` companion-reported theorems are not checked here) | **PASS** |
 | **5. Statement-Fidelity Audit** | `docs/statement-fidelity.md` + `paper/main.tex` Table 3 (`M1–M4`) | **PASS** |
 | **6. Independent Oracle & Mutation Suite** | `reference/ovbs52_oracle.py` (50-digit `Decimal`), `tests/` (`2,000+` differential + `1,000+` Hypothesis), `6/6` mutants killed | **PASS** |
 | **7. Paired Statistics & Null Disclosure** | `PREREGISTRATION.md`, `748` runs (`N=48` locked seeds), Holm–Bonferroni FWER, `SIM02` null explicitly reported | **PASS** |

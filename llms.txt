@@ -1,6 +1,6 @@
-# A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0)
+# A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.5.0)
 
-> Zero-consolidation scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool FP64 conservation, Philox4x32-10, XPBD, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro A-Life Singularity metrology (OVBS-52, 78-alert ALifeOps YAML, 748-run paired falsification, 327 Pure 6-Kernel Lean 4.35.0 theorems [291 native + 36 local], AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit).
+> Zero-consolidation scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool FP64 conservation, Philox4x32-10, XPBD, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro A-Life Singularity metrology (OVBS-52, 78-alert ALifeOps YAML, 748-run paired falsification, 360 Pure 6-Kernel Lean 4.35.0 theorems [310 native + 50 local], AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas non-retirement audit).
 
 ## Core Entry Points
 
@@ -31,6 +31,6 @@
 ## Interactive & Structured Artifacts
 
 - [html/ALife_Singularity_SuperLife_Omega_Dashboard.html](html/ALife_Singularity_SuperLife_Omega_Dashboard.html): 22-tab offline interactive Observatory
-- [specs/ALife-Framework-v3.0-Master-Spec.json](specs/ALife-Framework-v3.0-Master-Spec.json): Canonical unified JSON Master Spec (`3.4.0-omega`)
+- [specs/ALife-Framework-v3.0-Master-Spec.json](specs/ALife-Framework-v3.0-Master-Spec.json): Canonical unified JSON Master Spec (`3.5.0-omega`)
 - [pipelines/alifeops-master-pipeline.yaml](pipelines/alifeops-master-pipeline.yaml): 78-alert / 13-gate ALifeOps master pipeline
 - [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md): Transparent human CRediT and non-author AI tooling provenance

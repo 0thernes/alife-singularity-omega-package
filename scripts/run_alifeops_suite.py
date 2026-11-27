@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
 r"""
-ALifeOps Master Live Verification Runner (Zeta-Omega v3.4-Omega)
-Executes all 5 live native simulation engines (AUTOPHAGE v1.4.0, Cellulogonic Mecha v1.5.0,
-Cellular Engine Omega v5.2.0, Noetic Organism Omega v2.1.0, and Asmodensius-Native v1.1.0),
-parses real 6-kernel Lean 4.35.0 axiom-audit receipts (291 native theorems: 48+70+89+54+30;
-+36 local package = 327 ecosystem total), derives ALL 8 OVBS-52 pillars and 52 canonical
+ALifeOps Master Live Verification Runner (Zeta-Omega v3.5-Omega)
+Executes all 5 live native simulation engines (AUTOPHAGE v1.4.0, Cellulogonic Mecha v1.6.0,
+Cellular Engine Omega v5.3.0, Noetic Organism Omega v2.1.0, and Asmodensius-Native v1.1.0),
+parses real 6-kernel Lean 4.35.0 axiom-audit receipts (310 native theorems: 48+78+100+54+30;
++50 local package = 360 ecosystem total), derives ALL 8 OVBS-52 pillars and 52 canonical
 benchmarks strictly from measured C11/C23 outputs (zero hardcoded pillar scores), validates
 against pipelines/benchmark-suite-schema.json via jsonschema, and writes
-results/alifeops_live_verification.json.
+results/alifeops_live_verification.json (strict LF + trailing newline).
 """
 import csv
+from datetime import UTC, datetime
 import json
 import math
 import os
+from pathlib import Path
 import re
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
 import jsonschema
 
@@ -188,8 +188,8 @@ def main():
         "lean4_pure_axioms_verified": ap_lean_clean,
     }
 
-    # 2. Tier 2: Cellulogonic Mecha v1.5.0 (26/26 gates, 8/8 mutants, 70 Pure 6-Kernel Lean 4.35.0)
-    cm_ver = read_repo_version(CELL_DIR, "1.5.0")
+    # 2. Tier 2: Cellulogonic Mecha v1.6.0 (26/26 gates, 8/8 mutants, 78 Pure 6-Kernel Lean 4.35.0)
+    cm_ver = read_repo_version(CELL_DIR, "1.6.0")
     rc_cm, out_cm, err_cm, dt_cm = run_cmd([str(CELL_TEST)], cwd=str(CELL_TEST.parent))
     m_cm = re.search(r"SUMMARY:\s*(\d+)\s*/\s*(\d+)\s+GATES PASSED\s*\|\s*(\d+)\s*/\s*(\d+)", out_cm)
     cm_passed = int(m_cm.group(1)) if m_cm else 0
@@ -206,7 +206,7 @@ def main():
     else:
         failures.append(f"tier2_cellulogonic json run failed (rc={rc_cmj})")
     cm_lean_cnt, cm_lean_clean = audit_lean_receipt_file(CELL_DIR / "results" / "lean4-audit.txt", is_source_file=False)
-    if not cm_lean_clean or cm_lean_cnt < 70:
+    if not cm_lean_clean or cm_lean_cnt < 78:
         failures.append(f"tier2_cellulogonic Lean 4 axiom audit failed (cnt={cm_lean_cnt}, clean={cm_lean_clean})")
 
     results["tier2_cellulogonic"] = {
@@ -227,8 +227,8 @@ def main():
         "lean4_pure_axioms_verified": cm_lean_clean,
     }
 
-    # 3. Tier 2+: Cellular Engine Omega v5.2.0 (60/60 gates, 16/16 mutants, 75-sub & 1000-cube, 89 Pure 6-Kernel Lean 4.35.0)
-    om_ver = read_repo_version(OMEGA_DIR, "5.2.0")
+    # 3. Tier 2+: Cellular Engine Omega v5.3.0 (60/60 gates, 16/16 mutants, 75-sub & 1000-cube, 100 Pure 6-Kernel Lean 4.35.0)
+    om_ver = read_repo_version(OMEGA_DIR, "5.3.0")
     rc_om, out_om, err_om, dt_om = run_cmd([str(OMEGA_TEST)], cwd=str(OMEGA_TEST.parent))
     m_om = re.search(r"FALSIFICATION SUMMARY:\s*(\d+)\s*/\s*(\d+)\s+PASSED.*?(\d+)/(\d+)\s+MUTANTS", out_om)
     om_passed = int(m_om.group(1)) if m_om else 0
@@ -256,10 +256,10 @@ def main():
     sub75 = om_cube.get("substrates_75", {})
     cube1k = om_cube.get("hybrid_cube_1000", {})
     if sub75.get("total_passed") != 75 or cube1k.get("verified_total") != 1000 or cube1k.get("ok") != 661 or cube1k.get("adapt") != 274 or cube1k.get("over") != 20 or cube1k.get("excl") != 45:
-        failures.append(f"tier2plus_omega 75-substrate/1000-cube verification mismatch")
+        failures.append("tier2plus_omega 75-substrate/1000-cube verification mismatch")
 
     om_lean_cnt, om_lean_clean = audit_lean_receipt_file(OMEGA_DIR / "results" / "lean4-omega-audit.txt", is_source_file=False)
-    if not om_lean_clean or om_lean_cnt < 89:
+    if not om_lean_clean or om_lean_cnt < 100:
         failures.append(f"tier2plus_omega Lean 4 axiom audit failed (cnt={om_lean_cnt}, clean={om_lean_clean})")
 
     tb05 = om_json.get("tb05", {})
@@ -611,8 +611,8 @@ def main():
     total_lean = ap_lean_cnt + cm_lean_cnt + om_lean_cnt + no_lean_cnt + as_lean_cnt
 
     payload = {
-        "run_id": f"ALIFE-OMEGA-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "run_id": f"ALIFE-OMEGA-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}",
+        "timestamp_utc": datetime.now(UTC).isoformat(),
         "track": "HYBRID_ABLATION",
         "substrate_id": "WIN64-X86_64-AVX2-GFNI-LIVE-NATIVE-STACK",
         "horizon_ticks": 300,
@@ -640,7 +640,7 @@ def main():
     jsonschema.Draft202012Validator(schema).validate(payload)
 
     out_path = PKG_ROOT / "results" / "alifeops_live_verification.json"
-    out_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    out_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8", newline="\n")
 
     print(f"ALifeOps Live Verification -> {out_path} (JSON Schema Draft 2020-12 VALIDATED)")
     print(f"  Tier 1 AUTOPHAGE v{ap_ver:<6} : {ap_passed}/18 gates | 6/6 mut | OVI={ap_ovi} | A_new={ap_anew} | {ap_lean_cnt} Pure 6-Kernel Lean4 (clean={ap_lean_clean})")
@@ -648,7 +648,7 @@ def main():
     print(f"  Tier 2+ OMEGA v{om_ver:<6}    : {om_passed}/{om_total} gates | {om_mut_caught}/{om_mut_total} mut | 75-Sub={sub75.get('total_passed',0)}/75 | 1000-Cube={cube1k.get('verified_total',0)}/1000 | {om_lean_cnt} Pure 6-Kernel Lean4 (clean={om_lean_clean})")
     print(f"  Tier 3 NOETIC v{no_ver:<6}    : {no_passed}/{no_total} unit+mut | {ng_passed}/{ng_total} gates (13/13 CS-v3={no_all_13_gates_ok}) | 825/825 C11 (0 fail) | 100/100 M | {no_lean_cnt} Pure 6-Kernel Lean4 (clean={no_lean_clean})")
     print(f"  Tier 3+4 ASMODENSIUS v{as_ver} : LIVE hash={as_hash} | 77/77 ctest | 164/164 test_gpu | --species101_refused={as_refusal_ok} | {as_lean_cnt} Pure 6-Kernel Lean4 (clean={as_lean_clean})")
-    print(f"  Composite OVBS-52        : {comp_ovi} ({stage}) | Total Native Lean 4.35.0 Proofs = {total_lean} (+36 local = {total_lean + 36})")
+    print(f"  Composite OVBS-52        : {comp_ovi} ({stage}) | Total Native Lean 4.35.0 Proofs = {total_lean} (+50 local = {total_lean + 50})")
 
     if failures:
         print("ALifeOps Live Verification FAILED:", file=sys.stderr)

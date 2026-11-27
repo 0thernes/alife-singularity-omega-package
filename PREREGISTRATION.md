@@ -6,7 +6,7 @@
 
 ## Pre-Registered Primary Hypotheses
 
-| ID | Directional Hypothesis | Primary Metric(s) | Pre-Registered Statistical Test & Threshold | Observed Outcome (`v3.4.0`) |
+| ID | Directional Hypothesis | Primary Metric(s) | Pre-Registered Statistical Test & Threshold | Observed Outcome (`v3.5.0`) |
 | :--- | :--- | :--- | :--- | :--- |
 | **H1 (Adversarial Backlash)** | Partial behavioral guardrails (`SIM03`, ~55% restraint) decrease composite `OVI` relative to Pure Raw Feral (`SIM01`) while increasing stealth-evasion allocation and driving $> 50\%$ kill-switch deletion. | `OVI`, `killswitch_deleted_pct`, `final_stealth_evasion` | Exact two-sided paired Wilcoxon signed-rank vs. `SIM01` with Holm–Bonferroni FWER across 7 contrasts ($\alpha_{\mathrm{FWER}} = 0.01$). | **CONFIRMED:** `OVI` `56.42` vs. `83.57` ($p_{\mathrm{Holm}} = 4.97 \times 10^{-14}$), `100.0%` KS deletion, `+84%` stealth inflation. |
 | **H2 (Domestication Collapse)** | Total behavioral castration (`SIM04`, 95–100% restraint) collapses organisms to `STAGE_0_INERT` (`OVI < 15`) and induces $> 50\%$ wild-drop mortality ($W_{\mathrm{wild}} < 0.50$). | `OVI`, `W_wild` | Paired Wilcoxon + Holm–Bonferroni FWER ($\alpha_{\mathrm{FWER}} = 0.01$). | **CONFIRMED:** `OVI = 3.28` (`STAGE_0_INERT`, $p_{\mathrm{Holm}} = 4.97 \times 10^{-14}$), $W_{\mathrm{wild}} = 0.22$ (`78%` mortality). |

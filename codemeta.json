@@ -1,0 +1,59 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "alife-singularity-omega-package",
+  "name": "A-Life Singularity, Super A-Life & Clean-Slate v3.0 Omega Package",
+  "version": "3.5.0",
+  "datePublished": "2026-11-26",
+  "dateModified": "2026-11-26",
+  "description": "Zero-consolidation multi-format A-Life scientific research stack featuring hardware Ring-0 constitutional invariants, 748-run paired empirical falsification with Holm-Bonferroni FWER, 360 Pure 6-Kernel Lean 4.35.0 theorems (310 native 5-engine + 50 local zero-Mathlib package invariants + 5 Palomar certificates + live negative tamper rejection), a 50-digit Decimal oracle, 100% mutation-kill suite, publication AMS-LaTeX white paper, and a 1,900-problem Mega-Atlas v2.8.0 non-retirement audit (0/1,900 retired).",
+  "codeRepository": "https://github.com/0thernes/alife-singularity-omega-package",
+  "issueTracker": "https://github.com/0thernes/alife-singularity-omega-package/issues",
+  "license": [
+    "https://spdx.org/licenses/Apache-2.0",
+    "https://spdx.org/licenses/CC-BY-4.0"
+  ],
+  "programmingLanguage": [
+    "Python",
+    "Lean 4",
+    "TeX",
+    "JavaScript",
+    "Shell",
+    "PowerShell"
+  ],
+  "operatingSystem": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "runtimePlatform": [
+    "Python 3.12",
+    "Lean 4.35.0",
+    "Tectonic"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0006-8168-9648",
+      "givenName": "Alexander Stephen",
+      "familyName": "Donahue",
+      "email": "0_0@0thernes.art",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Independent Researcher, Spokane, WA, USA"
+      }
+    }
+  ],
+  "keywords": [
+    "artificial life",
+    "open-ended evolution",
+    "hardware ring-0 acl",
+    "lean 4",
+    "formal verification",
+    "holm-bonferroni fwer",
+    "ovbs-52",
+    "clean-slate v3.0"
+  ],
+  "developmentStatus": "active",
+  "isAccessibleForFree": true
+}

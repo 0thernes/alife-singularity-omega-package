@@ -7,10 +7,10 @@
     "sc": "https://schema.org/"
   },
   "@type": "sc:Dataset",
-  "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package Datasets (v3.4.0)",
-  "description": "24 structured canonical CSV tables (2,822 rows), 4-format Master Specifications (JSON/YAML/XML/TXT), 748-run paired empirical simulation receipts, 327 Pure 6-Kernel Lean 4.35.0 theorem verification logs (291 native + 36 local), and a 25-target Mega-Atlas 1,900-problem non-retirement crosswalk.",
-  "version": "3.4.0",
-  "datePublished": "2026-11-25",
+  "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package Datasets (v3.5.0)",
+  "description": "24 structured canonical CSV tables (2,822 rows), 4-format Master Specifications (JSON/YAML/XML/TXT), 748-run paired empirical simulation receipts, 360 Pure 6-Kernel Lean 4.35.0 theorem verification logs (310 native + 50 local), and a 25-target Mega-Atlas 1,900-problem non-retirement crosswalk.",
+  "version": "3.5.0",
+  "datePublished": "2026-11-26",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "https://github.com/0thernes/alife-singularity-omega-package",
   "creator": {

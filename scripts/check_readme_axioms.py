@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
 """Verify that README.md's verbatim Lean 4.35.0 axiom block matches results/lean_package_axioms.txt 1:1."""
 from __future__ import annotations
 
@@ -11,14 +12,15 @@ README = ROOT / "README.md"
 AXIOMS = ROOT / "results" / "lean_package_axioms.txt"
 
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}
+EXPECTED_AXIOM_COUNT = 55  # 50 core theorems + 5 Palomar certificates
 
 
 def verify_readme_axioms() -> int:
     if not AXIOMS.exists():
         raise FileNotFoundError(f"Missing {AXIOMS}")
     expected_lines = [ln.strip() for ln in AXIOMS.read_text(encoding="utf-8").splitlines() if ln.strip()]
-    if len(expected_lines) != 40:
-        raise AssertionError(f"Expected 40 audited axiom lines, found {len(expected_lines)}")
+    if len(expected_lines) != EXPECTED_AXIOM_COUNT:
+        raise AssertionError(f"Expected {EXPECTED_AXIOM_COUNT} audited axiom lines, found {len(expected_lines)}")
 
     for ln in expected_lines:
         m = re.search(r"depends on axioms:\s*\[([^\]]*)\]", ln)
@@ -39,7 +41,7 @@ def verify_readme_axioms() -> int:
             f"README axiom block diverged from results/lean_package_axioms.txt "
             f"(readme={len(readme_lines)} lines vs file={len(expected_lines)} lines)"
         )
-    print("  [PASS] check_readme_axioms: 40/40 Lean 4.35.0 axiom lines match verbatim (axioms <= [propext, Quot.sound])")
+    print(f"  [PASS] check_readme_axioms: {EXPECTED_AXIOM_COUNT}/{EXPECTED_AXIOM_COUNT} Lean 4.35.0 axiom lines match verbatim (axioms <= [propext, Quot.sound])")
     return len(expected_lines)
 
 

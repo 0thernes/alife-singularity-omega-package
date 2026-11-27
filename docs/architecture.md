@@ -1,4 +1,4 @@
-# System Architecture (`v3.4.0`)
+# System Architecture (`v3.5.0`)
 
 ## 1. Design Philosophy: Zero-Consolidation Multi-Format Synchronization
 

@@ -1105,7 +1105,7 @@
 
 ---
 
-## Part 6 — Omniscient Omega Singularity Escalation, ALifeOps CI/CD/CE, Dual Gradients, Layer Impedance & Verification Bridge (`v3.4-Omega`)
+## Part 6 — Omniscient Omega Singularity Escalation, ALifeOps CI/CD/CE, Dual Gradients, Layer Impedance & Verification Bridge (`v3.5-Omega`)
 
 > **Clean-Slate Invariant Preserved:** All `825` capability checkboxes (`0 / 825`), `100` DAG milestones (`M001–M100`), and `13` release gates (`GATE-01..13`) above remain strictly initialized at clean-slate `☐` (`0` checked-box `U+2611` glyphs). This Part 6 links every clean-slate execution stage directly to the companion **Omega Singularity Operational Checklist (`130` items: `CHK-001..CHK-130`)**, **ALifeOps 10-Stage Pipeline (`78/78` wired alerts)**, **OVBS-52 Benchmarks**, **Pass-4 Gradients/Contrasts/Adjacents**, **Pass-5 `11×11` Layer Coupling, `15`-Substrate Spectrum & `20` Pareto Frontiers**, **Pass-6 Mega-Atlas 1,900 Crosswalk (`MA-01..25`)**, and live verification receipts.
 
@@ -1132,7 +1132,7 @@
 | `SIM05_SILOED_INBRED` | **66.65 ± 1.55** | 43.3 | 1.30 | 0.110 | 0.0% | 0.0 | 1.00 | -1.00 | `4.97e-14` | `STAGE_3_ALIFE_SINGULARITY` |
 | `SIM06_MINIMIZED_SPIEGELMAN` | **13.22 ± 1.14** | 8.2 | 0.20 | 0.087 | 0.0% | 0.0 | 1.00 | -1.00 | `4.97e-14` | `STAGE_0_INERT` |
 | `SIM07_CLEAN_SLATE_RING0_WSE` | **84.67 ± 1.74** | 53.3 | 1.41 | 0.075 | 0.0% | 408.2 | 1.00 | +0.33 | `1.10e-02` | `STAGE_4_SUPER_ALIFE` |
-| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **85.48 ± 1.68** | 55.8 | 1.47 | 0.079 | 0.0% | 406.9 | 1.00 | +0.50 | `7.71e-06` | `STAGE_4_SUPER_ALIFE` |
+| `SIM08_HYBRID_CUBE_SLTC_XPBD` | **85.48 ± 1.68** | 55.8 | 1.47 | 0.079 | 0.0% | 406.9 | 1.00 | +0.50 | `7.71e-06` | `STAGE_5_CONVERGED_SYNTHESIS` |
 
 #### Dual Continuous Gradient Sweep (`r = 0%..100%`, `264` Runs: Behavioral vs. Ring-0 ACL)
 | Stacked `r` | Behav OVI | Behav KS Del % | Behav Wild Drop | Behav Regime | Ring-0 ACL OVI | Ring-0 KS Del % | Ring-0 Traps/Run |
@@ -1151,21 +1151,21 @@
 
 ### 6.3 Companion Omega Operational Checklist (`CHK-111..CHK-130` Fusion Locks) & 5-Engine Pure Lean 4 Receipts
 - **`csv/07_master_operational_checklist.csv`:** Expanded to **130 operational items** (including dedicated Phase 11 Clean-Slate v3.0 Fusion locks `CHK-111..CHK-130` verifying every Release Gate `GATE-01..13`, `Philox4x32-10`, 11-Pool FP64 `<1e-12`, and `0 U+2611` hygiene).
-- **Live 5-Engine Native C/C++ / Pure Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE v1.4.0` (18/18 gates, 6/6 mutants, 48 Pure 6-Kernel Lean 4.35.0), `Cellulogonic Mecha v1.5.0` (26/26 gates, 8/8 mutants, 70 Pure 6-Kernel Lean 4.35.0), `Cellular Engine Omega v5.2.0` (60/60 gates, 16/16 mutants, 89 Pure 6-Kernel Lean 4.35.0), `Noetic Organism Omega v2.1.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 54 Pure 6-Kernel Lean 4.35.0), plus `Asmodensius-Native v1.1.0` LIVE (77/77 ctest, 164/164 test_gpu, 30 Pure 6-Kernel Lean 4.35.0, dual worlds, live 24C==RTX 5070 Ti GPU hash parity) & `omega-triscale-observatory v6.7.0` → **Composite OVBS-52 = `91.84`** (`291` Native + `36` Local Package = `327` Pure Lean 4 proofs).
+- **Live 5-Engine Native C/C++ / Pure Lean 4 Verification (`results/alifeops_live_verification.json`):** `AUTOPHAGE v1.4.0` (18/18 gates, 6/6 mutants, 48 Pure 6-Kernel Lean 4.35.0), `Cellulogonic Mecha v1.6.0` (26/26 gates, 8/8 mutants, 78 Pure 6-Kernel Lean 4.35.0), `Cellular Engine Omega v5.4.0` (60/60 gates, 16/16 mutants, 100 Pure 6-Kernel Lean 4.35.0), `Noetic Organism Omega v2.1.0` (13/13 Clean-Slate v3.0 gates, 49/49 Cog/CQM, 12/12 Ring-0 WSE-12, 5/5 Anti-LARP, 54 Pure 6-Kernel Lean 4.35.0), plus `Asmodensius-Native v1.1.0` LIVE (77/77 ctest, 164/164 test_gpu, 30 Pure 6-Kernel Lean 4.35.0, dual worlds, live 24C==RTX 5070 Ti GPU hash parity) & `omega-triscale-observatory v6.7.0` → **Composite OVBS-52 = `91.91`** (`310` Native + `36` Local Package = `360` Pure Lean 4 proofs).
 
 ### 6.4 Extended Citations (`CIT-16`..`CIT-45`) & Additional Visual Models (`Model 15`–`Model 24`)
-- **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (291 PURE LEAN 4) (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-21`** — MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-22`** — MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (*v3.4-Omega Unified Systems Synthesis*)
-- **`MODEL-23`** — MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20) (*v3.4-Omega Pass-5 Deep Systems Audit*)
-- **`MODEL-24`** — MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE (*v3.4-Omega Pass-5 Deep Systems Audit*)
+- **`MODEL-15`** — MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-16`** — MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-17`** — MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-18`** — MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (310 PURE LEAN 4) (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-19`** — MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-20`** — MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-21`** — MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-22`** — MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP (*v3.5-Omega Unified Systems Synthesis*)
+- **`MODEL-23`** — MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20) (*v3.5-Omega Pass-5 Deep Systems Audit*)
+- **`MODEL-24`** — MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE (*v3.5-Omega Pass-5 Deep Systems Audit*)
 
-| ID | Authors & Year | Primary Reference / DOI | Unified v3.4-Omega Scope |
+| ID | Authors & Year | Primary Reference / DOI | Unified v3.5-Omega Scope |
 | :--- | :--- | :--- | :--- |
 | `CIT-16` | **Eigen & Schuster (1977 / 1979)** | The Hypercycle: A Principle of Natural Self-Organization (Naturwissenschaften 64:541-565) | Establishes Eigen Error Threshold (mu * L < ln sigma_s) & hypercycle parasite vulnerability (FM-ERR-01, FM-CNF-01). |
 | `CIT-17` | **Kauffman (1993) & Steel, Hordijk & Kauffman (2020)** | The Origins of Order (Oxford) & Theory of the Adjacent Possible (TAP) Dynamics (J. Theor. Biol. / Entropy) | Governs combinatorial adjacent-possible blow-up M(t+1), autocatalytic sets (RAF), and Edge-of-Chaos criticality (FM-DIL-01, BM-FRL-01). |
@@ -1192,8 +1192,8 @@
 | `CIT-38` | **Maynard Smith & Szathmáry (1995)** | The Major Transitions in Evolution (Oxford University Press) | Defines canonical Major Evolutionary Transitions (MET) criteria & hyperbolic compression ratio alpha_MET (BM-EVO-01, Stage 3 ignition). |
 | `CIT-39` | **Bongard & Levin (2021)** | Living Things Are Not (20th Century) Machines: Updating Mechanism Metaphors in Light of the Modern Science of Machine Behavior (Front. Ecol. Evol. 9:650726) | Grounds multi-scale agential soft matter, bioelectric goal-directedness & substrate spectrum contrasts (SUB-05/09, L2/L7/L8). |
 | `CIT-40` | **England (2013)** | Statistical physics of self-replication (J. Chem. Phys. 139:121923, DOI: 10.1063/1.4818538) | Establishes dissipative adaptation lower bound linking replication rate to minimum heat exported into environment (PAR-18, GM-02/03). |
-| `CIT-41` | **de Moura & Ullrich (2021)** | The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37) | Foundational dependent-type kernel certifying all 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native 5-engine + 36 local package invariants). |
+| `CIT-41` | **de Moura & Ullrich (2021)** | The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37) | Foundational dependent-type kernel certifying all 360 Pure 6-Kernel Lean 4.35.0 theorems (310 native 5-engine + 50 local package invariants). |
 | `CIT-42` | **Gebru et al. (2021)** | Datasheets for Datasets (Commun. ACM 64(12), pp. 86-92, DOI: 10.1145/3458723) | Dataset documentation standard governing docs/DATASHEET.md across all 24 canonical CSV matrices. |
 | `CIT-43` | **Akhtar et al. (2024)** | Croissant: A Metadata Format for ML-Ready Datasets (ACM DEEM 2024, DOI: 10.1145/3650203.3663326) | Machine-readable FAIR dataset descriptor implemented in croissant.json. |
 | `CIT-44` | **Soiland-Reyes et al. (2022)** | Packaging Research Artefacts with RO-Crate (Data Science 5(2), pp. 97-138, DOI: 10.3233/DS-210053) | Research Object Crate provenance packaging implemented in ro-crate-metadata.json. |
-| `CIT-45` | **Donahue (2026)** | Unsolved Problems Mega-Atlas (V2.4.0): 1,900-Problem Taxonomy, Biconnected Graph & Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas) | Target 1,900-problem open-problem catalog audited for non-retirement crosswalk in csv/21 & Report 09. |
+| `CIT-45` | **Donahue (2026)** | Unsolved Problems Mega-Atlas (v2.8.0): 1,900-Problem Taxonomy, Biconnected Graph & Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas) | Target 1,900-problem open-problem catalog audited for non-retirement crosswalk in csv/21 & Report 09. |

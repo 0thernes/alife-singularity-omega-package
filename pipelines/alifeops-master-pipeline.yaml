@@ -17,7 +17,7 @@ apiVersion: alifeops.omega/v3.3
 kind: ContinuousEvolutionPipeline
 metadata:
   name: alife-singularity-omega-v3-3-unified-pipeline
-  version: "3.4.0-omega"
+  version: "3.5.0-omega"
   classification: "DUAL-TRACK-UNIFIED-CLEANSLATE-SINGULARITY"
   cross_corpus_source: "Clean-Slate v3.0 (I:\\A-Life God Plan) x Zeta-Omega v3.3 (Z:\\ANTIGRAVITY)"
   description: >

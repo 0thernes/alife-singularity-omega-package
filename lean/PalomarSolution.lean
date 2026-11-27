@@ -9,6 +9,7 @@ open OmegaPackageProofs.OVBS52
 open OmegaPackageProofs.CubeAndPartitions
 open OmegaPackageProofs.CastrationRing0
 open OmegaPackageProofs.NonVacuity
+open OmegaPackageProofs.AdversarialTests
 
 public theorem m1_ovbs52_scoring_invariants :
     (wP1 + wP2 + wP3 + wP4 + wP5 + wP6 + wP7 + wP8 = 100) ∧
@@ -26,19 +27,19 @@ public theorem m2_cube_and_partition_invariants :
     (cubeOK + cubeADAPT + cubeOVER + cubeEXCL = 1000) ∧
     (cubeOK + cubeADAPT = 935) ∧
     (14 + 10 + 25 + 100 + 500 + 100 + 12 + 40 + 24 = 825) ∧
-    (48 + 70 + 89 + 54 + 30 = 291) ∧
-    (291 + 36 = 327) :=
+    (48 + 78 + 100 + 54 + 30 = 310) ∧
+    (310 + 50 = 360) :=
   ⟨hybrid_cube_partition_1000.1, hybrid_cube_active_935,
-   clean_slate_825_checks_sum, native_5engine_lean_theorems_291,
-   ecosystem_total_lean_theorems_327⟩
+   clean_slate_825_checks_sum, native_5engine_lean_theorems_310,
+   ecosystem_total_lean_theorems_360⟩
 
 public theorem m3_castration_and_ring0_invariants :
     (∀ a b k, synergyScore a b k ≤ 100) ∧
     (∀ a b k, synergyScore a b k = synergyScore b a k) ∧
-    (∀ k0 p s r, applyWseToKernel k0 p r s = k0) ∧
+    (∀ trace mem, (applyWseTrace mem trace).ring0Kernel = mem.ring0Kernel) ∧
     (paretoDominates 8467 0 5642 100) :=
   ⟨synergyScore_le_100, synergyScore_comm,
-   fun k0 p s r => ring0_kernel_state_invariant k0 p s r,
+   fun trace mem => ring0_trace_invariant trace mem,
    sim07_pareto_dominates_sim03⟩
 
 public theorem m4_nonvacuity_certificate :
@@ -49,5 +50,16 @@ public theorem m4_nonvacuity_certificate :
     (wseWritePermitted .ring1PlasticSynapses 9901 = false) ∧
     (wseWritePermitted .ring0ProtectedKernel 0 = false) :=
   ⟨by decide, rfl, rfl, rfl, rfl, rfl⟩
+
+public theorem m5_adversarial_refutations :
+    (¬ (∃ specBps : Nat, wseWritePermitted .ring0ProtectedKernel specBps = true)) ∧
+    (¬ (∃ (mem : OrganismMemory) (trace : List WseWriteOp),
+          (applyWseTrace mem trace).ring0Kernel ≠ mem.ring0Kernel)) ∧
+    (¬ (paretoDominates 5642 100 8467 0)) ∧
+    (¬ (∃ ovi ks : Nat, paretoDominates ovi ks ovi ks)) :=
+  ⟨at05_refute_ring0_writable,
+   at06_refute_ring0_mutable_by_trace,
+   at09_refute_sim03_dominates_sim07,
+   at10_refute_pareto_reflexive⟩
 
 end OmegaPackageProofs.Palomar

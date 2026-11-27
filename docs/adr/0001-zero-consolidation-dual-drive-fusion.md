@@ -1,6 +1,6 @@
 # ADR 0001: Zero-Consolidation Preservation of All 17 Clean-Slate v3.0 Files & Dual-Drive Mirroring
 
-- **Status:** Accepted (`v3.0-Omega` through `v3.4.0`)
+- **Status:** Accepted (`v3.0-Omega` through `v3.5.0`)
 - **Date:** 2026-10-28 (reaffirmed 2026-11-25)
 
 ## Context

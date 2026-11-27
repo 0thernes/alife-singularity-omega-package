@@ -1,0 +1,43 @@
+version = 1
+
+[[annotations]]
+path = [
+  "lean/**",
+  "scripts/**",
+  "reference/**",
+  "tests/**",
+  "examples/**",
+  "html/**",
+  "blueprint/**",
+  ".github/**",
+  "justfile",
+  "pyproject.toml",
+  "requirements.txt",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Alexander Stephen Donahue"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  "*.md",
+  "paper/**",
+  "dist/**",
+  "docs/**",
+  "csv/**",
+  "excel/**",
+  "pdf/**",
+  "reports/**",
+  "results/**",
+  "specs/**",
+  "svg/**",
+  "data/**",
+  "*.json",
+  "*.cff",
+  "*.txt",
+  "CHECKSUMS.sha256*",
+  "VERSION",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Alexander Stephen Donahue"
+SPDX-License-Identifier = "CC-BY-4.0"

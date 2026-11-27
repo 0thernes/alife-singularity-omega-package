@@ -18,8 +18,8 @@ The canonical working repository resides on the dedicated ReFS Dev Drive (`Z:\[V
 
 Create a self-contained single-file Git archive (`git bundle`) for cold offline backup:
 ```bash
-git bundle create alife-singularity-omega-v3.4.0.bundle --all
-git bundle verify alife-singularity-omega-v3.4.0.bundle
+git bundle create alife-singularity-omega-v3.5.0.bundle --all
+git bundle verify alife-singularity-omega-v3.5.0.bundle
 ```
 
 ## 3. Offsite Remote Mirror & Archival Preservation

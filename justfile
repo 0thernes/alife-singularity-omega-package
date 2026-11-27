@@ -1,4 +1,4 @@
-# Task runner for alife-singularity-omega-package (v3.4.0) — Build Standard v1.2.0 (A31 / B01)
+# Task runner for alife-singularity-omega-package (v3.5.0) — Build Standard v1.2.0 (A31 / B01)
 # No recipe installs git hooks or gates commits/pushes (Hard Rule R1/R4).
 
 set shell := ["bash", "-euo", "pipefail", "-c"]
@@ -63,7 +63,7 @@ index:
 
 # One-command clean-clone reproduction of every headline number (Build Standard B01)
 reproduce: lean paper build test mutate bench check-docs forensic audit
-    @echo "reproduce: ALL 22 forensic gates, 36+4 Lean 4.35.0 theorems, white paper, pytest/Hypothesis, mutation (6/6) & Build Standard audit PASSED."
+    @echo "reproduce: ALL 24 forensic gates, 36+4 Lean 4.35.0 theorems, white paper, pytest/Hypothesis, mutation (6/6) & Build Standard audit PASSED."
 
 # Clean transient build intermediates
 clean:

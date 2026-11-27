@@ -59,3 +59,11 @@ Independent replications (both successful and failed) are logged verbatim below.
 | Date | Replicator | Environment | Scope Replicated | Result | Notes / Commit |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-25 | Alexander Stephen Donahue (Author baseline) | Windows 11 x64, 24C P+E, RTX 5070 Ti, Python 3.12 (`uv 0.12.19`), Lean `v4.35.0`, Tectonic `0.17.0`, Node `v25.8.2` | Full clean rebuild: Lean 4.35.0 (`40/40` axioms + `leanchecker-paranoid`), `748`-run paired sim, `pytest` + Hypothesis + `6/6` mutations, AMS-LaTeX PDF + clean-room `arxiv_submission.tar.gz`, `22/22` forensic gates, `100.0%` Build Standard v1.2.0, `Z: <-> I:` SHA-256 mirror | **PASS** (self-replication baseline; external independent replication invited) | Release `v3.4.0` |
+
+### v3.5.0 Additions (Live Negative Lean Rejection, Crossref & RFC 3161 Verification)
+```bash
+python scripts/test_lean_negative.py
+python scripts/check_citations.py
+openssl ts -reply -in data/timestamps/CHECKSUMS.sha256.tsr -text | head -n 25
+uv run --no-project --with ruff ruff check scripts reference tests examples
+```

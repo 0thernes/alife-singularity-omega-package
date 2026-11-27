@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   test-matrix:
-    name: Python, Oracle, Mutation & Build Standard (${{ matrix.os }})
+    name: Python, Oracle, Mutation, Lint & Build Standard (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     continue-on-error: true
     strategy:
@@ -33,14 +33,16 @@ jobs:
           --with pypdf pytest tests/ -v
       - name: Run 6/6 Python semantic mutation audit
         run: uv run --no-project python scripts/run_mutation_audit.py
-      - name: Verify verbatim README axiom block
-        run: uv run --no-project python scripts/check_readme_axioms.py
+      - name: Verify verbatim 55-line README axiom block & dual cryptographic timestamps
+        run: |
+          uv run --no-project python scripts/check_readme_axioms.py
+          uv run --no-project python scripts/stamp_timestamps.py --verify
       - name: Run example quickstart demo
         run: uv run --no-project python examples/quickstart_demo.py
-      - name: Run report-only static linters (ruff & mypy)
+      - name: Run strict static linters (ruff 0 errors & mypy strict)
         run: |
-          uv run --no-project --with ruff ruff check scripts reference tests examples || true
-          uv run --no-project --with mypy mypy reference --ignore-missing-imports || true
+          uv run --no-project --with ruff ruff check scripts reference tests examples
+          uv run --no-project --with mypy mypy reference --strict --ignore-missing-imports
       - name: Score repository against Build Standard v1.2.0 (Unix)
         if: runner.os != 'Windows'
         run: bash scripts/audit-repo.sh . --json audit.json --markdown "$GITHUB_STEP_SUMMARY"
@@ -50,7 +52,7 @@ jobs:
         run: pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/Audit-Repo.ps1 -Path . -Json audit.json -Markdown $env:GITHUB_STEP_SUMMARY
 
   lean-formal-proofs:
-    name: Pure Lean 4.35.0 — 36+4 Theorems & 6-Kernel Palomar Comparator
+    name: Pure Lean 4.35.0 — 50+5 Theorems, 6-Kernel Palomar Comparator & Live Negative Tamper
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -61,7 +63,7 @@ jobs:
         run: |
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Build OmegaPackageProofs, PalomarChallenge & audit all 40 axioms
+      - name: Build OmegaPackageProofs, PalomarChallenge & audit all 55 axioms
         working-directory: lean
         run: |
           set -euo pipefail
@@ -79,6 +81,8 @@ jobs:
           lake env leanchecker-paranoid --fresh PalomarSolution
           lake check --paranoid
           lake comparator --config comparator.json --paranoid
+      - name: Run live negative kernel & Palomar comparator tamper rejection test
+        run: python3 scripts/test_lean_negative.py --with-comparator
 
   paper-and-security:
     name: AMS-LaTeX White Paper, Clean arXiv Tarball, Gitleaks & Provenance
@@ -93,13 +97,13 @@ jobs:
           python-version: "3.12"
       - name: Install Tectonic
         uses: wtfjoke/setup-tectonic@v3
-      - name: Build vector figures, AMS-LaTeX PDF & clean-room arXiv tarball
+      - name: Build vector figures, auto-generated tables, AMS-LaTeX PDF & clean-room arXiv tarball
         run: >-
           uv run --no-project --with matplotlib --with numpy --with pypdf
           python scripts/build_paper_and_figures.py
       - name: Generate CI SHA256SUMS
         run: |
-          sha256sum dist/Donahue_2026_alife_singularity_omega.pdf dist/arxiv_submission.tar.gz results/lean_package_axioms.txt results/lean4-multi-kernel.txt results/alifeops_live_verification.json > SHA256SUMS
+          sha256sum dist/Donahue_2026_alife_singularity_omega.pdf dist/arxiv_submission.tar.gz results/lean_package_axioms.txt results/lean4-multi-kernel.txt results/alifeops_live_verification.json results/citation_verification.json data/timestamps/CHECKSUMS.sha256.tsr > SHA256SUMS
           cat SHA256SUMS
       - name: Secret scan (gitleaks, report-only)
         uses: gitleaks/gitleaks-action@v2

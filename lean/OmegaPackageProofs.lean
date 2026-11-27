@@ -5,3 +5,4 @@ public import OmegaPackageProofs.OVBS52Scoring
 public import OmegaPackageProofs.EscalationAndCube
 public import OmegaPackageProofs.CastrationAndRing0
 public import OmegaPackageProofs.NonVacuity
+public import OmegaPackageProofs.AdversarialTests

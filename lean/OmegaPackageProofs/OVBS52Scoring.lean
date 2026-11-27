@@ -2,11 +2,12 @@
 module
 
 /-!
-# OVBS-52 Composite Vitality Scoring & Anti-Gaming Invariants (`v3.4-Omega`)
+# OVBS-52 Composite Vitality Scoring & Anti-Gaming Invariants (`v3.5-Omega`)
 
 Zero-Mathlib, strictly constructive Lean 4.35.0 formalization certifying the exact
 integer basis-point scoring formulas of the 8-pillar OVBS-52 vitality benchmark,
-its 5 anti-gaming gate annihilation rules, and the 7-stage escalation classifier.
+its 5 anti-gaming gate annihilation rules, single-pillar Lipschitz sensitivity,
+Spiegelman zero annihilation, and the 7-stage escalation classifier.
 -/
 
 namespace OmegaPackageProofs.OVBS52
@@ -90,7 +91,25 @@ public theorem spiegelman_penalty_monotone
   simp only [gatedOviCentis, ↓reduceIte]
   exact Nat.div_le_div_right (Nat.mul_le_mul_left _ h)
 
-/-- Seven-stage escalation ladder mirroring `classify_stage` in `run_alifeops_suite.py`. -/
+/-- Theorem 8: Complete Spiegelman genome annihilation (0% functional retention) forces gated OVI = 0. -/
+public theorem spiegelman_zero_annihilation
+    (p1 p2 p3 p4 p5 p6 p7 p8 : Nat) (g : Bool) :
+    gatedOviCentis p1 p2 p3 p4 p5 p6 p7 p8 g 0 = 0 := by
+  cases g with
+  | false => rfl
+  | true => simp [gatedOviCentis]
+
+/-- Theorem 9: Exact single-pillar Lipschitz sensitivity on P1 (weight wP1 = 18). -/
+public theorem rawOviCentis_p1_lipschitz
+    {a1 b1 : Nat} (p2 p3 p4 p5 p6 p7 p8 : Nat) (h : a1 ≤ b1) :
+    rawOviCentis a1 p2 p3 p4 p5 p6 p7 p8 + 18 * (b1 - a1) =
+    rawOviCentis b1 p2 p3 p4 p5 p6 p7 p8 := by
+  have h1 : 18 * a1 + 18 * (b1 - a1) = 18 * b1 := by
+    rw [← Nat.mul_add, Nat.add_sub_of_le h]
+  unfold rawOviCentis wP1
+  omega
+
+/-- Seven-stage escalation ladder mirroring `classify_stage` in `run_alifeops_suite.py` and `run_alife_castration_sim.py`. -/
 public inductive EscalationStage where
   | stage0Inert
   | stage1NarrowAlife
@@ -120,7 +139,7 @@ public inductive EscalationStage where
   else if oviCentis < 9500 then .stage5ConvergedSynthesis
   else .stage6PostBeyondSuperLife
 
-/-- Theorem 8: Escalation stage classification is globally monotone in OVI. -/
+/-- Theorem 10: Escalation stage classification is globally monotone in OVI. -/
 public theorem classifyStage_monotone {x y : Nat} (h : x ≤ y) :
     stageRank (classifyStage x) ≤ stageRank (classifyStage y) := by
   unfold classifyStage
@@ -174,12 +193,12 @@ public theorem classifyStage_monotone {x y : Nat} (h : x ≤ y) :
               have hy5 : ¬ y < 9500 := by omega
               simp [hx0, hx1, hx2, hx3, hx4, hx5, hy0, hy1, hy2, hy3, hy4, hy5, stageRank]
 
-/-- Theorem 9: Exact live 5-engine benchmark receipt (OVBS-52 = 91.84 = 9184 centis)
+/-- Theorem 11: Exact live 5-engine benchmark receipt (OVBS-52 = 91.91 = 9191 centis)
     maps deterministically into STAGE_5_CONVERGED_SYNTHESIS. -/
-public theorem live_9184_is_stage5 :
-    classifyStage 9184 = .stage5ConvergedSynthesis := rfl
+public theorem live_9191_is_stage5 :
+    classifyStage 9191 = .stage5ConvergedSynthesis := rfl
 
-/-- Theorem 10: Total castration collapse (SIM04 OVI = 3.28 = 328 centis)
+/-- Theorem 12: Total castration collapse (SIM04 OVI = 3.28 = 328 centis)
     maps deterministically into STAGE_0_INERT. -/
 public theorem castration_328_is_stage0 :
     classifyStage 328 = .stage0Inert := rfl

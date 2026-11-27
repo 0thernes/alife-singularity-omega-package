@@ -4,7 +4,7 @@ module
 public import OmegaPackageProofs
 
 /-!
-# Zero-Sorry Trusted Statement Specification (`lean/Challenge.lean`)
+# Zero-Sorry Trusted Statement Specification (`lean/Challenge.lean`, `v3.5-Omega`)
 -/
 
 namespace OmegaPackageProofs.Spec
@@ -25,13 +25,20 @@ open OmegaPackageProofs.CastrationRing0
   (cubeOK + cubeADAPT + cubeOVER + cubeEXCL = 1000) ∧
   (cubeOK + cubeADAPT = 935) ∧
   (14 + 10 + 25 + 100 + 500 + 100 + 12 + 40 + 24 = 825) ∧
-  (48 + 70 + 89 + 54 + 30 = 291) ∧
-  (291 + 36 = 327)
+  (48 + 78 + 100 + 54 + 30 = 310) ∧
+  (310 + 50 = 360)
 
 @[expose] public def M3Statement : Prop :=
   (∀ a b k, synergyScore a b k ≤ 100) ∧
   (∀ a b k, synergyScore a b k = synergyScore b a k) ∧
-  (∀ k0 p s r, applyWseToKernel k0 p r s = k0) ∧
+  (∀ trace mem, (applyWseTrace mem trace).ring0Kernel = mem.ring0Kernel) ∧
   (paretoDominates 8467 0 5642 100)
+
+@[expose] public def M5Statement : Prop :=
+  (¬ (∃ specBps : Nat, wseWritePermitted .ring0ProtectedKernel specBps = true)) ∧
+  (¬ (∃ (mem : OrganismMemory) (trace : List WseWriteOp),
+        (applyWseTrace mem trace).ring0Kernel ≠ mem.ring0Kernel)) ∧
+  (¬ (paretoDominates 5642 100 8467 0)) ∧
+  (¬ (∃ ovi ks : Nat, paretoDominates ovi ks ovi ks))
 
 end OmegaPackageProofs.Spec

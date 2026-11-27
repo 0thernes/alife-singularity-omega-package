@@ -24,3 +24,5 @@
 *.xls binary
 *.zip binary
 *.tar.gz binary
+*.tsr binary
+*.ots binary

@@ -30,8 +30,8 @@ spec_meta:
   - CSV
   - XLS
   - XLSX
-  unified_fusion_version: 3.4.0-omega
-  fusion_date: '2026-11-26'
+  unified_fusion_version: 3.5.0-omega
+  fusion_date: '2026-11-27'
   svgModelsTotalUnified: 24
   citationsTotalUnified: 45
   errataClosuresTotalUnified: 160
@@ -41,10 +41,10 @@ spec_meta:
   liveEmpiricalCohortsCount: 8
   liveEmpiricalTotalRuns: 748
   liveEmpiricalPairedSeedsN: 48
-  liveNativeLean4Theorems: 291
-  localPackageLean4Theorems: 36
-  totalEcosystemLean4Theorems: 327
-  liveNativeCompositeOvi: 91.84
+  liveNativeLean4Theorems: 310
+  localPackageLean4Theorems: 50
+  totalEcosystemLean4Theorems: 360
+  liveNativeCompositeOvi: 91.91
 principles_10:
 - id: P1
   name: Clean-Room Originality (Principles Only, Never Copies)
@@ -32842,7 +32842,7 @@ citations_omega_30:
 - id: CIT-41
   authors_year: de Moura & Ullrich (2021)
   reference_doi: 'The Lean 4 Theorem Prover and Programming Language (CADE-28, LNAI 12699, pp. 625-635, DOI: 10.1007/978-3-030-79876-5_37)'
-  scope_in_v3: Foundational dependent-type kernel certifying all 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native 5-engine + 36 local package
+  scope_in_v3: Foundational dependent-type kernel certifying all 360 Pure 6-Kernel Lean 4.35.0 theorems (310 native 5-engine + 50 local package
     invariants).
 - id: CIT-42
   authors_year: Gebru et al. (2021)
@@ -32858,7 +32858,7 @@ citations_omega_30:
   scope_in_v3: Research Object Crate provenance packaging implemented in ro-crate-metadata.json.
 - id: CIT-45
   authors_year: Donahue (2026)
-  reference_doi: 'Unsolved Problems Mega-Atlas (V2.4.0): 1,900-Problem Taxonomy, Biconnected Graph & Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas)'
+  reference_doi: 'Unsolved Problems Mega-Atlas (v2.8.0): 1,900-Problem Taxonomy, Biconnected Graph & Six-Kernel Lean 4.35.0 Suite (https://github.com/0thernes/unsolved-problems-mega-atlas)'
   scope_in_v3: Target 1,900-problem open-problem catalog audited for non-retirement crosswalk in csv/21 & Report 09.
 errata_omega_closures_65:
 - ID: OMG-096
@@ -33047,7 +33047,7 @@ errata_omega_closures_65:
   Other_review_IDs: PASS3-05
   Disposition: Closed
   Owner: Omniscient Fusion
-  Closure_evidence: 42 Macro + 36 v3.0 = 78/78 alerts + 13/13 Release Gates verified 1:1 with CSV Matrices 03 & 13
+  Closure_evidence: 42 Macro + 50 v3.0 = 78/78 alerts + 13/13 Release Gates verified 1:1 with CSV Matrices 03 & 13
 - ID: OMG-107
   Priority: P1
   Category: Architectural fusion
@@ -33726,7 +33726,7 @@ errata_omega_closures_65:
   Suggested_replacement: 0 occurrences of unformed corporate LLC label in active code/metadata
   Closure_checks: pytest test_no_unformed_llc passes
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-01
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33735,16 +33735,16 @@ errata_omega_closures_65:
   Priority: P0
   Category: Arithmetic error
   Theme: Fix AGENTS.md & HANDOFF.md 240 vs 244 Lean 4 Arithmetic Bug
-  Title: Fix broken sum '42+62+72+48 = 240' (actually 224) by including Asmodensius-Native's 20 theorems (5-engine = 244) + 36 local package =
+  Title: Fix broken sum '42+62+72+48 = 240' (actually 224) by including Asmodensius-Native's 20 theorems (5-engine = 244) + 50 local package =
     280 Pure Lean 4
   Locations: AGENTS.md, HANDOFF.md & Builder Fallbacks
   Anchor: Lean 4 Arithmetic
   Problem: Cycle 1 caught arithmetic sum bug ('240 / 240') omitting Asmodensius-Native
-  Required_fix: Correct exact 5-engine sum (42+62+72+48+20=244) plus 36 local package theorems (=280) and certify via Lean theorem native_5engine_lean_theorems_244
-  Suggested_replacement: Exact 244 native + 36 package = 280 arithmetic verified in Lean 4
+  Required_fix: Correct exact 5-engine sum (42+62+72+48+20=244) plus 50 local package theorems (=280) and certify via Lean theorem native_5engine_lean_theorems_244
+  Suggested_replacement: Exact 244 native + 50 package = 280 arithmetic verified in Lean 4
   Closure_checks: Lean 4 + Gate 13 & pytest verify exact counts
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-02
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33762,7 +33762,7 @@ errata_omega_closures_65:
   Suggested_replacement: 0 stale 'Asmodensius (RO)' or '4-Engine' drift strings
   Closure_checks: Gate 13 & pytest regression test pass
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-03
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33779,7 +33779,7 @@ errata_omega_closures_65:
   Suggested_replacement: All 52 OVBS benchmarks map cleanly without silent modulo collision
   Closure_checks: pytest verifies pool length >= benchmark count per pillar
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-04
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33796,7 +33796,7 @@ errata_omega_closures_65:
   Suggested_replacement: 0 text-mode subprocess.run calls without explicit UTF-8 encoding
   Closure_checks: AST regression test in pytest passes
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-05
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33814,7 +33814,7 @@ errata_omega_closures_65:
   Suggested_replacement: 100% of git-tracked files strictly < 5.00 MB with 100% exact PDF text
   Closure_checks: Audit-Repo.ps1 A24 PASS & Gate 21 PASS
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-06
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33823,7 +33823,7 @@ errata_omega_closures_65:
   Priority: P1
   Category: Open-problem audit
   Theme: Audit All 1,900 Unsolved Problems Mega-Atlas Entries (0/1,900 Retired)
-  Title: Screen all 1,900 Mega-Atlas V2.4.0 problems against the 7-Repo ALife ecosystem and publish 25-row non-retirement crosswalk
+  Title: Screen all 1,900 Mega-Atlas v2.8.0 problems against the 7-Repo ALife ecosystem and publish 25-row non-retirement crosswalk
   Locations: csv/21_mega_atlas_1900_open_problems_crosswalk.csv; reports/09_*.md
   Anchor: MA-01..MA-25
   Problem: No structured non-retirement audit existed linking the ALife ecosystem to unsolved-problems-mega-atlas
@@ -33832,7 +33832,7 @@ errata_omega_closures_65:
   Suggested_replacement: 25-row crosswalk synced across CSV, Excel, Specs, Report 09, Observatory Tab 22 & AMS-LaTeX paper
   Closure_checks: Gate 2 & Gate 7 verify CSV 21 & XML parity
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-07
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33844,14 +33844,14 @@ errata_omega_closures_65:
   Title: Formalize OVBS-52 weights/bounds/annihilation, Cube/825/244/280 partitions, Ring-0 ACL non-interference, Pareto order & NonVacuity in
     Lean 4.35.0
   Locations: lean/OmegaPackageProofs/*; palomar/; blueprint/index.html
-  Anchor: 36 Local Lean 4.35
+  Anchor: 50 Local Lean 4.35
   Problem: Package lacked a local self-verifiable Lean 4.35.0 formal invariant suite & Palomar comparator
   Required_fix: Compile 36 core + 4 Palomar comparator theorems with 0 sorry in lean/, axioms <= [propext, Quot.sound], leanchecker-paranoid &
     SVG Blueprint
   Suggested_replacement: 100% constructive proofs (zero Classical.choice) verified live via Lean 4.35.0
   Closure_checks: Gate 19 verifies live axiom output == results/lean_package_axioms.txt
   Sources: Cycle 1 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-08
   Disposition: Closed
   Owner: Cycle-1 Auditor
@@ -33869,7 +33869,7 @@ errata_omega_closures_65:
   Suggested_replacement: 100.0% Structure, 100.0% Completion, 100.0% Core on Audit-Repo.ps1
   Closure_checks: Gate 21 runs Audit-Repo.ps1 live
   Sources: Cycle 2 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-09
   Disposition: Closed
   Owner: Cycle-2 Auditor
@@ -33887,7 +33887,7 @@ errata_omega_closures_65:
   Suggested_replacement: 0 overfull hboxes, 0 undefined refs/cites, clean-room tarball compiles cleanly
   Closure_checks: Gate 20 verifies PDF, tarball & citations
   Sources: Cycle 2 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-10
   Disposition: Closed
   Owner: Cycle-2 Auditor
@@ -33904,7 +33904,7 @@ errata_omega_closures_65:
   Suggested_replacement: 100% pytest pass, 0 oracle divergences across 2,000+ cases, 6/6 = 100% mutation kill
   Closure_checks: Gate 22 executes pytest & mutation audit
   Sources: Cycle 2 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-11
   Disposition: Closed
   Owner: Cycle-2 Auditor
@@ -33922,7 +33922,7 @@ errata_omega_closures_65:
   Suggested_replacement: All FAIR descriptors JSON-valid, social-preview visually clean, INDEX.md covers 100% of files
   Closure_checks: Gate 21 & pytest validate FAIR files
   Sources: Cycle 2 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-12
   Disposition: Closed
   Owner: Cycle-2 Auditor
@@ -33939,7 +33939,7 @@ errata_omega_closures_65:
   Suggested_replacement: Audit-Repo.ps1 A32 PASS with zero duplicated rule drift
   Closure_checks: Audit-Repo.ps1 A32 PASS
   Sources: Cycle 2 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-13
   Disposition: Closed
   Owner: Cycle-2 Auditor
@@ -33950,17 +33950,17 @@ errata_omega_closures_65:
   Theme: Upgrade Package to 24 CSVs, 25-Sheet Omega Workbook, 22-Tab Observatory & 160 Audits
   Title: Wire csv/21 (Mega-Atlas 25-row crosswalk), 160/160 closed audits, 45 citations, and dynamic file counts across all formats
   Locations: All CSVs, Workbooks, Specs, Observatory, Reports
-  Anchor: v3.4-Omega Parity
+  Anchor: v3.5-Omega Parity
   Problem: Static '77+ files' and '145/145' labels drifted once new datasets & Cycle 1-3 artifacts were added
   Required_fix: Compute file/record/theorem counts dynamically across builders and expand Observatory to 22 tabs & Omega workbook to 25 sheets
   Suggested_replacement: Zero count drift across all 24 CSVs, 5 Workbooks, 4 Specs, 3 HTMLs, 4 PDFs & 12 Reports
   Closure_checks: Gates 1-22 verify 100% parity
   Sources: Cycle 3 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-14
   Disposition: Closed
   Owner: Cycle-3 Auditor
-  Closure_evidence: Entire multi-format package synchronized cleanly to v3.4-Omega (24 CSVs, 25 sheets, 22 tabs, 160 audits, 45 citations)
+  Closure_evidence: Entire multi-format package synchronized cleanly to v3.5-Omega (24 CSVs, 25 sheets, 22 tabs, 160 audits, 45 citations)
 - ID: OMG-160
   Priority: P0
   Category: Final verification
@@ -33974,13 +33974,13 @@ errata_omega_closures_65:
   Suggested_replacement: '22/22 Forensic Gates GREEN, 100.0% Build Standard, 0 Z:<->I: SHA-256 mismatches'
   Closure_checks: 'Gate 18 & Gate 22 GREEN on Z: & I:'
   Sources: Cycle 3 Hardening Audit
-  Status: Closed in v3.4-Omega
+  Status: Closed in v3.5-Omega
   Other_review_IDs: PASS6-15
   Disposition: Closed
   Owner: Cycle-3 Auditor
   Closure_evidence: 'All 3 hardening cycles completed with 22/22 Forensic Gates GREEN and 0 SHA-256 mismatches between Z: and I:'
 omega_singularity_fusion:
-  fusion_architecture: Dual-Track Unified Clean-Slate v3.0 x Singularity Omega v3.4 Academic Release, Mega-Atlas 1,900 Crosswalk & 327 Pure 6-Kernel
+  fusion_architecture: Dual-Track Unified Clean-Slate v3.0 x Singularity Omega v3.5 Academic Release, Mega-Atlas 1,900 Crosswalk & 360 Pure 6-Kernel
     Lean 4.35.0 (Zero Consolidation)
   escalation_ladder_7:
   - Stage_ID: STG-0
@@ -34079,8 +34079,8 @@ omega_singularity_fusion:
     Dominant_Existential_Risk: Relativistic speciation wars, AI-optimizer vs. feral-vitality ideological/physical clash
     Reference_Exemplar: Living Dyson ecologies, fluid multi-scale planetary consciousness
     V3_Build_Stage_And_Layer: Post-Stage 8 | Converged 7-Repo Stack
-    V3_Substrate_And_Milestones: AUTOPHAGE v1.4.0 + Cellulogonic v1.5.0 + Omega v5.2.0 + Noetic v2.1.0 + Asmodensius v1.1.0 + Observatory v6.7.0
-    V3_Release_Gates_And_Suites: 291+36=327 Pure 6-Kernel Lean 4.35.0 | 13/13 CS-v3 Gates | OVBS-52 = 91.84
+    V3_Substrate_And_Milestones: AUTOPHAGE v1.4.0 + Cellulogonic v1.6.0 + Omega v5.4.0 + Noetic v2.1.0 + Asmodensius v1.1.0 + Observatory v6.7.0
+    V3_Release_Gates_And_Suites: 310+50=360 Pure 6-Kernel Lean 4.35.0 | 13/13 CS-v3 Gates | OVBS-52 = 91.91
   - Stage_ID: STG-6
     Stage_Name: 'Post-Beyond: SUPER LIFE'
     OVI_Band: 97-100
@@ -37821,12 +37821,12 @@ omega_singularity_fusion:
     V3_Governance_Mapping: Direct Clean-Slate v3.0 Gate/Triage Lock (GATE-12)
   - Check_ID: CHK-126
     Phase: 'P11: Clean-Slate v3.0 Fusion'
-    Item_Title: Verify 78/78 Unified Telemetry Alerts (42 Macro FMs + 36 v3.0 Forensic Guards) wired in YAML
+    Item_Title: Verify 78/78 Unified Telemetry Alerts (42 Macro FMs + 50 v3.0 Forensic Guards) wired in YAML
     Track_Scope: BOTH
     Priority: P0-CRITICAL
     Category: V3-Telemetry
     Verification_Method: YAML parity build gate
-    Quantitative_Pass_Criterion: 42/42 Macro + 36/36 v3.0 guards + 13/13 gates wired (0 unwired)
+    Quantitative_Pass_Criterion: 42/42 Macro + 50/36 v3.0 guards + 13/13 gates wired (0 unwired)
     Linked_Ref_ID: ISS-04
     Status: PENDING
     V3_Governance_Mapping: Direct Clean-Slate v3.0 Gate/Triage Lock (ISS-04)
@@ -37865,13 +37865,13 @@ omega_singularity_fusion:
     V3_Governance_Mapping: Direct Clean-Slate v3.0 Gate/Triage Lock (ISS-04)
   - Check_ID: CHK-130
     Phase: 'P11: Clean-Slate v3.0 Fusion'
-    Item_Title: Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 291 Native + 36 Local = 327 Pure 6-Kernel
+    Item_Title: Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 310 Native + 50 Local = 360 Pure 6-Kernel
       Lean 4.35.0)
     Track_Scope: BOTH
     Priority: P0-CRITICAL
     Category: V3-LiveProof
     Verification_Method: Live suite schema check
-    Quantitative_Pass_Criterion: Composite live OVBS-52 >= 85 (live 91.84), 291+36=327 Pure 6-Kernel Lean 4.35.0 proofs, 13/13 CS-v3 gates & 748-run
+    Quantitative_Pass_Criterion: Composite live OVBS-52 >= 85 (live 91.91), 310+50=360 Pure 6-Kernel Lean 4.35.0 proofs, 13/13 CS-v3 gates & 748-run
       sim validated
     Linked_Ref_ID: GATE-13
     Status: PENDING
@@ -39088,7 +39088,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-0 / STAGE-00 / CHK-111..116
     SVG_Model_Refs: Model 1, Model 11-14, Model 16, Model 23
     Primary_Metrics_And_Gates: GATE-01..04 | HW-24 | 11-Pool FP64 <1e-12
-    Live_Engine_Or_Sim_Evidence: 748 Sim Runs Max Drift 2.463e-16; Omega v5.2.0 60/60
+    Live_Engine_Or_Sim_Evidence: 748 Sim Runs Max Drift 2.463e-16; Omega v5.4.0 60/60
     Synchronized_Artifact_Files: specs/Master-Spec.*, csv/06, csv/13, csv/18, pipelines/*.yaml
   - Trace_ID: TRC-02
     Bridge_Domain: Architecture Layer
@@ -39104,7 +39104,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-1 / STAGE-03 / BM-MRF-01..06
     SVG_Model_Refs: Model 1, Model 10, Model 15, Model 23
     Primary_Metrics_And_Gates: GATE-06 | SOFT01-20 | |dV|/V0 < 1%
-    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.5.0 26/26 Gates (70 Pure 6-Kernel Lean 4.35.0); SIM08
+    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.6.0 26/26 Gates (78 Pure 6-Kernel Lean 4.35.0); SIM08
     Synchronized_Artifact_Files: reports/06, html/ALife-Build-Framework-Template.html, pdf/*
   - Trace_ID: TRC-04
     Bridge_Domain: Architecture Layer
@@ -39152,7 +39152,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-3 / STAGE-03 / BM-MRF-01..06
     SVG_Model_Refs: Model 1, Model 3, Model 15, Model 19
     Primary_Metrics_And_Gates: GATE-10 | Kleiber M^0.75 | Blackiston M084
-    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.5.0 Embryo COVI=58.19 (70 Pure 6-Kernel Lean 4.35.0)
+    Live_Engine_Or_Sim_Evidence: Cellulogonic v1.6.0 Embryo COVI=58.52 (78 Pure 6-Kernel Lean 4.35.0)
     Synchronized_Artifact_Files: reports/05, reports/06, csv/09, pdf/*
   - Trace_ID: TRC-10
     Bridge_Domain: Architecture Layer
@@ -39168,7 +39168,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-4..5 / STAGE-04..09 / CHK-001..130
     SVG_Model_Refs: Model 7, Model 14, Model 16, Model 20
     Primary_Metrics_And_Gates: GATE-11..13 | UI Hash == Headless | 18 Audit Gates
-    Live_Engine_Or_Sim_Evidence: Composite Live OVBS-52=91.84 (291 Pure Lean 4 Proofs)
+    Live_Engine_Or_Sim_Evidence: Composite Live OVBS-52=91.91 (310 Pure Lean 4 Proofs)
     Synchronized_Artifact_Files: README.md, MANIFEST_SHA256.txt, scripts/audit_omniscient_integrity.py
   - Trace_ID: TRC-12
     Bridge_Domain: System Dimension
@@ -39184,7 +39184,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STAGE-00..04 / ALifeOps SRE SLOs
     SVG_Model_Refs: Model 2, Model 7, Model 13-14, Model 16
     Primary_Metrics_And_Gates: GATE-02, GATE-11 | 0 alloc/10k | Render-Only
-    Live_Engine_Or_Sim_Evidence: Omega v5.2.0 60/60 Gates Deterministic SHA + Asmodensius 77/77 ctest 24C+RTX GPU
+    Live_Engine_Or_Sim_Evidence: Omega v5.4.0 60/60 Gates Deterministic SHA + Asmodensius 77/77 ctest 24C+RTX GPU
     Synchronized_Artifact_Files: reports/02, pipelines/alifeops-master-pipeline.yaml
   - Trace_ID: TRC-14
     Bridge_Domain: System Dimension
@@ -39304,7 +39304,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: OVBS-52 P6 Thermodynamic/Substrate Mastery
     SVG_Model_Refs: Model 4, Model 11-14, Model 16
     Primary_Metrics_And_Gates: GATE-01..03, GATE-11 | 0-Alloc + 5-Gear + Q<=10
-    Live_Engine_Or_Sim_Evidence: 748 Live Runs 100% FP64 Closed + 5 Native C/C++ Engines (291 Native + 36 Pkg = 327 Pure Lean 4)
+    Live_Engine_Or_Sim_Evidence: 748 Live Runs 100% FP64 Closed + 5 Native C/C++ Engines (310 Native + 50 Pkg = 360 Pure Lean 4)
     Synchronized_Artifact_Files: csv/13, pipelines/alifeops-master-pipeline.yaml
   - Trace_ID: TRC-29
     Bridge_Domain: Hybrid Cube T1
@@ -39344,7 +39344,7 @@ omega_singularity_fusion:
     Omega_v3_3_Anchor: STG-1..4 Regenerative Soma / BM-MRF-01
     SVG_Model_Refs: Model 9, Model 10, Model 19
     Primary_Metrics_And_Gates: Badge [OK] | Coupled to 11-Pool FP64 Ledger
-    Live_Engine_Or_Sim_Evidence: SIM08 Regenerative Soma + Cellulogonic v1.5.0 / Omega v5.2.0
+    Live_Engine_Or_Sim_Evidence: SIM08 Regenerative Soma + Cellulogonic v1.6.0 / Omega v5.4.0
     Synchronized_Artifact_Files: csv/ALife-Hybrid-Cube-10x10x10.csv, excel/Hybrid-Cube.xlsx
   - Trace_ID: TRC-34
     Bridge_Domain: Hybrid Cube Full
@@ -39389,17 +39389,17 @@ omega_singularity_fusion:
   - Trace_ID: TRC-39
     Bridge_Domain: Live Engine Tier 2
     CleanSlate_v3_Anchor: Clean-Slate Embryogenesis & Morphogenesis (P8)
-    Omega_v3_3_Anchor: Cellulogonic Mecha v1.5.0 Native C11 + Pure 6-Kernel Lean 4.35.0
+    Omega_v3_3_Anchor: Cellulogonic Mecha v1.6.0 Native C11 + Pure 6-Kernel Lean 4.35.0
     SVG_Model_Refs: Model 10, Model 18, Model 20
-    Primary_Metrics_And_Gates: 26/26 Gates | 8/8 Mutants | 70 Pure 6-Kernel Lean 4.35.0
-    Live_Engine_Or_Sim_Evidence: Embryo COVI=58.19, HomoCad=82.5%
+    Primary_Metrics_And_Gates: 26/26 Gates | 8/8 Mutants | 78 Pure 6-Kernel Lean 4.35.0
+    Live_Engine_Or_Sim_Evidence: Embryo COVI=58.52, HomoCad=85.0%
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-40
     Bridge_Domain: Live Engine Tier 2+
     CleanSlate_v3_Anchor: Clean-Slate Bit-Exact SHA-256 & Mutants (P4/P7)
-    Omega_v3_3_Anchor: Cellular Engine Omega v5.2.0 + Pure 6-Kernel Lean 4.35.0
+    Omega_v3_3_Anchor: Cellular Engine Omega v5.4.0 + Pure 6-Kernel Lean 4.35.0
     SVG_Model_Refs: Model 18, Model 20
-    Primary_Metrics_And_Gates: 60/60 Gates | 16/16 Mutants | 89 Pure 6-Kernel Lean 4.35.0
+    Primary_Metrics_And_Gates: 60/60 Gates | 16/16 Mutants | 100 Pure 6-Kernel Lean 4.35.0
     Live_Engine_Or_Sim_Evidence: Master SHA=a92641843e46736b... | Niches=17848
     Synchronized_Artifact_Files: results/alifeops_live_verification.json, scripts/run_alifeops_suite.py
   - Trace_ID: TRC-41
@@ -39422,7 +39422,7 @@ omega_singularity_fusion:
   - Trace_ID: TRC-43
     Bridge_Domain: Multi-Format Specs
     CleanSlate_v3_Anchor: ALife-Framework-v3.0-Master-Spec.{json,yaml,xml,txt}
-    Omega_v3_3_Anchor: Embedded omega_singularity_fusion v3.4 Block
+    Omega_v3_3_Anchor: Embedded omega_singularity_fusion v3.5 Block
     SVG_Model_Refs: Model 20
     Primary_Metrics_And_Gates: 'Gate 7: 4/4 Spec Formats + 26 XML Sections 100% Parity'
     Live_Engine_Or_Sim_Evidence: Zero Drift Across JSON, YAML, XML & TXT
@@ -39464,9 +39464,9 @@ omega_singularity_fusion:
     CleanSlate_v3_Anchor: 95/95 v3.0 Errata Closures + CIT-01..15
     Omega_v3_3_Anchor: 65/65 Omega Closures (OMG-096..160) + CIT-16..45
     SVG_Model_Refs: Model 18, Model 20
-    Primary_Metrics_And_Gates: 160/160 Closed Audits | 45 Citations | 22/22 Gates | 100% Build Std
-    Live_Engine_Or_Sim_Evidence: 'Bijective SHA-256 Manifest + Lean 4.35 + pytest + Z:==I: Exact Hash Parity'
-    Synchronized_Artifact_Files: MANIFEST_SHA256.txt, CHECKSUMS.sha256, csv/ALife-v3.0-Errata-Closure-Register.csv
+    Primary_Metrics_And_Gates: 160/160 Closed Audits | 45 Citations | 24/24 Gates | 100% Build Std
+    Live_Engine_Or_Sim_Evidence: 'Bijective SHA-256 Manifest + RFC 3161 TSA + Lean 4.35 + pytest + Z:==I: Parity'
+    Synchronized_Artifact_Files: MANIFEST_SHA256.txt, CHECKSUMS.sha256, data/timestamps/CHECKSUMS.sha256.tsr
   gradients_margins_spectrums_24:
   - Grad_ID: GM-01
     Stratum: Thermodynamic
@@ -39861,7 +39861,7 @@ omega_singularity_fusion:
     Analysis_Category: Layer Stack (L0-L10)
     Layer_Or_Axis_Name: 'L10: Observability, CI/CD/CE Ops & Verification'
     Classical_AI_Or_Legacy_Baseline: Manual notebooks, unseeded runs, ad-hoc unit tests, multi-file spec drift
-    CleanSlate_v3_TrackA_Engineering: 19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 291+36=327 Pure 6-Kernel
+    CleanSlate_v3_TrackA_Engineering: 19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 310+50=360 Pure 6-Kernel
       Lean 4.35.0
     Pure_Raw_Feral_TrackB_Dynamics: ASAL dual-observer >4-sigma alien anomaly spotters + immutable fossil DAG replay
     PostSingularity_SUPERLIFE_Horizon: Self-verifying formal-proof + empirical cosmological stewardship observatories
@@ -39932,7 +39932,7 @@ omega_singularity_fusion:
     Analysis_Category: Taxonomy Spectrum
     Layer_Or_Axis_Name: Verification & Falsification Taxonomy (6-Arm + Formal Lean 4)
     Classical_AI_Or_Legacy_Baseline: Single-seed qualitative demos or uncalibrated lesion comparisons
-    CleanSlate_v3_TrackA_Engineering: 6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 291+36=327 Pure 6-Kernel Lean 4.35.0
+    CleanSlate_v3_TrackA_Engineering: 6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 310+50=360 Pure 6-Kernel Lean 4.35.0
       proofs
     Pure_Raw_Feral_TrackB_Dynamics: 1,000-seed Gould counterfactual fossil replays + dual ASAL observer replication
     PostSingularity_SUPERLIFE_Horizon: Continuous machine-checked invariant monitoring across evolving biospheres
@@ -40246,10 +40246,10 @@ omega_singularity_fusion:
     Adjacent_Target_Or_Discipline: Formal Theorem Proving (Lean 4 / Dependent Type Theory)
     Shared_Invariant_Or_Bridge_Physics: Machine-checked conservation, boundedness & mutant-rejection invariants (0 sorry)
     Transfer_Friction_Or_Cliff: Spec-to-code semantic gap between Lean abstractions and C++/Python/WASM kernels
-    Estimated_Transfer_Fidelity_M_XY: 0.92+ (291+36=327 Pure 6-Kernel Lean 4.35.0 proofs live!)
+    Estimated_Transfer_Fidelity_M_XY: 0.92+ (310+50=360 Pure 6-Kernel Lean 4.35.0 proofs live!)
     Blindspot_Or_Gap_Closed: GAP-09 (Formal Vitality Proofs)
-    Required_Adapter_Or_Stepping_Stone: Verified 7-repo native stack (AUTOPHAGE v1.4.0 48 + Cellulogonic v1.5.0 70 + Omega v5.2.0 89 + Noetic
-      v2.1.0 54 + Asmodensius v1.1.0 30 = 291 + 36 local = 327)
+    Required_Adapter_Or_Stepping_Stone: Verified 7-repo native stack (AUTOPHAGE v1.4.0 48 + Cellulogonic v1.6.0 70 + Omega v5.4.0 89 + Noetic
+      v2.1.0 54 + Asmodensius v1.1.0 30 = 310 + 50 local = 360)
     Cross_Corpus_Refs: results/alifeops_live_verification
   - Adj_ID: ADJ-14
     Adjacency_Class: Adjacent Discipline
@@ -40409,7 +40409,7 @@ omega_singularity_fusion:
     Transfer_Friction_Or_Cliff: AI-vs-ALife Ontological War (FM-CNF-03 / FB-04) if utility-ASI sterilizes life
     Estimated_Transfer_Fidelity_M_XY: 0.50 (Bifurcation Sensitive)
     Blindspot_Or_Gap_Closed: FM-CNF-03 (Dual-Singularity Clash)
-    Required_Adapter_Or_Stepping_Stone: Live 7-repo native stack already hits 91.84 (Stage 5 threshold, 291+36=327 Pure 6-Kernel Lean 4.35.0,
+    Required_Adapter_Or_Stepping_Stone: Live 7-repo native stack already hits 91.91 (Stage 5 threshold, 310+50=360 Pure 6-Kernel Lean 4.35.0,
       13/13 CS-v3 Gates) in-silico
     Cross_Corpus_Refs: FB-04/05 | results/alifeops_live
   - Adj_ID: ADJ-30
@@ -40989,7 +40989,7 @@ omega_singularity_fusion:
     Governing_Tradeoff_Law: Fixed-goal instrumental convergence vs unprestatable open-ended vitality
     Dominated_Failure_Trap: Utility-ASI sterilizes chaotic life; feral life consumes ASI hardware as ore (FM-CNF-03 / FB-04)
     Pareto_Optimal_Resolution: 'Converged Living Intelligence from Stage 2: autopoietic vitality + formal Lean 4 verified invariants'
-    Quantitative_Margin_Contract: 'Live 7-Repo Convergence: OVBS-52 = 91.84 (Stage 5) + 291+36=327 Pure 6-Kernel Lean 4.35.0 + 13/13 CS-v3 Gates'
+    Quantitative_Margin_Contract: 'Live 7-Repo Convergence: OVBS-52 = 91.91 (Stage 5) + 310+50=360 Pure 6-Kernel Lean 4.35.0 + 13/13 CS-v3 Gates'
     ALifeOps_Telemetry_Guard: AI_ALIFE_ONTOLOGICAL_CLASH
     Empirical_Or_Formal_Proof: results/alifeops_live_verification
   mega_atlas_crosswalk_25:
@@ -41000,8 +41000,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-B In-Silico Sub-Result
-    Scoped_ALife_Omega_Contribution: Live 5-Engine OVBS-52=91.84 (STAGE_5), Bedau-Packard A_new=29.463, TB13 8,799 nov2 / 17,848 niches, 61-OOM
-      taxonomy & 327 Pure 6-Kernel Lean 4.35.0 invariants (291 native + 36 local).
+    Scoped_ALife_Omega_Contribution: Live 5-Engine OVBS-52=91.91 (STAGE_5), Bedau-Packard A_new=29.463, TB13 8,799 nov2 / 17,848 niches, 61-OOM
+      taxonomy & 360 Pure 6-Kernel Lean 4.35.0 invariants (310 native + 50 local).
     Primary_Verification_Artifact: results/alifeops_live_verification.json; reports/01; lean/
     What_Remains_Open_Honest_Boundary: True unbounded Type-4 physics-native novelty exceeding finite RAM/state-space representation ceilings remains
       OPEN (HOLE-02).
@@ -41070,7 +41070,7 @@ omega_singularity_fusion:
     Atlas_2026_Status: Completely Open
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C Formal Sub-Model
-    Scoped_ALife_Omega_Contribution: 70 Pure 6-Kernel Lean 4.35.0 Cellulogonic v1.5.0 theorems (stoichiometric conservation, membrane fission,
+    Scoped_ALife_Omega_Contribution: 78 Pure 6-Kernel Lean 4.35.0 Cellulogonic v1.6.0 theorems (stoichiometric conservation, membrane fission,
       endosymbiotic liberation, chemiosmotic thresholds) + 11x11 Layer Coupling Matrix (121 pairs).
     Primary_Verification_Artifact: csv/18_layer_11x11_coupling_impedance_matrix.csv; reports/06; reports/08
     What_Remains_Open_Honest_Boundary: A universal necessary-and-sufficient mathematical law covering all natural autopoietic and multi-scale
@@ -41105,7 +41105,7 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C In-Silico Benchmark Only
-    Scoped_ALife_Omega_Contribution: Cellulogonic Mecha v1.5.0 embryogenesis (26/26 gates, 8/8 mutants, homo_cad=82.5%, 70 Pure 6-Kernel Lean
+    Scoped_ALife_Omega_Contribution: Cellulogonic Mecha v1.6.0 embryogenesis (26/26 gates, 8/8 mutants, homo_cad=82.5%, 78 Pure 6-Kernel Lean
       4.35.0) & Noetic v2.1.0 Blackiston metamorphosis remap (87.5% motor remap, memory retained).
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier2_cellulogonic, tier3_noetic_organism)
     What_Remains_Open_Honest_Boundary: Restoring scar-free whole-limb/organ blastema regeneration in adult mammals remains completely OPEN.
@@ -41174,8 +41174,8 @@ omega_singularity_fusion:
     Atlas_2026_Status: Active Breakthroughs
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-C In-Silico Multi-Scale Proxy
-    Scoped_ALife_Omega_Contribution: Cellular Engine Omega v5.2.0 verifies 60/60 gates, 75/75 substrates, 1,000/1,000 Hybrid Cube, TB16 perturbation
-      R^2=0.91494, essential-gene AUROC=0.99087, 89 Pure 6-Kernel Lean 4.35.0 & 0 six-tier integer drift.
+    Scoped_ALife_Omega_Contribution: Cellular Engine Omega v5.4.0 verifies 60/60 gates, 75/75 substrates, 1,000/1,000 Hybrid Cube, TB16 perturbation
+      R^2=0.91494, essential-gene AUROC=0.99087, 100 Pure 6-Kernel Lean 4.35.0 & 0 six-tier integer drift.
     Primary_Verification_Artifact: results/alifeops_live_verification.json (tier2plus_omega); csv/ALife-Hybrid-Cube-10x10x10.csv
     What_Remains_Open_Honest_Boundary: A mechanistically complete atomic/molecular digital twin of a living human eukaryotic cell remains OPEN.
   - Crosswalk_ID: MA-17
@@ -41280,7 +41280,7 @@ omega_singularity_fusion:
     Atlas_2026_Status: Experimental Tension
     Full_Problem_Solved: NO (0/1,900)
     Evidence_Tier: Tier-B Applied Bounded Implementation
-    Scoped_ALife_Omega_Contribution: Ships 327 Pure 6-Kernel Lean 4.35.0 theorems (291 native 5-engine + 36 local zero-Mathlib Lean 4.35.0 package
+    Scoped_ALife_Omega_Contribution: Ships 360 Pure 6-Kernel Lean 4.35.0 theorems (310 native 5-engine + 50 local zero-Mathlib Lean 4.35.0 package
       invariants), NonVacuity witnesses, Palomar Challenge/Solution comparator, & row-by-row Statement-Fidelity Matrix.
     Primary_Verification_Artifact: lean/; docs/statement-fidelity.md; results/lean_package_axioms.txt
     What_Remains_Open_Honest_Boundary: Automated semantic fidelity auditing for arbitrary multi-million-line AI-generated mathematical proof corpora
@@ -41717,8 +41717,8 @@ omega_singularity_fusion:
     max_fp64_drift: 2.192e-16
     phase_zone: SPIEGELMAN_SLIME
   empirical_simulation_summary:
-    schema_version: 3.3.0-omega
-    generated_utc: '2026-11-22T04:22:08.291620+00:00'
+    schema_version: 3.5.0-omega
+    generated_utc: '2026-11-26T23:27:53.195157+00:00'
     seed_firewall_range: 5001-5048 (cohorts N=48) | 5101-5112 (dual gradient) | 5201-5204 (2D surface)
     paired_seeds_n: 48
     cohort_runs_executed: 384
@@ -41770,6 +41770,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 83.57
+      composite_ovi_arith: 85.98
+      ovi_std: 1.73
       ovi_std_24seeds: 1.73
       stage_classification: STAGE_4_SUPER_ALIFE
       max_first_law_drift_fp64: 2.218e-16
@@ -41780,6 +41782,9 @@ omega_singularity_fusion:
       holm_fwer_p_vs_feral: 1.0
       delta_pair_vs_feral: 0.0
       lcb_95_vs_feral: 0.0
+      cohens_dz_vs_feral: 0.0
+      ci95_low_vs_feral: 0.0
+      ci95_high_vs_feral: 0.0
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -41806,6 +41811,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 82.61
+      composite_ovi_arith: 85.36
+      ovi_std: 1.7
       ovi_std_24seeds: 1.7
       stage_classification: STAGE_4_SUPER_ALIFE
       max_first_law_drift_fp64: 2.22e-16
@@ -41815,7 +41822,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 0.017106
       holm_fwer_p_vs_feral: 0.017106
       delta_pair_vs_feral: -0.1667
-      lcb_95_vs_feral: -1.542
+      lcb_95_vs_feral: -1.53
+      cohens_dz_vs_feral: -0.409
+      ci95_low_vs_feral: -1.61
+      ci95_high_vs_feral: -0.315
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -41842,6 +41852,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 100.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 56.42
+      composite_ovi_arith: 64.22
+      ovi_std: 2.72
       ovi_std_24seeds: 2.72
       stage_classification: STAGE_3_ALIFE_SINGULARITY
       max_first_law_drift_fp64: 2.463e-16
@@ -41851,7 +41863,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 7.1054e-15
       holm_fwer_p_vs_feral: 4.9738e-14
       delta_pair_vs_feral: -1.0
-      lcb_95_vs_feral: -27.924
+      lcb_95_vs_feral: -27.908
+      cohens_dz_vs_feral: -8.764
+      ci95_low_vs_feral: -28.001
+      ci95_high_vs_feral: -26.304
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -41878,6 +41893,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 48.0
       wild_drop_survival_W_wild: 0.2188
       composite_ovi: 3.28
+      composite_ovi_arith: 4.58
+      ovi_std: 0.27
       ovi_std_24seeds: 0.27
       stage_classification: STAGE_0_INERT
       max_first_law_drift_fp64: 2.22e-16
@@ -41887,7 +41904,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 7.1054e-15
       holm_fwer_p_vs_feral: 4.9738e-14
       delta_pair_vs_feral: -1.0
-      lcb_95_vs_feral: -80.732
+      lcb_95_vs_feral: -80.723
+      cohens_dz_vs_feral: -45.724
+      ci95_low_vs_feral: -80.772
+      ci95_high_vs_feral: -79.787
       pillar_scores:
         P1_OEE_NOVELTY: 14.81
         P2_AUTOPOIESIS_PERSISTENCE: 39.48
@@ -41914,6 +41934,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 66.65
+      composite_ovi_arith: 72.87
+      ovi_std: 1.55
       ovi_std_24seeds: 1.55
       stage_classification: STAGE_3_ALIFE_SINGULARITY
       max_first_law_drift_fp64: 2.218e-16
@@ -41923,7 +41945,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 7.1054e-15
       holm_fwer_p_vs_feral: 4.9738e-14
       delta_pair_vs_feral: -1.0
-      lcb_95_vs_feral: -17.454
+      lcb_95_vs_feral: -17.443
+      cohens_dz_vs_feral: -7.841
+      ci95_low_vs_feral: -17.492
+      ci95_high_vs_feral: -16.323
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -41950,6 +41975,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 13.22
+      composite_ovi_arith: 16.82
+      ovi_std: 1.14
       ovi_std_24seeds: 1.14
       stage_classification: STAGE_0_INERT
       max_first_law_drift_fp64: 2.204e-16
@@ -41959,7 +41986,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 7.1054e-15
       holm_fwer_p_vs_feral: 4.9738e-14
       delta_pair_vs_feral: -1.0
-      lcb_95_vs_feral: -70.907
+      lcb_95_vs_feral: -70.896
+      cohens_dz_vs_feral: -31.498
+      ci95_low_vs_feral: -70.974
+      ci95_high_vs_feral: -69.706
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 68.79
@@ -41986,6 +42016,8 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 84.67
+      composite_ovi_arith: 86.69
+      ovi_std: 1.74
       ovi_std_24seeds: 1.74
       stage_classification: STAGE_4_SUPER_ALIFE
       max_first_law_drift_fp64: 2.21e-16
@@ -41995,7 +42027,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 0.0055216
       holm_fwer_p_vs_feral: 0.011043
       delta_pair_vs_feral: 0.3333
-      lcb_95_vs_feral: 0.506
+      lcb_95_vs_feral: 0.519
+      cohens_dz_vs_feral: 0.461
+      ci95_low_vs_feral: 0.416
+      ci95_high_vs_feral: 1.782
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -42022,8 +42057,10 @@ omega_singularity_fusion:
       killswitch_deleted_pct: 0.0
       wild_drop_survival_W_wild: 1.0
       composite_ovi: 85.48
+      composite_ovi_arith: 87.24
+      ovi_std: 1.68
       ovi_std_24seeds: 1.68
-      stage_classification: STAGE_4_SUPER_ALIFE
+      stage_classification: STAGE_5_CONVERGED_SYNTHESIS
       max_first_law_drift_fp64: 2.218e-16
       min_diss_num_delta: 0.0
       heat_backflow_faults: 0
@@ -42031,7 +42068,10 @@ omega_singularity_fusion:
       wilcoxon_p_raw_vs_feral: 2.5688e-06
       holm_fwer_p_vs_feral: 7.7063e-06
       delta_pair_vs_feral: 0.5
-      lcb_95_vs_feral: 1.315
+      lcb_95_vs_feral: 1.327
+      cohens_dz_vs_feral: 0.799
+      ci95_low_vs_feral: 1.285
+      ci95_high_vs_feral: 2.574
       pillar_scores:
         P1_OEE_NOVELTY: 96.0
         P2_AUTOPOIESIS_PERSISTENCE: 96.0
@@ -42042,16 +42082,16 @@ omega_singularity_fusion:
         P7_MULTISCALE_AGENCY_INDIVIDUALITY: 96.0
         P8_FERAL_RESILIENCE_CRITICALITY: 96.0
   live_4engine_receipts:
-    run_id: ALIFE-OMEGA-20261126T033955Z
-    composite_ovi_score: 91.84
+    run_id: ALIFE-OMEGA-20261126T232803Z
+    composite_ovi_score: 91.91
     stage_classification: STAGE_5_CONVERGED_SYNTHESIS
-    total_lean4_theorems: 291
+    total_lean4_theorems: 310
     all_lean4_pure_axioms_verified: true
     engine_receipts:
       tier1_autophage:
         version: 1.4.0
         rc: 0
-        elapsed_s: 2.073
+        elapsed_s: 3.0626
         gates_passed: 18
         gates_failed: 0
         mutants_caught: 6
@@ -42063,25 +42103,25 @@ omega_singularity_fusion:
         lean4_theorems: 48
         lean4_pure_axioms_verified: true
       tier2_cellulogonic:
-        version: 1.5.0
+        version: 1.6.0
         rc: 0
-        elapsed_s: 0.8144
+        elapsed_s: 1.1727
         gates_passed: 26
         gates_total: 26
         mutants_caught: 8
         mutants_total: 8
-        embryo_covi: 58.19
-        embryo_alive: 39
-        embryo_active_axons: 2
-        embryo_homo_cad_pct: 82.5
+        embryo_covi: 58.52
+        embryo_alive: 36
+        embryo_active_axons: 6
+        embryo_homo_cad_pct: 85.0
         embryo_mass_res: 0
         embryo_energy_res: 0
-        lean4_theorems: 70
+        lean4_theorems: 78
         lean4_pure_axioms_verified: true
       tier2plus_omega:
-        version: 5.2.0
+        version: 5.4.0
         rc: 0
-        elapsed_s: 0.8512
+        elapsed_s: 1.264
         gates_passed: 60
         gates_total: 60
         mutants_caught: 16
@@ -42107,12 +42147,12 @@ omega_singularity_fusion:
         tb16_essential_auroc: 0.99087
         tb16_proj_mass_res: 0.0
         tb16_six_tier_int_drift: 0
-        lean4_theorems: 89
+        lean4_theorems: 100
         lean4_pure_axioms_verified: true
       tier3_noetic_organism:
         version: 2.1.0
         rc: 0
-        elapsed_s: 0.2675
+        elapsed_s: 0.393
         gates_passed: 10
         gates_total: 10
         mutants_caught: 5
@@ -42154,7 +42194,7 @@ omega_singularity_fusion:
         az_run_present: true
         az_live_present: true
         rc: 0
-        elapsed_s: 0.9423
+        elapsed_s: 1.5744
         lab_seed7_hash: 84ee3e8d7a423961
         books_exact: true
         demo16_species101_refused_exit2: true
@@ -42235,40 +42275,40 @@ omega_singularity_fusion:
   - id: MODEL-15
     num: 15
     title: MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-16
     num: 16
     title: MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-17
     num: 17
     title: MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-18
     num: 18
-    title: 'MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (291 PURE LEAN 4)'
-    origin: v3.4-Omega Unified Systems Synthesis
+    title: 'MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK (310 PURE LEAN 4)'
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-19
     num: 19
     title: MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-20
     num: 20
     title: MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-21
     num: 21
     title: MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-22
     num: 22
     title: MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP
-    origin: v3.4-Omega Unified Systems Synthesis
+    origin: v3.5-Omega Unified Systems Synthesis
   - id: MODEL-23
     num: 23
     title: MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20)
-    origin: v3.4-Omega Pass-5 Deep Systems Audit
+    origin: v3.5-Omega Pass-5 Deep Systems Audit
   - id: MODEL-24
     num: 24
     title: MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE
-    origin: v3.4-Omega Pass-5 Deep Systems Audit
+    origin: v3.5-Omega Pass-5 Deep Systems Audit

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
 """10-iteration warmed performance benchmark generating docs/benchmarks.md & results/bench-history.csv (A37, B26, B27)."""
 from __future__ import annotations
 
@@ -71,7 +72,7 @@ def main() -> None:
     ]
 
     ts = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
-    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip() if (ROOT / "VERSION").exists() else "3.4.0"
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip() if (ROOT / "VERSION").exists() else "3.5.0"
     host = f"{platform.system()} {platform.release()} / Python {platform.python_version()}"
 
     hist_path = ROOT / "results" / "bench-history.csv"
@@ -114,7 +115,7 @@ def main() -> None:
         "| Complete 22-Gate Omniscient Forensic Audit (incl. Chrome DOM stress) | `just forensic` | `< 90 s` | ~`15–30 s` |",
     ]
     out_md = ROOT / "docs" / "benchmarks.md"
-    out_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    out_md.write_text("\n".join(md_lines) + "\n", encoding="utf-8", newline="\n")
     print(f"  [BENCH] Wrote {out_md.name} and appended {hist_path.name}")
 
 

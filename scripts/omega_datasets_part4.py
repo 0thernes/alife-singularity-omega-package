@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 # SPDX-License-Identifier: Apache-2.0
 """
-Canonical Structured Datasets (Part 4 of 6 — Pass-4 Comparative & Gradient Expansion, synced v3.4-Omega).
+Canonical Structured Datasets (Part 4 of 6 — Pass-4 Comparative & Gradient Expansion, synced v3.5-Omega).
 Covers:
   15. Gradients, Operating Margins & Phase-Boundary Spectrums Matrix (24 Quantitative Continuous Regimes)
   16. Comparative Contrast Across Layers (L0-L10), Taxonomies & Paradigms Matrix (36 Systematic Contrasts)
@@ -221,7 +220,7 @@ CONTRAST_LAYERS_ROWS = [
      "M091-M098 | FM-CON-01 | CIT-34"],
     ["CTR-11", "Layer Stack (L0-L10)", "L10: Observability, CI/CD/CE Ops & Verification",
      "Manual notebooks, unseeded runs, ad-hoc unit tests, multi-file spec drift",
-     "19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 291+36=327 Pure 6-Kernel Lean 4.35.0",
+     "19-Tab SeqLock UI (UI hash == headless), 13/13 Release Gates PASS, 35/35 Mutants, 310+50=360 Pure 6-Kernel Lean 4.35.0",
      "ASAL dual-observer >4-sigma alien anomaly spotters + immutable fossil DAG replay",
      "Self-verifying formal-proof + empirical cosmological stewardship observatories",
      "Unifies 78/78 YAML alerts, 18 forensic gates & 77+ zero-drift artifacts",
@@ -279,7 +278,7 @@ CONTRAST_LAYERS_ROWS = [
      "csv/05 | csv/10 | SIM03/07 | Model 17/21"],
     ["CTR-18", "Taxonomy Spectrum", "Verification & Falsification Taxonomy (6-Arm + Formal Lean 4)",
      "Single-seed qualitative demos or uncalibrated lesion comparisons",
-     "6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 291+36=327 Pure 6-Kernel Lean 4.35.0 proofs",
+     "6-arm controls + N=48..120 locked seeds + exact Wilcoxon Holm FWER + 310+50=360 Pure 6-Kernel Lean 4.35.0 proofs",
      "1,000-seed Gould counterfactual fossil replays + dual ASAL observer replication",
      "Continuous machine-checked invariant monitoring across evolving biospheres",
      "Eliminates false-positive LARP claims via 5/5 negative mutant rejection",
@@ -511,8 +510,8 @@ ADJACENTS_ROWS = [
     ["ADJ-13", "Adjacent Discipline", "ALife Simulation Verification", "Formal Theorem Proving (Lean 4 / Dependent Type Theory)",
      "Machine-checked conservation, boundedness & mutant-rejection invariants (0 sorry)",
      "Spec-to-code semantic gap between Lean abstractions and C++/Python/WASM kernels",
-     "0.92+ (291+36=327 Pure 6-Kernel Lean 4.35.0 proofs live!)", "GAP-09 (Formal Vitality Proofs)",
-     "Verified 7-repo native stack (AUTOPHAGE v1.4.0 48 + Cellulogonic v1.5.0 70 + Omega v5.2.0 89 + Noetic v2.1.0 54 + Asmodensius v1.1.0 30 = 291 + 36 local = 327)", "results/alifeops_live_verification"],
+     "0.92+ (310+50=360 Pure 6-Kernel Lean 4.35.0 proofs live!)", "GAP-09 (Formal Vitality Proofs)",
+     "Verified 7-repo native stack (AUTOPHAGE v1.4.0 48 + Cellulogonic v1.6.0 70 + Omega v5.4.0 89 + Noetic v2.1.0 54 + Asmodensius v1.1.0 30 = 310 + 50 local = 360)", "results/alifeops_live_verification"],
     ["ADJ-14", "Adjacent Discipline", "11-Pool Conservation & Landauer Floor", "Stochastic & Non-Equilibrium Thermodynamics (Seifert / Crooks)",
      "Fluctuation theorems, entropy production rates & finite-time dissipation bounds",
      "Mesoscopic far-from-equilibrium nonlinear coupling beyond linear response",
@@ -594,7 +593,7 @@ ADJACENTS_ROWS = [
      "Intentional cognitive reasoning fused with autopoietic vitality & morphogenesis",
      "AI-vs-ALife Ontological War (FM-CNF-03 / FB-04) if utility-ASI sterilizes life",
      "0.50 (Bifurcation Sensitive)", "FM-CNF-03 (Dual-Singularity Clash)",
-     "Live 7-repo native stack already hits 91.84 (Stage 5 threshold, 291+36=327 Pure 6-Kernel Lean 4.35.0, 13/13 CS-v3 Gates) in-silico", "FB-04/05 | results/alifeops_live"],
+     "Live 7-repo native stack already hits 91.91 (Stage 5 threshold, 310+50=360 Pure 6-Kernel Lean 4.35.0, 13/13 CS-v3 Gates) in-silico", "FB-04/05 | results/alifeops_live"],
     ["ADJ-30", "Phase Stepping-Stone", "Stage 5 Converged Synthesis (OVI 90-98)", "Stage 6 Post-Beyond SUPER LIFE (OVI 98-100+)",
      "Transcending organism, chemistry & Darwinian selection into Depth-N cosmobiomes",
      "Fundamental unknown physics & Kauffman unprestatability (HOLE-02 / HOLE-09)",

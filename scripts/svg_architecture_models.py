@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
-Unified 20-Model Vector SVG Architecture & Systems Modeling Engine (v3.1-Omega).
+Unified 20-Model Vector SVG Architecture & Systems Modeling Engine (v3.5-Omega).
   - Extracts and preserves Models 1..14 cleanly from I:\\A-Life God Plan\\A-Life Master Folder Build\\ALife-Build-Framework-Template.html
   - Generates 6 brand-new publication-grade vector SVG diagrams (Models 15..20) dynamically synchronized
     with live empirical 8-cohort results, 4-engine / 150 Lean 4 receipts, 78-alert telemetry mesh,
@@ -65,7 +65,7 @@ def _svg_frame(height: int, title: str, subtitle: str, body: str) -> str:
 
 def build_model_15_escalation_and_loops(live_receipts: dict | None = None) -> dict:
     """MODEL 15: Dual-Track Escalation Ladder (Stage 0..6) & 4-Loop Autocatalytic Closure bridged to v3.0 L0..L10."""
-    live_ovi = (live_receipts or {}).get("composite_ovi_score", 91.84)
+    live_ovi = (live_receipts or {}).get("composite_ovi_score", 91.91)
     stages = [
         ("STG-0", "Inert / Toy", "OVI 0-15", "v3 L0-L1", "Stage 0-1 (M001-010)", "#64748b", "#f1f5f9"),
         ("STG-1", "Narrow ALife", "OVI 15-35", "v3 L1-L3", "Stage 2-3 (M011-040)", "#0284c7", "#e0f2fe"),
@@ -87,7 +87,7 @@ def build_model_15_escalation_and_loops(live_receipts: dict | None = None) -> di
             f'<text x="94" y="{y+29}" font-size="8.8" fill="#334155">{escape(ovi)}  |  {escape(v3l)}  |  {escape(v3m)}</text>'
         )
         if i < len(stages) - 1:
-            rows_svg.append(f'<line x1="51" y1="{y+36}" x2="51" y2="{y+44}" stroke="{col}" stroke-width="1.8" marker-end="url(#arrDark)"/>')
+            rows_svg.append(f'<line x1="51" y1="{y+50}" x2="51" y2="{y+44}" stroke="{col}" stroke-width="1.8" marker-end="url(#arrDark)"/>')
 
     # Right column: 4 Interlocking Singularity Feedback Loops + Dual-Track Convergence
     loops = [
@@ -123,7 +123,7 @@ def build_model_15_escalation_and_loops(live_receipts: dict | None = None) -> di
         "id": "MODEL-15",
         "num": 15,
         "title": "MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             410,
             "MODEL 15 — DUAL-TRACK ESCALATION LADDER (STG-0 → STG-6) & 4-LOOP SINGULARITY ANATOMY",
@@ -140,7 +140,7 @@ def build_model_16_alifeops_telemetry_mesh() -> dict:
         ("STAGE-01", "Thermo Variety", "11-Pool FP64 <1e-12", "GATE-03", "#0891b2"),
         ("STAGE-02", "Dual-Track Seed", "Philox4x32 + TRNG", "GATE-01/05", "#2563eb"),
         ("STAGE-03", "5-Gear Runtime", "SoA 0-Alloc + XPBD", "GATE-06/07", "#4f46e5"),
-        ("STAGE-04", "78-Alert Mesh", "42 FM + 36 v3 Guards", "19-Tab SeqLock", "#7c3aed"),
+        ("STAGE-04", "78-Alert Mesh", "42 FM + 50 v3 Guards", "19-Tab SeqLock", "#7c3aed"),
     ]
     stages_bot = [
         ("STAGE-09", "Cross-Substrate", "67+ Synced Artifacts", "GATE-12/13", "#059669"),
@@ -187,14 +187,14 @@ def build_model_16_alifeops_telemetry_mesh() -> dict:
     parts.append(
         '<rect x="20" y="302" width="960" height="72" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1.4"/>'
         '<text x="36" y="323" font-size="10" font-weight="800" fill="#38bdf8">UNIFIED ALIFEOPS v3.1 TELEMETRY &amp; HARD-GATE CONTRACT (alifeops-master-pipeline.yaml)</text>'
-        '<text x="36" y="342" font-size="8.8" fill="#e2e8f0">• 42/42 Macro Failure-Mode Alerts (FM-BUG..CNF) + 36/36 Clean-Slate v3.0 Forensic Triage Guards (PRB..CNF) = 78/78 Wired (0 Unwired)</text>'
+        '<text x="36" y="342" font-size="8.8" fill="#e2e8f0">• 42/42 Macro Failure-Mode Alerts (FM-BUG..CNF) + 50/36 Clean-Slate v3.0 Forensic Triage Guards (PRB..CNF) = 78/78 Wired (0 Unwired)</text>'
         '<text x="36" y="360" font-size="8.8" fill="#a7f3d0">• 13/13 Release Gates (GATE-01..13) + 5/5 Anti-LARP Mutants (Leaky-2e-11, Cosmetic, Oracle, Frozen, Shuffled) + 19-Tab SeqLock Render-Only Governor</text>'
     )
     return {
         "id": "MODEL-16",
         "num": 16,
         "title": "MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             390,
             "MODEL 16 — 10-STAGE ALIFEOPS (CI/CD/CE) PIPELINE × 78-ALERT TELEMETRY MESH & 13 RELEASE GATES",
@@ -286,7 +286,7 @@ def build_model_17_castration_and_empirical(sim_summary: dict) -> dict:
         "id": "MODEL-17",
         "num": 17,
         "title": "MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             410,
             "MODEL 17 — 13-VECTOR CASTRATION BIFURCATION, 13×13 SYNERGY & LIVE 8-COHORT EMPIRICAL PROOF",
@@ -303,11 +303,11 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
     cm = er.get("tier2_cellulogonic", {})
     om = er.get("tier2plus_omega", {})
     no = er.get("tier3_noetic_organism", {})
-    lean_tot = live_receipts.get("total_lean4_theorems", 291)
-    live_ovi = live_receipts.get("composite_ovi_score", 91.84)
+    lean_tot = live_receipts.get("total_lean4_theorems", 310)
+    live_ovi = live_receipts.get("composite_ovi_score", 91.91)
 
     tiers = [
-        (240, 62, 520, 46, "#1e1b4b", "#e0e7ff", "APEX · FORMAL MACHINE-CHECKED PROOFS & LIVE COMPOSITE", f"{lean_tot}+36={lean_tot+36} Pure 6-Kernel Lean 4.35.0 · Live OVBS-52 = {live_ovi} (STAGE 5)"),
+        (240, 62, 520, 46, "#1e1b4b", "#e0e7ff", "APEX · FORMAL MACHINE-CHECKED PROOFS & LIVE COMPOSITE", f"{lean_tot}+50={lean_tot+50} Pure 6-Kernel Lean 4.35.0 · Live OVBS-52 = {live_ovi} (STAGE 5)"),
         (195, 118, 610, 48, "#0f766e", "#ccfbf1", "TIER 4 · MACRO EVOLUTIONARY BENCHMARKING (OVBS-52 + 130 CHECKS)", "8 Weighted Vitality Pillars (52 Metrics) · 5 Anti-Gaming Gates · 130 ALifeOps Operational Items"),
         (135, 176, 730, 50, "#1d4ed8", "#dbeafe", "TIER 3 · CLEAN-SLATE v3.0 SUITE (825-SPEC + 49/49 COGNITIVE + 12/12 WSE)", "Butlin-14 · F1-F10 · CQM-25 · FREAK-100 · LIFE-500 · NOVEL-100 · WSE-12 · SOFT-40 · HW-24 · 5 Mirrors"),
         (75, 236, 850, 50, "#7c3aed", "#ede9fe", "TIER 2 · STATISTICAL CAUSAL RIGOR & 5-ARM CONTROLLED ABLATIONS", "N=48 Paired Locked Seeds · Exact Wilcoxon + Holm FWER (α ≤ 0.05) · δ_pair · LCB_95% · Sham Control"),
@@ -318,16 +318,16 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
         parts.append(
             f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="7" fill="{fill}" stroke="{stroke}" stroke-width="1.6"/>'
             f'<text x="500" y="{y+19}" text-anchor="middle" font-size="9.4" font-weight="800" fill="{stroke}">{escape(t1)}</text>'
-            f'<text x="500" y="{y+36}" text-anchor="middle" font-size="8.3" fill="#0f172a">{escape(t2)}</text>'
+            f'<text x="500" y="{y+50}" text-anchor="middle" font-size="8.3" fill="#0f172a">{escape(t2)}</text>'
         )
 
     # Bottom 5-Engine Receipt Cards (100% live from alifeops_live_verification.json; 5x184 + 4x10 = 960px -> x=20..980)
     asmo = er.get("tier34_asmodensius", {})
     cards = [
         (f"T1: AUTOPHAGE v{ap.get('version','1.4.0')}", f"{ap.get('gates_passed',18)}/18 G · OVI {ap.get('feral_ovi',92.05)}", f"A_new={ap.get('bedau_packard_anew',29.46)} · {ap.get('lean4_theorems',48)} Lean 4", "#0284c7"),
-        (f"T2: CELLULOGONIC v{cm.get('version','1.5.0')}", f"{cm.get('gates_passed',26)}/{cm.get('gates_total',26)} G · {cm.get('mutants_caught',8)}/8 Mut", f"COVI={cm.get('embryo_covi',58.19)} · {cm.get('lean4_theorems',70)} Lean 4", "#7c3aed"),
-        (f"T2+: OMEGA v{om.get('version','5.2.0')}", f"{om.get('gates_passed',60)}/{om.get('gates_total',60)} G · {om.get('mutants_caught',16)}/16 Mut", f"SHA={str(om.get('master_sha256',''))[:8]}.. · {om.get('lean4_theorems',89)} Lean 4", "#059669"),
-        (f"T3: NOETIC v{no.get('version','2.1.0')}", f"13/13 CS-v3 · 49/49 Cog", f"5/5 Anti-LARP · {no.get('lean4_theorems',54)} Lean 4", "#0891b2"),
+        (f"T2: CELLULOGONIC v{cm.get('version','1.6.0')}", f"{cm.get('gates_passed',26)}/{cm.get('gates_total',26)} G · {cm.get('mutants_caught',8)}/8 Mut", f"COVI={cm.get('embryo_covi',58.52)} · {cm.get('lean4_theorems',78)} Lean 4", "#7c3aed"),
+        (f"T2+: OMEGA v{om.get('version','5.4.0')}", f"{om.get('gates_passed',60)}/{om.get('gates_total',60)} G · {om.get('mutants_caught',16)}/16 Mut", f"SHA={str(om.get('master_sha256',''))[:8]}.. · {om.get('lean4_theorems',100)} Lean 4", "#059669"),
+        (f"T3: NOETIC v{no.get('version','2.1.0')}", "13/13 CS-v3 · 49/49 Cog", f"5/5 Anti-LARP · {no.get('lean4_theorems',54)} Lean 4", "#0891b2"),
         (f"T3+4: ASMO v{asmo.get('version','1.1.0')}", f"77/77 ctest · 164 GPU · {asmo.get('lean4_theorems',30)} L4", "24C==RTX 5070 Ti Parity", "#047857"),
     ]
     for i, (ct, l1, l2, col) in enumerate(cards):
@@ -342,7 +342,7 @@ def build_model_18_verification_pyramid(live_receipts: dict) -> dict:
         "id": "MODEL-18",
         "num": 18,
         "title": f"MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK ({lean_tot} PURE LEAN 4)",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             420,
             f"MODEL 18 — UNIFIED VERIFICATION PYRAMID: OVBS-52 × 825-CHECK SUITE × LIVE STACK ({lean_tot} PURE LEAN 4)",
@@ -407,7 +407,7 @@ def build_model_19_oom_and_cosmic_fates() -> dict:
         "id": "MODEL-19",
         "num": 19,
         "title": "MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             396,
             "MODEL 19 — 61-OOM COSMIC BREADTH, RECURSION DEPTH 0→N & 6 FERAL FATE BRANCHES",
@@ -432,7 +432,7 @@ def build_model_20_omniscient_topology(
     n_spc = file_counts.get("specs", 4)
     n_res = file_counts.get("results", 10)
     n_scr = file_counts.get("scripts", 12)
-    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 291)
+    tot_lean = (live_receipts or {}).get("total_lean4_theorems", 310)
     tot_runs = (sim_summary or {}).get("total_runs_executed", 748)
 
     body = f"""
@@ -452,14 +452,14 @@ def build_model_20_omniscient_topology(
 
   <!-- Center Engine: Omniscient Fusion Builder -->
   <rect x="336" y="64" width="328" height="194" rx="8" fill="#0f172a" stroke="#00f5d4" stroke-width="2"/>
-  <text x="500" y="88" text-anchor="middle" font-size="10.2" font-weight="800" fill="#00f5d4">OMNISCIENT FUSION ENGINE (v3.4-OMEGA)</text>
+  <text x="500" y="88" text-anchor="middle" font-size="10.2" font-weight="800" fill="#00f5d4">OMNISCIENT FUSION ENGINE (v3.5-OMEGA)</text>
   <text x="500" y="106" text-anchor="middle" font-size="8.5" fill="#cbd5e1">build_omega_package.py + build_v3_unified_artifacts.py</text>
   <rect x="354" y="118" width="292" height="28" rx="5" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
-  <text x="500" y="136" text-anchor="middle" font-size="8.3" font-weight="700" fill="#ffffff">{tot_runs} Sim Runs + Dual 11-Pt + 5x5 + 4 Eng ({tot_lean} Lean4)</text>
+  <text x="500" y="136" text-anchor="middle" font-size="8.3" font-weight="700" fill="#ffffff">{tot_runs} Sim Runs + Dual 11-Pt + 5x5 + 5 Eng ({tot_lean}+50 Lean4)</text>
   <rect x="354" y="154" width="292" height="28" rx="5" fill="#1e293b" stroke="#a78bfa" stroke-width="1"/>
   <text x="500" y="172" text-anchor="middle" font-size="8.4" font-weight="700" fill="#ffffff">24 Vector SVG Models (1..14 v3.0 + 15..24 Omega)</text>
   <rect x="354" y="190" width="292" height="28" rx="5" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
-  <text x="500" y="208" text-anchor="middle" font-size="8.4" font-weight="700" fill="#ffffff">18-Gate Forensic &amp; Z:&lt;-&gt;I: SHA Auditor (0 Drift)</text>
+  <text x="500" y="208" text-anchor="middle" font-size="8.4" font-weight="700" fill="#ffffff">24-Gate Forensic &amp; Z:&lt;-&gt;I: SHA Auditor (0 Drift)</text>
   <text x="500" y="242" text-anchor="middle" font-size="8.7" font-weight="800" fill="#fbbf24">TOTAL SYNCHRONIZED CORPUS: {tot_files} FILES (Z: &amp; I:)</text>
 
   <!-- Right Source Pillar: Omega Singularity -->
@@ -469,7 +469,7 @@ def build_model_20_omniscient_topology(
   <text x="732" y="106" font-size="8.5" fill="#0f172a">• Stage 0–6 + 61 OOM + 11x11 Layer Matrix</text>
   <text x="732" y="123" font-size="8.5" fill="#0f172a">• 78/78 Alerts + 20 Pareto Frontiers</text>
   <text x="732" y="140" font-size="8.5" fill="#0f172a">• 13x13 Synergy + Dual 11-Pt + 5x5 Surface</text>
-  <text x="732" y="157" font-size="8.5" fill="#0f172a">• 15 Substrates + 24 Gradients + 36 Contrasts</text>
+  <text x="732" y="157" font-size="8.5" fill="#0f172a">• 15 Substrates + 24 Gradients + 50 Contrasts</text>
   <text x="732" y="174" font-size="8.5" fill="#0f172a">• OVBS-52 + 130 Ops Checks + 145 Audits</text>
   <text x="732" y="191" font-size="8.5" fill="#0f172a">• 30 Cosmic Fates + 40 Unified Citations</text>
   <text x="732" y="208" font-size="8.5" fill="#0f172a">• 22-Tab Interactive HTML5 Observatory</text>
@@ -497,7 +497,7 @@ def build_model_20_omniscient_topology(
         "id": "MODEL-20",
         "num": 20,
         "title": "MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             398,
             "MODEL 20 — OMNISCIENT CROSS-CORPUS DEPENDENCY & MULTI-FORMAT SYNCHRONIZATION TOPOLOGY",
@@ -603,7 +603,7 @@ def build_model_21_continuous_gradient_sweep(sim_summary: dict) -> dict:
         "id": "MODEL-21",
         "num": 21,
         "title": "MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             408,
             "MODEL 21 — DUAL 11-POINT GRADIENT SWEEP (BEHAVIORAL VS. RING-0 ACL), CLIFFS & MARGINS",
@@ -619,8 +619,8 @@ def build_model_22_comparative_adjacents(
 ) -> dict:
     """MODEL 22: Cross-Layer Comparative Contrast, Substrate Adjacency Corridors & Adjacent-Possible Manifold."""
     rec = live_receipts or {}
-    comp_ovi = rec.get("composite_ovi_score", 91.84)
-    tot_lean = rec.get("total_lean4_theorems", 291)
+    comp_ovi = rec.get("composite_ovi_score", 91.91)
+    tot_lean = rec.get("total_lean4_theorems", 310)
     cohorts = {c["run_id"]: c for c in (sim_summary or {}).get("cohorts", [])}
     ovi8 = cohorts.get("SIM08_HYBRID_CUBE_SLTC_XPBD", {}).get("composite_ovi", 85.48)
     ovi1 = cohorts.get("SIM01_PURE_RAW_FERAL", {}).get("composite_ovi", 83.57)
@@ -634,7 +634,7 @@ def build_model_22_comparative_adjacents(
         ("Legacy Rigid Toy ALife", "Scalar Energy · Rigid Spheres · Shared PRNG · 0 FWER", "OVI ~18", "#94a3b8", "#f8fafc"),
         ("Clean-Slate v3.0 (Track A)", "11-Pool FP64 · XPBD · Chemoton · Ring-0 · 0/825 + Holm", f"OVI {ovi8:.1f}", "#0284c7", "#e0f2fe"),
         ("Pure Raw Feral (Track B)", "0 Guardrails · TRNG · Symbiogenesis · 6 Cosmic Fates", f"OVI {ovi1:.1f}", "#dc2626", "#fef2f2"),
-        ("Converged SUPER LIFE", f"Live 5-Engine ({comp_ovi:.2f}, {tot_lean}+36 Lean 4) -> Depth-N Cosmobiome", f"OVI {comp_ovi:.1f}+", "#059669", "#ecfdf5"),
+        ("Converged SUPER LIFE", f"Live 5-Engine ({comp_ovi:.2f}, {tot_lean}+50 Lean 4) -> Depth-N Cosmobiome", f"OVI {comp_ovi:.1f}+", "#059669", "#ecfdf5"),
     ]
     for i, (nm, desc, tag, col, bg) in enumerate(paradigms):
         y = 88 + i * 58
@@ -643,7 +643,7 @@ def build_model_22_comparative_adjacents(
             f'<rect x="30" y="{y}" width="80" height="48" rx="6" fill="{col}"/>'
             f'<text x="70" y="{y+28}" text-anchor="middle" font-size="8.4" font-weight="800" fill="#ffffff">{escape(tag)}</text>'
             f'<text x="120" y="{y+19}" font-size="9.0" font-weight="800" fill="#0f172a">{escape(nm)}</text>'
-            f'<text x="120" y="{y+36}" font-size="7.9" fill="#334155">{escape(desc)}</text>'
+            f'<text x="120" y="{y+50}" font-size="7.9" fill="#334155">{escape(desc)}</text>'
         )
 
     parts.append('<rect x="500" y="58" width="482" height="336" rx="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>')
@@ -671,7 +671,7 @@ def build_model_22_comparative_adjacents(
         "id": "MODEL-22",
         "num": 22,
         "title": "MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP",
-        "origin": "v3.4-Omega Unified Systems Synthesis",
+        "origin": "v3.5-Omega Unified Systems Synthesis",
         "svg": _svg_frame(
             408,
             "MODEL 22 — CROSS-LAYER COMPARATIVE CONTRAST, SUBSTRATE ADJACENCIES & ADJACENT-POSSIBLE MAP",
@@ -686,8 +686,8 @@ def build_model_23_layer_coupling_and_pareto(live_receipts: dict | None = None) 
     from omega_datasets_part5 import _LAYER_COUPLING_SCORES
 
     rec = live_receipts or {}
-    comp_ovi = rec.get("composite_ovi_score", 91.84)
-    tot_lean = rec.get("total_lean4_theorems", 291)
+    comp_ovi = rec.get("composite_ovi_score", 91.91)
+    tot_lean = rec.get("total_lean4_theorems", 310)
     short_l = ["L0", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"]
 
     parts = [
@@ -737,7 +737,7 @@ def build_model_23_layer_coupling_and_pareto(live_receipts: dict | None = None) 
         ("PAR-05/08 · CURIOSITY × HUNGER &amp; LTP × STABILITY", "TTC Urgency Gate + iSTDP / ||W||_2 &lt;= 0.99", "Starvation &lt;= 3% · Active k in [1%,4%] · 0 seizures", "#059669", "#ecfdf5"),
         ("PAR-06/11 · WSE SELF-EDIT &amp; 60 Hz TELEMETRY", "3-Tier WSE (&lt;0.1ms) + SeqLock &lt;=32 KB/fr", "0 Ring-0 breaches · 0-bit observer contamination (P9)", "#0891b2", "#ecfeff"),
         ("PAR-15/16 · EDGE-OF-CHAOS &amp; ANTI-CANCER", "Proofreading ECC + MHC Kinship Immunity", "sigma in [0.92,1.08] · Survival &gt;=0.92 under 10x mut", "#d97706", "#fffbeb"),
-        ("PAR-18/20 · SPEED × HEAT &amp; ASI × ALIFE", "Sparse 9.2x Spikes + Living Intelligence Synthesis", f"Live 5-Engine: OVBS-52={comp_ovi:.2f} (Stage 5) · {tot_lean}+36 Lean 4", "#be123c", "#fdf2f8"),
+        ("PAR-18/20 · SPEED × HEAT &amp; ASI × ALIFE", "Sparse 9.2x Spikes + Living Intelligence Synthesis", f"Live 5-Engine: OVBS-52={comp_ovi:.2f} (Stage 5) · {tot_lean}+50 Lean 4", "#be123c", "#fdf2f8"),
     ]
     for i, (hdr, res, met, col, bg) in enumerate(pareto_cards):
         y = 86 + i * 52
@@ -751,7 +751,7 @@ def build_model_23_layer_coupling_and_pareto(live_receipts: dict | None = None) 
         "id": "MODEL-23",
         "num": 23,
         "title": "MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20)",
-        "origin": "v3.4-Omega Pass-5 Deep Systems Audit",
+        "origin": "v3.5-Omega Pass-5 Deep Systems Audit",
         "svg": _svg_frame(
             418,
             "MODEL 23 — 11×11 CROSS-LAYER COUPLING IMPEDANCE & 20 PARETO FRONTIERS (PAR-01..20)",
@@ -845,7 +845,7 @@ def build_model_24_substrates_and_2d_surface(sim_summary: dict) -> dict:
         "id": "MODEL-24",
         "num": 24,
         "title": "MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE",
-        "origin": "v3.4-Omega Pass-5 Deep Systems Audit",
+        "origin": "v3.5-Omega Pass-5 Deep Systems Audit",
         "svg": _svg_frame(
             418,
             "MODEL 24 — 15-SUBSTRATE MULTI-SPECTRUM SCORECARD & LIVE 5×5 2D PHASE SURFACE",

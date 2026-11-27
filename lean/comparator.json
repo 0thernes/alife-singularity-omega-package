@@ -5,7 +5,8 @@
     "OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants",
     "OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants",
     "OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants",
-    "OmegaPackageProofs.Palomar.m4_nonvacuity_certificate"
+    "OmegaPackageProofs.Palomar.m4_nonvacuity_certificate",
+    "OmegaPackageProofs.Palomar.m5_adversarial_refutations"
   ],
   "definition_names": [],
   "permitted_axioms": [

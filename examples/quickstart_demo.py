@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Minimal reproducible quickstart demo for alife-singularity-omega-package (v3.4.0)."""
+# SPDX-License-Identifier: Apache-2.0
+"""Minimal reproducible quickstart demo for alife-singularity-omega-package (v3.5.0)."""
 from __future__ import annotations
 
 import json
@@ -30,7 +31,7 @@ def main() -> None:
     gated_fail = oracle_composite_ovi_exact(p, gamma_pass=False, spiegelman_factor=1.0)
     stage = oracle_classify_stage(raw_ovi)
 
-    print("=== A-Life Singularity x Clean-Slate v3.0 Omega Quickstart (v3.4.0) ===")
+    print("=== A-Life Singularity x Clean-Slate v3.0 Omega Quickstart (v3.5.0) ===")
     print(f"Live 5-Engine Composite OVI (receipt): {live['composite_ovi_score']:.2f}")
     print(f"50-Digit Oracle Raw OVI:               {raw_ovi:.6f} (rounded {rounded_ovi:.2f}) -> {stage}")
     print(f"Anti-Gaming Gate Annihilation Check:   {gated_fail} (exact zero)")

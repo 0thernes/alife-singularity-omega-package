@@ -2,7 +2,7 @@
 
 See [`docs/architecture.md`](docs/architecture.md) for the complete system architecture, dataflow diagram, module ownership map, and Design Decision Records ([`docs/adr/`](docs/adr/)).
 
-## High-Level Component Stack (`v3.4.0`)
+## High-Level Component Stack (`v3.5.0`)
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -19,7 +19,7 @@ See [`docs/architecture.md`](docs/architecture.md) for the complete system archi
 │  reference/ovbs52_oracle.py (50-digit Decimal) | scripts/run_mutation_audit  │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  LAYER 2: FORMAL PROOFS (Zero-Mathlib Lean 4.35.0 + 5 Native Engines)        │
-│  lean/OmegaPackageProofs/ (36 core + 4 Palomar = 40 audited axioms)          │
+│  lean/OmegaPackageProofs/ (50 core + 5 Palomar = 55 audited axioms)          │
 │  + 5 Live Companion Native Engines (42+62+72+48+20 = 244 Lean 4 => 280 tot)  │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  LAYER 1: CONSERVED SIMULATION & LIVE TELEMETRY                              │

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
 Canonical Structured Datasets (Part 2 of 2) for the A-Life Singularity & SUPER LIFE Omega Package.
 Covers:
@@ -573,9 +573,9 @@ CHECKLIST_ROWS = [
     ["CHK-123", "P11: Clean-Slate v3.0 Fusion", "Verify yolk-conserved cleavage (<1e-12), Kleiber M^0.75 allometry & Blackiston metamorphosis", "TRACK-A", "P1-HIGH", "V3-Ontogeny", "Pupal remap assay", "Kleiber slope in [0.70,0.80]; >=70% adult odor retention post >=80% remap", "GATE-10", "PENDING"],
     ["CHK-124", "P11: Clean-Slate v3.0 Fusion", "Verify Tier-1 Observer Independence (19-Tab SeqLock UI-open + exporting == headless SHA-256)", "BOTH", "P0-CRITICAL", "V3-Observer", "10k-tick hash diff", "0-bit SHA-256 diff; contiguous render-only Governor holds target FPS", "GATE-11", "PENDING"],
     ["CHK-125", "P11: Clean-Slate v3.0 Fusion", "Verify 100% Clean-Room Originality (principles transferred, zero copied external meshes/weights)", "BOTH", "P0-CRITICAL", "V3-Originality", "Provenance & AST scan", "0 copied external 3D meshes, silhouettes, sprites, or weight dumps", "GATE-12", "PENDING"],
-    ["CHK-126", "P11: Clean-Slate v3.0 Fusion", "Verify 78/78 Unified Telemetry Alerts (42 Macro FMs + 36 v3.0 Forensic Guards) wired in YAML", "BOTH", "P0-CRITICAL", "V3-Telemetry", "YAML parity build gate", "42/42 Macro + 36/36 v3.0 guards + 13/13 gates wired (0 unwired)", "ISS-04", "PENDING"],
+    ["CHK-126", "P11: Clean-Slate v3.0 Fusion", "Verify 78/78 Unified Telemetry Alerts (42 Macro FMs + 50 v3.0 Forensic Guards) wired in YAML", "BOTH", "P0-CRITICAL", "V3-Telemetry", "YAML parity build gate", "42/42 Macro + 50/36 v3.0 guards + 13/13 gates wired (0 unwired)", "ISS-04", "PENDING"],
     ["CHK-127", "P11: Clean-Slate v3.0 Fusion", "Preserve strict 0/825 clean-slate checkbox policy (0 U+2611 glyphs) across Blueprint & Framework", "TRACK-A", "P1-HIGH", "V3-Hygiene", "Unicode glyph scanner", "0 U+2611 checked-box glyphs; 825+100+13 clean-slate checkboxes intact", "GATE-13", "PENDING"],
     ["CHK-128", "P11: Clean-Slate v3.0 Fusion", "Synchronize all 24 Vector SVG Architecture Models (Models 1-14 v3.0 + Models 15-24 Omega) to HTML/PDF", "BOTH", "P1-HIGH", "V3-Visuals", "SVG + PDF audit", "24/24 crisp vector SVGs embedded cleanly across Observatory, HTMLs & PDFs", "ISS-04", "PENDING"],
     ["CHK-129", "P11: Clean-Slate v3.0 Fusion", "Maintain 100% multi-format parity across JSON, YAML, XML, TXT, MD, CSV, XLSX, XLS, HTML & PDF", "BOTH", "P0-CRITICAL", "V3-MultiFormat", "18-gate forensic suite", "Zero consolidation (all 17 v3.0 + 60+ Omega files synced, 0 drift Z:==I:)", "ISS-04", "PENDING"],
-    ["CHK-130", "P11: Clean-Slate v3.0 Fusion", "Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 291 Native + 36 Local = 327 Pure 6-Kernel Lean 4.35.0)", "BOTH", "P0-CRITICAL", "V3-LiveProof", "Live suite schema check", "Composite live OVBS-52 >= 85 (live 91.84), 291+36=327 Pure 6-Kernel Lean 4.35.0 proofs, 13/13 CS-v3 gates & 748-run sim validated", "GATE-13", "PENDING"]
+    ["CHK-130", "P11: Clean-Slate v3.0 Fusion", "Cross-verify live 7-repo native receipts (AUTOPHAGE/Cellulogonic/Omega/Noetic/Asmodensius + 310 Native + 50 Local = 360 Pure 6-Kernel Lean 4.35.0)", "BOTH", "P0-CRITICAL", "V3-LiveProof", "Live suite schema check", "Composite live OVBS-52 >= 85 (live 91.91), 310+50=360 Pure 6-Kernel Lean 4.35.0 proofs, 13/13 CS-v3 gates & 748-run sim validated", "GATE-13", "PENDING"]
 ]

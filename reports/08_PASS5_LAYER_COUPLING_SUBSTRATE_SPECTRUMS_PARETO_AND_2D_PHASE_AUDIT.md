@@ -3,7 +3,7 @@
 > **Document Class:** Pass-5 Exhaustive Systems Coupling, Substrate Spectrum, Pareto-Frontier Dilemma Resolution & Dual-Drive Cryptographic Parity Treatise (`v3.3-Omega`)  
 > **Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA`, Spokane, WA · ORCID `0009-0006-8168-9648` · `0_0@0thernes.art`)  
 > **Master Repository:** `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package` (Byte-for-Byte SHA-256 Mirrored to `I:\A-Life God Plan\A-Life Master Folder Build`)  
-> **Companion Matrices:** [`csv/18_layer_11x11_coupling_impedance_matrix.csv`](../csv/18_layer_11x11_coupling_impedance_matrix.csv) (`121` pairs) · [`csv/19_substrate_spectrum_comparative_scorecard.csv`](../csv/19_substrate_spectrum_comparative_scorecard.csv) (`SUB-01..15`) · [`csv/20_pareto_frontiers_and_dilemmas_matrix.csv`](../csv/20_pareto_frontiers_and_dilemmas_matrix.csv) (`PAR-01..20`) · [`results/empirical_sim_summary.json`](../results/empirical_sim_summary.json) (`748` runs) · [`results/alifeops_live_verification.json`](../results/alifeops_live_verification.json) (`OVBS-52 = 91.84`, `291+36=327` Pure 6-Kernel Lean 4.35.0)  
+> **Companion Matrices:** [`csv/18_layer_11x11_coupling_impedance_matrix.csv`](../csv/18_layer_11x11_coupling_impedance_matrix.csv) (`121` pairs) · [`csv/19_substrate_spectrum_comparative_scorecard.csv`](../csv/19_substrate_spectrum_comparative_scorecard.csv) (`SUB-01..15`) · [`csv/20_pareto_frontiers_and_dilemmas_matrix.csv`](../csv/20_pareto_frontiers_and_dilemmas_matrix.csv) (`PAR-01..20`) · [`results/empirical_sim_summary.json`](../results/empirical_sim_summary.json) (`748` runs) · [`results/alifeops_live_verification.json`](../results/alifeops_live_verification.json) (`OVBS-52 = 91.91`, `310+50=360` Pure 6-Kernel Lean 4.35.0)  
 > **Vector Visual Synthesis:** `MODEL-21` (Dual 11-Pt Sweep), `MODEL-23` (`11×11` Layer Impedance & 20 Pareto Frontiers), `MODEL-24` (`15`-Substrate Multi-Spectrum & Live `5×5` 2D Phase Surface)
 
 ---
@@ -94,7 +94,7 @@ Matrix 20 ([`csv/20_pareto_frontiers_and_dilemmas_matrix.csv`](../csv/20_pareto_
 | **`PAR-17`** | Breadth × Depth | Generalist Resilience vs. Specialist Speed | Compressed dormant gene-banks + on-demand horizontal compilation + multi-island archipelago | `GENERALIST_CROWDING_OUT` |
 | **`PAR-18`** | Speed × Heat | Fast Evolution vs. Landauer Efficiency | Sparse event-driven spikes (`9.2×` savings) + cold deep-time reversible archive (`>=1.5×–3.0×` margin) | `THERMAL_SPEED_TRADEOFF` |
 | **`PAR-19`** | Isolation × Fusion | Epidemic Quarantine vs. Symbiogenesis | Semi-permeable proof-carrying HGT airlocks + sandboxed pre-compilation before germline commit (`CIT-36`) | `TROJAN_BLUEPRINT_CONTAGION` |
-| **`PAR-20`** | Cognition × Life | Utility-ASI Optimization vs. Open-Ended Life | Converged Living Intelligence: autopoietic vitality + formal Lean 4.35.0 verified invariants (`91.84 / 327 Pure 6-Kernel Lean 4.35.0`) | `AI_ALIFE_ONTOLOGICAL_CLASH` |
+| **`PAR-20`** | Cognition × Life | Utility-ASI Optimization vs. Open-Ended Life | Converged Living Intelligence: autopoietic vitality + formal Lean 4.35.0 verified invariants (`91.91 / 360 Pure 6-Kernel Lean 4.35.0`) | `AI_ALIFE_ONTOLOGICAL_CLASH` |
 
 ---
 
@@ -135,14 +135,14 @@ Across all 11 points `r ∈ {0%, 10%, ..., 100%}` (`N=12` locked seeds per point
 
 ---
 
-## Part V — Live Zero-Hardcode 7-Repo Native C11/C23 & `291+36=327` Pure 6-Kernel Lean 4.35.0 Verification Sync
+## Part V — Live Zero-Hardcode 7-Repo Native C11/C23 & `310+50=360` Pure 6-Kernel Lean 4.35.0 Verification Sync
 
 Zero-hardcode execution of `scripts/run_alifeops_suite.py` (`results/alifeops_live_verification.json`) establishes the live verified Stage-5 state across all connected native engines:
 
-- **Composite OVBS-52 Score:** **`91.84 / 100`** (**`STAGE_5_CONVERGED_SYNTHESIS`**) | **`291` Native + `36` Local = `327` Pure 6-Kernel Lean 4.35.0 Theorems** (`all_lean4_pure_axioms_verified = true` — zero `sorry`, zero custom axioms)
+- **Composite OVBS-52 Score:** **`91.91 / 100`** (**`STAGE_5_CONVERGED_SYNTHESIS`**) | **`310` Native + `36` Local = `360` Pure 6-Kernel Lean 4.35.0 Theorems** (`all_lean4_pure_axioms_verified = true` — zero `sorry`, zero custom axioms)
 - **Tier 1 `AUTOPHAGE v1.4.0`:** `18/18` gates passed, `6/6` mutants, `feral_ovi = 92.05`, `bedau_packard_anew = 29.463`, `thermo_drift = 0.0`, **`48` Pure 6-Kernel Lean 4.35.0 Theorems**
-- **Tier 2 `Cellulogonic Mecha v1.5.0`:** **`26/26` gates passed**, `8/8` mutants caught, `embryo_covi = 58.19`, `embryo_homo_cad_pct = 82.5%`, `mass/energy residual = 0`, **`70` Pure 6-Kernel Lean 4.35.0 Theorems**
-- **Tier 2+ `Cellular Engine Omega v5.2.0`:** **`60/60` gates passed**, **`16/16` mutants caught**, **`75/75` Substrates (`PM01..25`, `MF01..25`, `GW01..25`)**, **`1,000/1,000` Hybrid Cube (`661 [OK]`, `274 [ADAPT]`, `20 [OVER]`, `45 [EXCL]`)**, `master_sha256 = a92641843e46736b...`, `tb13_niches = 17,848`, `tb14_ssin_pct = 95.35%`, `tb15_ciss_ee = 0.999735`, `tb16_essential_auroc = 0.99087`, `six_tier_int_drift = 0`, **`89` Pure 6-Kernel Lean 4.35.0 Theorems**
+- **Tier 2 `Cellulogonic Mecha v1.6.0`:** **`26/26` gates passed**, `8/8` mutants caught, `embryo_covi = 58.52`, `embryo_homo_cad_pct = 82.5%`, `mass/energy residual = 0`, **`70` Pure 6-Kernel Lean 4.35.0 Theorems**
+- **Tier 2+ `Cellular Engine Omega v5.4.0`:** **`60/60` gates passed**, **`16/16` mutants caught**, **`75/75` Substrates (`PM01..25`, `MF01..25`, `GW01..25`)**, **`1,000/1,000` Hybrid Cube (`661 [OK]`, `274 [ADAPT]`, `20 [OVER]`, `45 [EXCL]`)**, `master_sha256 = a92641843e46736b...`, `tb13_niches = 17,848`, `tb14_ssin_pct = 95.35%`, `tb15_ciss_ee = 0.999735`, `tb16_essential_auroc = 0.99087`, `six_tier_int_drift = 0`, **`89` Pure 6-Kernel Lean 4.35.0 Theorems**
 - **Tier 3 `Noetic Organism Omega v2.1.0`:** **`10/10` unit+mutants (`5/5` Anti-LARP)**, **`13/13` Clean-Slate v3.0 Release Gates PASS**, **`825/825` Individually Executed C11 Checks (`0` fail, `29` honest `[INDICATOR-ONLY]`, `5` honest `PASS_CLASSICAL_PARITY_DISCLOSED`, `0` scalar fan-out)**, **`100/100` Bottom-Up Acyclic Milestones (`M001..M100`, First-15 Playable=`LOCKED_PASS`)**, `12/12` Ring-0 WSE-12 (`10/10` ACL blocked, `||W||_2 = 0.8443 <= 0.99`, `2,464 B` diff, `0-bit` rollback), XPBD `|dV|/V0 = 0.0003%` (`0.55x` squeeze), packed `b1.58` `84.1%` offload, Blackiston `87.5%` remap, `10,000`-tick `0-bit` observer independence, `0 uq` drift, **`54` Pure 6-Kernel Lean 4.35.0 Theorems**
 - **Tier 3+4 `Asmodensius-Native v1.1.0`:** `ACTIVE_LIVE_EXECUTION_DUAL_WORLDS` (`77/77` ctest, `164/164` `test_gpu`, live `24C == RTX 5070 Ti GPU` bit-exact hash parity, `--species 101` exit-2 refusal, World #1 WebGL2 `:8794` + World #2 Native `az_view` `:8796`, **`30` Pure 6-Kernel Lean 4.35.0 Theorems**) alongside `omega-triscale-observatory v6.7.0` (`12/12` Node + `5/5` Python + `6/6` mutants)
 

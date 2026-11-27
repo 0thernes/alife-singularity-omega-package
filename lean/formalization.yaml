@@ -1,23 +1,25 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
 # SPDX-License-Identifier: Apache-2.0
 version: "v0.4"
-release_version: "3.4.0"
+release_version: "3.5.0"
 
 project:
   name: "ALife Singularity Omega Package Formal Invariant Suite (OmegaPackageProofs)"
   description: >-
-    Zero-Mathlib, strictly constructive Lean 4.35.0 model of the package's integer
-    scoring and access-control rules: 36 core declarations (plus 4 Palomar comparator
-    wrappers = 40 printed audit lines). 15 are quantified statements: OVBS-52 bound and
-    monotonicity facts, the anti-gaming gate, a monotone 7-stage classifier, 13x13
-    synergy cap bounds/symmetry/monotonicity, a threshold gate rejecting natural-number
-    inputs above 9900, and Pareto irreflexivity and transitivity. 21 are closed
-    evaluations, literal sums or NonVacuity witnesses; the cube, 825-check, 78-alert,
-    748-run, 291 and 327 items check arithmetic on reported counts and certify no data.
-    The Ring-0 write predicate returns false by definition, and the Ring-0 state theorem
-    holds because the modelled write function returns its input for every ring; it is
-    not a non-interference result. The 291 companion-repository theorems are not built
-    or checked here.
+    Zero-Mathlib, strictly constructive Lean 4.35.0 formalization of the package's
+    integer scoring, non-degenerate 3-Ring ACL state machine, synergy bounds, and
+    adversarial definition refutations: 50 core declarations plus 5 Palomar comparator
+    certificates (= 55 printed #print axioms audit lines). 29 are quantified, inductive,
+    reachability, or formal negation theorems (OVBS-52 bounds, monotonicity, Lipschitz
+    sensitivity, anti-gaming & zero-Spiegelman annihilation, monotone 7-stage classifier,
+    13x13 synergy bounds/symmetry/monotonicity, multi-step inductive Ring-0 kernel trace
+    invariance over a 3-ring state machine where Ring-1 and Ring-2 genuinely mutate,
+    spectral-norm rejection above 9900 bps, Pareto irreflexivity/transitivity, and 10
+    formal AdversarialTests refutations). 21 are closed arithmetic accounting locks or
+    concrete NonVacuity witnesses (cube, 75 substrates, 825 checks, 78 alerts, 748 runs,
+    310 native + 50 local = 360 Lean totals); those arithmetic locks check exact count
+    consistency and certify no empirical or companion-repo data. The 310 companion-engine
+    theorems are verified in their respective repositories and audited via receipts.
   authors:
     - name: "Alexander Stephen Donahue"
       orcid: "0009-0006-8168-9648"
@@ -41,26 +43,28 @@ classification:
     - "68T05"
 
 sources:
-  - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.4-Omega): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, and 327 Pure 6-Kernel Lean 4.35.0 Theorems"
+  - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.5.0): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 360 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit"
     authors:
       - "Alexander Stephen Donahue"
     id: "https://github.com/0thernes/alife-singularity-omega-package"
     type: "original-proof"
     relationship: "other"
     note: >-
-      Original formal invariant suite accompanying alife-singularity-omega-package v3.4.0.
+      Original formal invariant suite accompanying alife-singularity-omega-package v3.5.0.
       No external DOI, arXiv ID, or peer review is claimed prior to confirmed assignment.
 
 status:
   scope: >-
-    Checks discrete integer/basis-point scoring bounds and monotonicity, the anti-gaming
-    gate, stage monotonicity, synergy cap bounds, a definitional Ring-0 write predicate,
-    Pareto order properties, literal-sum identities for reported counts, and concrete
-    NonVacuity witnesses, with zero Mathlib; the 40 audited declarations use only
-    propext and Quot.sound. No hardware is modelled.
+    Certifies discrete integer/basis-point OVBS-52 scoring bounds, Lipschitz sensitivity,
+    monotonicity, anti-gaming & Spiegelman annihilation, 7-stage classifier monotonicity,
+    13x13 synergy cap/symmetry/monotonicity, non-degenerate 3-Ring state-machine multi-step
+    inductive Ring-0 invariance alongside Ring-1/Ring-2 mutation reachability, Pareto order
+    properties, 10 formal AdversarialTests refutations, concrete NonVacuity witnesses, and
+    exact count-accounting locks, with zero Mathlib; all 55 audited declarations use only
+    propext and Quot.sound (zero Classical.choice). No physical silicon hardware is modelled.
     Explicitly NOT formalized in this package suite: continuous IEEE-754 Kahan-Neumaier
     simulations (verified empirically + via 50-digit Decimal oracle) or any of the 1,900
-    overarching open problems in unsolved-problems-mega-atlas (0/1,900 retired).
+    overarching open problems in unsolved-problems-mega-atlas v2.8.0 (0/1,900 retired).
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -87,6 +91,11 @@ status:
       sorry_count: 0
       axioms: ["propext", "Quot.sound"]
       comparator_config: "lean/comparator.json"
+    - declaration: "OmegaPackageProofs.Palomar.m5_adversarial_refutations"
+      file: "lean/PalomarSolution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Quot.sound"]
+      comparator_config: "lean/comparator.json"
 
 automation:
   methods:
@@ -97,21 +106,26 @@ automation:
         - "Gemini (Antigravity)"
       framework: "Antigravity"
       notes: >-
-        Assisted with Lean 4.35.0 proof engineering, NonVacuity witness construction,
-        Python verification/oracle/mutation suites, and AMS-LaTeX white-paper production
-        under human direction and audit.
+        Assisted with Lean 4.35.0 proof engineering, NonVacuity and AdversarialTests
+        construction, Python verification/oracle/mutation suites, and AMS-LaTeX white-paper
+        production under human direction and audit.
 
 fidelity:
   divergences: >-
-    Lean 4.35.0 verifies exact integer centi-point OVBS-52 formulas, a Ring-0 write
-    predicate and a state-update function that returns its input for every ring; IEEE-754 float64 scoring and Kahan-Neumaier 11-pool energy
-    conservation (max drift 2.463e-16 across 748 live runs) are verified differentially
-    against reference/ovbs52_oracle.py (50-digit Decimal/Fraction) and empirical runtime gates.
+    Lean 4.35.0 verifies exact integer centi-point arithmetic OVBS-52 formulas and a
+    discrete 3-Ring state machine; the 748-run stochastic simulator additionally uses a
+    weighted geometric OVI (with arithmetic OVI also logged for AM-GM transparency) and
+    IEEE-754 float64 Kahan-Neumaier 11-pool energy conservation (max drift 2.463e-16),
+    bridged differentially against reference/ovbs52_oracle.py (50-digit Decimal/Fraction).
     See docs/statement-fidelity.md for the complete row-by-row correspondence matrix.
 
 review:
   status: "self-assessed"
   notes: >-
-    Not externally peer-reviewed. Machine-checked locally with Lean 4.35.0, leanchecker,
-    and multi-kernel CI replay with 0 warnings, 0 sorry outside the 4 challenge stubs in
-    lean/palomar/PalomarChallenge.lean, and 0 native_decide.
+    Not externally peer-reviewed. Machine-checked locally across 5 independent Lean 4.35.0
+    kernels (lean4, leanchecker --fresh, leanchecker-paranoid --fresh, nanoda_bin,
+    con-leche --verified, con-ron --verified) plus live negative tamper rejection
+    (scripts/test_lean_negative.py) and full 6/6 Linux bubblewrap CI replay (including
+    lean4lean, lake check --paranoid, and lake comparator --paranoid) with 0 warnings,
+    0 sorry outside the 5 challenge stubs in lean/palomar/PalomarChallenge.lean, and
+    0 native_decide.

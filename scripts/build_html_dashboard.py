@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
-Generates the standalone, zero-dependency Interactive HTML5 Observatory & Comprehensive Report (v3.3-Omega)
+Generates the standalone, zero-dependency Interactive HTML5 Observatory & Comprehensive Report (v3.5-Omega)
 for the Unified Clean-Slate v3.0 x A-Life Singularity, Super A-Life & Post-Singularity SUPER LIFE Package.
 
 Includes:
@@ -61,9 +61,9 @@ def generate_html_dashboard(
     mut_cnt = payload['sim_meta'].get('anti_larp_mutant_audit', {}).get('mutants_rejected', 5)
     tot_runs = payload['sim_meta'].get('total_runs_executed', 748)
     n_seeds = payload['sim_meta'].get('paired_seeds_n', 48)
-    live_ovi = live_receipts.get("composite_ovi_score", 91.84)
-    lean_tot = live_receipts.get("total_lean4_theorems", 291)
-    lean_all = lean_tot + 36
+    live_ovi = live_receipts.get("composite_ovi_score", 91.91)
+    lean_tot = live_receipts.get("total_lean4_theorems", 310)
+    lean_all = lean_tot + 50
     svg_count = len(svg_models)
 
     c_by_id = {c["run_id"]: c for c in cohorts}
@@ -105,7 +105,8 @@ def generate_html_dashboard(
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A-Life Singularity, Super A-Life &amp; Clean-Slate v3.0 — Omniscient Observatory v3.4-Omega</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none';" />
+<title>A-Life Singularity, Super A-Life &amp; Clean-Slate v3.0 — Omniscient Observatory v3.5-Omega</title>
 <style>
   :root {{
     --bg-void: #05080f;
@@ -140,6 +141,8 @@ def generate_html_dashboard(
   ::-webkit-scrollbar-thumb {{ background: #223254; border-radius: 4px; }}
   ::-webkit-scrollbar-thumb:hover {{ background: #365085; }}
 
+  .skip-link {{ position: absolute; left: -9999px; top: 8px; background: var(--cyan); color: #05080f; padding: 8px 14px; font-weight: 800; border-radius: 6px; text-decoration: none; z-index: 999; }}
+  .skip-link:focus {{ left: 14px; outline: 2px solid #fff; }}
   .app-shell {{ display: grid; grid-template-columns: 282px 1fr; min-height: 100vh; }}
   .sidebar {{
     background: linear-gradient(180deg, #080d1a 0%, #060912 100%);
@@ -323,7 +326,7 @@ def generate_html_dashboard(
   .chk-row.done td {{ opacity: 0.55; text-decoration: line-through; }}
   .chk-box {{ width: 16px; height: 16px; accent-color: var(--cyan); cursor: pointer; }}
 
-  /* v3.3-Omega Hybrid Cube & Hub Styling */
+  /* v3.5-Omega Hybrid Cube & Hub Styling */
   .cube-cell {{ text-align:center; font-family:var(--font-mono); font-size:10.5px; font-weight:800; cursor:pointer; padding:7px 4px !important; transition:transform .12s; }}
   .cube-cell:hover {{ transform:scale(1.08); outline:2px solid #fff; position:relative; z-index:3; }}
   .cb-ok {{ background:rgba(34,197,94,0.22) !important; color:#86efac !important; }}
@@ -337,23 +340,28 @@ def generate_html_dashboard(
   .hub-card a:hover {{ color:var(--cyan); text-decoration:underline; }}
 
   @media (max-width: 1100px) {{
-    .app-shell {{ grid-template-columns: 1fr; }}
+    .skip-link {{ position: absolute; left: -9999px; top: 8px; background: var(--cyan); color: #05080f; padding: 8px 14px; font-weight: 800; border-radius: 6px; text-decoration: none; z-index: 999; }}
+  .skip-link:focus {{ left: 14px; outline: 2px solid #fff; }}
+  .app-shell {{ grid-template-columns: 1fr; }}
     .sidebar {{ position: relative; height: auto; }}
     .sim-layout, .radar-grid {{ grid-template-columns: 1fr; }}
   }}
   @media print {{
     .sidebar, .controls-bar, .btn {{ display: none !important; }}
-    .app-shell {{ display: block; }}
+    .skip-link {{ position: absolute; left: -9999px; top: 8px; background: var(--cyan); color: #05080f; padding: 8px 14px; font-weight: 800; border-radius: 6px; text-decoration: none; z-index: 999; }}
+  .skip-link:focus {{ left: 14px; outline: 2px solid #fff; }}
+  .app-shell {{ display: block; }}
     .section {{ display: block !important; page-break-after: always; }}
     body {{ background: #fff; color: #111; }}
   }}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="app-shell">
   <aside class="sidebar">
     <div class="brand">
-      <div class="brand-tag">ALIFE-OMEGA v3.4 // 3-CYCLE HARDENED</div>
+      <div class="brand-tag">ALIFE-OMEGA v3.5 // 3-CYCLE HARDENED</div>
       <h1>CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA</h1>
       <p>22 Tabs &bull; {svg_count} Vector SVGs &bull; 10&times;10&times;10 Cube &bull; 78/78 Alerts &bull; {tot_runs} Live Runs &bull; {lean_all} Pure Lean 4</p>
     </div>
@@ -367,7 +375,7 @@ def generate_html_dashboard(
       <button class="nav-btn" data-tab="sec-pipeline"><span>03. ALifeOps DevOps</span><span class="nav-badge">78 ALR</span></button>
       <button class="nav-btn feral-tab" data-tab="sec-castration"><span>04. 13-Vector Castration</span><span class="nav-badge">13 VEC</span></button>
       <button class="nav-btn feral-tab" data-tab="sec-synergy"><span>05. 13&times;13 Synergy Heatmap</span><span class="nav-badge">169 PR</span></button>
-      <button class="nav-btn feral-tab" data-tab="sec-failures"><span>06. 78-Mode Forensic Atlas</span><span class="nav-badge">42+36</span></button>
+      <button class="nav-btn feral-tab" data-tab="sec-failures"><span>06. 78-Mode Forensic Atlas</span><span class="nav-badge">42+50</span></button>
       <button class="nav-btn" data-tab="sec-gaps"><span>07. Gaps, Holes &amp; Blindspots</span><span class="nav-badge">28 VOID</span></button>
       <button class="nav-btn feral-tab" data-tab="sec-fates"><span>08. Feral Cosmic Chronicles</span><span class="nav-badge">30 EPO</span></button>
       <button class="nav-btn" data-tab="sec-sim"><span>09. Live {tot_runs}-Run Sim &amp; Lean4</span><span class="nav-badge">{tot_runs} RUN</span></button>
@@ -390,7 +398,7 @@ def generate_html_dashboard(
       <div>UNIFIED RECORDS: <span style="color:var(--cyan)">{total_records:,}</span></div>
       <div>YAML ALERTS WIRED: <span style="color:var(--green)">78 / 78 (13 GATES)</span></div>
       <div>FP64 11-POOL DRIFT: <span style="color:var(--green)">{drift_str}</span></div>
-      <div>LIVE 5-ENGINE / LEAN4: <span style="color:var(--green)">{live_ovi} / {lean_tot}+36</span></div>
+      <div>LIVE 5-ENGINE / LEAN4: <span style="color:var(--green)">{live_ovi} / {lean_tot}+50</span></div>
     </div>
   </aside>
 
@@ -398,14 +406,14 @@ def generate_html_dashboard(
     <!-- ==================== 01. EXECUTIVE OVERVIEW ==================== -->
     <section id="sec-overview" class="section active">
       <div class="hero-header">
-        <div class="hero-eyebrow">UNIFIED v3.4-OMEGA SYNTHESIS // CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA &times; MEGA-ATLAS 1,900 CROSSWALK &times; {lean_tot + 36} PURE 6-KERNEL LEAN 4.35.0</div>
+        <div class="hero-eyebrow">UNIFIED v3.5-OMEGA SYNTHESIS // CLEAN-SLATE v3.0 &times; SINGULARITY OMEGA &times; MEGA-ATLAS 1,900 CROSSWALK &times; {lean_tot + 50} PURE 6-KERNEL LEAN 4.35.0</div>
         <h2>The Sibling Singularity: Micro-Wetware Clean-Slate &rarr; Super A-Life &rarr; SUPER LIFE</h2>
-        <p>This v3.4-Omega Omniscient Observatory fuses all <strong>17 Clean-Slate v3.0 architecture files</strong> (10 Invariants P1&ndash;P10, 11-Pool FP64 Conservation, 75 Substrates, 1,000-Cell Hybrid Cube, 825 Clean-Slate Checks, 100-Milestone DAG, 36 Forensic Guards, 13 Release Gates, Models 1&ndash;14), the <strong>Zeta-Omega Singularity Atlas</strong> (Stage 0&rarr;6, 61 Spatial OOM, 42 Macro FMs, 13&times;13 Castration Synergy, {tot_runs} Live Runs, 5 Native Engines &amp; {lean_tot} Native + 36 Local = {lean_all} Pure Lean 4 Proofs), the <strong>Pass-4 &amp; Pass-5 Deep Systems Atlas</strong> (24 Gradients, 36 Contrasts, 30 Adjacents, 11&times;11 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep &amp; 5&times;5 2D Phase Surface), and the <strong>Mega-Atlas 1,900-Problem Non-Retirement Crosswalk</strong> (0/1,900 retired; 25 scoped sub-results) with <strong>zero consolidation</strong> and exact <strong>0-mismatch Z:&harr;I: SHA-256 parity</strong>.</p>
+        <p>This v3.5-Omega Omniscient Observatory fuses all <strong>17 Clean-Slate v3.0 architecture files</strong> (10 Invariants P1&ndash;P10, 11-Pool FP64 Conservation, 75 Substrates, 1,000-Cell Hybrid Cube, 825 Clean-Slate Checks, 100-Milestone DAG, 36 Forensic Guards, 13 Release Gates, Models 1&ndash;14), the <strong>Zeta-Omega Singularity Atlas</strong> (Stage 0&rarr;6, 61 Spatial OOM, 42 Macro FMs, 13&times;13 Castration Synergy, {tot_runs} Live Runs, 5 Native Engines &amp; {lean_tot} Native + 50 Local = {lean_all} Pure Lean 4 Proofs), the <strong>Pass-4 &amp; Pass-5 Deep Systems Atlas</strong> (24 Gradients, 36 Contrasts, 30 Adjacents, 11&times;11 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep &amp; 5&times;5 2D Phase Surface), and the <strong>Mega-Atlas 1,900-Problem Non-Retirement Crosswalk</strong> (0/1,900 retired; 25 scoped sub-results) with <strong>zero consolidation</strong> and exact <strong>0-mismatch Z:&harr;I: SHA-256 parity</strong>.</p>
       </div>
 
       <div class="kpi-grid">
         <div class="kpi-card" style="--accent:var(--cyan)"><div class="kpi-label">Unified Records</div><div class="kpi-value">{total_records:,}</div><div class="kpi-sub">24 CSVs &bull; 0 Consolidation &bull; 0 Drift</div></div>
-        <div class="kpi-card" style="--accent:var(--green)"><div class="kpi-label">Live 5-Engine OVI</div><div class="kpi-value">{live_ovi}</div><div class="kpi-sub">Stage 5 &bull; {lean_tot}+36 = {lean_all} Pure Lean 4</div></div>
+        <div class="kpi-card" style="--accent:var(--green)"><div class="kpi-label">Live 5-Engine OVI</div><div class="kpi-value">{live_ovi}</div><div class="kpi-sub">Stage 5 &bull; {lean_tot}+50 = {lean_all} Pure Lean 4</div></div>
         <div class="kpi-card" style="--accent:var(--crimson)"><div class="kpi-label">Wired Alerts</div><div class="kpi-value">78 / 78</div><div class="kpi-sub">42 Macro FMs + 36 v3.0 Guards + 13 Gates</div></div>
         <div class="kpi-card" style="--accent:var(--violet)"><div class="kpi-label">Hybrid Cube</div><div class="kpi-value">1,000</div><div class="kpi-sub">661 [OK] &bull; 274 [ADAPT] &bull; 75 Substrates</div></div>
         <div class="kpi-card" style="--accent:var(--blue)"><div class="kpi-label">Live Sim Runs</div><div class="kpi-value">{tot_runs}</div><div class="kpi-sub">384 Cohort (N={n_seeds}) + 264 Dual + 100 2D</div></div>
@@ -556,7 +564,7 @@ def generate_html_dashboard(
     <!-- ==================== 06. FAILURE MODES ATLAS (78 UNIFIED) ==================== -->
     <section id="sec-failures" class="section">
       <div class="hero-header" style="border-color:rgba(255,51,102,0.45)">
-        <div class="hero-eyebrow" style="color:var(--crimson)">78 WIRED TELEMETRY ALERTS // 42 MACRO EVOLUTIONARY FMs + 36 CLEAN-SLATE v3.0 FORENSIC GUARDS + 13 GATES</div>
+        <div class="hero-eyebrow" style="color:var(--crimson)">78 WIRED TELEMETRY ALERTS // 42 MACRO EVOLUTIONARY FMs + 50 CLEAN-SLATE v3.0 FORENSIC GUARDS + 13 GATES</div>
         <h2>Unified 78-Mode Forensic Atlas &amp; Clean-Slate v3.0 Triage Guards</h2>
         <p>Every macro physics/evolutionary trap (42 FMs) AND every micro/systems Clean-Slate v3.0 failure guard (36 Triage + 13 Release Gates) wired 1:1 into <code>pipelines/alifeops-master-pipeline.yaml</code>.</p>
       </div>
@@ -660,7 +668,7 @@ def generate_html_dashboard(
         </div>
       </div>
       <div class="panel">
-        <div class="panel-title"><h3>8-Cohort Empirical Scorecards (All 8 + Live 5-Engine JSON Validated Against v3.4 Schema)</h3><button class="btn" onclick="exportTableCSV('empirical')">EXPORT CSV</button></div>
+        <div class="panel-title"><h3>8-Cohort Empirical Scorecards (All 8 + Live 5-Engine JSON Validated Against v3.5 Schema)</h3><button class="btn" onclick="exportTableCSV('empirical')">EXPORT CSV</button></div>
         <div class="table-wrap" id="tblEmpirical"></div>
       </div>
       <div class="panel">
@@ -681,7 +689,7 @@ def generate_html_dashboard(
           <svg id="radarSvg" viewBox="0 0 400 360" width="100%" style="max-width:390px"></svg>
           <div class="pill-group" style="justify-content:center;margin-top:8px" id="radarProfilePills">
             <button class="pill active" data-prof="superlife">SUPER LIFE (Stage 6)</button>
-            <button class="pill" data-prof="live4eng">Live 5-Engine ({live_ovi} &middot; {lean_tot}+36 Lean4)</button>
+            <button class="pill" data-prof="live4eng">Live 5-Engine ({live_ovi} &middot; {lean_tot}+50 Lean4)</button>
             <button class="pill" data-prof="sim08">Live SIM08 Starter Cube ({s8_ovi:.2f})</button>
             <button class="pill" data-prof="singularity">A-Life Singularity (Stage 3)</button>
             <button class="pill" data-prof="earth">Earth LUCA Biosphere</button>
@@ -827,7 +835,7 @@ def generate_html_dashboard(
       <div class="hero-header" style="border-color:rgba(255,183,3,0.5)">
         <div class="hero-eyebrow" style="color:var(--amber)">48 MASTER JOINS &bull; 160 / 160 CLOSED AUDITS &bull; 45 CITATIONS</div>
         <h2>Omniscient Cross-Corpus Traceability, 160 Audit Closures &amp; 45 Citations</h2>
-        <p>Complete structural proof showing how every Clean-Slate v3.0 invariant, substrate, cube cell, Pass-4 gradient/contrast, Pass-5 layer coupling/Pareto frontier, and Mega-Atlas crosswalk joins 1:1 with Omega Singularity artifacts, {tot_runs} live Python runs, and {lean_tot} Native + 36 Local = {lean_all} Pure Lean 4 machine-checked proofs.</p>
+        <p>Complete structural proof showing how every Clean-Slate v3.0 invariant, substrate, cube cell, Pass-4 gradient/contrast, Pass-5 layer coupling/Pareto frontier, and Mega-Atlas crosswalk joins 1:1 with Omega Singularity artifacts, {tot_runs} live Python runs, and {lean_tot} Native + 50 Local = {lean_all} Pure Lean 4 machine-checked proofs.</p>
       </div>
       <div class="panel">
         <div class="panel-title"><h3>48-Row Omniscient Cross-Corpus Traceability Matrix</h3><button class="btn" onclick="exportTableCSV('traceability')">EXPORT CSV</button></div>
@@ -861,16 +869,16 @@ def generate_html_dashboard(
           <a href="../dist/Donahue_2026_alife_singularity_omega.pdf">dist/Donahue_2026_alife_singularity_omega.pdf (AMS-LaTeX White Paper)</a>
           <a href="../pdf/ALife-Build-Framework-Template.pdf">pdf/ALife-Build-Framework-Template.pdf (Vector Chrome PDF)</a>
           <a href="../pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf">pdf/Clean-Slate-Creature-Blueprint-Checklist.pdf (Vector PDF)</a>
-          <a href="../pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf">pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf (v3.4!)</a>
+          <a href="../pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf">pdf/ALife_Singularity_SuperLife_Omega_Master_Dossier.pdf (v3.5!)</a>
         </div>
         <div class="hub-card">
           <h4>MULTI-FORMAT MASTER SPECS &amp; PIPELINES (6)</h4>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.json">specs/ALife-Framework-v3.0-Master-Spec.json (3.4.0-omega)</a>
-          <a href="../specs/ALife-Framework-v3.0-Master-Spec.yaml">specs/ALife-Framework-v3.0-Master-Spec.yaml (3.4.0-omega)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.json">specs/ALife-Framework-v3.0-Master-Spec.json (3.5.0-omega)</a>
+          <a href="../specs/ALife-Framework-v3.0-Master-Spec.yaml">specs/ALife-Framework-v3.0-Master-Spec.yaml (3.5.0-omega)</a>
           <a href="../specs/ALife-Framework-v3.0-Master-Spec.xml">specs/ALife-Framework-v3.0-Master-Spec.xml (26-Sec Parity)</a>
           <a href="../specs/ALife-Framework-v3.0-Master-Spec.txt">specs/ALife-Framework-v3.0-Master-Spec.txt (Sec 1-22)</a>
           <a href="../pipelines/alifeops-master-pipeline.yaml">pipelines/alifeops-master-pipeline.yaml (78/78 Alerts)</a>
-          <a href="../pipelines/benchmark-suite-schema.json">pipelines/benchmark-suite-schema.json (v3.4 Unified)</a>
+          <a href="../pipelines/benchmark-suite-schema.json">pipelines/benchmark-suite-schema.json (v3.5 Unified)</a>
         </div>
         <div class="hub-card">
           <h4>ALL 5 EXCEL WORKBOOKS (XLSX &amp; XLS)</h4>
@@ -1029,7 +1037,7 @@ def generate_html_dashboard(
     <section id="sec-mega-atlas" class="section">
       <div class="hero-header" style="border-color:rgba(16,185,129,0.65)">
         <div class="hero-eyebrow" style="color:var(--green)">HONEST NON-RETIREMENT AUDIT // 0 / 1,900 OVERARCHING OPEN PROBLEMS RETIRED &bull; 25 SCOPED SUB-RESULTS MAPPED</div>
-        <h2>Unsolved Problems Mega-Atlas (V2.4.0, N=1,900) Crosswalk</h2>
+        <h2>Unsolved Problems Mega-Atlas (v2.8.0, N=1,900) Crosswalk</h2>
         <p>Exhaustive programmatic audit of all <strong>1,900 open problems</strong> in <code>0thernes/unsolved-problems-mega-atlas</code> (428 broad domain matches &rarr; 25 direct/adjacent rows). Enforces strict epistemic non-inflation: <strong>zero (0 / 1,900) overarching parent problems are claimed solved</strong>; each row separates verified in-silico/Lean 4 sub-results from what remains genuinely OPEN.</p>
       </div>
       <div class="panel">
@@ -1455,7 +1463,7 @@ const simKpiCards = [
   {{ lbl: "Tier 2+ Omega v" + (t2p.version || "5.2.0"), val: (t2p.gates_passed || 60) + "/" + (t2p.gates_total || 60), sub: "75 Sub · 1k Cube · " + (t2p.lean4_theorems || 89) + " Lean 4.35", acc: "var(--green)" }},
   {{ lbl: "Tier 3 Noetic v" + (t3n.version || "2.1.0"), val: (t3n.honest_825_executed_c11 || 825) + "/825 C11", sub: "100/100 M · 13/13 CS-v3 · " + (t3n.lean4_theorems || 54) + " Lean 4.35", acc: "var(--cyan)" }},
   {{ lbl: "Tier 3+4 Asmodensius v" + (t34.version || "1.1.0"), val: t34.rc === 0 ? "LIVE " + (t34.ctest_registered_total || 77) + "/" + (t34.ctest_registered_total || 77) : "ACTIVE", sub: "164/164 GPU · 24C==RTX · " + (t34.lean4_theorems || 30) + " Lean 4.35", acc: "var(--green)" }},
-  {{ lbl: "Live Composite OVI", val: String(LIVE_REC.composite_ovi_score || 91.84), sub: String(LIVE_REC.stage_classification || "STAGE_5") + " · " + String(LIVE_REC.total_lean4_theorems || 291) + "+36=327 Lean 4.35", acc: "var(--green)" }},
+  {{ lbl: "Live Composite OVI", val: String(LIVE_REC.composite_ovi_score || 91.91), sub: String(LIVE_REC.stage_classification || "STAGE_5") + " · " + String(LIVE_REC.total_lean4_theorems || 310) + "+50=360 Lean 4.35", acc: "var(--green)" }},
   {{ lbl: "Sim 11-Pool FP64", val: "{drift_str}", sub: "{tot_runs} Runs (N={n_seeds}) · {mut_cnt}/5 Real Anti-LARP", acc: "var(--blue)" }}
 ];
 document.getElementById("simEngineKpis").innerHTML = simKpiCards.map(k =>
@@ -1497,7 +1505,7 @@ const live4EngPillars = [
 ];
 const radarProfiles = {{
   superlife: {{ name: "Post-Singularity SUPER LIFE (Stage 6 Horizon)", color: "#00f5d4", desc: "Converged Living Superintelligence & Physics-Native Cosmobiome — near-ceiling performance across all 8 vitality pillars simultaneously.", scores: [98, 99, 98, 99, 99, 97, 99, 96] }},
-  live4eng: {{ name: "Live 5-Engine Native C11/C23 & Pure 6-Kernel Lean 4.35.0 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 5-engine native stack (AUTOPHAGE v1.4.0 + Cellulogonic v1.5.0 26/26 + Omega v5.2.0 60/60 75-Sub/1000-Cube + Noetic v2.1.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius v1.1.0 LIVE 77/77 ctest, 164/164 test_gpu, 24C==RTX 5070 Ti GPU hash parity + omega-triscale-observatory v6.7.0) backed by {lean_tot} Native + 36 Local = {lean_tot + 36} Pure 6-Kernel Lean 4.35.0 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
+  live4eng: {{ name: "Live 5-Engine Native C11/C23 & Pure 6-Kernel Lean 4.35.0 Stack (OVBS-52 = {live_ovi})", color: "#22c55e", desc: "Verified 5-engine native stack (AUTOPHAGE v1.4.0 + Cellulogonic v1.6.0 26/26 + Omega v5.4.0 60/60 75-Sub/1000-Cube + Noetic v2.1.0 825/825 C11, 100/100 M & 13/13 CS-v3 Gates + Asmodensius v1.1.0 LIVE 77/77 ctest, 164/164 test_gpu, 24C==RTX 5070 Ti GPU hash parity + omega-triscale-observatory v6.7.0) backed by {lean_tot} Native + 50 Local = {lean_tot + 50} Pure 6-Kernel Lean 4.35.0 theorems & 35/35 compiled mutants.", scores: live4EngPillars }},
   sim08: {{ name: "Live SIM08 Starter Cube sLTC + XPBD + Ring-0 (OVI = {s8_ovi:.2f})", color: "#a3e635", desc: "Executed across N={n_seeds} paired locked seeds (5001-5048): strongly beats pure raw feral (p_Holm = {s8_ph}, delta_pair = {s8_dp}), traps {s8_blk:.1f} illegal WSE edits/run, 0% KS deletion.", scores: sim08Pillars }},
   singularity: {{ name: "A-Life Singularity Ignition (Stage 3)", color: "#9b5de5", desc: "Type 4 Meta-OEE triggered, hyperbolic Major Transition compression active, recursive evolutionary self-rewriting & early universal construction.", scores: [76, 72, 68, 78, 70, 62, 68, 74] }},
   earth: {{ name: "Earth LUCA Biosphere (3.8 Gyr Natural Baseline)", color: "#10b981", desc: "Astonishing autopoiesis, assembly depth, and feral resilience — yet severely bottlenecked by LUCA substrate lock-in, slow blind mutation, and rigid aging/morphology.", scores: [64, 88, 42, 24, 62, 34, 52, 84] }},
@@ -1558,7 +1566,7 @@ document.getElementById("bmSearch").addEventListener("input", renderBenchmarks);
 renderBenchmarks();
 
 // --- 11. 130-Item Checklist (with V3_Governance_Mapping) ---
-const CHK_STORE_KEY = "alife_omega_checklist_v3_4";
+const CHK_STORE_KEY = "alife_omega_checklist_v3_5";
 let chkState = {{}};
 try {{ chkState = JSON.parse(localStorage.getItem(CHK_STORE_KEY) || "{{}}"); }} catch(e) {{ chkState = {{}}; }}
 const chkPhaseSel = document.getElementById("chkPhaseSelect");
@@ -1963,4 +1971,4 @@ renderMegaAtlas();
 </html>
 """
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(html, encoding="utf-8")
+    output_path.write_text(html, encoding="utf-8", newline="\n")

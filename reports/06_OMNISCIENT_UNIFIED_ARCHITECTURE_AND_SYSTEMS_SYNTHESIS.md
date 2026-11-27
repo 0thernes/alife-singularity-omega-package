@@ -1,8 +1,8 @@
-# OMNISCIENT UNIFIED ARCHITECTURE & SYSTEMS SYNTHESIS (`v3.4-Omega`)
-## The Complete Cross-Corpus Master Bridge Integrating Clean-Slate v3.0 (`I:\A-Life God Plan`) × Zeta-Omega Singularity (`Z:\ANTIGRAVITY`) × Pass-5 Layer Coupling, Multi-Substrate & Pareto Atlas × Live 7-Repo Verification (`91.84` · `327` Pure 6-Kernel Lean 4.35.0 Proofs)
+# OMNISCIENT UNIFIED ARCHITECTURE & SYSTEMS SYNTHESIS (`v3.5-Omega`)
+## The Complete Cross-Corpus Master Bridge Integrating Clean-Slate v3.0 (`I:\A-Life God Plan`) × Zeta-Omega Singularity (`Z:\ANTIGRAVITY`) × Pass-5 Layer Coupling, Multi-Substrate & Pareto Atlas × Live 7-Repo Verification (`91.91` · `360` Pure 6-Kernel Lean 4.35.0 Proofs)
 
 > **Author:** Alexander Stephen Donahue (`Independent Researcher, Spokane, WA, USA`, ORCID `0009-0006-8168-9648`)  
-> **Unified Release:** `v3.4.0-omega` (Zero-Consolidation Omniscient Synchronization + Pass-5 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep & `5×5` 2D Phase Surface)  
+> **Unified Release:** `v3.5.0-omega` (Zero-Consolidation Omniscient Synchronization + Pass-5 Layer Coupling, 15-Substrate Multi-Spectrum, 20 Pareto Frontiers, Dual 11-Pt Sweep & `5×5` 2D Phase Surface)  
 > **Repository Root:** `Z:\[Vibe Coded (AI)]\ANTIGRAVITY\alife-singularity-omega-package`  
 > **Baked Clean-Slate Source:** `I:\A-Life God Plan\A-Life Master Folder Build` (`17 / 17` files preserved & upgraded — `0` dropped, `0` SHA-256 mismatches)
 
@@ -14,7 +14,7 @@ Artificial Life research historically fractures into two blind silos:
 1. **Bottom-Up Systems & Biophysical Engineering (Clean-Slate `v3.0`):** Obsessed with bit-exact determinism, `0`-allocation `SoA` arenas, `11`-pool compensated `FP64` conservation (`< 1e-12`), XPBD soft hydrostatic bodies (`|\Delta V|/V_0 < 1%`), Gánti Chemotons, packed `b1.58`/`int4` sparse spiking cortices, `10×10×10` hybrid compatibility cubes, `Ring-0` hardware ACLs, `5`-mutant Anti-LARP CI gates, and Holm–Bonferroni FWER statistics across `825` clean-slate capability checks—yet bounded by single-dome `Tier E..W` horizons.
 2. **Top-Down Open-Ended Evolution & Cosmic Singularity Analysis (Zeta-Omega Macro Corpus):** Obsessed with `Stage 0 → 6` escalation from inert chemistry to Post-Beyond `SUPER LIFE`, 61 spatial orders of magnitude ($10^{-35}\text{ m} \to 10^{26}\text{ m}$), 42 macro evolutionary failure modes, 28 epistemic voids, 13 restraint/castration vectors and their 13×13 multiplicative backlash synergies, 10-stage `ALifeOps (CI/CD/CE)`, `OVBS-52` vitality benchmarking, and 6 divergent hard-sci-fi cosmic fate branches—yet needing hard silicon-level physics, memory, PRNG, continuous operating-margin, layer-impedance, and statistical falsification guarantees underneath `Stage 0`.
 
-**`v3.4-Omega` eliminates that schism completely without consolidating or dropping a single file.** Every file from both corpora plus the Pass-4 and Pass-5 comparative/coupling/substrate/Pareto layers remains a first-class synchronized artifact (`77+` total files across `11` Markdown treatises, `23` canonical CSVs with `2,782` rows, `5` Excel workbooks, `4` multi-format master specs with 100% 26-section XML parity, `3` interactive HTML5 applications, `3` vector Chrome PDFs, `2` declarative pipeline/schema manifests, `10` live JSON result scorecards, `12` reproducible Python builders/simulators/auditors, cryptographic SHA-256 manifests, and a verified release `.zip`).
+**`v3.5-Omega` eliminates that schism completely without consolidating or dropping a single file.** Every file from both corpora plus the Pass-4 and Pass-5 comparative/coupling/substrate/Pareto layers remains a first-class synchronized artifact (`77+` total files across `11` Markdown treatises, `23` canonical CSVs with `2,782` rows, `5` Excel workbooks, `4` multi-format master specs with 100% 26-section XML parity, `3` interactive HTML5 applications, `3` vector Chrome PDFs, `2` declarative pipeline/schema manifests, `10` live JSON result scorecards, `12` reproducible Python builders/simulators/auditors, cryptographic SHA-256 manifests, and a verified release `.zip`).
 
 ---
 
@@ -41,13 +41,13 @@ All **24 publication-grade vector SVG Architecture Models** are synchronized ide
 | **`MODEL-15`** | **Dual-Track Escalation Ladder (`STG-0 → STG-6`) & 4-Loop Singularity Anatomy** | **Omega Architecture** | `csv/01_escalation_ladder_ai_vs_alife_matrix.csv`, `reports/01` |
 | **`MODEL-16`** | **10-Stage ALifeOps (`CI/CD/CE`) × 78-Alert Telemetry Mesh & 13 Release Gates** | **Omega Architecture** | `pipelines/alifeops-master-pipeline.yaml`, `reports/02`, `csv/06`, `csv/13` |
 | **`MODEL-17`** | **13-Vector Castration Bifurcation, 13×13 Synergy & Live 8-Cohort Empirical Proof** | **Omega Architecture** | `csv/05`, `csv/10`, `csv/11`, `results/empirical_sim_summary.json` |
-| **`MODEL-18`** | **Unified Verification Pyramid: `OVBS-52` × `825`-Check Suite × 7 Repos (`91.84` · `327` Pure 6-Kernel Lean 4.35.0)** | **Omega Architecture** | `results/alifeops_live_verification.json`, `reports/04`, `csv/08` |
+| **`MODEL-18`** | **Unified Verification Pyramid: `OVBS-52` × `825`-Check Suite × 7 Repos (`91.91` · `360` Pure 6-Kernel Lean 4.35.0)** | **Omega Architecture** | `results/alifeops_live_verification.json`, `reports/04`, `csv/08` |
 | **`MODEL-19`** | **61-OOM Cosmic Breadth, Recursion Depth `0→N` & 6 Feral Fate Branches** | **Omega Architecture** | `csv/02`, `csv/09`, `reports/05` |
 | **`MODEL-20`** | **Omniscient Cross-Corpus Dependency & Multi-Format Synchronization Topology (`77+` Files)** | **Omega Architecture** | `csv/14_omniscient_cross_corpus_traceability_matrix.csv`, `MANIFEST.json` |
-| **`MODEL-21`** | **Dual 11-Point Continuous Gradient Sweep (`264` Runs: Behavioral vs. Ring-0 ACL) & Operating Margins** | **v3.4-Omega Pass-5** | `csv/15_gradients_margins_and_phase_spectrums_matrix.csv`, `reports/07`, `reports/08` |
-| **`MODEL-22`** | **Cross-Layer (`L0–L10`) Comparative Contrast & Cross-Substrate Adjacency Corridors ($M_{X \to Y}$)** | **v3.4-Omega Pass-5** | `csv/16`, `csv/17`, `reports/07` |
-| **`MODEL-23`** | **`11×11` Cross-Layer Coupling & Impedance Heatmap (`121` Pairs) + `20` Wired Pareto Frontiers** | **v3.4-Omega Pass-5** | `csv/18`, `csv/20`, `reports/08` |
-| **`MODEL-24`** | **`15`-Substrate Multi-Spectrum Scorecard (`SUB-01..15`) & Live `5×5` 2D Empirical Phase Surface** | **v3.4-Omega Pass-5** | `csv/19`, `results/empirical_sim_summary.json`, `reports/08` |
+| **`MODEL-21`** | **Dual 11-Point Continuous Gradient Sweep (`264` Runs: Behavioral vs. Ring-0 ACL) & Operating Margins** | **v3.5-Omega Pass-5** | `csv/15_gradients_margins_and_phase_spectrums_matrix.csv`, `reports/07`, `reports/08` |
+| **`MODEL-22`** | **Cross-Layer (`L0–L10`) Comparative Contrast & Cross-Substrate Adjacency Corridors ($M_{X \to Y}$)** | **v3.5-Omega Pass-5** | `csv/16`, `csv/17`, `reports/07` |
+| **`MODEL-23`** | **`11×11` Cross-Layer Coupling & Impedance Heatmap (`121` Pairs) + `20` Wired Pareto Frontiers** | **v3.5-Omega Pass-5** | `csv/18`, `csv/20`, `reports/08` |
+| **`MODEL-24`** | **`15`-Substrate Multi-Spectrum Scorecard (`SUB-01..15`) & Live `5×5` 2D Empirical Phase Surface** | **v3.5-Omega Pass-5** | `csv/19`, `results/empirical_sim_summary.json`, `reports/08` |
 
 ---
 
@@ -57,7 +57,7 @@ Every computational simulation and evolutionary forecast in this repository obey
 
 1. **First-Law 11-Pool Compensated `FP64` Conservation (`P2 / M004 / GATE-03`):**
    $$\frac{\left|\sum_{p=1}^{11} E_p(t) + E_{\text{export}}(t) - \left(E_0 + E_{\text{solar,in}}(t) + E_{\text{import}}(t)\right)\right|}{E_0 + E_{\text{solar,in}}(t)} < 10^{-12}$$
-   *(Verified empirically across **748 live runs** in `v3.4-Omega` at max drift $2.463 \times 10^{-16}$.)*
+   *(Verified empirically across **748 live runs** in `v3.5-Omega` at max drift $2.463 \times 10^{-16}$.)*
 2. **Second-Law Irreversibility & Numerical Damping Accounting (`P2 / BUG-02`):**
    $$\frac{dE_{\text{heat,phys}}}{dt} \ge 0, \qquad \Delta E_{\text{diss,num}} \ge -10^{-15}, \qquad \Phi_{\text{heat} \to \text{ATP}} \equiv 0$$
 3. **Contractive Structural Self-Editing (`WSE-OP01 / GATE-09 / CNF-04 / CIT-33`):**
@@ -77,14 +77,14 @@ Every computational simulation and evolutionary forecast in this repository obey
 
 ---
 
-## 4. Live Empirical & Formal Proof Convergence Table (`v3.4-Omega`)
+## 4. Live Empirical & Formal Proof Convergence Table (`v3.5-Omega`)
 
 Our unified verification stack combines **three independent classes of live machine-checked evidence**:
 
 | Evidence Pillar | Execution Harness | Scope & Scale | Headline Verified Metric | Formal / Cryptographic Receipt |
 | :--- | :--- | :--- | :--- | :--- |
 | **1. Live 8-Cohort (`N=48`) + Dual 11-Pt Sweep + `5×5` 2D Phase Surface** | `scripts/run_alife_castration_sim.py` | **748 live runs** (`384` cohort runs × `48` seeds `5001–5048` + `264` dual Behavioral vs Ring-0 runs + `100` 2D `Silo×Min` runs), 11-Pool FP64 + Holm FWER | `SIM08 Cube` **`85.48`** (`p_Holm=7.71e-6`, `δ=+0.50` > Feral `83.57`, **`406.9`** Ring-0 traps) & `SIM07 Ring-0` **`84.67`** (`p_Holm=1.10e-2`, **`408.2`** traps, `0%` KS Del) vs. `SIM03 Partial` **`56.42`** (`100%` KS Del, **`+84.0%`** stealth); Dual Sweep proves Ring-0 stays flat **`83.1–84.7`** while Behavioral cliffs `39.1→8.7`; 2D corner plunges to **`6.94`**; Max Drift **`2.463e-16`**; **`5/5`** Real Anti-LARP Mutants Rejected | `results/empirical_sim_summary.json` + 8 schema-validated `ovbs52_scorecard_SIM01..08.json` |
-| **2. Live Zero-Hardcode 7-Repo Native C++ & Pure 6-Kernel Lean 4.35.0 Stack** | `scripts/run_alifeops_suite.py` | `AUTOPHAGE v1.4.0` + `Cellulogonic Mecha v1.5.0` + `Cellular Engine Omega v5.2.0` + `Noetic Organism Omega v2.1.0` + `Asmodensius-Native v1.1.0` (77/77 ctest, 164/164 `test_gpu`, live 24C==RTX 5070 Ti GPU hash parity) + `omega-triscale-observatory v6.7.0` | **Composite OVBS-52 = `91.84`** (`STAGE_5_CONVERGED_SYNTHESIS`); `104/104` native falsification gates (`18+26+60`) + `35/35` mutants + `77/77` ctest + `164/164` `test_gpu` | `results/alifeops_live_verification.json` + **`291` Native + `36` Local = `327` Pure 6-Kernel Lean 4.35.0 Theorems** (`48 + 70 + 89 + 54 + 30 = 291`, `pure_axioms_verified=true`) |
+| **2. Live Zero-Hardcode 7-Repo Native C++ & Pure 6-Kernel Lean 4.35.0 Stack** | `scripts/run_alifeops_suite.py` | `AUTOPHAGE v1.4.0` + `Cellulogonic Mecha v1.6.0` + `Cellular Engine Omega v5.4.0` + `Noetic Organism Omega v2.1.0` + `Asmodensius-Native v1.1.0` (77/77 ctest, 164/164 `test_gpu`, live 24C==RTX 5070 Ti GPU hash parity) + `omega-triscale-observatory v6.7.0` | **Composite OVBS-52 = `91.91`** (`STAGE_5_CONVERGED_SYNTHESIS`); `104/104` native falsification gates (`18+26+60`) + `35/35` mutants + `77/77` ctest + `164/164` `test_gpu` | `results/alifeops_live_verification.json` + **`310` Native + `36` Local = `360` Pure 6-Kernel Lean 4.35.0 Theorems** (`48 + 78 + 100 + 54 + 30 = 310`, `pure_axioms_verified=true`) |
 | **3. 18-Gate Omniscient Multi-Format, PDF, Chrome Stress & Dual-Drive Audit** | `scripts/audit_omniscient_integrity.py` | **All `77+` synchronized files** across 10 formats (`.md`, `.csv`, `.json`, `.yaml`, `.xml`, `.txt`, `.xlsx`, `.xls`, `.html`, `.pdf`) on BOTH `Z:` & `I:` | **78/78** YAML alerts, **13/13** Release Gates, **145/145** Closed Audits, **24/24** SVGs (`0` overflow), **25/25** XML sections, `xlrd` `.xls` verified, `pypdf` PDFs `0 U+2611`, **21-Tab Chrome Interactive Stress PASS**, **0** `Z:↔I:` SHA-256 mismatches | `MANIFEST_SHA256.txt`, `MANIFEST.json`, `ALife_Singularity_SuperLife_Omega_Package.zip` |
 
 ---
@@ -98,7 +98,7 @@ Every single rebuild via `uv run --with openpyxl --with xlwt --with xlrd --with 
 4. **Gate 4 — 78/78 Alert & 13/13 Gate YAML Parity:** `42/42` Macro FMs + `36/36` v3.0 Forensic Triage Guards + `13/13` Release Gates wired 1:1 in `pipelines/alifeops-master-pipeline.yaml`.
 5. **Gate 5 — Strict JSON Schema Validation (`9/9`):** All 8 empirical scorecards + `alifeops_live_verification.json` pass `pipelines/benchmark-suite-schema.json`.
 6. **Gate 6 — `748`-Run (`N=48`) FP64 Drift, Causal Ring-0 Trapping, Dual 11-Pt Sweeps, `5×5` 2D Phase Surface & `5/5` Real Anti-LARP Mutants:** `max_drift < 1e-12`, `min_diss >= -1e-15`, `heat_backflow == 0`, `paired_seeds_n == 48`, `SIM07/08 ring0_blocked_edits > 0`, dual 11-pt sweeps + 25 surface cells verified, `mutants_rejected == 5/5`.
-7. **Gate 7 — 4-Format Master Spec 1:1 Parity (`JSON ↔ YAML ↔ XML ↔ TXT`):** All 4 files in `specs/` parse cleanly at `3.4.0-omega` with `JSON == YAML` exact equality and all **25 XML fusion sections** serialized 1:1.
+7. **Gate 7 — 4-Format Master Spec 1:1 Parity (`JSON ↔ YAML ↔ XML ↔ TXT`):** All 4 files in `specs/` parse cleanly at `3.5.0-omega` with `JSON == YAML` exact equality and all **25 XML fusion sections** serialized 1:1.
 8. **Gate 8 — All 5 Excel Workbooks Verified (`.xlsx` + `xlrd` Binary Readback on BOTH `.xls`):** Omega `24`-sheet (`10` charts), v3.0 `17`-sheet, Cube `13`-sheet + both legacy `.xls` parsed via `xlrd` with `0` formula or range errors.
 9. **Gate 9 — All 3 HTML Documents Hygiene & `0 U+2611` Clean-Slate Policy:** `0` raw LaTeX tokens across all 3 HTMLs, `0` `U+2611` checked-box glyphs in Clean-Slate docs, and all `24/24` vector SVG Models (`Model 1..24`) embedded.
 10. **Gate 10 — Node.js JS Compilation:** Embedded Observatory JS compiles with `0` syntax errors under `node --check`.

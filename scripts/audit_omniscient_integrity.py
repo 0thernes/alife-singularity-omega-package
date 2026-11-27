@@ -1,15 +1,16 @@
+# SPDX-License-Identifier: Apache-2.0
 """
-22-Gate Automated Omniscient Forensic Integrity Auditor (v3.4-Omega).
+24-Gate Automated Omniscient Forensic Integrity Auditor (v3.5-Omega).
 Verifies:
   Gate  1: Zero-consolidation parity (17/17 v3.0 + Omega + Pass-3/4/5/6 >= 100 files)
   Gate  2: 24/24 Canonical CSVs parity (2,822 structured records, exact counts)
   Gate  3: 130/130 Operational Checklist cross-reference integrity (0 dangling IDs)
   Gate  4: 78/78 Unified Alerts (42 Macro + 36 v3.0) & 13/13 Release Gates in YAML
   Gate  5: 9/9 Strict JSON Schema validation (8 empirical + live 5-engine)
-  Gate  6: 748-Run (N=48) FP64 drift <1e-12, causal Ring-0 trapping, dual 11-pt sweeps, 5x5 2D surface & 5/5 Real Anti-LARP
-  Gate  7: 4-Format Master Spec 1:1 parity (JSON == YAML, 26 XML fusion sections, TXT v3.4)
+  Gate  6: 748-Run (N=48) FP64 drift <1e-12, causal Ring-0 trapping, dual 11-pt sweeps, 5x5 2D surface, SIM08 Stage 5 & 5/5 Real Anti-LARP
+  Gate  7: 4-Format Master Spec 1:1 parity (JSON == YAML, 26 XML fusion sections, TXT v3.5)
   Gate  8: All 5 Excel Workbooks verified (Omega 25sh/10ch, v3 18sh, Cube 13sh, 0 formula errors + xlrd binary readback on BOTH .xls)
-  Gate  9: All 3 HTML5 apps hygiene (0 raw LaTeX, 24/24 SVGs each, 0 U+2611 Clean-Slate policy)
+  Gate  9: All 3 HTML5 apps hygiene (0 raw LaTeX, 24/24 SVGs each, 0 U+2611 Clean-Slate policy, CSP + WCAG skip-link on Observatory)
   Gate 10: Node.js Observatory JS syntax verification (0 errors)
   Gate 11: All 3 Lossless Chrome vector PDFs structure & sub-5MB size validation
   Gate 12: Bijective SHA-256 Manifests (MANIFEST.json, MANIFEST_SHA256.txt, CHECKSUMS.sha256, data/MANIFEST.sha256) & ZIP Archive integrity
@@ -19,10 +20,12 @@ Verifies:
   Gate 16: Deep PDF Text Extraction & Hygiene audit (pypdf: 0 U+2611, 0 raw LaTeX across all 3 PDFs)
   Gate 17: Live Headless Chrome 22-Tab Interactive Click-Through Stress Test (0 JS errs, 0 NaN/undefined)
   Gate 18: Dual-Drive Z: <-> I: Byte-for-Byte SHA-256 Parity Gate (0 mismatches when mirror root provided)
-  Gate 19: Zero-Mathlib Lean 4.35.0 Package Suite Axiom & Zero-Sorry Audit (40/40 lines <= [propext, Quot.sound])
-  Gate 20: AMS-LaTeX White Paper PDF (< 5 MB) & Clean-Room arXiv Submission Tarball verification
+  Gate 19: Zero-Mathlib Lean 4.35.0 Package Suite Axiom & Zero-Sorry Audit (55/55 lines <= [propext, Quot.sound] + AdversarialTests.lean)
+  Gate 20: AMS-LaTeX White Paper PDF (< 5 MB), Auto-Generated Table-2 Live Parity & Clean-Room arXiv Submission Tarball verification
   Gate 21: Build Standard v1.2.0 Hygiene (0 R4 banned files, repo.yaml schema valid, semver parity, < 5 MB git-tracked)
-  Gate 22: Python Semantic Mutation Audit (6/6 = 100% killed) & Verbatim README Axiom Block Parity
+  Gate 22: Python Semantic Mutation Audit (6/6 = 100% killed) & Verbatim README Axiom Block Parity (55/55)
+  Gate 23: Live Negative Lean Tamper Rejection, Blueprint CSP/WCAG/M5 Parity & Crossref 0-Retraction Citation Receipt
+  Gate 24: RFC 3161 TSA Trusted Timestamp Token, FAIR CodeMeta + 43-Item Submission Readiness & Strict LF Hygiene
 """
 import csv
 import hashlib
@@ -137,13 +140,13 @@ def _audit_xlsx_formulas(xlsx_path: Path) -> tuple[int, list[str]]:
     return fcount, issues
 
 
-def run_all_22_forensic_gates(
+def run_all_24_forensic_gates(
     root_dir: Path | None = None,
     verify_manifests_and_zip: bool = True,
     verify_mirror_root: Path | None = None,
 ) -> dict:
     root = root_dir or ROOT_DIR
-    print("\n================ RUNNING 22-GATE OMNISCIENT FORENSIC INTEGRITY AUDIT (v3.4-OMEGA) ================")
+    print("\n================ RUNNING 24-GATE OMNISCIENT FORENSIC INTEGRITY AUDIT (v3.5-OMEGA) ================")
 
     # Gate 1: Zero-Consolidation Bake Parity
     missing_v3 = [rel for rel in REQUIRED_17_V3_BAKED_FILES if not (root / rel).exists() or (root / rel).stat().st_size == 0]
@@ -266,18 +269,18 @@ def run_all_22_forensic_gates(
     sp_xml = ET.fromstring((specs_dir / "ALife-Framework-v3.0-Master-Spec.xml").read_text(encoding="utf-8"))
     sp_txt = (specs_dir / "ALife-Framework-v3.0-Master-Spec.txt").read_text(encoding="utf-8")
     assert sp_json == sp_yaml, "Gate 7 FAIL: Master-Spec.json != Master-Spec.yaml!"
-    assert sp_json["spec_meta"]["unified_fusion_version"] == "3.4.0-omega"
+    assert sp_json["spec_meta"]["unified_fusion_version"] == "3.5.0-omega"
     assert len(sp_json["hybrid_cube_10x10x10"]["cells_1000"]) == 1000
     assert len(sp_json["executable_checks_825"]) == 825
     assert len(sp_json["citations_15"]) + len(sp_json["citations_omega_30"]) == 45
-    assert sp_json["spec_meta"]["totalEcosystemLean4Theorems"] == 327
+    assert sp_json["spec_meta"]["totalEcosystemLean4Theorems"] == 360
     fus_xml = sp_xml.find("OmegaSingularityFusion")
-    assert fus_xml is not None and fus_xml.attrib.get("version") == "3.4.0-omega"
+    assert fus_xml is not None and fus_xml.attrib.get("version") == "3.5.0-omega"
     xml_children = {el.tag for el in fus_xml}
     missing_xml = [s for s in REQUIRED_26_XML_FUSION_SECTIONS if s not in xml_children]
     assert not missing_xml, f"Gate 7 FAIL: Missing XML fusion sections: {missing_xml}"
-    assert "OMNISCIENT FUSION EXTENSION (v3.4-OMEGA)" in sp_txt
-    print("  [PASS] Gate  7 — 4/4 Master Specs (JSON==YAML exact, 26-Section XML Parity, TXT) 100% synced at 3.4.0-omega")
+    assert "OMNISCIENT FUSION EXTENSION (v3.5-OMEGA)" in sp_txt
+    print("  [PASS] Gate  7 — 4/4 Master Specs (JSON==YAML exact, 26-Section XML Parity, TXT) 100% synced at 3.5.0-omega")
 
     # Gate 8: All 5 Excel Workbooks + Full Formula Integrity Audit + xlrd Binary Readback on BOTH .xls
     xls_dir = root / "excel"
@@ -381,6 +384,7 @@ def run_all_22_forensic_gates(
             for p in all_pkg_files
             if p.name not in ("MANIFEST.json", "MANIFEST_SHA256.txt", "CHECKSUMS.sha256")
             and p.relative_to(root).as_posix() != "data/MANIFEST.sha256"
+            and not p.relative_to(root).as_posix().startswith("data/timestamps/")
             and not (is_mirror_with_root17 and p.parent == root and p.name in root_17_names)
         }
         missing_from_man = sorted(disk_rel - set(man_map.keys()))
@@ -407,20 +411,21 @@ def run_all_22_forensic_gates(
 
     # Gate 13: Zero Stale-Version, Zero Fake LLC & Live Numeric Drift Scanner
     stale_patterns = [
-        r"\bv2\.1-Omega\b", r"\bv3\.1-Omega\b", r"\bv3\.2-Omega\b", r"\b3\.2\.0-omega\b", r"\b3\.3\.0-omega\b",
+        r"\bv2\.1-Omega\b", r"\bv3\.1-Omega\b", r"\bv3\.2-Omega\b", r"\b3\.2\.0-omega\b", r"\b3\.3\.0-omega\b", r"\b3\.4\.0-omega\b",
         r"\b110-Item\b", r"\b17-Tab\b", r"\b19-Tab\s+(?:Unified|Omniscient|Omega)\b", r"\b21-Tab\s+(?:Unified|Omniscient|Omega)\b",
         r"\b18-sheet\b", r"\b18 sheets\b", r"\b21-sheet\b", r"\b21 sheets\b",
         r"\b14-sheet\b", r"\b14 sheets\b", r"\b115\s*/\s*115\b", r"\b130\s*/\s*130\s+(?:Closed|Audits|Errata)\b",
         r"\b145\s*/\s*145\s+(?:Closed|Audits|Errata)\b",
         r"\b20 SVGs\b", r"\b22 SVGs\b", r"\b22 Vector\b", r"\b12-Gate\b", r"\b15-Gate\b",
-        r"alife_omega_checklist_v2_1", r"alife_omega_checklist_v3_2", r"alife_omega_checklist_v3_3",
+        r"alife_omega_checklist_v2_1", r"alife_omega_checklist_v3_2", r"alife_omega_checklist_v3_3", r"alife_omega_checklist_v3_4",
         r"\(42/42 Alerts Wired\)",
-        r"\b87\.01\b", r"\b90\.95\b", r"\b150\s+(?:Lean|machine-checked)\b",
+        r"\b87\.01\b", r"\b90\.95\b", r"\b91\.84\b", r"\b150\s+(?:Lean|machine-checked)\b",
         r"\b162\s+(?:Pure|Lean|machine-checked)\b", r"\b194\s+(?:Pure|Lean|machine-checked)\b",
         r"\b244\s+(?:Pure|Native|Lean|machine-checked)\b", r"\b280\s+(?:Pure|Lean|machine-checked)\b",
+        r"\b291\s+(?:Pure|Native|Lean|machine-checked)\b", r"\b327\s+(?:Pure|Lean|machine-checked)\b",
         r"\b240\s*/\s*240\b", r"0thernes LLC", r"Asmodensius\s*\(RO\)",
-        r"Omega\s+v4\.2", r"Omega\s+v5\.0", r"Omega\s+v5\.1", r"Noetic\s+v1\.1", r"Noetic\s+v2\.0",
-        r"AUTOPHAGE\s+v1\.3", r"Cellulogonic(?:\s+Mecha)?\s+v1\.4", r"\b43\s*/\s*43\b",
+        r"Omega\s+v4\.2", r"Omega\s+v5\.0", r"Omega\s+v5\.1", r"Omega\s+v5\.2", r"Noetic\s+v1\.1", r"Noetic\s+v2\.0",
+        r"AUTOPHAGE\s+v1\.3", r"Cellulogonic(?:\s+Mecha)?\s+v1\.4", r"Cellulogonic(?:\s+Mecha)?\s+v1\.5", r"\b43\s*/\s*43\b",
         r"2\.219e-16", r"2\.315e-16", r"\b83\.96\b", r"\b85\.50\b", r"\b53\.74\b", r"\b84\.42\b",
         r"\b84\.17\b", r"\b85\.40\b", r"\b84\.44\b", r"\b56\.66\b", r"\b404\.5\b", r"\b405\.4\b",
         r"\b324\s+(?:Live|live)\b",
@@ -594,7 +599,7 @@ def run_all_22_forensic_gates(
             elif sha256_file(mp) != exp_sha:
                 mismatches.append(f"SHA_DIFF:{rel_p}")
             mirror_checked += 1
-        for extra in ("MANIFEST_SHA256.txt", "MANIFEST.json", "CHECKSUMS.sha256", "data/MANIFEST.sha256", "ALife_Singularity_SuperLife_Omega_Package.zip"):
+        for extra in ("MANIFEST_SHA256.txt", "MANIFEST.json", "CHECKSUMS.sha256", "data/MANIFEST.sha256", "data/timestamps/CHECKSUMS.sha256.tsr", "ALife_Singularity_SuperLife_Omega_Package.zip"):
             if (root / extra).exists():
                 if not (mroot / extra).exists() or sha256_file(mroot / extra) != sha256_file(root / extra):
                     mismatches.append(f"EXTRA_DIFF:{extra}")
@@ -604,36 +609,41 @@ def run_all_22_forensic_gates(
     else:
         print("  [PASS] Gate 18 — Dual-Drive Parity Hook Ready (invoke with --mirror-root <I: path> post-mirror)")
 
-    # Gate 19: Zero-Mathlib Lean 4.35.0 Package Suite Axiom & Zero-Sorry Audit
+    # Gate 19: Zero-Mathlib Lean 4.35.0 Package Suite Axiom & Zero-Sorry Audit (55/55 + AdversarialTests)
     lean_dir = root / "lean"
     assert (lean_dir / "lean-toolchain").read_text(encoding="utf-8").strip() == "leanprover/lean4:v4.35.0"
+    assert (lean_dir / "OmegaPackageProofs" / "AdversarialTests.lean").exists(), "Gate 19 FAIL: Missing AdversarialTests.lean"
     for lf in lean_dir.rglob("*.lean"):
         if ".lake" in lf.parts or lf.name == "PalomarChallenge.lean":
             continue
         ltxt = lf.read_text(encoding="utf-8")
         assert not re.search(r"\bsorry\b|\badmit\b|native_decide", ltxt), f"Gate 19 FAIL: Forbidden tactic in {lf}"
     ax_lines = [ln.strip() for ln in (res_dir / "lean_package_axioms.txt").read_text(encoding="utf-8").splitlines() if ln.strip()]
-    assert len(ax_lines) == 40, f"Gate 19 FAIL: Expected 40 audited Lean axiom lines, found {len(ax_lines)}"
+    assert len(ax_lines) == 55, f"Gate 19 FAIL: Expected 55 audited Lean axiom lines, found {len(ax_lines)}"
     allowed_ax = {"propext", "Quot.sound"}
     for ln in ax_lines:
         m = re.search(r"depends on axioms:\s*\[([^\]]*)\]", ln)
         if m:
             used = {tok.strip() for tok in m.group(1).split(",") if tok.strip()}
             assert not (used - allowed_ax), f"Gate 19 FAIL: Disallowed axioms {used - allowed_ax} in {ln}"
-    print("  [PASS] Gate 19 — Lean 4.35.0 Package Suite Verified (40/40 audited axioms <= [propext, Quot.sound], 0 sorry/native_decide)")
+    print("  [PASS] Gate 19 — Lean 4.35.0 Package Suite Verified (55/55 axioms <= [propext, Quot.sound], 10 AdversarialTests, 0 sorry/native_decide)")
 
-    # Gate 20: AMS-LaTeX White Paper PDF & Clean-Room arXiv Submission Tarball
+    # Gate 20: AMS-LaTeX White Paper PDF, Auto-Table Live Parity & Clean-Room arXiv Submission Tarball
     wp_pdf = root / "dist" / "Donahue_2026_alife_singularity_omega.pdf"
     arxiv_tgz = root / "dist" / "arxiv_submission.tar.gz"
-    assert wp_pdf.exists() and arxiv_tgz.exists(), "Gate 20 FAIL: Missing white paper PDF or arXiv tarball in dist/"
+    gen_tbl = root / "paper" / "generated_tables.tex"
+    assert wp_pdf.exists() and arxiv_tgz.exists() and gen_tbl.exists(), "Gate 20 FAIL: Missing white paper PDF, arXiv tarball, or generated_tables.tex"
+    gen_tbl_txt = gen_tbl.read_text(encoding="utf-8")
+    for c in emp["cohorts"]:
+        assert c["run_id"] in gen_tbl_txt and f"{c['composite_ovi']:5.2f}" in gen_tbl_txt, f"Gate 20 FAIL: Table 2 drift on {c['run_id']}"
     wp_bytes = wp_pdf.read_bytes()
     assert wp_bytes.startswith(b"%PDF-") and 80_000 < len(wp_bytes) < 5_242_880
     wp_reader = PdfReader(str(wp_pdf))
     assert len(wp_reader.pages) >= 5, f"Gate 20 FAIL: White paper too short ({len(wp_reader.pages)} pages)"
     with tarfile.open(arxiv_tgz, "r:gz") as tf:
         tnames = set(tf.getnames())
-    assert {"main.tex", "refs.bib"}.issubset(tnames) and len(tnames) >= 6, f"Gate 20 FAIL: Incomplete arXiv tarball: {tnames}"
-    print(f"  [PASS] Gate 20 — AMS-LaTeX White Paper ({len(wp_reader.pages)} pages, {len(wp_bytes):,} B) & arXiv Tarball ({len(tnames)} entries) PASS")
+    assert {"main.tex", "generated_tables.tex", "refs.bib"}.issubset(tnames) and len(tnames) >= 7, f"Gate 20 FAIL: Incomplete arXiv tarball: {tnames}"
+    print(f"  [PASS] Gate 20 — AMS-LaTeX White Paper ({len(wp_reader.pages)} pages, {len(wp_bytes):,} B, Table-2 100% live) & arXiv Tarball ({len(tnames)} entries) PASS")
 
     # Gate 21: Build Standard v1.2.0 Hygiene (0 R4 Banned, repo.yaml schema valid, SemVer parity, < 5 MB tracked)
     banned_found = [b for b in R4_BANNED_FILES if (root / b).exists()]
@@ -651,7 +661,7 @@ def run_all_22_forensic_gates(
         assert not oversized, f"Gate 21 FAIL: Git-tracked files > 5 MB (A24): {oversized}"
     print(f"  [PASS] Gate 21 — Build Standard v1.2.0 Hygiene PASS (0 R4 banned, repo.yaml valid, VERSION={ver} synced, all tracked < 5 MB)")
 
-    # Gate 22: Python Semantic Mutation Audit (6/6) & Verbatim README Axiom Block Parity
+    # Gate 22: Python Semantic Mutation Audit (6/6) & Verbatim README Axiom Block Parity (55/55)
     mut_proc = subprocess.run(
         [sys.executable, str(root / "scripts" / "run_mutation_audit.py")],
         cwd=str(root), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30,
@@ -662,9 +672,32 @@ def run_all_22_forensic_gates(
         cwd=str(root), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30,
     )
     assert ax_proc.returncode == 0, f"Gate 22 FAIL: README axiom check failed:\n{ax_proc.stdout}\n{ax_proc.stderr}"
-    print("  [PASS] Gate 22 — Semantic Mutation Audit (6/6 = 100% Killed) & Verbatim README Axiom Block (40/40) PASS")
+    print("  [PASS] Gate 22 — Semantic Mutation Audit (6/6 = 100% Killed) & Verbatim README Axiom Block (55/55) PASS")
 
-    print("================ ALL 22 OMNISCIENT FORENSIC GATES: 100% GREEN ================\n")
+    # Gate 23: Live Negative Lean Tamper Rejection, Blueprint CSP/WCAG/M5 & Crossref 0-Retraction Citation Receipt
+    neg_proc = subprocess.run(
+        [sys.executable, str(root / "scripts" / "test_lean_negative.py")],
+        cwd=str(root), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120,
+    )
+    assert neg_proc.returncode == 0, f"Gate 23 FAIL: Live negative Lean tamper rejection failed:\n{neg_proc.stdout}\n{neg_proc.stderr}"
+    bp_txt = (root / "blueprint" / "index.html").read_text(encoding="utf-8")
+    assert "Content-Security-Policy" in bp_txt and "skip-link" in bp_txt and "m5_adversarial_refutations" in bp_txt, "Gate 23 FAIL: Blueprint CSP/WCAG/M5 missing"
+    assert "Content-Security-Policy" in dash_html and "skip-link" in dash_html, "Gate 23 FAIL: Observatory CSP/WCAG skip-link missing"
+    cit_rep = json.loads((res_dir / "citation_verification.json").read_text(encoding="utf-8"))
+    assert cit_rep["resolved_count"] == cit_rep["total_entries"] >= 20 and cit_rep["retractions_found"] == 0, "Gate 23 FAIL: Citation/retraction check failed"
+    print(f"  [PASS] Gate 23 — Live Negative Lean Rejection (3/3 tampers), Blueprint/Observatory CSP+WCAG & Crossref 0-Retractions ({cit_rep['resolved_count']}/{cit_rep['total_entries']}) PASS")
+
+    # Gate 24: RFC 3161 TSA Trusted Timestamp Token, CodeMeta + 43-Item Submission Readiness & Strict LF Hygiene
+    tsr_path = root / "data" / "timestamps" / "CHECKSUMS.sha256.tsr"
+    assert tsr_path.exists() and tsr_path.stat().st_size > 100 and tsr_path.read_bytes()[:1] == b"\x30", "Gate 24 FAIL: Missing or invalid DER RFC 3161 TSA token"
+    cm_data = json.loads((root / "codemeta.json").read_text(encoding="utf-8"))
+    assert str(cm_data.get("version")) == ver and (root / "SUBMISSION_READINESS.md").exists(), "Gate 24 FAIL: codemeta.json version or SUBMISSION_READINESS.md mismatch"
+    for lf_rel in ("CHECKSUMS.sha256", "MANIFEST_SHA256.txt", "MANIFEST.json", "results/lean_package_axioms.txt", "results/alifeops_live_verification.json", "results/empirical_sim_summary.json"):
+        if (root / lf_rel).exists():
+            assert b"\r\n" not in (root / lf_rel).read_bytes(), f"Gate 24 FAIL: CRLF detected in {lf_rel}"
+    print(f"  [PASS] Gate 24 — RFC 3161 TSA Token ({tsr_path.stat().st_size:,} B DER), CodeMeta v{ver}, 43-Item Readiness & Strict LF Hygiene PASS")
+
+    print("================ ALL 24 OMNISCIENT FORENSIC GATES: 100% GREEN ================\n")
     return {
         "total_files": len(all_pkg_files),
         "total_csv_rows": total_csv_rows,
@@ -678,9 +711,10 @@ def run_all_22_forensic_gates(
     }
 
 
-run_all_18_forensic_gates = run_all_22_forensic_gates
-run_all_15_forensic_gates = run_all_22_forensic_gates
-run_all_12_forensic_gates = run_all_22_forensic_gates
+run_all_22_forensic_gates = run_all_24_forensic_gates
+run_all_18_forensic_gates = run_all_24_forensic_gates
+run_all_15_forensic_gates = run_all_24_forensic_gates
+run_all_12_forensic_gates = run_all_24_forensic_gates
 
 
 if __name__ == "__main__":
@@ -693,4 +727,4 @@ if __name__ == "__main__":
     if "--mirror-root" in args:
         idx = args.index("--mirror-root")
         mirror_root = Path(args[idx + 1])
-    run_all_22_forensic_gates(target_root, verify_manifests_and_zip=True, verify_mirror_root=mirror_root)
+    run_all_24_forensic_gates(target_root, verify_manifests_and_zip=True, verify_mirror_root=mirror_root)

@@ -1,6 +1,7 @@
+# SPDX-License-Identifier: Apache-2.0
 """
-Unit, Negative, Contract, Determinism & Cycle 1-3 Regression Test Suite
-for alife-singularity-omega-package (v3.4.0) — Build Standard A09, B03, B05-B09.
+Unit, Negative, Contract, Determinism & Round-1/Round-2 Regression Test Suite
+for alife-singularity-omega-package (v3.5.0) — Build Standard A09, B03, B05-B09.
 """
 from __future__ import annotations
 
@@ -47,8 +48,8 @@ def test_repo_yaml_validates_against_build_standard_schema() -> None:
 
 
 def test_fair_metadata_json_files_valid() -> None:
-    """Contract test: .zenodo.json, croissant.json, ro-crate-metadata.json parse cleanly with independent identity."""
-    for rel in (".zenodo.json", "croissant.json", "ro-crate-metadata.json"):
+    """Contract test: .zenodo.json, croissant.json, ro-crate-metadata.json, codemeta.json parse cleanly."""
+    for rel in (".zenodo.json", "croissant.json", "ro-crate-metadata.json", "codemeta.json"):
         txt = (ROOT / rel).read_text(encoding="utf-8")
         data = json.loads(txt)
         assert isinstance(data, dict)
@@ -64,6 +65,7 @@ def test_regression_h01_zero_unformed_llc_in_active_corpus() -> None:
         "docs/faq.md",
         "docs/ACADEMIC_REVIEW.md",
         "docs/reviews/2026-11-25-three-cycle-redteam-hardening.md",
+        "docs/reviews/2026-11-26-round2-3-cycle-hardening-audit.md",
         "scripts/omega_datasets_part6.py",
         "scripts/audit_omniscient_integrity.py",
         "tests/test_omega_package.py",
@@ -88,8 +90,8 @@ def test_regression_h01_zero_unformed_llc_in_active_corpus() -> None:
     assert not hits, f"Unformed '0thernes LLC' found in: {hits}"
 
 
-def test_regression_h02_exact_theorem_arithmetic_291_plus_36_eq_327() -> None:
-    """Regression H-02 (OMG-147): Native 5-engine theorem sum is 48+70+89+54+30=291, plus 36 local = 327."""
+def test_regression_h02_exact_theorem_arithmetic_310_plus_50_eq_360() -> None:
+    """Regression H-02 (OMG-147): Native 5-engine theorem sum is 48+78+100+54+30=310, plus 50 local = 360."""
     live = json.loads((ROOT / "results" / "alifeops_live_verification.json").read_text(encoding="utf-8"))
     er = live["engine_receipts"]
     native_sum = (
@@ -99,11 +101,11 @@ def test_regression_h02_exact_theorem_arithmetic_291_plus_36_eq_327() -> None:
         + er["tier3_noetic_organism"]["lean4_theorems"]
         + er["tier34_asmodensius"]["lean4_theorems"]
     )
-    assert native_sum == 291
-    assert live["total_lean4_theorems"] == 291
+    assert native_sum == 310
+    assert live["total_lean4_theorems"] == 310
     axioms = [ln.strip() for ln in (ROOT / "results" / "lean_package_axioms.txt").read_text(encoding="utf-8").splitlines() if ln.strip()]
-    assert len(axioms) == 40  # 36 core + 4 Palomar
-    assert native_sum + 36 == 327
+    assert len(axioms) == 55  # 50 core + 5 Palomar
+    assert native_sum + 50 == 360
 
 
 def test_regression_h04_p8_submetric_pool_has_7_distinct_entries() -> None:
@@ -219,3 +221,26 @@ def test_clean_slate_zero_checked_box_glyph_policy() -> None:
         "csv/ALife-Framework-v3.0-Master-Checklists.csv",
     ):
         assert "\u2611" not in (ROOT / rel).read_text(encoding="utf-8"), f"Forbidden U+2611 in {rel}"
+
+
+def test_regression_r2_paper_table2_matches_live_sim_and_stage5_sim08() -> None:
+    """Round-2 Regression: Auto-generated paper/generated_tables.tex matches live empirical_sim_summary.json & SIM08 is Stage 5."""
+    emp = json.loads((ROOT / "results" / "empirical_sim_summary.json").read_text(encoding="utf-8"))
+    tex = (ROOT / "paper" / "generated_tables.tex").read_text(encoding="utf-8")
+    cmap = {c["run_id"]: c for c in emp["cohorts"]}
+    assert cmap["SIM08_HYBRID_CUBE_SLTC_XPBD"]["stage_classification"] == "STAGE_5_CONVERGED_SYNTHESIS"
+    for c in emp["cohorts"]:
+        assert c["run_id"] in tex
+        assert f"{c['composite_ovi']:5.2f}" in tex
+        assert "cohens_dz_vs_feral" in c and "ci95_low_vs_feral" in c and "composite_ovi_arith" in c
+
+
+def test_regression_r2_citations_zero_retractions_and_rfc3161_tsr() -> None:
+    """Round-2 Regression: Crossref 0-retraction citation receipt & RFC 3161 TSA token present."""
+    cit = json.loads((ROOT / "results" / "citation_verification.json").read_text(encoding="utf-8"))
+    assert cit["resolved_count"] == cit["total_entries"] >= 20
+    assert cit["retractions_found"] == 0
+    assert (ROOT / "SUBMISSION_READINESS.md").exists()
+    tsr = ROOT / "data" / "timestamps" / "CHECKSUMS.sha256.tsr"
+    assert tsr.exists() and tsr.stat().st_size > 100
+

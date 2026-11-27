@@ -5,7 +5,7 @@ import OmegaPackageProofs
 import Solution
 import PalomarSolution
 
--- Audit all 36 core theorems + 4 Palomar headline certificates (40 printed entries)
+-- Audit all 50 core theorems + 5 Palomar headline certificates (55 printed entries)
 #print axioms OmegaPackageProofs.OVBS52.pillar_weights_sum_100
 #print axioms OmegaPackageProofs.OVBS52.rawOviCentis_le_10000
 #print axioms OmegaPackageProofs.OVBS52.rawOviCentis_uniform
@@ -13,8 +13,10 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000
 #print axioms OmegaPackageProofs.OVBS52.rawOviCentis_monotone
 #print axioms OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone
+#print axioms OmegaPackageProofs.OVBS52.spiegelman_zero_annihilation
+#print axioms OmegaPackageProofs.OVBS52.rawOviCentis_p1_lipschitz
 #print axioms OmegaPackageProofs.OVBS52.classifyStage_monotone
-#print axioms OmegaPackageProofs.OVBS52.live_9184_is_stage5
+#print axioms OmegaPackageProofs.OVBS52.live_9191_is_stage5
 #print axioms OmegaPackageProofs.OVBS52.castration_328_is_stage0
 
 #print axioms OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000
@@ -23,8 +25,8 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum
 #print axioms OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail
 #print axioms OmegaPackageProofs.CubeAndPartitions.unified_alerts_78
-#print axioms OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_291
-#print axioms OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_327
+#print axioms OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_310
+#print axioms OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_360
 #print axioms OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition
 #print axioms OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition
 
@@ -34,6 +36,8 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.CastrationRing0.synergyScore_monotone
 #print axioms OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked
 #print axioms OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant
+#print axioms OmegaPackageProofs.CastrationRing0.ring0_trace_invariant
+#print axioms OmegaPackageProofs.CastrationRing0.ring1_ring2_plasticity_reachable
 #print axioms OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected
 #print axioms OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl
 #print axioms OmegaPackageProofs.CastrationRing0.paretoDominates_trans
@@ -46,7 +50,19 @@ import PalomarSolution
 #print axioms OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness
 #print axioms OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses
 
+#print axioms OmegaPackageProofs.AdversarialTests.at01_refute_ovi_cap_9999
+#print axioms OmegaPackageProofs.AdversarialTests.at02_refute_failed_anti_gaming_positive
+#print axioms OmegaPackageProofs.AdversarialTests.at03_refute_stage_constant
+#print axioms OmegaPackageProofs.AdversarialTests.at04_refute_stage5_at_8499
+#print axioms OmegaPackageProofs.AdversarialTests.at05_refute_ring0_writable
+#print axioms OmegaPackageProofs.AdversarialTests.at06_refute_ring0_mutable_by_trace
+#print axioms OmegaPackageProofs.AdversarialTests.at07_refute_ring1_over_spectral_bound
+#print axioms OmegaPackageProofs.AdversarialTests.at08_refute_synergy_exceeds_100
+#print axioms OmegaPackageProofs.AdversarialTests.at09_refute_sim03_dominates_sim07
+#print axioms OmegaPackageProofs.AdversarialTests.at10_refute_pareto_reflexive
+
 #print axioms OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants
 #print axioms OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants
 #print axioms OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants
 #print axioms OmegaPackageProofs.Palomar.m4_nonvacuity_certificate
+#print axioms OmegaPackageProofs.Palomar.m5_adversarial_refutations

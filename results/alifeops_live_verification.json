@@ -1,6 +1,6 @@
 {
-  "run_id": "ALIFE-OMEGA-20261126T033955Z",
-  "timestamp_utc": "2026-11-26T03:39:55.154167+00:00",
+  "run_id": "ALIFE-OMEGA-20261126T232803Z",
+  "timestamp_utc": "2026-11-26T23:28:03.196008+00:00",
   "track": "HYBRID_ABLATION",
   "substrate_id": "WIN64-X86_64-AVX2-GFNI-LIVE-NATIVE-STACK",
   "horizon_ticks": 300,
@@ -16,8 +16,8 @@
   },
   "pillar_scores": {
     "P1_OEE_NOVELTY": 83.84,
-    "P2_AUTOPOIESIS_PERSISTENCE": 85.75,
-    "P3_HYPER_MORPHOGENESIS": 84.11,
+    "P2_AUTOPOIESIS_PERSISTENCE": 85.84,
+    "P3_HYPER_MORPHOGENESIS": 84.59,
     "P4_RECURSIVE_META_EVOLVABILITY": 96.12,
     "P5_ASSEMBLY_UNIVERSAL_CONSTRUCTION": 98.83,
     "P6_THERMODYNAMIC_SUBSTRATE_MASTERY": 100.0,
@@ -32,7 +32,7 @@
     "dual_observer_verified": true,
     "gamma_multiplier": 1.0
   },
-  "composite_ovi_score": 91.84,
+  "composite_ovi_score": 91.91,
   "stage_classification": "STAGE_5_CONVERGED_SYNTHESIS",
   "benchmarks": [
     {
@@ -94,8 +94,8 @@
     {
       "benchmark_id": "BM-AUT-02",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 58.19,
-      "normalized_score": 58.19,
+      "raw_value": 58.52,
+      "normalized_score": 58.52,
       "status": "WARN"
     },
     {
@@ -108,37 +108,37 @@
     {
       "benchmark_id": "BM-AUT-04",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 39.0,
-      "normalized_score": 39,
+      "raw_value": 36.0,
+      "normalized_score": 36,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-AUT-05",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 85.75,
-      "normalized_score": 85.75,
+      "raw_value": 85.84,
+      "normalized_score": 85.84,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-AUT-06",
       "pillar": "P2: Autopoiesis & Homeostasis",
-      "raw_value": 85.75,
-      "normalized_score": 85.75,
+      "raw_value": 85.84,
+      "normalized_score": 85.84,
       "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-MRF-01",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 58.19,
-      "normalized_score": 58.19,
+      "raw_value": 58.52,
+      "normalized_score": 58.52,
       "status": "WARN"
     },
     {
       "benchmark_id": "BM-MRF-02",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 82.5,
-      "normalized_score": 82.5,
-      "status": "PASS"
+      "raw_value": 85.0,
+      "normalized_score": 85.0,
+      "status": "SINGULARITY_TRIGGER"
     },
     {
       "benchmark_id": "BM-MRF-03",
@@ -157,8 +157,8 @@
     {
       "benchmark_id": "BM-MRF-05",
       "pillar": "P3: Hyper-Morphogenesis",
-      "raw_value": 2.0,
-      "normalized_score": 8.0,
+      "raw_value": 6.0,
+      "normalized_score": 24.0,
       "status": "FAIL"
     },
     {
@@ -404,7 +404,7 @@
     "tier1_autophage": {
       "version": "1.4.0",
       "rc": 0,
-      "elapsed_s": 2.073,
+      "elapsed_s": 3.0626,
       "gates_passed": 18,
       "gates_failed": 0,
       "mutants_caught": 6,
@@ -417,26 +417,26 @@
       "lean4_pure_axioms_verified": true
     },
     "tier2_cellulogonic": {
-      "version": "1.5.0",
+      "version": "1.6.0",
       "rc": 0,
-      "elapsed_s": 0.8144,
+      "elapsed_s": 1.1727,
       "gates_passed": 26,
       "gates_total": 26,
       "mutants_caught": 8,
       "mutants_total": 8,
-      "embryo_covi": 58.19,
-      "embryo_alive": 39,
-      "embryo_active_axons": 2,
-      "embryo_homo_cad_pct": 82.5,
+      "embryo_covi": 58.52,
+      "embryo_alive": 36,
+      "embryo_active_axons": 6,
+      "embryo_homo_cad_pct": 85.0,
       "embryo_mass_res": 0,
       "embryo_energy_res": 0,
-      "lean4_theorems": 70,
+      "lean4_theorems": 78,
       "lean4_pure_axioms_verified": true
     },
     "tier2plus_omega": {
-      "version": "5.2.0",
+      "version": "5.4.0",
       "rc": 0,
-      "elapsed_s": 0.8512,
+      "elapsed_s": 1.264,
       "gates_passed": 60,
       "gates_total": 60,
       "mutants_caught": 16,
@@ -463,13 +463,13 @@
       "tb16_essential_auroc": 0.99087,
       "tb16_proj_mass_res": 0.0,
       "tb16_six_tier_int_drift": 0,
-      "lean4_theorems": 89,
+      "lean4_theorems": 100,
       "lean4_pure_axioms_verified": true
     },
     "tier3_noetic_organism": {
       "version": "2.1.0",
       "rc": 0,
-      "elapsed_s": 0.2675,
+      "elapsed_s": 0.393,
       "gates_passed": 10,
       "gates_total": 10,
       "mutants_caught": 5,
@@ -512,7 +512,7 @@
       "az_run_present": true,
       "az_live_present": true,
       "rc": 0,
-      "elapsed_s": 0.9423,
+      "elapsed_s": 1.5744,
       "lab_seed7_hash": "84ee3e8d7a423961",
       "books_exact": true,
       "demo16_species101_refused_exit2": true,
@@ -536,6 +536,6 @@
       "note": "Repo #7 v1.1.0 actively verified live via az_run.exe + 77/77 ctest + 164/164 test_gpu + 30 Pure 6-Kernel Lean 4.35.0 + live 24C==RTX 5070 Ti GPU hash parity + both visual worlds (companion omega-triscale-observatory v6.7.0)."
     }
   },
-  "total_lean4_theorems": 291,
+  "total_lean4_theorems": 310,
   "all_lean4_pure_axioms_verified": true
 }

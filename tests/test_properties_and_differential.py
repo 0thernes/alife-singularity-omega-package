@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 """
 Hypothesis Property-Based, Metamorphic, Negative & 2,000-Case Differential Oracle Tests
 (Build Standard B05, B06, B10, B11, B12, B14, B20).

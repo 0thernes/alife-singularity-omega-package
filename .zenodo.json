@@ -1,9 +1,9 @@
 {
-  "title": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 327 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit",
+  "title": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.5.0): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 360 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit",
   "upload_type": "software",
-  "version": "3.4.0",
-  "publication_date": "2026-11-25",
-  "description": "Zero-consolidation multi-format scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool Kahan-Neumaier FP64 thermodynamic conservation, Philox4x32-10 seed isolation, XPBD soft hydrostats, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro evolutionary metrology (OVBS-52, 78-alert ALifeOps pipeline, 748-run paired falsification with Holm-Bonferroni FWER, 327 Pure 6-Kernel Lean 4.35.0 theorems including 291 native + 36+4 local zero-Mathlib Lean 4.35.0 theorems verified across lean4, leanchecker-paranoid, nanoda_bin, con-leche, con-ron & lean4lean CI, AMS-LaTeX white paper + clean-room arXiv tarball, and an honest 1,900-problem Mega-Atlas non-retirement audit: 0/1,900 retired). Dual-licensed Apache-2.0 (code/Lean 4) and CC-BY-4.0 (prose/data/figures).",
+  "version": "3.5.0",
+  "publication_date": "2026-11-26",
+  "description": "Zero-consolidation multi-format scientific engineering stack unifying Clean-Slate v3.0 micro-hardware runtime invariants (11-pool Kahan-Neumaier FP64 thermodynamic conservation, Philox4x32-10 seed isolation, XPBD soft hydrostats, 10x10x10 Hybrid Cube, Hardware Ring-0 ACL) with macro evolutionary metrology (OVBS-52, 78-alert ALifeOps pipeline, 748-run paired falsification with Holm-Bonferroni FWER, 360 Pure 6-Kernel Lean 4.35.0 theorems including 310 native + 36+4 local zero-Mathlib Lean 4.35.0 theorems verified across lean4, leanchecker-paranoid, nanoda_bin, con-leche, con-ron & lean4lean CI, AMS-LaTeX white paper + clean-room arXiv tarball, and an honest 1,900-problem Mega-Atlas non-retirement audit: 0/1,900 retired). Dual-licensed Apache-2.0 (code/Lean 4) and CC-BY-4.0 (prose/data/figures).",
   "creators": [
     {
       "name": "Donahue, Alexander Stephen",

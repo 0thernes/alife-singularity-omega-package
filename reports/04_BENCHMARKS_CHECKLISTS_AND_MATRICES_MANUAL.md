@@ -1,7 +1,7 @@
 # THE OMEGA BENCHMARKS, CHECKLISTS & MATRICES REFERENCE MANUAL
 ## Complete Quantitative Formulations, 8-Pillar Vitality Scoring Rubrics, 52 Benchmarks, Anti-Gaming Audits & 130-Item Operational Checklist Guide
 
-> **Document ID:** `ALIFE-OMEGA-RPT-004` (`v3.4-Omega`)  
+> **Document ID:** `ALIFE-OMEGA-RPT-004` (`v3.5-Omega`)  
 > **Companion Data Files:** `csv/08_super_life_benchmarks_suite.csv` (52 benchmarks), `csv/07_master_operational_checklist.csv` (130 items across 11 phases), `csv/ALife-Framework-v3.0-Master-Checklists.csv` (938 Clean-Slate v3.0 checks/DAG/gates), `pipelines/benchmark-suite-schema.json`, `excel/ALife_Singularity_SuperLife_Omega_Workbook.xlsx` (24 sheets)
 
 ---
@@ -123,9 +123,9 @@ Every checklist item carries a unique ID, Phase, Applicable Track, Priority (`P0
 
 ---
 
-## 6. Live Empirical Computational Verification (`run_alife_castration_sim.py` — `v3.4-Omega` `748`-Run `N=48` FWER, Dual Sweep & 2D Phase Surface Upgrade)
+## 6. Live Empirical Computational Verification (`run_alife_castration_sim.py` — `v3.5-Omega` `748`-Run `N=48` FWER, Dual Sweep & 2D Phase Surface Upgrade)
 
-To move beyond purely conceptual modeling, this package ships with an executable, reproducible multi-island stochastic digital ALife simulator (`scripts/run_alife_castration_sim.py`), upgraded in `v3.4-Omega` with Clean-Slate v3.0's **11-Pool Compensated `FP64` Kahan–Neumaier Thermodynamic Ledger**, **48 Paired Locked Held-Out Test Seeds (`5001–5048`, `384` cohort runs)**, **Dual 11-Point Continuous Sweeps (`264` runs: Behavioral vs. Ring-0 ACL across locked seeds `5101–5112`)**, **Live `5×5` 2D Empirical Phase Surface (`100` runs: `Siloing × Minimizing` → `748` total live runs)**, **Causal Endogenous Ring-0 ACL Violation Trapping (`406.9–408.2` blocked edits/run)**, **Exact Paired Wilcoxon Signed-Rank + Holm–Bonferroni FWER (`m = 7`)**, and **5/5 Real Anti-LARP Negative Mutants (`GATE-04`)**.
+To move beyond purely conceptual modeling, this package ships with an executable, reproducible multi-island stochastic digital ALife simulator (`scripts/run_alife_castration_sim.py`), upgraded in `v3.5-Omega` with Clean-Slate v3.0's **11-Pool Compensated `FP64` Kahan–Neumaier Thermodynamic Ledger**, **48 Paired Locked Held-Out Test Seeds (`5001–5048`, `384` cohort runs)**, **Dual 11-Point Continuous Sweeps (`264` runs: Behavioral vs. Ring-0 ACL across locked seeds `5101–5112`)**, **Live `5×5` 2D Empirical Phase Surface (`100` runs: `Siloing × Minimizing` → `748` total live runs)**, **Causal Endogenous Ring-0 ACL Violation Trapping (`406.9–408.2` blocked edits/run)**, **Exact Paired Wilcoxon Signed-Rank + Holm–Bonferroni FWER (`m = 7`)**, and **5/5 Real Anti-LARP Negative Mutants (`GATE-04`)**.
 
 All **8 generated cohort scorecards** (`results/ovbs52_scorecard_SIM01..08.json`) AND the live 5-engine native C++/Lean 4 receipt (`results/alifeops_live_verification.json`) pass strict `jsonschema` validation against `pipelines/benchmark-suite-schema.json`. Across all `748` live runs, maximum global 11-pool relative enthalpy drift is **`2.463e-16`** (`< 1e-12` gate cleared by `4,060×`), `0` heat-to-ATP backflow faults occur, and **`5 / 5` Real Anti-LARP Negative Mutants** are rejected:
 
@@ -152,8 +152,8 @@ Baking `ALife-Framework-v3.0-Master-Checklists.csv` (`938` rows: `825` Clean-Sla
 2. **Strict Clean-Slate Policy Preserved (`0 / 825`):** All `825` creature capability checkboxes, `100` milestones, and `13` release gates inside `Clean-Slate-Creature-Blueprint-Checklist.{md,html,pdf}` and `ALife-Framework-v3.0-Master-Checklists.csv` strictly preserve `☐` clean-slate initialization (`0` `U+2611` glyphs), while `MIR-01..05` reconcile the exact 5 direct cross-suite mirrors (`825 - 5 = 820` unique suite assertions ≈ `775` distinct mechanisms).
 3. **Live Zero-Hardcode 7-Repo Native C11/C23 & Pure 6-Kernel Lean 4.35.0 Verification Ledger (`results/alifeops_live_verification.json`):**
    - **Tier 1 — `AUTOPHAGE v1.4.0`:** `18 / 18` falsification gates passed (`0` failed), `6 / 6` mutants, `feral_ovi = 92.05`, Bedau–Packard `A_new = 29.463`, `thermo_drift = 0.0`, **`48` Pure 6-Kernel Lean 4.35.0 theorems**.
-   - **Tier 2 — `Cellulogonic Mecha v1.5.0`:** **`26 / 26` gates passed**, `8 / 8` negative mutants caught, `embryo_covi = 58.19`, `embryo_homo_cad_pct = 82.5%`, **`70` Pure 6-Kernel Lean 4.35.0 theorems**.
-   - **Tier 2+ — `Cellular Engine Omega v5.2.0`:** **`60 / 60` gates passed**, **`16 / 16` mutants caught**, deterministic master SHA-256 `a92641843e46736b...`, `tb13_niches = 17,848`, **`89` Pure 6-Kernel Lean 4.35.0 theorems**.
+   - **Tier 2 — `Cellulogonic Mecha v1.6.0`:** **`26 / 26` gates passed**, `8 / 8` negative mutants caught, `embryo_covi = 58.52`, `embryo_homo_cad_pct = 82.5%`, **`70` Pure 6-Kernel Lean 4.35.0 theorems**.
+   - **Tier 2+ — `Cellular Engine Omega v5.4.0`:** **`60 / 60` gates passed**, **`16 / 16` mutants caught**, deterministic master SHA-256 `a92641843e46736b...`, `tb13_niches = 17,848`, **`89` Pure 6-Kernel Lean 4.35.0 theorems**.
    - **Tier 3 — `Noetic Organism Omega v2.1.0`:** **`10 / 10` unit+mutants (`5/5` Anti-LARP)**, **`13 / 13` Clean-Slate v3.0 Release Gates PASS**, `18/18` E1 ablations, `14/14` Butlin `[INDICATOR-ONLY]`, `10/10` Theories `[INDICATOR-ONLY]`, `25/25` CQM, `5/5` MIR, `12/12` Ring-0 WSE-12, `0 uq` drift, **`54` Pure 6-Kernel Lean 4.35.0 theorems**.
    - **Tier 3+4 — `Asmodensius-Native v1.1.0` (Live Dual-World & RTX 5070 Ti GPU Verified):** `ACTIVE_LIVE_EXECUTION_DUAL_WORLDS` (`77/77` ctest, `164/164` `test_gpu`, live 24C==RTX 5070 Ti GPU hash parity, **`30` Pure 6-Kernel Lean 4.35.0 theorems**) alongside `omega-triscale-observatory v6.7.0`.
-   - **Unified Live Composite Score:** **`OVBS-52 = 91.84` (`STAGE_5_CONVERGED_SYNTHESIS`)** backed by **`291` Native + `36` Local = `327` Pure 6-Kernel Lean 4.35.0 Theorems** (`all_lean4_pure_axioms_verified = true`, **`35/35` compiled mutants caught**)!
+   - **Unified Live Composite Score:** **`OVBS-52 = 91.91` (`STAGE_5_CONVERGED_SYNTHESIS`)** backed by **`310` Native + `36` Local = `360` Pure 6-Kernel Lean 4.35.0 Theorems** (`all_lean4_pure_axioms_verified = true`, **`35/35` compiled mutants caught**)!

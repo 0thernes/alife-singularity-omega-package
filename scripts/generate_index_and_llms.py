@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
 """Generate complete repository Master INDEX.md (folder/file/bytes/approx-tokens) and llms-full.txt."""
 from __future__ import annotations
 
@@ -19,6 +20,7 @@ LLMS_FULL_SOURCES = [
     "VERIFICATION.md",
     "REPLICATION.md",
     "PREREGISTRATION.md",
+    "SUBMISSION_READINESS.md",
     "HARDENING_LOG.md",
     "docs/statement-fidelity.md",
     "docs/MEGA_ATLAS_CROSSCHECK.md",
@@ -51,7 +53,7 @@ def main() -> None:
         total_bytes += f.stat().st_size
 
     lines = [
-        "# Master Repository Index & Table of Contents (`v3.4.0`)",
+        "# Master Repository Index & Table of Contents (`v3.5.0`)",
         "",
         "Complete folder-by-folder, file-by-file inventory with exact byte sizes, line counts (text files), and approximate token counts (`~chars / 4`). Regenerate via `python scripts/generate_index_and_llms.py`.",
         "",
@@ -93,19 +95,19 @@ def main() -> None:
         lines.append("")
 
     lines.append(f"---\n*Estimated text corpus tokens across indexable text artifacts: `~{total_tokens_est:,}` tokens.*\n")
-    (ROOT / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
+    (ROOT / "INDEX.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
     # Build llms-full.txt (concise concatenated context for LLM ingestion)
     full_parts = [
-        "# alife-singularity-omega-package (v3.4.0) — Full LLM Context Bundle\n",
+        "# alife-singularity-omega-package (v3.5.0) — Full LLM Context Bundle\n",
         "Author: Alexander Stephen Donahue (Independent Researcher, Spokane, WA, USA; ORCID 0009-0006-8168-9648)\n",
     ]
     for rel_src in LLMS_FULL_SOURCES:
         sp = ROOT / rel_src
         if sp.exists():
             full_parts.append(f"\n\n==================== FILE: {rel_src} ====================\n\n")
-            full_parts.append(sp.read_text(encoding="utf-8", errors="replace"))
-    (ROOT / "llms-full.txt").write_text("".join(full_parts), encoding="utf-8")
+            full_parts.append(sp.read_text(encoding="utf-8", errors="replace").replace("\r\n", "\n"))
+    (ROOT / "llms-full.txt").write_text("".join(full_parts), encoding="utf-8", newline="\n")
     print(f"  [INDEX] Generated INDEX.md ({len(files)} files) and llms-full.txt ({(ROOT / 'llms-full.txt').stat().st_size / 1024:.1f} KB)")
 
 

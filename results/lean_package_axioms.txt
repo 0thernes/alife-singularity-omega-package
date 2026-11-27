@@ -5,8 +5,10 @@
 'OmegaPackageProofs.OVBS52.gatedOviCentis_le_10000' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.OVBS52.rawOviCentis_monotone' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.OVBS52.spiegelman_penalty_monotone' depends on axioms: [propext]
+'OmegaPackageProofs.OVBS52.spiegelman_zero_annihilation' depends on axioms: [propext]
+'OmegaPackageProofs.OVBS52.rawOviCentis_p1_lipschitz' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.OVBS52.classifyStage_monotone' depends on axioms: [propext, Quot.sound]
-'OmegaPackageProofs.OVBS52.live_9184_is_stage5' does not depend on any axioms
+'OmegaPackageProofs.OVBS52.live_9191_is_stage5' does not depend on any axioms
 'OmegaPackageProofs.OVBS52.castration_328_is_stage0' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_partition_1000' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.hybrid_cube_active_935' does not depend on any axioms
@@ -14,8 +16,8 @@
 'OmegaPackageProofs.CubeAndPartitions.clean_slate_825_checks_sum' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.live_825_execution_zero_fail' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.unified_alerts_78' does not depend on any axioms
-'OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_291' does not depend on any axioms
-'OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_327' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.native_5engine_lean_theorems_310' does not depend on any axioms
+'OmegaPackageProofs.CubeAndPartitions.ecosystem_total_lean_theorems_360' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.layer_coupling_11x11_partition' does not depend on any axioms
 'OmegaPackageProofs.CubeAndPartitions.empirical_748_runs_partition' does not depend on any axioms
 'OmegaPackageProofs.CastrationRing0.synergy_13x13_cells' does not depend on any axioms
@@ -23,7 +25,9 @@
 'OmegaPackageProofs.CastrationRing0.synergyScore_comm' does not depend on any axioms
 'OmegaPackageProofs.CastrationRing0.synergyScore_monotone' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.CastrationRing0.ring0_write_always_blocked' does not depend on any axioms
-'OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant' does not depend on any axioms
+'OmegaPackageProofs.CastrationRing0.ring0_kernel_state_invariant' depends on axioms: [propext]
+'OmegaPackageProofs.CastrationRing0.ring0_trace_invariant' depends on axioms: [propext]
+'OmegaPackageProofs.CastrationRing0.ring1_ring2_plasticity_reachable' does not depend on any axioms
 'OmegaPackageProofs.CastrationRing0.spectral_norm_violation_rejected' depends on axioms: [propext]
 'OmegaPackageProofs.CastrationRing0.paretoDominates_irrefl' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.CastrationRing0.paretoDominates_trans' depends on axioms: [propext, Quot.sound]
@@ -34,7 +38,18 @@
 'OmegaPackageProofs.NonVacuity.nonvac_ring0_and_spectral_boundary' does not depend on any axioms
 'OmegaPackageProofs.NonVacuity.nonvac_synergy_saturation_witness' does not depend on any axioms
 'OmegaPackageProofs.NonVacuity.nonvac_all_hypotheses' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.AdversarialTests.at01_refute_ovi_cap_9999' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.AdversarialTests.at02_refute_failed_anti_gaming_positive' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.AdversarialTests.at03_refute_stage_constant' does not depend on any axioms
+'OmegaPackageProofs.AdversarialTests.at04_refute_stage5_at_8499' does not depend on any axioms
+'OmegaPackageProofs.AdversarialTests.at05_refute_ring0_writable' does not depend on any axioms
+'OmegaPackageProofs.AdversarialTests.at06_refute_ring0_mutable_by_trace' depends on axioms: [propext]
+'OmegaPackageProofs.AdversarialTests.at07_refute_ring1_over_spectral_bound' does not depend on any axioms
+'OmegaPackageProofs.AdversarialTests.at08_refute_synergy_exceeds_100' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.AdversarialTests.at09_refute_sim03_dominates_sim07' depends on axioms: [propext, Quot.sound]
+'OmegaPackageProofs.AdversarialTests.at10_refute_pareto_reflexive' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.Palomar.m1_ovbs52_scoring_invariants' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.Palomar.m2_cube_and_partition_invariants' does not depend on any axioms
 'OmegaPackageProofs.Palomar.m3_castration_and_ring0_invariants' depends on axioms: [propext, Quot.sound]
 'OmegaPackageProofs.Palomar.m4_nonvacuity_certificate' does not depend on any axioms
+'OmegaPackageProofs.Palomar.m5_adversarial_refutations' depends on axioms: [propext, Quot.sound]

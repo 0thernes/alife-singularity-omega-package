@@ -8,6 +8,24 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ### Changed (documentation only)
 - Corrected public claims to match the 2026-11-26 statement audit (see `ERRATA.md`, section "2026-11-26 statement audit"). The headline now states `36` core + `4` Palomar Lean declarations checked here; the `291` companion-reported theorems are not checked at this commit, and `327` is described as a sum of reported counts. `21` of the `36` core items are disclosed as closed evaluations or literal sums. Ring-0 "hardware" and "non-interference" wording replaced. Stale `244`/`92.05` figures, non-existent Lean identifiers, the broken `PalomarChallenge.lean` link, and checker-count and PDF-size drift corrected. Report-only CI and the scope of the `Classical.choice` statement disclosed. No Lean, paper, data or CI file changed.
 
+## [3.5.0] - 2026-11-26
+
+### Added
+- **Non-Degenerate 3-Ring Lean 4.35.0 State Machine & `AdversarialTests.lean` (`50` core + `5` Palomar = `55` audited declarations):** Added multi-step inductive Ring-0 kernel trace invariance (`ring0_trace_invariant`), explicit Ring-1/Ring-2 mutation reachability (`ring1_ring2_plasticity_reachable`), `spiegelman_zero_annihilation`, `rawOviCentis_p1_lipschitz`, `10` formal Lean `¬(...)` refutations in `lean/OmegaPackageProofs/AdversarialTests.lean`, and Palomar certificate `m5_adversarial_refutations`. Combined 7-repo ecosystem total: **`360` Pure 6-Kernel Lean 4.35.0 Theorems** (`310` native + `50` local).
+- **Live Negative Lean Tamper Rejection (`scripts/test_lean_negative.py`):** Verifies Lean 4.35.0 kernel, axiom allowlist, and Ubuntu `lake comparator --paranoid` reject injected `sorry`, custom axioms, and false claims (`TAMPER-01..04`); wired into CI and Gate 23.
+- **Crossref 0-Retraction Citation Verification (`scripts/check_citations.py`):** Queries Crossref Works API across all DOIs (`20/20` resolved, `15` Crossref-checked, `0` retractions).
+- **Auto-Generated White Paper Data Table (`paper/generated_tables.tex`):** Programmatically generates Table 2 from `results/empirical_sim_summary.json` so prose/figure drift is structurally impossible.
+- **Cryptographic RFC 3161 TSA Timestamp (`data/timestamps/CHECKSUMS.sha256.tsr`), `codemeta.json`, and 43-Item `SUBMISSION_READINESS.md`.**
+- **Strict CSP & WCAG 2.2 AA Skip-Link/Landmarks** across `blueprint/index.html` and `html/ALife_Singularity_SuperLife_Omega_Dashboard.html`.
+- **24-Gate Automated Forensic Integrity Auditor** (`scripts/audit_omniscient_integrity.py`, adding Gates 23–24).
+
+### Fixed
+- **Security (Dependabot Alert `#1` / `CVE-2025-71176`):** Upgraded `pytest==9.0.3` in `requirements.txt` and `pytest>=9.0.3` in `pyproject.toml` (`0` `pip-audit` CVEs).
+- **White Paper Table 2 & Visual Figure Defects:** Fixed `v3.4.0` Table 2 drift vs. Figure 2, fixed Figure 4 Panel B clipped title / colliding x-labels and Panel A legend overlap, eliminated `Underfull \vbox (badness 10000)` (`0` overfull hboxes, `0` bad vboxes).
+- **Simulator Statistical & Classifier Bugs (`scripts/run_alife_castration_sim.py`):** Replaced hardcoded `df=23` $t$-quantile (`1.7139`) with exact `df=N-1` (`1.6779` at `N=48`), added paired Cohen's $d_z$ and deterministic 2,000-resample 95% bootstrap CIs, unified canonical 7-stage classifier (`SIM08 = 85.48` → `STAGE_5_CONVERGED_SYNTHESIS`), and logged both geometric & arithmetic OVI.
+- **Static Lint & Cross-OS Hygiene:** Fixed all `53` `ruff` findings (`0` errors, removed `|| true` in CI), added SPDX headers across all Python modules, and normalized all text files to LF.
+- **Live Ecosystem Sync:** Re-executed all 5 live native engines (`Cellulogonic Mecha v1.6.0 [78 Lean, COVI 58.52]`, `Cellular Engine Omega v5.4.0 [100 Lean]`, live composite `OVBS-52 = 91.91`) and re-verified `csv/21` against `unsolved-problems-mega-atlas v2.8.0` (`0/1,900` overarching problems retired).
+
 ## [3.4.0] - 2026-11-25
 
 ### Added

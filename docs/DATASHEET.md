@@ -1,6 +1,6 @@
 # Datasheet for Datasets (Gebru et al., 2021)
 
-Following Gebru et al. (2021), *Datasheets for Datasets*, *Communications of the ACM* 64(12):86–92 (`DOI: 10.1145/3458723`), this datasheet documents the `24` canonical CSV tables (`2,822` total rows) and `4`-format Master Specifications shipped in `alife-singularity-omega-package` (`v3.4.0`).
+Following Gebru et al. (2021), *Datasheets for Datasets*, *Communications of the ACM* 64(12):86–92 (`DOI: 10.1145/3458723`), this datasheet documents the `24` canonical CSV tables (`2,822` total rows) and `4`-format Master Specifications shipped in `alife-singularity-omega-package` (`v3.5.0`).
 
 ## 1. Motivation
 - **Purpose:** Provide an open, machine-readable, cryptographically checksummed scientific engineering corpus spanning A-Life Singularity metrology (`OVBS-52`), 13-vector constraint castration, `748`-run paired empirical falsification, Clean-Slate v3.0 micro-hardware specifications (`938` checklists, `10x10x10` Hybrid Cube, `75` substrates, `160` errata closures), and the `1,900`-problem Mega-Atlas non-retirement crosswalk.
@@ -25,4 +25,4 @@ Following Gebru et al. (2021), *Datasheets for Datasets*, *Communications of the
 - **Recommended Uses:** Reproducible A-Life benchmarking, formal-verification education, governance safety-vs-vitality research, and independent replication.
 - **Out-of-Scope Uses:** Treating engineering rubrics (`csv/10`, `csv/18`, `csv/19`) as wet-lab physical constants, or interpreting `INDICATOR_ONLY` cognitive metrics as proof of sentience.
 - **License:** `CC-BY-4.0` ([`LICENSE`](../LICENSE)); machine-readable FAIR descriptors in `croissant.json` and `ro-crate-metadata.json`.
-- **Maintenance:** Active (`v3.4.0`), versioned via Semantic Versioning (`VERSION`, `CHANGELOG.md`, `ERRATA.md`).
+- **Maintenance:** Active (`v3.5.0`), versioned via Semantic Versioning (`VERSION`, `CHANGELOG.md`, `ERRATA.md`).

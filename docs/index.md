@@ -1,6 +1,6 @@
-# Documentation Index (`alife-singularity-omega-package` v3.4.0)
+# Documentation Index (`alife-singularity-omega-package` v3.5.0)
 
-Welcome to the documentation hub for **A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.4.0`)**.
+Welcome to the documentation hub for **A-Life Singularity × Clean-Slate v3.0 Omega Package (`v3.5.0`)**.
 
 ## Core Guides
 - [`architecture.md`](architecture.md) — Complete system architecture, zero-consolidation dataflow, and module map

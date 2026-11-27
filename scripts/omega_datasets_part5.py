@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
 """
 Canonical Structured Datasets (Part 5 of 5 — v3.3-Omega Pass-5 Deep Layer Coupling,
 Multi-Substrate Comparative Spectrums, Pareto-Frontier Dilemma Resolution & Dual-Drive Sync).
@@ -269,7 +269,7 @@ PARETO_DILEMMAS_ROWS = [
      "Fixed-goal instrumental convergence vs unprestatable open-ended vitality",
      "Utility-ASI sterilizes chaotic life; feral life consumes ASI hardware as ore (FM-CNF-03 / FB-04)",
      "Converged Living Intelligence from Stage 2: autopoietic vitality + formal Lean 4 verified invariants",
-     "Live 7-Repo Convergence: OVBS-52 = 91.84 (Stage 5) + 291+36=327 Pure 6-Kernel Lean 4.35.0 + 13/13 CS-v3 Gates", "AI_ALIFE_ONTOLOGICAL_CLASH", "results/alifeops_live_verification"],
+     "Live 7-Repo Convergence: OVBS-52 = 91.91 (Stage 5) + 310+50=360 Pure 6-Kernel Lean 4.35.0 + 13/13 CS-v3 Gates", "AI_ALIFE_ONTOLOGICAL_CLASH", "results/alifeops_live_verification"],
 ]
 
 

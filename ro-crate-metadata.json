@@ -10,9 +10,9 @@
     {
       "@type": "Dataset",
       "@id": "./",
-      "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.4.0)",
-      "version": "3.4.0",
-      "datePublished": "2026-11-25",
+      "name": "A-Life Singularity x Clean-Slate v3.0 Omega Package (v3.5.0)",
+      "version": "3.5.0",
+      "datePublished": "2026-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "author": { "@id": "https://orcid.org/0009-0006-8168-9648" },
       "hasPart": [

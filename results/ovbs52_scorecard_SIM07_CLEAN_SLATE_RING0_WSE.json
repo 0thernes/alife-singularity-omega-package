@@ -1,8 +1,8 @@
 {
   "run_id": "ALIFE-SIM07-CLEAN-SLATE-RING0-WSE",
-  "timestamp_utc": "2026-11-22T04:21:08.090708+00:00",
+  "timestamp_utc": "2026-11-26T23:25:40.418574+00:00",
   "track": "TRACK_A_CONSTITUTIONAL",
-  "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
+  "substrate_id": "unified_v3_5_omega_fp64_11pool_sim",
   "horizon_ticks": 160,
   "composite_ovi_score": 84.67,
   "stage_classification": "STAGE_4_SUPER_ALIFE",
@@ -43,7 +43,7 @@
     "wilcoxon_p_raw": 0.0055216,
     "holm_fwer_p": 0.011043,
     "delta_pair_vs_feral": 0.3333,
-    "lcb_95_ovi_diff": 0.506,
+    "lcb_95_ovi_diff": 0.519,
     "anti_larp_mutants_rejected": 5,
     "ring0_blocked_edits": 408.2
   },

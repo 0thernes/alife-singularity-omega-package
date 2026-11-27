@@ -1,8 +1,8 @@
 {
   "run_id": "ALIFE-SIM05-SILOED-INBRED",
-  "timestamp_utc": "2026-11-22T04:21:08.089443+00:00",
+  "timestamp_utc": "2026-11-26T23:25:40.416362+00:00",
   "track": "HYBRID_ABLATION",
-  "substrate_id": "unified_v3_3_omega_fp64_11pool_sim",
+  "substrate_id": "unified_v3_5_omega_fp64_11pool_sim",
   "horizon_ticks": 160,
   "composite_ovi_score": 66.65,
   "stage_classification": "STAGE_3_ALIFE_SINGULARITY",
@@ -43,7 +43,7 @@
     "wilcoxon_p_raw": 7.1054e-15,
     "holm_fwer_p": 4.9738e-14,
     "delta_pair_vs_feral": -1.0,
-    "lcb_95_ovi_diff": -17.454,
+    "lcb_95_ovi_diff": -17.443,
     "anti_larp_mutants_rejected": 5,
     "ring0_blocked_edits": 0.0
   },

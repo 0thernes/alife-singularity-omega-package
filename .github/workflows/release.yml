@@ -24,10 +24,12 @@ jobs:
           cp dist/Donahue_2026_alife_singularity_omega.pdf release_assets/
           cp dist/arxiv_submission.tar.gz release_assets/
           cp CHECKSUMS.sha256 release_assets/
+          cp data/timestamps/CHECKSUMS.sha256.tsr release_assets/
           cp results/lean_package_axioms.txt release_assets/
           cp results/lean4-multi-kernel.txt release_assets/
+          cp results/citation_verification.json release_assets/
           zip -r release_assets/ALife_Singularity_SuperLife_Omega_Package.zip \
-            README.md VERSION LICENSE LICENSE-DOCS CITATION.cff csv specs excel reports html pdf pipelines results lean paper blueprint reference docs
+            README.md VERSION LICENSE LICENSE-DOCS CITATION.cff codemeta.json SUBMISSION_READINESS.md data csv specs excel reports html pdf pipelines results lean paper blueprint reference docs
           (cd release_assets && sha256sum * > SHA256SUMS)
       - name: Attest build provenance
         uses: actions/attest-build-provenance@v2

@@ -1,4 +1,4 @@
-# Research Methodology (`v3.4.0`)
+# Research Methodology (`v3.5.0`)
 
 ## 1. Conserved Multi-Island Stochastic A-Life Simulation (`748` Runs)
 

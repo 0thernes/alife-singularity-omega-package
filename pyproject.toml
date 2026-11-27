@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alife-singularity-omega-package"
-version = "3.4.0"
-description = "A-Life Singularity x Clean-Slate v3.0 Omega Package: Hardware Ring-0 invariants, 748-run paired falsification, 327 Pure 6-Kernel Lean 4.35.0 theorems, and 1,900-problem Mega-Atlas non-retirement audit."
+version = "3.5.0"
+description = "A-Life Singularity x Clean-Slate v3.0 Omega Package: Software 3-Ring ACL invariants, 748-run paired falsification, 55 local constructive Lean 4.35.0 declarations, and 1,900-problem Mega-Atlas non-retirement audit."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Apache-2.0" }
@@ -29,7 +29,7 @@ dependencies = [
 dev = [
   "hypothesis>=6.112.0",
   "mypy>=1.13.0",
-  "pytest>=8.3.0",
+  "pytest>=9.0.3",
   "ruff>=0.7.0",
 ]
 

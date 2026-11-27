@@ -5,7 +5,7 @@
 | Version | Supported |
 | :--- | :--- |
 | `3.4.x` | Yes (Active) |
-| `< 3.4.0` | No (Upgrade to `v3.4.0`) |
+| `< 3.5.0` | No (Upgrade to `v3.5.0`) |
 
 ## Scope & Threat Model
 
