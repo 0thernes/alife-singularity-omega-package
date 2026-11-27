@@ -2,7 +2,7 @@
   "package": "alife-singularity-omega-package",
   "version": "3.5.0-omega",
   "architecture": "Unified Clean-Slate v3.0 x Singularity Omega x Mega-Atlas 1,900 Crosswalk x Lean 4.35.0 x AMS-LaTeX White Paper (Zero Consolidation)",
-  "generated_utc": "2026-11-27T06:22:37.744868+00:00",
+  "generated_utc": "2026-11-27T17:51:58.929086+00:00",
   "file_count": 210,
   "files": [
     {
@@ -63,12 +63,12 @@
     {
       "path": ".github/workflows/pages.yml",
       "bytes": 1162,
-      "sha256": "b7ed2aaa77c511c187566a39816af8a980528f45e05c84419f51e6e2c04f2b18"
+      "sha256": "1deab0e5759cb6334c4dc38b39459ecea3d0748b235732c3facd777dd9c92f69"
     },
     {
       "path": ".github/workflows/release.yml",
       "bytes": 1512,
-      "sha256": "458c5c43ab2a518538b718c75588181026a47999ba24f8942f15357714b703ea"
+      "sha256": "59aa6aef749a0e9def17f862eb6e53fab29986e27c8178df12deb0e4df84a2fe"
     },
     {
       "path": ".gitignore",

@@ -1,5 +1,5 @@
 # A-LIFE SINGULARITY x CLEAN-SLATE v3.0 UNIFIED OMNISCIENT PACKAGE (v3.5-OMEGA) — SHA-256 INTEGRITY MANIFEST
-# Generated UTC: 2026-11-27T06:22:37.744290+00:00
+# Generated UTC: 2026-11-27T17:51:58.912277+00:00
 # File Count: 210
 
 e6ff4e00b3ce4dc43b99e420bf17c0530778c788b9ac9ad3ff59585a52622c11  .cursor/rules/build-standard.mdc  (775 bytes)
@@ -13,8 +13,8 @@ f351bb68973db93b0baebdb4153d9620a5aed1688f8cd4637905f82ef25c3cd7  .github/ISSUE_
 a3152360853ffed25e5157ec70017c1485d1eb3d53419fdcb91e73a44859bb0d  .github/ISSUE_TEMPLATE/question.yml  (429 bytes)
 5890d0fba78c688767a6d61ca3aebcf8a442f5a9d3e0997319c1dc470af26462  .github/labels.tsv  (1122 bytes)
 6805fefac3ca056eed1c5e20695e9d4507f542ecbc5218f122306fe0e9a9a59b  .github/workflows/ci.yml  (5542 bytes)
-b7ed2aaa77c511c187566a39816af8a980528f45e05c84419f51e6e2c04f2b18  .github/workflows/pages.yml  (1162 bytes)
-458c5c43ab2a518538b718c75588181026a47999ba24f8942f15357714b703ea  .github/workflows/release.yml  (1512 bytes)
+1deab0e5759cb6334c4dc38b39459ecea3d0748b235732c3facd777dd9c92f69  .github/workflows/pages.yml  (1162 bytes)
+59aa6aef749a0e9def17f862eb6e53fab29986e27c8178df12deb0e4df84a2fe  .github/workflows/release.yml  (1512 bytes)
 933316d4926219653be402aa2935c1e27c1c34d698b74e5b9d1d5c57167ff4eb  .gitignore  (685 bytes)
 21e1019abeb862bdcdfd57820a6ac3ae401ddf8aa20c9d8c9cb24da111a9fc8a  .gitleaks.toml  (391 bytes)
 b58de3b5579d6030e51b550be6e80de14c07149bfb2195d6cbfd92d60dea0ea3  .zenodo.json  (2141 bytes)
