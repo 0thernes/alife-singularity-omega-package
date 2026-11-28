@@ -21,15 +21,9 @@ project:
     consistency and certify no empirical or companion-repo data. The 310 companion-engine
     theorems are verified in their respective repositories and audited via receipts.
   authors:
-    - name: "Alexander Stephen Donahue"
-      orcid: "0009-0006-8168-9648"
-      email: "0_0@0thernes.art"
-      affiliation: "Independent Researcher, Spokane, WA, USA"
+    - "Alexander Stephen Donahue (ORCID 0009-0006-8168-9648, Independent Researcher, Spokane, WA, USA)"
   responsible_maintainers:
-    - name: "Alexander Stephen Donahue"
-      github: "0thernes"
-      orcid: "0009-0006-8168-9648"
-      email: "0_0@0thernes.art"
+    - "Alexander Stephen Donahue (@0thernes, ORCID 0009-0006-8168-9648, 0_0@0thernes.art)"
   license: "Apache-2.0"
 
 classification:
@@ -45,7 +39,7 @@ classification:
 sources:
   - title: "A-Life Singularity, Super A-Life, and Clean-Slate v3.0 (v3.5.0): Hardware Ring-0 Constitutional Invariants, 748-Run Paired Falsification, 360 Pure 6-Kernel Lean 4.35.0 Theorems, and a 1,900-Problem Mega-Atlas Non-Retirement Audit"
     authors:
-      - "Alexander Stephen Donahue"
+      - "Alexander Stephen Donahue (ORCID 0009-0006-8168-9648, Independent Researcher, Spokane, WA, USA)"
     id: "https://github.com/0thernes/alife-singularity-omega-package"
     type: "original-proof"
     relationship: "other"
